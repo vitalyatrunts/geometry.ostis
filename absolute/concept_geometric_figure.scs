@@ -1,4 +1,4 @@
-﻿sc_node_not_relation->concept_geometric_figure;;
+sc_node_not_relation->concept_geometric_figure;;
 
 concept_geometric_figure=>nrel_main_idtf:
 [геометрическая фигура]
@@ -122,7 +122,7 @@ concept_geometric_figure -> rrel_example : struct_Square_A_B_C_D;;
 
 concept_geometric_figure -> rrel_example : struct_Opened_ray_k;;
 
-concept_geometric_figure -> rrel_example : struct_Сlosed_ray_m;;
+concept_geometric_figure -> rrel_example : struct_Closed_ray_m;;
 
 concept_geometric_figure -> rrel_example : struct_Regular_Polyhon_A_B_C_D_E_F;;
 
@@ -140,7 +140,7 @@ concept_geometric_figure -> rrel_example : struct_Parallelogram_A_B_C_D;;
 
 concept_geometric_figure -> rrel_example : struct_Plane_P;;
 
-concept_geometric_figure -> rrel_example : struct_Сlosed_half_plane_H1;;
+concept_geometric_figure -> rrel_example : struct_Closed_half_plane_H1;;
 
 concept_geometric_figure -> rrel_example : struct_Opened_Half_Plane_K1;;
 

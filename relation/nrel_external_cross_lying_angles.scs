@@ -1,4 +1,4 @@
-﻿sc_node_norole_relation->external_cross_lying_angles;;
+sc_node_norole_relation->external_cross_lying_angles;;
 
 nrel_external_cross_lying_angles => nrel_main_ru_idtf:[внешние накрест лежащие углы*];;
 
@@ -23,12 +23,20 @@ nrel_external_cross_lying_angles <= nrel_schemes_of_relations:
 	{
 	rrel_angle;
 	rrel_angle
-	} 
+	};;
 
 nrel_external_cross_lying_angles <- rrel_key_sc_element: 
-     [Опр.(внешние накрест лежащие углы*);;] 
+	... 
 	(*
-	<- sc_definition;;   //если пояснение, то sc_explanation
+	<- sc_definition;;
+	=> nrel_main_idtf: [Опр.(внешние накрест лежащие углы*)] (* <- lang_ru;; *);;
+	<= nrel_using_constants:
+	{
+		concept_angle;
+		nrel_intersecting_lines;
+		nrel_secant;
+		rrel_between
+	};;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -36,13 +44,6 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 			[Внешними накрест лежащими называются углы, образованные при пересечении двух прямых секущей, лежащие по разные стороны от секущей, но не между прямыми. ]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_angle;
-				nrel_intersecting_lines;
-				nrel_secant;
-				rrel_between
-				};;
 			*);;
 		*);;
 	*);;

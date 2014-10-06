@@ -30,12 +30,13 @@ concept_solid_of_revolution => nrel_strict_inclusion:
 	concept_spherical_sector;
 	concept_spherical_segment;
 	concept_spherical_layer
-	}
+	};;
 
 concept_solid_of_revolution <- rrel_key_sc_element: 
-        [Поясн.(тело вращения);;] 
+	...
 	(*
 	<- sc_explanation;; 
+	=> nrel_main_idtf: [Поясн.(тело вращения)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: 
 		...
 		(*

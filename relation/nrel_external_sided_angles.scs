@@ -1,4 +1,4 @@
-﻿sc_node_norole_relation->nrel_external_sided_angles;;
+sc_node_norole_relation->nrel_external_sided_angles;;
 
 nrel_external_sided_angles=>nrel_main_ru_idtf:[внешние односторонние углы*];;
 
@@ -22,7 +22,7 @@ nrel_external_sided_angles <= nrel_second_domain: concept_planar_angle; concept_
 nrel_external_sided_angles <=nrel_schemes_of_relation:
 	{
 	rrel_angle;
-	rrel-angle
+	rrel_angle
 	};; 
 
 nrel_external_sided_angles <- rrel_key_sc_element: 

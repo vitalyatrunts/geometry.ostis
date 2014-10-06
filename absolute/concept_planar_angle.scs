@@ -1,4 +1,4 @@
-﻿sc_node_not_relation->concept_planar_angle;;
+sc_node_not_relation->concept_planar_angle;;
 
 planar_angle=> nrel_main_idtf:
 	[планарный угол]
@@ -59,10 +59,10 @@ concept_planar_angle<- rrel_key_sc_element:
 
 concept_planar_angle <- subject_domain_of_Euclidean_geometry;;
 
-concept_planar_angle -> rrel_example: Угол ABK;;
+/*concept_planar_angle -> rrel_example: Угол ABK;;
 concept_planar_angle -> rrel_example: Угол AOB;;
 concept_planar_angle -> rrel_example: Угол KLM;;
 concept_planar_angle -> rrel_example: Угол NKN;;
 concept_planar_angle -> rrel_example: Угол PKP;;
 concept_planar_angle -> rrel_example: Угол PTR;;
-concept_planar_angle -> rrel_example: Угол TPR;;
+concept_planar_angle -> rrel_example: Угол TPR;;*/

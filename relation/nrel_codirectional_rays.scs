@@ -8,7 +8,7 @@ nrel_codirectional_rays <- binary_relation;;
 
 nrel_codirectional_rays <- not_oriented_relation;;
 
-nrel_codirectional_rays=> nrel_idtf:[быть сонаправленными лучами*](*<-lang_ru;;*);;
+nrel_codirectional_rays => nrel_idtf:[быть сонаправленными лучами*](*<-lang_ru;;*);;
 
 nrel_codirectional_rays <= nrel_definitional_domain : concept_ray;;
 
@@ -18,13 +18,14 @@ nrel_codirectional_rays <= nrel_second_domain: concept_ray;;
 nrel_centre <=nrel_schemes_of_relations:
 	{ 
 	rrel_ray; 
-	rrelt_ray
-	}
+	rrel_ray
+	};;
 
 nrel_codirectional_rays <- rrel_key_sc_element: 
-     [Опр.(сонаправленные лучи*);;] 
+	...
 	(*
 	<- sc_definition;;   
+	=> nrel_main_idtf: [Опр.(сонаправленные лучи*)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -1,4 +1,4 @@
-﻿sc_node_not_relation->concept_polygon;;
+sc_node_not_relation->concept_polygon;;
 
 concept_polygon=> nrel_main_idtf:
 	[многоугольник]
@@ -148,7 +148,7 @@ concept_polygon <= nrel_main_statements:
 
 concept_polygon <- subject_domain_of_Euclidean_geometry;;
 
-concept_polygon -> rrel_example : Многоугольник KLMNEP;;
+concept_polygon -> rrel_example : struct_Polyhon_K_L_M_N_E_P;;
 concept_polygon -> rrel_example : struct_Regular_Polyhon_A_B_C_D_E_F;;
 concept_polygon -> rrel_example : struct_Irregular_polygon_K_A_B_C_D_E;;
 concept_polygon -> rrel_example : struct_Non_convex_polygon_O_P_R_S_Q_T;;

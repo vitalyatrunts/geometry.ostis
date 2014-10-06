@@ -1,4 +1,4 @@
-﻿sc_node_norole_relation->nrel_length;;
+sc_node_norole_relation->nrel_length;;
 
 nrel_length=>nrel_main_idtf:
 	[длина*](*<-lang_ru;;*);
@@ -31,7 +31,7 @@ nrel_length<= nrel_schemes_of_relations:
 nrel_length <- rrel_key_sc_element: 
      [Опр.(длина*);;] 
 	(*
-	<- sc_explanation
+	<- sc_explanation;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -21,11 +21,12 @@ struct_Equilateral_triangle_X_Y_Z <- rrel_key_sc_element:
 -> rrel_example:
 "file://images/Triangle XYZ.png";;
 *);;
+*);;
 
 struct_Equilateral_triangle_X_Y_Z  <= nrel_main_statements:
-	
-	[Факт.утв.(Равносторонний треугольник XYZ);;]
+	...
 	(*
+	=> nrel_main_idtf: [Факт.утв.(Равносторонний треугольник XYZ)];;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
