@@ -1,0 +1,31 @@
+sc_node_not_relation->struct_Straight_Line_A;;
+struct_Straight_Line_A=>nrel_main_ru_idtf:[Прямая a;;]
+
+struct_Straight_Line_A <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Pryamayaa.png";;
+*);;
+*);;
+
+struct_Straight_Line_A  <= nrel_main_statements:
+	
+	[Факт.утв.(Прямая a);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ a - прямая.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Straight_Line_A -> concept_straight_line;;
+

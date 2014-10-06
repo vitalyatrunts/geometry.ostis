@@ -1,0 +1,40 @@
+sc_node_not_relation->struct_Scalene_triangle_K_L_M;;
+
+struct_Scalene_triangle_K_L_M=>nrel_main_ru_idtf:[Разносторонний треугольник KLM];;
+
+struct_Scalene_triangle_K_L_M=> nrel_idtf:[Тр-к (K; L; M)](*<-lang_ru;;*);;
+
+struct_Scalene_triangle_K_L_M=> nrel_idtf:[Разносторонний треугольник(K; L; M)](*<-lang_ru;;*);;
+
+struct_Scalene_triangle_K_L_M=> nrel_idtf:[Треугольник, вершинами которого являются Точка K, Точка L, Точка M](*<-lang_ru;;*);;
+
+struct_Scalene_triangle_K_L_M <- concept_scalene_triangle;;
+
+struct_Scalene_triangle_K_L_M <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Scalene_triangle_K_L_M.png";;
+*);;
+*);;
+
+
+struct_Scalene_triangle_K_L_M  <= nrel_main_statements:
+	
+	[Факт. утв.(Разносторонний треугольник KLM);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник KLM является разносторонним,
+Геометрические точки K, L и M являются вершинами Треугольника KLM. Отрезки k, l и m являются сторонами Треугольника KLM. Точка K является граничной точкой отрезков m, l. Точка L является граничной точкой отрезков m, k. Точка M является граничной точкой отрезков l, k. Углы  alpha,  beta,  gamma острые углы.
+Углы  alpha,  beta,  gamma являются внутренним углами Треугольника KLM. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,89 @@
+﻿sc_node_not_relation->concept_half_plane;;
+
+concept_half_plane=> nrel_main_idtf:
+	[полуплоскость]
+	(*
+	<- lang_ru;;
+	*);
+	[half plane]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_half_plane=> nrel_idtf:[Класс полуплоскостей](*<-lang_ru;;*);;
+
+concept_half_plane=> nrel_idtf:[Понятие полуплоскости](*<-lang_ru;;*);;
+
+concept_half_plane=> nrel_idtf:[Множество всевозможных полуплоскостей](*<-lang_ru;;*);;
+
+concept_half_plane=> nrel_idtf:[Множество знаков всевозможных полуплоскостей](*<-lang_ru;;*);;
+
+concept_half_plane <= nrel_strict_inclusion: concept_planar_surface;;
+
+concept_half_plane<= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку включения границы](*<-lang_ru;;*);;
+	->concept_closed_half_plane;
+	concept_opened_half_plane;;
+	*);;
+
+concept_half_plane <- rrel_key_sc_element: 
+        [Опр.(полуплоскость)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Полуплоскость - это множество точек плоскости такое, что для любой пары точек выполняется требование: отрезок с концами в этих точках не пересекает прямую, являющуюся границей полуплоскости. ]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_point;
+                                concept_plane;
+                                concept_segment;
+                                concept_straight_line;
+				nrel_bound
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_half_plane <= nrel_main_statements:
+	
+	[Утв.(плоскость; полуплоскость; прямая; граница*; отрезок; пересекающиеся*; граничная точка*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[При пересечении прямой и отрезка граничные точки отрезка лежат в разных полуплоскостях.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(прямая; плоскость; полуплоскость);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямая разбивает плоскость на две полуплоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_half_plane <- subject_domain_of_Euclidean_geometry;;
+
+concept_half_plane <= nrel_analogue: concept_ray;;
+
+concept_half_plane <= nrel_analogue: concept_half_space;;
+
+
+concept_half_plane -> rrel_example: Закрытая полуплоскость H1;;
+
+concept_half_plane -> rrel_example: struct_Opened_Half_Plane_K1;;

@@ -1,0 +1,84 @@
+﻿sc_node_not_relation->concept_linear_polygon;;
+
+concept_linear_polygon=> nrel_main_idtf:
+	[линейный многоугольник]
+	(*
+	<- lang_ru;;
+	*);
+	[linear polygon]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_linear_polygon=> nrel_idtf:[Класс линейных многоугольников](*<-lang_ru;;*);;
+
+concept_linear_polygon=> nrel_idtf:[Понятие линейного многоугольника](*<-lang_ru;;*);;
+
+concept_linear_polygon=> nrel_idtf:[Множество всевозможных линейных многоугольников](*<-lang_ru;;*);;
+
+concept_linear_polygon=> nrel_idtf:[Множество знаков всевозможных линейных многоугольников](*<-lang_ru;;*);;
+
+concept_linear_polygon=> nrel_idtf:[Простая замкнутая ломаная](*<-lang_ru;;*);;
+
+concept_linear_polygon <= nrel_strict_inclusion: concept_simple_broken_line;;
+
+concept_linear_polygon <= nrel_strict_inclusion: concept_planar_figure;;
+
+concept_linear_polygon <= nrel_strict_inclusion: concept_polygon;;
+
+concept_linear_polygon <= nrel_strict_inclusion: concept_planar_line;;
+
+concept_linear_polygon => nrel_strict_inclusion: concept_linear_quadrangle;;
+
+concept_linear_polygon => nrel_strict_inclusion: concept_linear_treangle;;
+
+concept_linear_polygon <- rrel_key_sc_element: 
+     [Опр.(линейный многоугольник);;] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Линейный многоугольник - это простая планарная ломаная, у которой совпадают граничные точки.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				nrel_boundary_point;
+				concept_polyline;
+				concept_geometric_point;
+                    nrel_coincidence
+				};;
+			*);;
+		*);;
+	*);;
+
+
+concept_linear_polygon <= nrel_main_statements:
+	[Утв.(многоугольник; внутренний угол*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма внутренних углов многоугольника равна (n-2)*(180 градусов).]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     [Утв.(многоугольник; линейный многоугольник; граница*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Линейный многоугольник - есть граница многоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_linear_polygon <- subject_domain_of_Euclidean_geometry;;
+
+concept_linear_polygon -> rrel_example : struct_Polygon_K_A_B_C_D_E;;

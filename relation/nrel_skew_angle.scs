@@ -1,0 +1,9 @@
+sc_node_norole_relation->nrel_skew_angle;;
+
+nrel_skew_angle=>nrel_main_idtf:
+	[скрещивающиеся*](*<-lang_ru;;*);
+	[skew angle*](*<-lang_en;;*);;
+
+nrel_skew_angle=> nrel_idtf:[быть скрещивающимися*](*<-lang_ru;;*);;
+
+nrel_skew_angle <- subject_domain_of_Euclidean_geometry;;

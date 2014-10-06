@@ -1,0 +1,62 @@
+﻿sc_node_norole_relation->nrel_surface_area;;
+
+nrel_surface_area => nrel_main_idtf:
+	[площадь поверхности*]
+	(*
+	<- lang_ru;;
+	*);
+	[surface area*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_surface_area=> nrel_idtf:[быть площадью поверхности*](*<-lang_ru;;*);;
+
+nrel_surface_area=> nrel_idtf:[площадь поверхности геометрического тела*](*<-lang_ru;;*);;
+
+nrel_surface_area=> nrel_idtf:[быть площадью поверхности геометрического тела*](*<-lang_ru;;*);;
+
+nrel_surface_area <- relation;;
+
+nrel_surface_area <- binary_relation;;
+
+nrel_surface_area <- oriented_relation;;
+
+nrel_surface_area <= nrel_definitional_domain: concept_geometric_body;;
+ 
+nrel_surface_area <= nrel_definitional_domain: concept_geometric_figure_of_limited_size;;
+
+nrel_surface_area <= nrel_first_domain: concept_geometric_body;; 
+
+nrel_surface_area <= nrel_first_domain: concept_geometric_figure_of_limited_size;; 
+
+nrel_surface_area <= nrel_second_domain: concept_set_of_variables;;
+
+
+nrel_surface_area<= nrel_schemes_of_relations:
+     {
+	rrel_geometric_body;
+	rrel_surface_area
+     };;
+
+nrel_surface_area <- rrel_key_sc_element: 
+     [Опр.(площадь поверхности*)] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь поверхности - числовая характеристика величины поверхности геометрического тела. ]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_surface;
+				concept_geometric_body
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_surface_area <- subject_domain_of_Euclidean_geometry;;

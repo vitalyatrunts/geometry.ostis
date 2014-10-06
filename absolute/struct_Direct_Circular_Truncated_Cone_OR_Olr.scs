@@ -1,0 +1,55 @@
+sc_node_not_relation->struct_Direct_Circular_Truncated_Cone_OR_Olr;;
+struct_Direct_Circular_Truncated_Cone_OR_Olr=>nrel_main_ru_idtf:[Прямой круговой усеченный конус OO1Rr];;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr=> nrel_idtf:[Прямой конус OO1Rr](*<-lang_ru;;*);;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr=> nrel_idtf:[Круговой конус OO1Rr](*<-lang_ru;;*);;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr=> nrel_idtf:[Усечённый конус OO1Rr](*<-lang_ru;;*);;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr -> concept_direct_cone;;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr -> concept_circular_cone;;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr -> concept_truncated_cone;;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Cone OO1.png";;
+*);;
+*);;
+
+struct_Direct_Circular_Truncated_Cone_OR_Olr  <= nrel_main_statements:
+	
+	[Факт.утв.(Прямой круговой усеченный конус OO1R);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Прямой круговой усеченный конус OO1Rr является прямым, круговым, усеченным,
+
+Линия l является образующей конуса OO1Rr,
+
+Круг OR является большим основанием конуса OO1Rr,
+
+Круг OR является меньшим основанием конуса OO1Rr,
+Геометрическая точка O является центром большего основания конуса OO1Rr,
+Геометрическая точка O1 является центром меньшего основания конуса OO1Rr,
+
+Отрезок R является радиусом большего основания конуса OO1Rr,
+
+Отрезок r является радиусом меньшего основания конуса OO1Rr,
+
+Отрезок h является высотой конуса OO1Rr.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

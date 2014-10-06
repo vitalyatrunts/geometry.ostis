@@ -1,0 +1,94 @@
+sc_node_not_relation->concept_disphenoid;;
+
+concept_disphenoid=>nrel_main_idtf:
+[равногранный тетраэдр]
+(*
+<-lang_ru;;
+*);
+[disphenoid]
+(*
+<-lang_en;;
+*);;
+
+concept_disphenoid=> nrel_idtf:[Класс равногранных тетраэдров](*<-lang_ru;;*);;
+
+concept_disphenoid=> nrel_idtf:[Понятие равногранного треугольника](*<-lang_ru;;*);;
+
+concept_disphenoid=> nrel_idtf:[Множество всевозможных равногранных тетраэдров](*<-lang_ru;;*);;
+
+concept_disphenoid=> nrel_idtf:[Множество знаков всевозможных равногранных тетраэдров](*<-lang_ru;;*);;
+
+concept_disphenoid <= nrel_strict_inclusion: concept_tetrahedron;;
+
+concept_disphenoid  <- rrel_key_sc_element: 
+        [Опр.(равногранный тетраэдр);;] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равногранным тетраэдром называют тетраэдр, у которого все его грани - равные между собой треугольники.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_tetrahedron;
+				nrel_face;
+				concept_triangle
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_disphenoid <= nrel_main_statements:
+	
+	[Утв.(равногранный тетраэдр;сфера;вписанность*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равногранный тетраэдр можно вписать сферу. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(равногранный тетраэдр;сфера;описанность*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Около равногранного тетраэдра можно описать сферу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(равногранный тетраэдр;сфера;вписанность*;центр*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр равногранного тетраэдра совпадает с центром вписанной сферы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(равногранный тетраэдр;сфера;описанность*;центр*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр тяжести равногранного тетраэдра совпадает с центром описанной сферы. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_disphenoid -> subject_domain_of_Euclidean_geometry;;

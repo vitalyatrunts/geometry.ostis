@@ -1,0 +1,105 @@
+﻿sc_node_norole_relation->nrel_perpendicular;;
+
+nrel_perpendicular => nrel_main_idtf:
+	[перпендикуляр*]
+	(*
+	<- lang_ru;;
+	*);
+	[perpendicular*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_perpendicular=> nrel_idtf:[перпендикуляр к прямой*](*<-lang_ru;;*);;
+
+nrel_perpendicular <- relation;;
+
+nrel_perpendicular <- binary_relation;;
+
+nrel_perpendicular <- oriented_relation;;
+
+nrel_perpendicular <= nrel_definitional_domain: concept_straight_line;;
+
+nrel_perpendicular <= nrel_definitional_domain: concept_plane;;
+
+nrel_perpendicular <= nrel_first_domain: concept_straight_line;;
+
+nrel_perpendicular <= nrel_second_domain: concept_segment;;
+
+nrel_perpendicular<= nrel_schemes_of_relations:
+     {
+	rrel_straight_line;
+	rrel_perpendicular
+     };;
+
+nrel_perpendicular<- rrel_key_sc_element: 
+     [Опр.(перпендикуляр*)] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Перпендикуляром к данной прямой называется отрезок прямой, перпендикулярной данной, который имеет одним из своих концов точку пересечения прямых. ]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_straight_line;
+				concept_segment;
+				nrel_perpendicularity
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_perpendicular <= nrel_main_statements:
+	[Утв.(плоскость; геометрическая точка; прямая; перпендикуляр*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Из любой точки плоскости вне прямой можно опустить перпендикуляр на данную прямую, и притом только один.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(геометрическая точка; прямая; перпендикуляр*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Из любой точки прямой можно восстановить перпендикуляр к данной прямой, и притом только один.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(плоскость; прямая; перпендикуляр*; параллельность*; конгруэнтность*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Два перпендикуляра к одной прямой, лежащие в одной плоскости, или параллельны, или совпадают.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(плоскость; геометрическая точка; прямая; перпендикуляр*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Через любую точку плоскости можно провести прямую, перпендикулярную данной прямой, и притом только один.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_perpendicular <- subject_domain_of_Euclidean_geometry;;

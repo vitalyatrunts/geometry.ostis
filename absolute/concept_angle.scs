@@ -1,0 +1,105 @@
+sc_node_not_relation->concept_angle;;
+
+concept_angle=>nrel_main_idtf:
+[угол]
+(*
+<-lang_ru;;
+*);
+[angle]
+(*
+<-lang_en;;
+*);;
+
+concept_angle=> nrel_idtf:[плоский угол](*<-lang_ru;;*);;
+
+concept_angle=> nrel_idtf:[планарный угол](*<-lang_ru;;*);;
+
+concept_angle=> nrel_idtf:[Понятие угла](*<-lang_ru;;*);;
+
+concept_angle=> nrel_idtf:[Класс углов](*<-lang_ru;;*);;
+
+concept_angle=> nrel_idtf:[Множество всевозможных углов](*<-lang_ru;;*);;
+
+concept_angle=> nrel_idtf:[Множество знаков всевозможных углов](*<-lang_ru;;*);;
+
+concept_angle <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
+
+concept_angle => nrel_strict_inclusion: concept_solid_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_planar_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_dihedral_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_trihedral_angle;;
+
+concept_angle <- rrel_key_sc_element: 
+        [Опр.(угол);;] 
+	(*
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Углом называют неограниченную геометрическую фигуру, образованную двумя лучами, выходящими из одной точки .]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_ray;
+				concept_geometric_point
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_angle <= nrel_main_statements:
+	
+	[Утв.(угол; совпадение*; сторона*; вершина*; конгруэнтность*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Два угла называются равными, если они могут быть совмещены так, что совпадут их вершины и соответствующие стороны. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle <= nrel_main_statements:
+	
+	[Утв.(угол; мера угла*; конгруэнтность*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равные углы имеют одинаковую угловую меру.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle <= nrel_main_statements:
+	
+	[Утв.(угол; сторона*; параллельность*; мера угла*; конгруэнтность*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если стороны одного угла соответственно параллельны сторонам другого угла, то такие угли или равны, или в сумме составляют 180 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle -> subject_domain_of_Euclidean_geometry;;
+
+concept_angle -> rrel_example : struct_Acute_Angle_K_L_M;;
+concept_angle -> rrel_example : struct_Non_convex_angle_A_B_K;;
+concept_angle -> rrel_example : struct_Straight_angle_A_O_B;;
+concept_angle -> rrel_example : struct_Zero_angle_N_K_N;;
+concept_angle -> rrel_example : struct_Full_angle_P_K_P;;
+concept_angle -> rrel_example : struct_Concept_right_angle_P_T_R;;
+concept_angle -> rrel_example : struct_Obtuse_angle_T_P_R;;

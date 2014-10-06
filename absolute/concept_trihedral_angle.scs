@@ -1,0 +1,122 @@
+sc_node_not_relation->concept_trihedral_angle;;
+
+concept_trihedral_angle=>nrel_main_idtf:
+[трехгранный угол]
+(*
+<-lang_ru;;
+*);
+[trihedral angle]
+(*
+<-lang_en;;
+*);;
+
+concept_trihedral_angle=> nrel_idtf:[Класс трехгранных углов](*<-lang_ru;;*);;
+
+concept_trihedral_angle=> nrel_idtf:[Понятие трехгранного угла](*<-lang_ru;;*);;
+
+concept_trihedral_angle=> nrel_idtf:[Множество всевозможных трехгранных углов](*<-lang_ru;;*);;
+
+concept_trihedral_angle <= nrel_strcit_inclusion: concept_non_planar_figure;;
+
+concept_trihedral_angle <= nrel_strcit_inclusion: concept_angle;;
+
+concept_trihedral_angle -> subject_domain_of_Euclidean_geometry;;
+
+concept_trihedral_angle <- rrel_key_sc_element: 
+        [Опр.(трехгранный угол);;] 
+	(*
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Трехгранный угол — пространственная геометрическая фигура, образованная тремя лучами, которые имеют общую начальную точку и не лежат в одной плоскости, и заключенными между этими лучами частями плоскостей.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_plane;
+				concept_ray;
+				concept_space
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_trihedral_angle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(трехгранный угол; угол);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждый плоский угол трехгранного угла меньше суммы двух других плоский углов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trihedral_angle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(трехгранный угол; угол);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сумма плоских углов трехгранного угла меньше 2*pi. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trihedral_angle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(трехгранный угол; внутренний угол*; двугранный угол);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сумма внутренних двугранных углов трехгранного угла больше pi и меньше 3\pi. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trihedral_angle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(трехгранный угол; противолежащий*; двугранный угол);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В трехгранном угле против большего плоского угла лежит больший двугранный угол. Верно и обратное. ]
+			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[В трехгранном угле против равных плоских углов лежат равные двугранные углы. Верное и обратное. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trihedral_angle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(трехгранный угол; конгруэнтность*; плоскость, двугранный угол);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если два трехгранных угла имеют по равному плоскому углу, принадлежащему к двум соответственно равным двугранным углам, то такие трехгранные углы называются равными(конгруэнтными). ]
+			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[ Если два трехгранных угла имеют по два равных плоских угла, плоскости которых образуют равные двугранные углы, то такие трехгранные углы называются равными(конгруэнтными). ]
+			(* <- lang_ru;; *);;
+-> rrel_example: 
+			[ Если два трехгранных угла имеют по три соответственно равных плоских угла, то такие трехгранные углы называются равными(конгруэнтными). ]
+			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[ Если два трехгранных угла имеют по три соответственно равных двугранный угла, то такие трехгранные углы называются равными(конгруэнтными). ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

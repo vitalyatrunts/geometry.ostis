@@ -1,0 +1,40 @@
+sc_node_not_relation->struct_Versatile_trapezoid_Z_X_C_V;;
+
+struct_Versatile_trapezoid_Z_X_C_V=>nrel_main_ru_idtf:[Разносторонняя трапеция ZXCV];;
+
+struct_Versatile_trapezoid_Z_X_C_V=> nrel_idtf:[Тр-я(Z; X; C; V)](*<-lang_ru;;*);;
+
+struct_Versatile_trapezoid_Z_X_C_V=> nrel_idtf:[Разносторонняя трапеция(Z; X; C; V)](*<-lang_ru;;*);;
+
+struct_Versatile_trapezoid_Z_X_C_V=> nrel_idtf:[Разносторонняя трапеция, вершинами которой являются Точка Z, Точка X, Точка C, Точка V](*<-lang_ru;;*);;
+
+struct_Versatile_trapezoid_Z_X_C_V <- concept_versatile_trapezoid;;
+
+struct_Versatile_trapezoid_Z_X_C_V  <= nrel_main_statements:
+	[Факт. утв.(Разносторонняя трапеция ZXCV);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ZXCV - трапеция.
+Геометрические точки Z, X, C и V являются вершинами Трапеции ZXCV.
+Отрезки x, v являются боковыми сторонами, а отрезки z, c являются основаниями Трапеции ZXCV.
+Точка Z является граничной точкой отрезков z, x. Точка X является граничной точкой отрезков x, c. Точка C является граничной точкой отрезков c, v. Точка V является граничной точкой отрезков v, z.
+Углы  alpha,  beta,  gamma,  sigma являются внутренним углами Трапеции ZXCV. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Versatile_trapezoid_Z_X_C_V <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Versatile_trapezoid_Z_X_C_V.PNG";;
+*);;
+*);;

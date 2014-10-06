@@ -1,0 +1,161 @@
+sc_node_not_relation->concept_trapezoid;;
+
+concept_trapezoid=>nrel_main_idtf:
+[трапеция]
+(*
+<-lang_ru;;
+*);
+[trapezoid]
+(*
+<-lang_en;;
+*);;
+
+concept_trapezoid=> nrel_idtf:[Класс трапеций](*<-lang_ru;;*);;
+
+concept_trapezoid=> nrel_idtf:[Понятие трапеции](*<-lang_ru;;*);;
+
+concept_trapezoid=> nrel_idtf:[Множество всевозможных трапеций](*<-lang_ru;;*);;
+
+concept_trapezoid=> nrel_idtf:[Множество знаков всевозможных трапеций](*<-lang_ru;;*);;
+
+concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_trapezoid => nrel_strict_inclusion:
+	{
+	concept_isosceles_trapeze;
+	concept_versatile_trapezoid;
+	concept_rectangular_trapeze
+	};;
+
+concept_trapezoid -> subject_domain_of_Euclidean_geometry;;
+
+concept_trapezoid <- rrel_key_sc_element: 
+        [Опр.(трапеция);;] 
+	(*
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Трапеция - четырёхугольник, у которого только две противолежащие стороны параллельны.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_quadrilateral;
+				nrel_side;
+				nrel_parallelism
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(трапеция; средняя линия трапеции*; основание*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина средней линии трапеции равна полусумме длин оснований.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(трапеция; внутренний угол*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сумма углов трапеции равна 360 градусов. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(трапеция; диагональ*; боковая сторона*; основание*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сумма квадратов диагоналей трапеции равна сумме квадратов боковых сторон и удвоенного произведения её оснований. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(диагональ*; боковая сторона*; прямая);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Середины боковых сторон и середины диагоналей трапеции лежат на одной прямой. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(основание*; диагональ*; боковая сторона*; трапеция);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Середины оснований, точка пересечения диагоналей и точка пересечения продолжений боковых сторон трапеции лежат на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(трапеция; отрезок; диагональ*; основание*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Отрезок, соединяющий середины диагоналей трапеции, равен полуразности оснований. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(трапеция; отрезок; основание*; быть равновеликими*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Отрезок, параллельный основаниям трапеции и делящий ее на 2 равновеликие части, равен квадратному корню из суммы квадратов длин оснований, деленной на 2. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_main_statements:
+	[Утв.(трапеция; окружность; основание*; сторона*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ В трапецию можно вписать окружность тогда и только тогда, когда сумма оснований трапеции равна сумме ее боковых сторон. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid -> rrel_example : struct_Isosceles_trapeze_K_L_M_N;;
+
+concept_trapezoid -> rrel_example : struct_Rectangular_trapeze_P_Q_R_S;;
+
+concept_trapezoid -> rrel_example : struct_Versatile_trapezoid_Z_X_C_V;;

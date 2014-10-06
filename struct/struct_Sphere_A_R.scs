@@ -1,0 +1,33 @@
+sc_node_not_relation->struct_Sphere_A_R;;
+
+struct_Sphere_A_R=>nrel_main_ru_idtf:[Сфера(A; R)];;
+
+struct_Sphere_A_R <- concept_sphere;;
+
+struct_Sphere_A_R <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Sphere_A_R.png";;
+*);;
+*);;
+
+struct_Sphere_A_R  <= nrel_main_statements:
+	
+	[Факт. утв.(Сфера (A; R));;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(A; R) - сфера.
+Геометрическая точка A является центром сферы (A; R).
+Отрезок R является радиусом сферы (A; R). ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

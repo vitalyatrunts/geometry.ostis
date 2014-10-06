@@ -1,0 +1,117 @@
+﻿sc_node_norole_relation->nrel_leg;;
+
+nrel_leg=>nrel_main_ru_idtf:[катет*];;
+
+nrel_leg => nrel_idtf:[быть катетом*](*<-lang_ru;;*);;
+
+nrel_leg=> nrel_idtf:[катет прямоугольного треугольника*](*<-lang_ru;;*);;
+
+nrel_leg=> nrel_idtf:[быть катетом прямоугольного треугольника*](*<-lang_ru;;*);;
+
+nrel_leg <- binary_relation;;
+
+nrel_leg <- oriented_relation;;
+
+nrel_leg <= nrel_definitional_domain : concept_right_triangle;;
+
+nrel_leg <= nrel_first_domain: concept_right_triangle;;
+
+nrel_leg <= nrel_second_domain: concept_segment;;
+
+nrel_leg <= nrel_schemes_of_relations:
+     {
+	rrel_right_triangle;
+	rrel_congruence
+     };;
+
+nrel_leg <- rrel_key_sc_element: 
+     [Опр.(катет*);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Катет - это отрезок, который является стороной прямоугольного треугольника и один из прилежащих углов которого является прямым углом.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+		    		concept_right_triangle;
+                    		concept_right_angle;
+                    		concept_segment;
+                    		nrel_vertex;
+		    		nrel_edge;
+		       		};;
+			*);;
+		*);;
+	*);;
+
+nrel_leg <= nrel_main_statements:
+	[Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого прямоугольного треугольника выполняется числовое соотношение:] (* <- lang_ru;; *);
+			"file://images/nrel_leg.png";
+ 			[где a, b – величины длин катетов этого треугольника,  c – величина длины гипотенузы того же треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_leg <= nrel_main_statements:
+	[Утв.(гипотенуза*; катет*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Гипотенуза прямоугольного треугольника больше любого из его катетов и меньше их суммы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_leg <= nrel_main_statements:
+	[Утв.(прямоугольный треугольник; катет*; высота*; совпадение*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Катет прямоугольного треугольника совпадает с высотой, проведенной ко второму катету того же треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_leg <= nrel_main_statements:
+	[Утв.(прямоугольный треугольник; площадь*; катет*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь прямоугольного треугольника равна половине произведения катетов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_leg <= nrel_main_statements:
+	[Утв.(прямоугольный треугольник; катет*; противолежащий*; гипотенуза*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Катет, лежащий против угла в , равен половине гипотенузы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+    
+nrel_leg <- subject_domain_of_Euclidean_geometry;;

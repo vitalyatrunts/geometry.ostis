@@ -1,0 +1,61 @@
+﻿sc_node_norole_relation->nrel_side_face;;
+
+nrel_side_face=>nrel_main_ru_idtf:[боковая грань*];;
+
+nrel_side_face=> nrel_idtf:[быть боковой гранью*]
+	(*
+	<-lang_ru;;
+	*);;
+
+nrel_side_face=> nrel_idtf:[боковая грань многогранника*]
+	(*
+	<-lang_ru;;
+	*);;
+
+nrel_side_face=> nrel_idtf:[быть боковой гранью многогранника*]
+	(*
+	<-lang_ru;;
+	*);;
+
+nrel_side_face -> relation;;
+
+nrel_side_face -> binary_relation;;
+
+nrel_side_face -> oriented_relation;;
+
+nrel_side_face <= nrel_domain_of_definition : concept_polyhedron;;
+
+nrel_side_face <= nrel_first_domain: concept_polyhedron;;
+
+nrel_side_face <= nrel_second_domain: concept_polygon;;
+
+nrel_side_face <=nrel_schemes_of_relations: 
+	{
+	rrel_polyhedron;
+	rrel_side_face_of_polyhedron
+	};;
+
+nrel_side_face <- rrel_key_sc_element: 
+     [Опр.(боковая грань*);;] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Боковая грань многогранника - это плоская поверхность, которая является гранью этого многогранника и имеет общий двугранный угол с основанием этого же многогранника.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_polyhedron;
+				concept_face;
+				concept_surface;
+				concept_base;
+				concept_dihedral_angle
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_side_face -> subject_domain_of_Euclidean_geometry;;

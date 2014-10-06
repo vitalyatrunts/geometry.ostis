@@ -1,0 +1,43 @@
+sc_node_not_relation->struct_Equilateral_triangle_X_Y_Z;;
+struct_Equilateral_triangle_X_Y_Z=>nrel_main_ru_idtf:[Равносторонний треугольник XYZ];;
+
+struct_Equilateral_triangle_X_Y_Z=> nrel_idtf:[Тр-к(X; Y; Z)](*<-lang_ru;;*);;
+
+struct_Equilateral_triangle_X_Y_Z=> nrel_idtf:[Правильный треугольник(X; Y; Z)](*<-lang_ru;;*);;
+
+struct_Equilateral_triangle_X_Y_Z=> nrel_idtf:[Равносторонний треугольник(X; Y; Z)](*<-lang_ru;;*);;
+
+struct_Equilateral_triangle_X_Y_Z=> nrel_idtf:[Треугольник, вершинами которого являются Точка X, Точка Y, Точка Z](*<-lang_ru;;*);;
+
+struct_Equilateral_triangle_X_Y_Z -> concept_equilateral_triangle;;
+
+struct_Equilateral_triangle_X_Y_Z <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Triangle XYZ.png";;
+*);;
+
+struct_Equilateral_triangle_X_Y_Z  <= nrel_main_statements:
+	
+	[Факт.утв.(Равносторонний треугольник XYZ);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник XYZ является равносторонним,
+
+Геометрические точки X, Y и Z являются вершинами Треугольника XYZ. Отрезки x, y и z являются сторонами Треугольника XYZ. Углы alpha, beta, gamma являются внутренним углами Треугольника XYZ. Углы alpha, beta и gamma равны. Отрезки x, y и z равны. Точка X является граничной точкой отрезков y, z. Точка Y является граничной точкой отрезков x, z.
+Точка Z является граничной точкой отрезков x, y. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+

@@ -1,0 +1,41 @@
+﻿sc_node_not_relation->struct_Plane_P;;
+
+struct_Plane_P => nrel_main_idtf:
+	[Плоскость P]
+	(*
+	<- lang_ru;;
+	*);
+	[Plane P]
+	(*
+	<- lang_en;;
+	*);;
+
+struct_Plane_P <- concept_plane;;
+
+struct_Plane_P <= nrel_main_statements:
+	[Факт.утв.(Плоскость P);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[P - плоскость]
+			(* <- lang_ru;; *);;
+                -> rrel_example: 
+			[P ∈ concept_plane]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Plane_P <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_explanation;; 
+		<= nrel_sc_text_translation: 
+		...
+			(*
+				-> rrel_example: 
+						 "file://PlaneP.png";;
+			*);; 
+	*);; 

@@ -1,0 +1,90 @@
+﻿sc_node_norole_relation->nrel_internal_sided_angles;;
+
+nrel_internal_sided_angles=>nrel_main_ru_idtf:[внутренние односторонние углы*];;
+
+nrel_internal_sided_angles=> nrel_idtf:[быть внутренними односторонними углами*]
+	(*
+	<-lang_ru;;
+	*);;
+
+nrel_internal_sided_angles -> relation;;
+
+nrel_internal_sided_angles -> binary_relation;;
+
+nrel_internal_sided_angles -> undirected_relation;;
+
+nrel_internal_sided_angles <= nrel_domain_of_definition : concept_planar_angle; concept_dihedral_angle;;
+
+nrel_internal_sided_angles <= nrel_first_domain: concept_planar_angle; concept_dihedral_angle;;
+
+nrel_internal_sided_angles <= nrel_second_domain: concept_planar_angle; concept_dihedral_angle;;
+
+nrel_internal_sided_angles <=nrel_schemes_of_relations:
+	{
+	rrel_angle;
+	rrel_angle
+	};;
+
+nrel_internal_sided_angles <- rrel_key_sc_element: 
+     [Опр.(внутренние односторонние углы*);;] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Внутренними односторонними называются углы, образованные при пересечении двух прямых секущей, 
+лежащие по одну сторону от секущей между прямыми.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_angle;
+				nrel_intersecting_lines;
+				nrel_secant;
+				rrel_between
+				};;
+			*);;
+		*);;
+	*);; 
+
+nrel_internal_sided_angles -> subject_domain_of_Euclidean_geometry;;
+
+nrel_internal_sided_angles <= nrel_main_statements:
+	[Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если при пересечении двух прямых третьей прямой сумма пары односторонних углов 
+равна 180 градусов, то соответственные углы равны. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; внутренние односторонние углы*; сумма*; мера угла*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если при пересечении двух прямых третьей прямой сумма пары 
+внутренних односторонних углов равна 180 градусов, то накрест лежащие углы равны.  ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_internal_sided_angles<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_explanation;; 
+		<= nrel_sc_text_translation: 
+		...
+			(*
+				-> rrel_example: 
+						"file://Internal_sided_angle.png";;
+			*);; 
+	*);; 

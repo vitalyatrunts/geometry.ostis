@@ -1,0 +1,166 @@
+sc_node_norole_relation->nrel_edge;;
+
+nrel_edge=>nrel_main_ru_idtf:
+	[ребро*](*<-lang_ru;;*);
+	[edge*](*<-lang_en;;*);;
+
+nrel_edge=> nrel_idtf:[быть ребром*](*<-lang_ru;;*);;
+
+nrel_edge=> nrel_idtf:[ребро геометрического тела*](*<-lang_ru;;*);;
+
+nrel_edge=> nrel_idtf:[быть ребром геометрического тела*](*<-lang_ru;;*);;
+
+nrel_edge => nrel_strict_inclusion: concept_segment;;
+
+nrel_edge <- relation;;
+
+nrel_edge <- binary_relation;;
+
+nrel_edge <- oriented_relation;;
+
+nrel_edge <= nrel_definitional_domain : concept_polyhedron;;
+
+nrel_edge <= nrel_first_domain: concept_polyhedron;;
+nrel_edge <= nrel_second_domain: concept_segment;;
+
+nrel_edge <= nrel_schemes_of_relations:
+	{
+	rrel_polyhedron;
+	rrel_edge 
+	};;
+
+nrel_edge <- rrel_key_sc_element: 
+     [Опр.(ребро*);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Ребро - это общая сторона двух граней многогранника.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				nrel_face;
+				concept_polyhedron;
+				nrel_side;
+				};;
+			*);;
+		*);;
+	*);; 
+
+nrel_edge <- subject_domain_of_Euclidean_geometry;;
+
+nrel_edge <= nrel_main_statements: 
+     [Утв.(куб; ребро*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Все рёбра куба равны. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(куб; параллелепипед; ребро*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если все рёбра параллелепипеда равны, то он является кубом. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(ребро*; основание*; боковое ребро*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Ребро, не лежащее на основании, называется боковым ребром. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(правильная пирамида; боковое ребро*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Боковые ребра правильной пирамиды равны. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(пирамида; боковое ребро*; конгруэнтность*; основание*; окружность);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если все боковые ребра пирамиды равны, то около основания данной пирамиды можно описать окружность. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(пирамида; боковое ребро*; конгруэнтность*; основание*; окружность);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если все боковые ребра пирамиды равны, то около основания данной пирамиды можно описать окружность. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(пирамида; боковое ребро*; плоскость; основание*; угол*; окружность);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если все боковые ребра пирамиды наклонены к плоскости основания под одинаковым углом, то около основания такой пирамиды можно описать окружность. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+ 
+     [Утв.(прямой параллелепипед; ребро*; высота*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Ребро и высота прямого параллелепипеда конгруэнтны. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

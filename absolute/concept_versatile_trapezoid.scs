@@ -1,0 +1,39 @@
+sc_node_not_relation->concept_versatile_trapezoid;;
+
+concept_versatile_trapezoid=>nrel_main_ru_idtf:
+	[разносторонняя трапеция](*<-lang_ru;;*);
+	[versatile trapezoid](*<-lang_en;;*);;
+
+concept_versatile_trapezoid=> nrel_idtf:[Класс разносторонних трапеций](*<-lang_ru;;*);;
+
+concept_versatile_trapezoid=> nrel_idtf:[Понятие разносторонней трапеции](*<-lang_ru;;*);;
+
+concept_versatile_trapezoid=> nrel_idtf:[Множество всевозможных разносторонних трапеций](*<-lang_ru;;*);;
+
+concept_versatile_trapezoid=> nrel_idtf:[Множество знаков всевозможных разносторонних трапеций](*<-lang_ru;;*);;
+
+concept_versatile_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
+
+concept_versatile_trapezoid <- rrel_key_sc_element: 
+     [Опр.(разносторонняя трапеция);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Трапеция, у которой нет конгруэнтных сторон.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_trapezoid;
+				nrel_side
+				};;
+			*);;
+		*);;
+	*);; 
+
+concept_versatile_trapezoid <- subject_domain_of_Euclidean_geometry;;
+
+concept_versatile_trapezoid -> rrel_example : struct_Versatile_trapezoid_Z_X_C_V;;

@@ -1,0 +1,123 @@
+sc_node_not_relation->concept_triangle;;
+
+concept_triangle=>nrel_main_idtf:
+[треугольник]
+(*
+<-lang_ru;;
+*);
+[triangle]
+(*
+<-lang_en;;
+*);;
+
+concept_triangle=> nrel_idtf:[Класс треугольников](*<-lang_ru;;*);;
+
+concept_triangle=> nrel_idtf:[плоский треугольник](*<-lang_ru;;*);;
+
+concept_triangle=> nrel_idtf:[Понятие треугольника](*<-lang_ru;;*);;
+
+concept_triangle=> nrel_idtf:[Множество всевозможных треугольников](*<-lang_ru;;*);;
+
+concept_triangle=> nrel_idtf:[Множество знаков всевозможных треугольников](*<-lang_ru;;*);;
+
+concept_triangle=> nrel_idtf:[многоугольник с тремя сторонами](*<-lang_ru;;*);;
+
+concept_triangle <= nrel_strict_inclusion: concept_convex_polygon;;
+
+concept_triangle => nrel_strict_inclusion: concept_isosceles_triangle;;
+
+concept_triangle <= nrel_subdividing: 
+	{ 
+	concept_equilateral_triangle;
+	concept_strictly_isosceles_triangle;
+	concept_scalene_triangle
+	};;
+
+concept_triangle <= nrel_subdividing: 
+	{  
+	concept_acute_angled_triangle;
+	concept_rectangular_triangle;
+	concept_obtuse_triangle
+	};;
+
+
+concept_triangle -> subject_domain_of_Euclidean_geometry;;
+
+concept_triangle <- rrel_key_sc_element: 
+        [Опр.(треугольник);;] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник - это геометрическая фигура, которая является результатом объединения
+понятия линейного треугольника и множества всех точек плоскости, которые лежат между
+двух любых точек, принадлежащих этому линейному треугольнику.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_linear_treangle;
+				concept_plane;
+				concept_geometric_point;
+				rrel_between
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_triangle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв. (треугольник);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Многоугольник является треугольником в том случае, если у него три стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_triangle <= nrel_statement_of_unique_setting:
+	[Утв.(треугольник; непрямолинейная тройка точек; вершина*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник однозначно задается непрямолинейной тройкой точек, каждая из которых
+является вершиной этого треугольника.]
+			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[Для каждой непрямолинейной тройки точек существует единственный треугольник,
+вершинами которых являются указанные три точки.]
+			(* <- lang_ru;; *);;
+		
+		*);;
+	*);;
+
+concept_triangle <= nrel_main_statements:
+	
+	[Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого треугольника тройка точек, являющихся вершинами этого
+треугольника, принадлежит классу непрямолинейных фигур.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle -> rrel_example : struct_Triangle_A_B_C;;
+concept_triangle -> rrel_example : struct_Rectangular_triangle_D_F_G;;
+concept_triangle -> rrel_example : struct_Scalene_triangle_K_L_M;;
+concept_triangle -> rrel_example : struct_Obtuse_triangle_L_D_K;;
+concept_triangle -> rrel_example : struct_Acute_angled_triangle_O_S_T;;
+concept_triangle -> rrel_example : struct_Strictly_isosceles_triangle_PNK;;
+concept_triangle -> rrel_example : struct_Equilateral_triangle_X_Y_Z;;

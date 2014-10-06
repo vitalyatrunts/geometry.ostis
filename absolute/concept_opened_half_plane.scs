@@ -1,0 +1,64 @@
+﻿sc_node_not_relation->concept_opened_half_plane;;
+
+concept_opened_half_plane=> nrel_main_idtf:
+	[открытая полуплоскость]
+	(*
+	<- lang_ru;;
+	*);
+	[opened half plane]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_opened_half_plane=> nrel_idtf:[Класс открытых полуплоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Множество открытых полуплоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Множество всевозможных открытых полуплоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Канторовское множество открытых плоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[незамкнутая полуплоскость](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Класс незамкнутых полуплоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Множество незамкнутых полуплоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Множество всевозможных незамкнутых полуплоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane=> nrel_idtf:[Канторовское множество незамкнутых плоскостей](*<-lang_ru;;*);;
+
+concept_opened_half_plane <= nrel_strict_inclusion: concept_half_plane;;
+
+concept_opened_half_plane <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
+
+concept_opened_half_plane <- rrel_key_sc_element: 
+        [Опр.(открытая полуплоскость)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Открытая полуплоскость - это полуплоскость, которая не включает в себя прямую, являющуюся ее границей.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_half_plane;
+				concept_straight_line;
+				nrel_bound
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_opened_half_plane <- subject_domain_of_Euclidean_geometry;;
+
+concept_opened_half_plane <= nrel_analogue: concept_opened_ray;;
+
+concept_opened_half_plane <= nrel_analogue: concept_opened_half_space;;
+
+concept_opened_half_plane => nrel_antipode: concept_closed_half_space;;
+
+concept_opened_half_plane -> rrel_example: struct_Opened_Half_Plane_K1;;

@@ -1,0 +1,48 @@
+﻿sc_node_not_relation->concept_linear_quadrangle;;
+
+concept_linear_quadrangle=> nrel_main_idtf:
+	[линейный четырехугольник]
+	(*
+	<- lang_ru;;
+	*);
+	[linear quadrangle]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_linear_quadrangle=> nrel_idtf:[Класс линейных четырехугольников](*<-lang_ru;;*);;
+
+concept_linear_quadrangle=> nrel_idtf:[Понятие линейного четырехугольника](*<-lang_ru;;*);;
+
+concept_linear_quadrangle=> nrel_idtf:[Множество всевозможных линейных четырехугольников](*<-lang_ru;;*);;
+
+concept_linear_quadrangle=> nrel_idtf:[Множество знаков всевозможных линейных четырехугольников](*<-lang_ru;;*);;
+
+concept_linear_quadrangle <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_linear_quadrangle <= nrel_strict_inclusion: concept_linear_polygon;;
+
+concept_linear_quadrangle => nrel_strict_inclusion: concept_linear_parallelogram;;
+
+concept_linear_quadrangle <- rrel_key_sc_element: 
+     [Опр.(линейный четырехугольник)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Линейный четырёхугольник - линейный многоугольник с четырьмя внутренними углами.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				nrel_internal_angle;
+				concept_linear_polygon;
+				concept_linear_angle
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_linear_quadrangle <- subject_domain_of_Euclidean_geometry;;

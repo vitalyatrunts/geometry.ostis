@@ -1,0 +1,166 @@
+sc_node_norole_relation->nrel_center_line;;
+nrel_center_line=>nrel_main_idtf:
+	[средняя линия*]
+		(*<-lang_ru;;*);
+	[center line*]
+		(*<-lang_en;;*);;
+
+nrel_center_line=> nrel_idtf:[быть средней линией*](*<-lang_ru;;*);;
+
+nrel_center_line=> nrel_idtf:[средняя линия треугольника*](*<-lang_ru;;*);;
+
+nrel_center_line=> nrel_idtf:[быть средней линией треугольника*](*<-lang_ru;;*);;
+
+nrel_center_line=> nrel_idtf:[средняя линия четырехугольника*](*<-lang_ru;;*);;
+
+nrel_center_line=> nrel_idtf:[быть средней линией четырехугольника*](*<-lang_ru;;*);;
+
+nrel_center_line=> nrel_idtf:[средняя линия трапеции*](*<-lang_ru;;*);;
+
+nrel_center_line=> nrel_idtf:[быть средней линией трапеции*](*<-lang_ru;;*);;
+
+nrel_center_line <- nrel_relation;;
+
+nrel_center_line <- nrel_binary_relation;;
+
+nrel_center_line <- nrel_oriented_relation;;
+
+nrel_center_line <= nrel_definitional_domain : concept_triangle; concept_quadrilateral; concept_trapezoid;;
+
+nrel_center_line <= nrel_first_domain: concept_triangle; concept_quadrilateral; concept_trapezoid;;
+
+nrel_center_line <= nrel_second_domain: concept_segment;;
+
+nrel_center_line <=nrel_schemes_of_relations:
+	{
+	rrel_geometric_figure;
+	rrel_center_line 
+	};;
+
+nrel_center_line <- rrel_key_sc_element: 
+     [Опр.(средняя линия*);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Средняя линия - отрезок, соединяющий середины двух сторон данной фигуры. Для треугольинка: отрезок, соединяющий середины двух сторон этого треугольника. Для четырёхугольника: отрезок, соединяющий середины противолежащих сторон четырехугольника. Для трапеции: отрезок, соединяющий середины боковых сторон этой трапеции.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_triangle;
+				concept_quadrilateral;
+				nrel_opposite;
+				concept_trapezoid;
+				nrel_lateral_side;
+				concept_segment;
+				nrel_side;
+				nrel_middle
+				};;
+			*);;
+		*);;
+	*);; 
+
+nrel_center_line <- subject_domain_of_Euclidean_geometry;;
+
+nrel_center_line <- nrel_main_statements: 
+     [Утв.(средняя линия*; треугольник; середна*; сторона*; параллельность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Средняя линия треугольника, соединяющая середины двух сторон, параллельна третьей стороне и равна её половине. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ При проведении всех трёх средних линий образуются 4 равных треугольника, подобных исходному и меньше его в 2 раза. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*; площадь*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Средняя линия отсекает треугольник, который подобен данному, а его площадь равна одной четверти площади исходного треугольника. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(средняя линия*; четырехугольник; угол; диагональ*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если в выпуклом четырехугольнике средняя линия образует равные углы с диагоналями четырехугольника, то диагонали равны. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(средняя линия*; четырехугольник; сторона*; конгруэнтность*; параллельность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Длина средней линии четырехугольника меньше полусуммы двух других сторон или равна ей, если эти стороны параллельны, и только в этом случае. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(средняя линия*; трапеция; основание*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Средняя линия параллельна основаниям трапеции и равна их полусумме. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+ 
+     [Утв.(средняя линия*; трапеция; вершина*; ромб);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Середины сторон равнобедренной трапеции являются вершинами ромба. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

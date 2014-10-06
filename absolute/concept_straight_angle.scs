@@ -1,0 +1,42 @@
+sc_node_not_relation->concept_straight_angle;;
+
+concept_straight_angle=>nrel_main_idtf:
+	[развернутый угол](*<-lang_ru;;*);
+	[straight angle](*<-lang_en;;*);;
+
+concept_straight_angle=> nrel_idtf:[Понятие развернутого угла](*<-lang_ru;;*);;
+
+concept_straight_angle=> nrel_idtf:[Класс развернутых углов](*<-lang_ru;;*);;
+
+concept_straight_angle=> nrel_idtf:[Множество всевозможных развернутых углов](*<-lang_ru;;*);;
+
+concept_straight_angle=> nrel_idtf:[Множество знаков всевозможных развернутых углов](*<-lang_ru;;*);;
+
+concept_straight_angle <= nrel_strict_inclusion: concept_planar_angle;;
+
+concept_straight_angle <= nrel_strict_inclusion: concept_dihedral_angle;;
+
+concept_straight_angle <- rrel_key_sc_element: 
+     [Опр.(развернутый угол);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Множество является развернутым углом тогда и только тогда, когда является планарным углом и стороны которого образуют прямую.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_planar_angle;
+				concept_straight_line;
+				nrel_side
+				};;
+			*);;
+		*);;
+	*);; 
+
+concept_straight_angle <- subject_domain_of_Euclidean_geometry;;
+
+concept_straight_angle -> rrel_example : struct_Straight_angle_A_O_B;;

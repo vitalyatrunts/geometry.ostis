@@ -1,0 +1,68 @@
+﻿sc_node_norole_relation->nrel_description;;
+
+nrel_description => nrel_main_idtf:
+	[описанность*]
+	(*
+	<- lang_ru;;
+	*);
+	[description*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_description=> nrel_idtf:[быть описанной*](*<-lang_ru;;*);;
+
+nrel_description=> nrel_idtf:[быть описанной около окружности*](*<-lang_ru;;*);;
+
+nrel_description <- relation;;
+
+nrel_description <- binary_relation;;
+
+nrel_description <- oriented_relation;;
+
+nrel_description <= nrel_first_domain: concept_geometric_figure;;
+
+nrel_description <= nrel_second_domain: concept_circle;;
+
+nrel_description <= nrel_schemes_of_relations:
+	{
+	rrel_geometric_figure;
+	rrel_circle
+	};;
+
+nrel_description <- rrel_key_sc_element: 
+     [Опр.(описанность*)] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура является описаной около окружности, тогда и только тогда, когда все стороны данной геометрической фигуры, являются касательными к данной окружности.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_circle;
+				concept_geometric_figure;
+				nrel_side;
+				nrel_tangent
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_angle_measure <= nrel_main_statements:
+	[Утв.(многоугольник,,окружность,,описанность*,,вершина*,,сторона*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_description <- subject_domain_of_Euclidean_geometry;;

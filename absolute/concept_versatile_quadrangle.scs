@@ -1,0 +1,58 @@
+sc_node_not_relation->concept_versatile_quadrangle;;
+
+concept_versatile_quadrangle=>nrel_main_idtf:
+	[разносторонний четырехугольник](*<-lang_ru;;*);
+	[Versatile quadrilateral](*<-lang_en;;*);;
+
+concept_versatile_quadrangle=> nrel_idtf:[Класс разносторонних четырехугольников](*<-lang_ru;;*);;
+
+concept_versatile_quadrangle=> nrel_idtf:[Понятие разностороннего четырехугольника](*<-lang_ru;;*);;
+
+concept_versatile_quadrangle=> nrel_idtf:[Множество всевозможных разносторонних четырехугольников](*<-lang_ru;;*);;
+
+concept_versatile_quadrangle=> nrel_idtf:[Множество знаков всевозможных разносторонних четырехугольников](*<-lang_ru;;*);;
+
+concept_versatile_quadrangle <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_versatile_quadrangle <- rrel_key_sc_element: 
+     [Опр.(разносторонний четырехугольник);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Множество является разносторонним четырёхугольником тогда и только тогда, когда оно является четырёхугольником и нет его разных сторон, имеющих одну длину.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_quadrilateral;
+				nrel_length;
+				nrel_side
+				};;
+			*);;
+		*);;
+	*);; 
+
+concept_versatile_quadrangle <- subject_domain_of_Euclidean_geometry;;
+
+concept_versatile_quadrangle <= nrel_main_statements: 
+     [Утв.(многоугольник; простая замкнутая ломаная);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Каждый четырехугольник однозначно задается простой замкнутой ломанной. ]
+			(* 
+			<- lang_ru;;
+			*);
+			[ Для каждой простой замкнутой ломанной существует единственный многоугольник. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+

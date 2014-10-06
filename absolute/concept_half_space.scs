@@ -1,0 +1,82 @@
+﻿sc_node_not_relation->concept_half_space;;
+
+concept_half_space=> nrel_main_idtf:
+	[полупространство]
+	(*
+	<- lang_ru;;
+	*);
+	[half space]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_half_space=> nrel_idtf:[Класс полупространств](*<-lang_ru;;*);;
+
+concept_half_space=> nrel_idtf:[Понятие полупространств](*<-lang_ru;;*);;
+
+concept_half_space=> nrel_idtf:[Множество всевозможных полупространств](*<-lang_ru;;*);;
+
+concept_half_space <= nrel_particular_subject_domain: concept_space;;
+
+concept_half_space<= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку включения границы](*<-lang_ru;;*);;
+	->concept_closed_half_space;
+	concept_opened_half_space;;
+	*);;
+
+concept_half_space <- rrel_key_sc_element: 
+        [Опр.(полупространство)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Полупространство - это часть пространства, ограниченного какой-либо плоскостью.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_plane;
+				concept_geometric_point;
+				concept_segment;
+				nrel_bound;
+				nrel_boundary_point
+				};;
+			*);;
+                -> rrel_example: 
+			[Полупространство - это часть пространства, для любых двух точек которого выполняется условие: отрезок с концами в этих точках не пересекает плоскость, которая ограничивает эту часть пространства.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_plane;
+				concept_geometric_point;
+				concept_segment;
+				nrel_bound;
+				nrel_boundary_point
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_half_space <= nrel_main_statements:
+	
+	[Акс.(плоскость; пространство; полупространство; геометрическая точка)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждая плоскость разбивает пространство на две части(два полупространства) так, что любые две точки одного и того же полупространства лежат по одну сторону от данной плоскости, а любые две точки разных полупространств лежат по разные стороны от данной плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_half_space <- subject_domain_of_Euclidean_geometry;;
+
+concept_half_space <= nrel_analogue: concept_half_plane;;
+concept_half_space <= nrel_analogue: concept_ray;;

@@ -1,0 +1,87 @@
+sc_node_not_relation->concept_prism;;
+
+concept_prism=>nrel_main_idtf:
+[призма]
+(*
+<-lang_ru;;
+*);
+[prism]
+(*
+<-lang_en;;
+*);;
+
+concept_prism=> nrel_idtf:[Класс призм](*<-lang_ru;;*);;
+
+concept_prism=> nrel_idtf:[Понятие призмы](*<-lang_ru;;*);;
+
+concept_prism=> nrel_idtf:[Множество всевозможных призм](*<-lang_ru;;*);;
+
+concept_prism=> nrel_idtf:[Множество знаков всевозможных призм](*<-lang_ru;;*);;
+
+concept_prism <= nrel_particular_subject_domain: concept_polyhedron;;
+
+concept_prism => nrel_particular_subject_domain: concept_parallelepiped;;
+
+concept_prism => nrel_particular_subject_domain: concept_triangular_prism;;
+
+concept_prism <= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку наклонности ребер](*<-lang_ru;;*);;
+	
+	->concept_direct_prism;
+	
+	[наклонная призма];;
+	*);;
+
+concept_prism <= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку конгруэнтности сторон многоугольника, лежащего в основании](*<-lang_ru;;*);;
+	
+	->[правильная призма];
+	
+	[неправильная призма];;
+	*);;
+
+concept_prism <- rrel_key_sc_element: 
+        [Опр.(призма);;] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Призмой называют геометрическое тело, две грани которого являются конгруэнтными многоугольниками, лежащими в параллельных плоскостях, а остальные грани — параллелограммами, имеющими общие стороны с этими многоугольниками.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_body;
+				concept_polygon;
+				concept_plane;
+				concept_parallelogram;
+				nrel_side
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_prism <= nrel_main_statements:
+	
+	[Утв.(призма; объём*; площадь*; основание*; высота*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Объём любой призмы равен произведению площади основания на высоту призмы. Для каждой призмы выполняется следующее числовое соотношение: V = S*h, где S – площадь основания призмы, h – высота призмы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_prism -> subject_domain_of_Euclidean_geometry;;
+
+concept_prism -> rrel_example : struct_Prism_Q_W_E_R_T_Y;;

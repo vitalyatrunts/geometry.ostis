@@ -1,0 +1,74 @@
+sc_node_not_relation->concept_direct_prism;;
+
+concept_direct_prism=>nrel_main_idtf:
+[прямая призма]
+(*
+<-lang_ru;;
+*);
+[direct prism]
+(*
+<-lang_en;;
+*);;
+
+concept_direct_prism=> nrel_idtf:[Класс прямых призм](*<-lang_ru;;*);;
+
+concept_direct_prism=> nrel_idtf:[Понятие прямой призмы](*<-lang_ru;;*);;
+
+concept_direct_prism=> nrel_idtf:[Множество всевозможных прямых призм](*<-lang_ru;;*);;
+
+concept_direct_prism=> nrel_idtf:[Множество знаков всевозможных прямых призм](*<-lang_ru;;*);;
+
+concept_direct_prism <= nrel_strict_inclusion: concept_prism;;
+
+concept_direct_prism <- rrel_key_sc_element: 
+        [Опр.(прямая призма);;] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямая призма - это призма, у которой все боковые ребра перпендикулярны основанию.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_prism;
+				[боковое ребро*];
+				nrel_perpendicular;
+				nrel_base
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_direct_prism  <= nrel_main_statements:
+	
+	[Утв.(прямая призма; боковая поверхность*; площадь*; периметр*; основание*; длина*; боковое ребро*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Площадь боковой поверхности прямой призмы равна произведению периметра основания на длину бокового ребра.]
+			(* <- lang_ru;; *);
+			[ Для каждой прямой призмы выполняется следующее числовое соотношение: S = p * l, где p – периметр основания призмы, l – длина бокового ребра.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(прямая призма; боковое ребро*; высота*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ В прямой призме боковые ребра являются высотами.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_direct_prism -> subject_domain_of_Euclidean_geometry;;

@@ -1,0 +1,37 @@
+sc_node_not_relation->struct_Right_Circular_Cone_L_O_R;;
+struct_Right_Circular_Cone_L_O_R=>nrel_main_ru_idtf:[Прямой круговой конус LOR];;
+
+struct_Right_Circular_Cone_L_O_R=> nrel_idtf:[Прямой конус LOR](*<-lang_ru;;*);;
+
+struct_Right_Circular_Cone_L_O_R=> nrel_idtf:[Круговой конус LOR](*<-lang_ru;;*);;
+
+struct_Right_Circular_Cone_L_O_R -> concept_direct_cone;;
+
+struct_Right_Circular_Cone_L_O_R -> concept_circular_cone;;
+
+struct_Right_Circular_Cone_L_O_R <- rrel_key_sc_element: 
+...
+(*
+<-image;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://images/Cone L.png";;
+*);;
+*);;
+
+struct_Right_Circular_Cone_L_O_R  <= nrel_main_statements:
+	
+	[Факт.утв.(Прямой круговой конус LOR);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Прямой круговой конус LOR является прямым, круговым. Геометрическая точка L является вершиной конуса LOR. Линия l является образующей конуса LOR. Круг OR является основанием конуса LOR. Геометрическая точка O является центром основания конуса LOR. Отрезок r является радиусом основания конуса LOR. Отрезок h является высотой конуса LOR.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

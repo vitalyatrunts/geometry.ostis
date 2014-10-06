@@ -1,0 +1,74 @@
+﻿sc_node_norole_relation->nrel_angle_measure;;
+
+nrel_angle_measure=> nrel_main_idtf:
+	[мера угла*]
+	(*
+	<- lang_ru;;
+	*);
+	[angle measure*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_angle_measure=> nrel_idtf:[быть мерой угла*](*<-lang_ru;;*);;
+
+nrel_angle_measure=> nrel_idtf:[градусная мера угла*](*<-lang_ru;;*);;
+
+nrel_angle_measure=> nrel_idtf:[быть градусной мерой угла*](*<-lang_ru;;*);;
+
+nrel_angle_measure=> nrel_idtf:[радианная мера угла*](*<-lang_ru;;*);;
+
+nrel_angle_measure=> nrel_idtf:[быть радианной мерой угла*](*<-lang_ru;;*);;
+
+nrel_angle_measure <- relation;;
+
+nrel_angle_measure <- binary_relation;;
+
+nrel_angle_measure <- oriented_relation;;
+
+nrel_angle_measure <= nrel_domain_of_definition : concept_angle;;
+
+nrel_angle_measure <= nrel_first_domain: concept_angle;;
+
+nrel_angle_measure <= nrel_second_domain: concept_set_of_variables;;
+
+nrel_angle_measure<= nrel_schemes_of_relations:
+     {
+	rrel_angle;
+	rrel_angle_measure
+     };;
+
+nrel_angle_measure <- rrel_key_sc_element: 
+     [Опр.(мера угла*)] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Мера угла - количество градусов, полученное при измерении угла.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				rrel_angular_degree;
+				concept_angle
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_angle_measure <= nrel_main_statements:
+	[Утв.(угол; конгруэнтность*; угловая мера*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтные углы имеют одинаковую угловую меру.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_angle_measure <- subject_domain_of_Euclidean_geometry;;

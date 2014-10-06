@@ -1,0 +1,68 @@
+﻿sc_node_not_relation->concept_planar_angle;;
+
+planar_angle=> nrel_main_idtf:
+	[планарный угол]
+	(*
+	<- lang_ru;;
+	*);
+	[planar angle]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_planar_angle=> nrel_idtf:[Класс планарных углов](*<-lang_ru;;*);;
+
+concept_planar_angle=> nrel_idtf:[Понятие планарного угла](*<-lang_ru;;*);;
+
+concept_planar_angle=> nrel_idtf:[Множество планарных углов](*<-lang_ru;;*);;
+
+concept_planar_angle=> nrel_idtf:[Множество знаков планарных углов](*<-lang_ru;;*);;
+
+concept_planar_angle <=nrel_strict_inclusion: concept_planar_figure;;
+
+concept_planar_angle <= nrel_strict_inclusion: concept_angle;;
+
+concept_planar_angle<= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку величины меры угла](*<-lang_ru;;*);;
+	-> concept_acute_angle;
+	concept_right_angle;
+	concept_obtuse_angle;
+	concept_straight_angle;
+	concept_non_convex_angle;
+	concept_full_angle;
+	concept_zero_angle;;
+	*);;
+
+concept_planar_angle<- rrel_key_sc_element: 
+        [Опр.(планарный угол] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Планарным углом называется геометрическая фигура неограниченного размера, образованная двумя закрытыми лучами, выходящими из одной точки, и всеми точками плоскости, заключёнными между этими лучами.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_point;
+                                concept_geometric_figure;
+				concept_plane;
+				concept_closed_ray
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_planar_angle <- subject_domain_of_Euclidean_geometry;;
+
+concept_planar_angle -> rrel_example: Угол ABK;;
+concept_planar_angle -> rrel_example: Угол AOB;;
+concept_planar_angle -> rrel_example: Угол KLM;;
+concept_planar_angle -> rrel_example: Угол NKN;;
+concept_planar_angle -> rrel_example: Угол PKP;;
+concept_planar_angle -> rrel_example: Угол PTR;;
+concept_planar_angle -> rrel_example: Угол TPR;;

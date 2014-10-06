@@ -1,0 +1,181 @@
+﻿sc_node_not_relation->concept_convex_polygon;;
+
+concept_convex_polygon=>nrel_main_idtf:
+[выпуклый многоугольник]
+(*
+<-lang_ru;;
+*);
+[convex polygon]
+(*
+<-lang_en;;
+*);;
+
+concept_convex_polygon=> nrel_idtf:[Класс выпуклых многоугольников](*<-lang_ru;;*);;
+
+concept_convex_polygon=> nrel_idtf:[Понятие выпуклого многоугольника](*<-lang_ru;;*);;
+
+concept_convex_polygon=> nrel_idtf:[Множество всевозможных выпуклых многоугольников](*<-lang_ru;;*);;
+
+concept_convex_polygon=> nrel_idtf:[Множество знаков всевозможных выпуклых многоугольников](*<-lang_ru;;*);;
+
+concept_convex_polygon <= nrel_strict_inclusion: concept_polygon;;
+
+concept_convex_polygon <- rrel_key_sc_element : 
+	[Опр.(выпуклый многоугольник);;]
+	(*
+	<- sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Выпуклый многоугольник - это многоугольник, лежащий в одной полуплоскости 
+относительно любой прямой содержащей его сторону. ]
+			(*
+			<- lang_ru;;
+			<= nrel_using_constants:
+				{
+				concept_polygon;
+				concept_half_plane;
+				concept_straight_line;
+				nrel_side
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_convex_polygon <= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку количества сторон](*<-lang_ru;;*);;
+
+	->concept_triangle;
+	  concept_quadrilateral;
+	  concept_pentagon;	
+	  concept_hexagon;;
+	*);;
+
+concept_convex_polygon <= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку конгруэнтности сторон](*<-lang_ru;;*);;
+	
+	->
+	  concept_regular_polygon;	
+	  irregular_polygon;;
+	*);;
+
+concept_convex_polygon -> subject_domain_of_Euclidean_geometry;;
+
+concept_convex_polygon <= nrel_main_statements:
+	
+	[Утв.(выпуклый многоугольник; внешний угол*; вершина*; смежность*; внутренний угол*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Внешним углом выпуклого многоугольника при данной вершине называется угол, 
+смежный с внутренним углом данного многоугольника при этой вершине.]
+			(* <- lang_ru;; *);;
+		
+		*);;
+	*);
+
+	[Утв.(выпуклый многоугольник; внутренний угол*; градусная мера*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Все внутренние углы выпуклого многоугольника меньше 180°.]
+			(* <- lang_ru;; *);;
+		
+		*);;
+	*);
+
+	[Утв.(выпуклый многоугольник; внутренний угол*; сумма*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сумма внутренних углов выпуклого многоугольника равна 180°.]
+			(* <- lang_ru;; *);;
+		
+		*);;
+	*);
+
+	[Утв.(выпуклый многоугольник; внешний угол*; сумма*; вершина*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сумма внешних углов выпуклого многоугольника, взятых по одному при каждой вершине, равна 360°.]
+			(* <- lang_ru;; *);;
+		
+		*);;
+	*);
+
+	[Утв.(выпуклый многоугольник; внешний угол*; диагональ*; вершина*; треугольник);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В выпуклом многоугольнике из каждой вершины можно провести n - 3 (n - число сторон многоугольника) диагонали, 
+которые разбивают многоугольник на n - 2 треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(выпуклый многоугольник; диагональ*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В выпуклом многоугольнике число диагоналей равно n*(n-3)/2 , где n - число сторон данного многоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_convex_polygon -> rrel_example : struct_Polygon_K_A_B_C_D_E;;
+
+concept_convex_polygon -> rrel_example : struct_Regular_Polyhon_A_B_C_D_E_F;;
+
+concept_convex_polygon -> rrel_example : struct_Irregular_polygon_K_A_B_C_D_E;;
+
+concept_convex_polygon -> rrel_example : struct_Triangle_A_B_C;;
+
+concept_convex_polygon -> rrel_example : struct_Rectangular_triangle_D_F_G;;
+
+concept_convex_polygon -> rrel_example : struct_Scalene_triangle_K_L_M;;
+
+concept_convex_polygon -> rrel_example : struct_Obtuse_triangle_L_D_K;;
+
+concept_convex_polygon -> rrel_example : struct_Acute_angled_triangle_O_S_T;;
+
+concept_convex_polygon -> rrel_example : struct_Strictly_isosceles_triangle_PNK;;
+
+concept_convex_polygon -> rrel_example : struct_Equilateral_triangle_X_Y_Z;;
+
+concept_convex_polygon -> rrel_example : struct_Square_A_B_C_D;;
+
+concept_convex_polygon -> rrel_example : struct_Rhomb_E_F_G_H;;
+
+concept_convex_polygon -> rrel_example : struct_Isosceles_trapeze_K_L_M_N;;
+
+concept_convex_polygon -> rrel_example : struct_Rectangular_trapeze_P_Q_R_S;;
+
+concept_convex_polygon -> rrel_example : struct_Versatile_trapezoid_Z_X_C_V;;
+
+concept_convex_polygon -> rrel_example : struct_Parallelogram_A_B_C_D;;
+
+concept_convex_polygon -> rrel_example : struct_Rectangle_B_C_D_E;;

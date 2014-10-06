@@ -1,0 +1,129 @@
+﻿sc_node_norole_relation->nrel_perpendicularity;;
+
+nrel_perpendicularity => nrel_main_idtf:
+	[перпендикулярность*]
+	(*
+	<- lang_ru;;
+	*);
+	[perpendicularity*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_perpendicularity=> nrel_idtf:[перпендикулярность геометрических фигур](*<-lang_ru;;*);;
+
+nrel_perpendicularity <- relation;;
+
+nrel_perpendicularity <- binary_relation;;
+
+nrel_perpendicularity <- not_oriented_relation;;
+
+nrel_perpendicularity <= nrel_definitional_domain: concept_planar_figure;;
+
+nrel_perpendicularity <= nrel_first_domain: concept_planar_figure;;
+
+nrel_perpendicularity <= nrel_second_domain: concept_planar_figure;;
+
+nrel_perpendicularity<= nrel_schemes_of_relations:
+     {
+	rrel_planar_figure;
+	rrel_planar_figure
+     };;
+
+nrel_perpendicularity<- rrel_key_sc_element: 
+     [Опр.(перпендикулярность*);;] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Две пересекающиеся геометрические фигуры являются перпендикулярными, если любые два луча такие, что один из них принадлежит одной из исходных фигур, второй принадлежит другой фигуре и оба имеют общую граничную точку, принадлежащую пересечению исходных фигур, образуют прямой угол. ]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_ray;
+				concept_right_angle;
+				nrel_boundary_point
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_perpendicular <= nrel_main_statements:
+	[Утв.(пересекающиеся прямые*; перпендикулярность*; прямой угол)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Перпендикулярными называются прямые, которые пересекаются под прямым углом.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(плоскость; перпендикулярность*; линейный угол; двугранный угол; ребро*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Две плоскости называются перпендикулярными, если линейный угол при ребре двугранного угла между этими плоскостями — прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(прямая; геометрическая точка; перпендикулярность*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Через каждую точку можно провести одну прямую, перпендикулярную данной.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(плоскость; прямая; перпендикулярность*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если плоскость проходит через прямую, перпендикулярную другой плоскости, то эти плоскости перпендикулярны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(плоскость; геометрическая точка; перпендикулярность*; перпендикуляр*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если из точки, принадлежащей одной из двух перпендикулярных плоскостей, провести перпендикуляр к другой плоскости, то это перпендикуляр полностью лежит в первой плоскости. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(плоскость; перпендикулярность*; перпендикуляр*; линия; пересечение*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если в одной из двух перпендикулярных плоскостей провести перпендикуляр к их линии пересечения, то этот перпендикуляр будет перпендикулярен второй плоскости. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+nrel_perpendicularity <- subject_domain_of_Euclidean_geometry;;

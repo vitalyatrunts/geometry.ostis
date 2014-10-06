@@ -1,0 +1,22 @@
+sc_node_norole_relation->nrel_opposite_directed_beams;;
+
+nrel_opposite_directed_beams=>nrel_main_ru_idtf:[противоположно направленные лучи*];;
+
+nrel_opposite_directed_beams <= nrel_first_domain: concept_ray;;
+
+nrel_opposite_directed_beams <= nrel_second_domain: concept_ray;;
+
+nrel_opposite_directed_beams <= nrel_main_statements:
+	[Утв.(луч; полупрямая; сонаправленные лучи*; дополнительные лучи*; противоположно направленные лучи*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если каждый из двух лучей (или двух полупрямых) одинаково направлен с лучом (или полупрямой), дополнительным к другому, то эти лучи (или полупрямые) называются противоположно направленными.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_opposite_directed_beams -> subject_domain_of_Euclidean_geometry;;

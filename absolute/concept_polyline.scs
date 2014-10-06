@@ -1,0 +1,96 @@
+sc_node_not_relation->concept_polyline;;
+
+concept_polyline=> nrel_main_idtf:
+	[ломаная]
+	(*
+	<- lang_ru;;
+	*);
+	[polyline]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_polyline=> nrel_idtf:[Простая цепь отрезков](*<-lang_ru;;*);;
+
+concept_polyline=> nrel_idtf:[Класс ломаная](*<-lang_ru;;*);;
+
+concept_polyline=> nrel_idtf:[Понятие ломаной](*<-lang_ru;;*);;
+
+concept_polyline=> nrel_idtf:[Множество ломаных](*<-lang_ru;;*);;
+
+concept_polyline=> nrel_idtf:[Множество всевозможных ломаных](*<-lang_ru;;*);;
+
+concept_polyline=> nrel_idtf:[Множество разных ломаных](*<-lang_ru;;*);;
+
+concept_polyline <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
+
+concept_polyline <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
+
+concept_polyline <= nrel_strict_inclusion: concept_planar_line;;
+
+concept_polyline <= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[по признаку наличия самопересечений](*<-lang_ru;;*);;
+	-> concept_simple_broken_line;
+	concept_complex_polygonal_line;;
+	*);;
+
+concept_polyline <- rrel_key_sc_element: 
+     [Опр.(ломаная)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура, состоящая из множества геометрических точек и множества отрезков, соединяющих эти точки, и граничные точки этих отрезков не лежат на одной прямой.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				nrel_boundary_point;
+				concept_segment;
+                    concept_non_linear_geometric_figure;
+				concept_geometric_point
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_polyline <= nrel_main_statements:
+	[Утв.(ломаная; граничная точка*; отрезок; длина*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина ломаной не меньше длины отрезка, соединяющего ее концы. .]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polyline <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_explanation;; 
+		<= nrel_sc_text_translation: 
+		...
+			(*
+              	-> rrel_example: 
+			[Пример простой ломаной]
+			(* <- lang_ru;; *);;
+			-> rrel_example: 
+			"file://LomanajaKMNLST.png";;
+               -> rrel_example: 
+			[Пример сложной ломаной]
+			(* <- lang_ru;; *);;
+               -> rrel_example: 
+			"file://LomanajaLMNOPR.png";;
+			*);; 
+	*);;
+
+concept_polyline <- subject_domain_of_Euclidean_geometry;;
+
+

@@ -1,0 +1,33 @@
+﻿sc_node_not_relation->struct_Geometric_figure_g_k;;
+
+struct_Geometric_figure_g_k=>nrel_main_ru_idtf:[Геометрическая фигура gk];;
+
+struct_Geometric_figure_g_k=> nrel_idtf:[Геометрическая фигура (g;k) ]
+(*
+<-lang_ru;;
+*);;
+
+struct_Geometric_figure_g_k=> nrel_idtf:[Геометрическая фигура gk, внутри которой есть пустоты ]
+(*
+<-lang_ru;;
+*);;
+
+struct_Geometric_figure_g_k -> concept_geometric_figure_with_voids;;
+
+struct_Geometric_figure_g_k <= nrel_main_statements:
+	[Факт.утв.(Геометрическая фигура gk;;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[gk - геометрическая фигура, внутри которой есть пустоты.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+
+
+

@@ -1,0 +1,61 @@
+﻿sc_node_norole_relation->nrel_generatrix;;
+
+nrel_generatrix=> nrel_main_idtf:
+	[образующая*]
+	(*
+	<- lang_ru;;
+	*);
+	[generatrix*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_generatrix=> nrel_idtf:[быть образующей*](*<-lang_ru;;*);;
+
+nrel_generatrix=> nrel_idtf:[образующая геометрического тела*](*<-lang_ru;;*);;
+
+nrel_generatrix=> nrel_idtf:[быть образующей геометрического тела*](*<-lang_ru;;*);;
+
+nrel_generatrix <- relation;;
+
+nrel_generatrix <- binary_relation;;
+
+nrel_generatrix <- oriented_relation;;
+
+nrel_generatrix <= nrel_definitional_domain : concept_cone;;
+
+nrel_generatrix <= nrel_definitional_domain : concept_cylinder;;
+
+nrel_generatrix <= nrel_first_domain: concept_cone;;
+
+nrel_generatrix <= nrel_first_domain: concept_cylinder;;
+
+nrel_generatrix <= nrel_second_domain: concept_line;;
+
+nrel_generatrix<= nrel_schemes_of_relations:
+     {
+	rrel_geometric_body;
+	rrel_generatrix
+     };;
+
+nrel_generatrix <- rrel_key_sc_element: 
+     [Опр.(образующая*)] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Образующая - это линия, вращением которой образуется какая-либо поверхность.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_line;
+				concept_surface
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_generatrix <- subject_domain_of_Euclidean_geometry;;

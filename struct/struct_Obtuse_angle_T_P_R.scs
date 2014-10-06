@@ -1,0 +1,36 @@
+sc_node_not_relation -> struct_Obtuse_angle_T_P_R;;
+
+struct_Obtuse_angle_T_P_R => nrel_main_ru_idtf:[Тупой угол TPR];;
+
+struct_Obtuse_angle_T_P_R => nrel_idtf:[Тупой угол(T; P; R)](*<-lang_ru;;*);;
+
+struct_Obtuse_angle_T_P_R -> concept_obtuse_angle;;
+
+struct_Obtuse_angle_T_P_R <- rrel_key_sc_element: 
+	...
+	(*
+		<-image;;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://images/angle_TPR.png";;
+			*);;
+	*);;
+
+struct_Obtuse_angle_T_P_R <= nrel_main_statements:
+	
+	[Факт.утв.(Тупой угол TPR);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Угол TPR является тупым.
+T, P и R являются геометрическими точками. Геометрическая точка P является вершиной угла TPR.
+Лучи PT и PR являются сторонами угла TPR.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

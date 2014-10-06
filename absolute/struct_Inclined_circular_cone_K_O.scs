@@ -1,0 +1,45 @@
+﻿sc_node_not_relation -> struct_Inclined_circular_cone_K_O;;
+
+struct_Inclined_circular_cone_K_O => nrel_main_idtf:
+	[Наклонный круговой конус KL]
+	(*
+	<- lang_ru;;
+	*);
+	[Inclined circular cone KL]
+	(*
+	<- lang_en;;
+	*);;
+
+struct_Inclined_circular_cone_K_O <- concept_inclined_cone;;
+
+struct_Inclined_circular_cone_K_O <- concept_circular_cone;;
+
+struct_Inclined_circular_cone_K_O <= nrel_main_statements:
+	[Факт.утв.(Наклонный круговой конус KO);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[KO ∈ concept_inclined_cone;
+KO ∈ concept_circular_cone;
+K, O, O1 ∈ concept_geometric_point, <KO, K> ∈ nrel_vertex, <KO, O> ∈ nrel_centre, <K, O1> ∈ nrel_orthogonal_projection;
+l ∈ concept_line, <KO, l> ∈ nrel_generatrix;
+h ∈ concept_segment, <KO, h> ∈ nrel_height;
+r ∈ concept_segment, <KO, r> ∈ nrel_radius;.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Inclined_circular_cone_K_O<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_explanation;; 
+		<= nrel_sc_text_translation: 
+		...
+			(*
+				-> rrel_example: 
+						"file://Cone KO.png";;
+			*);; 
+	*);; 

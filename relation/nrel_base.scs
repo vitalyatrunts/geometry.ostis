@@ -1,0 +1,69 @@
+﻿sc_node_norole_relation->nrel_base;;
+
+nrel_base -> nrel_main_idtf:
+	[основание*]
+	(*
+	<- lang_ru;;
+	*);
+	[base*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_base=> nrel_idtf:[быть основанием*](*<-lang_ru;;*);;
+
+nrel_base=> nrel_idtf:[основание геометрической фигуры*](*<-lang_ru;;*);;
+
+nrel_base=> nrel_idtf:[быть основанием геометрической фигуры*](*<-lang_ru;;*);;
+
+nrel_base <- relation;;
+
+nrel_base <- binary_relation;;
+
+nrel_base <= nrel_definitional_domain: concept_polygon;;
+
+nrel_base <= nrel_definitional_domain: concept_polyhedron;; 
+
+nrel_base <= nrel_definitional_domain: concept_solid_of_revolution;;
+
+nrel_base <= nrel_first_domain: concept_polygon;;
+
+nrel_base <= nrel_first_domain: concept_polyhedron;;
+
+nrel_base <= nrel_first_domain: concept_solid_of_revolution;;
+
+nrel_base <= nrel_second_domain: concept_segment;;
+
+nrel_base <= nrel_second_domain: concept_plane;;
+
+nrel_base <= nrel_schemes_of_relations:
+	{
+	rrel_geometric_figure;
+	rrel_base
+	};;
+
+nrel_base <- rrel_key_sc_element: 
+     [Опр.(основание*);;] 
+	(*
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сторона геометрической фигуры или плоскость геометрического тела, перпендикулярные их высоте.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_plane;
+				concept_geometric_figure;
+				nrel_side;
+				concept_geometric_body;
+				nrel_perpendicularity;
+				nrel_height
+				};;
+			*);;
+		*);;
+	*);;
+
+nrel_base<- subject_domain_of_Euclidean_geometry;;

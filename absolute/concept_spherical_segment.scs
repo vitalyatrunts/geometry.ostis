@@ -1,0 +1,69 @@
+sc_node_not_relation->concept_spherical_segment;;
+
+concept_spherical_segment=>nrel_main_idtf:
+[шаровой сегмент]
+(*
+<-lang_ru;;
+*);
+[spherical_segment]
+(*
+<-lang_en;;
+*);;
+
+concept_spherical_segment=> nrel_idtf:[Класс шаровых сегментов](*<-lang_ru;;*);;
+
+concept_spherical_segment=> nrel_idtf:[Понятие шарового сегмента](*<-lang_ru;;*);;
+
+concept_spherical_segment=> nrel_idtf:[Множество всевозможных шаровых сегментов](*<-lang_ru;;*);;
+
+concept_spherical_segment=> nrel_idtf:[Множество знаков всевозможных шаровых сегментов](*<-lang_ru;;*);;
+
+concept_spherical_segment <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_spherical_segment <- rrel_key_sc_element: 
+        [Опр.(шаровой сегмент);;] 
+	(*
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сегмент это часть шара, отсекаемая от нее плоскостью.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_ball;
+				concept_plane
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_spherical_segment <= nrel_statement_of_unique_setting:
+	[Утв.(шаровой сегмент; основание*; круг; секущая*; плоскость; шар);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Основанием шарового сегмента называется круг, по которому секущая плоскость пересекает шар.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+
+concept_spherical_segment <= nrel_statement_of_unique_setting:
+	[Утв.(шаровой сегмент; секущая*; плоскость; шар);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Каждая секущая плоскость рассекает шар на два сегмента. ]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+
+concept_spherical_segment -> subject_domain_of_Euclidean_geometry;;

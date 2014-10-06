@@ -1,0 +1,94 @@
+sc_node_not_relation->concept_rectangular_parallelepiped;;
+
+concept_rectangular_parallelepiped=>nrel_main_idtf:
+[прямоугольный параллелепипед]
+(*
+<-lang_ru;;
+*);
+[rectangular parallelepiped]
+(*
+<-lang_en;;
+*);;
+
+concept_rectangular_parallelepiped=> nrel_idtf:[Класс прямоугольных параллелепипедов](*<-lang_ru;;*);;
+
+concept_rectangular_parallelepiped=> nrel_idtf:[Понятие прямоугольного параллелепипеда](*<-lang_ru;;*);;
+
+concept_rectangular_parallelepiped=> nrel_idtf:[Множество всевозможных прямоугольных параллелепипедов](*<-lang_ru;;*);;
+
+concept_rectangular_parallelepiped=> nrel_idtf:[Множество знаков всевозможных прямоугольных параллелепипедов](*<-lang_ru;;*);;
+
+concept_rectangular_parallelepiped <- rrel_key_sc_element: 
+        [Опр.(прямоугольный параллелепипед);;] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямоугольный параллелепипед - это параллелепипед, у которого все грани являются прямоугольниками.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_polyhedron;
+				nrel_face;
+				concept_square
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_rectangular_parallelepiped <= nrel_main_statements:
+	
+	[Утв.(прямоугольный параллелепипед; ребро*; вершина*; перпендикулярность*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Три ребра прямоугольного параллелепипеда, имеющуе общую вершину, взаимно перпендикулярны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(прямоугольный параллелепипед; диагональ*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Все диагонали прямоугольного параллелепипеда равны. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(прямоугольный параллелепипед; диагональ*; высота*; ширина*; длина*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Квадрат длины диагонали прямоугольного параллелепипеда равен сумме квадратов его измерений. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(прямоугольный параллелепипед; длина*; ширина*; высота*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Объем прямоугольного параллелепипеда равен произведению трех его измерений.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_rectangular_parallelepiped <= nrel_strict_inclusion: concept_parallelepiped;;
+
+concept_rectangular_parallelepiped -> subject_domain_of_Euclidean_geometry;;

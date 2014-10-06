@@ -1,0 +1,158 @@
+sc_node_not_relation->concept_sphere;;
+
+concept_sphere=>nrel_main_idtf:
+	[сфера](*<-lang_ru;;*);
+	[sphere](*<-lang_en;;*);;
+
+concept_sphere=> nrel_idtf:[Класс сфер](*<-lang_ru;;*);;
+
+concept_sphere=> nrel_idtf:[Понятие сферы](*<-lang_ru;;*);;
+
+concept_sphere=> nrel_idtf:[Множество всевозможных сфер](*<-lang_ru;;*);;
+
+concept_sphere=> nrel_idtf:[Множество всевозможных знаков сфер](*<-lang_ru;;*);;
+
+concept_sphere <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_sphere <- rrel_key_sc_element: 
+     [Опр.(сфера);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сфера - это тело вращения, образованное при вращении полуокружности вокруг своего диаметра.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_solid_of_revolution;
+				concept_circle;
+				nrel_diameter 
+				};;
+			*);;
+		*);;
+	*);; 
+
+concept_sphere <- subject_domain_of_Euclidean_geometry;;
+
+concept_sphere <= nrel_main_statements: 
+     [Утв.(сфера; окружность; секущая*; плоскость);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Всякое сечение сферы плоскостью есть окружность. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+ 
+     [Утв.(сфера; площадь*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Для каждой сферы выполняется следующее числовое соотношение]
+			(* 
+			<- lang_ru;;
+			*);
+		"file://images/concept_sphere.png";
+			[ где S - площадь указанной сферы, r - радиус указанной сферы, d - диаметр указанной сферы. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(сфера; поверхность; шар);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сфера является поверхностью шара. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(сфера; пирамида; плоскость; описанность*; основание*; перпендикулярность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Центр сферы, описанной около пирамиды, перпендикулярен к плоскости основания пирамиды. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(сфера; многогранник; описанность*; вершина*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сфера является описанной около многогранника, если все вершины многогранника лежат на сфере. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(сфера; пирамида; окружность; описанность*; основание*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сфера является описанной около пирамиды тогда и только тогда, когда около основания пирамиды можно описать окружность. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(сфера; призма; окружность; прямая призма; описанность*; основание*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Сфера является описанной около призмы тогда и только тогда, когда призма прямая и около её основания можно описать окружность. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     [Утв.(сфера; куб; длина; вписанность*; диаметр*; ребро*; конгруэнтность*);;] 
+	(*
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Диаметр сферы, вписанной в куб, равен длине ребра куба. ]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+concept_sphere -> rrel_example : struct_Sphere_A_R;;

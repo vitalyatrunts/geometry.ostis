@@ -1,0 +1,44 @@
+﻿sc_node_not_relation->concept_non_planar_surface;;
+
+concept_non_planar_surface=> nrel_main_idtf:
+	[непланарная поверхность]
+	(*
+	<- lang_ru;;
+	*);
+	[non planar surface]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_non_planar_surface=> nrel_idtf:[Класс непланарных поверхностей](*<-lang_ru;;*);;
+
+concept_non_planar_surface=> nrel_idtf:[Множество всевозможных непланарных поверхностей](*<-lang_ru;;*);;
+
+concept_non_planar_surface=> nrel_idtf:[Множество знаков всевозможных непланарных поверхностей](*<-lang_ru;;*);;
+
+concept_non_planar_surface <= nrel_strict_inclusion: concept_surface;;
+
+concept_non_planar_surface <- rrel_key_sc_element: 
+     [Поясн.(непланарная поверхность)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Поверхность, для которой не существует плоскости такой, что любая точка поверхности принадлежит данной плоскости.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_surface
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_non_planar_surface <= nrel_antipode: concept_plane;;
+
+concept_non_planar_surface <- subject_domain_of_Euclidean_geometry;;
+
+concept_non_planar_surface -> rrel_example : struct_Sphere_A_R;;

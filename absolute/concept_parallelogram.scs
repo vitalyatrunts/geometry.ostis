@@ -1,0 +1,184 @@
+﻿sc_node_not_relation->concept_parallelogram;;
+
+concept_parallelogram=> nrel_main_idtf:
+	[параллелограмм]
+	(*
+	<- lang_ru;;
+	*);
+	[parallelogram]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_parallelogram=> nrel_idtf:[плоский параллелограмм](*<-lang_ru;;*);;
+
+concept_parallelogram=> nrel_idtf:[Класс параллелограммов](*<-lang_ru;;*);;
+
+concept_parallelogram=> nrel_idtf:[Понятие параллелограмма](*<-lang_ru;;*);;
+
+concept_parallelogram=> nrel_idtf:[Множество всевозможных параллелограммов](*<-lang_ru;;*);;
+
+concept_parallelogram=> nrel_idtf:[Множество знаков всевозможных параллелограммов](*<-lang_ru;;*);;
+
+concept_parallelogram <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_parallelogram  => nrel_strict_inclusion: concept_rectangle;;
+
+concept_parallelogram  => nrel_strict_inclusion: concept_rhomb;;
+
+concept_parallelogram  => nrel_strict_inclusion: concept_linear_parallelogram;;
+
+concept_parallelogram <- rrel_key_sc_element: 
+        [Опр.(параллелограмм)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Параллелограмм - часть плоскости, ограниченная линейным параллелограммом.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_linear_parallelogram;
+				nrel_bound
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_parallelogram <= nrel_main_statements:
+	
+	[Утв.(параллелограмм; внутренний угол*; сторона*; прилежащий*; мера угла*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+                -> rrel_example: 
+			"file://formula5.png";;
+		-> rrel_example: 
+			[Сумма мер двух углов, прилежащих к одной стороне параллелограмма, равна 180 угловых градусов.
+alpha,beta - градусные меры углов, прилежащих к одной стороне параллелограмма.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; противолежащие*; сторона*; конгруэнтность*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Длины противолежащих сторон параллелограмма равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; внутренний угол*; противолежащий*; конгруэнтность*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Меры противолежащих углов параллелограмма равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; сторона*; диагональ*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+                    -> rrel_example: 
+			"file://formula6.png";;
+		-> rrel_example: 
+			[Сумма квадратов длин диагоналей параллелограмма равна сумме квадратов его сторон.
+a1, a2 - величины длин сторон параллелограмма,
+d1, d2 - величины длин диагоналей этого параллелограмма.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; внутренний угол*; биссектриса*; равнобедренный треугольник)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Биссектриса угла параллелограмма отсекает от него равнобедренный треугольник. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; противолежащие*; внутренний угол*; биссектриса*; параллельность*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Биссектрисы противолежащих углов параллелограмма параллельны или лежат на одной прямой. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; площадь*; высота*; сторона*)]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+                -> rrel_example: 
+		"file://formula7.png";;
+		-> rrel_example: 
+			[Площадь параллелограмма равна произведению его основания на высоту.
+S - площадь параллелограмма,a - величина длины стороны этого параллелограмма,
+h_a - величина высоты, проведённой к стороне a этого параллелограмма.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; площадь*; сторона*; вершина*; внутренний угол*; синус*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+                -> rrel_example: 
+		"file://formula8.png";;
+		-> rrel_example: 
+			[ Площадь параллелограмма равна произведению длин его смежных сторон на синус меры угла между ними.
+где S - площадь параллелограмма,
+a1, a2 - смежные стороны этого параллелограмма,
+alpha - градусная мера угла, лежащего между смежными сторонами этого параллелограмма. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	[Утв.(параллелограмм; площадь*; диагональ*; синус*);;]
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+                  -> rrel_example: 
+		"file://formula9.png";;
+		-> rrel_example: 
+			[ Площадь параллелограмма равна половине произведения длин диагоналей на синус меры угла между ними, где
+S - площадь параллелограмма,
+d1, d2 - величины длин диагоналей этого параллелограмма,
+alpha - градусная мера угла, лежащего между диагоналями этого параллелограмма.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_parallelogram <- subject_domain_of_Euclidean_geometry;;
+
+concept_parallelogram -> rrel_example: struct_Parallelogram_A_B_C_D;;

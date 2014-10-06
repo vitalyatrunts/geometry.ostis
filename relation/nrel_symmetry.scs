@@ -1,0 +1,41 @@
+sc_node_norole_relation->nrel_symmetry;;
+
+nrel_symmetry=>nrel_main_idtf:
+	[симметрия*](*<-lang_ru;;*);
+	[symmetry*](*<-lang_en;;*);;
+
+nrel_symmetry=> nrel_idtf:[симметричность геометрических фигур*](*<-lang_ru;;*);;
+
+nrel_symmetry <- relation;;
+
+nrel_symmetry <- binary_relation;;
+
+nrel_symmetry <= nrel_definitional_domain : concept_geometric_figure;;
+
+nrel_symmetry <= nrel_first_domain: concept_geometric_figure;;
+
+nrel_symmetry <= nrel_second_domain: concept_geometric_point; concept_line; concept_plane;;
+
+nrel_symmetry <- rrel_key_sc_element: 
+     [Опр.(симметрия*);;] 
+	(*
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Закономерное повторение в пространстве конгруэнтных частей геометрического тела.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_geometric_point;
+				concept_straight_line;
+				concept_plane
+				};;
+			*);;
+		*);;
+	*);; 
+
+nrel_symmetry <- subject_domain_of_Euclidean_geometry;;

@@ -1,0 +1,50 @@
+﻿sc_node_not_relation->concept_geometric_figure_with_voids;;
+
+
+concept_geometric_figure_with_voids=>nrel_main_idtf:
+[геометрическая фигура, внутри которой есть пустоты]
+(*
+<-lang_ru;;
+*);
+[geometric figure with voids]
+(*
+<-lang_en;;
+*);;
+
+concept_geometric_figure_with_voids=> nrel_idtf:[фигура, внутри которой есть пустоты](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_voids=> nrel_idtf:[геометрическая фигура, в состав которой входят не все внутренние точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_voids=> nrel_idtf:[Класс геометрических фигур, внутри которых есть пустоты](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_voids=> nrel_idtf:[Множество геометрических фигур, внутри которых есть пустоты](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_voids=> nrel_idtf:[Множество всевозможных геометрических фигур, внутри которых есть пустоты](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_voids=> nrel_idtf:[Множество всевозможных знаков геометрических фигур, внутри которых есть пустоты](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_voids <= nrel_strict_inclusion: concept_geometric_figure;;
+
+concept_geometric_figure_with_voids <- rrel_key_sc_element : 
+	[Опр.(геометрическая фигура, внутри которой есть пустоты);;]
+	(*
+	<- sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Геометрическая фигура, внутри которой есть пустоты - это такая геометрическая фигура, для которой существуют внутренние точки, которые не принадлежат этой фигуре. ]
+			(*
+			<- lang_ru;;
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				nrel_internal_point
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_geometric_figure_with_voids -> subject_domain_of_Euclidean_geometry;;
+
+concept_geometric_figure_with_voids -> rrel_example : struct_Geometric_figure_g_k;;

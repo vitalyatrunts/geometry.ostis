@@ -1,0 +1,99 @@
+sc_node_not_relation->concept_truncated_pyramid;;
+
+concept_truncated_pyramid=>nrel_main_idtf:
+[усеченная пирамида]
+(*
+<-lang_ru;;
+*);
+[truncated pyramid]
+(*
+<-lang_en;;
+*);;
+
+concept_truncated_pyramid=> nrel_idtf:[Класс усеченных пирамид](*<-lang_ru;;*);;
+
+concept_truncated_pyramid=> nrel_idtf:[Понятие усеченной пирамиды](*<-lang_ru;;*);;
+
+concept_truncated_pyramid=> nrel_idtf:[Множество всевозможных усеченных пирамид](*<-lang_ru;;*);;
+
+concept_truncated_pyramid=> nrel_idtf:[Множество знаков всевозможных усеченных пирамид](*<-lang_ru;;*);;
+
+concept_truncated_pyramid <= nrel_strict_inclusion: concept_pyramid;;
+
+concept_truncated_pyramid -> subject_domain_of_Euclidean_geometry;;
+
+concept_truncated_pyramid <- rrel_key_sc_element: 
+        [Опр.(усеченная пирамида);;] 
+	(*
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Усеченная пирамида — многогранник, образованный пирамидой и её сечением, параллельным основанию.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_polyhedron;
+				concept_pyramid;
+				nrel_parallelism;
+				nrel_section
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_truncated_pyramid <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(усеченная пирамида; трапеция; боковая грань*);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Боковые грани усеченной пирамиды являются трапециями. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_truncated_pyramid <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(усеченная пирамида; многоугольник; основание*; подобие*);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Многоугольники, являющиеся основаниями усеченной пирамиды, подобны. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_truncated_pyramid <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(усеченная пирамида; угол; боковое ребро*; основание*; конгруэнтность*; смежные стороны*; высота*; вершина*; биссектриса*);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если боковое ребро усеченной пирамиды образует равные углы со смежными сторонами основания, то высота этой усеченной пирамиды, проведенная из вершины, опускается на биссектрису угла основания. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_truncated_pyramid <= nrel_utverzhdenije_opreledeliajuschego_tipa:
+	[Утв.(усеченная пирамида; сфера; вписанность*; радиус*; высота*);;] 
+	(*
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Если в усеченную пирамиду можно вписать сферу, то ее радиус равен половине высоты этой пирамиды. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_truncated_pyramid -> rrel_example : struct_Truncated_pyramid_A_B_C_D_A1_B1_C1_D1;;
