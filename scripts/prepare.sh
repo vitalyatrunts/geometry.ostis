@@ -19,21 +19,22 @@ clone_project()
     if [ ! -d "../$2" ]; then
         echo -en $green$bold"Clone $2$rst\n"
         git clone $1 ../$2
+        git checkout $3
     else
         echo -en $green$bold"Update $2$rst\n"
         cd ../$2
-        git pull
+        git remote update
+        git checkout $3
+        git merge origin/$3
         cd -
     fi
-    cd ../$2
-    git checkout $3
-    cd -
 }
 
 stage 1 "Clone projects"
 
 clone_project https://github.com/deniskoronchik/sc-machine.git sc-machine master
 clone_project https://github.com/deniskoronchik/sc-web.git sc-web dev
+clone_project https://github.com/deniskoronchik/ims.ostis.kb.git ims.ostis.kb master
 
 stage 2 "Prepare projects"
 
