@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GWF version="2.0">
     <staticSector>
         <node type="node/const/relation" idtf="nrel_angle_measure" shapeColor="0" id="67515256" parent="67735448" left="0" top="0" right="121" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="201" y="107" haveBus="false">
@@ -7,7 +7,7 @@
         <node type="node/const/group" idtf="concept_angle" shapeColor="0" id="67515688" parent="67735448" left="0" top="0" right="89" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="109.499" y="2.91296" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/group" idtf="множество величин" shapeColor="0" id="67515400" parent="67735448" left="0" top="0" right="128" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="62" y="212" haveBus="false">
+        <node type="node/const/group" idtf="РјРЅРѕР¶РµСЃС‚РІРѕ РІРµР»РёС‡РёРЅ" shapeColor="0" id="67515400" parent="67735448" left="0" top="0" right="128" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="62" y="212" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="_U" shapeColor="0" id="67515832" parent="67735448" left="0" top="0" right="25" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="113" y="158" haveBus="false">
@@ -39,13 +39,13 @@
         <node type="node/var/general_node" idtf="_U" shapeColor="0" id="67514824" parent="67735328" left="0" top="0" right="25" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="709.192" y="20.405" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/attribute" idtf="угловой градус'" shapeColor="0" id="67513528" parent="67735328" left="0" top="0" right="97" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="793.192" y="164.405" haveBus="false">
+        <node type="node/const/attribute" idtf="СѓРіР»РѕРІРѕР№ РіСЂР°РґСѓСЃ'" shapeColor="0" id="67513528" parent="67735328" left="0" top="0" right="97" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="793.192" y="164.405" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/group" idtf="число" shapeColor="0" id="37863888" parent="67735328" left="0" top="0" right="42" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="809.192" y="212.405" haveBus="false">
+        <node type="node/const/group" idtf="С‡РёСЃР»Рѕ" shapeColor="0" id="37863888" parent="67735328" left="0" top="0" right="42" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="809.192" y="212.405" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="значение*" shapeColor="0" id="67515112" parent="67735328" left="0" top="0" right="67" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="789.192" y="80.405" haveBus="false">
+        <node type="node/const/relation" idtf="Р·РЅР°С‡РµРЅРёРµ*" shapeColor="0" id="67515112" parent="67735328" left="0" top="0" right="67" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="789.192" y="80.405" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="" shapeColor="0" id="67513384" parent="67735328" x="713.192" y="124.405" haveBus="false">
@@ -82,12 +82,12 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="67516120" parent="0" x="170.499" y="-159.087" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[Мера угла – количество градусов, полученное при измерении угла.]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РњРµСЂР° СѓРіР»Р° вЂ“ РєРѕР»РёС‡РµСЃС‚РІРѕ РіСЂР°РґСѓСЃРѕРІ, РїРѕР»СѓС‡РµРЅРЅРѕРµ РїСЂРё РёР·РјРµСЂРµРЅРёРё СѓРіР»Р°.]]></content>
         </node>
         <node type="node/const/group" idtf="atomic_existence" shapeColor="0" id="67516696" parent="0" left="0" top="0" right="104" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="425" y="325" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="трансляция sc-текста*" shapeColor="0" id="67516552" parent="0" left="0" top="0" right="151" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="623.499" y="-161.087" haveBus="false">
+        <node type="node/const/relation" idtf="С‚СЂР°РЅСЃР»СЏС†РёСЏ sc-С‚РµРєСЃС‚Р°*" shapeColor="0" id="67516552" parent="0" left="0" top="0" right="151" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="623.499" y="-161.087" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/asymmetry" idtf="" shapeColor="0" id="67516264" parent="0" x="394.499" y="-146.087" haveBus="false">

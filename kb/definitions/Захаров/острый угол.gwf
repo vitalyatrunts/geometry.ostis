@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GWF version="2.0">
     <staticSector>
         <node type="node/var/general_node" idtf="_f" shapeColor="0" id="66533832" parent="67114152" left="0" top="0" right="21" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="255" y="345" haveBus="false">
@@ -27,10 +27,10 @@
         <node type="node/var/general_node" idtf="" shapeColor="0" id="66533544" parent="67114032" x="821" y="301" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="величина*" shapeColor="0" id="6772744" parent="67114032" left="0" top="0" right="69" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="714" y="256" haveBus="false">
+        <node type="node/const/relation" idtf="РІРµР»РёС‡РёРЅР°*" shapeColor="0" id="6772744" parent="67114032" left="0" top="0" right="69" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="714" y="256" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="значение*" shapeColor="0" id="66532104" parent="67114032" left="0" top="0" right="67" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="860" y="253" haveBus="false">
+        <node type="node/const/relation" idtf="Р·РЅР°С‡РµРЅРёРµ*" shapeColor="0" id="66532104" parent="67114032" left="0" top="0" right="67" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="860" y="253" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="" shapeColor="0" id="66532824" parent="67114032" x="929" y="300" haveBus="false">
@@ -42,13 +42,13 @@
         <node type="node/var/general_node" idtf="" shapeColor="0" id="66532968" parent="67114032" x="932" y="369" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="меньше*" shapeColor="0" id="66531960" parent="67114032" left="0" top="0" right="60" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="853" y="336" haveBus="false">
+        <node type="node/const/relation" idtf="РјРµРЅСЊС€Рµ*" shapeColor="0" id="66531960" parent="67114032" left="0" top="0" right="60" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="853" y="336" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="больше*" shapeColor="0" id="66532248" parent="67114032" left="0" top="0" right="58" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="840" y="219" haveBus="false">
+        <node type="node/const/relation" idtf="Р±РѕР»СЊС€Рµ*" shapeColor="0" id="66532248" parent="67114032" left="0" top="0" right="58" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="840" y="219" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/attribute" idtf="градус'" shapeColor="0" id="66532680" parent="67114032" left="0" top="0" right="49" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="812" y="149" haveBus="false">
+        <node type="node/const/attribute" idtf="РіСЂР°РґСѓСЃ'" shapeColor="0" id="66532680" parent="67114032" left="0" top="0" right="49" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="812" y="149" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="90" shapeColor="0" id="66532536" parent="67114032" left="0" top="0" right="22" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="820" y="375" haveBus="false">
@@ -112,14 +112,18 @@
             </points>
         </contour>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="66534696" parent="0" x="197" y="63" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[Угол является острым углом, когда он имеет величину 
-угла, большую, чем 0 угловых градусов, и 
-меньшую, чем 90 угловых градусов.]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РЈРіРѕР» СЏРІР»СЏРµС‚СЃСЏ РѕСЃС‚СЂС‹Рј СѓРіР»РѕРј, РєРѕРіРґР° РѕРЅ РёРјРµРµС‚ РІРµР»РёС‡РёРЅСѓ 
+
+
+СѓРіР»Р°, Р±РѕР»СЊС€СѓСЋ, С‡РµРј 0 СѓРіР»РѕРІС‹С… РіСЂР°РґСѓСЃРѕРІ, Рё 
+
+
+РјРµРЅСЊС€СѓСЋ, С‡РµРј 90 СѓРіР»РѕРІС‹С… РіСЂР°РґСѓСЃРѕРІ.]]></content>
         </node>
         <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="66534552" parent="0" left="0" top="0" right="52" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="148" y="149" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="трансляция SC-текста*" shapeColor="0" id="66534408" parent="0" left="0" top="0" right="156" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="529" y="-18" haveBus="false">
+        <node type="node/const/relation" idtf="С‚СЂР°РЅСЃР»СЏС†РёСЏ SC-С‚РµРєСЃС‚Р°*" shapeColor="0" id="66534408" parent="0" left="0" top="0" right="156" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="529" y="-18" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/asymmetry" idtf="" shapeColor="0" id="66534264" parent="0" x="409" y="-17" haveBus="false">

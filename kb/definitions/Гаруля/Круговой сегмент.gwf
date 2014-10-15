@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GWF version="2.0">
     <staticSector>
         <node type="node/var/general_node" idtf="_O" shapeColor="0" id="70106760" parent="70666512" left="0" top="0" right="24" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="698" y="224" haveBus="false">
@@ -109,11 +109,11 @@
                 <point x="121" y="18"/>
             </points>
         </contour>
-        <node type="node/const/group" idtf="Lang_ru" shapeColor="0" id="70108200" parent="0" left="0" top="0" right="56" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="152" y="-14" haveBus="false">
+        <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="70108200" parent="0" left="0" top="0" right="56" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="152" y="-14" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="70110072" parent="0" x="330" y="-51" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[Круговой сегмент - часть круга, ограниченная дугой окружности и её хордой ]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РљСЂСѓРіРѕРІРѕР№ СЃРµРіРјРµРЅС‚ - С‡Р°СЃС‚СЊ РєСЂСѓРіР°, РѕРіСЂР°РЅРёС‡РµРЅРЅР°СЏ РґСѓРіРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё Рё РµС‘ С…РѕСЂРґРѕР№ ]]></content>
         </node>
         <node type="node/const/asymmetry" idtf="" shapeColor="0" id="70109928" parent="0" x="530" y="9" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -124,7 +124,7 @@
         <node type="node/const/relation" idtf="nrel_equivalence*" shapeColor="0" id="70109640" parent="0" left="0" top="0" right="110" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="219" y="402" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="трансляция sc-текста*" shapeColor="0" id="70108344" parent="0" left="0" top="0" right="151" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="691" y="-26" haveBus="false">
+        <node type="node/const/relation" idtf="С‚СЂР°РЅСЃР»СЏС†РёСЏ sc-С‚РµРєСЃС‚Р°*" shapeColor="0" id="70108344" parent="0" left="0" top="0" right="151" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="691" y="-26" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <pair type="pair/const/orient" idtf="" shapeColor="0" id="70075128" parent="0" id_b="70666632" id_e="70666512" b_x="176" b_y="147" e_x="726" e_y="315.5" dotBBalance="0" dotEBalance="0">

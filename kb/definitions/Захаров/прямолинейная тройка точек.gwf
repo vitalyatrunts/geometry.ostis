@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/group" idtf="множество" shapeColor="0" id="66147312" parent="66801976" left="0" top="0" right="78" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="673" y="199" haveBus="false">
+        <node type="node/const/group" idtf="РјРЅРѕР¶РµСЃС‚РІРѕ" shapeColor="0" id="66147312" parent="66801976" left="0" top="0" right="78" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="673" y="199" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="" shapeColor="0" id="66144864" parent="66801976" x="801" y="292" haveBus="false">
@@ -28,7 +28,7 @@
         <node type="node/var/general_node" idtf="" shapeColor="0" id="66146448" parent="66801976" x="763" y="423" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/group" idtf="множество троек точек" shapeColor="0" id="66145008" parent="66801976" left="0" top="0" right="158" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="830" y="256" haveBus="false">
+        <node type="node/const/group" idtf="РјРЅРѕР¶РµСЃС‚РІРѕ С‚СЂРѕРµРє С‚РѕС‡РµРє" shapeColor="0" id="66145008" parent="66801976" left="0" top="0" right="158" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="830" y="256" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <arc type="arc/var/pos" idtf="" shapeColor="0" id="35626312" parent="66801976" id_b="66147456" id_e="66144864" b_x="706" b_y="281" e_x="801" e_y="292" dotBBalance="0" dotEBalance="0">
@@ -90,14 +90,18 @@
             </points>
         </contour>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="66148320" parent="0" x="197" y="63" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[Множество есть прямолинейная тройка точек тогда и т
-олько тогда, когда оно является тройкой точек, 
-которые принадлежат одной прямой.]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РњРЅРѕР¶РµСЃС‚РІРѕ РµСЃС‚СЊ РїСЂСЏРјРѕР»РёРЅРµР№РЅР°СЏ С‚СЂРѕР№РєР° С‚РѕС‡РµРє С‚РѕРіРґР° Рё С‚
+
+
+РѕР»СЊРєРѕ С‚РѕРіРґР°, РєРѕРіРґР° РѕРЅРѕ СЏРІР»СЏРµС‚СЃСЏ С‚СЂРѕР№РєРѕР№ С‚РѕС‡РµРє, 
+
+
+РєРѕС‚РѕСЂС‹Рµ РїСЂРёРЅР°РґР»РµР¶Р°С‚ РѕРґРЅРѕР№ РїСЂСЏРјРѕР№.]]></content>
         </node>
         <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="66148176" parent="0" left="0" top="0" right="52" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="148" y="149" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="трансляция SC-текста*" shapeColor="0" id="66148032" parent="0" left="0" top="0" right="156" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="529" y="-18" haveBus="false">
+        <node type="node/const/relation" idtf="С‚СЂР°РЅСЃР»СЏС†РёСЏ SC-С‚РµРєСЃС‚Р°*" shapeColor="0" id="66148032" parent="0" left="0" top="0" right="156" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="529" y="-18" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/asymmetry" idtf="" shapeColor="0" id="66147888" parent="0" x="409" y="-17" haveBus="false">

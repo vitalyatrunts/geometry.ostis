@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GWF version="2.0">
     <staticSector>
         <node type="node/const/relation" idtf="nrel_tangent" shapeColor="0" id="69216824" parent="69495760" left="0" top="0" right="80" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="191" y="311" haveBus="false">
@@ -112,10 +112,10 @@
                 <point x="534.089" y="132.237"/>
             </points>
         </contour>
-        <node type="node/const/relation" idtf="трансляция sc-текста*" shapeColor="193" id="69218840" parent="0" left="0" top="0" right="151" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="661" y="46" haveBus="false">
+        <node type="node/const/relation" idtf="С‚СЂР°РЅСЃР»СЏС†РёСЏ sc-С‚РµРєСЃС‚Р°*" shapeColor="193" id="69218840" parent="0" left="0" top="0" right="151" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="661" y="46" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/group" idtf="Lang_ru" shapeColor="0" id="69218408" parent="0" left="0" top="0" right="56" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="46" y="59" haveBus="false">
+        <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="69218408" parent="0" left="0" top="0" right="56" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="46" y="59" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/asymmetry" idtf="" shapeColor="0" id="69218696" parent="0" x="375" y="88" haveBus="false">
@@ -125,8 +125,16 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="69217112" parent="0" x="147" y="104" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[ Касательная - прямая, проходящая через точку окружности, перпендикулярно радиусу, проведенному в эту точку. 
-
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[ РљР°СЃР°С‚РµР»СЊРЅР°СЏ - РїСЂСЏРјР°СЏ, РїСЂРѕС…РѕРґСЏС‰Р°СЏ С‡РµСЂРµР· С‚РѕС‡РєСѓ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, РїРµСЂРїРµРЅРґРёРєСѓР»СЏСЂРЅРѕ СЂР°РґРёСѓСЃСѓ, РїСЂРѕРІРµРґРµРЅРЅРѕРјСѓ РІ СЌС‚Сѓ С‚РѕС‡РєСѓ. 
+
+
+
+
+
+
+
+
+
 ]]></content>
         </node>
         <node type="node/const/relation" idtf="nrel_equivalence" shapeColor="0" id="69216968" parent="0" left="0" top="0" right="103" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="407" y="178" haveBus="false">
