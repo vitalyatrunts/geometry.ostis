@@ -13,3 +13,5 @@ stage "Build core"
 ../sc-machine/bin/sc-builder -f -c -i ../ims.ostis.kb -o ../kb.bin -s ../config/sc-web.ini -e ../sc-machine/bin/extensions
 stage "Build geometry"
 ../sc-machine/bin/sc-builder -f  -i ../kb -o ../kb.bin -s ../config/sc-web.ini -e ../sc-machine/bin/extensions
+stage "Build component"
+../sc-machine/bin/sc-builder -f  -i ../geometry.drawings/src/kb -o ../kb.bin -s ../config/sc-web.ini -e ../sc-machine/bin/extensions
