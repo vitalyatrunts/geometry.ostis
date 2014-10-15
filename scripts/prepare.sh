@@ -6,37 +6,37 @@ green="\e[0;32m"
 
 bwhite="\e[47m" # white background
 
-bold = "\033[1m"
 rst="\e[0m"     # Text reset
+
+st=1
 
 stage()
 {
-    echo -en "$blue[$1] $2...$rst\n"
+    echo -en "$green[$st] "$blue"$1...$rst\n"
+    let "st += 1"
 }
 
 clone_project()
 {
     if [ ! -d "../$2" ]; then
-        echo -en $green$bold"Clone $2$rst\n"
+        echo -en $green"Clone $2$rst\n"
         git clone $1 ../$2
-        git checkout $3
-    else
-        echo -en $green$bold"Update $2$rst\n"
         cd ../$2
-        git remote update
         git checkout $3
-        git merge origin/$3
         cd -
+    else
+        echo -en "You can update "$green"$2"$rst" manualy$rst\n"
     fi
 }
 
-stage 1 "Clone projects"
+stage "Clone projects"
 
 clone_project https://github.com/deniskoronchik/sc-machine.git sc-machine master
 clone_project https://github.com/deniskoronchik/sc-web.git sc-web dev
 clone_project https://github.com/deniskoronchik/ims.ostis.kb.git ims.ostis.kb master
+clone_project https://github.com/deniskoronchik/ostis.geometry.drawings.git geometry.drawings dev
 
-stage 2 "Prepare projects"
+stage "Prepare projects"
 
 prepare()
 {
@@ -46,7 +46,11 @@ prepare()
 prepare "sc-machine"
 cd ../sc-machine/scripts
 ./install_deps_ubuntu.sh
+
+if [ ! -d "redis-2.8.4" ]; then
 sudo ./install_redis_ubuntu.sh
+fi
+
 ./clean_all.sh
 ./make_all.sh
 cd -
@@ -61,3 +65,8 @@ echo -en $green"Copy server.conf"$rst"\n"
 cp -f ../config/server.conf ../sc-web/server/
 
 
+./update_component.sh $st
+
+stage "Build knowledge base"
+
+./build_kb.sh
