@@ -34,7 +34,7 @@ stage "Clone projects"
 clone_project https://github.com/deniskoronchik/sc-machine.git sc-machine master
 clone_project https://github.com/deniskoronchik/sc-web.git sc-web dev
 clone_project https://github.com/deniskoronchik/ims.ostis.kb.git ims.ostis.kb master
-clone_project https://github.com/deniskoronchik/ostis.geometry.drawings.git geometry.drawings dev
+clone_project https://github.com/alexei-yasko/ostis.geometry.drawings.git geometry.drawings master
 
 stage "Prepare projects"
 
