@@ -48,7 +48,7 @@ cd ../sc-machine/scripts
 ./install_deps_ubuntu.sh
 
 if [ ! -d "redis-2.8.4" ]; then
-sudo ./install_redis_ubuntu.sh
+./install_redis_ubuntu.sh
 fi
 
 ./clean_all.sh
