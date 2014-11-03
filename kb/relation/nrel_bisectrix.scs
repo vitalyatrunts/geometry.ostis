@@ -1,8 +1,16 @@
-sc_node_norole_relation->nrel_bisectrix;;
+sc_node_norole_relation -> nrel_bisectrix;;
 
-nrel_bisectrix=>nrel_main_ru_idtf:[биссектриса*];;
+nrel_bisectrix => nrel_main_idtf:
+	[биссектриса*]
+	(*
+	<- lang_ru;;
+	*);
+	[bisectrix*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_bisectrix=> nrel_idtf:[быть биссектрисой*]
+nrel_bisectrix => nrel_idtf:[быть биссектрисой*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -13,21 +21,31 @@ nrel_bisectrix -> binary_relation;;
 
 nrel_bisectrix -> oriented_relation;;
 
-nrel_bisectrix <= nrel_domain_of_definition : concept_planar_angle;;
+nrel_bisectrix => nrel_domain_of_definition : 
+	concept_planar_angle;;
 
-nrel_bisectrix <= nrel_first_domain: concept_planar_angle;;
+nrel_bisectrix => nrel_first_domain: 
+	concept_planar_angle;;
 
-nrel_bisectrix <= nrel_second_domain: concept_ray;;
+nrel_bisectrix => nrel_second_domain: 
+	concept_ray;;
 
 nrel_bisectrix <= nrel_schemes_of_relations: 
 	{
-	rrel_angle;
-	rrel_bisectrix
+		rrel_angle;
+		rrel_bisectrix
+	};;
+
+nrel_bisectrix <= nrel_using_constants:
+	{
+		nrel_bisectrix_of_angle;
+		nrel_bisectrix_of_triangle
 	};;
 
 nrel_bisectrix <- rrel_key_sc_element: 
-     [Опр.(биссектриса**);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(биссектриса**)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -36,15 +54,10 @@ nrel_bisectrix <- rrel_key_sc_element:
 			[Понятие биссектрисы - это объединение понятий биссектрисы угла и биссектрисы треугольника.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				nrel_bisectrix_of_angle;
-				nrel_bisectrix_of_triangle
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_bisectrix -> subject_domain_of_Euclidean_geometry;;
+nrel_bisectrix <- subject_domain_of_Euclidean_geometry;;
 
 

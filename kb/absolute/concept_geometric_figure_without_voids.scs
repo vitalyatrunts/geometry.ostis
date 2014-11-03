@@ -29,9 +29,16 @@ concept_geometric_figure_without_voids => nrel_strict_inclusion: concept_polygon
 
 concept_geometric_figure_without_voids -> subject_domain_of_Euclidean_geometry;;
 
+concept_geometric_figure_without_voids<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				nrel_internal_point
+				};;
+
 concept_geometric_figure_without_voids <- rrel_key_sc_element : 
-	[Опр.(геометрическая фигура, внутри которой нет пустот);;]
+	...
 	(*
+	=> nrel_main_idtf: [Опр.(геометрическая фигура, внутри которой нет пустот)] (* <- lang_ru;; *);;
 	<- sc_definition;;
 	<= nrel_sc_text_translation:
 		...
@@ -40,11 +47,6 @@ concept_geometric_figure_without_voids <- rrel_key_sc_element :
 			[Геометрическая фигура, внутри которой нет пустот - это такая геометрическая фигура, для которой все внутренние точки принадлежат этой фигуре.]
 			(*
 			<- lang_ru;;
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				nrel_internal_point
-				};;
 			*);;
 		*);;
 	*);;

@@ -20,9 +20,17 @@ concept_rectangular_trapeze=> nrel_idtf:[Множество знаков все�
 
 concept_rectangular_trapeze <= nrel_strict_inclusion: concept_trapezoid;;
 
+concept_rectangular_trapeze <= nrel_using_constants:
+				{
+				concept_trapezoid;
+				concept_right_angle;
+				nrel_base
+				};;
+
 concept_rectangular_trapeze <- rrel_key_sc_element: 
-        [Опр.(прямоугольная трапеция);;] 
+        ...
 	(*
+	=> nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -31,16 +39,10 @@ concept_rectangular_trapeze <- rrel_key_sc_element:
 			[Множество является прямоугольной трапецией тогда и только тогда, когда является трапецией и один из углов у основания является прямым.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_trapezoid;
-				concept_right_angle;
-				nrel_base
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_rectangular_trapeze -> subject_domain_of_Euclidean_geometry;;
+concept_rectangular_trapeze <- subject_domain_of_Euclidean_geometry;;
 
 concept_rectangular_trapeze -> rrel_example : struct_Rectangular_Trapeze_P_Q_R_S;;

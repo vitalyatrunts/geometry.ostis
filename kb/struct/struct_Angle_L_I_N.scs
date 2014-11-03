@@ -1,2 +1,11 @@
-sc_node_not_relation->struct_Angle_L_I_N;;
-struct_Angle_L_I_N=>nrel_main_ru_idtf:[Угол LIN];;
+sc_node_not_relation -> struct_Angle_L_I_N;;
+
+struct_Angle_L_I_N => nrel_main_idtf:
+	[Угол LIN]
+	(*
+	<- lang_ru;;
+	*);
+	[Angle LIN]
+	(*
+	<- lang_en;;
+	*);;

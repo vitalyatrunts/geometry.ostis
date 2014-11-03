@@ -1,4 +1,4 @@
-sc_node_not_relation-> struct_Circle_O_R;;
+sc_node_not_relation -> struct_Circle_O_R;;
 
 struct_Circle_O_R=> nrel_main_idtf:
 	[Окружность (O; R)]
@@ -12,19 +12,20 @@ struct_Circle_O_R=> nrel_main_idtf:
 
 struct_Circle_O_R <- concept_circle;;
 
-struct_Circle_O_R <= nrel_main_statements:
-	[Факт.утв.(Неправильный многоугольник KABCDE;;]
+struct_Circle_O_R <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Неправильный многоугольник KABCDE](* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[(O; R) ∈ concept_circle;
-O ∈ concept_geometric_point;
-R ∈ concept_segment;
-< (O; R), O > ∈ nrel_centre;
-< (O; R), R > ∈ nrel_radius.]
+			O ∈ concept_geometric_point;
+			R ∈ concept_segment;
+			< (O; R), O > ∈ nrel_centre;
+			< (O; R), R > ∈ nrel_radius.]
 			(* <- lang_ru;; *);;
           -> rrel_example: 
 			[(O; R) - окружность. Геометрическая точка O является центром окружности (O; R). Отрезок R является радиусом окружности (O; R).]
@@ -32,7 +33,7 @@ R ∈ concept_segment;
 		*);;
 	*);;
 
-struct_Circle_O_R<- rrel_key_sc_element: 
+struct_Circle_O_R <- rrel_key_sc_element: 
 	...
 	(*
 		<- sc_explanation;; 

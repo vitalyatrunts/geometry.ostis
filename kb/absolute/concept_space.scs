@@ -22,6 +22,7 @@ concept_space=> nrel_idtf:[Понятие Евклидова пространс�
 
 concept_space => nrel_strict_inclusion: concept_half_space;;
 
+/*
 concept_space => nrel_strict_inclusion: [метрическое пространство];;
 
 concept_space => nrel_strict_inclusion: [векторное пространство];;
@@ -31,10 +32,12 @@ concept_space => nrel_strict_inclusion: [нормированное простр
 concept_space => nrel_strict_inclusion: [Гильбертово пространство];;
 
 concept_space => nrel_strict_inclusion: [конечномерное вещественное пространство];;
+*/
 
 concept_space <- rrel_key_sc_element: 
-        [Поясн.(пространство);;] 
-	(*
+	...
+        (*
+        => nrel_main_idtf: [Поясн.(пространство)] (* <- lang_ru;; *);; 
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -47,9 +50,10 @@ concept_space <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_space <= nrel_statement_of_unique_setting:
-	[Утв.(пространство);;]
-	(*
+concept_space <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Утв.(пространство)] (* <- lang_ru;; *);; 
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -60,10 +64,10 @@ concept_space <= nrel_statement_of_unique_setting:
 		*);;
 	*);;
 
-concept_space <= nrel_main_statements:
-	
-	[Акс.(плоскость; пространство; полупространство; геометрическая точка);;]
-	(*
+concept_space <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(плоскость; пространство; полупространство; геометрическая точка)] (* <- lang_ru;; *);; 
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -75,8 +79,8 @@ concept_space <= nrel_main_statements:
 	*);;
 
 
-concept_space -> subject_domain_of_Euclidean_geometry;;
+concept_space <- subject_domain_of_Euclidean_geometry;;
 
-concept_space <= nrel_analogue : concept_plane;;
+concept_space <=> nrel_analogue : concept_plane;;
 
-concept_space <= nrel_analogue : concept_straight_line;;
+concept_space <=> nrel_analogue : concept_straight_line;;

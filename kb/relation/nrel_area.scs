@@ -1,4 +1,4 @@
-sc_node_norole_relation->nrel_area;;
+sc_node_norole_relation -> nrel_area;;
 
 nrel_area => nrel_main_idtf:
 	[площадь*]
@@ -10,11 +10,11 @@ nrel_area => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-nrel_area=> nrel_idtf:[быть площадью*](*<-lang_ru;;*);;
+nrel_area => nrel_idtf:[быть площадью*](*<-lang_ru;;*);;
 
-nrel_area=> nrel_idtf:[быть площадью фигуры*](*<-lang_ru;;*);;
+nrel_area => nrel_idtf:[быть площадью фигуры*](*<-lang_ru;;*);;
 
-nrel_area=> nrel_idtf:[быть площадью геометрической фигуры*](*<-lang_ru;;*);;
+nrel_area => nrel_idtf:[быть площадью геометрической фигуры*](*<-lang_ru;;*);;
 
 nrel_area <- relation;;
 
@@ -22,25 +22,41 @@ nrel_area <- binary_relation;;
 
 nrel_area <- oriented_relation;;
 
-nrel_area <= nrel_definitional_domain: concept_surface;; 
+nrel_area => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_surface;
+			concept_geometric_figure_of_limited_size;;
+		*);;
+	*);;	
 
-nrel_area <= nrel_definitional_domain: concept_geometric_figure_of_limited_size;;
+nrel_area => nrel_first_domain:
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->	 
+			concept_surface;
+			concept_geometric_figure_of_limited_size;;
+		*);;
+	*);;	
 
-nrel_area <= nrel_first_domain: concept_surface;;
+nrel_area => nrel_second_domain: 
+	concept_set_of_variables;;
 
-nrel_area <= nrel_first_domain: concept_geometric_figure_of_limited_size;;
-
-nrel_area <= nrel_second_domain: concept_set_of_variables;;
-
-nrel_area<= nrel_schemes_of_relations:
+nrel_area <= nrel_schemes_of_relations:
      {
 	rrel_geometric_figure;
 	rrel_area
      };;
 
-nrel_area<- rrel_key_sc_element: 
-     [Поясн.(площадь*)] 
+nrel_area <- rrel_key_sc_element: 
+     	...
 	(*
+	=> nrel_main_idtf:[Поясн.(площадь*)] (*<-lang_ru;;*);;
 	<- sc_explanation;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -51,9 +67,10 @@ nrel_area<- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_arrea <= nrel_main_statements:
-	[Утв.(поверхность; геометрическая фигура ограниченного размера; площадь*; положительная величина);;]
+nrel_arrea <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(поверхность; геометрическая фигура ограниченного размера; площадь*; положительная величина)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -64,8 +81,9 @@ nrel_arrea <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(поверхность; геометрическая фигура ограниченного размера; конгруэнтность*; площадь*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(поверхность; геометрическая фигура ограниченного размера; конгруэнтность*; площадь*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -76,8 +94,9 @@ nrel_arrea <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(поверхность; геометрическая фигура ограниченного размера; разбиение множества*; площадь*; сумма*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(поверхность; геометрическая фигура ограниченного размера; разбиение множества*; площадь*; сумма*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -88,8 +107,9 @@ nrel_arrea <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(квадрат; сторона*; длина*; площадь*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(квадрат; сторона*; длина*; площадь*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

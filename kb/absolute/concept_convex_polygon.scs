@@ -20,9 +20,18 @@ concept_convex_polygon=> nrel_idtf:[Множество знаков всевоз
 
 concept_convex_polygon <= nrel_strict_inclusion: concept_polygon;;
 
-concept_convex_polygon <- rrel_key_sc_element : 
-	[Опр.(выпуклый многоугольник);;]
+concept_convex_polygon <= nrel_using_constants:
+				{
+				concept_polygon;
+				concept_half_plane;
+				concept_straight_line;
+				nrel_side
+				};;
+				
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Опр.(выпуклый многоугольник)] (* <- lang_ru;; *);;
 	<- sc_definition;;
 	<= nrel_sc_text_translation:
 		...
@@ -32,13 +41,6 @@ concept_convex_polygon <- rrel_key_sc_element :
 относительно любой прямой содержащей его сторону. ]
 			(*
 			<- lang_ru;;
-			<= nrel_using_constants:
-				{
-				concept_polygon;
-				concept_half_plane;
-				concept_straight_line;
-				nrel_side
-				};;
 			*);;
 		*);;
 	*);;
@@ -66,10 +68,10 @@ concept_convex_polygon <= nrel_subdividing:
 
 concept_convex_polygon -> subject_domain_of_Euclidean_geometry;;
 
-concept_convex_polygon <= nrel_main_statements:
-	
-	[Утв.(выпуклый многоугольник; внешний угол*; вершина*; смежность*; внутренний угол*);;]
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внешний угол*; вершина*; смежность*; внутренний угол*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -80,10 +82,12 @@ concept_convex_polygon <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		
 		*);;
-	*);
+	*);;
 
-	[Утв.(выпуклый многоугольник; внутренний угол*; градусная мера*);;]
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внутренний угол*; градусная мера*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -93,10 +97,12 @@ concept_convex_polygon <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		
 		*);;
-	*);
+	*);;
 
-	[Утв.(выпуклый многоугольник; внутренний угол*; сумма*);;]
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внутренний угол*; сумма*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -106,10 +112,12 @@ concept_convex_polygon <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		
 		*);;
-	*);
+	*);;
 
-	[Утв.(выпуклый многоугольник; внешний угол*; сумма*; вершина*);;]
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внешний угол*; сумма*; вершина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -119,10 +127,12 @@ concept_convex_polygon <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		
 		*);;
-	*);
+	*);;
 
-	[Утв.(выпуклый многоугольник; внешний угол*; диагональ*; вершина*; треугольник);;]
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внешний угол*; диагональ*; вершина*; треугольник)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -132,10 +142,12 @@ concept_convex_polygon <= nrel_main_statements:
 которые разбивают многоугольник на n - 2 треугольника.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
+	*);;
 
-	[Утв.(выпуклый многоугольник; диагональ*);;]
+concept_convex_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; диагональ*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

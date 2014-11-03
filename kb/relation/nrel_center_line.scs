@@ -1,23 +1,24 @@
-sc_node_norole_relation->nrel_center_line;;
-nrel_center_line=>nrel_main_idtf:
+sc_node_norole_relation -> nrel_center_line;;
+
+nrel_center_line => nrel_main_idtf:
 	[средняя линия*]
 		(*<-lang_ru;;*);
 	[center line*]
 		(*<-lang_en;;*);;
 
-nrel_center_line=> nrel_idtf:[быть средней линией*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[быть средней линией*](*<-lang_ru;;*);;
 
-nrel_center_line=> nrel_idtf:[средняя линия треугольника*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[средняя линия треугольника*](*<-lang_ru;;*);;
 
-nrel_center_line=> nrel_idtf:[быть средней линией треугольника*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[быть средней линией треугольника*](*<-lang_ru;;*);;
 
-nrel_center_line=> nrel_idtf:[средняя линия четырехугольника*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[средняя линия четырехугольника*](*<-lang_ru;;*);;
 
-nrel_center_line=> nrel_idtf:[быть средней линией четырехугольника*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[быть средней линией четырехугольника*](*<-lang_ru;;*);;
 
-nrel_center_line=> nrel_idtf:[средняя линия трапеции*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[средняя линия трапеции*](*<-lang_ru;;*);;
 
-nrel_center_line=> nrel_idtf:[быть средней линией трапеции*](*<-lang_ru;;*);;
+nrel_center_line => nrel_idtf:[быть средней линией трапеции*](*<-lang_ru;;*);;
 
 nrel_center_line <- nrel_relation;;
 
@@ -25,21 +26,56 @@ nrel_center_line <- nrel_binary_relation;;
 
 nrel_center_line <- nrel_oriented_relation;;
 
-nrel_center_line <= nrel_definitional_domain : concept_triangle; concept_quadrilateral; concept_trapezoid;;
+nrel_center_line => nrel_definitional_domain : 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_triangle; 
+			concept_quadrilateral; 
+			concept_trapezoid;;
+		*);;
+	*);;	
 
-nrel_center_line <= nrel_first_domain: concept_triangle; concept_quadrilateral; concept_trapezoid;;
+nrel_center_line => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_triangle; 
+			concept_quadrilateral; 
+			concept_trapezoid;;
+		*);;
+	*);;	
 
-nrel_center_line <= nrel_second_domain: concept_segment;;
+nrel_center_line => nrel_second_domain: 
+	concept_segment;;
 
 nrel_center_line <=nrel_schemes_of_relations:
 	{
-	rrel_geometric_figure;
-	rrel_center_line 
+		rrel_geometric_figure;
+		rrel_center_line 
+	};;
+
+nrel_center_line <= nrel_using_constants:
+	{
+		concept_geometric_figure;
+		concept_triangle;
+		concept_quadrilateral;
+		nrel_opposite;
+		concept_trapezoid;
+		nrel_lateral_side;
+		concept_segment;
+		nrel_side;
+		nrel_middle
 	};;
 
 nrel_center_line <- rrel_key_sc_element: 
-     [Опр.(средняя линия*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(средняя линия*)] (*<-lang_ru;;*);; 
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -48,27 +84,16 @@ nrel_center_line <- rrel_key_sc_element:
 			[ Средняя линия - отрезок, соединяющий середины двух сторон данной фигуры. Для треугольинка: отрезок, соединяющий середины двух сторон этого треугольника. Для четырёхугольника: отрезок, соединяющий середины противолежащих сторон четырехугольника. Для трапеции: отрезок, соединяющий середины боковых сторон этой трапеции.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				concept_triangle;
-				concept_quadrilateral;
-				nrel_opposite;
-				concept_trapezoid;
-				nrel_lateral_side;
-				concept_segment;
-				nrel_side;
-				nrel_middle
-				};;
 			*);;
 		*);;
 	*);; 
 
 nrel_center_line <- subject_domain_of_Euclidean_geometry;;
 
-nrel_center_line <- nrel_main_statements: 
-     [Утв.(средняя линия*; треугольник; середна*; сторона*; параллельность*);;] 
+nrel_center_line <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; треугольник; середна*; сторона*; параллельность*)](*<-lang_ru;;*);; 
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -81,8 +106,9 @@ nrel_center_line <- nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*);;] 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*)](*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -95,8 +121,9 @@ nrel_center_line <- nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*; площадь*);;] 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*; площадь*)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -109,8 +136,9 @@ nrel_center_line <- nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(средняя линия*; четырехугольник; угол; диагональ*; конгруэнтность*);;] 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; четырехугольник; угол; диагональ*; конгруэнтность*)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -123,8 +151,9 @@ nrel_center_line <- nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(средняя линия*; четырехугольник; сторона*; конгруэнтность*; параллельность*);;] 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; четырехугольник; сторона*; конгруэнтность*; параллельность*)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -137,8 +166,9 @@ nrel_center_line <- nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(средняя линия*; трапеция; основание*; конгруэнтность*);;] 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; трапеция; основание*; конгруэнтность*)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -151,8 +181,9 @@ nrel_center_line <- nrel_main_statements:
 		*);;
 	*);
  
-     [Утв.(средняя линия*; трапеция; вершина*; ромб);;] 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(средняя линия*; трапеция; вершина*; ромб)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...

@@ -16,9 +16,17 @@ concept_straight_angle <= nrel_strict_inclusion: concept_planar_angle;;
 
 concept_straight_angle <= nrel_strict_inclusion: concept_dihedral_angle;;
 
+concept_straight_angle <= nrel_using_constants:
+				{
+				concept_planar_angle;
+				concept_straight_line;
+				nrel_side
+				};;
+
 concept_straight_angle <- rrel_key_sc_element: 
-     [Опр.(развернутый угол);;] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Опр.(развернутый угол)] (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -27,12 +35,6 @@ concept_straight_angle <- rrel_key_sc_element:
 			[Множество является развернутым углом тогда и только тогда, когда является планарным углом и стороны которого образуют прямую.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_planar_angle;
-				concept_straight_line;
-				nrel_side
-				};;
 			*);;
 		*);;
 	*);; 

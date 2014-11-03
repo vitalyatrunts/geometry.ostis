@@ -1,6 +1,6 @@
 sc_node_not_relation->concept_straight_line;;
 
-concept_straight_line=>nrel_main_idtf:
+concept_straight_line=> nrel_main_idtf:
 [прямая]
 (*
 <-lang_ru;;
@@ -29,7 +29,7 @@ concept_straight_line <= nrel_particular_subject_domain: concept_planar_line;;
 concept_straight_line <= nrel_particular_subject_domain: concept_geometric_figure_of_unlimited_size;;
 
 concept_straight_line <- rrel_key_sc_element: 
-        [Поясн.(прямая);;] 
+        [Поясн.(прямая)] 
 	(*
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
@@ -43,14 +43,14 @@ concept_straight_line <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line -> subject_domain_of_Euclidean_geometry;;
+concept_straight_line <- subject_domain_of_Euclidean_geometry;;
 
-concept_straight_line <= nrel_analogue : concept_space;;
-concept_straight_line <= nrel_analogue : concept_plane;;
+concept_straight_line <=> nrel_analogue : concept_plane;;
 
-concept_straight_line <= nrel_statement_of_unique_setting:
-	[Акс.(прямая; пара точек);;]
-	(*
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; пара точек)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -61,10 +61,10 @@ concept_straight_line <= nrel_statement_of_unique_setting:
 		*);;
 	*);;
 
-concept_straight_line <= nrel_main_statements:
-	
-	[Акс.(прямая; геометрическая точка);;]
-	(*
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -73,10 +73,12 @@ concept_straight_line <= nrel_main_statements:
 			[Существуют точки, принадлежащие прямой и не принадлежащие прямой.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
+	*);;
 
-	[Акс.(тройка точек; прямолинейная тройка точек; между_);;]
-	(*
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между')] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -85,10 +87,12 @@ concept_straight_line <= nrel_main_statements:
 			[Если из трех точек одна лежит между двумя другими, то все три данные точки лежат на одной прямой.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
+	*);;
 
-	[Акс.(точка; прямая; между_);;]
-	(*
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(точка; прямая; между')] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -97,10 +101,12 @@ concept_straight_line <= nrel_main_statements:
 			[Из трёх точек прямой только одна лежит между двумя другими.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
+	*);;
 
-	[Акс.(плоскость; геометрическая точка; прямая);;]
-	(*
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -109,10 +115,13 @@ concept_straight_line <= nrel_main_statements:
 			[Если две пересекающиеся плоскости имеют общую точку, то они пересекаются по прямой, проходящей через эту точку.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
+	*);;
 
-	[Акс.(прямая; плоскость; геометрическая точка; параллельность*);;]
-	(*
+
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -121,10 +130,12 @@ concept_straight_line <= nrel_main_statements:
 			[На плоскости через точку, не лежащую на данной прямой, можно провести одну и только одну прямую, параллельную данной прямой.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
+	*);;
 
-	[Акс.(прямая; треугольник; плоскость; сторона*; пересекающиеся*; вершина*);;]
-	(*
+concept_straight_line<- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; треугольник; плоскость; сторона*; пересекающиеся*; вершина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

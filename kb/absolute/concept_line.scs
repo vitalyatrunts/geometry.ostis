@@ -74,8 +74,9 @@ concept_line <= nrel_subdividing:
 	*);;
 
 concept_line <- rrel_key_sc_element: 
-     [Поясн.(линия)] 
+	...
 	(*
+	=> nrel_main_idtf: [Поясн.(линия)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...

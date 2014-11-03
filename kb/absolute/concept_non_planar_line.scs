@@ -12,9 +12,17 @@ concept_non_planar_line=> nrel_main_idtf:
 
 concept_non_planar_line <= nrel_strict_inclusion: concept_line;;
 
+concept_non_planar_line <= nrel_using_constants:
+				{
+				concept_line;
+				concept_plane;
+				concept_geometric_point
+				};;
+
 concept_non_planar_line <- rrel_key_sc_element: 
-     [Опр.(непланарная линия)] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Опр.(непланарная линия)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -23,12 +31,6 @@ concept_non_planar_line <- rrel_key_sc_element:
 			[Линия, все точки которой не лежат в одной плоскости, называется непланарной.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_line;
-				concept_plane;
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;

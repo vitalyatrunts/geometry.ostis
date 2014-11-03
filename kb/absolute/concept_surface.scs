@@ -47,8 +47,9 @@ concept_surface<= nrel_subdividing:
 	*);;
 
 concept_surface <- rrel_key_sc_element: 
-        [Поясн.(поверхность)] 
+        ...
 	(*
+	=> nrel_main_idtf: [Поясн.(поверхность)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...

@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Non_convex_angle_A_B_K;;
+sc_node_not_relation -> struct_Non_convex_angle_A_B_K;;
 
 struct_Non_convex_angle_A_B_K => nrel_main_idtf:
 	[Невыпуклый угол ABK]
@@ -10,28 +10,29 @@ struct_Non_convex_angle_A_B_K => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Non_convex_angle_A_B_K=> nrel_idtf:[Невыпуклый угол(A; B; K)](*<-lang_ru;;*);;
+struct_Non_convex_angle_A_B_K => nrel_idtf:[Невыпуклый угол(A; B; K)](*<-lang_ru;;*);;
 
 struct_Non_convex_angle_A_B_K <- concept_non_convex_angle;;
 
-struct_Non_convex_angle_A_B_K <= nrel_main_statements:
-	[Факт.утв.(Невыпуклый угол ABK);;]
+struct_Non_convex_angle_A_B_K <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Невыпуклый угол ABK)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[ABK ∈ concept_non_convex_angle;
-                A, B, K ∈ concept_geometric_point;
-               < ABK, B > ∈ nrel_vertex;
-               BA, BK ? concept_ray;
-               < ABK, BA >, < ABK, BK > ∈ nrel_side.]
+		        A, B, K ∈ concept_geometric_point;
+		       < ABK, B > ∈ nrel_vertex;
+		       BA, BK ? concept_ray;
+		       < ABK, BA >, < ABK, BK > ∈ nrel_side.]
 			(* <- lang_ru;; *);;
            -> rrel_example: 
 			[Угол ABK является невыпуклым.
-A, B и K являются геометрическими точками. Геометрическая точка B является вершиной угла ABK.
-Лучи BA и BK являются сторонами угла ABK.]
+			A, B и K являются геометрическими точками. Геометрическая точка B является вершиной угла ABK.
+			Лучи BA и BK являются сторонами угла ABK.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

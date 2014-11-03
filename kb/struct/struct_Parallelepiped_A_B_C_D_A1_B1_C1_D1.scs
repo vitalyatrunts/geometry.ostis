@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1;;
+sc_node_not_relation -> struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1;;
 
 struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 => nrel_main_idtf:
 	[Параллелепипед ABCDA1B1C1D1]
@@ -10,26 +10,27 @@ struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1=> nrel_idtf:[Параллелепипед(A; B; C; D; A1; B1; C1; D1)](*<-lang_ru;;*);;
-struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1=> nrel_idtf:[Параллелепипед, вершинами которого являются Точка A, Точка B, Точка C, Точка D, Точка A1, Точка B1, Точка C1, Точка D1](*<-lang_ru;;*);;
+struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 => nrel_idtf:[Параллелепипед(A; B; C; D; A1; B1; C1; D1)](*<-lang_ru;;*);;
+struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 => nrel_idtf:[Параллелепипед, вершинами которого являются Точка A, Точка B, Точка C, Точка D, Точка A1, Точка B1, Точка C1, Точка D1](*<-lang_ru;;*);;
 
 struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 <- concept_parallelepiped;;
 
-struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 <= nrel_main_statements:
-	[Факт.утв.(Параллелепипед ABCDA1B1C1D1)]
+struct_Parallelepiped_A_B_C_D_A1_B1_C1_D1 <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Параллелепипед ABCDA1B1C1D1)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
           -> rrel_example: 
 		[ABCDA1B1C1D1 ∈ concept_parallelepiped.
-A, B, C, D, A1, B1, C1, D1 ∈ concept_geometric_point; <ABCDA1B1C1D1, A>, <ABCDA1B1C1D1, B>, <ABCDA1B1C1D1, C>, <ABCDA1B1C1D1, D>, <ABCDA1B1C1D1, A1>, <ABCDA1B1C1D1, B1>, <ABCDA1B1C1D1, C1>, <ABCDA1B1C1D1, D1> ∈ nrel_vertex;
-<ABCDA1B1C1D1, a>, <ABCDA1B1C1D1, b>, <ABCDA1B1C1D1, c>, <ABCDA1B1C1D1, d>, <ABCDA1B1C1D1, a1>, <ABCDA1B1C1D1, b1>, <ABCDA1B1C1D1, c1>, <ABCDA1B1C1D1, d1>, <ABCDA1B1C1D1, a2>, <ABCDA1B1C1D1, b2>, <ABCDA1B1C1D1, c2>, <ABCDA1B1C1D1, d2> ∈ nrel_edge;
-<ABCDA1B1C1D1,a>, <ABCDA1B1C1D1,b>, <ABCDA1B1C1D1,c>, <ABCDA1B1C1D1,d>, <ABCDA1B1C1D1,a1>, <ABCDA1B1C1D1,b1>, <ABCDA1B1C1D1,c1>, <ABCDA1B1C1D1,d1>, <ABCDA1B1C1D1,a2>, <ABCDA1B1C1D1,b2>, <ABCDA1B1C1D1,c2>, <ABCDA1B1C1D1,d2> ∈ concept_segment;
-<ABCDA1B1C1D1,ABCD>, <ABCDA1B1C1D1,A1B1C1D1>, <ABCDA1B1C1D1,AA1B1B>, <ABCDA1B1C1D1,BB1C1C>, <ABCDA1B1C1D1,CC1D1D>, <ABCDA1B1C1D1,AA1D1D> ∈ concept_square;
-<ABCDA1B1C1D1, ABCD>, <ABCDA1B1C1D1,A1B1C1D1> ∈ nrel_base;
-<ABCDA1B1C1D1,AA1B1B>, <ABCDA1B1C1D1,BB1C1C>, <ABCDA1B1C1D1,CC1D1D>, <ABCDA1B1C1D1,AA1D1D> ∈ nrel_side_face.];;
+		A, B, C, D, A1, B1, C1, D1 ∈ concept_geometric_point; <ABCDA1B1C1D1, A>, <ABCDA1B1C1D1, B>, <ABCDA1B1C1D1, C>, <ABCDA1B1C1D1, D>, <ABCDA1B1C1D1, A1>, <ABCDA1B1C1D1, B1>, <ABCDA1B1C1D1, C1>, <ABCDA1B1C1D1, D1> ∈ nrel_vertex;
+		<ABCDA1B1C1D1, a>, <ABCDA1B1C1D1, b>, <ABCDA1B1C1D1, c>, <ABCDA1B1C1D1, d>, <ABCDA1B1C1D1, a1>, <ABCDA1B1C1D1, b1>, <ABCDA1B1C1D1, c1>, <ABCDA1B1C1D1, d1>, <ABCDA1B1C1D1, a2>, <ABCDA1B1C1D1, b2>, <ABCDA1B1C1D1, c2>, <ABCDA1B1C1D1, d2> ∈ nrel_edge;
+		<ABCDA1B1C1D1,a>, <ABCDA1B1C1D1,b>, <ABCDA1B1C1D1,c>, <ABCDA1B1C1D1,d>, <ABCDA1B1C1D1,a1>, <ABCDA1B1C1D1,b1>, <ABCDA1B1C1D1,c1>, <ABCDA1B1C1D1,d1>, <ABCDA1B1C1D1,a2>, <ABCDA1B1C1D1,b2>, <ABCDA1B1C1D1,c2>, <ABCDA1B1C1D1,d2> ∈ concept_segment;
+		<ABCDA1B1C1D1,ABCD>, <ABCDA1B1C1D1,A1B1C1D1>, <ABCDA1B1C1D1,AA1B1B>, <ABCDA1B1C1D1,BB1C1C>, <ABCDA1B1C1D1,CC1D1D>, <ABCDA1B1C1D1,AA1D1D> ∈ concept_square;
+		<ABCDA1B1C1D1, ABCD>, <ABCDA1B1C1D1,A1B1C1D1> ∈ nrel_base;
+		<ABCDA1B1C1D1,AA1B1B>, <ABCDA1B1C1D1,BB1C1C>, <ABCDA1B1C1D1,CC1D1D>, <ABCDA1B1C1D1,AA1D1D> ∈ nrel_side_face.];;
 		*);;
 	*);;
 

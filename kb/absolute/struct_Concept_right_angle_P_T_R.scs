@@ -1,26 +1,35 @@
-sc_node_not_relation->struct_Concept_right_angle_P_T_R;;
-struct_Concept_right_angle_P_T_R=>nrel_main_ru_idtf:[Прямой угол PTR];;
+sc_node_not_relation -> struct_Concept_right_angle_P_T_R;;
 
-struct_Concept_right_angle_P_T_R=> nrel_idtf:[Прямой угол(P; T; R)](*<-lang_ru;;*);;
+struct_Concept_right_angle_P_T_R => nrel_main_idtf:
+	[Прямой угол PTR]
+	(*
+	<- lang_ru;;
+	*);
+	[Concept right angle PTR]
+	(*
+	<- lang_en;;
+	*);;
+
+struct_Concept_right_angle_P_T_R => nrel_idtf:[Прямой угол(P; T; R)](*<-lang_ru;;*);;
 
 struct_Concept_right_angle_P_T_R -> concept_right_angle;;
 
 struct_Concept_right_angle_P_T_R <- rrel_key_sc_element: 
-...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
-(*
--> rrel_example:
-"file://images/Angle PTR.png";;
-*);;
-*);;
-
-struct_Concept_right_angle_P_T_R  <= nrel_main_statements:
-	
-	[Факт.утв.(Прямой угол PTR);;]
+	...
 	(*
+		<-image;;
+		<=nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example:
+				"file://images/Angle PTR.png";;
+		*);;
+	*);;
+
+struct_Concept_right_angle_P_T_R  <= rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Факт.утв.(Прямой угол PTR)](* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

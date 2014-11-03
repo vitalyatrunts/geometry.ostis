@@ -18,9 +18,15 @@ concept_non_countable_set_of_points=> nrel_idtf:[Класс несчетного
 
 concept_non_countable_set_of_points <= nrel_strict_inclusion: concept_geometric_figure;;
 
+concept_non_countable_set_of_points <= nrel_using_constants:
+				{
+                    concept_geometric_point
+				};;
+				
 concept_non_countable_set_of_points <- rrel_key_sc_element: 
-     [Опр.(несчетное множество точек)] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Опр.(несчетное множество точек)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -29,10 +35,6 @@ concept_non_countable_set_of_points <- rrel_key_sc_element:
 			[Несчетное множество точек - это несчетное множество, каждый элемент которого является геометрической точкой.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-                    concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;

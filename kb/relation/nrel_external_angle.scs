@@ -1,8 +1,16 @@
-sc_node_norole_relation->nrel_external_angle;;
+sc_node_norole_relation -> nrel_external_angle;;
 
-nrel_external_angle=>nrel_main_ru_idtf:[внешний угол*];;
+nrel_external_angle => nrel_main_idtf:
+	[внешний угол*]
+	(*
+	<- lang_ru;;
+	*);
+	[external angle*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_external_angle=> nrel_idtf:[быть внешним углом*]
+nrel_external_angle => nrel_idtf:[быть внешним углом*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -13,21 +21,40 @@ nrel_external_angle -> binary_relation;;
 
 nrel_external_angle -> oriented_relation;;
 
-nrel_external_angle <= nrel_domain_of_definition : concept_planar_angle; concept_triangle;;
+nrel_external_angle => nrel_domain_of_definition : 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_triangle;;
+		*);;
+	*);;	
 
-nrel_external_angle <= nrel_first_domain: concept_polygon;;
+nrel_external_angle => nrel_first_domain: 
+	concept_polygon;;
 
-nrel_external_angle <= nrel_second_domain: concept_planar_angle;;
+nrel_external_angle => nrel_second_domain: 
+	concept_planar_angle;;
 
-nrel_external_angle <=nrel_schemes_of_relation:
+nrel_external_angle <= nrel_schemes_of_relation:
 	{
-	rrel_polygon;
-	rrel_external_angle
+		rrel_polygon;
+		rrel_external_angle
 	};; 
 
-nrel_external_angle <- rrel_key_sc_element: 
-     [Опр.(внешний угол*);;] 
+nrel_external_angle <= nrel_using_constants:
+	{
+		concept_triangle;
+		nrel_vertex;
+		nrel_adjacent_angle
+	};;
+
+nrel_external_angle <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(внешний угол*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -37,14 +64,8 @@ nrel_external_angle <- rrel_key_sc_element:
 смежный с углом треугольника при этой вершине. ]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_triangle;
-				nrel_vertex;
-				nrel_adjacent_angle
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_external_angle -> subject_domain_of_Euclidean_geometry;;
+nrel_external_angle <- subject_domain_of_Euclidean_geometry;;

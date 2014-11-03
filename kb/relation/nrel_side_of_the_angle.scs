@@ -1,10 +1,16 @@
-sc_node_norole_relation->nrel_side_of_the_angle;;
+sc_node_norole_relation -> nrel_side_of_the_angle;;
 
-nrel_side_of_the_angle=>nrel_main_idtf:
-	[сторона угла*](*<-lang_ru;;*);
-	[side of the angle*](*<-lang_ru;;*);;
+nrel_side_of_the_angle => nrel_main_idtf:
+	[сторона угла*]
+	(*
+	<-lang_ru;;
+	*);
+	[side of the angle*]
+	(*
+	<-lang_ru;;
+	*);;
 
-nrel_side_of_the_angle=> nrel_idtf:[быть стороной угла*](*<-lang_ru;;*);;
+nrel_side_of_the_angle => nrel_idtf:[быть стороной угла*](*<-lang_ru;;*);;
 
 nrel_side_of_the_angle <- relation;;
 
@@ -12,21 +18,34 @@ nrel_side_of_the_angle <- binary_relation;;
 
 nrel_side_of_the_angle <- oriented_relation;;
 
-nrel_side_of_the_angle <= nrel_definitional_domain : concept_planar_angle;;
+nrel_side_of_the_angle => nrel_definitional_domain: 
+	concept_planar_angle;;
 
-nrel_side_of_the_angle <= nrel_first_domain: concept_planar_angle;;
+nrel_side_of_the_angle => nrel_first_domain: 
+	concept_planar_angle;;
 
-nrel_side_of_the_angle <= nrel_second_domain: concept_closed_ray;;
+nrel_side_of_the_angle => nrel_second_domain: 
+	concept_closed_ray;;
 
 nrel_side_of_the_angle <= nrel_schemes_of_relations: 
 	{
-	rrel_angle;
-	rrel_side
+		rrel_angle;
+		rrel_side
+	};;
+
+nrel_side_of_the_angle <= nrel_using_constants:
+	{
+		concept_planar_angle;
+		nrel_bound;
+		concept_geometric_figure_of_unlimited_size;
+		concept_closed_ray;
+		nrel_vertex_of_angle
 	};;
 
 nrel_side_of_the_angle <- rrel_key_sc_element: 
-     [Опр.(сторона угла*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(сторона угла*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -35,14 +54,6 @@ nrel_side_of_the_angle <- rrel_key_sc_element:
 			[Стороной планарного угла называют закрытый луч, исходящий из вершины и принадлежащий его границе.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_planar_angle;
-				nrel_bound;
-				concept_geometric_figure_of_unlimited_size;
-				concept_closed_ray;
-				nrel_vertex_of_angle
-				};;
 			*);;
 		*);;
 	*);; 

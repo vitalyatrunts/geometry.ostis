@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Opened_Half_Plane_K1;;
+sc_node_not_relation -> struct_Opened_Half_Plane_K1;;
 
 struct_Opened_Half_Plane_K1 => nrel_main_idtf:
 	[Открытая полуплоскость K1]
@@ -13,18 +13,19 @@ struct_Opened_Half_Plane_K1 => nrel_main_idtf:
 
 struct_Opened_Half_Plane_K1 <- concept_opened_half_plane;;
 
-struct_Opened_Half_Plane_K1 <= nrel_main_statements:
-	[Факт.утв.(Открытая полуплоскость K1)]
+struct_Opened_Half_Plane_K1 <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Открытая полуплоскость K1)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
                 -> rrel_example: 
 			[ H1 ∈ concept_opened_half_plane;
-k ∈ concept_straight_line;
-k ⊄ K1;
-< K1, k > ∈ nrel_bound.]
+			k ∈ concept_straight_line;
+			k ⊄ K1;
+			< K1, k > ∈ nrel_bound.]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[ K1 - открытая полуплоскость. Прямая k является границей полуплоскости K1, но не входит в состав полуплоскости.]

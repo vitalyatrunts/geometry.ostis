@@ -1,18 +1,26 @@
-sc_node_norole_relation->nrel_bound;;
+sc_node_norole_relation -> nrel_bound;;
 
-nrel_bound=>nrel_main_ru_idtf:[граница*];;
+nrel_bound => nrel_main_idtf:
+	[граница*]
+	(*
+	<- lang_ru;;
+	*);
+	[bound*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_bound=> nrel_idtf:[быть границей*]
+nrel_bound => nrel_idtf:[быть границей*]
 	(*
 	<-lang_ru;;
 	*);;
 
-nrel_bound=> nrel_idtf:[граница геометрической фигуры*]
+nrel_bound => nrel_idtf:[граница геометрической фигуры*]
 	(*
 	<-lang_ru;;
 	*);;
 
-nrel_bound=> nrel_idtf:[быть границей геометрической фигуры*]
+nrel_bound => nrel_idtf:[быть границей геометрической фигуры*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -23,21 +31,33 @@ nrel_bound -> binary_relation;;
 
 nrel_bound -> oriented_relation;;
 
-nrel_bound <= nrel_domain_of_definition : concept_geometric_figure_with_boundary_points;;
+nrel_bound => nrel_domain_of_definition : 
+	concept_geometric_figure_with_boundary_points;;
 
-nrel_bound <= nrel_first_domain: concept_geometric_figure_with_boundary_points;;
+nrel_bound => nrel_first_domain: 
+	concept_geometric_figure_with_boundary_points;;
 
-nrel_bound <= nrel_second_domain: concept_geometric_figure;;
+nrel_bound => nrel_second_domain: 
+	concept_geometric_figure;;
 
 nrel_bound <= nrel_schemes_of_relations:
 	{
-	rrel_geometric_figure;
-	rrel_bound
+		rrel_geometric_figure;
+		rrel_bound
 	};; 
 
-nrel_boubd <- rrel_key_sc_element: 
-     [Опр.(граница*);;] 
+nrel_bound <= nrel_using_constants:
+	{
+		concept_geometric_figure;
+		concept_geometric_figure_with_boundary_points;
+		concept_geometric_point;
+		nrel_boundary_point
+	};;
+
+nrel_boubd <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(граница*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -46,15 +66,8 @@ nrel_boubd <- rrel_key_sc_element:
 			[Границей называют геометрическую фигуру, каждая точка которой является граничной для заданной геометрической фигуры.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				concept_geometric_figure_with_boundary_points;
-				concept_geometric_point;
-				nrel_boundary_point
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_bound -> subject_domain_of_Euclidean_geometry;;
+nrel_bound <- subject_domain_of_Euclidean_geometry;;

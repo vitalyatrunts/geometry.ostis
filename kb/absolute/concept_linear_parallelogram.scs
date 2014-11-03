@@ -22,9 +22,19 @@ concept_linear_parallelogram <= nrel_strict_inclusion: concept_linear_quadrangle
 
 concept_linear_parallelogram <= nrel_strict_inclusion: concept_parallelogram;;
 
+concept_linear_parallelogram <= nrel_using_constants:
+				{
+                		concept_linear_quadrangle;
+                 		concept_segment;
+				nrel_side;
+				nrel_opposite;
+				nrel_parallelism
+				};;
+
 concept_linear_parallelogram <- rrel_key_sc_element: 
-     [Опр.(линейный параллелограмм)] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Опр.(линейный параллелограмм)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -33,21 +43,14 @@ concept_linear_parallelogram <- rrel_key_sc_element:
 			[Линейный четырехугольник, у которого противолежащие стороны параллельны.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-                    concept_linear_quadrangle;
-                    concept_segment;
-				nrel_side;
-				nrel_opposite;
-				nrel_parallelism
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_linear_parallelogram <= nrel_statement_of_unique_setting:
-	[Утв.(линейный параллелограмм)]
+concept_linear_parallelogram <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(линейный параллелограмм)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

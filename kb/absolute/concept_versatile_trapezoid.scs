@@ -14,9 +14,16 @@ concept_versatile_trapezoid=> nrel_idtf:[Множество знаков все�
 
 concept_versatile_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
 
+concept_versatile_trapezoid <= nrel_using_constants:
+				{
+				concept_trapezoid;
+				nrel_side
+				};;
+
 concept_versatile_trapezoid <- rrel_key_sc_element: 
-     [Опр.(разносторонняя трапеция);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(разносторонняя трапеция)]  (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -25,11 +32,6 @@ concept_versatile_trapezoid <- rrel_key_sc_element:
 			[Трапеция, у которой нет конгруэнтных сторон.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_trapezoid;
-				nrel_side
-				};;
 			*);;
 		*);;
 	*);; 

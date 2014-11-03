@@ -26,9 +26,16 @@ concept_non_linear_three_tuple_of_points <= nrel_strict_inclusion: concept_non_l
 
 concept_non_linear_three_tuple_of_points <= nrel_strict_inclusion: concept_three_tuple_of_points;;
 
+concept_non_linear_three_tuple_of_points <= nrel_using_constants:
+				{
+				concept_three_tuple_of_points;
+				concept_straight_line
+				};;
+
 concept_non_linear_three_tuple_of_points <- rrel_key_sc_element: 
-     [Опр.(непрямолинейная тройка точек)] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Опр.(непрямолинейная тройка точек)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -37,19 +44,15 @@ concept_non_linear_three_tuple_of_points <- rrel_key_sc_element:
 			[Непрямолинейная тройка точек - тройка точек, для которой не существует прямой, на которой лежат все три элемента заданной тройки.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_three_tuple_of_points;
-				concept_straight_line
-				};;
 			*);;
 		*);;
 	*);;
 
 
-concept_non_linear_three_tuple_of_points <= nrel_main_statements:
-	[Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура)]
+concept_non_linear_three_tuple_of_points <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -58,9 +61,12 @@ concept_non_linear_three_tuple_of_points <= nrel_main_statements:
 			[Для каждого треугольника тройка точек, являющихся вершинами этого треугольника, принадлежит классу непрямолинейных фигур.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(треугольник; непрямолинейная тройка точек; вершина*)]
+	*);;
+	
+concept_non_linear_three_tuple_of_points <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; непрямолинейная тройка точек; вершина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

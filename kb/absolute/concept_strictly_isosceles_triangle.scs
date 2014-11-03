@@ -2,7 +2,7 @@ sc_node_not_relation->concept_strictly_isosceles_triangle;;
 
 concept_strictly_isosceles_triangle=>nrel_main_ru_idtf:
 	[строго равнобедренный треугольник](*<-lang_ru;;*);
-	[Strictly isosceles triangle](*<-lang_en;;*);;
+	[strictly isosceles triangle](*<-lang_en;;*);;
 
 concept_strictly_isosceles_triangle=> nrel_idtf:[Класс строго равнобедренных треугольников](*<-lang_ru;;*);;
 
@@ -14,9 +14,16 @@ concept_strictly_isosceles_triangle=> nrel_idtf:[Множество знаков
 
 concept_strictly_isosceles_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
 
+concept_strictly_isosceles_triangle <= nrel_using_constants:
+				{
+				concept_equilateral_triangle;
+				concept_scalene_triangle
+				};;
+
 concept_strictly_isosceles_triangle  <- rrel_key_sc_element: 
-     [Опр.(строго равнобедренный треугольник);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(строго равнобедренный треугольник)]  (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -25,11 +32,6 @@ concept_strictly_isosceles_triangle  <- rrel_key_sc_element:
 			[Множество является строго равнобедренным треугольником тогда и только тогда, когда оно является треугольником, который не является ни равносторонним, ни разносторонним.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_equilateral_triangle;
-				concept_scalene_triangle
-				};;
 			*);;
 		*);;
 	*);; 

@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Opened_ray_k;;
+sc_node_not_relation -> struct_Opened_ray_k;;
 
 struct_Opened_ray_k => nrel_main_idtf:
 	[Открытый луч k]
@@ -10,24 +10,25 @@ struct_Opened_ray_k => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Opened_ray_k=> nrel_idtf:[Полупрямая k](*<-lang_ru;;*);;
+struct_Opened_ray_k => nrel_idtf:[Полупрямая k](*<-lang_ru;;*);;
 
-struct_Opened_ray_k=> nrel_idtf:[Открытая полупрямая k](*<-lang_ru;;*);;
+struct_Opened_ray_k => nrel_idtf:[Открытая полупрямая k](*<-lang_ru;;*);;
 
 struct_Opened_ray_k <- concept_opened_ray;;
 
-struct_Opened_ray_k <= nrel_main_statements:
-	[Факт.утв.(Открытый луч k)]
+struct_Opened_ray_k <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Открытый луч k)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
                 -> rrel_example: 
 			[ k ∈ concept_opened_ray
-A ∈ concept_geometric_point
-< k, A > ∈ nrel_boundary_point
-A ∉ k ]
+			A ∈ concept_geometric_point
+			< k, A > ∈ nrel_boundary_point
+			A ∉ k ]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[ k - открытый луч. Геометрическая точка A, которая является граничной точкой луча k, не принадлежит лучу k. ]

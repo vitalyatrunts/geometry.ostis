@@ -32,9 +32,16 @@ concept_angle => nrel_strict_inclusion: concept_dihedral_angle;;
 
 concept_angle => nrel_strict_inclusion: concept_trihedral_angle;;
 
+concept_angle <= nrel_using_constants:
+				{
+				concept_ray;
+				concept_geometric_point
+				};;
+
 concept_angle <- rrel_key_sc_element: 
-        [Опр.(угол);;] 
+        ...
 	(*
+	=> nrel_main_idtf: [Опр.(угол)]   (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -43,19 +50,14 @@ concept_angle <- rrel_key_sc_element:
 			[Углом называют неограниченную геометрическую фигуру, образованную двумя лучами, выходящими из одной точки .]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_ray;
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_angle <= nrel_main_statements:
-	
-	[Утв.(угол; совпадение*; сторона*; вершина*; конгруэнтность*);;]
+concept_angle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(угол; совпадение*; сторона*; вершина*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -66,10 +68,10 @@ concept_angle <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_angle <= nrel_main_statements:
-	
-	[Утв.(угол; мера угла*; конгруэнтность*);;]
+concept_angle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(угол; мера угла*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -80,10 +82,10 @@ concept_angle <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_angle <= nrel_main_statements:
-	
-	[Утв.(угол; сторона*; параллельность*; мера угла*; конгруэнтность*);;]
+concept_angle <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*; мера угла*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

@@ -41,11 +41,19 @@ concept_triangle <= nrel_subdividing:
 	};;
 
 
-concept_triangle -> subject_domain_of_Euclidean_geometry;;
+concept_triangle <- subject_domain_of_Euclidean_geometry;;
 
+concept_triangle <= nrel_using_constants:
+				{
+				concept_linear_treangle;
+				concept_plane;
+				concept_geometric_point;
+				rrel_between
+				};;
 concept_triangle <- rrel_key_sc_element: 
-        [Опр.(треугольник);;] 
+        ...
 	(*
+	=> nrel_main_idtf: [О пр.(треугольник)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -56,20 +64,14 @@ concept_triangle <- rrel_key_sc_element:
 двух любых точек, принадлежащих этому линейному треугольнику.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_linear_treangle;
-				concept_plane;
-				concept_geometric_point;
-				rrel_between
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_triangle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
-	[Утв. (треугольник);;] 
+concept_triangle <- rrel_key_sc_element: 
+	... 
 	(*
+	=> nrel_main_idtf: [Утв. (треугольник)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -80,9 +82,10 @@ concept_triangle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
 		*);;
 	*);;
 
-concept_triangle <= nrel_statement_of_unique_setting:
-	[Утв.(треугольник; непрямолинейная тройка точек; вершина*);;]
+concept_triangle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; непрямолинейная тройка точек; вершина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -99,10 +102,10 @@ concept_triangle <= nrel_statement_of_unique_setting:
 		*);;
 	*);;
 
-concept_triangle <= nrel_main_statements:
-	
-	[Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура);;]
+concept_triangle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

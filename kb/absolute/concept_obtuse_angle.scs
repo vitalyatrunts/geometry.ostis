@@ -22,9 +22,18 @@ concept_obtuse_angle <= nrel_strict_inclusion: concept_planar_angle;;
 
 concept_obtuse_angle <=  nrel_strict_inclusion: concept_dihedral_angle;;
 
+concept_obtuse_angle <= nrel_using_constants:
+				{
+				concept_angle;
+				nrel_angle_measure;
+				concept_geometric_point;
+				rrel_between
+				};;
+
 concept_obtuse_angle <- rrel_key_sc_element: 
-        [Опр.(тупой угол);;] 
+        ... 
 	(*
+	=> nrel_main_idtf: [Опр.(тупой угол);;] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -33,13 +42,6 @@ concept_obtuse_angle <- rrel_key_sc_element:
 			[Угол является тупым углом, когда он имеет величину угла, большую, чем 90 угловых градусов, и меньшую, чем 180 угловых градусов.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_angle;
-				nrel_angle_measure;
-				concept_geometric_point;
-				rrel_between
-				};;
 			*);;
 		*);;
 	*);;

@@ -1,10 +1,10 @@
-sc_node_norole_relation->nrel_diagonal;;
+sc_node_norole_relation -> nrel_diagonal;;
 
-nrel_diagonal=>nrel_main_idtf:
+nrel_diagonal => nrel_main_idtf:
 	[диагональ*](*<-lang_ru;;*);
 	[diagonal*](*<-lang_en;;*);;
 
-nrel_diagonal=> nrel_idtf:[быть диагональю*](*<-lang_ru;;*);;
+nrel_diagonal => nrel_idtf:[быть диагональю*](*<-lang_ru;;*);;
 
 nrel_diagonal <- relation;;
 
@@ -12,11 +12,36 @@ nrel_diagonal <- binary_relation;;
 
 nrel_diagonal <- oriented_relation;;
 
-nrel_diagonal <= nrel_definitional_domain : concept_polygon; concept_triangle; concept_polyhedron; concept_pyramid; concept_triangular_prism;;
+nrel_diagonal => nrel_definitional_domain : 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_polygon; 
+			concept_triangle; 
+			concept_polyhedron; 
+			concept_pyramid; 
+			concept_triangular_prism;;
+		*);;
+	*);;	
 
-nrel_diagonal <= nrel_first_domain: concept_polygon; concept_triangle; concept_polyhedron; concept_pyramid; concept_triangular_prism;;
+nrel_diagonal => nrel_first_domain:
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_polygon; 
+			concept_triangle; 
+			concept_polyhedron; 
+			concept_pyramid; 
+			concept_triangular_prism;;
+		*);;
+	*);;	
 
-nrel_diagonal <= nrel_second_domain: concept_segment;;
+nrel_diagonal <= nrel_second_domain: 
+	concept_segment;;
 
 nrel_diagonal <= nrel_schemes_of_relations:
      {
@@ -24,9 +49,20 @@ nrel_diagonal <= nrel_schemes_of_relations:
 	rrel_diagonal
      };;
 
-nrel_diagonal <- rrel_key_sc_element: 
-     [Опр.(диагональ*);;] 
+nrel_diagonal <= nrel_using_constants:
+	{
+    		concept_polygon;
+              	concept_polyhedron;
+                concept_segment;
+                nrel_vertex;
+		nrel_edge;
+		nrel_boundary_point
+        };;
+
+nrel_diagonal <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(диагональ*)] (*<-lang_ru;;*);; 
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -34,23 +70,15 @@ nrel_diagonal <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Отрезок, соединяющий две вершины, которые не принадлежат одной стороне(ребру).]
 			(* 
-			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-		    		concept_polygon;
-                    		concept_polyhedron;
-                    		concept_segment;
-                    		nrel_vertex;
-		    		nrel_edge;
-		   		nrel_boundary_point
-                  		};;
+			<- lang_ru;;
 			*);;
 		*);;
 	*);;
 
-nrel_diagonal <= nrel_main_statements:
-	[Утв.(диагональ*; многоугольник; вершина*);;]
+nrel_diagonal <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(диагональ*; многоугольник; вершина*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -58,8 +86,7 @@ nrel_diagonal <= nrel_main_statements:
 		-> rrel_example: 
 			[Для каждого многоугольника выполняется следующее числовое соотношение,](* <- lang_ru;; *);
 			"file://images/nrel_diagonal.png";
-			[где d – число диагоналей в многоугольнике,
- n – число вершин многоугольника.]
+			[где d – число диагоналей в многоугольнике, n – число вершин многоугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

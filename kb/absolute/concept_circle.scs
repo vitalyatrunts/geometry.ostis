@@ -24,9 +24,18 @@ concept_circle <= nrel_strict_inclusion: concept_geometric_figure_of_limited_siz
 
 concept_circle => nrel_strict_inclusion: concept_circle_arc;;
 
+concept_circle <= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_planar_figure;
+				concept_uninterrupted_geometric_figure;
+				nrel_distance
+				};;
+				
 concept_circle <- rrel_key_sc_element: 
-     [Опр.(окружность)] 
+	...
 	(*
+	=> nrel_main_idtf: [Опр.(окружность)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -35,20 +44,14 @@ concept_circle <- rrel_key_sc_element:
 			[Окружностью называют геометрическую фигуру, состоящую из всех точек плоскости, расположенных на одинаковом расстоянии от некоторой точки.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				concept_planar_figure;
-				concept_uninterrupted_geometric_figure;
-				nrel_distance
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_circle <= nrel_main_statements:
-	[Утв.(окружность; длина*; радиус*)]
+concept_circle <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; длина*; радиус*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -60,9 +63,12 @@ concept_circle <= nrel_main_statements:
 R – радиус окружности.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-	[Утв.(окружность; хорда*; перпендикуляр*)]
+	*);;
+
+concept_circle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; хорда*; перпендикуляр*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -71,9 +77,12 @@ R – радиус окружности.]
 			[Диаметр окружности, перпендикулярный хорде, делит эту хорду пополам.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(окружность; хорда*; конгруэнтность*; расстояние*; центр окружности*)]
+	*);;
+
+concept_circle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; хорда*; конгруэнтность*; расстояние*; центр окружности*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -82,9 +91,12 @@ R – радиус окружности.]
 			[Равные(конгруэнтные) хорды окружности находятся на равном расстоянии от центра окружности.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(окружность; геометрическая точка; перпендикуляр*; диаметр*; среднее геометрическое*; отрезок)]
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; перпендикуляр*; диаметр*; среднее геометрическое*; отрезок)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -93,9 +105,12 @@ R – радиус окружности.]
 			[Перпендикуляр, опущенный из точки окружности на диаметр, есть среднее геометрическое отрезков диаметра.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-      [Утв.(окружность; геометрическая точка; прямая; касательная*; перпендикуляр*; радиус*; диаметр*)]
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; прямая; касательная*; перпендикуляр*; радиус*; диаметр*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -104,9 +119,12 @@ R – радиус окружности.]
 			[Прямая касается окружности тогда и только тогда, когда радиус (и диаметр) окружности, проходящий через общую точку прямой и этой окружности, перпендикулярен данной прямой.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-         [Утв.(окружность; геометрическая точка; плоскость; касательная*; отрезок; конгруэнтность*)]
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; плоскость; касательная*; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -115,9 +133,12 @@ R – радиус окружности.]
 			[Если из некоторой точки плоскости проведены две касательные к окружности, то отрезки касательных от этой точки до точек касания равны (конгруэнтны).]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(окружность; геометрическая точка; плоскость; касательная*; прямая; центр*; угол)]
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; плоскость; касательная*; прямая; центр*; угол)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

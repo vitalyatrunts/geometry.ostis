@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Acute_Angle_K_L_M;;
+sc_node_not_relation -> struct_Acute_Angle_K_L_M;;
 
 struct_Acute_Angle_K_L_M => nrel_main_idtf:
 	[Острый угол KLM]
@@ -10,29 +10,30 @@ struct_Acute_Angle_K_L_M => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Acute_Angle_K_L_M=> nrel_idtf:[Острый угол(K; L; M)](*<-lang_ru;;*);;
+struct_Acute_Angle_K_L_M => nrel_idtf:[Острый угол(K; L; M)](*<-lang_ru;;*);;
 
 struct_Acute_Angle_K_L_M <- concept_acute_angle;;
 
 
-struct_Acute_Angle_K_L_M <= nrel_main_statements:
-	[Факт.утв.(Острый угол KLM);;]
+struct_Acute_Angle_K_L_M <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Острый угол KLM)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
                 -> rrel_example: 
 		[KLM ∈ concept_acute_angle;
-K, L, M ∈ concept_geometric_point;
-<KLM, L> ∈ nrel_vertex;
-LK, LM  ∈ concept_ray;
-<KLM, LK>, <KLM, LM> ∈ nrel_side.]
+		K, L, M ∈ concept_geometric_point;
+		<KLM, L> ∈ nrel_vertex;
+		LK, LM  ∈ concept_ray;
+		<KLM, LK>, <KLM, LM> ∈ nrel_side.]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[Угол KLM является острым.
-K, L и M являются геометрическими точками. Геометрическая точка L является вершиной угла KLM.
-Лучи LK и LM являются сторонами угла KLM.]
+			K, L и M являются геометрическими точками. Геометрическая точка L является вершиной угла KLM.
+			Лучи LK и LM являются сторонами угла KLM.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

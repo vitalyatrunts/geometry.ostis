@@ -36,9 +36,18 @@ concept_polyline <= nrel_subdividing:
 	concept_complex_polygonal_line;;
 	*);;
 
+concept_polyline <= nrel_using_constants:
+				{
+				nrel_boundary_point;
+				concept_segment;
+                   		 concept_non_linear_geometric_figure;
+				concept_geometric_point
+				};;
+
 concept_polyline <- rrel_key_sc_element: 
-     [Опр.(ломаная)] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(ломаная)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -47,20 +56,14 @@ concept_polyline <- rrel_key_sc_element:
 			[Геометрическая фигура, состоящая из множества геометрических точек и множества отрезков, соединяющих эти точки, и граничные точки этих отрезков не лежат на одной прямой.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				nrel_boundary_point;
-				concept_segment;
-                    concept_non_linear_geometric_figure;
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_polyline <= nrel_main_statements:
-	[Утв.(ломаная; граничная точка*; отрезок; длина*)]
+concept_polyline <- rrel_key_sc_element: 
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(ломаная; граничная точка*; отрезок; длина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -74,8 +77,8 @@ concept_polyline <= nrel_main_statements:
 concept_polyline <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_explanation;; 
-		<= nrel_sc_text_translation: 
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
 		...
 			(*
               	-> rrel_example: 

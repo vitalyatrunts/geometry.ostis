@@ -1,18 +1,26 @@
-sc_node_norole_relation->nrel_hypotenuse;;
+sc_node_norole_relation -> nrel_hypotenuse;;
 
-nrel_hypotenuse => nrel_main_ru_idtf:[гипотенуза*];;
+nrel_hypotenuse => nrel_main_idtf:
+	[гипотенуза*]
+	(*
+	<- lang_ru;;
+	*);
+	[hypotenuse*]
+	(*
+	<- lang_en;;
+	*);;
 
 nrel_hypotenuse => nrel_idtf:[быть гипотенузой*]
 	(*
 	<-lang_ru;;
 	*);;
 
-nrel_hypotenuse=> nrel_idtf:[гипотенуза прямоугольного треугольника*]
+nrel_hypotenuse => nrel_idtf:[гипотенуза прямоугольного треугольника*]
 	(*
 	<-lang_ru;;
 	*);;
 
-nrel_hypotenuse=> nrel_idtf:[быть гипотенузой прямоугольного треугольника*]
+nrel_hypotenuse => nrel_idtf:[быть гипотенузой прямоугольного треугольника*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -23,21 +31,35 @@ nrel_hypotenuse -> binary_relation;;
 
 nrel_hypotenuse -> oriented_realtion;;
 
-nrel_hypotenuse <= nrel_domain_of_definition : concept_rectangular_triangle;;
+nrel_hypotenuse => nrel_domain_of_definition : 
+	concept_rectangular_triangle;;
 
-nrel_hypotenuse <= nrel_first_domain: concept_rectangular_triangle;;
+nrel_hypotenuse => nrel_first_domain: 
+	concept_rectangular_triangle;;
 
-nrel_hypotenuse <= nrel_second_domain: concept_segment;;
+nrel_hypotenuse => nrel_second_domain: 
+	concept_segment;;
 
-nrel_hypotenuse <=nrel_schemes_of_relations:
+nrel_hypotenuse <= nrel_schemes_of_relations:
 	{
-	rrel_triangle;
-	rrel_hypotenuse
+		rrel_triangle;
+		rrel_hypotenuse
 	};;
 
-nrel_hypotenuse <- rrel_key_sc_element: 
-     [Опр.(гипотенуза*);;] 
+nrel_hypotenuse <= nrel_using_constants:
+	{
+		concept_rectangular_triangle;
+		concept_segment;
+		nrel_side;
+		nrel_opposite;
+		nrel_internal_angle;
+		concept_right_angle
+	};;
+
+nrel_hypotenuse <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(гипотенуза*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -46,24 +68,16 @@ nrel_hypotenuse <- rrel_key_sc_element:
 			[Гипотенуза - это отрезок, который является стороной прямоугольного треугольника противолежащей прямому углу.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_rectangular_triangle;
-				concept_segment;
-				nrel_side;
-				nrel_opposite;
-				nrel_internal_angle;
-				concept_right_angle
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_hypotenuse -> subject_domain_of_Euclidean_geometry;;
+nrel_hypotenuse <- subject_domain_of_Euclidean_geometry;;
 
-nrel_hypotenuse <= nrel_main_statements:
-	[Утв.(гипотенуза*; катет*);;]
+nrel_hypotenuse <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(гипотенуза*; катет*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -74,8 +88,9 @@ nrel_hypotenuse <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольный треугольник; окружность; описанность*; гипотенуза*; диаметр*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(прямоугольный треугольник; окружность; описанность*; гипотенуза*; диаметр*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -86,8 +101,9 @@ nrel_hypotenuse <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -97,6 +113,7 @@ nrel_hypotenuse <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
 nrel_hypotenuse <- rrel_key_sc_element: 
 	...
 	(*

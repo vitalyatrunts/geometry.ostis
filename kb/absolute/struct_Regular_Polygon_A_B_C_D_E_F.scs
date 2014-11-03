@@ -1,35 +1,45 @@
-sc_node_not_relation->struct_Regular_Polyhon_A_B_C_D_E_F;;
-struct_Regular_Polygon_A_B_C_D_E_F=>nrel_main_ru_idtf:[Правильный многоугольник ABCDEF];;
+sc_node_not_relation -> struct_Regular_Polyhon_A_B_C_D_E_F;;
 
-struct_Regular_Polygon_A_B_C_D_E_F=> nrel_idtf:[Правильный многоугольник(A; B; C; D; E; F)](*<-lang_ru;;*);;
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_main_ru_idtf:
+	[Правильный многоугольник ABCDEF]
+	(*
+	<- lang_ru;;
+	*);
+	[Regular PolyhonABCDEF]
+	(*
+	<- lang_en;;
+	*);;
 
-struct_Regular_Polygon_A_B_C_D_E_F=> nrel_idtf:[Правильный многоугольник, вершинами которого являются Точка A, Точка B, Точка С, Точка D, Точка E и Точка F](*<-lang_ru;;*);;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf:[Правильный многоугольник(A; B; C; D; E; F)](*<-lang_ru;;*);;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf:[Правильный многоугольник, вершинами которого являются Точка A, Точка B, Точка С, Точка D, Точка E и Точка F](*<-lang_ru;;*);;
 
 struct_Regular_Polygon_A_B_C_D_E_F -> concept_regular_polygon;;
 
 struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element: 
-...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
+	...
 	(*
-	-> rrel_example:
-		"file://images/Polygon ABCDEF.png";;
-*);;
-*);;
+		<-image;;
+		<=nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example:
+				"file://images/Polygon ABCDEF.png";;
+		*);;
+	*);;
 
-struct_Regular_Polygon_A_B_C_D_E_F <= nrel_main_statements:
-	
-	[Факт.утв.(Правильный многоугольник ABCDEF);;]
+struct_Regular_Polygon_A_B_C_D_E_F <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Правильный многоугольник ABCDEF)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[ABCDEF - правильный многоугольник. Геометрические точки A, B, C, D, E и F являются вершинами Многоугольника ABCDEF. Отрезки a, b, c, d, e, f являются сторонами Многоугольника ABCDEF. Стороны a, b, c, d, e, f равны. Точка A является граничной точкой отрезков a, b. Точка B является граничной точкой отрезков b, c. Точка C является граничной точкой отрезков c, d. Точка D является граничной точкой отрезков d, e. Точка E является граничной точкой отрезков e, f.
-Точка F является граничной точкой отрезков f, a.]
+			[ABCDEF - правильный многоугольник. Геометрические точки A, B, C, D, E и F являются вершинами Многоугольника ABCDEF. 				Отрезки a, b, c, d, e, f являются сторонами Многоугольника ABCDEF. Стороны a, b, c, d, e, f равны. Точка A является граничной точкой отрезков a, b. Точка B является граничной точкой отрезков b, c. Точка C является граничной точкой отрезков c, d. Точка D является граничной точкой отрезков d, e. Точка E является граничной точкой отрезков e, f.
+			Точка F является граничной точкой отрезков f, a.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

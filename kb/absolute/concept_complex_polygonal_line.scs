@@ -14,9 +14,17 @@ concept_complex_polygonal_line=> nrel_idtf:[Множество всевозмо�
 
 concept_complex_polygonal_line <= nrel_strict_inclusion: concept_polyline;;
 
+concept_complex_polygonal_line <= nrel_using_constants:
+				{
+				concept_polyline;
+				concept_segment;
+				[пересекающиеся множества*]
+				};;
+				
 concept_complex_polygonal_line <- rrel_key_sc_element: 
-     [Опр.(сложная ломаная);;] 
+	...
 	(*
+	=> nrel_main_idtf: [Опр.(сложная ломаная)]  (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -25,12 +33,6 @@ concept_complex_polygonal_line <- rrel_key_sc_element:
 			[ Ломаная с самопересечениями. ]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_polyline;
-				concept_segment;
-				[пересекающиеся множества*]
-				};;
 			*);;
 		*);;
 	*);; 

@@ -33,9 +33,16 @@ concept_rectangle <= nrel_subdividing:
 	[неправильный прямоугольник];;
 	*);;
 
-concept_rectangle <- rrel_key_sc_element: 
-        [Опр.(прямоугольник);;] 
+concept_rectangle <= nrel_using_constants:
+				{
+				concept_parallelogram;
+				concept_right_angle
+				};;
+
+concept_rectangle <- rrel_key_sc_element:
+	... 
 	(*
+	=> nrel_main_idtf: [Опр.(прямоугольник)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -44,19 +51,14 @@ concept_rectangle <- rrel_key_sc_element:
 			[Прямоугольник - параллелограмм, у которого все углы прямые.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_parallelogram;
-				concept_right_angle
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_rectangle <= nrel_main_statements:
-	
-	[Утв.(параллелограмм; диагональ*; прямоугольник; конгруэнтность*);;]
+concept_rectangle <- rrel_key_sc_element:
+	... 
 	(*
+	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -66,9 +68,10 @@ concept_rectangle <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-
-	[Утв.(параллелограмм; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*);;]
+	
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(параллелограмм; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -79,8 +82,9 @@ concept_rectangle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(четырехугольник; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -91,8 +95,9 @@ concept_rectangle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольник; точка; диагональ*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; точка; диагональ*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -103,8 +108,9 @@ concept_rectangle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольник; сторона*; перпендикуляр*; середина*; ось симметрии*, конгруэнтность*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; сторона*; перпендикуляр*; середина*; ось симметрии*, конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -115,8 +121,9 @@ concept_rectangle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольник; описанность*; окружность);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; описанность*; окружность)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -127,8 +134,9 @@ concept_rectangle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольник; площадь*; сторона*; произведение*; конгруэнтность*; смежность*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; площадь*; сторона*; произведение*; конгруэнтность*; смежность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -142,16 +150,17 @@ concept_rectangle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямоугольник; диагональ*; конгруэнтность*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
-<-image;;
-<=nrel_sc_text_translation:
-...
-(*
--> rrel_example:
-"file://images/rectangle_diagonal.png";;
-*);;
+	<-image;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		"file://images/rectangle_diagonal.png";;
+		*);;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -166,6 +175,6 @@ b - смежная сторона указанной стороне данног
 
 
 
-concept_rectangle -> subject_domain_of_Euclidean_geometry;;
+concept_rectangle <- subject_domain_of_Euclidean_geometry;;
 
 concept_rectangle -> rrel_example : struct_Rectangle_B_C_D_E;;

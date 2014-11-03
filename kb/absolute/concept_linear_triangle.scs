@@ -10,10 +10,6 @@ concept_linear_triangle=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_linear_triangle=>nrel_main_ru_idtf:[линейный треугольник];;
-
-concept_linear_triangle=>nrel_main_en_idtf:[linear triangle];;
-
 concept_linear_triangle=> nrel_idtf:[Класс линейных треугольников](*<-lang_ru;;*);;
 
 concept_linear_triangle=> nrel_idtf:[Множество всевозможных линейных треугольников](*<-lang_ru;;*);;
@@ -24,18 +20,7 @@ concept_linear_triangle <= nrel_strict_inclusion: concept_linear_polygon;;
 
 concept_linear_triangle <= nrel_strict_inclusion: concept_triangle;;
 
-concept_linear_triangle <- rrel_key_sc_element: 
-     [Опр.(линейный треугольник)] 
-	(*
-	<- sc_explanation;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линейный треугольник - линейный многоугольник, для которого существует непрямолинейная тройка точек такая что, любая вершина данного многоугольника является элементом этой тройки, и любая точка, не совпадающей с элементами данной тройки, принадлежит этой фигуре в том и только том случае, если она лежит между какой-либо парой из указанной тройки точек.]
-			(* 
-			<- lang_ru;; 
-			<= nrel_using_constants:
+concept_linear_triangle <= nrel_using_constants:
 			    {
                             concept_linear_polygon;
                             concept_non_linear_three_tuple_of_points;
@@ -44,14 +29,28 @@ concept_linear_triangle <- rrel_key_sc_element:
 		            concept_three_tuple_of_points;
 		            concept_geometric_point
 			    };;
+
+concept_linear_triangle <- rrel_key_sc_element: 
+     	...
+	(*
+	=> nrel_main_idtf: [Опр.(линейный треугольник)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Линейный треугольник - линейный многоугольник, для которого существует непрямолинейная тройка точек такая что, любая вершина данного многоугольника является элементом этой тройки, и любая точка, не совпадающей с элементами данной тройки, принадлежит этой фигуре в том и только том случае, если она лежит между какой-либо парой из указанной тройки точек.]
+			(* 
+			<- lang_ru;; 
 		        *);;
 	        *);;
 	*);;
 
 
-concept_linear_triangle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
-	[Утв.(линейный треугольник)] 
+concept_linear_triangle <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(линейный треугольник)]  (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -62,9 +61,10 @@ concept_linear_triangle <= nrel_utverzhdenije_opreledeliajuschego_tipa:
 		*);;
 	*);;
 
-concept_linear_triangle <= nrel_statement_of_unique_setting:
-	[Утв.(непрямолинейная тройка точек; линейный треугольник; плоский треугольник; вершина*)]
+concept_linear_triangle <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(непрямолинейная тройка точек; линейный треугольник; плоский треугольник; вершина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

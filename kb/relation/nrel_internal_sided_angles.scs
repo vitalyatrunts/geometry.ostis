@@ -1,8 +1,16 @@
-sc_node_norole_relation->nrel_internal_sided_angles;;
+sc_node_norole_relation -> nrel_internal_sided_angles;;
 
-nrel_internal_sided_angles=>nrel_main_ru_idtf:[внутренние односторонние углы*];;
+nrel_internal_sided_angles => nrel_main_idtf:
+	[внутренние односторонние углы*]
+	(*
+	<- lang_ru;;
+	*);
+	[internal sided angles*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_internal_sided_angles=> nrel_idtf:[быть внутренними односторонними углами*]
+nrel_internal_sided_angles => nrel_idtf:[быть внутренними односторонними углами*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -13,21 +21,57 @@ nrel_internal_sided_angles -> binary_relation;;
 
 nrel_internal_sided_angles -> undirected_relation;;
 
-nrel_internal_sided_angles <= nrel_domain_of_definition : concept_planar_angle; concept_dihedral_angle;;
+nrel_internal_sided_angles => nrel_domain_of_definition: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;
 
-nrel_internal_sided_angles <= nrel_first_domain: concept_planar_angle; concept_dihedral_angle;;
+nrel_internal_sided_angles => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;
 
-nrel_internal_sided_angles <= nrel_second_domain: concept_planar_angle; concept_dihedral_angle;;
+nrel_internal_sided_angles => nrel_second_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;
 
-nrel_internal_sided_angles <=nrel_schemes_of_relations:
+nrel_internal_sided_angles <= nrel_schemes_of_relations:
 	{
-	rrel_angle;
-	rrel_angle
+		rrel_angle;
+		rrel_angle
+	};;
+
+nrel_internal_sided_angles <= nrel_using_constants:
+	{
+		concept_angle;
+		nrel_intersecting_lines;
+		nrel_secant;
+		rrel_between
 	};;
 
 nrel_internal_sided_angles <- rrel_key_sc_element: 
-     [Опр.(внутренние односторонние углы*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(внутренние односторонние углы*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -37,22 +81,16 @@ nrel_internal_sided_angles <- rrel_key_sc_element:
 лежащие по одну сторону от секущей между прямыми.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_angle;
-				nrel_intersecting_lines;
-				nrel_secant;
-				rrel_between
-				};;
 			*);;
 		*);;
 	*);; 
 
-nrel_internal_sided_angles -> subject_domain_of_Euclidean_geometry;;
+nrel_internal_sided_angles <- subject_domain_of_Euclidean_geometry;;
 
-nrel_internal_sided_angles <= nrel_main_statements:
-	[Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*);;]
+nrel_internal_sided_angles <= rrel_key_sc_elemen:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -64,8 +102,9 @@ nrel_internal_sided_angles <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; внутренние односторонние углы*; сумма*; мера угла*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; внутренние односторонние углы*; сумма*; мера угла*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -77,7 +116,7 @@ nrel_internal_sided_angles <= nrel_main_statements:
 		*);;
 	*);;
 
-nrel_internal_sided_angles<- rrel_key_sc_element: 
+nrel_internal_sided_angles <- rrel_key_sc_element: 
 	...
 	(*
 		<- sc_explanation;; 

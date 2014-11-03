@@ -24,9 +24,17 @@ concept_linear_quadrangle <= nrel_strict_inclusion: concept_linear_polygon;;
 
 concept_linear_quadrangle => nrel_strict_inclusion: concept_linear_parallelogram;;
 
+concept_linear_quadrangle <= nrel_using_constants:
+				{
+				nrel_internal_angle;
+				concept_linear_polygon;
+				concept_linear_angle
+				};;
+
 concept_linear_quadrangle <- rrel_key_sc_element: 
-     [Опр.(линейный четырехугольник)] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(линейный четырехугольник)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -35,12 +43,6 @@ concept_linear_quadrangle <- rrel_key_sc_element:
 			[Линейный четырёхугольник - линейный многоугольник с четырьмя внутренними углами.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				nrel_internal_angle;
-				concept_linear_polygon;
-				concept_linear_angle
-				};;
 			*);;
 		*);;
 	*);;

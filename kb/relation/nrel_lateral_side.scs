@@ -1,8 +1,16 @@
-sc_node_norole_relation->nrel_lateral_side;;
+sc_node_norole_relation -> nrel_lateral_side;;
 
-nrel_lateral_side=>nrel_main_ru_idtf:[боковая сторона*];;
+nrel_lateral_side => nrel_main_idtf:
+	[боковая сторона*]
+	(*
+	<- lang_ru;;
+	*);
+	[lateral side*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_lateral_side=> nrel_idtf:[быть боковой стороной*]
+nrel_lateral_side => nrel_idtf:[быть боковой стороной*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -23,21 +31,52 @@ nrel_lateral_side -> binary_relation;;
 
 nrel_lateral_side -> oriented_relation;;
 
-nrel_lateral_side <= nrel_domain_of_definition : concept_strictly_isosceles_triangle; concept_trapezoid;;
+nrel_lateral_side => nrel_domain_of_definition :
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_strictly_isosceles_triangle; 
+			concept_trapezoid;;
+		*);;
+	*);;	
 
-nrel_lateral_side <= nrel_first_domain: concept_strictly_isosceles_triangle; concept_trapezoid;;
+nrel_lateral_side => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_strictly_isosceles_triangle; 
+			concept_trapezoid;;
+		*);;
+	*);;	
 
-nrel_lateral_side <= nrel_second_domain: concept_segment;;
+nrel_lateral_side => nrel_second_domain: 
+	concept_segment;;
 
-nrel_lateral_side <=nrel_schemes_of_relations: 
+nrel_lateral_side <= nrel_schemes_of_relations: 
 	{
-	rrel_polygon;
-	rrel_lateral_face_of_polygon
+		rrel_polygon;
+		rrel_lateral_face_of_polygon
+	};;
+
+nrel_lateral_side <= nrel_using_constants:
+	{
+		concept_geometric_figure;
+		concept_strictly_isosceles_triangle;
+		concept_trapezoid;
+		concept_segment;
+		nrel_side;
+		concept_angle;
+		nrel_base
 	};;
 
 nrel_lateral_side <- rrel_key_sc_element: 
-     [Опр.(боковая сторона*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(боковая сторона*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -47,18 +86,8 @@ nrel_lateral_side <- rrel_key_sc_element:
 который является стороной этой геометрической фигуры и имеет общий угол с основанием той же фигуры.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				concept_strictly_isosceles_triangle;
-				concept_trapezoid;
-				concept_segment;
-				nrel_side;
-				concept_angle;
-				nrel_base
-				};;
 			*);;
 		*);;
 	*);; 
 
-nrel_lateral_side -> subject_domain_of_Euclidean_geometry;;
+nrel_lateral_side <- subject_domain_of_Euclidean_geometry;;

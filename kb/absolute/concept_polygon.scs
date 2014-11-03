@@ -38,9 +38,18 @@ concept_polygon<= nrel_subdividing:
 	concept_non_convex_polygon;;
 	*);;
 
-concept_polygon <- rrel_key_sc_element: 
-     [Опр.(многоугольник)] 
+concept_polygon <= nrel_using_constants:
+				{
+				concept_polyline;
+				concept_geometric_figure;
+                    concept_flat_closed_polygon;
+			     concept_plane
+				};;
+
+concept_polygon <- rrel_key_sc_element:
+	... 
 	(*
+	=> nrel_main_idtf: [Опр.(многоугольник)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -49,20 +58,14 @@ concept_polygon <- rrel_key_sc_element:
 			[Геометрическая фигура, которая состоит из точек линейного многоугольника, который является границей, и точек плоскости таких, что любой луч, проведенный из такой точки, пересекает границу.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_polyline;
-				concept_geometric_figure;
-                    concept_flat_closed_polygon;
-			     concept_plane
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_polygon <= nrel_main_statements:
-	[Утв.(многоугольник; вершина*; сторона*; смежность*)]
+concept_polygon <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; вершина*; сторона*; смежность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -71,9 +74,12 @@ concept_polygon <= nrel_main_statements:
 			[Смежными сторонами n-угольника называются две его стороны, имеющие общую вершину.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; диагональ*; отрезок; смежность*)]
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; диагональ*; отрезок; смежность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -82,9 +88,12 @@ concept_polygon <= nrel_main_statements:
 			[Диагональю n-угольника называется отрезок с концами в не смежных вершинах.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; луч; внутренний угол*; смежность*; вершина*; плоскость; пересечение*; внутренняя область*)]
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; луч; внутренний угол*; смежность*; вершина*; плоскость; пересечение*; внутренняя область*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -93,9 +102,12 @@ concept_polygon <= nrel_main_statements:
 			[Внутренним углом n-угольника при данной его вершине называется угол, образованный лучами, имеющими начало в этой вершине и содержащими обе смежные стороны этой вершины. При этом часть плоскости, заключенная между лучами, должна иметь непустое пересечение с внутренней областью n-угольника.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; окружность; вписанность*; вершина*)]
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; окружность; вписанность*; вершина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -104,9 +116,12 @@ concept_polygon <= nrel_main_statements:
 			[Вписанным в окружность называется такой n-угольник, все вершины которого лежат на данной окружности..]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; окружность; описанность*; вершина*; сторона*)]
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; окружность; описанность*; вершина*; сторона*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -115,9 +130,12 @@ concept_polygon <= nrel_main_statements:
 			[Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности. .]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; коэффициент подобия*; площадь*)]
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; коэффициент подобия*; площадь*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -126,9 +144,12 @@ concept_polygon <= nrel_main_statements:
 			[Площади подобных многоугольников относятся как квадраты их соответствующих линейных элементов.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; площадь*; окружность; вписанность*; периметр*; радиус*)]
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; площадь*; окружность; вписанность*; периметр*; радиус*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

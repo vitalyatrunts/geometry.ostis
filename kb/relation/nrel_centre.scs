@@ -1,16 +1,10 @@
-sc_node_norole_relation->nrel_centre;;
+sc_node_norole_relation -> nrel_centre;;
 
-nrel_centre=>nrel_main_idtf:
-	[центр*]
-		(*
-			<-lang_ru;;
-		*);
-	[centre*]
-		(*
-			<-lang_en;;
-		*);;
+nrel_centre => nrel_main_idtf:
+	[центр*](*<-lang_ru;;*);
+	[centre*](*<-lang_en;;*);;
 
-nrel_centre=> nrel_idtf:[быть центром*](*<-lang_ru;;*);;
+nrel_centre => nrel_idtf:[быть центром*](*<-lang_ru;;*);;
 
 nrel_centre -> relation;;
 
@@ -18,21 +12,55 @@ nrel_centre -> binary_relation;;
 
 nrel_centre -> oriented_relation;;
 
-nrel_centre <= nrel_definitional_domain : concept_circle; concept_sphere; concept_ball;;
+nrel_centre <= nrel_definitional_domain : 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_circle; 
+			concept_sphere; 
+			concept_ball;;
+		*);;
+	*);;
 
-nrel_centre <= nrel_first_domain: concept_circle; concept_sphere; concept_ball;;
+nrel_centre <= nrel_first_domain:
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_circle; 
+			concept_sphere; 
+			concept_ball;;
+		*);;
+	*);;
 
-nrel_centre <= nrel_second_domain: concept_geometric_point;;
+nrel_centre <= nrel_second_domain: 
+	concept_geometric_point;;
 
-nrel_centre <=nrel_schemes_of_relations:
+nrel_centre <= nrel_schemes_of_relations:
 	{
 		rrel_geometric_point;
 		rrel_centre
 	};;
 
+nrel_centre <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_circle;
+		concept_circle;
+		concept_sphere;
+		concept_ball;
+		concept_circle;
+		nrel_bound;
+		nrel_distance
+	};;
+
 nrel_centre <- rrel_key_sc_element: 
-     [Опр.(центр*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(центр*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -41,17 +69,6 @@ nrel_centre <- rrel_key_sc_element:
 			[ Для окружности и сферы: Геометрическая точка, равноудаленная от любой точки фигуры. Для круга и шара: Геометрическая точка, равноудаленная от любой граничной точки фигуры.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_circle;
-				concept_circle;
-				concept_sphere;
-				concept_ball;
-				concept_circle;
-				nrel_bound;
-				nrel_distance
-				};;
 			*);;
 		*);;
 	*);; 

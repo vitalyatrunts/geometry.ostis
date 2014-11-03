@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Zero_angle_N_K_N;;
+sc_node_not_relation -> struct_Zero_angle_N_K_N;;
 
 struct_Zero_angle_N_K_N => nrel_main_idtf:
 	[Нулевой угол NKN]
@@ -15,28 +15,28 @@ struct_Zero_angle_N_K_N => nrel_idtf:[Нулевой угол(N,,K,,N)](*<-lang_
 struct_Zero_angle_N_K_N <- concept_zero_angle;;
 
 struct_Zero_angle_N_K_N <= nrel_main_statements:
-	[Факт.утв.(Нулевой угол NKN);;]
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Нулевой угол NKN)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[Угол NKN является нулевым.
-N и K являются геометрическими точками. Геометрическая точка K является вершиной угла NKN.
-Луч KN является сторонами угла NKN.]
+			N и K являются геометрическими точками. Геометрическая точка K является вершиной угла NKN. Луч KN является сторонами угла NKN.]
 			(* <- lang_ru;; *);;
-          -> rrel_example: 
-		[NKN ∈ concept_zero_angle;
-           N, K ∈ concept_geometric_point;
-           <NKN, K> ∈ nrel_vertex;
-           KN, KN ∈ concept_ray;
-           <NKN, KN> ∈ nrel_side.]
+          	-> rrel_example: 
+			[NKN ∈ concept_zero_angle;
+			 N, K ∈ concept_geometric_point;
+			 <NKN, K> ∈ nrel_vertex;
+			 KN, KN ∈ concept_ray;
+			 <NKN, KN> ∈ nrel_side.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-struct_Zero_angle_N_K_N<- rrel_key_sc_element: 
+struct_Zero_angle_N_K_N <- rrel_key_sc_element: 
 	...
 	(*
 		<- sc_explanation;; 
@@ -47,6 +47,4 @@ struct_Zero_angle_N_K_N<- rrel_key_sc_element:
 						"file://Corner NKN.png";;
 			*);; 
 	*);; 
-
-
 

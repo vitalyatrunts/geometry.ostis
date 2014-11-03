@@ -34,9 +34,18 @@ concept_hexagon <= nrel_subdividing:
 	[неправильный шестиугольник];;
 	*);;
 
+concept_hexagon <= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				[звено];
+				concept_angle;
+				[замкнутая ломаная]
+				};;
+
 concept_hexagon <- rrel_key_sc_element: 
-        [Опр.(шестиугольник);;] 
+        ... 
 	(*
+	=> nrel_main_idtf: [Опр.(шестиугольник)]  (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -45,21 +54,14 @@ concept_hexagon <- rrel_key_sc_element:
 			[Шестиугольник- это геометрическая фигура, ограниченная замкнутой ломаной линией, звенья которой образуют шесть углов.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				[звено];
-				concept_angle;
-				[замкнутая ломаная]
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_hexagon <= nrel_main_statements:
-	
-	[Утв.(многоугольник; внутренний угол*; мера угла*);;]
+concept_hexagon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
