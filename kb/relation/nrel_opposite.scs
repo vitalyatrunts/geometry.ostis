@@ -1,5 +1,13 @@
-sc_node_norole_relation->nrel_opposite;;
+sc_node_norole_relation -> nrel_opposite;;
 
-nrel_opposite=>nrel_main_ru_idtf:[противолежащий*];;
+nrel_opposite => nrel_main_idtf:
+	[противолежащий*]
+	(*
+	<- lang_ru;;
+	*);
+	[opposite*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_opposite=> nrel_idtf:[быть противолежащим*](*<-lang_ru;;*);;
+nrel_opposite => nrel_idtf:[быть противолежащим*](*<-lang_ru;;*);;

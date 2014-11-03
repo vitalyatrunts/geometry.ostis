@@ -38,11 +38,12 @@ concept_geometric_point=> nrel_idtf:[геометрическая фигура, 
 
 concept_geometric_point <= nrel_strict_inclusion: concept_polygon;;
 
-concept_geometric_point -> subject_domain_of_Euclidean_geometry;;
+concept_geometric_point <- subject_domain_of_Euclidean_geometry;;
 
 concept_geometric_point <- rrel_key_sc_element : 
-	[Поясн.(геометрическая точка);;]
+	...
 	(*
+	=> nrel_main_idtf: [Поясн.(геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_explanation;;
 	<= nrel_sc_text_translation:
 		...
@@ -56,10 +57,10 @@ concept_geometric_point <- rrel_key_sc_element :
 		*);;
 	*);;
 
-concept_geometric_point <= nrel_main_statements:
-	
-	[Акс.(прямая; геометрическая точка);;]
+concept_geometric_point <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -69,10 +70,12 @@ concept_geometric_point <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		
 		*);;
-	*);
+	*);;
 
-	[Акс.(плоскость; геометрическая точка);;]
+concept_geometric_point <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Акс.(плоскость; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

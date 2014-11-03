@@ -1,11 +1,20 @@
-sc_node_norole_relation->nrel_tangent;;
-nrel_tangent=>nrel_main_ru_idtf:[касательная*];;
+sc_node_norole_relation -> nrel_tangent;;
 
-nrel_tangent=> nrel_idtf:[быть касательной*](*<-lang_ru;;*);;
+nrel_tangent => nrel_main_idtf:
+	[касательная*]
+	(*
+	<- lang_ru;;
+	*);
+	[tangent*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_tangent=> nrel_idtf:[касательная к окружности*](*<-lang_ru;;*);;
+nrel_tangent => nrel_idtf:[быть касательной*](*<-lang_ru;;*);;
 
-nrel_tangent=> nrel_idtf:[быть касательной к окружности*](*<-lang_ru;;*);;
+nrel_tangent => nrel_idtf:[касательная к окружности*](*<-lang_ru;;*);;
+
+nrel_tangent => nrel_idtf:[быть касательной к окружности*](*<-lang_ru;;*);;
 
 nrel_tangent <- relation;;
 
@@ -13,11 +22,14 @@ nrel_tangent <- binary_relation;;
 
 nrel_tangent <- oriented_relation;;
 
-nrel_tangent <= nrel_domain_of_definition : concept_circle;;
+nrel_tangent => nrel_domain_of_definition: 
+	concept_circle;;
 
-nrel_tangent <= nrel_first_domain: concept_circle;;
+nrel_tangent => nrel_first_domain: 
+	concept_circle;;
 
-nrel_tangent <= nrel_second_domain: concept_straight_line;;
+nrel_tangent => nrel_second_domain: 
+	concept_straight_line;;
 
 nrel_tangent <= nrel_schemes_of_relations:
      {
@@ -25,9 +37,20 @@ nrel_tangent <= nrel_schemes_of_relations:
 	rrel_tangent
      };;
 
+nrel_tangent <= nrel_using_constants:
+	{
+		concept_geometric_point;
+                concept_straight_line;
+                concept_circle;
+                nrel_radius;
+		nrel_perpendicular;
+		nrel_boundary_point
+	};; 
+
 nrel_tangent <- rrel_key_sc_element: 
-     [Опр.(касательная*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(касательная*)](*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -36,15 +59,6 @@ nrel_tangent <- rrel_key_sc_element:
 			[Прямая, проходящая через точку окружности, перпендикулярно радиусу, проведенному в эту точку.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-		    concept_geometric_point;
-                    concept_straight_line;
-                    concept_circle;
-                    nrel_radius;
-		    nrel_perpendicular;
-		    nrel_boundary_point
-                  		};;
 			*);;
 		*);;
 	*);;

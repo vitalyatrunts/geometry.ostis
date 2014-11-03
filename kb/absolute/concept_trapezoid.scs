@@ -27,11 +27,19 @@ concept_trapezoid => nrel_strict_inclusion:
 	concept_rectangular_trapeze
 	};;
 
-concept_trapezoid -> subject_domain_of_Euclidean_geometry;;
+concept_trapezoid <- subject_domain_of_Euclidean_geometry;;
+
+concept_trapezoid <= nrel_using_constants:
+				{
+				concept_quadrilateral;
+				nrel_side;
+				nrel_parallelism
+				};;
 
 concept_trapezoid <- rrel_key_sc_element: 
-        [Опр.(трапеция);;] 
+        ... 
 	(*
+	=> nrel_main_idtf: [Опр.(трапеция)] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -40,19 +48,15 @@ concept_trapezoid <- rrel_key_sc_element:
 			[Трапеция - четырёхугольник, у которого только две противолежащие стороны параллельны.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_quadrilateral;
-				nrel_side;
-				nrel_parallelism
-				};;
+			
 			*);;
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(трапеция; средняя линия трапеции*; основание*);;]
+concept_trapezoid <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(трапеция; средняя линия трапеции*; основание*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -63,9 +67,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(трапеция; внутренний угол*);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(трапеция; внутренний угол*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -76,9 +81,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(трапеция; диагональ*; боковая сторона*; основание*);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(трапеция; диагональ*; боковая сторона*; основание*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -89,9 +95,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(диагональ*; боковая сторона*; прямая);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(диагональ*; боковая сторона*; прямая)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -102,9 +109,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(основание*; диагональ*; боковая сторона*; трапеция);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(основание*; диагональ*; боковая сторона*; трапеция)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -115,9 +123,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(трапеция; отрезок; диагональ*; основание*);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(трапеция; отрезок; диагональ*; основание*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -128,9 +137,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(трапеция; отрезок; основание*; быть равновеликими*);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(трапеция; отрезок; основание*; быть равновеликими*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -141,9 +151,10 @@ concept_trapezoid <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_trapezoid <= nrel_main_statements:
-	[Утв.(трапеция; окружность; основание*; сторона*);;]
+concept_trapezoid <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(трапеция; окружность; основание*; сторона*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

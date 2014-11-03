@@ -1,34 +1,42 @@
-sc_node_not_relation->struct_Straight_angle_A_O_B;;
+sc_node_not_relation -> struct_Straight_angle_A_O_B;;
 
-struct_Straight_angle_A_O_B=>nrel_main_ru_idtf:[Развернутый угол AOB];;
+struct_Straight_angle_A_O_B => nrel_main_idtf:
+	[Развернутый угол AOB]
+	(*
+	<- lang_ru;;
+	*);
+	[Straight angle AOB]
+	(*
+	<- lang_en;;
+	*);;
 
-struct_Straight_angle_A_O_B=> nrel_idtf:[Развернутый угол(A; O; B)](*<-lang_ru;;*);;
+struct_Straight_angle_A_O_B => nrel_idtf:[Развернутый угол(A; O; B)](*<-lang_ru;;*);;
 
 struct_Straight_angle_A_O_B <- concept_straight_angle;;
 
-struct_Straight_angle_A_O_B  <= nrel_main_statements:
-	
-	[Факт. утв.(Развернутый угол AOB);;]
+struct_Straight_angle_A_O_B  <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт. утв.(Развернутый угол AOB)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[Угол AOB является развернутым.
-A, O и B являются геометрическими точками. Лучи OA и OB являются сторонами угла AOB. Геометрическая точка O является вершиной угла AOB. ]
+			A, O и B являются геометрическими точками. Лучи OA и OB являются сторонами угла AOB. Геометрическая точка O является вершиной угла AOB. ]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 struct_Straight_angle_A_O_B <- rrel_key_sc_element: 
-...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
-(*
--> rrel_example:
-"file://images/Straight_angle_A_O_B.png";;
-*);;
-*);;
+	...
+	(*
+		<-image;;
+		<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					"file://images/Straight_angle_A_O_B.png";;
+			*);;
+	*);;

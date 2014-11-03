@@ -1,39 +1,46 @@
-sc_node_norole_relation->nrel_central_angle;;
+sc_node_norole_relation -> nrel_central_angle;;
 
-nrel_central_angle=>nrel_main_idtf:
-	[центральный угол*]
-		(*
-			<-lang_ru;;
-		*);
-	[central angle*]
-		(*
-			<-lang_en;;
-		*);;
+nrel_central_angle => nrel_main_idtf:
+	[центральный угол*](*<-lang_ru;;*);
+	[central angle*](*<-lang_en;;*);;
 
-nrel_central_angle=> nrel_idtf:[быть центральным углом*](*<-lang_ru;;*);;
+nrel_central_angle => nrel_idtf:[быть центральным углом*](*<-lang_ru;;*);;
 
-nrel_central_angle=> nrel_idtf:[центральный угол в окружности*](*<-lang_ru;;*);;
+nrel_central_angle => nrel_idtf:[центральный угол в окружности*](*<-lang_ru;;*);;
 
-nrel_central_angle=> nrel_idtf:[быть центральным углом в окружности*](*<-lang_ru;;*);;
+nrel_central_angle => nrel_idtf:[быть центральным углом в окружности*](*<-lang_ru;;*);;
 
 nrel_central_angle -> binary_relation;;
 
 nrel_central_angle -> oriented_relation;;
 
-nrel_central_angle <= nrel_definitional_domain : concept_circle;;
+nrel_central_angle => nrel_definitional_domain : 
+	concept_circle;;
 
-nrel_central_angle <= nrel_first_domain: concept_circle;;
-nrel_central_angle <= nrel_second_domain: concept_planar_angle;;
+nrel_central_angle => nrel_first_domain: 
+	concept_circle;;
 
-nrel_central_angle <=nrel_schemes_of_relations:
+nrel_central_angle => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_central_angle <= nrel_schemes_of_relations:
 	{
 		rrel_circle;
 		rrel_central_angle
 	};;
 
-nrel_central_angle <- rrel_key_sc_element: 
-     [Опр.(центральный угол*);;] 
+nrel_central_angle <= nrel_using_constants:
+	{
+		concept_planar_angle;
+		concept_circle;	
+		nrel_vertex;
+		nrel_centre
+	};;
+
+nrel_central_angle <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(центральный угол*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -42,20 +49,14 @@ nrel_central_angle <- rrel_key_sc_element:
 			[ Планарный угол, вершиной которого является центр окружности.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_planar_angle;
-				concept_circle;	
-				nrel_vertex;
-				nrel_centre
-				};;
 			*);;
 		*);;
 	*);;
 
 nrel_central_angle <- rrel_key_sc_element: 
-     [Утв.(дуга; окружность; центральный угол*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(дуга; окружность; центральный угол*)] (*<-lang_ru;;*);;
 	<- sc_explanation;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -71,14 +72,14 @@ nrel_central_angle <- rrel_key_sc_element:
 nrel_central_angle <- subject_domain_of_Euclidean_geometry;;
 
 nrel_central_angle <- rrel_key_sc_element: 
-...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
+	...
 	(*
-	-> rrel_example:
-		"file://images/central_angle.png";;
-*);;
-*);;
+		<-image;;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://images/central_angle.png";;
+			*);;
+	*);;
 

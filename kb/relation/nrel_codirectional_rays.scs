@@ -1,6 +1,6 @@
-sc_node_norole_relation->nrel_codirectional_rays;;
+sc_node_norole_relation -> nrel_codirectional_rays;;
 
-nrel_codirectional_rays=>nrel_main_idtf:
+nrel_codirectional_rays => nrel_main_idtf:
 	[сонаправленные лучи*](*<-lang_ru;;*);
 	[codirectional rays*](*<-lang_en;;*);;
 
@@ -10,22 +10,36 @@ nrel_codirectional_rays <- not_oriented_relation;;
 
 nrel_codirectional_rays => nrel_idtf:[быть сонаправленными лучами*](*<-lang_ru;;*);;
 
-nrel_codirectional_rays <= nrel_definitional_domain : concept_ray;;
+nrel_codirectional_rays => nrel_definitional_domain : 
+	concept_ray;;
 
-nrel_codirectional_rays <= nrel_first_domain: concept_ray;;
-nrel_codirectional_rays <= nrel_second_domain: concept_ray;;
+nrel_codirectional_rays => nrel_first_domain: 
+	concept_ray;;
 
-nrel_centre <=nrel_schemes_of_relations:
+nrel_codirectional_rays => nrel_second_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays <= nrel_schemes_of_relations:
 	{ 
-	rrel_ray; 
-	rrel_ray
+		rrel_ray; 
+		rrel_ray
+	};;
+
+nrel_codirectional_rays <= nrel_using_constants:
+	{
+		concept_ray;
+		concept_straight_line;
+		nrel_parallelism;
+		concept_half_plane;
+		concept_straight_line;
+		nrel_boundary_point
 	};;
 
 nrel_codirectional_rays <- rrel_key_sc_element: 
 	...
-	(*
-	<- sc_definition;;   
+	(*   
 	=> nrel_main_idtf: [Опр.(сонаправленные лучи*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -33,24 +47,16 @@ nrel_codirectional_rays <- rrel_key_sc_element:
 			[ Два луча называются сонаправленными, если либо содержащие их прямые параллельны и лучи лежат в одной полуплоскости относительно прямой, соединяющей их граничные точки, либо один из лучей содержит другой. ]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_ray;
-				concept_straight_line;
-				nrel_parallelism;
-				concept_half_plane;
-				concept_straight_line;
-				nrel_boundary_point
-				};;
 			*);;
 		*);;
 	*);; 
 
 nrel_codirectional_rays <- subject_domain_of_Euclidean_geometry;;
 
-nrel_codirectional_rays <= nrel_main_statements: 
-     [Утв.(луч; полупрямая; прямая; параллельный перенос*; сонаправленные лучи*);;] 
-	(*
+nrel_codirectional_rays <= rrel_key_sc_element:
+	...
+	(*   
+	=> nrel_main_idtf:[Утв.(луч; полупрямая; прямая; параллельный перенос*; сонаправленные лучи*)](* <- lang_ru;; *);; 
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -63,8 +69,9 @@ nrel_codirectional_rays <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(луч; сонаправленные лучи*);;] 
-	(*
+     	...
+	(*   
+	=> nrel_main_idtf:[Утв.(луч; сонаправленные лучи*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...

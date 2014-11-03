@@ -34,9 +34,19 @@ nrel_inclined<= nrel_schemes_of_relations:
 	rrel_inclined
      };;
 
+nrel_inclined <= nrel_using_constants:
+				{
+				concept_geometric_point;
+                 	  	concept_plane;
+             		   	concept_straight_line;
+            		        concept_segment;
+           		        nrel_perpendicular
+				};;
+
 nrel_inclined <- rrel_key_sc_element: 
-     [Опр.(наклонная*);;] 
+      	...
 	(*
+	=> nrel_main_idtf: [Опр.(наклонная*)] (* <- lang_ru;; *);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -45,21 +55,14 @@ nrel_inclined <- rrel_key_sc_element:
 			[Наклонной к данной прямой называется отрезок, соединяющий какую-нибудь точку плоскости с точкой прямой и не являющийся перпендикуляром к этой прямой.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point;
-                    concept_plane;
-                    concept_straight_line;
-                    concept_segment;
-                    nrel_perpendicular
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_inclined <= nrel_main_statements:
-	[Утв.(длина; наклонная*; прямая; точка; перпендикуляр*)]
+nrel_inclined <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(длина; наклонная*; прямая; точка; перпендикуляр*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -69,8 +72,10 @@ nrel_inclined <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(наклонная*; конгруэнтность*; проекция*)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(наклонная*; конгруэнтность*; проекция*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -80,8 +85,10 @@ nrel_inclined <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(наклонная*; точка; проекция*; больше*)]
+ 	
+ 	...
 	(*
+	=> nrel_main_idtf:     [Утв.(наклонная*; точка; проекция*; больше*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

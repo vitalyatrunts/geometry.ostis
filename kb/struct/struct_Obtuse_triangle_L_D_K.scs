@@ -1,39 +1,47 @@
-sc_node_not_relation->struct_Obtuse_triangle_L_D_K;;
+sc_node_not_relation -> struct_Obtuse_triangle_L_D_K;;
 
-struct_Obtuse_triangle_L_D_K=>nrel_main_ru_idtf:[Тупоугольный треугольник LDK];;
+struct_Obtuse_triangle_L_D_K => nrel_main_idtf:
+	[Тупоугольный треугольник LDK]
+	(*
+	<- lang_ru;;
+	*);
+	[Obtuse triangle LDK]
+	(*
+	<- lang_en;;
+	*);;
 
-struct_Obtuse_triangle_L_D_K=> nrel_idtf:[Тр-к(L; D; K)](*<-lang_ru;;*);;
+struct_Obtuse_triangle_L_D_K => nrel_idtf:[Тр-к(L; D; K)](*<-lang_ru;;*);;
 
-struct_Obtuse_triangle_L_D_K=> nrel_idtf:[Тупоугольный треугольник(L; D; K)](*<-lang_ru;;*);;
+struct_Obtuse_triangle_L_D_K => nrel_idtf:[Тупоугольный треугольник(L; D; K)](*<-lang_ru;;*);;
 
-struct_Obtuse_triangle_L_D_K=> nrel_idtf:[Треугольник, вершинами которого являются Точка L, Точка D, Точка K](*<-lang_ru;;*);;
+struct_Obtuse_triangle_L_D_K => nrel_idtf:[Треугольник, вершинами которого являются Точка L, Точка D, Точка K](*<-lang_ru;;*);;
 
 struct_Obtuse_triangle_L_D_K -> concept_obtuse_triangle;;
 
 struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element: 
 ...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
 	(*
-	-> rrel_example:
-		"file://images/Triangle_LDK.png";;
-*);;
+	<-image;;
+	<=nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/Triangle_LDK.png";;
+	*);;
 *);;
 
-struct_Obtuse_triangle_L_D_K <= nrel_main_statements:
-	
-	[Факт.утв.(Тупоугольный треугольник LDK);;]
+struct_Obtuse_triangle_L_D_K <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Тупоугольный треугольник LDK)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[Треугольник LDK является тупоугольным, разносторонним,
-Геометрические точки L, D и K являются вершинами Треугольника LDK. Отрезки l, d и k являются сторонами Треугольника LDK. Углы LaTeX: \alpha, LaTeX: \beta, LaTeX: \gamma являются внутренним углами Треугольника LDK. Точка L является граничной точкой отрезков k, d. Точка D является граничной точкой отрезков k, l.
-Точка K является граничной точкой отрезков l, d. ]
+			Геометрические точки L, D и K являются вершинами Треугольника LDK. Отрезки l, d и k являются сторонами Треугольника LDK. Углы LaTeX: \alpha, LaTeX: \beta, LaTeX: \gamma являются внутренним углами Треугольника LDK. Точка L является граничной точкой отрезков k, d. Точка D является граничной точкой отрезков k, l.
+			Точка K является граничной точкой отрезков l, d. ]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

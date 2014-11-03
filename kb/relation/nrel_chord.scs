@@ -1,20 +1,14 @@
-sc_node_norole_relation->nrel_chord;;
+sc_node_norole_relation -> nrel_chord;;
 
 nrel_chord => nrel_main_idtf:
-	[хорда*]
-		(*
-			<-lang_ru;;
-		*);
-	[chord*]
-		(*
-			<-lang_en;;
-		*);;
+	[хорда*](*<-lang_ru;;*);
+	[chord*](*<-lang_en;;*);;
 
-nrel_chord=> nrel_idtf:[быть хордой*](*<-lang_ru;;*);;
+nrel_chord => nrel_idtf:[быть хордой*](*<-lang_ru;;*);;
 
-nrel_chord=> nrel_idtf:[хорда окружности*](*<-lang_ru;;*);;
+nrel_chord => nrel_idtf:[хорда окружности*](*<-lang_ru;;*);;
 
-nrel_chord=> nrel_idtf:[быть хордой окружности*](*<-lang_ru;;*);;
+nrel_chord => nrel_idtf:[быть хордой окружности*](*<-lang_ru;;*);;
 
 nrel_chord -> relation;;
 
@@ -22,13 +16,17 @@ nrel_chord -> binary_relation;;
 
 nrel_chord -> oriented_relation;;
 
-nrel_chord <= nrel_strict_inclusion: concept_segment;;
+nrel_chord <= nrel_strict_inclusion: 
+	concept_segment;;
 
-nrel_chord <= nrel_definitional_domain : concept_circle;;
+nrel_chord => nrel_definitional_domain : 
+	concept_circle;;
 
-nrel_chord <= nrel_first_domain: concept_circle;;
+nrel_chord => nrel_first_domain: 
+	concept_circle;;
 
-nrel_chord <= nrel_second_domain: concept_segment;;
+nrel_chord => nrel_second_domain: 
+	concept_segment;;
 
 nrel_chord <= nrel_schemes_of_relations:
 	{
@@ -36,9 +34,18 @@ nrel_chord <= nrel_schemes_of_relations:
 		rrel_chord
 	};;
 
-nrel_chord <- rrel_key_sc_element: 
-     [Опр.(хорда*);;] 
+nrel_chord <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_circle;
+		concept_segment;
+		nrel_boundary_point
+	};;
+
+nrel_chord <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(хорда*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -47,22 +54,16 @@ nrel_chord <- rrel_key_sc_element:
 			[ Хорда - это отрезок, соединяющий две точки окружности.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_circle;
-				concept_segment;
-				nrel_boundary_point
-				};;
 			*);;
 		*);;
 	*);; 
 
 nrel_chord <- subject_domain_of_Euclidean_geometry;;
 
-nrel_chord <- nrel_main_statements: 
-     [Утв.(дуга; параллельность*; хорда*; конгруэнтность*);;] 
+nrel_chord <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(дуга; параллельность*; хорда*; конгруэнтность*)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -75,9 +76,10 @@ nrel_chord <- nrel_main_statements:
 		*);;
 	*);;
 
-nrel_chord <- nrel_main_statements:: 
-     [Утв.(угол; хорда*; конгруэнтность*; вписанность*; мера угла*);;] 
+nrel_chord <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(угол; хорда*; конгруэнтность*; вписанность*; мера угла*)](*<-lang_ru;;*);; 
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -90,19 +92,18 @@ nrel_chord <- nrel_main_statements::
 		*);;
 	*);;
 
-nrel_chord <- nrel_main_statements: 
-     [Утв.(хорда*; окружность; пересечение множеств*; геометрическая точка);;] 
+nrel_chord <- rrel_key_sc_element: 
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(хорда*; окружность; пересечение множеств*; геометрическая точка)] (*<-lang_ru;;*);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[ Если две хорды окружности, AB и CD пересекаются в точке M, то произведение отрезков одной хорды равно произведению отрезков другой хорды. .]
-			(* 
-			<- lang_ru;;
-			*);
-		"file://images/chord.png";;
+				(* <- lang_ru;;*);
+			"file://images/chord.png";;
 		*);;
 	*);;
 

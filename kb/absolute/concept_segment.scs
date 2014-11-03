@@ -32,9 +32,17 @@ concept_segment <= nrel_strict_inclusion: concept_geometric_figure_of_limited_si
 
 concept_segment <= nrel_strict_inclusion: concept_planar_line;;
 
+concept_segment <= nrel_using_constants:
+				{
+				concept_geometric_point;
+				concept_straight_line;
+				rrel_between
+				};;
+
 concept_segment <- rrel_key_sc_element: 
-        [Опр.(отрезок)] 
+        ... 
 	(*
+	=> nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -43,19 +51,14 @@ concept_segment <- rrel_key_sc_element:
 			[Отрезком называется часть прямой, которая состоит из всех точек этой прямой, лежащей между двумя данными ее точками.  ]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_straight_line;
-				rrel_between
-				};;
 			*);;
 		*);;
 	*);;
 	
-concept_segment <= nrel_main_statements:
-	[Утв.(отрезок; длина*);;]
+concept_segment <- rrel_key_sc_element: 
+        ... 
 	(*
+	=> nrel_main_idtf: [Утв.(отрезок; длина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -66,8 +69,9 @@ concept_segment <= nrel_main_statements:
 		*);;
 	*);
 	
-	[Утв.(отрезок; конгруэнтность*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

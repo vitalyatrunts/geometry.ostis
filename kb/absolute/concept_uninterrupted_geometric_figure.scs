@@ -33,9 +33,15 @@ concept_uninterrupted_geometric_figure<= nrel_subdividing:
 	concept_geometric_body;;
 	*);;
 
+concept_uninterrupted_geometric_figure <= nrel_using_constants:
+				{
+				concept_geometric_figure
+				};;
+
 concept_uninterrupted_geometric_figure <- rrel_key_sc_element: 
-     [Поясн.(непрерывная геометрическая фигура);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Поясн.(непрерывная геометрическая фигура)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -44,15 +50,11 @@ concept_uninterrupted_geometric_figure <- rrel_key_sc_element:
 			[Непрерывная геометрическая фигура - геометрическая фигура, которая не содержит в себе точек разрыва..]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_figure
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_uninterrupted_geometric_figure -> subject_domain_of_Euclidean_geometry;;
+concept_uninterrupted_geometric_figure <- subject_domain_of_Euclidean_geometry;;
 
 concept_uninterrupted_geometric_figure -> rrel_example : struct_Straight_Line_A;;
 concept_uninterrupted_geometric_figure -> rrel_example : struct_Plane_P;;

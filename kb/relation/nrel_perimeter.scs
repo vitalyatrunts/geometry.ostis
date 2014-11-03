@@ -1,4 +1,4 @@
-sc_node_norole_relation->nrel_perimeter;;
+sc_node_norole_relation -> nrel_perimeter;;
 
 nrel_perimeter => nrel_main_idtf:
 	[периметр*]
@@ -10,27 +10,38 @@ nrel_perimeter => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-nrel_perimeter=> nrel_idtf:[быть периметром*](*<-lang_ru;;*);;
+nrel_perimeter => nrel_idtf:[быть периметром*](*<-lang_ru;;*);;
 
-nrel_perimeter=> nrel_idtf:[периметр геометрической фигуры*](*<-lang_ru;;*);;
+nrel_perimeter => nrel_idtf:[периметр геометрической фигуры*](*<-lang_ru;;*);;
 
-nrel_perimeter=> nrel_idtf:[быть периметром геометрической фигуры*](*<-lang_ru;;*);;
+nrel_perimeter => nrel_idtf:[быть периметром геометрической фигуры*](*<-lang_ru;;*);;
 
-nrel_perimeter <= nrel_definitional_domain: concept_planar_figure;;
+nrel_perimeter => nrel_definitional_domain: 
+	concept_planar_figure;;
 
-nrel_perimeter <= nrel_first_domain: concept_polygon;;
+nrel_perimeter => nrel_first_domain: 
+	concept_polygon;;
 
-nrel_perimeter <= nrel_second_domain: concept_number;;
+nrel_perimeter => nrel_second_domain: 
+	concept_number;;
 
-nrel_perimeter<= nrel_schemes_of_relations:
+nrel_perimeter <= nrel_schemes_of_relations:
      {
 	rrel_geometric_figure;
 	rrel_perimeter
      };;
 
-nrel_perimeter <- rrel_key_sc_element: 
-     [Опр.(периметр*)] 
+nrel_perimeter <= nrel_using_constants:
+	{
+		nrel_bound;
+		nrel_length;
+		concept_planar_figure
+	};;
+
+nrel_perimeter <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(периметр*)](*<-lang_ru;;*);; 
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -39,12 +50,6 @@ nrel_perimeter <- rrel_key_sc_element:
 			[Периметр - сумма длин всех сторон многоугольника.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				nrel_bound;
-				nrel_length;
-				concept_planar_figure
-				};;
 			*);;
 		*);;
 	*);;

@@ -22,9 +22,17 @@ concept_zero_angle <= nrel_strict_inclusion: concept_planar_angle;;
 
 concept_zero_angle <= nrel_strict_inclusion: concept_dihedral_angle;;
 
+concept_zero_angle <= nrel_using_constants:
+				{
+				concept_angle;
+				nrel_angle_measure;
+				rrel_angular_degree
+				};;
+
 concept_zero_angle <- rrel_key_sc_element: 
-     [Опр.(нулевой угол)] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(нулевой угол)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -33,12 +41,6 @@ concept_zero_angle <- rrel_key_sc_element:
 			[Угол является нулевым углом, когда значение его величины равно 0 угловых градусов.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_angle;
-				nrel_angle_measure;
-				rrel_angular_degree
-				};;
 			*);;
 		*);;
 	*);;

@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Acute_angled_triangle_O_S_T;;
+sc_node_not_relation -> struct_Acute_angled_triangle_O_S_T;;
 
 struct_Acute_angled_triangle_O_S_T => nrel_main_idtf:
 	[Остроугольный треугольник OST]
@@ -10,39 +10,40 @@ struct_Acute_angled_triangle_O_S_T => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Acute_angled_triangle_O_S_T=> nrel_idtf:[Тр-к(O; S; T)](*<-lang_ru;;*);;
+struct_Acute_angled_triangle_O_S_T => nrel_idtf:[Тр-к(O; S; T)](*<-lang_ru;;*);;
 
-struct_Acute_angled_triangle_O_S_T=> nrel_idtf:[Остроугольный треугольник(O; S; T)](*<-lang_ru;;*);;
+struct_Acute_angled_triangle_O_S_T => nrel_idtf:[Остроугольный треугольник(O; S; T)](*<-lang_ru;;*);;
 
-struct_Acute_angled_triangle_O_S_T=> nrel_idtf:[Треугольник, вершинами которого являются Точка O, Точка S, Точка T](*<-lang_ru;;*);;
+struct_Acute_angled_triangle_O_S_T => nrel_idtf:[Треугольник, вершинами которого являются Точка O, Точка S, Точка T](*<-lang_ru;;*);;
 
-struct_Acute_angled_triangle_O_S_T <= nrel_main_statements:
-	[Факт.утв.(Остроугольный треугольник OST)]
+struct_Acute_angled_triangle_O_S_T <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Остроугольный треугольник OST)](*<-lang_ru;;*);; 
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
                 -> rrel_example: 
 			[OST ∈ concept_acute_angled_triangle;
-O, S, T ∈ concept_geometric_point;
-<OST, O>, <OST, S>, <OST, T> ∈ nrel_vertex;
-o, s, t ∈ concept_segment;
-<OST, o>, <OST, s>, <OST, t> ∈ nrel_side;
-alpha, beta, gamma ∈ concept_angle;
-alpha, beta, gamma ∈ concept_acute_angle;
-<OST, alpha>, <OST, beta>, <OST, gamma> ∈  nrel_internal_angle;
-<s, O>, <t, O>, <o, S>, <t, S>, <o, T>, <s, T> ∈ nrel_boundary_point.]
+			O, S, T ∈ concept_geometric_point;
+			<OST, O>, <OST, S>, <OST, T> ∈ nrel_vertex;
+			o, s, t ∈ concept_segment;
+			<OST, o>, <OST, s>, <OST, t> ∈ nrel_side;
+			alpha, beta, gamma ∈ concept_angle;
+			alpha, beta, gamma ∈ concept_acute_angle;
+			<OST, alpha>, <OST, beta>, <OST, gamma> ∈  nrel_internal_angle;
+			<s, O>, <t, O>, <o, S>, <t, S>, <o, T>, <s, T> ∈ nrel_boundary_point.]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[Треугольник OST является остроугольным, разносторонним,
-Геометрические точки O, S и T являются вершинами Треугольника OST. Отрезки o, s и t являются сторонами Треугольника OST. Углы alpha, beta, gamma являются внутренним углами Треугольника OST. Углы alpha, beta, gamma - острые углы. Точка O является граничной точкой отрезков t, s. Точка S является граничной точкой отрезков t, o.
+			Геометрические точки O, S и T являются вершинами Треугольника OST. Отрезки o, s и t являются сторонами Треугольника OST. Углы alpha, beta, gamma являются внутренним углами Треугольника OST. Углы alpha, beta, gamma - острые углы. Точка O является граничной точкой отрезков t, s. Точка S является граничной точкой отрезков t, o.
 Точка T является граничной точкой отрезков s, o.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-struct_struct_Acute_angled_triangle_O_S_T<- rrel_key_sc_element: 
+struct_struct_Acute_angled_triangle_O_S_T <- rrel_key_sc_element: 
 	...
 	(*
 		<- sc_explanation;; 

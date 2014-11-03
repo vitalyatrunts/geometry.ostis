@@ -1,6 +1,14 @@
-sc_node_norole_relation->external_cross_lying_angles;;
+sc_node_norole_relation -> external_cross_lying_angles;;
 
-nrel_external_cross_lying_angles => nrel_main_ru_idtf:[внешние накрест лежащие углы*];;
+nrel_external_cross_lying_angles => nrel_main_idtf:
+	[внешние накрест лежащие углы*]
+	(*
+	<- lang_ru;;
+	*);
+	[external cross lying angles*]
+	(*
+	<- lang_en;;
+	*);;
 
 nrel_external_cross_lying_angles => nrel_idtf:[быть внешними накрест лежащими углами*]
 	(*
@@ -13,30 +21,58 @@ nrel_external_cross_lying_angles -> binary_relation;;
 
 nrel_external_cross_lying_angles -> undirected_ralation;;
 
-nrel_external_cross_lying_angles <= nrel_domain_of_definition : concept_planar_angle; concept_dihedral_angle;;
+nrel_external_cross_lying_angles => nrel_domain_of_definition: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;	
 
-nrel_external_cross_lying_angles <= nrel_first_domain: concept_planar_angle; concept_dihedral_angle;;
+nrel_external_cross_lying_angles => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;	
 
-nrel_external_cross_lying_angles <= nrel_second_domain: concept_planar_angle; concept_dihedral_angle;;
+nrel_external_cross_lying_angles => nrel_second_domain:
+	...
+	(* 
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;	
 
 nrel_external_cross_lying_angles <= nrel_schemes_of_relations:
 	{
-	rrel_angle;
-	rrel_angle
+		rrel_angle;
+		rrel_angle
 	};;
 
-nrel_external_cross_lying_angles <- rrel_key_sc_element: 
-	... 
-	(*
-	<- sc_definition;;
-	=> nrel_main_idtf: [Опр.(внешние накрест лежащие углы*)] (* <- lang_ru;; *);;
-	<= nrel_using_constants:
+nrel_external_cross_lying_angles <= nrel_using_constants:
 	{
 		concept_angle;
 		nrel_intersecting_lines;
 		nrel_secant;
 		rrel_between
 	};;
+
+nrel_external_cross_lying_angles <- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(внешние накрест лежащие углы*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -48,11 +84,12 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_external_cross_lying_angles -> subject_domain_of_Euclidean_geometry;;
+nrel_external_cross_lying_angles <- subject_domain_of_Euclidean_geometry;;
 
-nrel_external_cross_lying_angles <= nrel_main_statements:
-	[Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; мера угла*);;]
+nrel_external_cross_lying_angles <= rrel_key_sc_element:
+	... 
 	(*
+	=> nrel_main_idtf:[Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; мера угла*)](* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -64,14 +101,15 @@ nrel_external_cross_lying_angles <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*);;]
+	... 
 	(*
+	=> nrel_main_idtf:[Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)](* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[ЕЕсли при пересечении двух прямых третьей прямой 
+			[Если при пересечении двух прямых третьей прямой 
 внешние накрест лежащие углы равны, то сумма каждой пары односторонних углов равна 180 градусов.]
 			(* <- lang_ru;; *);;
 		*);;

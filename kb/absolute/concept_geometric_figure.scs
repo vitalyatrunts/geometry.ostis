@@ -76,9 +76,15 @@ concept_geometric_figure <= nrel_subdividing:
 
 concept_geometric_figure -> subject_domain_of_Euclidean_geometry;;
 
+concept_geometric_figure <= nrel_using_constants:
+				{
+				concept_geometric_point
+				};;
+
 concept_geometric_figure <- rrel_key_sc_element: 
-	[Опр.(геометрическая фигура);;]
+	...
 	(*
+	=> nrel_main_idtf: [Опр.(геометрическая фигура)] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -87,10 +93,6 @@ concept_geometric_figure <- rrel_key_sc_element:
 			[Геометрическая фигура - это непустое множество геометрических точек.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;

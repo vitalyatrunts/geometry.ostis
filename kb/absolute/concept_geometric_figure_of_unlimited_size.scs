@@ -28,9 +28,15 @@ concept_geometric_figure_of_unlimited_size => nrel_strict_inclusion: concept_ang
 
 concept_geometric_figure_of_unlimited_size -> subject_domain_of_Euclidean_geometry;;
 
+concept_geometric_figure_of_unlimited_size <= nrel_using_constants:
+	{
+		geometric_figure
+	};;
+
 concept_geometric_figure_of_unlimited_size <- rrel_key_sc_element : 
-	[Опр.(геометрическая фигура неограниченного размера)]
+	...
 	(*
+	=> nrel_main_idtf: [Опр.(геометрическая фигура неограниченного размера)] (* <- lang_ru;; *);;
 	<- sc_definition;;
 	<= nrel_sc_text_translation:
 		...
@@ -39,11 +45,6 @@ concept_geometric_figure_of_unlimited_size <- rrel_key_sc_element :
 			[геометрическая фигура неограниченного размера - это фигура, не имеющая конечных размеров. ]
 			(*
 			<- lang_ru;;
-			<= nrel_using_constants:
-				{
-				geometric_figure
-				
-				};;
 			*);;
 		*);;
 	*);;

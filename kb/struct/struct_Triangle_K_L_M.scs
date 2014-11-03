@@ -1,3 +1,11 @@
-sc_node_not_relation->struct_Triangle_K_L_M;;
+sc_node_not_relation -> struct_Triangle_K_L_M;;
 
-struct_Triangle_K_L_M=>nrel_main_ru_idtf:[Треугольник KLM];;
+struct_Triangle_K_L_M => nrel_main_idtf:
+	[Треугольник KLM]
+	(*
+	<- lang_ru;;
+	*);
+	[Triangle KLM]
+	(*
+	<- lang_en;;
+	*);;

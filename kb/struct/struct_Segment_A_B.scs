@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Segment_A_B;;
+sc_node_not_relation -> struct_Segment_A_B;;
 
 struct_Segment_A_B => nrel_main_idtf:
 	[Отрезок AB]
@@ -14,21 +14,22 @@ struct_Segment_A_B => nrel_idtf:[Отрезок(A; B)](*<-lang_ru;;*);;
 
 struct_Segment_A_B <- concept_segment;;
 
-struct_Segment_A_B <= nrel_main_statements:
-	[Факт.утв.(Отрезок AB)]
+struct_Segment_A_B <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Отрезок AB)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[ AB ∈ concept_segment
-A ∈ concept_geometric_point
-B ∈ concept_geometric_point
-< AB, A > ∈ nrel_boundary_point
-< AB, B > ∈ nrel_boundary_point
-A ∈ AB
-B ∈ AB. ]
+			A ∈ concept_geometric_point
+			B ∈ concept_geometric_point
+			< AB, A > ∈ nrel_boundary_point
+			< AB, B > ∈ nrel_boundary_point
+			A ∈ AB
+			B ∈ AB. ]
 			(* <- lang_ru;; *);;
                 -> rrel_example: 
 			[AB - отрезок. Геометрические точки A и B являются граничными точками отрезка AB, которые включаются в него.]

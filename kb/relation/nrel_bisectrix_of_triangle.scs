@@ -1,8 +1,16 @@
-sc_node_norole_relation->nrel_bisectrix_of_triangle;;
+sc_node_norole_relation -> nrel_bisectrix_of_triangle;;
 
-nrel_bisectrix_of_triangle=>nrel_main_ru_idtf:[биссектриса треугольника*];;
+nrel_bisectrix_of_triangle => nrel_main_idtf:
+	[биссектриса треугольника*]
+	(*
+	<- lang_ru;;
+	*);
+	[bisectrix of triangle*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_bisectrix_of_triangle=> nrel_idtf:[быть биссектрисой треугольника*]
+nrel_bisectrix_of_triangle => nrel_idtf:[быть биссектрисой треугольника*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -13,21 +21,35 @@ nrel_bisectrix_of_triangle -> binary_relation;;
 
 nrel_bisectrix_of_triangle -> oriented_relation;;
 
-nrel_bisectrix_of_triangle <= nrel_domain_of_definition : concept_triangle;;
+nrel_bisectrix_of_triangle => nrel_domain_of_definition : 
+	concept_triangle;;
 
-nrel_bisectrix_of_triangle <= nrel_first_domain: concept_triangle;;
+nrel_bisectrix_of_triangle => nrel_first_domain: 
+	concept_triangle;;
 
-nrel_bisectrix_of_triangle <= nrel_second_domain: concept_segment;;
+nrel_bisectrix_of_triangle => nrel_second_domain: 
+	concept_segment;;
 
-nrel_bisectrix_of_triangle <=nrel_schemes_of_relations: 
+nrel_bisectrix_of_triangle <= nrel_schemes_of_relations: 
 	{
-	rrel_triangle;
-	rrel_bisectrix
+		rrel_triangle;
+		rrel_bisectrix
+	};;
+
+nrel_bisectrix_of_triangle <= nrel_using_constants:
+	{
+		concept_triangle;
+		concept_segment;
+		nrel_internal_angle;
+		nrel_bisectrix_of_angle;
+		nrel_vertex;
+		nrel_opposite
 	};;
 
 nrel_bisectrix_of_triangle <- rrel_key_sc_element: 
-     [Опр.(биссектриса треугольника*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(биссектриса треугольника*)] (*<-lang_ru;;*);; 
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -37,24 +59,16 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 от вершины угла до пересечения с противолежащей стороной.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_triangle;
-				concept_segment;
-				nrel_internal_angle;
-				nrel_bisectrix_of_angle;
-				nrel_vertex;
-				nrel_opposite
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_bisectrix_of_triangle -> subject_domain_of_Euclidean_geometry;;
+nrel_bisectrix_of_triangle <- subject_domain_of_Euclidean_geometry;;
 
-nrel_bisectrix_of_angle <= nrel_main_statements:
-	[Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*);;]
+nrel_bisectrix_of_angle <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*)](*<-lang_ru;;*);; 
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -65,8 +79,9 @@ nrel_bisectrix_of_angle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(треугольник; биссектриса*; внутренний угол; площадь*; пропорциональность*; сторона*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(треугольник; биссектриса*; внутренний угол; площадь*; пропорциональность*; сторона*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -78,8 +93,9 @@ nrel_bisectrix_of_angle <= nrel_main_statements:
 		*);;
 	*);
 	
-	[Утв.(треугольник; биссектриса*; внутренний угол*; геометрическая точка; центр окружности*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(треугольник; биссектриса*; внутренний угол*; геометрическая точка; центр окружности*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -91,8 +107,9 @@ nrel_bisectrix_of_angle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(треугольник; биссектриса*; внешний угол*; прямая; внутренний угол*; геометрическая точка; центр окружности*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(треугольник; биссектриса*; внешний угол*; прямая; внутренний угол*; геометрическая точка; центр окружности*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -105,8 +122,9 @@ nrel_bisectrix_of_angle <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(треугольник; биссектриса*; внешний угол*; серединный перпендикуляр*; внутренний угол*; геометрическая точка; окружность);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(треугольник; биссектриса*; внешний угол*; серединный перпендикуляр*; внутренний угол*; геометрическая точка; окружность)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

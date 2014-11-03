@@ -24,22 +24,24 @@ concept_opened_ray <= nrel_strict_inclusion: concept_ray;;
 
 concept_opened_ray <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
 
+concept_opened_ray <= nrel_using_constants:
+				{
+				concept_ray;
+				nrel_boundary_point
+				};;
+
 concept_triangle <- rrel_key_sc_element: 
-        [Опр.(открый луч)] 
+        ... 
 	(*
+	=> nrel_main_idtf: [Опр.(открый луч)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Открытым лучам называют луч, который не включает свою граничную точку.]
+			[Открытым лучом называют луч, который не включает свою граничную точку.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_ray;
-				nrel_boundary_point
-				};;
 			*);;
 		*);;
 	*);;

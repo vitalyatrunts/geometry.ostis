@@ -1,14 +1,14 @@
-sc_node_norole_relation->nrel_middle;;
+sc_node_norole_relation -> nrel_middle;;
 
-nrel_middle=>nrel_main_idtf:
+nrel_middle => nrel_main_idtf:
 	[середина*](*<-lang_ru;;*);
 	[middle*](*<-lang_en;;*);;
 
-nrel_middle=> nrel_idtf:[быть серединой*](*<-lang_ru;;*);;
+nrel_middle => nrel_idtf:[быть серединой*](*<-lang_ru;;*);;
 
-nrel_middle=> nrel_idtf:[середина отрезка*](*<-lang_ru;;*);;
+nrel_middle => nrel_idtf:[середина отрезка*](*<-lang_ru;;*);;
 
-nrel_middle=> nrel_idtf:[быть серединой отрезка*](*<-lang_ru;;*);;
+nrel_middle => nrel_idtf:[быть серединой отрезка*](*<-lang_ru;;*);;
 
 nrel_middle <- relation;;
 
@@ -16,20 +16,32 @@ nrel_middle <- binary_relation;;
 
 nrel_middle <- oriented_relation;;
 
-nrel_middle <= nrel_definitional_domain : concept_segment;;
+nrel_middle => nrel_definitional_domain: 
+	concept_segment;;
 
-nrel_middle <= nrel_first_domain: concept_segment;;
-nrel_middle <= nrel_second_domain: concept_geometric_point;;
+nrel_middle => nrel_first_domain: 
+	concept_segment;;
+nrel_middle => nrel_second_domain: 
+	concept_geometric_point;;
 
 nrel_middle <= nrel_schemes_of_relations: 
 	{
-	rrel_segment;
-	rrel_middle 
+		rrel_segment;
+		rrel_middle 
+	};;
+
+nrel_middle <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_segment;
+		nrel_boundary_point;
+		nrel_congruence
 	};;
 
 nrel_middle <- rrel_key_sc_element: 
-     [Опр.(середина*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(середина*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -38,13 +50,6 @@ nrel_middle <- rrel_key_sc_element:
 			[Геометрическая точка, которая делит исходный отрезок на два равных по величине отрезка.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_segment;
-				nrel_boundary_point;
-				nrel_congruence
-				};;
 			*);;
 		*);;
 	*);; 

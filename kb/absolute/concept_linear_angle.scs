@@ -24,9 +24,21 @@ concept_linear_angle <= nrel_strict_inclusion: concept_angle;;
 
 concept_linear_angle <= nrel_strict_inclusion: concept_planar_figure;;
 
+concept_linear_angle <= nrel_using_constants:
+				{
+                   		concept_dihedral_angle;
+                	    	nrel_face;
+               		        nrel_edge;
+               	 	    	concept_ray;
+				nrel_boundary_point;
+				nrel_perpendicularity;
+				concept_geometric_point
+				};;
+
 concept_linear_angle <- rrel_key_sc_element: 
-     [Опр.(линейный угол)] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(линейный угол)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -35,23 +47,14 @@ concept_linear_angle <- rrel_key_sc_element:
 			[Линейный угол - это угол, образованный двумя лучами, которые имеют общее начало, лежащее на ребре двугранного угла, и проведенными в обеих гранях перпендикулярно ребру.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-                    concept_dihedral_angle;
-                    nrel_face;
-                    nrel_edge;
-                    concept_ray;
-				nrel_boundary_point;
-				nrel_perpendicularity;
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_linear_angle <= nrel_statement_of_unique_setting:
-	[Утв.(линейный угол)]
+concept_linear_angle <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(линейный угол)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

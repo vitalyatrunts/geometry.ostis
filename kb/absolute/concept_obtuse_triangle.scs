@@ -20,9 +20,17 @@ concept_obtuse_triangle=> nrel_idtf:[Множество знаков всево�
 
 concept_obtuse_triangle <= nrel_strict_inclusion: concept_triangle;;
 
+concept_obtuse_triangle <= nrel_using_constants:
+				{
+				concept_convex_polygon;
+				nrel_internal_angle;
+				concept_obtuse_angle
+				};;
+
 concept_triangle <- rrel_key_sc_element: 
-        [Опр.(тупоугольный треугольник);;] 
+        ...
 	(*
+	=> nrel_main_idtf: [Опр.(тупоугольный треугольник)]  (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -31,16 +39,10 @@ concept_triangle <- rrel_key_sc_element:
 			[Тупоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является тупым углом.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_convex_polygon;
-				nrel_internal_angle;
-				concept_obtuse_angle
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_obtuse_triangle -> subject_domain_of_Euclidean_geometry;;
+concept_obtuse_triangle <- subject_domain_of_Euclidean_geometry;;
 
 concept_obtuse_triangle -> rrel_example : struct_Obtuse_triangle_L_D_K;;

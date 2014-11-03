@@ -15,9 +15,17 @@ concept_multi_angle_quadrilateral=> nrel_idtf:[Множество знаков �
 
 concept_multi_angle_quadrilateral <= nrel_strict_inclusion: concept_quadrilateral;;
 
+concept_multi_angle_quadrilateral <= nrel_using_constants:
+				{
+				concept_quadrilateral;
+				nrel_angle_measure;
+				concept_angle
+				};;
+
 concept_multi_angle_quadrilateral <- rrel_key_sc_element: 
-     [Опр.(разноугольный четырехугольник);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(разноугольный четырехугольник)]  (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -26,12 +34,6 @@ concept_multi_angle_quadrilateral <- rrel_key_sc_element:
 			[Множество является разноугольным четырёхугольником тогда и только тогда, когда оно является четырёхугольником и нет его разных внутренних углов, имеющих одну меру.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_quadrilateral;
-				nrel_angle_measure;
-				concept_angle
-				};;
 			*);;
 		*);;
 	*);;

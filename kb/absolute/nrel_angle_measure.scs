@@ -1,6 +1,8 @@
 sc_node_norole_relation->nrel_angle_measure;;
 
-nrel_angle_measure=> nrel_main_idtf:
+nrel_angle_mmeasure <- sc_node_norole_relation;;
+
+nrel_angle_measure => nrel_main_idtf:
 	[мера угла*]
 	(*
 	<- lang_ru;;
@@ -38,9 +40,16 @@ nrel_angle_measure<= nrel_schemes_of_relations:
 	rrel_angle_measure
      };;
 
+nrel_angle_measure <= nrel_using_constants:
+	{
+		rrel_angular_degree;
+		concept_angle
+	};;
+
 nrel_angle_measure <- rrel_key_sc_element: 
-     [Опр.(мера угла*)] 
+     	...
 	(*
+	=> nrel_main_idtf:[Опр.(мера угла*)] (* <- lang_ru;; *);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -49,18 +58,14 @@ nrel_angle_measure <- rrel_key_sc_element:
 			[Мера угла - количество градусов, полученное при измерении угла.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				rrel_angular_degree;
-				concept_angle
-				};;
 			*);;
 		*);;
 	*);;
 
 nrel_angle_measure <= nrel_main_statements:
-	[Утв.(угол; конгруэнтность*; угловая мера*);;]
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(угол; конгруэнтность*; угловая мера*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

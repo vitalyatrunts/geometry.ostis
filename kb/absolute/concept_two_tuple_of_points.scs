@@ -44,10 +44,16 @@ concept_two_tuple_of_points <= nrel_strict_inclusion: concept_geometric_figure_w
 
 concept_two_tuple_of_points <= nrel_strict_inclusion: concept_countable_set;;
 
+concept_two_tuple_of_points <= nrel_using_constants:
+				{
+				concept_geometric_point
+				};;
+
 concept_two_tuple_of_points <- rrel_key_sc_element: 
-        [Опр.(пара точек)] 
+        ...
 	(*
-	<- sc_;; 
+	=> nrel_main_idtf: [Опр.(пара точек)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -55,18 +61,15 @@ concept_two_tuple_of_points <- rrel_key_sc_element:
 			[Любое множество есть пара точек тогда и только тогда, когда оно является парой, и любой его элемент точка.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_two_tuple_of_points <= nrel_main_statements:
+concept_two_tuple_of_points <- rrel_key_sc_element: 
 	
-	[Акс.(прямая; пара точек)]
+	...
 	(*
+	=> nrel_main_idtf: [Акс.(прямая; пара точек)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -76,11 +79,11 @@ concept_two_tuple_of_points <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-concept_two_tuple_of_points <= nrel_main_statements:
 	
-	[Акс.(пара точек; между'; геометрическая точка)]
+concept_two_tuple_of_points <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Акс.(пара точек; между'; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

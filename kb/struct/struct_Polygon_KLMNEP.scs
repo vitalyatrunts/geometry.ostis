@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Polygon_K_L_M_N_E_P;;
+sc_node_not_relation -> struct_Polygon_K_L_M_N_E_P;;
 
 struct_Polygon_K_L_M_N_E_P => nrel_main_idtf:
 	[Многоугольник KLMNEP]
@@ -10,37 +10,38 @@ struct_Polygon_K_L_M_N_E_P => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Polygon_K_L_M_N_E_P=> nrel_idtf:[Многоугольник(K; L; M; N; E; P)](*<-lang_ru;;*);;
+struct_Polygon_K_L_M_N_E_P => nrel_idtf:[Многоугольник(K; L; M; N; E; P)](*<-lang_ru;;*);;
 
 struct_Polygon_K_L_M_N_E_P => nrel_idtf:[Многоугольник, вершинами которого являются Точка K, Точка L, Точка M, Точка N, Точка E, Точка P](*<-lang_ru;;*);;
 
 struct_Polygon_K_L_M_N_E_P <- concept_polygon;;
 
-struct_Polygon_K_L_M_N_E_P <= nrel_main_statements:
-	[Факт.утв.(Многоугольник KLMNEP);;]
+struct_Polygon_K_L_M_N_E_P <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Многоугольник KLMNEP)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 		[KLMNEP ∈ concept_polygon;
-K, L, M, N, E, P ∈ concept_geometric_point;
-< KLMNEP, K >, < KLMNEP, L >, < KLMNEP, M > , < KLMNEP, N > , < KLMNEP, E > , < KLMNEP, P > ∈ nrel_vertex;
-k, l, m, n, e, p ∈ concept_segment;
-< KLMNEP, k >, < KLMNEP, l >, < KLMNEP, m > ,< KLMNEP, n> ,< KLMNEP, e >,< KLMNEP, p> ∈ nrel_side;
-{ m, p } ∈ nrel_congruence; { l, k } ∈ nrel_congruence; { k, e } ∈ nrel_congruence; { e, n } ∈ nrel_congruence;
-< l, L >, < l, K >, < m, M >, < m, L >, < n, N >, < n, M >,< e, E >, < e, N >,< p, P >,< p, E >,< k, K >,< k, P > ∈ nrel_boundary_point;
-< k, K >, < l, K >, < l, L >, < m, L >, < m, M >, < n, M >, < n, N >, < e, N > , < e, E >, < p, E >, < p, P >, < k, P > ∈ nrel_boundary_point;
-alpha, beta, gamma, sigma, epsilon, eta ∈ concept_angle;
-< KLMNEP, alpha >, < KLMNEP, beta >, < KLMNEP, gamma >, < KLMNEP, sigma >, < KLMNEP, epsilon >, < KLMNEP, eta > ∈ nrel_internal_angle;
-{ alpha, sigma } ∈ nrel_congruence; { beta, gamma } nrel_congruence nrel_congruence; { gamma, epsilon } ∈ nrel_congruence;
-{ epsilon, eta } ∈ nrel_congruence.]
+		K, L, M, N, E, P ∈ concept_geometric_point;
+		< KLMNEP, K >, < KLMNEP, L >, < KLMNEP, M > , < KLMNEP, N > , < KLMNEP, E > , < KLMNEP, P > ∈ nrel_vertex;
+		k, l, m, n, e, p ∈ concept_segment;
+		< KLMNEP, k >, < KLMNEP, l >, < KLMNEP, m > ,< KLMNEP, n> ,< KLMNEP, e >,< KLMNEP, p> ∈ nrel_side;
+		{ m, p } ∈ nrel_congruence; { l, k } ∈ nrel_congruence; { k, e } ∈ nrel_congruence; { e, n } ∈ nrel_congruence;
+		< l, L >, < l, K >, < m, M >, < m, L >, < n, N >, < n, M >,< e, E >, < e, N >,< p, P >,< p, E >,< k, K >,< k, P > ∈ nrel_boundary_point;
+		< k, K >, < l, K >, < l, L >, < m, L >, < m, M >, < n, M >, < n, N >, < e, N > , < e, E >, < p, E >, < p, P >, < k, P > ∈ nrel_boundary_point;
+		alpha, beta, gamma, sigma, epsilon, eta ∈ concept_angle;
+		< KLMNEP, alpha >, < KLMNEP, beta >, < KLMNEP, gamma >, < KLMNEP, sigma >, < KLMNEP, epsilon >, < KLMNEP, eta > ∈ nrel_internal_angle;
+		{ alpha, sigma } ∈ nrel_congruence; { beta, gamma } nrel_congruence nrel_congruence; { gamma, epsilon } ∈ nrel_congruence;
+		{ epsilon, eta } ∈ nrel_congruence.]
 			(* <- lang_ru;; *);;
            -> rrel_example: 
 			[KLMNEP - многоугольник.
-Геометрические точки K, L, M, N, E, P являются вершинами Многоугольника KLMNEP. Отрезки k, l, m, n, e, p являются сторонами Многоугольника KLMNEP. Стороны m, p равны. Стороны k, l, e, n равны. Углы alpha, beta, gamma, sigma, epsilon , eta являются внутренним углами Многоугольника KLMNEP. Углы alpha,sigma равны. Углы beta, gamma, epsilon, eta равны. Точка K является граничной точкой отрезков k, l. Точка L является граничной точкой отрезков l, m. Точка M является граничной точкой отрезков m, n. Точка N является граничной точкой отрезков n, e. Точка E является граничной точкой отрезков e, p.
-Точка P является граничной точкой отрезков p, k.]
+			Геометрические точки K, L, M, N, E, P являются вершинами Многоугольника KLMNEP. Отрезки k, l, m, n, e, p являются сторонами Многоугольника KLMNEP. Стороны m, p равны. Стороны k, l, e, n равны. Углы alpha, beta, gamma, sigma, epsilon , eta являются внутренним углами Многоугольника KLMNEP. Углы alpha,sigma равны. Углы beta, gamma, epsilon, eta равны. Точка K является граничной точкой отрезков k, l. Точка L является граничной точкой отрезков l, m. Точка M является граничной точкой отрезков m, n. Точка N является граничной точкой отрезков n, e. Точка E является граничной точкой отрезков e, p.
+			Точка P является граничной точкой отрезков p, k.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -56,7 +57,4 @@ struct_Polygon_K_L_M_N_E_P <- rrel_key_sc_element:
 						"file://Polygon KLMNEP.png";;
 			*);; 
 	*);; 
-
-
-
 

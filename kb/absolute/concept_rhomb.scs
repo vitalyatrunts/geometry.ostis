@@ -14,9 +14,17 @@ concept_rhomb <= nrel_strict_inclusion: concept_parallelogram;;
 
 concept_rhomb => nrel_strict_inclusion: concept_square;;
 
+concept_rhomb<= nrel_using_constants:
+				{
+				concept_parallelogram;
+				nrel_side;
+				nrel_congruence
+				};;
+
 concept_rhomb <- rrel_key_sc_element: 
-     [Опр.(ромб);;] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Опр.(ромб)] (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -25,21 +33,16 @@ concept_rhomb <- rrel_key_sc_element:
 			[Параллелограмм, все стороны которого попарно конгруэнтны.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_parallelogram;
-				nrel_side;
-				nrel_congruence
-				};;
 			*);;
 		*);;
 	*);; 
 
 concept_rhomb <- subject_domain_of_Euclidean_geometry;;
 
-concept_rhomb <= nrel_main_statements: 
-     [Утв.(ромб; диагональ*; площадь*);;] 
+concept_rhomb <- rrel_key_sc_element: 
+     	... 
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; площадь*)]  (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -52,8 +55,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; диагональ*; прямой угол);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; прямой угол)]  (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -66,8 +70,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; диагональ*; биссектриса*);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*)]  (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -80,8 +85,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; диагональ*; ось симметрии*; прямая);;] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; ось симметрии*; прямая)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -94,8 +100,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; высота*; конгруэнтность*);;] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; высота*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -108,8 +115,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; площадь*; произведение*; высота*, основание*);;] 
+     	... 
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; высота*, основание*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -122,8 +130,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; площадь*; произведение*; диагональ*);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; диагональ*)]  (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -136,8 +145,9 @@ concept_rhomb <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(ромб; площадь*; произведение*; сторона*; угол; синус угла*);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; сторона*; угол; синус угла*)]  (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...

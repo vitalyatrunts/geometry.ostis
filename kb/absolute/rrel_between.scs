@@ -10,9 +10,6 @@ rrel_between=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-rrel_between=>nrel_main_ru_idtf:[между'];;
-
-rrel_between=>nrel_main_ru_idtf:[between'];;
 
 rrel_between=> nrel_idtf:[лежать между'](*<-lang_ru;;*);;
 
@@ -25,8 +22,9 @@ rrel_between=> nrel_idtf:[Ролевое отношение, связывающ�
 rrel_between <- role_relation;;
 
 rrel_between <- rrel_key_sc_element: 
-	[Поясн.(между');;]
+	...
 	(*
+	=> nrel_main_idtf: [Поясн.(между')] (* <- lang_ru;; *);;
 	<- sc_explanation;;
 	<= nrel_sc_text_translation: 
 		...
@@ -37,9 +35,10 @@ rrel_between <- rrel_key_sc_element:
 		*);;
 	*);;
 
-rrel_between <= nrel_main_statements:
-	[Акс.(пара точек; между'; геометрическая точка)]
+rrel_between <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Акс.(пара точек; между'; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -49,8 +48,10 @@ rrel_between <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Акс.(тройка точек; прямолинейная тройка точек; между')]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между')] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -60,8 +61,10 @@ rrel_between <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Акс.(точка; прямая; между')]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Акс.(точка; прямая; между')] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

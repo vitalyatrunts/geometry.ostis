@@ -36,9 +36,18 @@ concept_ray <= nrel_subdividing:
 	concept_opened_ray;;
 	*);;
 
+concept_ray <= nrel_using_constants:
+				{
+				rrel_between;
+                   		concept_geometric_figure;
+				concept_rectilinear_three_of_points;
+				concept_geometric_point
+				};;
+
 concept_ray <- rrel_key_sc_element: 
-     [Опр.(луч)] 
+	...
 	(*
+	=> nrel_main_idtf: [Опр.(луч)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -47,20 +56,14 @@ concept_ray <- rrel_key_sc_element:
 			[Лучом называют геометрическую фигуру, для которой существует две точки такие, что одна из точек не принадлежит фигуре, а вторая - принадлежит и лежит между точкой, не принадлежащей фигуре, и любой другой точкой, принадлежащей фигуре.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				rrel_between;
-                    concept_geometric_figure;
-				concept_rectilinear_three_of_points;
-				concept_geometric_point
-				};;
 			*);;
 		*);;
 	*);;
 
-concept_ray <= nrel_utverzhdenije_opreledeliajuschego_tipa:
-	[Утв.(луч)] 
+concept_ray <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(луч)]  (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -71,9 +74,10 @@ concept_ray <= nrel_utverzhdenije_opreledeliajuschego_tipa:
 		*);;
 	*);;
 
-concept_ray <= nrel_statement_of_unique_setting:
-	[Утв.(луч; граничная точка*; геометрическая точка);;]
+concept_ray <- rrel_key_sc_element: 
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(луч; граничная точка*; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

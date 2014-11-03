@@ -1,4 +1,4 @@
-sc_node_norole_relation->nrel_description;;
+sc_node_norole_relation -> nrel_description;;
 
 nrel_description => nrel_main_idtf:
 	[описанность*]
@@ -10,9 +10,9 @@ nrel_description => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-nrel_description=> nrel_idtf:[быть описанной*](*<-lang_ru;;*);;
+nrel_description => nrel_idtf:[быть описанной*](*<-lang_ru;;*);;
 
-nrel_description=> nrel_idtf:[быть описанной около окружности*](*<-lang_ru;;*);;
+nrel_description => nrel_idtf:[быть описанной около окружности*](*<-lang_ru;;*);;
 
 nrel_description <- relation;;
 
@@ -20,19 +20,30 @@ nrel_description <- binary_relation;;
 
 nrel_description <- oriented_relation;;
 
-nrel_description <= nrel_first_domain: concept_geometric_figure;;
+nrel_description => nrel_first_domain: 
+	concept_geometric_figure;;
 
-nrel_description <= nrel_second_domain: concept_circle;;
+nrel_description => nrel_second_domain: 
+	concept_circle;;
 
 nrel_description <= nrel_schemes_of_relations:
 	{
-	rrel_geometric_figure;
-	rrel_circle
+		rrel_geometric_figure;
+		rrel_circle
 	};;
 
-nrel_description <- rrel_key_sc_element: 
-     [Опр.(описанность*)] 
+nrel_description <= nrel_using_constants:
+	{
+		concept_circle;
+		concept_geometric_figure;
+		nrel_side;
+		nrel_tangent
+	};;
+
+nrel_description <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(описанность*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -41,20 +52,14 @@ nrel_description <- rrel_key_sc_element:
 			[Геометрическая фигура является описаной около окружности, тогда и только тогда, когда все стороны данной геометрической фигуры, являются касательными к данной окружности.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_circle;
-				concept_geometric_figure;
-				nrel_side;
-				nrel_tangent
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_angle_measure <= nrel_main_statements:
-	[Утв.(многоугольник,,окружность,,описанность*,,вершина*,,сторона*)]
+nrel_angle_measure <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(многоугольник,,окружность,,описанность*,,вершина*,,сторона*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

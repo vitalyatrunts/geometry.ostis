@@ -1,14 +1,14 @@
-sc_node_norole_relation->nrel_length;;
+sc_node_norole_relation -> nrel_length;;
 
-nrel_length=>nrel_main_idtf:
+nrel_length => nrel_main_idtf:
 	[длина*](*<-lang_ru;;*);
 	[length*](*<-lang_en;;*);;
 
-nrel_length=> nrel_idtf:[быть длиной*](*<-lang_ru;;*);;
+nrel_length => nrel_idtf:[быть длиной*](*<-lang_ru;;*);;
 
-nrel_length=> nrel_idtf:[длина объекта*](*<-lang_ru;;*);;
+nrel_length => nrel_idtf:[длина объекта*](*<-lang_ru;;*);;
 
-nrel_length=> nrel_idtf:[быть длиной объекта*](*<-lang_ru;;*);;
+nrel_length => nrel_idtf:[быть длиной объекта*](*<-lang_ru;;*);;
 
 nrel_length <- relation;;
 
@@ -16,22 +16,46 @@ nrel_length <- binary_relation;;
 
 nrel_length <- oriented_relation;;
 
-nrel_length <= nrel_domain_of_definition : concept_segment;concept_polyline;concept_circle_arc;concept_circle;;
+nrel_length => nrel_domain_of_definition:
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_segment;
+			concept_polyline;
+			concept_circle_arc;
+			concept_circle;;
+		*);;
+	*);;
 
-nrel_length <= nrel_first_domain: concept_segment;concept_polyline;concept_circle_arc;concept_circle;;
+nrel_length => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_segment;
+			concept_polyline;
+			concept_circle_arc;
+			concept_circle;;
+		*);;
+	*);;
 
-nrel_length <= nrel_second_domain: concept_value;;
+nrel_length => nrel_second_domain: 
+	concept_value;;
 
-nrel_length<= nrel_schemes_of_relations:
+nrel_length <= nrel_schemes_of_relations:
      {
 	rrel_object;
 	rrel_length
      };;
 
 nrel_length <- rrel_key_sc_element: 
-     [Опр.(длина*);;] 
+	...
 	(*
-	<- sc_explanation;;
+	=> nrel_main_idtf:[Опр.(длина*)] (*<-lang_ru;;*);;
+	<- sc_definition;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -43,9 +67,10 @@ nrel_length <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_length <= nrel_main_statements:
-	[Утв.(отрезок; длина*; положительная величина);;]
+nrel_length <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(отрезок; длина*; положительная величина)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -56,8 +81,9 @@ nrel_length <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(отрезок; конгруэнтность*; длина*);;]
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(отрезок; конгруэнтность*; длина*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -68,8 +94,9 @@ nrel_length <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(отрезок; разбиение множества*; длина*; сумма*);;]
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(отрезок; разбиение множества*; длина*; сумма*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -80,8 +107,9 @@ nrel_length <= nrel_main_statements:
 		*);;
 	*);
 
-     [Утв.(отрезок; длина*);;]
+     	...
 	(*
+	=> nrel_main_idtf:[Утв.(отрезок; длина*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

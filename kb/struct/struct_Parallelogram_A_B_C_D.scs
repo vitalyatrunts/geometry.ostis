@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Parallelogram_A_B_C_D;;
+sc_node_not_relation -> struct_Parallelogram_A_B_C_D;;
 
 struct_Parallelogram_A_B_C_D => nrel_main_idtf:
 	[Параллелограмм ABCD]
@@ -10,40 +10,41 @@ struct_Parallelogram_A_B_C_D => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Parallelogram_A_B_C_D=> nrel_idtf:[Параллелограмм(A; B; C; D)](*<-lang_ru;;*);;
+struct_Parallelogram_A_B_C_D => nrel_idtf:[Параллелограмм(A; B; C; D)](*<-lang_ru;;*);;
 
-struct_Parallelogram_A_B_C_D=> nrel_idtf:[Параллелограмм, вершинами которого являются Точка A, Точка B, Точка С и Точка D](*<-lang_ru;;*);;
+struct_Parallelogram_A_B_C_D => nrel_idtf:[Параллелограмм, вершинами которого являются Точка A, Точка B, Точка С и Точка D](*<-lang_ru;;*);;
 
 struct_Parallelogram_A_B_C_D <- concept_parallelogram;;
 
-struct_Parallelogram_A_B_C_D <= nrel_main_statements:
-	[Факт.утв.(Параллелограмм ABCD)]
+struct_Parallelogram_A_B_C_D <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Параллелограмм ABCD)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
                 -> rrel_example: 
 			[ABCD ∈ concept_parallelogram;
-ABCD ∈ concept_quadrilateral;
-A, B, C, D ∈ nrel_geometric_point;
-<ABCD, A>, <ABCD, B>, <ABCD, C> , <ABCD, D> ∈ nrel_vertex;
-a, b, c, d ∈ concept_segment;
-{ a, c } ∈ nrel_congruence;
-{ b, d } ∈ nrel_congruence;
-<ABCD, a>, <ABCD, c> ∈ nrel_side;
-<ABCD, b>, <ABCD, d> ∈ nrel_base;
-<a, A>, <a, B>, <b, B>, <b, C>, <c, C>, <c, D>, <d, D>, <d, A> ∈ nrel_boundary_point;
-alpha, beta, gamma, delta ∈ concept_angle;
-{ alpha, gamma } ∈ nrel_congruence;
-{ beta, delta } ∈ nrel_congruence;
-<ABCD, alpha>, <ABCD, beta>, <ABCD, gamma>, <ABCD, delta>  ∈ nrel_internal_angle;
-< a, A >, < d, A >, < b, B >, < a, B >, < b, C >, < c, C >, < c, D >, < d, D > ∈ nrel_boundary_point.]
+			ABCD ∈ concept_quadrilateral;
+			A, B, C, D ∈ nrel_geometric_point;
+			<ABCD, A>, <ABCD, B>, <ABCD, C> , <ABCD, D> ∈ nrel_vertex;
+			a, b, c, d ∈ concept_segment;
+			{ a, c } ∈ nrel_congruence;
+			{ b, d } ∈ nrel_congruence;
+			<ABCD, a>, <ABCD, c> ∈ nrel_side;
+			<ABCD, b>, <ABCD, d> ∈ nrel_base;
+			<a, A>, <a, B>, <b, B>, <b, C>, <c, C>, <c, D>, <d, D>, <d, A> ∈ nrel_boundary_point;
+			alpha, beta, gamma, delta ∈ concept_angle;
+			{ alpha, gamma } ∈ nrel_congruence;
+			{ beta, delta } ∈ nrel_congruence;
+			<ABCD, alpha>, <ABCD, beta>, <ABCD, gamma>, <ABCD, delta>  ∈ nrel_internal_angle;
+			< a, A >, < d, A >, < b, B >, < a, B >, < b, C >, < c, C >, < c, D >, < d, D > ∈ nrel_boundary_point.]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[ABCD - параллелограмм, четырехугольник.
-Геометрические точки A, B, C и D являются вершинами Параллелограмма ABCD. Отрезки a, c являются боковыми сторонами и равны между собой,а отрезки b, d также равны между собой и являются основаниями Параллелограмма ABCD. Точка A является граничной точкой отрезков a, d. Точка B является граничной точкой отрезков b, a. Точка C является граничной точкой отрезков c, b. Точка D является граничной точкой отрезков c, d. Боковые стороны a, c равны. Основания b, d равны. Углы alpha, beta, gamma, sigma являются внутренним углами Трапеции KLMN. Углы alpha и gamma равны.
-Углы sigma и beta равны. ]
+			Геометрические точки A, B, C и D являются вершинами Параллелограмма ABCD. Отрезки a, c являются боковыми сторонами и равны между собой,а отрезки b, d также равны между собой и являются основаниями Параллелограмма ABCD. Точка A является граничной точкой отрезков a, d. Точка B является граничной точкой отрезков b, a. Точка C является граничной точкой отрезков c, b. Точка D является граничной точкой отрезков c, d. Боковые стороны a, c равны. Основания b, d равны. Углы alpha, beta, gamma, sigma являются внутренним углами Трапеции KLMN. Углы alpha и gamma равны.
+			Углы sigma и beta равны. ]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

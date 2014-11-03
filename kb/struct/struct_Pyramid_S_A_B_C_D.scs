@@ -1,4 +1,4 @@
-sc_node_not_relation->struct_Pyramid_S_A_B_C_D;;
+sc_node_not_relation -> struct_Pyramid_S_A_B_C_D;;
 
 struct_Pyramid_S_A_B_C_D => nrel_main_idtf:
 	[Пирамида SABCD]
@@ -12,24 +12,25 @@ struct_Pyramid_S_A_B_C_D => nrel_main_idtf:
 
 struct_Pyramid_S_A_B_C_D <- concept_pyramid;;
 
-struct_Pyramid_S_A_B_C_D <= nrel_main_statements:
-	[Факт.утв.(Пирамида(SABCD))]
+struct_Pyramid_S_A_B_C_D <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Факт.утв.(Пирамида(SABCD))](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[ SABCD ∈ concept_pyramid;
-S, A, B, C, D ∈ concept_geometric_point;
-<SABCD, A>, <SABCD, B>, <SABCD, C>, <SABCD, D> ∈ nrel_vertex;
-< SABCD, a >, < SABCD, b >, < SABCD, c >, <SABCD, d >, <SABCD, a2 >, <SABCD, b2 >, <SABCD, c2 >, <SABCD, d2 > ∈ nrel_edge;
-a, b, c, d, a2, b2, c2, d2 ∈ concept_segment. ]
+			S, A, B, C, D ∈ concept_geometric_point;
+			<SABCD, A>, <SABCD, B>, <SABCD, C>, <SABCD, D> ∈ nrel_vertex;
+			< SABCD, a >, < SABCD, b >, < SABCD, c >, <SABCD, d >, <SABCD, a2 >, <SABCD, b2 >, <SABCD, c2 >, <SABCD, d2 > ∈ nrel_edge;
+			a, b, c, d, a2, b2, c2, d2 ∈ concept_segment. ]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-struct_Pyramid_S_A_B_C_D<- rrel_key_sc_element: 
+struct_Pyramid_S_A_B_C_D <- rrel_key_sc_element: 
 	...
 	(*
 		<- sc_explanation;; 

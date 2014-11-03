@@ -1,36 +1,48 @@
-sc_node_norole_relation->nrel_additional_rays;;
+sc_node_norole_relation -> nrel_additional_rays;;
 
-nrel_additional_rays=>nrel_main_idtf:
+nrel_additional_rays => nrel_main_idtf:
 	[дополнительные лучи*](*<-lang_ru;;*);
 	[additional rays*](*<-lang_en;;*);;
 
-nrel_additional_rays=> nrel_idtf:[быть дополнительными лучами*](*<-lang_ru;;*);;
+nrel_additional_rays => nrel_idtf:[быть дополнительными лучами*](*<-lang_ru;;*);;
 
 nrel_additional_rays <- binary_relation;;
 
 nrel_additional_rays <- not_oriented_relation;;
 
-nrel_additional_rays <- antireflective_relation;;
+//nrel_additional_rays <- antireflective_relation;;
 
-nrel_additional_rays <- symmetric_relation;;
+//nrel_additional_rays <- symmetric_relation;;
 
-nrel_additional_rays <- antitransitive_relation;;
+//nrel_additional_rays <- antitransitive_relation;;
 
-nrel_additional_rays <= nrel_definitional_domain: concept_ray;;
+nrel_additional_rays => nrel_definitional_domain: 
+	concept_ray;;
 
-nrel_additional_rays <= nrel_first_domain: concept_ray;;
+nrel_additional_rays => nrel_first_domain: 
+	concept_ray;;
 
-nrel_additional_rays <= nrel_second_domain: concept_ray;;
+nrel_additional_rays => nrel_second_domain: 
+	concept_ray;;
 
-nrel_additional_rays<= nrel_schemes_of_relations:
+nrel_additional_rays <= nrel_schemes_of_relations:
      {
 	rrel_ray;
 	rrel_ray
      };;
 
+nrel_additional_rays <= nrel_using_constants:
+	{
+    		concept_ray;
+                concept_straight_line;
+                concept_geometric_point;
+                nrel_boundary_point
+	};;
+
 nrel_additional_rays <- rrel_key_sc_element: 
-     [Опр.(дополнительные лучи*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(дополнительные лучи*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -39,20 +51,14 @@ nrel_additional_rays <- rrel_key_sc_element:
 			[Два различных луча, лежащих на одной прямой и имеющих общую граничную точку.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-		    		concept_ray;
-                    		concept_straight_line;
-                    		concept_geometric_point;
-                    		nrel_boundary_point
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_additional_rays <= nrel_main_statements:
-	[Утв.(дополнительные лучи*);;]
+nrel_additional_rays <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(дополнительные лучи*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -64,16 +70,16 @@ nrel_additional_rays <= nrel_main_statements:
 	*);;
      
 nrel_additional_rays <- rrel_key_sc_element: 
-...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
+	...
 	(*
-	-> rrel_example:
-		"file://images/additional_rays.png";;
+		<-image;;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://images/additional_rays.png";;
+			*);;
 	*);;
-*);;
 
 nrel_additional_rays <- subject_domain_of_Euclidean_geometry;;
 

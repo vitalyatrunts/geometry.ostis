@@ -1,8 +1,16 @@
-sc_node_norole_relation->nrel_vertical_angles;;
+sc_node_norole_relation -> nrel_vertical_angles;;
 
-nrel_vertical_angles=>nrel_main_ru_idtf:[вертикальные углы*];;
+nrel_vertical_angles => nrel_main_idtf:
+	[вертикальные углы*]
+	(*
+	<- lang_ru;;
+	*);
+	[vertical angles*]
+	(*
+	<- lang_en;;
+	*);;
 
-nrel_vertical_angles=> nrel_idtf:[быть вертикальными углами*]
+nrel_vertical_angles => nrel_idtf:[быть вертикальными углами*]
 	(*
 	<-lang_ru;;
 	*);;
@@ -13,11 +21,22 @@ nrel_vertical_angles -> binary_relation;;
 
 nrel_vertical_angles -> undirected_relation;;
 
-nrel_vertical_angles <= nrel_domain_of_definition : concept_planar_angle; concept_dihedral_angle;;
+nrel_vertical_angles => nrel_domain_of_definition:
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_planar_angle; 
+			concept_dihedral_angle;;
+		*);;
+	*);;	
 
-nrel_vertical_angles <= nrel_first_domain: concept_angle;;
+nrel_vertical_angles => nrel_first_domain: 
+	concept_angle;;
 
-nrel_vertical_angles <= nrel_second_domain: concept_angle;;
+nrel_vertical_angles => nrel_second_domain: 
+	concept_angle;;
 
 nrel_vertical_angles <= nrel_schemes_of_relations: 
 	{
@@ -25,33 +44,33 @@ nrel_vertical_angles <= nrel_schemes_of_relations:
 	rrel_angle
 	};;
 
+nrel_vertical_angles <= nrel_using_constants:
+			{
+				concept_angle;
+				nrel_vertex;
+				nrel_side
+			};; 
+
 nrel_vertical_angles <- rrel_key_sc_element: 
-     [Опр.(вертикальные углы**);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(вертикальные углы)](*<-lang_ru;;*);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Вертикальными углами называется пара углов, у которых вершина общая, 
-а стороны одного угла составляют продолжение сторон другого угла.]
-			(* 
-			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_angle;
-				nrel_vertex;
-				nrel_side
-				};;
-			*);;
+			[Вертикальными углами называется пара углов, у которых вершина общая, а стороны одного угла составляют продолжение сторон другого угла.]
+			(* <- lang_ru;;	*);;
 		*);;
 	*);;
 
-nrel_vertical_angles -> subject_domain_of_Euclidean_geometry;;
+nrel_vertical_angles <- subject_domain_of_Euclidean_geometry;;
 
-nrel_angle_measure <= nrel_main_statements:
-	[Утв.(вертикальные углы*; конгруэнтность*);;]
+nrel_angle_measure <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(вертикальные углы*; конгруэнтность*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

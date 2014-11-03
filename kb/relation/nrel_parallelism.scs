@@ -1,4 +1,4 @@
-sc_node_norole_relation->nrel_parallelism;;
+sc_node_norole_relation -> nrel_parallelism;;
 
 nrel_parallelism => nrel_main_idtf:
 	[параллельность*]
@@ -10,23 +10,31 @@ nrel_parallelism => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-nrel_parallelism=> nrel_idtf:[параллельность геометрических фигур*](*<-lang_ru;;*);;
-
-nrel_parallelism <- relation;;
+nrel_parallelism => nrel_idtf:[параллельность геометрических фигур*](*<-lang_ru;;*);;
 
 nrel_parallelism <- binary_relation;;
 
-nrel_parallelism <- symmetric_relation;;
+//nrel_parallelism <- symmetric_relation;;
 
-nrel_parallelism <= nrel_definitional_domain: concept_planar_figure;;
+nrel_parallelism => nrel_definitional_domain: 
+	concept_planar_figure;;
 
-nrel_parallelism <= nrel_first_domain: concept_planar_figure;;
+nrel_parallelism => nrel_first_domain: 
+	concept_planar_figure;;
 
-nrel_parallelism <= nrel_second_domain: concept_planar_figure;;
+nrel_parallelism => nrel_second_domain: 
+	concept_planar_figure;;
+
+nrel_parallelism <= nrel_using_constants:
+	{
+		concept_plane;
+		concept_geometric_figure
+	};;
 
 nrel_parallelism <- rrel_key_sc_element: 
-     [Опр.(параллельность*);;] 
-	(*
+	...
+        (*
+        => nrel_main_idtf: [Опр.(параллельность*)] (* <- lang_ru;; *);; 
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -35,18 +43,14 @@ nrel_parallelism <- rrel_key_sc_element:
 			[Геометрические фигуры называют параллельными в том и только в том случае, когда они лежат соответственно в плоскостях и эти плоскости не пересекаются. ]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_plane;
-				concept_geometric_figure
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_angle_measure <= nrel_main_statements:
-	[Утв.(плоскость; геометрическая точка; параллельность*);;]
-	(*
+nrel_parallelism <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Утв.(плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);; 
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -57,8 +61,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(плоскость; прямая; параллельность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(плоскость; прямая; параллельность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -69,8 +74,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямая; плоскость; перпендикулярность*; параллельность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(прямая; плоскость; перпендикулярность*; параллельность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -81,8 +87,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямая; параллельность*; плоскость; пересечение множеств*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; пересечение множеств*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -93,8 +100,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(плоскость; параллельность*; совпадение*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(плоскость; параллельность*; совпадение*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -105,8 +113,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(плоскость; прямая; пересекающиеся*; параллельность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(плоскость; прямая; пересекающиеся*; параллельность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -117,8 +126,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(плоскость; прямая; параллельность*; перпендикулярность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(плоскость; прямая; параллельность*; перпендикулярность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -129,8 +139,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(плоскость; параллельность*; пересечение множеств*; прямая)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(плоскость; параллельность*; пересечение множеств*; прямая)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -141,8 +152,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(плоскость; перпендикулярность*; прямая; параллельность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(плоскость; перпендикулярность*; прямая; параллельность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -153,8 +165,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямая; плоскость; параллельность*; перпендикулярность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(прямая; плоскость; параллельность*; перпендикулярность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -165,8 +178,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(прямая; параллельность*; плоскость; отрезок; конгруэнтность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -177,8 +191,9 @@ nrel_angle_measure <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(дуга; параллельность*; хорда*; конгруэнтность*)]
+	...
 	(*
+        => nrel_main_idtf: [Утв.(дуга; параллельность*; хорда*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

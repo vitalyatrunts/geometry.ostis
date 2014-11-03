@@ -32,9 +32,18 @@ concept_linear_polygon => nrel_strict_inclusion: concept_linear_quadrangle;;
 
 concept_linear_polygon => nrel_strict_inclusion: concept_linear_treangle;;
 
+concept_linear_polygon <= nrel_using_constants:
+				{
+				nrel_boundary_point;
+				concept_polyline;
+				concept_geometric_point;
+                    		nrel_coincidence
+				};;
+
 concept_linear_polygon <- rrel_key_sc_element: 
-     [Опр.(линейный многоугольник);;] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(линейный многоугольник)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -43,21 +52,15 @@ concept_linear_polygon <- rrel_key_sc_element:
 			[Линейный многоугольник - это простая планарная ломаная, у которой совпадают граничные точки.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				nrel_boundary_point;
-				concept_polyline;
-				concept_geometric_point;
-                    nrel_coincidence
-				};;
 			*);;
 		*);;
 	*);;
 
 
-concept_linear_polygon <= nrel_main_statements:
-	[Утв.(многоугольник; внутренний угол*)]
+concept_linear_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; внутренний угол*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -66,9 +69,12 @@ concept_linear_polygon <= nrel_main_statements:
 			[Сумма внутренних углов многоугольника равна (n-2)*(180 градусов).]
 			(* <- lang_ru;; *);;
 		*);;
-	*);
-     [Утв.(многоугольник; линейный многоугольник; граница*)]
+	*);;
+	
+concept_linear_polygon <- rrel_key_sc_element: 
+        ...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; линейный многоугольник; граница*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

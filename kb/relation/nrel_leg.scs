@@ -1,22 +1,33 @@
-sc_node_norole_relation->nrel_leg;;
+sc_node_norole_relation -> nrel_leg;;
 
-nrel_leg=>nrel_main_ru_idtf:[катет*];;
+nrel_leg => nrel_main_idtf:
+	[катет*]
+	(*
+	<- lang_ru;;
+	*);
+	[leg*]
+	(*
+	<- lang_en;;
+	*);;
 
 nrel_leg => nrel_idtf:[быть катетом*](*<-lang_ru;;*);;
 
-nrel_leg=> nrel_idtf:[катет прямоугольного треугольника*](*<-lang_ru;;*);;
+nrel_leg => nrel_idtf:[катет прямоугольного треугольника*](*<-lang_ru;;*);;
 
-nrel_leg=> nrel_idtf:[быть катетом прямоугольного треугольника*](*<-lang_ru;;*);;
+nrel_leg => nrel_idtf:[быть катетом прямоугольного треугольника*](*<-lang_ru;;*);;
 
 nrel_leg <- binary_relation;;
 
 nrel_leg <- oriented_relation;;
 
-nrel_leg <= nrel_definitional_domain : concept_right_triangle;;
+nrel_leg => nrel_definitional_domain : 
+	concept_right_triangle;;
 
-nrel_leg <= nrel_first_domain: concept_right_triangle;;
+nrel_leg => nrel_first_domain: 
+	concept_right_triangle;;
 
-nrel_leg <= nrel_second_domain: concept_segment;;
+nrel_leg => nrel_second_domain: 
+	concept_segment;;
 
 nrel_leg <= nrel_schemes_of_relations:
      {
@@ -24,9 +35,19 @@ nrel_leg <= nrel_schemes_of_relations:
 	rrel_congruence
      };;
 
+nrel_leg <= nrel_using_constants:
+	{
+    		concept_right_triangle;
+            	concept_right_angle;
+                concept_segment;
+                nrel_vertex;
+		nrel_edge
+	};;
+
 nrel_leg <- rrel_key_sc_element: 
-     [Опр.(катет*);;] 
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(катет*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -35,21 +56,14 @@ nrel_leg <- rrel_key_sc_element:
 			[Катет - это отрезок, который является стороной прямоугольного треугольника и один из прилежащих углов которого является прямым углом.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-		    		concept_right_triangle;
-                    		concept_right_angle;
-                    		concept_segment;
-                    		nrel_vertex;
-		    		nrel_edge
-		       		};;
 			*);;
 		*);;
 	*);;
 
-nrel_leg <= nrel_main_statements:
-	[Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*);;]
+nrel_leg <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -62,9 +76,10 @@ nrel_leg <= nrel_main_statements:
 		*);;
 	*);;
 
-nrel_leg <= nrel_main_statements:
-	[Утв.(гипотенуза*; катет*);;]
+nrel_leg <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(гипотенуза*; катет*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -75,9 +90,10 @@ nrel_leg <= nrel_main_statements:
 		*);;
 	*);;
 
-nrel_leg <= nrel_main_statements:
-	[Утв.(прямоугольный треугольник; катет*; высота*; совпадение*);;]
+nrel_leg <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(прямоугольный треугольник; катет*; высота*; совпадение*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -88,9 +104,10 @@ nrel_leg <= nrel_main_statements:
 		*);;
 	*);;
 
-nrel_leg <= nrel_main_statements:
-	[Утв.(прямоугольный треугольник; площадь*; катет*);;]
+nrel_leg <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(прямоугольный треугольник; площадь*; катет*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -101,9 +118,10 @@ nrel_leg <= nrel_main_statements:
 		*);;
 	*);;
 
-nrel_leg <= nrel_main_statements:
-	[Утв.(прямоугольный треугольник; катет*; противолежащий*; гипотенуза*);;]
+nrel_leg <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(прямоугольный треугольник; катет*; противолежащий*; гипотенуза*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

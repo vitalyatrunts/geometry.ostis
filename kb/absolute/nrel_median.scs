@@ -34,9 +34,22 @@ nrel_median<= nrel_schemes_of_relations:
 	rrel_median
      };;
 
+nrel_median <= nrel_using_constants:
+				{
+                  		concept_geometric_point;
+             		       	concept_triangle;
+          		        concept_segment;
+       		             	nrel_side;
+       		             	nrel_boundary_point;
+       		             	nrel_vertex;
+       		             	nrel_middle;
+        		        nrel_opposite
+				};;
+
 nrel_median <- rrel_key_sc_element: 
-     [Опр.(медиана*)] 
+     	...
 	(*
+	=> nrel_main_idtf: [Опр.(медиана*)]  (* <- lang_ru;; *);;
 	<- sc_definition;;   //если пояснение, то sc_explanation
 	<= nrel_sc_text_translation: 
 		...
@@ -45,24 +58,14 @@ nrel_median <- rrel_key_sc_element:
 			[Медиана - отрезок, соединяющий вершину треугольника с серединой противолежащей стороны.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-                    concept_geometric_point;
-                    concept_triangle;
-                    concept_segment;
-                    nrel_side;
-                    nrel_boundary_point;
-                    nrel_vertex;
-                    nrel_middle;
-                    nrel_opposite
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_median <= nrel_main_statements:
-	[Утв.(треугольник; медиана*; пересечение множеств*; геометрическая точка)]
+nrel_median <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; пересечение множеств*; геометрическая точка)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -72,8 +75,10 @@ nrel_median <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(треугольник; медиана*; вершина*; длина*)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -83,8 +88,10 @@ nrel_median <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(треугольник; медиана*; сторона*; противолежащий*; длина*)]
+	
+    	...
 	(*
+	=> nrel_main_idtf:  [Утв.(треугольник; медиана*; сторона*; противолежащий*; длина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -97,8 +104,10 @@ b, с -длины сторон указанного треугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(треугольник; медиана*; сторона*; длина)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; длина)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -111,8 +120,10 @@ a, b, c - длины сторон указанного треугольника.
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(треугольник; медиана*; равновеликие*)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; равновеликие*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -122,8 +133,10 @@ a, b, c - длины сторон указанного треугольника.
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(равнобедренный треугольник; основание*; медиана*; биссектриса*; высота*)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; медиана*; биссектриса*; высота*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -133,8 +146,10 @@ a, b, c - длины сторон указанного треугольника.
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(треугольник; отрезок; медиана*; параллельность*)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; отрезок; медиана*; параллельность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -144,8 +159,10 @@ a, b, c - длины сторон указанного треугольника.
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-     [Утв.(треугольник; медиана*; равновеликие*)]
+     	
+     	...
 	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; равновеликие*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

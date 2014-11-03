@@ -1,16 +1,16 @@
-sc_node_norole_relation->nrel_radius;;
+sc_node_norole_relation -> nrel_radius;;
 
-nrel_radius=>nrel_main_idtf:
-[радиус*]
-(*
-<-lang_ru;;
-*);
-[radius]
-(*
-<-lang_en;;
-*);;
+nrel_radius => nrel_main_idtf:
+	[радиус*]
+	(*
+	<-lang_ru;;
+	*);
+	[radius*]
+	(*
+	<-lang_en;;
+	*);;
 
-nrel_radius=> nrel_idtf:[быть радиусом*](*<-lang_ru;;*);;
+nrel_radius => nrel_idtf:[быть радиусом*](*<-lang_ru;;*);;
 
 nrel_radius -> relation;;
 
@@ -20,21 +20,56 @@ nrel_radius -> oriented_relation;;
 
 nrel_radius <= nrel_strict_inclusion: concept_segment;;
 
-nrel_radius <= nrel_definitional_domain : concept_circle; concept_sphere; concept_ball; concept_spherical_segment;;
+nrel_radius => nrel_definitional_domain : 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_circle; 
+			concept_sphere; 
+			concept_ball; 
+			concept_spherical_segment;;
+		*);;
+	*);;	
 
-nrel_radius <= nrel_first_domain: concept_circle; concept_sphere; concept_ball; concept_spherical_segment;;
+nrel_radius => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_circle; 
+			concept_sphere; 
+			concept_ball; 
+			concept_spherical_segment;;
+		*);;
+	*);;
 
-nrel_radius <= nrel_second_domain: concept_segment;;
+nrel_radius => nrel_second_domain: 
+	concept_segment;;
 
-nrel_radius<= nrel_schemes_of_relations:
+nrel_radius <= nrel_schemes_of_relations:
      {
 	rrel_geometric_figure;
 	rrel_radius
      };;
 
-nrel_radius <- rrel_key_sc_element: 
-     [Опр.(радиус*);;] 
+nrel_radius <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_segment;	
+		concept_circle;
+		concept_sphere;
+		concept_ball;
+		nrel_centre;
+		nrel_boundary_point
+	};;
+
+nrel_radius <- rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf:[Опр.(радиус*)] (*<-lang_ru;;*);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -43,23 +78,14 @@ nrel_radius <- rrel_key_sc_element:
 			[ Радиус - отрезок, соединяющий центр фигуры с любой граничной точкой.]
 			(* 
 			<- lang_ru;; 
-			<= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_segment;	
-				concept_circle;
-				concept_sphere;
-				concept_ball;
-				nrel_centre;
-				nrel_boundary_point
-				};;
 			*);;
 		*);;
 	*);;
 
-nrel_radius <= nrel_main_statements:
-	[Утв.(радиус*; касательная*; перпендикулярность*);;]
+nrel_radius <= rrel_key_sc_element:
+	...
 	(*
+	=> nrel_main_idtf: [Утв.(радиус*; касательная*; перпендикулярность*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -69,9 +95,10 @@ nrel_radius <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
-
-	[Утв.(радиус*; перпендикулярность*; хорда*);;]
+	
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(радиус*; перпендикулярность*; хорда*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -82,8 +109,9 @@ nrel_radius <= nrel_main_statements:
 		*);;
 	*);
 
-	[Утв.(радиус*; диаметр*);;]
+	...
 	(*
+	=> nrel_main_idtf:[Утв.(радиус*; диаметр*)](*<-lang_ru;;*);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -93,4 +121,5 @@ nrel_radius <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-nrel_radius -> subject_domain_of_Euclidean_geometry;;
+
+nrel_radius <- subject_domain_of_Euclidean_geometry;;
