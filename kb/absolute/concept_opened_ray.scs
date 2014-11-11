@@ -1,6 +1,6 @@
 sc_node_not_relation->concept_opened_ray;;
 
-concept_polygon=> nrel_main_idtf:
+concept_opened_ray=> nrel_main_idtf:
 	[открытый луч]
 	(*
 	<- lang_ru;;
@@ -46,7 +46,6 @@ concept_triangle <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_opened_ray <- subject_domain_of_Euclidean_geometry;;
 
 concept_opened_ray <= nrel_antipode: concept_closed_ray;;
 
