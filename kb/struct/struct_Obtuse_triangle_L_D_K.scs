@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Obtuse_triangle_L_D_K;;
+﻿sc_node_not_relation -> struct_Obtuse_triangle_L_D_K;;
 
 struct_Obtuse_triangle_L_D_K => nrel_main_idtf:
 	[Тупоугольный треугольник LDK]
@@ -16,13 +16,58 @@ struct_Obtuse_triangle_L_D_K => nrel_idtf:[Тупоугольный треуго
 
 struct_Obtuse_triangle_L_D_K => nrel_idtf:[Треугольник, вершинами которого являются Точка L, Точка D, Точка K](*<-lang_ru;;*);;
 
-struct_Obtuse_triangle_L_D_K -> concept_obtuse_triangle;;
+struct_Obtuse_triangle_L_D_K <- concept_obtuse_triangle;;
+
+sc_node_not_relation -> struct_Geometric_point_L;;
+sc_node_not_relation -> struct_Geometric_point_D;;
+sc_node_not_relation -> struct_Geometric_point_K;;
+
+struct_Geometric_point_L <- concept_geometric_point;;
+struct_Geometric_point_D <- concept_geometric_point;;
+struct_Geometric_point_K <- concept_geometric_point;;
+
+struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_L;;
+struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_D;;
+struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_K;;
+
+sc_node_not_relation -> struct_Segment_L;;
+sc_node_not_relation -> struct_Segment_D;;
+sc_node_not_relation -> struct_Segment_K;;
+
+struct_Segment_L <- concept_segment;;
+struct_Segment_D <- concept_segment;;
+struct_Segment_K <- concept_segment;;
+
+struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_L;;
+struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_D;;
+struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_K;;
+
+sc_node_not_relation -> struct_Obtuse_angle_Alpha;;
+sc_node_not_relation -> struct_Obtuse_angle_Beta;;
+sc_node_not_relation -> struct_Obtuse_angle_Gamma;;
+
+struct_Obtuse_angle_Alpha <- concept_obtuse_angle;;
+struct_Obtuse_angle_Beta <- concept_obtuse_angle;;
+struct_Obtuse_angle_Gamma <- concept_obtuse_angle;;
+
+struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Alpha;;
+struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Beta;;
+struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Gamma;;
+
+struct_Segment_K => nrel_boundary_point: struct_Geometric_point_L;;
+struct_Segment_D => nrel_boundary_point: struct_Geometric_point_L;;
+
+struct_Segment_K => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_L => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Segment_L => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_D => nrel_boundary_point: struct_Geometric_point_K;;
 
 struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element: 
 ...
 	(*
-	<-image;;
-	<=nrel_sc_text_translation:
+	<- sc_image;;
+	<= nrel_sc_text_translation:
 	...
 		(*
 		-> rrel_example:
@@ -30,7 +75,7 @@ struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element:
 	*);;
 *);;
 
-struct_Obtuse_triangle_L_D_K <= rrel_key_sc_element:
+struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Факт.утв.(Тупоугольный треугольник LDK)](*<-lang_ru;;*);;
@@ -40,7 +85,7 @@ struct_Obtuse_triangle_L_D_K <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Треугольник LDK является тупоугольным, разносторонним,
-			Геометрические точки L, D и K являются вершинами Треугольника LDK. Отрезки l, d и k являются сторонами Треугольника LDK. Углы LaTeX: \alpha, LaTeX: \beta, LaTeX: \gamma являются внутренним углами Треугольника LDK. Точка L является граничной точкой отрезков k, d. Точка D является граничной точкой отрезков k, l.
+			Геометрические точки L, D и K являются вершинами Треугольника LDK. Отрезки l, d и k являются сторонами Треугольника LDK. Углы alpha, beta, gamma являются внутренним углами Треугольника LDK. Точка L является граничной точкой отрезков k, d. Точка D является граничной точкой отрезков k, l.
 			Точка K является граничной точкой отрезков l, d. ]
 			(* <- lang_ru;; *);;
 		*);;

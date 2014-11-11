@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Full_angle_P_K_P;;
+﻿sc_node_not_relation -> struct_Full_angle_P_K_P;;
 
 struct_Full_angle_P_K_P => nrel_main_idtf:
 	[Полный угол PKP]
@@ -14,7 +14,21 @@ struct_Full_angle_P_K_P => nrel_idtf:[Полный угол(P; K; P)](*<-lang_ru
 
 struct_Full_angle_P_K_P <- concept_full_angle;;
 
-struct_Full_angle_P_K_P <= rrel_key_sc_element:
+sc_node_not_relation -> struct_Geometric_point_P;;
+sc_node_not_relation -> struct_Geometric_point_K;;
+
+struct_Geometric_point_P <- concept_geometric_point;;
+struct_Geometric_point_K <- concept_geometric_point;;
+
+struct_Full_angle_P_K_P => nrel_vertex: struct_Geometric_point_K;;
+
+sc_node_not_relation -> struct_Ray_K_P;;
+
+struct_Ray_K_P <- concept_ray;;
+
+struct_Full_angle_P_K_P => nrel_side: struct_Ray_K_P;;
+
+struct_Full_angle_P_K_P <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Факт.утв.(Острый угол KLM)](*<-lang_ru;;*);;
@@ -22,12 +36,6 @@ struct_Full_angle_P_K_P <= rrel_key_sc_element:
 	<= nrel_sc_text_translation: 
 		...
 		(*
-          -> rrel_example: 
-			[PKP ∈ concept_full_angle;
-			P, K ∈ concept_geometric_point;
-			<PKP, K> ∈ nrel_vertex;
-			KP, KP  ∈ concept_ray;
-			<PKP, KP> ∈ nrel_side.];;
 		-> rrel_example: 
 			[Угол PKP является полным.
 			P и K являются геометрическими точками. Геометрическая точка K является вершиной угла PKP.
@@ -36,14 +44,14 @@ struct_Full_angle_P_K_P <= rrel_key_sc_element:
 		*);;
 	*);;
 
-struct_Full_angle_P_K_P<- rrel_key_sc_element: 
+struct_Full_angle_P_K_P <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_explanation;; 
+		<- sc_image;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*
 				-> rrel_example: 
-						 "file://Angle PKP.png";;
+						 "file://images/Angle PKP.png";;
 			*);; 
 	*);;  

@@ -1,0 +1,132 @@
+﻿sc_node_not_relation -> struct_Irregular_polygon_K_A_B_C_D_E;;
+
+struct_Irregular_Polygon_K_A_B_C_D_E => nrel_main_idtf:
+	[Неправильный многоугольник KABCDE]
+	(*
+	<- lang_ru;;
+	*);
+	[Irregular Polygon KABCDE]
+	(*
+	<- lang_en;;
+	*);;
+
+struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf:[Неправильный многоугольник(K; A; B; C; D; E)](*<-lang_ru;;*);;
+
+struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf:[Неправильный многоугольник, вершинами которого являются Точка K, Точка A, Точка B, Точка C, Точка D и Точка E](*<-lang_ru;;*);;
+
+struct_Irregular_polygon_K_A_B_C_D_E <- concept_irregular_polygon;;
+
+sc_node_not_relation -> struct_Geometric_point_K;;
+sc_node_not_relation -> struct_Geometric_point_A;;
+sc_node_not_relation -> struct_Geometric_point_B;;
+sc_node_not_relation -> struct_Geometric_point_C;;
+sc_node_not_relation -> struct_Geometric_point_D;;
+sc_node_not_relation -> struct_Geometric_point_E;;
+
+struct_Geometric_point_K <- concept_geometric_point;;
+struct_Geometric_point_A <- concept_geometric_point;;
+struct_Geometric_point_B <- concept_geometric_point;;
+struct_Geometric_point_C <- concept_geometric_point;;
+struct_Geometric_point_D <- concept_geometric_point;;
+struct_Geometric_point_E <- concept_geometric_point;;
+
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_K;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_A;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_B;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_C;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_D;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_E;;
+
+sc_node_not_relation -> struct_Segment_K;;
+sc_node_not_relation -> struct_Segment_A;;
+sc_node_not_relation -> struct_Segment_B;;
+sc_node_not_relation -> struct_Segment_C;;
+sc_node_not_relation -> struct_Segment_D;;
+sc_node_not_relation -> struct_Segment_E;;
+
+struct_Segment_K <- concept_segment;;
+struct_Segment_A <- concept_segment;;
+struct_Segment_B <- concept_segment;;
+struct_Segment_C <- concept_segment;;
+struct_Segment_D <- concept_segment;;
+struct_Segment_E <- concept_segment;;
+
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_K;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_A;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_B;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_C;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_D;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_E;;
+
+sc_node_not_relation -> struct_Angle_Alpha;;
+sc_node_not_relation -> struct_Angle_Beta;;
+sc_node_not_relation -> struct_Angle_Gamma;;
+sc_node_not_relation -> struct_Angle_Delta;;
+sc_node_not_relation -> struct_Angle_Epsilon;;
+sc_node_not_relation -> struct_Angle_Sigma;;
+
+struct_Angle_Alpha <- concept_angle;;
+struct_Angle_Beta <- concept_angle;;
+struct_Angle_Gamma <- concept_angle;;
+struct_Angle_Delta <- concept_angle;;
+struct_Angle_Epsilon <- concept_angle;;
+struct_Angle_Sigma <- concept_angle;;
+
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Alpha;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Beta;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Gamma;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Delta;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Epsilon;;
+struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Sigma;;
+
+struct_Segment_E => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_A => nrel_boundary_point: struct_Geometric_point_K;;
+
+struct_Segment_A => nrel_boundary_point: struct_Geometric_point_A;;
+struct_Segment_B => nrel_boundary_point: struct_Geometric_point_A;;
+
+struct_Segment_B => nrel_boundary_point: struct_Geometric_point_B;;
+struct_Segment_C => nrel_boundary_point: struct_Geometric_point_B;;
+
+struct_Segment_C => nrel_boundary_point: struct_Geometric_point_C;;
+struct_Segment_D => nrel_boundary_point: struct_Geometric_point_C;;
+
+struct_Segment_D => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_E => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Segment_E => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_D => nrel_boundary_point: struct_Geometric_point_E;;
+
+
+struct_Irregular_polygon_K_A_B_C_D_E <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Факт.утв.(Неправильный многоугольник KABCDE](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[KABCDE - Неправильный многоугольник.
+			Геометрические точки K, A, B, C, D и E являются вершинами Многоугольника ABCDEF. Отрезки k, a, b, c, d, e являются сторонами Многоугольника KABCDE. Углы alpha, beta, gamma, delta,  epsilon и sigma являются внутренним углами Многоугольника KABCDE. Точка K является граничной точкой отрезков e, a. Точка A является граничной точкой отрезков a, b. Точка B является граничной точкой отрезков b, c. Точка C является граничной точкой отрезков c, d. Точка D является граничной точкой отрезков d, e.
+			Точка E является граничной точкой отрезков e, d.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Irregular_polygon_K_A_B_C_D_E <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_image;; 
+		<= nrel_sc_text_translation: 
+		...
+			(*
+				-> rrel_example: 
+						"file://images/Polygon KABCDE.png";;
+			*);; 
+	*);; 
+
+
+
+
+

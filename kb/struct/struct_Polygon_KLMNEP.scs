@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Polygon_K_L_M_N_E_P;;
+﻿sc_node_not_relation -> struct_Polygon_K_L_M_N_E_P;;
 
 struct_Polygon_K_L_M_N_E_P => nrel_main_idtf:
 	[Многоугольник KLMNEP]
@@ -16,7 +16,97 @@ struct_Polygon_K_L_M_N_E_P => nrel_idtf:[Многоугольник, верши�
 
 struct_Polygon_K_L_M_N_E_P <- concept_polygon;;
 
-struct_Polygon_K_L_M_N_E_P <= rrel_key_sc_element:
+sc_node_not_relation -> struct_Geometric_point_K;;
+sc_node_not_relation -> struct_Geometric_point_L;;
+sc_node_not_relation -> struct_Geometric_point_M;;
+sc_node_not_relation -> struct_Geometric_point_N;;
+sc_node_not_relation -> struct_Geometric_point_E;;
+sc_node_not_relation -> struct_Geometric_point_P;;
+
+struct_Geometric_point_K <- concept_geometric_point;;
+struct_Geometric_point_L <- concept_geometric_point;;
+struct_Geometric_point_M <- concept_geometric_point;;
+struct_Geometric_point_N <- concept_geometric_point;;
+struct_Geometric_point_E <- concept_geometric_point;;
+struct_Geometric_point_P <- concept_geometric_point;;
+
+struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_K;;
+struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_L;;
+struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_M;;
+struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_N;;
+struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_E;;
+struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_P;;
+
+sc_node_not_relation -> struct_Segment_K;;
+sc_node_not_relation -> struct_Segment_L;;
+sc_node_not_relation -> struct_Segment_M;;
+sc_node_not_relation -> struct_Segment_N;;
+sc_node_not_relation -> struct_Segment_E;;
+sc_node_not_relation -> struct_Segment_P;;
+
+struct_Segment_K <- concept_segment;;
+struct_Segment_L <- concept_segment;;
+struct_Segment_M <- concept_segment;;
+struct_Segment_N <- concept_segment;;
+struct_Segment_E <- concept_segment;;
+struct_Segment_P <- concept_segment;;
+
+struct_Polygon_K_L_M_N_E_P  => nrel_side: struct_Segment_K;;
+struct_Polygon_K_L_M_N_E_P  => nrel_side: struct_Segment_L;;
+struct_Polygon_K_L_M_N_E_P  => nrel_side: struct_Segment_M;;
+struct_Polygon_K_L_M_N_E_P  => nrel_side: struct_Segment_N;;
+struct_Polygon_K_L_M_N_E_P  => nrel_side: struct_Segment_E;;
+struct_Polygon_K_L_M_N_E_P  => nrel_side: struct_Segment_P;;
+
+nrel_congruence -> ... (* -> struct_Segment_K; struct_Segment_L; struct_Segment_E; struct_Segment_N;;*);;
+nrel_congruence -> ... (* -> struct_Segment_M; struct_Segment_P;; *);;
+//struct_Segment_M <=> nrel_congruence:  struct_Segment_P;;
+
+
+sc_node_not_relation -> struct_Angle_Alpha;;
+sc_node_not_relation -> struct_Angle_Beta;;
+sc_node_not_relation -> struct_Angle_Gamma;;
+sc_node_not_relation -> struct_Angle_Delta;;
+sc_node_not_relation -> struct_Angle_Epsilon;;
+sc_node_not_relation -> struct_Angle_Sigma;;
+
+struct_Angle_Alpha <- concept_angle;;
+struct_Angle_Beta <- concept_angle;;
+struct_Angle_Gamma <- concept_angle;;
+struct_Angle_Delta <- concept_angle;;
+struct_Angle_Epsilon <- concept_angle;;
+struct_Angle_Sigma <- concept_angle;;
+
+struct_Polygon_K_L_M_N_E_P  => nrel_internal_angle: struct_Angle_Alpha;;
+struct_Polygon_K_L_M_N_E_P  => nrel_internal_angle: struct_Angle_Beta;;
+struct_Polygon_K_L_M_N_E_P  => nrel_internal_angle: struct_Angle_Gamma;;
+struct_Polygon_K_L_M_N_E_P  => nrel_internal_angle: struct_Angle_Delta;;
+struct_Polygon_K_L_M_N_E_P  => nrel_internal_angle: struct_Angle_Epsilon;;
+struct_Polygon_K_L_M_N_E_P => nrel_internal_angle: struct_Angle_Sigma;; 
+
+//struct_Angle_Alpha <=> nrel_congruence: struct_Angle_Sigma;;
+nrel_congruence -> ... (* -> struct_Angle_Alpha; struct_Angle_Sigma;; *);;
+nrel_congruence -> ... (* -> struct_Angle_Beta; struct_Angle_Gamma; struct_Angle_Epsilon; struct_Angle_Delta;;*);;
+
+struct_Segment_K => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_L => nrel_boundary_point: struct_Geometric_point_K;;
+
+struct_Segment_L => nrel_boundary_point: struct_Geometric_point_L;;
+struct_Segment_M => nrel_boundary_point: struct_Geometric_point_L;;
+
+struct_Segment_M => nrel_boundary_point: struct_Geometric_point_M;;
+struct_Segment_N => nrel_boundary_point: struct_Geometric_point_M;;
+
+struct_Segment_N => nrel_boundary_point: struct_Geometric_point_N;;
+struct_Segment_E => nrel_boundary_point: struct_Geometric_point_N;;
+
+struct_Segment_P => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_E => nrel_boundary_point: struct_Geometric_point_E;;
+
+struct_Segment_P => nrel_boundary_point: struct_Geometric_point_P;;
+struct_Segment_K => nrel_boundary_point: struct_Geometric_point_P;;
+
+struct_Polygon_K_L_M_N_E_P <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Факт.утв.(Многоугольник KLMNEP)](*<-lang_ru;;*);;
@@ -24,23 +114,9 @@ struct_Polygon_K_L_M_N_E_P <= rrel_key_sc_element:
 	<= nrel_sc_text_translation: 
 		...
 		(*
-		-> rrel_example: 
-		[KLMNEP ∈ concept_polygon;
-		K, L, M, N, E, P ∈ concept_geometric_point;
-		< KLMNEP, K >, < KLMNEP, L >, < KLMNEP, M > , < KLMNEP, N > , < KLMNEP, E > , < KLMNEP, P > ∈ nrel_vertex;
-		k, l, m, n, e, p ∈ concept_segment;
-		< KLMNEP, k >, < KLMNEP, l >, < KLMNEP, m > ,< KLMNEP, n> ,< KLMNEP, e >,< KLMNEP, p> ∈ nrel_side;
-		{ m, p } ∈ nrel_congruence; { l, k } ∈ nrel_congruence; { k, e } ∈ nrel_congruence; { e, n } ∈ nrel_congruence;
-		< l, L >, < l, K >, < m, M >, < m, L >, < n, N >, < n, M >,< e, E >, < e, N >,< p, P >,< p, E >,< k, K >,< k, P > ∈ nrel_boundary_point;
-		< k, K >, < l, K >, < l, L >, < m, L >, < m, M >, < n, M >, < n, N >, < e, N > , < e, E >, < p, E >, < p, P >, < k, P > ∈ nrel_boundary_point;
-		alpha, beta, gamma, sigma, epsilon, eta ∈ concept_angle;
-		< KLMNEP, alpha >, < KLMNEP, beta >, < KLMNEP, gamma >, < KLMNEP, sigma >, < KLMNEP, epsilon >, < KLMNEP, eta > ∈ nrel_internal_angle;
-		{ alpha, sigma } ∈ nrel_congruence; { beta, gamma } nrel_congruence nrel_congruence; { gamma, epsilon } ∈ nrel_congruence;
-		{ epsilon, eta } ∈ nrel_congruence.]
-			(* <- lang_ru;; *);;
            -> rrel_example: 
 			[KLMNEP - многоугольник.
-			Геометрические точки K, L, M, N, E, P являются вершинами Многоугольника KLMNEP. Отрезки k, l, m, n, e, p являются сторонами Многоугольника KLMNEP. Стороны m, p равны. Стороны k, l, e, n равны. Углы alpha, beta, gamma, sigma, epsilon , eta являются внутренним углами Многоугольника KLMNEP. Углы alpha,sigma равны. Углы beta, gamma, epsilon, eta равны. Точка K является граничной точкой отрезков k, l. Точка L является граничной точкой отрезков l, m. Точка M является граничной точкой отрезков m, n. Точка N является граничной точкой отрезков n, e. Точка E является граничной точкой отрезков e, p.
+			Геометрические точки K, L, M, N, E, P являются вершинами Многоугольника KLMNEP. Отрезки k, l, m, n, e, p являются сторонами Многоугольника KLMNEP. Стороны m, p равны. Стороны k, l, e, n равны. Углы alpha, beta, gamma, sigma, epsilon , delta являются внутренним углами Многоугольника KLMNEP. Углы alpha,sigma равны. Углы beta, gamma, epsilon, delta равны. Точка K является граничной точкой отрезков k, l. Точка L является граничной точкой отрезков l, m. Точка M является граничной точкой отрезков m, n. Точка N является граничной точкой отрезков n, e. Точка E является граничной точкой отрезков e, p.
 			Точка P является граничной точкой отрезков p, k.]
 			(* <- lang_ru;; *);;
 		*);;
@@ -49,7 +125,7 @@ struct_Polygon_K_L_M_N_E_P <= rrel_key_sc_element:
 struct_Polygon_K_L_M_N_E_P <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_explanation;; 
+		<- sc_image;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

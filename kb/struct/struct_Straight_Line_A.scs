@@ -1,0 +1,41 @@
+﻿sc_node_not_relation -> struct_Straight_Line_A;;
+
+struct_Straight_Line_A => nrel_main_idtf: 
+	[Прямая a]
+	(*
+	<- lang_ru;;
+	*);
+	[Straight Line A]
+	(*
+	<- lang_en;;
+	*);;
+
+
+struct_Straight_Line_A <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_image;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example:
+				"file://Pryamayaa.png";;
+		*);;
+	*);;
+
+struct_Straight_Line_A  <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Факт.утв.(Прямая a)](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ a - прямая.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Straight_Line_A <- concept_straight_line;;
+
