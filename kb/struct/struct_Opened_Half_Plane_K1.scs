@@ -13,7 +13,15 @@ struct_Opened_Half_Plane_K1 => nrel_main_idtf:
 
 struct_Opened_Half_Plane_K1 <- concept_opened_half_plane;;
 
-struct_Opened_Half_Plane_K1 <= rrel_key_sc_element:
+sc_node_not_relation -> struct_Straight_line_K;;
+
+struct_Straight_line_K <- concept_straight_line;;
+
+struct_Opened_Half_Plane_K1 => nrel_bound: struct_Straight_line_K;;
+
+struct_Opened_Half_Plane_K1 -|> struct_Straight_line_K;;
+
+struct_Opened_Half_Plane_K1 <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Факт.утв.(Открытая полуплоскость K1)](*<-lang_ru;;*);;
@@ -21,12 +29,6 @@ struct_Opened_Half_Plane_K1 <= rrel_key_sc_element:
 	<= nrel_sc_text_translation: 
 		...
 		(*
-                -> rrel_example: 
-			[ H1 ∈ concept_opened_half_plane;
-			k ∈ concept_straight_line;
-			k ⊄ K1;
-			< K1, k > ∈ nrel_bound.]
-			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[ K1 - открытая полуплоскость. Прямая k является границей полуплоскости K1, но не входит в состав полуплоскости.]
 			(* <- lang_ru;; *);;
@@ -36,11 +38,11 @@ struct_Opened_Half_Plane_K1 <= rrel_key_sc_element:
 struct_Opened_Half_Plane_K1<- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_explanation;; 
+		<- sc_image;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*
 				-> rrel_example: 
-						 "file://SemiplaneK1.png";;
+						 "file://images/SemiplaneK1.png";;
 			*);; 
 	*);; 

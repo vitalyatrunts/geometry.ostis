@@ -18,7 +18,67 @@ struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf:[Разносторонняя т
 
 struct_Versatile_trapezoid_Z_X_C_V <- concept_versatile_trapezoid;;
 
-struct_Versatile_trapezoid_Z_X_C_V  <= rrel_key_sc_element:
+sc_node_not_relation -> struct_Geometric_point_Z;;
+sc_node_not_relation -> struct_Geometric_point_X;;
+sc_node_not_relation -> struct_Geometric_point_C;;
+sc_node_not_relation -> struct_Geometric_point_V;;
+
+struct_Geometric_point_Z <- concept_geometric_point;;
+struct_Geometric_point_X <- concept_geometric_point;;
+struct_Geometric_point_C <- concept_geometric_point;;
+struct_Geometric_point_V <- concept_geometric_point;;
+
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_z;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_X;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_C;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_V;;
+
+sc_node_not_relation -> struct_Segment_X;;
+sc_node_not_relation -> struct_Segment_V;;
+
+struct_Segment_X <- concept_segment;;
+struct_Segment_V <- concept_segment;;
+
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_lateral_side: struct_Segment_X;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_lateral_side: struct_Segment_V;;
+
+sc_node_not_relation -> struct_Segment_Z;;
+sc_node_not_relation -> struct_Segment_C;;
+
+struct_Segment_Z <- concept_segment;;
+struct_Segment_C <- concept_segment;;
+
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_base: struct_Segment_Z;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_base: struct_Segment_C;;
+
+struct_Segment_X => nrel_boundary_point: struct_Geometric_point_X;;
+struct_Segment_C => nrel_boundary_point: struct_Geometric_point_X;;
+
+struct_Segment_C => nrel_boundary_point: struct_Geometric_point_C;;
+struct_Segment_V => nrel_boundary_point: struct_Geometric_point_C;;
+
+struct_Segment_V => nrel_boundary_point: struct_Geometric_point_V;;
+struct_Segment_Z => nrel_boundary_point: struct_Geometric_point_V;;
+
+struct_Segment_Z => nrel_boundary_point: struct_Geometric_point_Z;;
+struct_Segment_X => nrel_boundary_point: struct_Geometric_point_Z;;
+
+sc_node_not_relation -> struct_Angle_Alpha;;
+sc_node_not_relation -> struct_Angle_Beta;;
+sc_node_not_relation -> struct_Angle_Gamma;;
+sc_node_not_relation -> struct_Angle_Sigma;;
+
+struct_Angle_Alpha <- concept_angle;;
+struct_Angle_Beta <- concept_angle;;
+struct_Angle_Gamma <- concept_angle;;
+struct_Angle_Sigma <- concept_angle;;
+
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_internal_angle: struct_Angle_Alpha;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_internal_angle: struct_Angle_Beta;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_internal_angle: struct_Angle_Gamma;;
+struct_Versatile_trapezoid_Z_X_C_V  => nrel_internal_angle: struct_Angle_Sigma;;
+
+struct_Versatile_trapezoid_Z_X_C_V  <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Факт. утв.(Разносторонняя трапеция ZXCV)](*<-lang_ru;;*);;
@@ -39,8 +99,8 @@ struct_Versatile_trapezoid_Z_X_C_V  <= rrel_key_sc_element:
 struct_Versatile_trapezoid_Z_X_C_V <- rrel_key_sc_element: 
 	...
 	(*
-		<-image;;
-		<=nrel_sc_text_translation:
+		<- sc_image;;
+		<= nrel_sc_text_translation:
 			...
 			(*
 				-> rrel_example:

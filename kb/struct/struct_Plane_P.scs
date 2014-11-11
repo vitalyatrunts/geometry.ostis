@@ -12,7 +12,7 @@ struct_Plane_P => nrel_main_idtf:
 
 struct_Plane_P <- concept_plane;;
 
-struct_Plane_P <= rrel_key_sc_element:
+struct_Plane_P <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Факт.утв.(Плоскость P)](*<-lang_ru;;*);;
@@ -23,20 +23,17 @@ struct_Plane_P <= rrel_key_sc_element:
 		-> rrel_example: 
 			[P - плоскость]
 			(* <- lang_ru;; *);;
-                -> rrel_example: 
-			[P ∈ concept_plane]
-			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 struct_Plane_P <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_explanation;; 
+		<- sc_image;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*
 				-> rrel_example: 
-						 "file://PlaneP.png";;
+						 "file://images/PlaneP.png";;
 			*);; 
 	*);; 
