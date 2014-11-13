@@ -16,7 +16,7 @@ nrel_area => nrel_idtf:[быть площадью фигуры*](*<-lang_ru;;*);
 
 nrel_area => nrel_idtf:[быть площадью геометрической фигуры*](*<-lang_ru;;*);;
 
-nrel_area <- relation;;
+nrel_area <- sc_relation;;
 
 nrel_area <- binary_relation;;
 
@@ -28,30 +28,16 @@ nrel_area => nrel_definitional_domain:
 		<= nrel_combination: 
 		...
 		(* ->
-			concept_surface;
-			concept_geometric_figure_of_limited_size;;
+			concept_flat_geometric_figure;
+			concept_set_of_variables;;
 		*);;
 	*);;	
 
 nrel_area => nrel_first_domain:
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->	 
-			concept_surface;
-			concept_geometric_figure_of_limited_size;;
-		*);;
-	*);;	
+	concept_flat_geometric_figure;;	
 
 nrel_area => nrel_second_domain: 
 	concept_set_of_variables;;
-
-nrel_area <= nrel_schemes_of_relations:
-     {
-	rrel_geometric_figure;
-	rrel_area
-     };;
 
 nrel_area <- rrel_key_sc_element: 
      	...
@@ -120,8 +106,6 @@ nrel_arrea <= rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_area <- subject_domain_of_Euclidean_geometry;;
-
 nrel_area <= nrel_analogue: nrel_length;;
 
-nrel_area <= nrel_analogue: nrel_volume;;
+

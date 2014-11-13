@@ -10,7 +10,7 @@ nrel_length => nrel_idtf:[длина объекта*](*<-lang_ru;;*);;
 
 nrel_length => nrel_idtf:[быть длиной объекта*](*<-lang_ru;;*);;
 
-nrel_length <- relation;;
+nrel_length <- sc_relation;;
 
 nrel_length <- binary_relation;;
 
@@ -25,7 +25,8 @@ nrel_length => nrel_domain_of_definition:
 			concept_segment;
 			concept_polyline;
 			concept_circle_arc;
-			concept_circle;;
+			concept_circle;
+			concept_value;;
 		*);;
 	*);;
 
@@ -45,17 +46,11 @@ nrel_length => nrel_first_domain:
 nrel_length => nrel_second_domain: 
 	concept_value;;
 
-nrel_length <= nrel_schemes_of_relations:
-     {
-	rrel_object;
-	rrel_length
-     };;
-
 nrel_length <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf:[Опр.(длина*)] (*<-lang_ru;;*);;
-	<- sc_definition;;
+	=> nrel_main_idtf:[Поясн.(длина*)] (*<-lang_ru;;*);;
+	<- sc_explanation;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -120,4 +115,4 @@ nrel_length <= rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_length <- subject_domain_of_Euclidean_geometry;;
+

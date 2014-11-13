@@ -6,11 +6,14 @@ nrel_diameter => nrel_main_idtf:
 
 nrel_diameter => nrel_idtf:[быть диаметром*](*<-lang_ru;;*);;
 
-nrel_diameter <- relation;;
+nrel_diameter <- sc_relation;;
 
 nrel_diameter <- binary_relation;;
 
 nrel_diameter <- oriented_relation;;
+
+nrel_diameter<= nrel_strict_inclusion: 
+	nrel_chord;;
 
 nrel_diameter <= nrel_domain_of_definition: 
 	...
@@ -19,9 +22,7 @@ nrel_diameter <= nrel_domain_of_definition:
 		...
 		(* ->
 			concept_circle;
-			concept_round;
-			concept_sphere;
-			concept_ball;;
+			concept_round;;
 		*);;
 	*);;	
 
@@ -32,28 +33,13 @@ nrel_diameter <= nrel_first_domain:
 		...
 		(* ->
 			concept_circle;
-			concept_round;
-			concept_sphere;
-			concept_ball;;
+			concept_round;;		
 		*);;
 	*);;
 
 nrel_diameter <= nrel_second_domain: 
 	concept_segment;;
 
-nrel_diameter <= nrel_schemes_of_relations:
-     {
-	rrel_geometric_figure;
-	rrel_diameter
-     };;
-
-nrel_diameter <= nrel_using_constants:
-	{
-		concept_geometric_point;
-                concept_geometric_figure;
-                nrel_chord;
-		nrel_centre
-	};;
 
 nrel_diameter <- rrel_key_sc_element:
 	...
@@ -64,13 +50,21 @@ nrel_diameter <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Хорда, проходящая через центр фигуры.]
+			[Диаметр - это хорда, проходящая через центр фигуры.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+nrel_diameter <= nrel_using_constants:
+	{
+		concept_geometric_figure;
+        nrel_chord;
+		nrel_centre
+	};;
+
+	
 nrel_diameter <= rrel_key_sc_element:
 	...
 	(*
@@ -98,4 +92,4 @@ nrel_diameter <= rrel_key_sc_element:
 		*);;
 	*);;
      
-nrel_diameter <- subject_domain_of_Euclidean_geometry;;
+

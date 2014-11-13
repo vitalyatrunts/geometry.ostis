@@ -1,11 +1,11 @@
 sc_node_norole_relation -> external_cross_lying_angles;;
 
-nrel_external_cross_lying_angles => nrel_main_idtf:
+nrel_external_crosswise_lying_angles => nrel_main_idtf:
 	[внешние накрест лежащие углы*]
 	(*
 	<- lang_ru;;
 	*);
-	[external cross lying angles*]
+	[external crosswise lying angles*]
 	(*
 	<- lang_en;;
 	*);;
@@ -15,58 +15,22 @@ nrel_external_cross_lying_angles => nrel_idtf:[быть внешними нак�
 	<-lang_ru;;
 	*);;
 
-nrel_external_cross_lying_angles -> relation;;
+nrel_external_cross_lying_angles <- sc_relation;;
 
-nrel_external_cross_lying_angles -> binary_relation;;
+nrel_external_cross_lying_angles <- binary_relation;;
 
-nrel_external_cross_lying_angles -> undirected_ralation;;
+nrel_external_cross_lying_angles <- non_oriented_ralation;;
 
 nrel_external_cross_lying_angles => nrel_domain_of_definition: 
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_dihedral_angle;;
-		*);;
-	*);;	
+	concept_planar_angle;;
+	
 
 nrel_external_cross_lying_angles => nrel_first_domain: 
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_dihedral_angle;;
-		*);;
-	*);;	
+	concept_planar_angle;;	
 
 nrel_external_cross_lying_angles => nrel_second_domain:
-	...
-	(* 
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_dihedral_angle;;
-		*);;
-	*);;	
+	concept_planar_angle;;
 
-nrel_external_cross_lying_angles <= nrel_schemes_of_relations:
-	{
-		rrel_angle;
-		rrel_angle
-	};;
-
-nrel_external_cross_lying_angles <= nrel_using_constants:
-	{
-		concept_angle;
-		nrel_intersecting_lines;
-		nrel_secant;
-		rrel_between
-	};;
 
 nrel_external_cross_lying_angles <- rrel_key_sc_element: 
 	... 
@@ -84,7 +48,13 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_external_cross_lying_angles <- subject_domain_of_Euclidean_geometry;;
+
+nrel_external_cross_lying_angles <= nrel_using_constants:
+	{
+		concept_planar_angle;
+		concept_straight_line;
+		nrel_secant
+	};;
 
 nrel_external_cross_lying_angles <= rrel_key_sc_element:
 	... 

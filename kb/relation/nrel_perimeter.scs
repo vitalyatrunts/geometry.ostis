@@ -16,27 +16,29 @@ nrel_perimeter => nrel_idtf:[периметр геометрической фи�
 
 nrel_perimeter => nrel_idtf:[быть периметром геометрической фигуры*](*<-lang_ru;;*);;
 
+nrel_median <- sc_relation;;
+
+nrel_median <- binary_relation;;
+
+nrel_median <- oriented_relation;;
+
 nrel_perimeter => nrel_definitional_domain: 
-	concept_planar_figure;;
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->	 
+			concept_polygon;
+			concept_quantity;;
+		*);;
+	*);;
 
 nrel_perimeter => nrel_first_domain: 
 	concept_polygon;;
 
 nrel_perimeter => nrel_second_domain: 
-	concept_number;;
+	concept_quantity;;
 
-nrel_perimeter <= nrel_schemes_of_relations:
-     {
-	rrel_geometric_figure;
-	rrel_perimeter
-     };;
-
-nrel_perimeter <= nrel_using_constants:
-	{
-		nrel_bound;
-		nrel_length;
-		concept_planar_figure
-	};;
 
 nrel_perimeter <- rrel_key_sc_element:
 	...
@@ -54,4 +56,10 @@ nrel_perimeter <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_perimeter <- subject_domain_of_Euclidean_geometry;;
+nrel_perimeter <= nrel_using_constants:
+	{
+		nrel_side;
+		nrel_length;
+		concept_polygon
+	};;
+

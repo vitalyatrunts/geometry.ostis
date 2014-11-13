@@ -6,59 +6,22 @@ nrel_corresponding_angles => nrel_main_idtf:
 
 nrel_corresponding_angles => nrel_idtf:[быть соответственными углами*](*<-lang_ru;;*);;
 
-nrel_corresponding_angles <- relation;;
+nrel_corresponding_angles <- sc_relation;;
 
 nrel_corresponding_angles <- binary_relation;;
 
-nrel_corresponding_angles <- not_oriented_relation;;
+nrel_corresponding_angles <- non_oriented_relation;;
 
 nrel_corresponding_angles => nrel_definitional_domain: 
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle;
-			concept_dihedral_angle;;
-		*);;
-	*);;
+	concept_planar_angle;;
 
 nrel_corresponding_angles => nrel_first_domain: 
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_dihedral_angle;;
-		*);;
-	*);;
+	concept_planar_angle;;
+	
 
 nrel_corresponding_angles <= nrel_second_domain: 
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_dihedral_angle;;
-		*);;
-	*);;
-
-nrel_corresponding_angles <= nrel_schemes_of_relations:
-	{
-		rrel_angle; 
-		rrel_angle 
-	};;
-
-nrel_corresponding_angles <= nrel_using_constants:
-	{
-		concept_angle;
-		nrel_intersecting_lines;
-		nrel_secant;
-		rrel_between
-	};;
-
+	concept_planar_angle;;
+	
 nrel_corresponding_angles <- rrel_key_sc_element:
 	...
 	(*
@@ -74,8 +37,14 @@ nrel_corresponding_angles <- rrel_key_sc_element:
 			*);;
 		*);;
 	*);; 
-
-nrel_corresponding_angles <- subject_domain_of_Euclidean_geometry;;
+	
+nrel_corresponding_angles <= nrel_using_constants:
+	{
+		concept_angle;
+		concept_straight_line;
+		nrel_secant;
+		rrel_between
+	};;
 
 nrel_corresponding_angles <= rrel_key_sc_element:
 	...

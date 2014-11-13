@@ -1,0 +1,96 @@
+sc_node_norole_relation -> nrel_be_described;;
+
+nrel_be_described => nrel_main_idtf:
+	[описанность*]
+	(*
+	<- lang_ru;;
+	*);
+	[be described*]
+	(*
+	<- lang_en;;
+	*);;
+
+nrel_be_described => nrel_idtf:[быть описанным*](*<-lang_ru;;*);;
+
+nrel_be_described => nrel_idtf:[быть описанной геометрической фигурой*](*<-lang_ru;;*);;
+
+nrel_be_described <- sc_relation;;
+
+nrel_be_described <- binary_relation;;
+
+nrel_be_described <- oriented_relation;;
+
+nrel_be_described => nrel_domain_of_definition :
+...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->	 
+			concept_polygon;
+			concept_planar_angle;
+			concept_circle;;
+		*);;
+	*);;
+	
+nrel_be_described => nrel_first_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->	 
+			concept_polygon;
+			concept_planar_angle;
+			concept_circle;;
+		*);;
+	*);;
+
+nrel_be_described => nrel_second_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->	 
+			concept_polygon;
+			concept_planar_angle;
+			concept_circle;;
+		*);;
+	*);;
+
+nrel_be_described <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Опр.(описанность*)] (*<-lang_ru;;*);;
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Описанным около окружности называется многоугольник, стороны которого являются касательными к окружности. Окружность, проходящая через вершины многоугольника, называется описанной около многоугольника.]
+			(* 
+			<- lang_ru;; 
+			*);;
+		*);;
+	*);;
+
+nrel_be_described <= nrel_using_constants:
+	{
+		concept_polygon;
+		concept_circle;
+		nrel_side;
+		nrel_vertex
+	};;
+	
+nrel_be_described <= rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Утв.(многоугольник,,окружность,,описанность*,,вершина*,,сторона*)](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
