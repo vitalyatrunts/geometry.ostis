@@ -6,8 +6,23 @@ nrel_distance => nrel_main_idtf:
 
 nrel_distance => nrel_idtf:[быть расстоянием*](*<-lang_ru;;*);;
 
+nrel_equal_sized <- sc_relation;;
+
+nrel_equal_sized <- binary_relation;;
+
+nrel_equal_sized <- oriented_relation;;
+
 nrel_distance => nrel_definitional_domain : 
-	concept_two_tuple_of_points;;
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_two_tuple_of_points;
+			nrel_measure;;
+		*);;
+	*);;	
+	
 
 nrel_distance => nrel_first_domain: 
 	concept_two_tuple_of_points;;
@@ -15,13 +30,6 @@ nrel_distance => nrel_first_domain:
 nrel_distance => nrel_second_domain: 
 	nrel_measure;;
 
-nrel_distance <=nrel_schemes_of_relations: 
-	{ 
-		rrel_pair_of_points;
-		rrel_measure
-	};;
-
-	
 nrel_distance <- rrel_key_sc_element: 
 	...
 	(*
@@ -35,8 +43,6 @@ nrel_distance <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-nrel_distance <- subject_domain_of_Euclidean_geometry;;
 
 nrel_distance <= rrel_key_sc_element:
 	...

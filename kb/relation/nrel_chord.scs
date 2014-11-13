@@ -10,37 +10,29 @@ nrel_chord => nrel_idtf:[хорда окружности*](*<-lang_ru;;*);;
 
 nrel_chord => nrel_idtf:[быть хордой окружности*](*<-lang_ru;;*);;
 
-nrel_chord -> relation;;
+nrel_center_line <- sc_relation;;
 
-nrel_chord -> binary_relation;;
+nrel_center_line <- binary_relation;;
 
-nrel_chord -> oriented_relation;;
+nrel_center_line <- oriented_relation;;
 
-nrel_chord <= nrel_strict_inclusion: 
-	concept_segment;;
-
-nrel_chord => nrel_definitional_domain : 
-	concept_circle;;
+nrel_chord => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		...
+		(* ->
+			concept_circle;
+			concept_segment;;
+		*);;
+	*);;
+	
 
 nrel_chord => nrel_first_domain: 
 	concept_circle;;
 
 nrel_chord => nrel_second_domain: 
 	concept_segment;;
-
-nrel_chord <= nrel_schemes_of_relations:
-	{
-		rrel_circle;
-		rrel_chord
-	};;
-
-nrel_chord <= nrel_using_constants:
-	{
-		concept_geometric_point;
-		concept_circle;
-		concept_segment;
-		nrel_boundary_point
-	};;
 
 nrel_chord <- rrel_key_sc_element:
 	...
@@ -58,7 +50,12 @@ nrel_chord <- rrel_key_sc_element:
 		*);;
 	*);; 
 
-nrel_chord <- subject_domain_of_Euclidean_geometry;;
+nrel_chord <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_circle;
+		concept_segment
+	};;
 
 nrel_chord <- rrel_key_sc_element: 
 	...
@@ -102,8 +99,7 @@ nrel_chord <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Если две хорды окружности, AB и CD пересекаются в точке M, то произведение отрезков одной хорды равно произведению отрезков другой хорды. .]
-				(* <- lang_ru;;*);
-			"file://images/chord.png";;
+				(* <- lang_ru;;*);;
 		*);;
 	*);;
 

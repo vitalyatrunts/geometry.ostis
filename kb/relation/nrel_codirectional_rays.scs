@@ -4,9 +4,11 @@ nrel_codirectional_rays => nrel_main_idtf:
 	[сонаправленные лучи*](*<-lang_ru;;*);
 	[codirectional rays*](*<-lang_en;;*);;
 
+nrel_codirectional_rays <- sc_relation;;	
+	
 nrel_codirectional_rays <- binary_relation;;
 
-nrel_codirectional_rays <- not_oriented_relation;;
+nrel_codirectional_rays <- non_oriented_relation;;
 
 nrel_codirectional_rays => nrel_idtf:[быть сонаправленными лучами*](*<-lang_ru;;*);;
 
@@ -18,22 +20,6 @@ nrel_codirectional_rays => nrel_first_domain:
 
 nrel_codirectional_rays => nrel_second_domain: 
 	concept_ray;;
-
-nrel_codirectional_rays <= nrel_schemes_of_relations:
-	{ 
-		rrel_ray; 
-		rrel_ray
-	};;
-
-nrel_codirectional_rays <= nrel_using_constants:
-	{
-		concept_ray;
-		concept_straight_line;
-		nrel_parallelism;
-		concept_half_plane;
-		concept_straight_line;
-		nrel_boundary_point
-	};;
 
 nrel_codirectional_rays <- rrel_key_sc_element: 
 	...
@@ -51,7 +37,15 @@ nrel_codirectional_rays <- rrel_key_sc_element:
 		*);;
 	*);; 
 
-nrel_codirectional_rays <- subject_domain_of_Euclidean_geometry;;
+nrel_codirectional_rays <= nrel_using_constants:
+	{
+		concept_ray;
+		concept_straight_line;
+		nrel_parallelism;
+		concept_half_plane;
+		concept_straight_line;
+		nrel_boundary_point
+	};;
 
 nrel_codirectional_rays <= rrel_key_sc_element:
 	...

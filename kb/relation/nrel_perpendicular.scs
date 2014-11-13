@@ -10,11 +10,13 @@ nrel_perpendicular => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-nrel_perpendicular => nrel_idtf:[перпендикуляр к прямой*](*<-lang_ru;;*);;
+nrel_perpendicular => nrel_idtf:[быть перпендикуляром*](*<-lang_ru;;*);;
 
-nrel_perpendicular <- relation;;
+nrel_perpendicular => nrel_idtf:[быть перпендикуляром, опущенным из точки к прямой или плоскости*](*<-lang_ru;;*);;
 
-nrel_perpendicular <- binary_relation;;
+nrel_perpendicular <- sc_relation;;
+
+nrel_perpendicular <- ternary_relation;;
 
 nrel_perpendicular <- oriented_relation;;
 
@@ -24,29 +26,31 @@ nrel_perpendicular => nrel_definitional_domain:
 		<= nrel_combination: 
 		...
 		(* ->
+			concept_segment;
 			concept_straight_line;
-			concept_plane;;
+			concept_plane;
+			concept_geometric_point;;
 		*);;
 	*);;	
 
 nrel_perpendicular => nrel_first_domain: 
-	concept_straight_line;;
+	concept_geometric_point;;
 
 nrel_perpendicular => nrel_second_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_straight_line;
+			concept_plane;;
+		*);;
+	*);;
+	
+nrel_perpendicular => nrel_third_domain:
 	concept_segment;;
+	
 
-nrel_perpendicular<= nrel_schemes_of_relations:
-     {
-	rrel_straight_line;
-	rrel_perpendicular
-     };;
-
-nrel_perpendicular <= nrel_using_constants:
-	{
-		concept_straight_line;
-		concept_segment;
-		nrel_perpendicularity
-	};;
 
 nrel_perpendicular <- rrel_key_sc_element: 
 	...
@@ -57,13 +61,21 @@ nrel_perpendicular <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Перпендикуляром к данной прямой называется отрезок прямой, перпендикулярной данной, который имеет одним из своих концов точку пересечения прямых. ]
+			[Перпендикуляром из точки к данной прямой или плоскости называется отрезок прямой, перпендикулярной данной, который имеет одним из своих концов точку пересечения прямых. ]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+nrel_perpendicular <= nrel_using_constants:
+	{
+		concept_straight_line;
+		concept_segment;
+		nrel_perpendicularity;
+		nrel_boundary_point
+	};;
+	
 nrel_perpendicular <= rrel_key_sc_element:
 	...
 	(*
@@ -117,4 +129,4 @@ nrel_perpendicular <= rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_perpendicular <- subject_domain_of_Euclidean_geometry;;
+

@@ -10,32 +10,29 @@ nrel_central_angle => nrel_idtf:[центральный угол в окружн
 
 nrel_central_angle => nrel_idtf:[быть центральным углом в окружности*](*<-lang_ru;;*);;
 
-nrel_central_angle -> binary_relation;;
+nrel_center_line <- sc_relation;;
 
-nrel_central_angle -> oriented_relation;;
+nrel_center_line <- binary_relation;;
 
-nrel_central_angle => nrel_definitional_domain : 
-	concept_circle;;
+nrel_center_line <- oriented_relation;;
+
+nrel_central_angle => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_circle; 
+			concept_planar_angle;;
+		*);;
+	*);;	
+	
 
 nrel_central_angle => nrel_first_domain: 
 	concept_circle;;
 
 nrel_central_angle => nrel_second_domain: 
 	concept_planar_angle;;
-
-nrel_central_angle <= nrel_schemes_of_relations:
-	{
-		rrel_circle;
-		rrel_central_angle
-	};;
-
-nrel_central_angle <= nrel_using_constants:
-	{
-		concept_planar_angle;
-		concept_circle;	
-		nrel_vertex;
-		nrel_centre
-	};;
 
 nrel_central_angle <- rrel_key_sc_element:
 	...
@@ -53,6 +50,14 @@ nrel_central_angle <- rrel_key_sc_element:
 		*);;
 	*);;
 
+nrel_central_angle <= nrel_using_constants:
+	{
+		concept_planar_angle;
+		concept_circle;	
+		nrel_vertex;
+		nrel_centre
+	};;
+	
 nrel_central_angle <- rrel_key_sc_element: 
 	...
 	(*
@@ -68,8 +73,6 @@ nrel_central_angle <- rrel_key_sc_element:
 			*);;
 		*);;
 	*);;
-
-nrel_central_angle <- subject_domain_of_Euclidean_geometry;;
 
 nrel_central_angle <- rrel_key_sc_element: 
 	...

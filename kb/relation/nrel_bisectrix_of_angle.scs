@@ -15,14 +15,23 @@ nrel_bisectrix_of_angle => nrel_idtf:[быть биссектрисой угла
 	<-lang_ru;;
 	*);;
 
-nrel_bisectrix_of_angle -> relation;;
+nrel_bisectrix_of_angle <- sc_relation;;
 
-nrel_bisectrix_of_angle -> binary_relation;;
+nrel_bisectrix_of_angle <- binary_relation;;
 
-nrel_bisectrix_of_angle -> oriented_relation;;
+nrel_bisectrix_of_angle <- oriented_relation;;
 
 nrel_bisectrix_of_angle => nrel_domain_of_definition : 
-	concept_planar_angle;;
+	... 
+	(*
+		<= nrel_combination: 
+		...
+		(* ->	 
+			concept_planar_angle;
+			concept_closed_ray;;
+		*);;
+	*);;
+	
 
 nrel_bisectrix_of_angle => nrel_first_domain: 
 	concept_planar_angle;;
@@ -30,26 +39,11 @@ nrel_bisectrix_of_angle => nrel_first_domain:
 nrel_bisectrix_of_angle => nrel_second_domain: 
 	concept_closed_ray;;
 
-nrel_bisectrix_of_angle <= nrel_schemes_of_relations:
-	{
-		rrel_angle;
-		rrel_bisectrix
-	};;
-
-nrel_bisectrix_of_angle <= nrel_using_constants:
-	{
-		concept_planar_angle;
-		concept_closed_ray;
-		nrel_vertex_of_angle;
-		nrel_side_of_the_angle;
-		nrel_congruence
-	};;
-
 nrel_bisectrix_of_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Опр.(биссектриса угла*)] (*<-lang_ru;;*);;
-	<- sc_definition;;   //если пояснение, то sc_explanation
+	<- sc_definition;;  
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -61,7 +55,15 @@ nrel_bisectrix_of_angle <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_bisectrix_of_angle <- subject_domain_of_Euclidean_geometry;;
+	
+nrel_bisectrix_of_angle <= nrel_using_constants:
+	{
+		concept_planar_angle;
+		concept_ray;
+		nrel_vertex_of_angle;
+		nrel_side_of_angle;
+		nrel_congruence
+	};;
 
 nrel_bisectrix_of_angle <= rrel_key_sc_element:
 	...

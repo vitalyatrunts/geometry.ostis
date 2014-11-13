@@ -12,13 +12,11 @@ nrel_radius => nrel_main_idtf:
 
 nrel_radius => nrel_idtf:[быть радиусом*](*<-lang_ru;;*);;
 
-nrel_radius -> relation;;
+nrel_radius <- sc_relation;;
 
-nrel_radius -> binary_relation;;
+nrel_radius <- binary_relation;;
 
-nrel_radius -> oriented_relation;;
-
-nrel_radius <= nrel_strict_inclusion: concept_segment;;
+nrel_radius <- oriented_relation;;
 
 nrel_radius => nrel_definitional_domain : 
 	...
@@ -27,9 +25,11 @@ nrel_radius => nrel_definitional_domain :
 		...
 		(* ->
 			concept_circle; 
-			concept_sphere; 
-			concept_ball; 
-			concept_spherical_segment;;
+			concept_round;
+			concept_circle_arc;
+			concept_round_segment;
+			concept_round_sector;
+			concept_segment;;
 		*);;
 	*);;	
 
@@ -40,31 +40,15 @@ nrel_radius => nrel_first_domain:
 		...
 		(* ->
 			concept_circle; 
-			concept_sphere; 
-			concept_ball; 
-			concept_spherical_segment;;
+			concept_round;
+			concept_circle_arc;
+			concept_round_segment;
+			concept_round_sector;;
 		*);;
-	*);;
+	*);;	
 
 nrel_radius => nrel_second_domain: 
 	concept_segment;;
-
-nrel_radius <= nrel_schemes_of_relations:
-     {
-	rrel_geometric_figure;
-	rrel_radius
-     };;
-
-nrel_radius <= nrel_using_constants:
-	{
-		concept_geometric_point;
-		concept_segment;	
-		concept_circle;
-		concept_sphere;
-		concept_ball;
-		nrel_centre;
-		nrel_boundary_point
-	};;
 
 nrel_radius <- rrel_key_sc_element:
 	...
@@ -75,13 +59,25 @@ nrel_radius <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Радиус - отрезок, соединяющий центр фигуры с любой граничной точкой.]
+			[ Радиус - отрезок, соединяющий центр фигуры(круга, окружности, дуги, кругового сектора и кругового сегмента) с любой граничной точкой.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+nrel_radius <= nrel_using_constants:
+	{
+		concept_segment;	
+		concept_circle; 
+		concept_round;
+		concept_circle_arc;
+		concept_round_segment;
+		concept_round_sector;
+		nrel_centre;
+		nrel_boundary_point
+	};;	
+	
 nrel_radius <= rrel_key_sc_element:
 	...
 	(*
@@ -122,4 +118,3 @@ nrel_radius <= rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_radius <- subject_domain_of_Euclidean_geometry;;

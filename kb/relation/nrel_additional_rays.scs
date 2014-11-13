@@ -6,9 +6,11 @@ nrel_additional_rays => nrel_main_idtf:
 
 nrel_additional_rays => nrel_idtf:[быть дополнительными лучами*](*<-lang_ru;;*);;
 
+nrel_additional_rays <- sc_relation;;
+
 nrel_additional_rays <- binary_relation;;
 
-nrel_additional_rays <- not_oriented_relation;;
+nrel_additional_rays <- non_oriented_relation;;
 
 //nrel_additional_rays <- antireflective_relation;;
 
@@ -25,20 +27,6 @@ nrel_additional_rays => nrel_first_domain:
 nrel_additional_rays => nrel_second_domain: 
 	concept_ray;;
 
-nrel_additional_rays <= nrel_schemes_of_relations:
-     {
-	rrel_ray;
-	rrel_ray
-     };;
-
-nrel_additional_rays <= nrel_using_constants:
-	{
-    		concept_ray;
-                concept_straight_line;
-                concept_geometric_point;
-                nrel_boundary_point
-	};;
-
 nrel_additional_rays <- rrel_key_sc_element: 
 	...
 	(*
@@ -48,13 +36,21 @@ nrel_additional_rays <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Два различных луча, лежащих на одной прямой и имеющих общую граничную точку.]
+			[Два различных луча, лежащих на одной прямой и имеющих общую только граничную точку.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+nrel_additional_rays <= nrel_using_constants:
+	{
+    		concept_ray;
+                concept_straight_line;
+                concept_geometric_point;
+                nrel_boundary_point
+	};;
+	
 nrel_additional_rays <= rrel_key_sc_element:
 	...
 	(*
@@ -64,7 +60,7 @@ nrel_additional_rays <= rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Два луча называются дополнительными, если они противоположно направлены и имеют общую граничную точку.]
+			[Два луча называются дополнительными, если они противоположно направлены и имеют общую только граничную точку.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -81,6 +77,6 @@ nrel_additional_rays <- rrel_key_sc_element:
 			*);;
 	*);;
 
-nrel_additional_rays <- subject_domain_of_Euclidean_geometry;;
+
 
 

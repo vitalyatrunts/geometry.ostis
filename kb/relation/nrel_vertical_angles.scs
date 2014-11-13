@@ -15,41 +15,20 @@ nrel_vertical_angles => nrel_idtf:[быть вертикальными угла�
 	<-lang_ru;;
 	*);;
 
-nrel_vertical_angles -> relation;;
+nrel_vertical_angles <- sc_relation;;
 
-nrel_vertical_angles -> binary_relation;;
+nrel_vertical_angles <- binary_relation;;
 
-nrel_vertical_angles -> undirected_relation;;
+nrel_vertical_angles <- oriented_relation;;
 
 nrel_vertical_angles => nrel_domain_of_definition:
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_dihedral_angle;;
-		*);;
-	*);;	
-
+	concept_planar_angle;;
+	
 nrel_vertical_angles => nrel_first_domain: 
-	concept_angle;;
+	concept_planar_angle;;
 
 nrel_vertical_angles => nrel_second_domain: 
-	concept_angle;;
-
-nrel_vertical_angles <= nrel_schemes_of_relations: 
-	{
-	rrel_angle;
-	rrel_angle
-	};;
-
-nrel_vertical_angles <= nrel_using_constants:
-			{
-				concept_angle;
-				nrel_vertex;
-				nrel_side
-			};; 
+	concept_planar_angle;;
 
 nrel_vertical_angles <- rrel_key_sc_element: 
 	...
@@ -65,7 +44,12 @@ nrel_vertical_angles <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_vertical_angles <- subject_domain_of_Euclidean_geometry;;
+nrel_vertical_angles <= nrel_using_constants:
+			{
+				concept_planar_angle;
+				nrel_vertex;
+				nrel_side
+			};; 
 
 nrel_angle_measure <= rrel_key_sc_element:
 	...
@@ -89,6 +73,6 @@ nrel_vertical_angles <- rrel_key_sc_element:
 		...
 			(*
 				-> rrel_example: 
-						"file://Vertical_angles.png";;
+						"file://images/Vertical_angles.png";;
 			*);; 
 	*);; 

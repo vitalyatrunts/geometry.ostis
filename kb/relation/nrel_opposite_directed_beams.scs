@@ -9,12 +9,41 @@ nrel_opposite_directed_beams => nrel_main_idtf:
 	(*
 	<- lang_en;;
 	*);;
-
+	
+nrel_median <= nrel_domain_of_definition: 
+	concept_ray;;
+	
 nrel_opposite_directed_beams => nrel_first_domain: 
 	concept_ray;;
 
 nrel_opposite_directed_beams => nrel_second_domain: 
 	concept_ray;;
+
+
+nrel_opposite_directed_beams <- rrel_key_sc_element: 
+    ...
+	(*
+	=> nrel_main_idtf: [Опр.(противоположно направленные лучи*)]  (* <- lang_ru;; *);;
+	<- sc_definition;;   //если пояснение, то sc_explanation
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Противоположно направленные лучи -это два луча , лежащие на прямой ,параллельны или совпадают. И при этом лучи не являются сонаправленными.]
+			(* 
+			<- lang_ru;; 
+			*);;
+		*);;
+	*);;	
+
+nrel_opposite_directed_beams <= nrel_using_constants:
+				{
+                concept_ray;
+             	concept_straight_line;
+          		concept_parallelism;
+       		    nrel_codirectional_rays
+ 		      
+				};;	
 
 nrel_opposite_directed_beams => rrel_key_sc_element:
 	...
@@ -30,4 +59,4 @@ nrel_opposite_directed_beams => rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_opposite_directed_beams <- subject_domain_of_Euclidean_geometry;;
+

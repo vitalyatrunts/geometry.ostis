@@ -6,11 +6,13 @@ nrel_centre => nrel_main_idtf:
 
 nrel_centre => nrel_idtf:[быть центром*](*<-lang_ru;;*);;
 
-nrel_centre -> relation;;
+nrel_centre => nrel_idtf:[быть центром геометрической фигуры*](*<-lang_ru;;*);;
 
-nrel_centre -> binary_relation;;
+nrel_center_line <- sc_relation;;
 
-nrel_centre -> oriented_relation;;
+nrel_center_line <- binary_relation;;
+
+nrel_center_line <- oriented_relation;;
 
 nrel_centre <= nrel_definitional_domain : 
 	...
@@ -19,8 +21,9 @@ nrel_centre <= nrel_definitional_domain :
 		...
 		(* ->
 			concept_circle; 
-			concept_sphere; 
-			concept_ball;;
+			concept_round;
+			concept_regular_polygon;
+			concept_geometric_point;;
 		*);;
 	*);;
 
@@ -31,31 +34,13 @@ nrel_centre <= nrel_first_domain:
 		...
 		(* ->
 			concept_circle; 
-			concept_sphere; 
-			concept_ball;;
+			concept_round;
+			concept_regular_polygon;;
 		*);;
 	*);;
 
 nrel_centre <= nrel_second_domain: 
 	concept_geometric_point;;
-
-nrel_centre <= nrel_schemes_of_relations:
-	{
-		rrel_geometric_point;
-		rrel_centre
-	};;
-
-nrel_centre <= nrel_using_constants:
-	{
-		concept_geometric_point;
-		concept_circle;
-		concept_circle;
-		concept_sphere;
-		concept_ball;
-		concept_circle;
-		nrel_bound;
-		nrel_distance
-	};;
 
 nrel_centre <- rrel_key_sc_element: 
 	...
@@ -66,11 +51,20 @@ nrel_centre <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Для окружности и сферы: Геометрическая точка, равноудаленная от любой точки фигуры. Для круга и шара: Геометрическая точка, равноудаленная от любой граничной точки фигуры.]
+			[ Для круга и окружности: Центр - это геометрическая точка, равноудаленная от любой граничной точки фигуры. Центром правильного многоугольника называется точка, равноудаленная от всех его вершин и всех его сторон. ]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);; 
 
-nrel_centre <- subject_domain_of_Euclidean_geometry;;
+nrel_centre <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_regular_polygon;
+		nrel_boundary_point;
+		nrel_vertex_of_polygon;
+		nrel_side_of_polygon;
+		nrel_distance
+	};;
+

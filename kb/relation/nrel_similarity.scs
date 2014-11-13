@@ -22,7 +22,7 @@ nrel_similarity <= nrel_strict_inclusion: nrel_geometric_transformation;;
 
 nrel_similarity => nrel_strict_inclusion: nrel_homothety;;
 
-nrel_similarity <- relation;;
+nrel_similarity <- sc_relation;;
 
 nrel_srimilarity <- binary_relation;;
 
@@ -39,21 +39,8 @@ nrel_similarity => nrel_first_domain:
 	concept_geometric_figure;;
 
 nrel_similarity => nrel_second_domain: 
-	concept_number;;
+	concept_geometric_figure;;
 
-nrel_similarity <= nrel_schemes_of_relations:
-     {
-	rrel_two_tuple_of_geometric_figure;
-	rrel_number
-     };;
-
-nrel_similarity <= nrel_using_constants:
-	{
-		concept_geometric_figure;
-		concept_getometric_point;
-                nrel_geometric_transformation;
-		nrel_distance
-	};;
 
 nrel_similarity <- rrel_key_sc_element: 
 	...
@@ -64,13 +51,23 @@ nrel_similarity <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Две фигуры F и F' подобны, если существует преобразование подобия, переводящее одну из этих фигур в другую.]
+			[Две фигуры подобны, если существует преобразование подобия, переводящее одну из этих фигур в другую. Два многоугольника подобны, если между их вершинами можно установить взаимно-однозначное соответствие так, что соответственные стороны пропорциональны, а соответственные углы равны.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+nrel_similarity <= nrel_using_constants:
+	{
+		concept_geometric_figure;
+		concept_getometric_point;
+		concept_angle;
+		nrel_side;
+        nrel_distance
+	};;
+
+	
 nrel_similarity <= rrel_key_sc_element:
 	...
 	(*
@@ -111,4 +108,4 @@ nrel_similarity <= rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_similarity <- subject_domain_of_Euclidean_geometry;;
+

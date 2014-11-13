@@ -12,7 +12,7 @@ nrel_secant => nrel_main_idtf:
 
 nrel_secant => nrel_idtf:[быть секущей*](*<-lang_ru;;*);;
 
-nrel_secant <- relation;;
+nrel_secant <- sc_relation;;
 
 nrel_secant <- binary_relation;;
 
@@ -25,27 +25,16 @@ nrel_secant => nrel_definitional_domain:
 		...
 		(* ->
 			concept_line; 
-			concept_plane;;
+			concept_straight_line;;
 		*);;
 	*);;	
 
 nrel_secant => nrel_first_domain: 
-	concept_geometric_figure;;
+	concept_line;;
+	
 
 nrel_secant => nrel_second_domain: 
 	concept_straight_line;;
-
-nrel_secant <= nrel_schemes_of_relations:
-	{ 
-		rrel_pair_of_lines;
-		rrel_secant 
-	};;
-
-nrel_secant <= nrel_using_constants:
-	{
-		concept_straight_line;
-		nrel_intersecting_lines
-	};;
 
 nrel_secant <- rrel_key_sc_element: 
 	...
@@ -56,11 +45,16 @@ nrel_secant <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Прямая называется секущей по отношению к паре прямых, если она пересекает обе прямые.]
+			[Секущая — это прямая, пересекающая некоторую линию.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);; 
 
-nrel_secant <- subject_domain_of_Euclidean_geometry;;
+
+nrel_secant <= nrel_using_constants:
+	{
+		concept_line;
+		concept_straight_line
+	};;

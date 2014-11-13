@@ -1,67 +1,29 @@
 sc_node_norole_relation -> nrel_equal_sized;;
 
-nrel_equal_sized => nrel_main_idtf:
+nrel_equal => nrel_main_idtf:
 	[равновеликие*]
 	(*
 	<-lang_ru;;
 	*);
-	[equal*]
+	[isometric*]
 	(*
 	<-lang_en;;
 	*);;
 
-nrel_equal_sized -> relation;;
+nrel_equal_sized <- sc_relation;;
 
-nrel_equal_sized -> binary_relation;;
+nrel_equal_sized <- binary_relation;;
 
-nrel_equal_sized -> non_oriented_relation;;
+nrel_equal_sized <- non_oriented_relation;;
 
 nrel_equal_sized => nrel_definitional_domain :
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			[плоская фигура]; 
-			concept_geometric_body;;
-		*);;
-	*);;	
+	concept_flat_geometric_figure;;
 
 nrel_equal_sized => nrel_first_domain:
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			[плоская фигура]; 
-			concept_geometric_body;;
-		*);;
-	*);;
+	concept_flat_geometric_figure;;
 
 nrel_equal_sized => nrel_second_domain: 
-	...
-	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			[плоская фигура]; 
-			concept_geometric_body;; 
-		*);;
-	*);;
-
-nrel_equal_sized <= nrel_schemes_of_relations:
-     {
-	rrel_geometric_figure;
-	rrel_geometric_figure
-     };;
-
-nrel_equal_sized <= nrel_using_constants:
-	{
-		concept_planar_figure;
-		nrel_area;	
-		concept_geometric_body;
-		nrel_volume
-	};;
+	concept_flat_geometric_figure;;
 
 nrel_equal_sized <- rrel_key_sc_element:
 	...
@@ -72,11 +34,15 @@ nrel_equal_sized <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Равновеликие фигуры - планарные фигуры с одинаковыми площадями или геометрические тела с одинаковыми объемами.]
+			[ Равновеликие фигуры - планарные фигуры с одинаковыми площадями.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
-nrel_equal_sized <- subject_domain_of_Euclidean_geometry;;
+nrel_equal_sized <= nrel_using_constants:
+	{
+		concept_flat_geometric_figure;
+		nrel_area
+	};;

@@ -16,36 +16,29 @@ nrel_tangent => nrel_idtf:[касательная к окружности*](*<-l
 
 nrel_tangent => nrel_idtf:[быть касательной к окружности*](*<-lang_ru;;*);;
 
-nrel_tangent <- relation;;
+nrel_tangent <- sc_relation;;
 
 nrel_tangent <- binary_relation;;
 
 nrel_tangent <- oriented_relation;;
 
 nrel_tangent => nrel_domain_of_definition: 
-	concept_circle;;
+	...
+	(*
+		<= nrel_combination: 
+		...
+		(* ->
+			concept_circle;
+			concept_straight_line;;
+		*);;
+	*);;	
+	
 
 nrel_tangent => nrel_first_domain: 
 	concept_circle;;
 
 nrel_tangent => nrel_second_domain: 
 	concept_straight_line;;
-
-nrel_tangent <= nrel_schemes_of_relations:
-     {
-	rrel_circle;
-	rrel_tangent
-     };;
-
-nrel_tangent <= nrel_using_constants:
-	{
-		concept_geometric_point;
-                concept_straight_line;
-                concept_circle;
-                nrel_radius;
-		nrel_perpendicular;
-		nrel_boundary_point
-	};; 
 
 nrel_tangent <- rrel_key_sc_element: 
 	...
@@ -64,4 +57,13 @@ nrel_tangent <- rrel_key_sc_element:
 	*);;
 
     
-nrel_tangent <- subject_domain_of_Euclidean_geometry;;
+nrel_tangent <= nrel_using_constants:
+	{
+		concept_geometric_point;
+        concept_straight_line;
+        concept_circle;
+        nrel_radius;
+		nrel_perpendicularity
+		
+	};; 
+
