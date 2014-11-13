@@ -1,8 +1,10 @@
 sc_node_norole_relation -> nrel_central_angle;;
 
 nrel_central_angle => nrel_main_idtf:
-	[центральный угол*](*<-lang_ru;;*);
-	[central angle*](*<-lang_en;;*);;
+	[центральный угол*]
+	(*<-lang_ru;;*);
+	[central angle*]
+	(*<-lang_en;;*);;
 
 nrel_central_angle => nrel_idtf:[быть центральным углом*](*<-lang_ru;;*);;
 
@@ -19,12 +21,11 @@ nrel_center_line <- oriented_relation;;
 nrel_central_angle => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_circle; 
-			concept_planar_angle;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_planar_angle
+		};;
 	*);;	
 	
 
@@ -44,18 +45,16 @@ nrel_central_angle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Планарный угол, вершиной которого является центр окружности.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_central_angle <= nrel_using_constants:
 	{
-		concept_planar_angle;
-		concept_circle;	
-		nrel_vertex;
-		nrel_centre
+	concept_planar_angle;
+	concept_circle;	
+	nrel_vertex;
+	nrel_centre
 	};;
 	
 nrel_central_angle <- rrel_key_sc_element: 
@@ -68,21 +67,19 @@ nrel_central_angle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Угловая величина дуги окружности равна величине центрального угла, который опирается на данную дугу.]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_central_angle <- rrel_key_sc_element: 
 	...
 	(*
-		<-image;;
-		<=nrel_sc_text_translation:
-		...
-			(*
-			-> rrel_example:
-				"file://images/central_angle.png";;
-			*);;
+	<-sc_image;;
+	<=nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/central_angle.png";;
+		*);;
 	*);;
 

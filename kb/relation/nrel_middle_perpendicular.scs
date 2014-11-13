@@ -16,23 +16,19 @@ nrel_middle_perpendicular <- oriented_relation;;
 
 nrel_middle_perpendicular => nrel_definitional_domain: 
 	...
-		(*
-			<= nrel_combination: 
-			...
-			(* ->	 
-				concept_segment;
-				concept_straight_line;;
-			*);;
-		*);;
-	
-	
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_segment;
+		concept_straight_line
+		};;
+	*);;
 
 nrel_middle_perpendicular => nrel_first_domain: 
 	concept_segment;;
 
 nrel_middle_perpendicular => nrel_second_domain: 
 	concept_straight_line;;
-
 
 nrel_middle_perpendicular <- rrel_key_sc_element: 
 	...
@@ -44,22 +40,19 @@ nrel_middle_perpendicular <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Серединный перпендикуляр - прямая, проходящая через середину отрезка перпендикулярно к нему.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_middle_perpendicular <= nrel_using_constants:
 	{
-		concept_segment;
-		concept_straight_line;	
-		nrel_middle;
-		nrel_perpendicularity
+	concept_segment;
+	concept_straight_line;	
+	nrel_middle;
+	nrel_perpendicularity
 	};;
 
-
-nrel_middle_perpendicular <= rrel_key_sc_element:
+nrel_middle_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(серединный перпендикуляр*; прямая; геометрическая точка; граничная точка; отрезок)](*<-lang_ru;;*);;

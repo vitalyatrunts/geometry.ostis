@@ -1,22 +1,20 @@
 sc_node_norole_relation -> nrel_additional_rays;;
 
 nrel_additional_rays => nrel_main_idtf:
-	[дополнительные лучи*](*<-lang_ru;;*);
-	[additional rays*](*<-lang_en;;*);;
+	[дополнительные лучи*] 
+	(* <- lang_ru;; *);
+	[additional rays*] 
+	(* <- lang_en;; *);;
 
-nrel_additional_rays => nrel_idtf:[быть дополнительными лучами*](*<-lang_ru;;*);;
+nrel_additional_rays => nrel_idtf:
+	[быть дополнительными лучами*] 
+	(* <-lang_ru;; *);;
 
 nrel_additional_rays <- sc_relation;;
 
 nrel_additional_rays <- binary_relation;;
 
 nrel_additional_rays <- non_oriented_relation;;
-
-//nrel_additional_rays <- antireflective_relation;;
-
-//nrel_additional_rays <- symmetric_relation;;
-
-//nrel_additional_rays <- antitransitive_relation;;
 
 nrel_additional_rays => nrel_definitional_domain: 
 	concept_ray;;
@@ -30,37 +28,39 @@ nrel_additional_rays => nrel_second_domain:
 nrel_additional_rays <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf:[Опр.(дополнительные лучи*)] (*<-lang_ru;;*);;
+	=> nrel_main_idtf:
+		[Опр.(дополнительные лучи*)]
+		(* <-lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Два различных луча, лежащих на одной прямой и имеющих общую только граничную точку.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			[Два различных луча, лежащих на одной прямой и имеющих общую только граничную точку.] 
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_additional_rays <= nrel_using_constants:
 	{
-    		concept_ray;
-                concept_straight_line;
-                concept_geometric_point;
-                nrel_boundary_point
+    	concept_ray;
+        concept_straight_line;
+        concept_geometric_point;
+        nrel_boundary_point
 	};;
 	
-nrel_additional_rays <= rrel_key_sc_element:
+nrel_additional_rays <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Утв.(дополнительные лучи*)](*<-lang_ru;;*);;
+	=> nrel_main_idtf:
+		[Утв.(дополнительные лучи*)]
+		(* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Два луча называются дополнительными, если они противоположно направлены и имеют общую только граничную точку.]
+			[Два луча называются дополнительными, если они противоположно направлены и имеют общую только граничную точку.]	
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -68,15 +68,12 @@ nrel_additional_rays <= rrel_key_sc_element:
 nrel_additional_rays <- rrel_key_sc_element: 
 	...
 	(*
-		<-image;;
-		<=nrel_sc_text_translation:
+		<- sc_image;;
+		<= nrel_sc_text_translation:
 		...
 			(*
 			-> rrel_example:
 				"file://images/additional_rays.png";;
 			*);;
 	*);;
-
-
-
 

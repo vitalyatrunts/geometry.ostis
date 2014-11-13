@@ -2,15 +2,13 @@ sc_node_norole_relation -> nrel_base;;
 
 nrel_base -> nrel_main_idtf:
 	[основание*]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[base*]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;; *);;
 
-nrel_base => nrel_idtf:[быть основанием*](*<-lang_ru;;*);;
+nrel_base => nrel_idtf:
+	[быть основанием*]
+	(*<-lang_ru;;*);;
 
 nrel_base <- sc_relation;;
 
@@ -19,17 +17,15 @@ nrel_base <- binary_relation;;
 nrel_base => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->	 
-			concept_polygon;
-			concept_segment;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_segment
+		};;
 	*);;		
 
 nrel_base => nrel_first_domain: 
 	concept_polygon;;		
-
 
 nrel_base => nrel_second_domain: 
 	concept_segment;;
@@ -44,18 +40,16 @@ nrel_base <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Основание* - это сторона равнобедренного треугольника, трапеции или параллелограмма, перпендикулярная их высоте.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_base <= nrel_using_constants:
 	{
-		concept_isosceles_triangle;
-		concept_trapezoid;
-		concept_parallelogram;
-		nrel_side;
-		nrel_perpendicularity;
-		nrel_hight
+	concept_isosceles_triangle;
+	concept_trapezoid;
+	concept_parallelogram;
+	nrel_side;
+	nrel_perpendicularity;
+	nrel_hight
 	};;
