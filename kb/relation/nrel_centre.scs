@@ -1,8 +1,10 @@
 sc_node_norole_relation -> nrel_centre;;
 
 nrel_centre => nrel_main_idtf:
-	[центр*](*<-lang_ru;;*);
-	[centre*](*<-lang_en;;*);;
+	[центр*]
+	(*<-lang_ru;;*);
+	[centre*]
+	(*<-lang_en;;*);;
 
 nrel_centre => nrel_idtf:[быть центром*](*<-lang_ru;;*);;
 
@@ -17,26 +19,24 @@ nrel_center_line <- oriented_relation;;
 nrel_centre <= nrel_definitional_domain : 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_circle; 
-			concept_round;
-			concept_regular_polygon;
-			concept_geometric_point;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_round;
+		concept_regular_polygon;
+		concept_geometric_point
+		};;
 	*);;
 
 nrel_centre <= nrel_first_domain:
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_circle; 
-			concept_round;
-			concept_regular_polygon;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_round;
+		concept_regular_polygon
+		};;
 	*);;
 
 nrel_centre <= nrel_second_domain: 
@@ -52,19 +52,17 @@ nrel_centre <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Для круга и окружности: Центр - это геометрическая точка, равноудаленная от любой граничной точки фигуры. Центром правильного многоугольника называется точка, равноудаленная от всех его вершин и всех его сторон. ]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);; 
 
 nrel_centre <= nrel_using_constants:
 	{
-		concept_geometric_point;
-		concept_regular_polygon;
-		nrel_boundary_point;
-		nrel_vertex_of_polygon;
-		nrel_side_of_polygon;
-		nrel_distance
+	concept_geometric_point;
+	concept_regular_polygon;
+	nrel_boundary_point;
+	nrel_vertex_of_polygon;
+	nrel_side_of_polygon;
+	nrel_distance
 	};;
 

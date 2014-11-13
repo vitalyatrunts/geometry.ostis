@@ -2,13 +2,9 @@ sc_node_norole_relation -> nrel_similarity;;
 
 nrel_similarity => nrel_main_idtf:
 	[подобие*]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[similarity*]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 
 nrel_similarity => nrel_idtf:[быть подобными фигурами*](*<-lang_ru;;*);;
 
@@ -27,10 +23,6 @@ nrel_similarity <- sc_relation;;
 nrel_srimilarity <- binary_relation;;
 
 nrel_similarity <- oriented_relation;;
-
-//nrel_similarity -> symmetric_relation;;
-
-//nrel_similarity -> transitive_relation;;
 
 nrel_similarity => nrel_definitional_domain: 
 	concept_geometric_figure;;
@@ -52,23 +44,21 @@ nrel_similarity <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Две фигуры подобны, если существует преобразование подобия, переводящее одну из этих фигур в другую. Два многоугольника подобны, если между их вершинами можно установить взаимно-однозначное соответствие так, что соответственные стороны пропорциональны, а соответственные углы равны.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_similarity <= nrel_using_constants:
 	{
-		concept_geometric_figure;
-		concept_getometric_point;
-		concept_angle;
-		nrel_side;
+	concept_geometric_figure;
+	concept_getometric_point;
+	concept_angle;
+	nrel_side;
         nrel_distance
 	};;
 
 	
-nrel_similarity <= rrel_key_sc_element:
+nrel_similarity <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(прямая; луч; отрезок; подобие*)](*<-lang_ru;;*);;

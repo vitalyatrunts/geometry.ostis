@@ -4,13 +4,9 @@ nrel_measure_of_the_angle <- sc_node_norole_relation;;
 
 nrel_angle_measure => nrel_main_idtf:
 	[мера угла*]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[measure of the angle*]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 
 nrel_angle_measure=> nrel_idtf:[быть мерой угла*](*<-lang_ru;;*);;
 
@@ -27,13 +23,11 @@ nrel_angle_measure <- oriented_relation;;
 nrel_angle_measure <= nrel_domain_of_definition : 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_angle;
-			concept_set_of_variables;;
-		
-		*);;
+	<= nrel_combination: 
+		{
+		concept_angle;
+		concept_set_of_variables
+		};;
 	*);;	
 
 	
@@ -53,9 +47,7 @@ nrel_angle_measure <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Мера угла - величина, полученная при измерении угла.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(*<- lang_ru;;*);;
 		*);;
 	*);;
 

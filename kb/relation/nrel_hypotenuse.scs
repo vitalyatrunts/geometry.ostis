@@ -2,44 +2,33 @@ sc_node_norole_relation -> nrel_hypotenuse;;
 
 nrel_hypotenuse => nrel_main_idtf:
 	[гипотенуза*]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[hypotenuse*]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 
 nrel_hypotenuse => nrel_idtf:[быть гипотенузой*]
-	(*
-	<-lang_ru;;
-	*);;
+	(*<-lang_ru;;*);;
 
 nrel_hypotenuse => nrel_idtf:[гипотенуза прямоугольного треугольника*]
-	(*
-	<-lang_ru;;
-	*);;
+	(*<-lang_ru;;*);;
 
 nrel_hypotenuse => nrel_idtf:[быть гипотенузой прямоугольного треугольника*]
-	(*
-	<-lang_ru;;
-	*);;
+	(*<-lang_ru;;*);;
 
 nrel_hypotenuse <- sc_relation;;
 
 nrel_hypotenuse <- binary_relation;;
 
-nrel_hypotenuse <- oriented_realtion;;
+nrel_hypotenuse <- oriented_relation;;
 
 nrel_hypotenuse => nrel_domain_of_definition : 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_rectangular_triangle;
-			concept_segment;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_rectangular_triangle;
+		concept_segment
+		};;
 	*);;
 	
 
@@ -59,24 +48,22 @@ nrel_hypotenuse <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Гипотенуза - это отрезок, который является стороной прямоугольного треугольника противолежащей прямому углу.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 	
 nrel_hypotenuse <= nrel_using_constants:
 	{
-		concept_rectangular_triangle;
-		concept_segment;
-		nrel_side;
-		nrel_opposite;
-		nrel_internal_angle;
-		concept_right_angle
+	concept_rectangular_triangle;
+	concept_segment;
+	nrel_side;
+	nrel_opposite;
+	nrel_internal_angle;
+	concept_right_angle
 	};;
 
-nrel_hypotenuse <= rrel_key_sc_element:
+nrel_hypotenuse <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(гипотенуза*; катет*)](*<-lang_ru;;*);;

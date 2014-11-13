@@ -1,8 +1,10 @@
 sc_node_norole_relation -> nrel_distance;;
 
 nrel_distance => nrel_main_idtf:
-	[расстояние*](*<-lang_ru;;*);
-	[distance*](*<-lang_en;;*);;
+	[расстояние*]
+	(*<-lang_ru;;*);
+	[distance*]
+	(*<-lang_en;;*);;
 
 nrel_distance => nrel_idtf:[быть расстоянием*](*<-lang_ru;;*);;
 
@@ -15,12 +17,11 @@ nrel_equal_sized <- oriented_relation;;
 nrel_distance => nrel_definitional_domain : 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_two_tuple_of_points;
-			nrel_measure;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_two_tuple_of_points;
+		nrel_measure
+		};;
 	*);;	
 	
 
@@ -36,15 +37,15 @@ nrel_distance <- rrel_key_sc_element:
 	=> nrel_main_idtf:[Поясн.(расстояние*)](*<-lang_ru;;*);; 	
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
-	...
-	(*
+		...
+		(*
 		-> rrel_example: 
 			[ Расстоянием между точками A и B называют длину отрезка AB. ]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-nrel_distance <= rrel_key_sc_element:
+nrel_distance <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(прямая; пересекающиеся прямые*; расстояние*)](*<-lang_ru;;*);;  
@@ -54,9 +55,7 @@ nrel_distance <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Расстояние между пересекающимися прямыми равно нулю. ]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);
  
@@ -69,9 +68,7 @@ nrel_distance <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Расстояние между скрещивающимися прямыми равно длине общего для данных прямых перпендикуляра. ]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);
 
@@ -84,9 +81,7 @@ nrel_distance <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Расстояние от точки до прямой равно длине перпендикуляра, опущенного из этой точки на прямую. ]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);
 
@@ -99,9 +94,7 @@ nrel_distance <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Расстояние от точки до плоскости равно длине перпендикуляра, опущенного из этой точки на данную плоскость. ]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);
 
@@ -114,9 +107,7 @@ nrel_distance <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Расстояние между параллельными прямыми - это длина общего для параллельных прямых перпендикуляра. ]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);
 
@@ -129,8 +120,6 @@ nrel_distance <= rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[ Расстояние между параллельными плоскостями равно длине их общего перпендикуляра. ]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);;

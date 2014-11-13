@@ -2,18 +2,12 @@ sc_node_norole_relation -> nrel_bisectrix_of_triangle;;
 
 nrel_bisectrix_of_triangle => nrel_main_idtf:
 	[биссектриса треугольника*]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[bisectrix of triangle*]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 
 nrel_bisectrix_of_triangle => nrel_idtf:[быть биссектрисой треугольника*]
-	(*
-	<-lang_ru;;
-	*);;
+	(*<-lang_ru;;*);;
 
 nrel_bisectrix_of_angle <- sc_relation;;
 
@@ -24,12 +18,11 @@ nrel_bisectrix_of_angle <- oriented_relation;;
 nrel_bisectrix_of_triangle => nrel_domain_of_definition : 
 	... 
 	(*
-		<= nrel_combination: 
-		...
-		(* ->	 
-			concept_triangle;
-			concept_segment;;
-		*);;
+	<= nrel_combination: 
+		{	 
+		concept_triangle;
+		concept_segment
+		};;
 	*);;
 	
 
@@ -50,24 +43,22 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Биссектрисой треугольника называют отрезок биссектрисы внутреннего угла треугольника от вершины угла до пересечения с противолежащей стороной.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_bisectrix_of_triangle <= nrel_using_constants:
 	{
-		concept_triangle;
-		concept_segment;
-		nrel_internal_angle;
-		nrel_bisectrix_of_angle;
-		nrel_vertex;
-		nrel_opposite
+	concept_triangle;
+	concept_segment;
+	nrel_internal_angle;
+	nrel_bisectrix_of_angle;
+	nrel_vertex;
+	nrel_opposite
 	};;
 
 
-nrel_bisectrix_of_angle <= rrel_key_sc_element:
+nrel_bisectrix_of_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*)](*<-lang_ru;;*);; 

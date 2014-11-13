@@ -2,13 +2,9 @@ sc_node_norole_relation -> nrel_opposite_directed_beams;;
 
 nrel_opposite_directed_beams => nrel_main_idtf:
 	[противоположно направленные лучи*]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[opposite directed beam*]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 	
 nrel_median <= nrel_domain_of_definition: 
 	concept_ray;;
@@ -18,7 +14,6 @@ nrel_opposite_directed_beams => nrel_first_domain:
 
 nrel_opposite_directed_beams => nrel_second_domain: 
 	concept_ray;;
-
 
 nrel_opposite_directed_beams <- rrel_key_sc_element: 
     ...
@@ -30,20 +25,17 @@ nrel_opposite_directed_beams <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Противоположно направленные лучи -это два луча , лежащие на прямой ,параллельны или совпадают. И при этом лучи не являются сонаправленными.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;	
 
 nrel_opposite_directed_beams <= nrel_using_constants:
-				{
-                concept_ray;
-             	concept_straight_line;
-          		concept_parallelism;
-       		    nrel_codirectional_rays
- 		      
-				};;	
+	{
+	concept_ray;
+	concept_straight_line;
+	concept_parallelism;
+	nrel_codirectional_rays 		      
+	};;	
 
 nrel_opposite_directed_beams => rrel_key_sc_element:
 	...

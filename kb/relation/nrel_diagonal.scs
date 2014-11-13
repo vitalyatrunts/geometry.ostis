@@ -1,8 +1,10 @@
 sc_node_norole_relation -> nrel_diagonal;;
 
 nrel_diagonal => nrel_main_idtf:
-	[диагональ*](*<-lang_ru;;*);
-	[diagonal*](*<-lang_en;;*);;
+	[диагональ*]
+	(*<-lang_ru;;*);
+	[diagonal*]
+	(*<-lang_en;;*);;
 
 nrel_diagonal => nrel_idtf:[быть диагональю*](*<-lang_ru;;*);;
 
@@ -15,12 +17,11 @@ nrel_diagonal <- oriented_relation;;
 nrel_diagonal => nrel_definitional_domain : 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_polygon; 
-			concept_segment;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_segment
+		};;
 	*);;	
 
 nrel_diagonal => nrel_first_domain:
@@ -30,10 +31,10 @@ nrel_diagonal <= nrel_second_domain:
 	concept_segment;;
 
 nrel_diagonal <= nrel_schemes_of_relations:
-     {
+	{
 	rrel_geometric_figure;
 	rrel_diagonal
-     };;
+	};;
 
 nrel_diagonal <- rrel_key_sc_element:
 	...
@@ -45,9 +46,7 @@ nrel_diagonal <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Диагональ - эито отношение, связывающее многоугольник и отрезок, соединяющий две вершины, которые не принадлежат одной стороне.]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);;
 
@@ -55,11 +54,10 @@ nrel_diagonal <= nrel_using_constants:
 	{
     	concept_polygon;
         nrel_side;
-		concept_segment
+	concept_segment
         };;
-
 	
-nrel_diagonal <= rrel_key_sc_element:
+nrel_diagonal <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(диагональ*; многоугольник; вершина*)](*<-lang_ru;;*);;

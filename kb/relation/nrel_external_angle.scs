@@ -2,18 +2,12 @@ sc_node_norole_relation -> nrel_external_angle;;
 
 nrel_external_angle => nrel_main_idtf:
 	[внешний угол*]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[external angle*]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 
 nrel_external_angle => nrel_idtf:[быть внешним углом многоугольника*]
-	(*
-	<-lang_ru;;
-	*);;
+	(*<-lang_ru;;*);;
 
 nrel_external_angle <- sc_relation;;
 
@@ -24,12 +18,11 @@ nrel_external_angle <- oriented_relation;;
 nrel_external_angle => nrel_domain_of_definition : 
 	...
 	(*
-		<= nrel_combination: 
-		...
-		(* ->
-			concept_planar_angle; 
-			concept_polygon;;
-		*);;
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon
+		};;
 	*);;	
 
 nrel_external_angle => nrel_first_domain: 
@@ -37,7 +30,6 @@ nrel_external_angle => nrel_first_domain:
 
 nrel_external_angle => nrel_second_domain: 
 	concept_planar_angle;;
-
 
 nrel_external_angle <- rrel_key_sc_element:
 	...
@@ -50,15 +42,13 @@ nrel_external_angle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Внешним углом многоугольника при данной вершине называют угол, 
 смежный с углом многоугольника при этой вершине. ]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 nrel_external_angle <= nrel_using_constants:
 	{
-		concept_polygon;
-		nrel_vertex;
-		nrel_adjacent_angle
+	concept_polygon;
+	nrel_vertex;
+	nrel_adjacent_angle
 	};;
