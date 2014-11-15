@@ -1,14 +1,14 @@
 sc_node_not_relation->concept_rectilinear_three_of_points;;
 
 concept_rectilinear_three_of_points=>nrel_main_idtf:
-[прямолинейная тройка точек]
-(*
-<-lang_ru;;
-*);
-[rectilinear three of points]
-(*
-<-lang_en;;
-*);;
+	[прямолинейная тройка точек]
+	(*
+	<-lang_ru;;
+	*);
+	[rectilinear three of points]
+	(*
+	<-lang_en;;
+	*);;
 
 concept_rectilinear_three_of_points=> nrel_idtf:[Класс прямолинейных троек точек](*<-lang_ru;;*);;
 
@@ -26,11 +26,7 @@ concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_three_tupl
 
 concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_rectilinear_figure;;
 
-concept_rectilinear_three_of_points <= nrel_using_constants:
-				{
-				concept_straight_line;
-				concept_three_tuple_of_points
-				};;
+concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_countable_set_of_points;;
 
 concept_rectilinear_three_of_points <- rrel_key_sc_element: 
         ...
@@ -41,13 +37,20 @@ concept_rectilinear_three_of_points <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Множество есть прямолинейная тройка точек тогда и только тогда, когда оно является тройкой точек, которые принадлежат одной прямой.]
+			[Множество есть прямолинейная тройка точек тогда и только тогда, когда оно является тройкой точек, для которой существует такая прямая, которой принадлежат все три точки.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+concept_rectilinear_three_of_points <= nrel_using_constants:
+				{
+				concept_straight_line;
+				concept_three_tuple_of_points
+				};;
+	
+	
 concept_rectilinear_three_of_points  <- rrel_key_sc_element: 
         ...
 	(*
@@ -61,7 +64,5 @@ concept_rectilinear_three_of_points  <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-concept_rectilinear_three_of_points <- subject_domain_of_Euclidean_geometry;;
 
 concept_rectilinear_three_of_points -> rrel_example : struct_Rectilinear_three_of_points_P_Q_R;;

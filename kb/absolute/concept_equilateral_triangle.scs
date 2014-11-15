@@ -36,13 +36,6 @@ concept_equilateral_triangle=> nrel_idtf:[Правильный многоуго�
 
 concept_equilateral_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
 
-concept_equilateral_triangle <= nrel_using_constants:
-				{
-				concept_triangle;
-				nrel_side;
-				nrel_congruence
-				};;
-
 concept_equilateral_triangle  <- rrel_key_sc_element: 
 	...
         
@@ -53,12 +46,19 @@ concept_equilateral_triangle  <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Треугольник является равносторонним в том и только в том случае, если все его стороны конгруэнты между собой]
+			[Треугольник является равносторонним в том и только в том случае, если все его стороны конгруэнтны между собой]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
+
+concept_equilateral_triangle <= nrel_using_constants:
+				{
+				concept_triangle;
+				nrel_side;
+				nrel_congruence
+				};;	
 
 concept_equilateral_triangle <- rrel_key_sc_element: 
 	...
@@ -253,7 +253,5 @@ R - величина радиуса описанной окружности ра
 a - величина стороны описываемого треугольника.](*<-lang_ru;;*);; 
 		*);;
 	*);;
-
-concept_equilateral_triangle -> subject_domain_of_Euclidean_geometry;;
 
 concept_equilateral_triangle -> rrel_example : struct_Equilateral_triangle_X_Y_Z;;

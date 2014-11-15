@@ -1,14 +1,14 @@
 sc_node_not_relation->concept_rectangular_triangle;;
 
 concept_rectangular_triangle=>nrel_main_idtf:
-[прямоугольный треугольник]
-(*
-<-lang_ru;;
-*);
-[rectangular triangle]
-(*
-<-lang_en;;
-*);;
+	[прямоугольный треугольник]
+	(*
+	<-lang_ru;;
+	*);
+	[rectangular triangle]
+	(*
+	<-lang_en;;
+	*);;
 
 concept_rectangular_triangle=> nrel_idtf:[Класс прямоугольных треугольников](*<-lang_ru;;*);;
 
@@ -20,12 +20,6 @@ concept_rectangular_triangle=> nrel_idtf:[Множество знаков все
 
 concept_rectangular_triangle <= nrel_strict_inclusion: concept_triangle;;
 
-concept_rectangular_triangle <= nrel_using_constants:
-				{
-				concept_triangle;
-				nrel_internal_angle;
-				concept_right_angle
-				};;
 
 concept_rectangular_triangle <- rrel_key_sc_element: 
         ...
@@ -43,6 +37,14 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		*);;
 	*);;
 
+concept_rectangular_triangle <= nrel_using_constants:
+				{
+				concept_triangle;
+				nrel_internal_angle;
+				concept_right_angle
+				};;
+	
+	
 concept_rectangular_triangle <- rrel_key_sc_element: 
         ...
 	(*
@@ -384,6 +386,6 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 *);;
 	*);;
 
-concept_rectangular_triangle <- subject_domain_of_Euclidean_geometry;;
+
 
 concept_rectangular_triangle -> rrel_example : struct_Rectangular_triangle_D_F_G;;

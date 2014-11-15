@@ -20,22 +20,9 @@ concept_trapezoid=> nrel_idtf:[Множество знаков всевозмо�
 
 concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
 
-concept_trapezoid => nrel_strict_inclusion:
-	{
-	concept_isosceles_trapeze;
-	concept_versatile_trapezoid;
-	concept_rectangular_trapeze
-	};;
-
-concept_trapezoid <- subject_domain_of_Euclidean_geometry;;
-
-concept_trapezoid <= nrel_using_constants:
-				{
-				concept_quadrilateral;
-				nrel_side;
-				nrel_parallelism
-				};;
-
+concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapeze;;	
+concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapeze;;
+	
 concept_trapezoid <- rrel_key_sc_element: 
         ... 
 	(*
@@ -53,6 +40,15 @@ concept_trapezoid <- rrel_key_sc_element:
 		*);;
 	*);;
 
+concept_trapezoid <= nrel_using_constants:
+				{
+				concept_quadrilateral;
+				nrel_side;
+				nrel_parallelism
+				};;	
+	
+
+	
 concept_trapezoid <- rrel_key_sc_element: 
 	...
 	(*

@@ -10,4 +10,44 @@ concept_linear_figure=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_linear_figure => nrel_idtf:[Линия](*<-lang_ru;;*);;
+concept_linear_figure=> nrel_idtf:[линейная геометрическая фигура](*<-lang_ru;;*);;
+
+concept_linear_figure=> nrel_idtf:[linear geometric figure](*<-lang_en;;*);;
+
+concept_linear_figure=> nrel_idtf:[линейная фигура](*<-lang_ru;;*);;
+
+concept_linear_figure=> nrel_idtf:[одномерная геометрическая фигура](*<-lang_ru;;*);;
+
+concept_linear_figure=> nrel_idtf:[множество одномерных геометрических фигур](*<-lang_ru;;*);;
+
+concept_linear_figure=> nrel_idtf:[Множество всевозможных одномерных геометрических фигур](*<-lang_ru;;*);;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_geometric_figure;;
+
+concept_rectilinear_figure => nrel_strict_inclusion: concept_rectilinear_figure;;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_line;;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_ray;;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_segment;;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_range;;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_polyline;;
+
+concept_linear_figure <= nrel_strict_inclusion: concept_linear_polygon;;
+
+concept_line <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Поясн.(линейная фигура)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Линейная фигура - класс геометрических фигур, объединяющий все геометрические фигуры, имеющих форму линии.]
+			(*<- lang_ru;;*);;
+		*);;
+	*);;

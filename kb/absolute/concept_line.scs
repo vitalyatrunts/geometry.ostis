@@ -10,23 +10,13 @@ concept_line=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_line => nrel_idtf:[Кривая](*<-lang_ru;;*);;
-
-concept_line=> nrel_idtf:[Линейная геометрическая фигура](*<-lang_ru;;*);;
-
-concept_line=> nrel_idtf:[Линейная фигура](*<-lang_ru;;*);;
-
-concept_line=> nrel_idtf:[Одномерная геометрическая фигура](*<-lang_ru;;*);;
-
-concept_line=> nrel_idtf:[Множество линий](*<-lang_ru;;*);;
+concept_line=> nrel_idtf:[множество линий](*<-lang_ru;;*);;
 
 concept_line=> nrel_idtf:[Множество всевозможных линий](*<-lang_ru;;*);;
 
 concept_line=> nrel_idtf:[Множество знаков всевозможных линий](*<-lang_ru;;*);;
 
-concept_line=> nrel_idtf:[Множество одномерных геометрических фигур](*<-lang_ru;;*);;
-
-concept_line=> nrel_idtf:[Множество всевозможных одномерных геометрических фигур](*<-lang_ru;;*);;
+concept_line <= nrel_strict_inclusion: concept_linear_figure;;
 
 concept_line <= nrel_strict_inclusion: concept_uninterrupted_geometric_figure;;
 
@@ -35,7 +25,7 @@ concept_line <= nrel_strict_inclusion: concept_geometric_figure_without_boundary
 concept_line <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку взаимного расположения по отношению к плоскости](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку взаимного расположения по отношению к плоскости](*<-lang_ru;;*);;
 	-> concept_planar_line;
 	concept_non_planar_line;;
 	*);;
@@ -43,34 +33,9 @@ concept_line <= nrel_subdividing:
 concept_line <= nrel_subdividing:
 	...
 	(*  
-         =>nrel_main_idtf:[по признаку прямолинейности](*<-lang_ru;;*);;
+         =>nrel_main_idtf:[Разбиение по признаку прямолинейности](*<-lang_ru;;*);;
 	-> concept_straight_line;
-	concept_non_straight_line;;
-	*);;
-
-concept_line <= nrel_subdividing:
-	...
-	(*
-        =>nrel_main_idtf:[по признаку разветвления](*<-lang_ru;;*);;
-	-> concept_line_with_branching;
-	concept_line_without_branching;;
-	*);;
-
-concept_line <= nrel_subdividing:
-	...
-	(*
-        =>nrel_main_idtf:[по признаку наличия циклов](*<-lang_ru;;*);;
-	-> concept_line_with_cycles;
-	concept_line_without_cycles;;
-	*);;
-
-
-concept_line <= nrel_subdividing:
-	...
-	(*
-        =>nrel_main_idtf:[по признаку замкнутости](*<-lang_ru;;*);;
-	-> concept_closed_line;
-	concept_unclosed_line;;
+	concept_curved_line;;
 	*);;
 
 concept_line <- rrel_key_sc_element: 
@@ -99,5 +64,5 @@ concept_line <- rrel_key_sc_element:
 			*);; 
 	*);;
 
-concept_line <- subject_domain_of_Euclidean_geometry;;
+
 

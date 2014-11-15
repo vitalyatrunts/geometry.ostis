@@ -1,14 +1,14 @@
 sc_node_not_relation->concept_geometric_point;;
 
 concept_geometric_point=>nrel_main_idtf:
-[геометрическая точка]
-(*
-<-lang_ru;;
-*);
-[geometric point]
-(*
-<-lang_en;;
-*);;
+	[геометрическая точка]
+	(*
+	<-lang_ru;;
+	*);
+	[geometric point]
+	(*
+	<-lang_en;;
+	*);;
 
 concept_geometric_point=> nrel_idtf:[Множество всех точек](*<-lang_ru;;*);;
 
@@ -34,12 +34,6 @@ concept_geometric_point=> nrel_idtf:[одноточечная геометрич
 
 concept_geometric_point=> nrel_idtf:[одноэлементное множество точек](*<-lang_ru;;*);;
 
-concept_geometric_point=> nrel_idtf:[геометрическая фигура, состоящая из одной точки](*<-lang_ru;;*);;
-
-concept_geometric_point <= nrel_strict_inclusion: concept_polygon;;
-
-concept_geometric_point <- subject_domain_of_Euclidean_geometry;;
-
 concept_geometric_point <- rrel_key_sc_element : 
 	...
 	(*
@@ -49,8 +43,7 @@ concept_geometric_point <- rrel_key_sc_element :
 		...
 		(*
 		->rrel_example:
-			[Геометрическая точка - это основная неделимая геометрическая фигура в пространстве, обладающая координатами,
- но не имеющая размеров, массы, направленности и каких-либо других геометрических или физических характеристик. ]
+			[Геометрическая точка - это основная неделимая геометрическая фигура в пространстве, обладающая координатами, но не имеющая размеров, массы, направленности и каких-либо других геометрических или физических характеристик. ]
 			(*
 			<- lang_ru;;
 			*);;

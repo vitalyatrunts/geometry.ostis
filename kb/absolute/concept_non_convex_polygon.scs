@@ -20,12 +20,6 @@ concept_non_convex_polygon=> nrel_idtf:[Множество знаков всев
 
 concept_non_convex_polygon <= nrel_strict_inclusion: concept_polygon;;
 
-concept_non_convex_polygon <= nrel_using_constants:
-			{
-			concept_polygon;
-			concept_non_convex_angle
-			};;
-
 concept_non_convex_polygon <- rrel_key_sc_element: 
      	...
 	(*
@@ -42,6 +36,12 @@ concept_non_convex_polygon <- rrel_key_sc_element:
 		*);;
 	*);;
 
+concept_non_convex_polygon <= nrel_using_constants:
+			{
+			concept_polygon;
+			concept_non_convex_angle
+			};;	
+
 concept_non_convex_polygon <= nrel_main_statements:
 	...
 	(*
@@ -56,6 +56,5 @@ concept_non_convex_polygon <= nrel_main_statements:
 		*);;
 	*);;
 
-concept_non_convex_polygon <- subject_domain_of_Euclidean_geometry;;
 
 concept_non_convex_polygon -> rrel_example : struct_Non_convex_polygon_O_P_R_S_Q_T;;

@@ -32,7 +32,7 @@ concept_geometric_figure=> nrel_idtf:[неэлементарный геомет�
 concept_geometric_figure <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку ограниченности размера](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку ограниченности размера](*<-lang_ru;;*);;
 
 	->concept_geometric_figure_of_limited_size;
 	  concept_geometric_figure_of_unlimited_size;;
@@ -41,7 +41,7 @@ concept_geometric_figure <= nrel_subdividing:
 concept_geometric_figure <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку существования граничных точек](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку существования граничных точек](*<-lang_ru;;*);;
 
 	->concept_geometric_figure_with_boundary_points;
 	  concept_geometric_figure_without_boundary_points;;
@@ -50,7 +50,7 @@ concept_geometric_figure <= nrel_subdividing:
 concept_geometric_figure <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку расположения в одной плоскости](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку расположения в одной плоскости](*<-lang_ru;;*);;
 
 	->concept_planar_figure;
 	  concept_non_planar_figure;;
@@ -59,27 +59,33 @@ concept_geometric_figure <= nrel_subdividing:
 concept_geometric_figure <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку расположения на одной прямой](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку расположения на одной прямой](*<-lang_ru;;*);;
 
 	->concept_rectilinear_figure;
-	  concept_non_linear_geometric_figure;;
+	  concept_non_rectlinear_geometric_figure;;
 	*);;
 
 concept_geometric_figure <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку счетности множества](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку счетности множества](*<-lang_ru;;*);;
 
 	->concept_countable_set;
 	  concept_non_countable_set;;
 	*);;
 
-concept_geometric_figure -> subject_domain_of_Euclidean_geometry;;
 
-concept_geometric_figure <= nrel_using_constants:
-				{
-				concept_geometric_point
-				};;
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=>nrel_main_idtf:[Разбиение по признаку размерности](*<-lang_ru;;*);;
+
+	->concept_linear_figure;
+	  concept_discret_geometric_figure;
+	  concept_flat_geometric_figure;
+	  concept_geometric_body;;
+	*);;
+
 
 concept_geometric_figure <- rrel_key_sc_element: 
 	...
@@ -91,13 +97,15 @@ concept_geometric_figure <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Геометрическая фигура - это непустое множество геометрических точек.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-
+concept_geometric_figure <= nrel_using_constants:
+				{
+				concept_geometric_point
+				};;
+				
 concept_geometric_figure -> rrel_example : struct_Non_linear_three_tuple_of_points_A_B_C;;
 
 concept_geometric_figure -> rrel_example : struct_Rectilinear_three_of_points_P_Q_R;;

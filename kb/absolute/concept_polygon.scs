@@ -24,8 +24,6 @@ concept_polygon=> nrel_idtf:[Множество знаков всевозмож�
 
 concept_polygon <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
 
-concept_polygon <= nrel_strict_inclusion: concept_geometric_figure_without_voids;;
-
 concept_polygon <= nrel_strict_inclusion: concept_planar_figure;;
 
 concept_polygon => nrel_strict_inclusion: concept_linear_polygon;;
@@ -33,18 +31,10 @@ concept_polygon => nrel_strict_inclusion: concept_linear_polygon;;
 concept_polygon<= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку выпуклости](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Разбиение по признаку выпуклости](*<-lang_ru;;*);;
 	->concept_convex_polygon;
 	concept_non_convex_polygon;;
 	*);;
-
-concept_polygon <= nrel_using_constants:
-				{
-				concept_polyline;
-				concept_geometric_figure;
-				concept_closed_polygon;
-                concept_plane
-				};;
 
 concept_polygon <- rrel_key_sc_element:
 	... 
@@ -55,13 +45,22 @@ concept_polygon <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Геометрическая фигура, которая состоит из точек замкнутой ломаной, которая является границей, и точек плоскости таких, что любой луч, проведенный из такой точки, пересекает границу.]
+			[Многоугольник - это геометрическая фигура, которая состоит из точек замкнутой ломаной, которая является границей, и точек плоскости таких, что любой луч, проведенный из такой точки, пересекает границу.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+concept_polygon <= nrel_using_constants:
+	{
+	concept_polyline;
+	nrel_bound;
+	concept_ray;
+	concept_geometric_figure;
+	concept_plane
+	};;	
+	
 concept_polygon <- rrel_key_sc_element:
 	...
 	(*

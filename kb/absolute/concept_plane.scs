@@ -11,17 +11,15 @@ concept_plane=> nrel_main_idtf:
 	*);;
 
 
-concept_plane=> nrel_idtf:[Класс плоскостей](*<-lang_ru;;*);;
+concept_plane => nrel_idtf:[Класс плоскостей](*<-lang_ru;;*);;
 
-concept_plane=> nrel_idtf:[Понятие плоскости](*<-lang_ru;;*);;
+concept_plane => nrel_idtf:[Понятие плоскости](*<-lang_ru;;*);;
 
-concept_plane=> nrel_idtf:[Множество всевозможных плоскостей](*<-lang_ru;;*);;
-
-concept_plane=> nrel_idtf:[планарная поверхность](*<-lang_ru;;*);;
+concept_plane => nrel_idtf:[Множество всевозможных плоскостей](*<-lang_ru;;*);;
 
 concept_plane <=  nrel_strict_inclusion: concept_surface;;
 
-concept_plane => nrel_strict_inclusion: concept_half_plane;;
+concept_plane <=  nrel_strict_inclusion: concept_planar_surface;;
 
 concept_plane <- rrel_key_sc_element:
 	...  
@@ -401,11 +399,7 @@ concept_plane <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_plane <- subject_domain_of_Euclidean_geometry;;
-
 concept_plane -> rrel_example: struct_Plane_P;;
-
-concept_plane <= nrel_analogue: concept_space;;
 
 concept_plane <= nrel_analogue: concept_straight_line;;
 

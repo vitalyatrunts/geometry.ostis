@@ -14,13 +14,6 @@ concept_rhomb <= nrel_strict_inclusion: concept_parallelogram;;
 
 concept_rhomb => nrel_strict_inclusion: concept_square;;
 
-concept_rhomb<= nrel_using_constants:
-				{
-				concept_parallelogram;
-				nrel_side;
-				nrel_congruence
-				};;
-
 concept_rhomb <- rrel_key_sc_element: 
      	... 
 	(*
@@ -30,14 +23,20 @@ concept_rhomb <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Параллелограмм, все стороны которого попарно конгруэнтны.]
+			[Ромб - это параллелограмм, все стороны которого попарно конгруэнтны.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);; 
 
-concept_rhomb <- subject_domain_of_Euclidean_geometry;;
+concept_rhomb<= nrel_using_constants:
+				{
+				concept_parallelogram;
+				nrel_side;
+				nrel_congruence
+				};;	
+	
 
 concept_rhomb <- rrel_key_sc_element: 
      	... 

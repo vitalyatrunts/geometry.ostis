@@ -2,15 +2,11 @@ sc_node_not_relation->concept_polyline;;
 
 concept_polyline=> nrel_main_idtf:
 	[ломаная]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[polyline]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
-concept_polyline=> nrel_idtf:[Простая цепь отрезков](*<-lang_ru;;*);;
+concept_polyline=> nrel_idtf:[Цепь отрезков](*<-lang_ru;;*);;
 
 concept_polyline=> nrel_idtf:[Класс ломаная](*<-lang_ru;;*);;
 
@@ -33,30 +29,28 @@ concept_polyline <= nrel_subdividing:
 	(*
 	=>nrel_main_idtf:[по признаку наличия самопересечений](*<-lang_ru;;*);;
 	-> concept_simple_broken_line;
-	concept_complex_polygonal_line;;
+	concept_complex_polyline;;
 	*);;
 
 concept_polyline <= nrel_using_constants:
-				{
-				nrel_boundary_point;
-				concept_segment;
-                   		 concept_non_linear_geometric_figure;
-				concept_geometric_point
-				};;
+	{
+	nrel_boundary_point;
+	concept_segment;
+        concept_non_rectlinear_geometric_figure;
+	concept_geometric_point
+	};;
 
 concept_polyline <- rrel_key_sc_element: 
      	...
 	(*
 	=> nrel_main_idtf: [Опр.(ломаная)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[Геометрическая фигура, состоящая из множества геометрических точек и множества отрезков, соединяющих эти точки, и граничные точки этих отрезков не лежат на одной прямой.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
@@ -94,6 +88,5 @@ concept_polyline <- rrel_key_sc_element:
 			*);; 
 	*);;
 
-concept_polyline <- subject_domain_of_Euclidean_geometry;;
 
 

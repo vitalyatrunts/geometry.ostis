@@ -1,14 +1,10 @@
 sc_node_not_relation->concept_pentagon;;
 
 concept_pentagon=>nrel_main_idtf:
-[пятиугольник]
-(*
-<-lang_ru;;
-*);
-[pentagon]
-(*
-<-lang_en;;
-*);;
+	[пятиугольник]
+	(*<-lang_ru;;*);
+	[pentagon]
+	(*<-lang_en;;*);;
 
 concept_pentagon=> nrel_idtf:[Класс пятиугольников](*<-lang_ru;;*);;
 
@@ -22,29 +18,29 @@ concept_pentagon=> nrel_idtf:[Множество знаков всевозмож
 
 concept_pentagon <= nrel_strict_inclusion: concept_polygon;;
 
-concept_pentagon <= nrel_using_constants:
-				{
-				[линейный пятиугольник];
-				concept_plane;
-				nrel_bound
-				};;
+concept_pentagon => nrel_strict_inclusion: concept_right_pentagon;;
 
 concept_pentagon <- rrel_key_sc_element: 
         ... 
 	(*
 	=> nrel_main_idtf: [Опр.(пятиугольник)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Пятиугольник - часть плоскости, ограниченная линейным пятиугольником.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			[Пятиугольник - это многоугольник с пятью углами.]
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
+concept_pentagon <= nrel_using_constants:
+	{
+	concept_polygon;
+	concept_angle;
+	nrel_internal_angle				
+	};;
+				
 concept_rectangular_triangle <- rrel_key_sc_element: 
         ...
 	(*
@@ -59,4 +55,3 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_pentagon <- subject_domain_of_Euclidean_geometry;;

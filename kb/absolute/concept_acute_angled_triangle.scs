@@ -2,13 +2,9 @@ sc_node_not_relation->concept_acute_angled_triangle;;
 
 concept_acute_angled_triangle=> nrel_main_idtf:
 	[остроугольный треугольник]
-	(*
-	<- lang_ru;;
-	*);
+	(*	<- lang_ru;; *);
 	[acute angled triangle]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_acute_angled_triangle=> nrel_idtf:[Класс остроугольных треугольников](*<-lang_ru;;*);;
 
@@ -18,15 +14,7 @@ concept_acute_angled_triangle=> nrel_idtf:[Множество знаков вс�
 
 concept_acute_angled_triangle <= nrel_strict_inclusion: concept_triangle;;
 
-concept_acute_angled_triangle <- subject_domain_of_Euclidean_geometry;;
 
-concept_acute_angled_triangle <= nrel_using_constants:
-				{
-				concept_triangle;
-				nrel_internal_angle;
-				concept_acute_angle
-				};;
-				
 concept_acute_angled_triangle <- rrel_key_sc_element: 
         ...
 	(*
@@ -37,13 +25,17 @@ concept_acute_angled_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Остроугольный треугольник – это треугольник, все внутренние углы которого являются острыми углами.]
-			(* 
-			<- lang_ru;; 
-			
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
+concept_acute_angled_triangle <= nrel_using_constants:
+	{
+	concept_triangle;
+	nrel_internal_angle;
+	concept_acute_angle
+	};;
+				
 concept_acute_angled_triangle -> rrel_example : struct_Acute_angled_triangle_O_S_T;;
 concept_acute_angled_triangle -> rrel_example : struct_Triangle_A_B_C;;
 concept_acute_angled_triangle -> rrel_example : struct_Triangle_K_L_M;;

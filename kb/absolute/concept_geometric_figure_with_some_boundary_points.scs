@@ -1,14 +1,14 @@
-sc_node_not_relation->concept_geometric_figure_with_some_boundary_points;;
+sc_node_not_relation -> concept_geometric_figure_with_some_boundary_points;;
 
 concept_geometric_figure_with_some_boundary_points=>nrel_main_idtf:
-[геометрическая фигура, в состав которой входят не все граничные точки]
-(*
-<-lang_ru;;
-*);
-[geometric figure with some boundary points]
-(*
-<-lang_en;;
-*);;
+	[геометрическая фигура, в состав которой входят не все граничные точки]
+	(*
+	<-lang_ru;;
+	*);
+	[geometric figure with some boundary points]
+	(*
+	<-lang_en;;
+	*);;
 
 concept_geometric_figure_with_some_boundary_points=> nrel_idtf:[Класс геометрических фигур, в состав которых входят не все граничные точки](*<-lang_ru;;*);;
 
@@ -17,14 +17,6 @@ concept_geometric_figure_with_some_boundary_points=> nrel_idtf:[Понятие �
 concept_geometric_figure_with_some_boundary_points=> nrel_idtf:[Множество геометрических фигур, в состав которых входят не все граничные точки](*<-lang_ru;;*);;
 
 concept_geometric_figure_with_some_boundary_points <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
-
-concept_geometric_figure_with_some_boundary_points -> subject_domain_of_Euclidean_geometry;;
-
-concept_geometric_figure_with_some_boundary_points <= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				nrel_boundary_poin
-				};;
 
 concept_geometric_figure_with_some_boundary_points <- rrel_key_sc_element: 
 	...
@@ -35,11 +27,16 @@ concept_geometric_figure_with_some_boundary_points <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Геометрическая фигура, в состав которой входят не все граничные точки - это фигура, для которой существуют хотя бы две граничные точки, 
-одна из которых принадлежит данной фигуре, а другая не принадлежит.]
+			[Геометрическая фигура, в состав которой входят не все граничные точки - это фигура, для которой существуют хотя бы две граничные точки, при этом одна из которых принадлежит данной фигуре, а другая не принадлежит.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+
+concept_geometric_figure_with_some_boundary_points <= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				nrel_boundary_poin
+				};;
