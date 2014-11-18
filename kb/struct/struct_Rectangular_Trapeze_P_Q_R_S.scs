@@ -1,6 +1,6 @@
 sc_node_not_relation -> struct_Rectangular_Trapeze_P_Q_R_S;;
 
-struct_Rectangular_Trapeze_P_Q_R_S=>nrel_main_idtf:
+struct_Rectangular_Trapeze_P_Q_R_ => nrel_main_idtf:
 	[Прямоугольная трапеция PQRS]
 	(*
 	<- lang_ru;;
@@ -10,11 +10,11 @@ struct_Rectangular_Trapeze_P_Q_R_S=>nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf:[Тр-я(P; Q; R; S)](*<-lang_ru;;*);;
+struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf: [Тр-я(P; Q; R; S)] (* <- lang_ru;; *);;
 
-struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf:[Прямоугольная трапеция(P; Q; R; S)](*<-lang_ru;;*);;
+struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf: [Прямоугольная трапеция(P; Q; R; S)] (* <- lang_ru;; *);;
 
-struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf:[Прямоугольная трапеция, вершинами которой являются Точка P, Точка Q, Точка R, Точка S](*<-lang_ru;;*);;
+struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf: [Прямоугольная трапеция, вершинами которой являются Точка P, Точка Q, Точка R, Точка S] (* <- lang_ru;; *);;
 
 struct_Rectangular_Trapeze_P_Q_R_S <- concept_rectangular_trapeze;;
 
@@ -66,7 +66,7 @@ struct_Segment_P => nrel_boundary_point: struct_Geometric_point_S;;
 struct_Rectangular_Trapeze_P_Q_R_S <- rrel_key_sc_element: 
 	...
 		(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -78,7 +78,7 @@ struct_Rectangular_Trapeze_P_Q_R_S <- rrel_key_sc_element:
 struct_Rectangular_Trapeze_P_Q_R_S <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Прямоугольная трапеция PQRS)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Прямоугольная трапеция PQRS)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

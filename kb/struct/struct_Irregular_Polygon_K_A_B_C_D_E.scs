@@ -10,9 +10,9 @@ struct_Irregular_Polygon_K_A_B_C_D_E => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf:[Неправильный многоугольник(K; A; B; C; D; E)](*<-lang_ru;;*);;
+struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf: [Неправильный многоугольник(K; A; B; C; D; E)] (* <- lang_ru;; *);;
 
-struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf:[Неправильный многоугольник, вершинами которого являются Точка K, Точка A, Точка B, Точка C, Точка D и Точка E](*<-lang_ru;;*);;
+struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf: [Неправильный многоугольник, вершинами которого являются Точка K, Точка A, Точка B, Точка C, Точка D и Точка E] (* <- lang_ru;; *);;
 
 struct_Irregular_polygon_K_A_B_C_D_E <- concept_irregular_polygon;;
 
@@ -101,7 +101,7 @@ struct_Segment_D => nrel_boundary_point: struct_Geometric_point_E;;
 struct_Irregular_polygon_K_A_B_C_D_E <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Неправильный многоугольник KABCDE](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Неправильный многоугольник KABCDE] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -117,7 +117,7 @@ struct_Irregular_polygon_K_A_B_C_D_E <- rrel_key_sc_element:
 struct_Irregular_polygon_K_A_B_C_D_E <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

@@ -1,22 +1,22 @@
-sc_node_not_relation->concept_geometric_figure_with_boundary_points;;
+sc_node_not_relation -> concept_geometric_figure_with_boundary_points;;
 
-concept_geometric_figure_with_boundary_points=>nrel_main_idtf:
+concept_geometric_figure_with_boundary_points => nrel_main_idtf:
 	[геометрическая фигура, имеющая граничные точки]
 	(*
-	<-lang_ru;;
+	<- lang_ru;;
 	*);
 	[geometrical figure with boundary points]
 	(*
-	<-lang_en;;
+	<- lang_en;;
 	*);;
 
-concept_geometric_figure_with_boundary_points=> nrel_idtf:[Класс геометрических фигур, имеющих граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Класс геометрических фигур, имеющих граничные точки] (* <- lang_ru;; *);;
 
-concept_geometric_figure_with_boundary_points=> nrel_idtf:[Понятие геометрической фигуры, имеющей граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Понятие геометрической фигуры, имеющей граничные точки] (* <- lang_ru;; *);;
 
-concept_geometric_figure_with_boundary_points=> nrel_idtf:[Множество всевозможных геометрических фигур, имеющих граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Множество всевозможных геометрических фигур, имеющих граничные точки] (* <- lang_ru;; *);;
 
-concept_geometric_figure_with_boundary_points=> nrel_idtf:[Множество знаков всевозможных геометрических фигур, имеющих граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Множество знаков всевозможных геометрических фигур, имеющих граничные точки] (* <- lang_ru;; *);;
 
 concept_geometric_figure_with_boundary_points <= nrel_strict_inclusion: concept_geometric_figure;;
 
@@ -33,9 +33,9 @@ concept_geometric_figure_with_boundary_points => nrel_strict_inclusion: concept_
 concept_geometric_figure_with_boundary_points <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку включения граничных точек](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [по признаку включения граничных точек] (* <- lang_ru;; *);;
 
-	->concept_geometric_figure_with_all_boundary_points;
+	-> concept_geometric_figure_with_all_boundary_points;
 	  concept_geometric_figure_without_boundary_points;
 	  concept_geometric_figure_with_some_boundary_points;;
 	*);;
@@ -48,7 +48,7 @@ concept_geometric_figure_with_boundary_points <- rrel_key_sc_element :
 	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example:
+		-> rrel_example:
 			[Геометрическая фигура, имеющая граничные точки - это фигура, которая имеет хотя бы одну граничную точку.]
 			(*
 			<- lang_ru;;

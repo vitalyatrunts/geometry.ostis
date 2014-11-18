@@ -1,26 +1,26 @@
-sc_node_not_relation->concept_rectilinear_three_of_points;;
+sc_node_not_relation -> concept_rectilinear_three_of_points;;
 
-concept_rectilinear_three_of_points=>nrel_main_idtf:
+concept_rectilinear_three_of_points => nrel_main_idtf:
 	[прямолинейная тройка точек]
 	(*
-	<-lang_ru;;
+	<- lang_ru;;
 	*);
 	[rectilinear three of points]
 	(*
-	<-lang_en;;
+	<- lang_en;;
 	*);;
 
-concept_rectilinear_three_of_points=> nrel_idtf:[Класс прямолинейных троек точек](*<-lang_ru;;*);;
+concept_rectilinear_three_of_points => nrel_idtf: [Класс прямолинейных троек точек] (* <- lang_ru;; *);;
 
-concept_rectilinear_three_of_points=> nrel_idtf:[Понятие прямолинейной тройки точек](*<-lang_ru;;*);;
+concept_rectilinear_three_of_points => nrel_idtf: [Понятие прямолинейной тройки точек] (* <- lang_ru;; *);;
 
-concept_rectilinear_three_of_points=> nrel_idtf:[Множество всевозможных прямолинейных троек точек](*<-lang_ru;;*);;
+concept_rectilinear_three_of_points => nrel_idtf: [Множество всевозможных прямолинейных троек точек] (* <- lang_ru;; *);;
 
-concept_rectilinear_three_of_points=> nrel_idtf:[Множество знаков всевозможных прямолинейных троек точек](*<-lang_ru;;*);;
+concept_rectilinear_three_of_points => nrel_idtf: [Множество знаков всевозможных прямолинейных троек точек] (* <- lang_ru;; *);;
 
-concept_rectilinear_three_of_points=> nrel_idtf:[тройка точек, лежащих на одной прямой](*<-lang_ru;;*);;
+concept_rectilinear_three_of_points => nrel_idtf: [тройка точек, лежащих на одной прямой] (* <- lang_ru;; *);;
 
-concept_rectilinear_three_of_points=> nrel_idtf:[тройка геометрических точек, лежащих на одной прямой](*<-lang_ru;;*);;
+concept_rectilinear_three_of_points => nrel_idtf: [тройка геометрических точек, лежащих на одной прямой] (* <- lang_ru;; *);;
 
 concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_three_tuple_of_points;;
 
@@ -31,8 +31,8 @@ concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_countable_
 concept_rectilinear_three_of_points <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf:[Опр.(прямолинейная тройка точек)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(прямолинейная тройка точек)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

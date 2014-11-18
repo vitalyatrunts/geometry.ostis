@@ -1,19 +1,19 @@
-sc_node_role_relation->rrel_between;;
+sc_node_role_relation -> rrel_between;;
 
-rrel_between=> nrel_main_idtf:
+rrel_between => nrel_main_idtf:
 	[между']
-	(*<- lang_ru;;*);
+	(* <- lang_ru;; *);
 	[between']
-	(*<- lang_en;;*);;
+	(* <- lang_en;; *);;
 
 
-rrel_between=> nrel_idtf:[лежать между'](*<-lang_ru;;*);;
+rrel_between => nrel_idtf: [лежать между'] (* <- lang_ru;; *);;
 
-rrel_between=> nrel_idtf:[находиться между'](*<-lang_ru;;*);;
+rrel_between => nrel_idtf: [находиться между'] (* <- lang_ru;; *);;
 
-rrel_between=> nrel_idtf:[быть элементом множества, находящимся между крайними элементами этого множества'](*<-lang_ru;;*);;
+rrel_between => nrel_idtf: [быть элементом множества, находящимся между крайними элементами этого множества'] (* <- lang_ru;; *);;
 
-rrel_between=> nrel_idtf:[Ролевое отношение, связывающее знак множества с тем его элементом, который находится между другими элементами этого множества](*<-lang_ru;;*);;
+rrel_between => nrel_idtf: [Ролевое отношение, связывающее знак множества с тем его элементом, который находится между другими элементами этого множества] (* <- lang_ru;; *);;
 
 rrel_between <- role_relation;;
 

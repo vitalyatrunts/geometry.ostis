@@ -11,9 +11,9 @@ struct_Regular_Polygon_A_B_C_D_E_F => nrel_main_idtf:
 	*);;
 
 
-struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf:[Правильный многоугольник(A; B; C; D; E; F)](*<-lang_ru;;*);;
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf: [Правильный многоугольник(A; B; C; D; E; F)] (* <- lang_ru;; *);;
 
-struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf:[Правильный многоугольник, вершинами которого являются Точка A, Точка B, Точка С, Точка D, Точка E и Точка F](*<-lang_ru;;*);;
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf: [Правильный многоугольник, вершинами которого являются Точка A, Точка B, Точка С, Точка D, Точка E и Точка F] (* <- lang_ru;; *);;
 
 struct_Regular_Polygon_A_B_C_D_E_F <- concept_regular_polygon;;
 
@@ -82,7 +82,7 @@ struct_Segment_F => nrel_boundary_point: struct_Geometric_point_E;;
 struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -94,7 +94,7 @@ struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element:
 struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Правильный многоугольник ABCDEF)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Правильный многоугольник ABCDEF)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

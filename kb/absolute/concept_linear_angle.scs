@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_linear_angle;;
+sc_node_not_relation -> concept_linear_angle;;
 
-concept_linear_angle=> nrel_main_idtf:
+concept_linear_angle => nrel_main_idtf:
 	[линейный угол]
 	(*
 	<- lang_ru;;
@@ -10,13 +10,13 @@ concept_linear_angle=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_linear_angle=> nrel_idtf:[Класс линейных углов](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Класс линейных углов] (* <- lang_ru;; *);;
 
-concept_linear_angle=> nrel_idtf:[Понятие линейного угла](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Понятие линейного угла] (* <- lang_ru;; *);;
 
-concept_linear_angle=> nrel_idtf:[Множество всевозможных линейных углов](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Множество всевозможных линейных углов] (* <- lang_ru;; *);;
 
-concept_linear_angle=> nrel_idtf:[Множество знаков всевозможных линейных углов](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Множество знаков всевозможных линейных углов] (* <- lang_ru;; *);;
 
 concept_linear_angle <= nrel_strict_inclusion: concept_angle;;
 
@@ -26,7 +26,7 @@ concept_linear_angle <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Опр.(линейный угол)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

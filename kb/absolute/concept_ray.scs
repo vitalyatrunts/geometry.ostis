@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_ray;;
+sc_node_not_relation -> concept_ray;;
 
-concept_ray=> nrel_main_idtf:
+concept_ray => nrel_main_idtf:
 	[луч]
 	(*
 	<- lang_ru;;
@@ -10,15 +10,15 @@ concept_ray=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_ray=> nrel_idtf:[Класс лучей](*<-lang_ru;;*);;
+concept_ray => nrel_idtf: [Класс лучей] (* <- lang_ru;; *);;
 
-concept_ray=> nrel_idtf:[Понятие луча](*<-lang_ru;;*);;
+concept_ray => nrel_idtf: [Понятие луча] (* <- lang_ru;; *);;
 
-concept_ray=> nrel_idtf:[Множество всевозможных лучей](*<-lang_ru;;*);;
+concept_ray => nrel_idtf: [Множество всевозможных лучей] (* <- lang_ru;; *);;
 
-concept_ray=> nrel_idtf:[Множество знаков всевозможных лучей](*<-lang_ru;;*);;
+concept_ray => nrel_idtf: [Множество знаков всевозможных лучей] (* <- lang_ru;; *);;
 
-concept_ray=> nrel_idtf:[полупрямая](*<-lang_ru;;*);;
+concept_ray => nrel_idtf: [полупрямая] (* <- lang_ru;; *);;
 
 concept_ray <= nrel_strict_inclusion: concept_rectilinear_figure;;
 
@@ -31,7 +31,7 @@ concept_ray <= nrel_strict_inclusion: concept_planar_line;;
 concept_ray <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[Разбиение по признаку включения граничной точки в луч](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Разбиение по признаку включения граничной точки в луч] (* <- lang_ru;; *);;
 	-> concept_closed_ray;
 	concept_opened_ray;;
 	*);;
@@ -40,8 +40,8 @@ concept_ray <= nrel_subdividing:
 concept_ray <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(луч)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(луч)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -65,7 +65,7 @@ concept_ray <= nrel_using_constants:
 concept_ray <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(луч)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(луч)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -90,6 +90,6 @@ concept_ray <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_ray <= nrel_analogue : concept_half_plane;;
+concept_ray <=> nrel_analogue : concept_half_plane;;
 concept_ray -> rrel_example : struct_Opened_ray_k;;
 concept_ray -> rrel_example : struct_Closed_ray_m;;

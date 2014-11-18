@@ -10,9 +10,9 @@ struct_Parallelogram_A_B_C_D => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Parallelogram_A_B_C_D => nrel_idtf:[Параллелограмм(A; B; C; D)](*<-lang_ru;;*);;
+struct_Parallelogram_A_B_C_D => nrel_idtf: [Параллелограмм(A; B; C; D)] (* <- lang_ru;; *);;
 
-struct_Parallelogram_A_B_C_D => nrel_idtf:[Параллелограмм, вершинами которого являются Точка A, Точка B, Точка С и Точка D](*<-lang_ru;;*);;
+struct_Parallelogram_A_B_C_D => nrel_idtf: [Параллелограмм, вершинами которого являются Точка A, Точка B, Точка С и Точка D] (* <- lang_ru;; *);;
 
 struct_Parallelogram_A_B_C_D <- concept_parallelogram;;
 
@@ -91,7 +91,7 @@ nrel_congruence -> ... (* -> struct_Angle_Sigma; struct_Angle_Beta;; *);;
 struct_Parallelogram_A_B_C_D <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Параллелограмм ABCD)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Параллелограмм ABCD)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -107,7 +107,7 @@ struct_Parallelogram_A_B_C_D <- rrel_key_sc_element:
 struct_Parallelogram_A_B_C_D <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

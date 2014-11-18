@@ -1,14 +1,14 @@
-sc_node_norole_relation->nrel_inclined;;
+sc_node_norole_relation -> nrel_inclined;;
 
-nrel_inclined=> nrel_main_idtf:
+nrel_inclined => nrel_main_idtf:
 	[наклонная*]
-	(*<- lang_ru;;*);
+	(* <- lang_ru;; *);
 	[inclined*]
-	(*<- lang_en;;*);;
+	(* <- lang_en;; *);;
 
-nrel_inclined=> nrel_idtf:
+nrel_inclined => nrel_idtf:
 	[быть наклонной*]
-	(*<-lang_ru;;*);;
+	(* <- lang_ru;; *);;
 
 nrel_inclined <- sc_relation;;
 
@@ -16,7 +16,7 @@ nrel_inclined <- binary_relation;;
 
 nrel_inclined <- oriented_relation;;
 
-nrel_inclined <= nrel_domain_of_definition : 
+nrel_inclined => nrel_definitional_domain:
 ...
 	(*
 	<= nrel_combination: 
@@ -27,17 +27,17 @@ nrel_inclined <= nrel_domain_of_definition :
 	*);;
 	
 
-nrel_inclined <= nrel_first_domain: 
+nrel_inclined => nrel_first_domain: 
 	concept_straight_line;;
 
-nrel_inclined <= nrel_second_domain: 
+nrel_inclined => nrel_second_domain: 
 	concept_segment;;
 
 nrel_inclined <- rrel_key_sc_element: 
       	...
 	(*
 	=> nrel_main_idtf: [Опр.(наклонная*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   //если пояснение, то sc_explanation
+	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

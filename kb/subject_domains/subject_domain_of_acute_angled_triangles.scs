@@ -1,6 +1,10 @@
+sc_node_struct -> subject_domain_of_acute_angled_triangles;;
+
 subject_domain_of_acute_angled_triangles
 => nrel_main_idtf:
 	[Предметная область остроугольных треугольников]
 	(* <- lang_ru;; *);
 	[Subject domain of acute angled triangles]
 	(* <- lang_en;; *);;
+	
+subject_domain_of_acute_angled_triangles -> rrel_maximum_studied_object_class: concept_acute_angled_triangle;;

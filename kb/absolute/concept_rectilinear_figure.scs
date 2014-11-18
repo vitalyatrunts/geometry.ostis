@@ -1,34 +1,34 @@
-sc_node_not_relation->concept_rectilinear_figure;;
+sc_node_not_relation -> concept_rectilinear_figure;;
 
-concept_rectilinear_figure=>nrel_main_idtf:
+concept_rectilinear_figure => nrel_main_idtf:
 [прямолинейная фигура]
 (*
-<-lang_ru;;
+<- lang_ru;;
 *);
 [rectilinear figure]
 (*
-<-lang_en;;
+<- lang_en;;
 *);;
 
-concept_rectilinear_figure=> nrel_idtf:[прямолинейная геометрическая фигура](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [прямолинейная геометрическая фигура] (* <- lang_ru;; *);;
 
-concept_rectilinear_figure=> nrel_idtf:[геометрическая фигура, лежащая на прямой](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [геометрическая фигура, лежащая на прямой] (* <- lang_ru;; *);;
 
-concept_rectilinear_figure=> nrel_idtf:[геометрическая фигура, для которой существует прямая, являющаяся её надмножеством](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [геометрическая фигура, для которой существует прямая, являющаяся её надмножеством] (* <- lang_ru;; *);;
 
-concept_rectilinear_figure=> nrel_idtf:[Множество прямолинейных фигур](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [Множество прямолинейных фигур] (* <- lang_ru;; *);;
 
-concept_rectilinear_figure=> nrel_idtf:[Множество всевозможных прямолинейных фигур](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [Множество всевозможных прямолинейных фигур] (* <- lang_ru;; *);;
 
-concept_rectilinear_figure=> nrel_idtf:[Множество прямолинейных геометрических фигур](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [Множество прямолинейных геометрических фигур] (* <- lang_ru;; *);;
 
-concept_rectilinear_figure=> nrel_idtf:[Множество всевозможных прямолинейных геометрических фигур](*<-lang_ru;;*);;
+concept_rectilinear_figure => nrel_idtf: [Множество всевозможных прямолинейных геометрических фигур] (* <- lang_ru;; *);;
 
 concept_rectilinear_figure <= nrel_strict_inclusion: concept_linear_figure;;
 
 concept_rectilinear_figure => nrel_strict_inclusion: concept_rectilinear_three_of_points;;
 
-concept_rectilinear_figure => nrel_strict_inclusion: concept_two_tuple_of_points;;
+concept_rectilinear_figure => nrel_strict_inclusion: concept_pair_of_points;;
 
 concept_rectilinear_figure => nrel_strict_inclusion: concept_straight_line;;
 
@@ -42,7 +42,7 @@ concept_rectilinear_figure <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Опр.(прямолинейная фигура)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

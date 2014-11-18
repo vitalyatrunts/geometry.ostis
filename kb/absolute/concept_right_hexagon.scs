@@ -1,26 +1,26 @@
-sc_node_not_relation->concept_right_hexagon;;
+sc_node_not_relation -> concept_right_hexagon;;
 
-concept_right_hexagon=>nrel_main_idtf:
+concept_right_hexagon => nrel_main_idtf:
 	[правильный шестиугольник]
 	(*
-	<-lang_ru;;
+	<- lang_ru;;
 	*);
 	[right hexagon]
 	(*
-	<-lang_en;;
+	<- lang_en;;
 	*);;
 
-concept_right_hexagon=> nrel_idtf:[Класс правильных шестиугольников](*<-lang_ru;;*);;
+concept_right_hexagon => nrel_idtf: [Класс правильных шестиугольников] (* <- lang_ru;; *);;
 
-concept_right_hexagon=> nrel_idtf:[Плоский правильный шестиугольник](*<-lang_ru;;*);;
+concept_right_hexagon => nrel_idtf: [Плоский правильный шестиугольник] (* <- lang_ru;; *);;
 
-concept_right_hexagon=> nrel_idtf:[Понятие правильного шестиугольника](*<-lang_ru;;*);;
+concept_right_hexagon => nrel_idtf: [Понятие правильного шестиугольника] (* <- lang_ru;; *);;
 
-concept_right_hexagon=> nrel_idtf:[Множество всевозможных правильных шестиугольников](*<-lang_ru;;*);;
+concept_right_hexagon => nrel_idtf: [Множество всевозможных правильных шестиугольников] (* <- lang_ru;; *);;
 
-concept_right_hexagon=> nrel_idtf:[Множество знаков всевозможных правильных шестиугольников](*<-lang_ru;;*);;
+concept_right_hexagon => nrel_idtf: [Множество знаков всевозможных правильных шестиугольников] (* <- lang_ru;; *);;
 
-concept_right_hexagon=> nrel_idtf:[Многоугольник с шестью равными сторонами](*<-lang_ru;;*);;
+concept_right_hexagon => nrel_idtf: [Многоугольник с шестью равными сторонами] (* <- lang_ru;; *);;
 
 concept_right_pentagon <= nrel_strict_inclusion: concept_polygon;;
 
@@ -29,7 +29,7 @@ concept_right_pentagon <= nrel_strict_inclusion: concept_hexagon;;
 concept_right_hexagon <- rrel_key_sc_element: 
         ... 
 	(*
-	=> nrel_main_idtf: [Опр.(правильный шестиугольник)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(правильный шестиугольник)] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...

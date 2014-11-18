@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_segment;;
+sc_node_not_relation -> concept_segment;;
 
-concept_segment=> nrel_main_idtf:
+concept_segment => nrel_main_idtf:
 	[отрезок]
 	(*
 	<- lang_ru;;
@@ -10,17 +10,17 @@ concept_segment=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_segment=> nrel_idtf:[Геометрический отрезок](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Геометрический отрезок] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Понятие отрезка](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Понятие отрезка] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Понятие геометрического отрезка](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Понятие геометрического отрезка] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Класс отрезков](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Класс отрезков] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Множество всевозможных отрезков](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Множество всевозможных отрезков] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Множество знаков всевозможных отрезков](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Множество знаков всевозможных отрезков] (* <- lang_ru;; *);;
 
 concept_segment <= nrel_strict_inclusion: concept_rectilinear_figure;;
 
@@ -32,7 +32,7 @@ concept_segment <- rrel_key_sc_element:
         ... 
 	(*
 	=> nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -1,38 +1,38 @@
-sc_node_not_relation->concept_equilateral_triangle;;
+sc_node_not_relation -> concept_equilateral_triangle;;
 
-concept_equilateral_triangle=>nrel_main_idtf:
+concept_equilateral_triangle => nrel_main_idtf:
 [равносторонний треугольник]
 (*
-<-lang_ru;;
+<- lang_ru;;
 *);
 [equilateral triangle]
 (*
-<-lang_en;;
+<- lang_en;;
 *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Правильный треугольник](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Правильный треугольник] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Класс равносторонних треугольников](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Класс равносторонних треугольников] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Класс правильных треугольников](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Класс правильных треугольников] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Понятие равностороннего треугольника](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Понятие равностороннего треугольника] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Понятие правильных треугольника](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Понятие правильных треугольника] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Множество всевозможных равносторонних треугольников](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Множество всевозможных равносторонних треугольников] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Множество всевозможных правильных треугольников](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Множество всевозможных правильных треугольников] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Множество знаков всевозможных равносторонних треугольников](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Множество знаков всевозможных равносторонних треугольников] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Множество знаков всевозможных правильных треугольников](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Множество знаков всевозможных правильных треугольников] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Треугольник с тремя равными сторонами](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Треугольник с тремя равными сторонами] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Равносторонний многоугольник с тремя сторонами](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Равносторонний многоугольник с тремя сторонами] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle=> nrel_idtf:[Правильный многоугольник с тремя сторонами](*<-lang_ru;;*);;
+concept_equilateral_triangle => nrel_idtf: [Правильный многоугольник с тремя сторонами] (* <- lang_ru;; *);;
 
 concept_equilateral_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
 
@@ -40,8 +40,8 @@ concept_equilateral_triangle  <- rrel_key_sc_element:
 	...
         
 	(*
-	=> nrel_main_idtf: [Опр.(равносторонний треугольник)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -169,11 +169,11 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/radius_triangle3.png"(*<-image;;*);
+		"file://images/radius_triangle3.png"(*<- sc_illustration;;*);
 		 [где
 r - величина радиуса вписанной окружности указанного треугольника,
 a - величина стороны этого треугольника.
-](*<-lang_ru;;*);; 
+] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -188,10 +188,10 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/radius_triangle4.png"(*<-image;;*);
+		"file://images/radius_triangle4.png"(*<- sc_illustration;;*);
 		 [где
 R - величина радиуса описанной окружности указанного треугольника,
-a - величина стороны этого треугольника.](*<-lang_ru;;*);; 
+a - величина стороны этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -206,12 +206,12 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/perimeter_triangle.png"(*<-image;;*);
+		"file://images/perimeter_triangle.png"(*<- sc_illustration;;*);
 		 [где
 P - величина периметра указанного треугольника,
 r - величина радиуса вписанной окружности этого треугольника,
 R - величина радиуса описанной окружности рассматриваемого треугольника,
-a - величина стороны этого треугольника.](*<-lang_ru;;*);; 
+a - величина стороны этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -226,11 +226,11 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/height_triangle2.png"(*<-image;;*);
+		"file://images/height_triangle2.png"(*<- sc_illustration;;*);
 		 [где
 h - величина высоты указанного треугольника,
 a - величина стороны этого треугольника.
-](*<-lang_ru;;*);; 
+] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -245,12 +245,12 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/square_triangle.png"(*<-image;;*);
+		"file://images/square_triangle.png"(*<- sc_illustration;;*);
 		 [где
 S - величина площади указанного треугольника,
 r - величина радиуса вписанной окружности этого треугольника,
 R - величина радиуса описанной окружности рассматриваемого треугольника,
-a - величина стороны описываемого треугольника.](*<-lang_ru;;*);; 
+a - величина стороны описываемого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 

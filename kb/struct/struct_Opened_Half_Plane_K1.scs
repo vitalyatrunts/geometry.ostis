@@ -24,7 +24,7 @@ struct_Opened_Half_Plane_K1 -|> struct_Straight_line_K;;
 struct_Opened_Half_Plane_K1 <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Открытая полуплоскость K1)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Открытая полуплоскость K1)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -38,7 +38,7 @@ struct_Opened_Half_Plane_K1 <- rrel_key_sc_element:
 struct_Opened_Half_Plane_K1<- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

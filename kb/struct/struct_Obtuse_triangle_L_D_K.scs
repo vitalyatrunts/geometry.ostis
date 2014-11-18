@@ -10,11 +10,11 @@ struct_Obtuse_triangle_L_D_K => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Obtuse_triangle_L_D_K => nrel_idtf:[Тр-к(L; D; K)](*<-lang_ru;;*);;
+struct_Obtuse_triangle_L_D_K => nrel_idtf: [Тр-к(L; D; K)] (* <- lang_ru;; *);;
 
-struct_Obtuse_triangle_L_D_K => nrel_idtf:[Тупоугольный треугольник(L; D; K)](*<-lang_ru;;*);;
+struct_Obtuse_triangle_L_D_K => nrel_idtf: [Тупоугольный треугольник(L; D; K)] (* <- lang_ru;; *);;
 
-struct_Obtuse_triangle_L_D_K => nrel_idtf:[Треугольник, вершинами которого являются Точка L, Точка D, Точка K](*<-lang_ru;;*);;
+struct_Obtuse_triangle_L_D_K => nrel_idtf: [Треугольник, вершинами которого являются Точка L, Точка D, Точка K] (* <- lang_ru;; *);;
 
 struct_Obtuse_triangle_L_D_K <- concept_obtuse_triangle;;
 
@@ -66,7 +66,7 @@ struct_Segment_D => nrel_boundary_point: struct_Geometric_point_K;;
 struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element: 
 ...
 	(*
-	<- sc_image;;
+	<- sc_illustration;;
 	<= nrel_sc_text_translation:
 	...
 		(*
@@ -78,7 +78,7 @@ struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element:
 struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Тупоугольный треугольник LDK)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Тупоугольный треугольник LDK)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

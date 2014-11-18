@@ -1,3 +1,5 @@
+sc_node_struct -> subject_domain_of_pentagons;;
+
 subject_domain_of_pentagons
 => nrel_main_idtf:
 	[Предметная область пятиугольников]
@@ -6,3 +8,7 @@ subject_domain_of_pentagons
 	(* <- lang_en;; *);
 => nrel_particular_subject_domain:
 	subject_domain_of_regular_pentagons;;
+	
+subject_domain_of_pentagons -> rrel_maximum_studied_object_class: concept_pentagon;;
+
+subject_domain_of_pentagons -> rrel_studied_object_class: concept_regular_pentagon;;

@@ -1,16 +1,16 @@
-sc_node_not_relation->concept_acute_angled_triangle;;
+sc_node_not_relation -> concept_acute_angled_triangle;;
 
-concept_acute_angled_triangle=> nrel_main_idtf:
+concept_acute_angled_triangle => nrel_main_idtf:
 	[остроугольный треугольник]
-	(*	<- lang_ru;; *);
+	(* <- lang_ru;; *);
 	[acute angled triangle]
 	(* <- lang_en;;	*);;
 
-concept_acute_angled_triangle=> nrel_idtf:[Класс остроугольных треугольников](*<-lang_ru;;*);;
+concept_acute_angled_triangle => nrel_idtf: [Класс остроугольных треугольников] (* <- lang_ru;; *);;
 
-concept_acute_angled_triangle=> nrel_idtf:[Множество всевозможных остроугольных треугольников](*<-lang_ru;;*);;
+concept_acute_angled_triangle => nrel_idtf: [Множество всевозможных остроугольных треугольников] (* <- lang_ru;; *);;
 
-concept_acute_angled_triangle=> nrel_idtf:[Множество знаков всевозможных остроугольных треугольников](*<-lang_ru;;*);;
+concept_acute_angled_triangle => nrel_idtf: [Множество знаков всевозможных остроугольных треугольников] (* <- lang_ru;; *);;
 
 concept_acute_angled_triangle <= nrel_strict_inclusion: concept_triangle;;
 
@@ -19,7 +19,7 @@ concept_acute_angled_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Опр.(остроугольный треугольник);;] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -1,18 +1,18 @@
-sc_node_not_relation->concept_circle;;
+sc_node_not_relation -> concept_circle;;
 
-concept_circle=> nrel_main_idtf:
+concept_circle => nrel_main_idtf:
 	[окружность]
 	(* <- lang_ru;;	*);
 	[circle]
 	(*<- lang_en;; *);;
 
-concept_circle=> nrel_idtf:[Класс окружностей](*<-lang_ru;;*);;
+concept_circle => nrel_idtf: [Класс окружностей] (* <- lang_ru;; *);;
 
-concept_circle=> nrel_idtf:[Понятие окружности](*<-lang_ru;;*);;
+concept_circle => nrel_idtf: [Понятие окружности] (* <- lang_ru;; *);;
 
-concept_circle=> nrel_idtf:[Множество всевозможных окружностей](*<-lang_ru;;*);;
+concept_circle => nrel_idtf: [Множество всевозможных окружностей] (* <- lang_ru;; *);;
 
-concept_circle=> nrel_idtf:[Множество знаков всевозможных окружностей](*<-lang_ru;;*);;
+concept_circle => nrel_idtf: [Множество знаков всевозможных окружностей] (* <- lang_ru;; *);;
 
 concept_circle <= nrel_strict_inclusion: concept_planar_line;;
 
@@ -25,8 +25,8 @@ concept_circle => nrel_strict_inclusion: concept_circle_arc;;
 concept_circle <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(окружность)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(окружность)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

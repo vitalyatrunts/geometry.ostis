@@ -10,7 +10,7 @@ struct_Zero_Angle_N_K_N => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Zero_angle_N_K_N => nrel_idtf:[Нулевой угол(N,,K,,N)](*<-lang_ru;;*);;
+struct_Zero_angle_N_K_N => nrel_idtf: [Нулевой угол(N,,K,,N)] (* <- lang_ru;; *);;
 
 struct_Zero_angle_N_K_N <- concept_zero_angle;;
 
@@ -30,7 +30,7 @@ struct_Zero_angle_N_K_N => nrel_side: struct_Ray_K_N;;
 struct_Zero_angle_N_K_N <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Нулевой угол NKN)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Нулевой угол NKN)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -45,7 +45,7 @@ struct_Zero_angle_N_K_N <- rrel_key_sc_element:
 struct_Zero_angle_N_K_N <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

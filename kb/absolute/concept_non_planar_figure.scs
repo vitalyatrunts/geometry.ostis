@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_non_planar_figure;;
+sc_node_not_relation -> concept_non_planar_figure;;
 
-concept_non_planar_figure=> nrel_main_idtf:
+concept_non_planar_figure => nrel_main_idtf:
 	[непланарная геометрическая фигура]
 	(*
 	<- lang_ru;;
@@ -10,13 +10,13 @@ concept_non_planar_figure=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_non_planar_figure=> nrel_idtf:[фигура, не лежащая в плоскости](*<-lang_ru;;*);;
+concept_non_planar_figure => nrel_idtf: [фигура, не лежащая в плоскости] (* <- lang_ru;; *);;
 
-concept_non_planar_figure=> nrel_idtf:[Класс непланарных фигур](*<-lang_ru;;*);;
+concept_non_planar_figure => nrel_idtf: [Класс непланарных фигур] (* <- lang_ru;; *);;
 
-concept_non_planar_figure=> nrel_idtf:[Множество всевозможных непланарных фигур](*<-lang_ru;;*);;
+concept_non_planar_figure => nrel_idtf: [Множество всевозможных непланарных фигур] (* <- lang_ru;; *);;
 
-concept_non_planar_figure=> nrel_idtf:[Множество знаков всевозможных непланарных фигур](*<-lang_ru;;*);;
+concept_non_planar_figure => nrel_idtf: [Множество знаков всевозможных непланарных фигур] (* <- lang_ru;; *);;
 
 concept_non_planar_figure <= nrel_strict_inclusion: concept_geometric_figure;;
 
@@ -26,7 +26,7 @@ concept_non_planar_figure <- rrel_key_sc_element:
      	... 
 	(*
 	=> nrel_main_idtf: [Опр.(непланарная фигура)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

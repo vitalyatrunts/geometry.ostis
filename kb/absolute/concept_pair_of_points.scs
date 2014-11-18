@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_two_tuple_of_points;;
+sc_node_not_relation -> concept_pair_of_points;;
 
-concept_pair_of_points=> nrel_main_idtf:
+concept_pair_of_points => nrel_main_idtf:
 	[пара точек]
 	(*
 	<- lang_ru;;
@@ -10,42 +10,42 @@ concept_pair_of_points=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_two_tuple_of_points=> nrel_idtf:[пара разных точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [пара разных точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[пара геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [пара геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[пара разных геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [пара разных геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[Понятие пары точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [Понятие пары точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[Понятие пары геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [Понятие пары геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[Множество пар точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [Множество пар точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[Множество пар геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [Множество пар геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[Множество всевозможных пар точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [Множество всевозможных пар точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[Множество всевозможных пар геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [Множество всевозможных пар геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[геометрическая фигура, состоящая из двух точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[геометрическая фигура, состоящая из двух разных точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух разных точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[геометрическая фигура, состоящая из двух геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points=> nrel_idtf:[геометрическая фигура, состоящая из двух разных геометрических точек](*<-lang_ru;;*);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух разных геометрических точек] (* <- lang_ru;; *);;
 
-concept_two_tuple_of_points <= nrel_strict_inclusion: concept_rectilinear_figure;;
+concept_pair_of_points <= nrel_strict_inclusion: concept_rectilinear_figure;;
 
-concept_two_tuple_of_points <= nrel_strict_inclusion: concept_discrete_geometric_figure;;
+concept_pair_of_points <= nrel_strict_inclusion: concept_discrete_geometric_figure;;
 
-concept_two_tuple_of_points <= nrel_strict_inclusion: concept_countable_set_of_points;;
+concept_pair_of_points <= nrel_strict_inclusion: concept_countable_set_of_points;;
 
-concept_two_tuple_of_points <- rrel_key_sc_element: 
+concept_pair_of_points <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(пара точек)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(пара точек)] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -58,12 +58,12 @@ concept_two_tuple_of_points <- rrel_key_sc_element:
 		*);;
 	*);;
 	
-concept_two_tuple_of_points <= nrel_using_constants:
+concept_pair_of_points <= nrel_using_constants:
 				{
 				concept_geometric_point
 				};;
 				
-concept_two_tuple_of_points <- rrel_key_sc_element: 
+concept_pair_of_points <- rrel_key_sc_element: 
 	
 	...
 	(*
@@ -78,7 +78,7 @@ concept_two_tuple_of_points <- rrel_key_sc_element:
 		*);;
 	*);;
 	
-concept_two_tuple_of_points <- rrel_key_sc_element: 
+concept_pair_of_points <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Акс.(пара точек; между'; геометрическая точка)] (* <- lang_ru;; *);;

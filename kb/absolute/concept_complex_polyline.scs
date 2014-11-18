@@ -1,16 +1,16 @@
-sc_node_not_relation->concept_complex_polyline;;
+sc_node_not_relation -> concept_complex_polyline;;
 
-concept_complex_polyline=>nrel_main_idtf:
-	[сложная ломаная](*<-lang_ru;;*);
-	[complex polyline](*<-lang_en;;*);;
+concept_complex_polyline => nrel_main_idtf:
+	[сложная ломаная] (* <- lang_ru;; *);
+	[complex polyline] (* <- lang_en;; *);;
 
-concept_complex_polyline=> nrel_idtf:[Класс сложных ломаных](*<-lang_ru;;*);;
+concept_complex_polyline => nrel_idtf: [Класс сложных ломаных] (* <- lang_ru;; *);;
 
-concept_complex_polyline=> nrel_idtf:[Понятие сложной ломаной](*<-lang_ru;;*);;
+concept_complex_polyline => nrel_idtf: [Понятие сложной ломаной] (* <- lang_ru;; *);;
 
-concept_complex_polyline=> nrel_idtf:[Множество сложных ломанных](*<-lang_ru;;*);;
+concept_complex_polyline => nrel_idtf: [Множество сложных ломанных] (* <- lang_ru;; *);;
 
-concept_complex_polyline=> nrel_idtf:[Множество всевозможных сложных ломаных](*<-lang_ru;;*);;
+concept_complex_polyline => nrel_idtf: [Множество всевозможных сложных ломаных] (* <- lang_ru;; *);;
 
 concept_complex_polyline <= nrel_strict_inclusion: concept_polyline;;
 
@@ -18,7 +18,7 @@ concept_complex_polyline <= nrel_strict_inclusion: concept_polyline;;
 concept_complex_polyline <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(сложная ломаная)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(сложная ломаная)] (* <- lang_ru;; *);;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -39,8 +39,8 @@ concept_complex_polyline <= nrel_using_constants:
 concept_complex_polyline <- rrel_key_sc_element: 
 	...
 	(*
-	<-image;;
-	<=nrel_sc_text_translation:
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
 	...
 		(*
 		-> rrel_example:

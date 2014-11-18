@@ -1,26 +1,26 @@
-sc_node_not_relation->concept_geometric_figure_of_limited_size;;
+sc_node_not_relation -> concept_geometric_figure_of_limited_size;;
 
-concept_geometric_figure_of_limited_size=>nrel_main_idtf:
+concept_geometric_figure_of_limited_size => nrel_main_idtf:
 	[геометрическая фигура ограниченного размера]
 	(*
-	<-lang_ru;;
+	<- lang_ru;;
 	*);
 	[geometric figure of limited size]
 	(*
-	<-lang_en;;
+	<- lang_en;;
 	*);;
 
-concept_geometric_figure_of_limited_size=> nrel_idtf:[геометрическая фигура конечных размеров](*<-lang_ru;;*);;
+concept_geometric_figure_of_limited_size => nrel_idtf: [геометрическая фигура конечных размеров] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_limited_size=> nrel_idtf:[конечная геометрическая фигура](*<-lang_ru;;*);;
+concept_geometric_figure_of_limited_size => nrel_idtf: [конечная геометрическая фигура] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_limited_size=> nrel_idtf:[геометрическая фигура, имеющая конечные размеры](*<-lang_ru;;*);;
+concept_geometric_figure_of_limited_size => nrel_idtf: [геометрическая фигура, имеющая конечные размеры] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_limited_size=> nrel_idtf:[Понятие геометрической фигуры ограниченного размера](*<-lang_ru;;*);;
+concept_geometric_figure_of_limited_size => nrel_idtf: [Понятие геометрической фигуры ограниченного размера] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_limited_size=> nrel_idtf:[Класс геометрических фигур ограниченного размера](*<-lang_ru;;*);;
+concept_geometric_figure_of_limited_size => nrel_idtf: [Класс геометрических фигур ограниченного размера] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_limited_size=> nrel_idtf:[Множество геометрических фигур ограниченного размера](*<-lang_ru;;*);;
+concept_geometric_figure_of_limited_size => nrel_idtf: [Множество геометрических фигур ограниченного размера] (* <- lang_ru;; *);;
 
 concept_geometric_figure_of_limited_size <= nrel_strict_inclusion: concept_geometric_figure;;
 
@@ -48,9 +48,9 @@ concept_geometric_figure_of_limited_size <- rrel_key_sc_element:
 	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example:
+		-> rrel_example:
 			[геометрическая фигура ограниченного размера - непрерывная геометрическая фигура, для которой существует шар, включающий в себя эту фигуру.]
-			(*<- lang_ru;;*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 

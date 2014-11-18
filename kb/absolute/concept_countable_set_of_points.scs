@@ -1,16 +1,16 @@
-sc_node_not_relation->concept_countable_set_of_points;;
+sc_node_not_relation -> concept_countable_set_of_points;;
 
-concept_countable_set_of_points=>nrel_main_idtf:
-	[счетное множество точек](*<-lang_ru;;*);
-	[countable set of points](*<-lang_en;;*);;
+concept_countable_set_of_points => nrel_main_idtf:
+	[счетное множество точек] (* <- lang_ru;; *);
+	[countable set of points] (* <- lang_en;; *);;
 
-concept_countable_set_of_points=> nrel_idtf:[Понятие счетного множества точек](*<-lang_ru;;*);;
+concept_countable_set_of_points => nrel_idtf: [Понятие счетного множества точек] (* <- lang_ru;; *);;
 
-concept_countable_set_of_points=> nrel_idtf:[Класс счетного множества точек](*<-lang_ru;;*);;
+concept_countable_set_of_points => nrel_idtf: [Класс счетного множества точек] (* <- lang_ru;; *);;
 
 concept_countable_set_of_points <= nrel_strict_inclusion: concept_geometric_figure;;
 
-concept_countable_set_of_points => nrel_strict_inclusion: concept_two_tuple_of_points;;
+concept_countable_set_of_points => nrel_strict_inclusion: concept_pair_of_points;;
 concept_countable_set_of_points => nrel_strict_inclusion: concept_three_tuple_of_points;;
 
 concept_countable_set_of_points <- rrel_key_sc_element : 
@@ -21,9 +21,9 @@ concept_countable_set_of_points <- rrel_key_sc_element :
 		<= nrel_sc_text_translation: 
 		...
 		(*
-			->rrel_example: 
+			-> rrel_example: 
 				[Счетное множество точек - это счетное множество, каждый элемент которого является геометрической точкой.]
-				(* <-lang_ru;;*);;
+				(* <- lang_ru;; *);;
 		*);;
 	*);;
 

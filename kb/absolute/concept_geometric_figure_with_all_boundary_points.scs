@@ -1,20 +1,20 @@
-sc_node_not_relation->concept_geometric_figure_with_all_boundary_points;;
+sc_node_not_relation -> concept_geometric_figure_with_all_boundary_points;;
 
-concept_geometric_figure_with_all_boundary_points=>nrel_main_idtf:
+concept_geometric_figure_with_all_boundary_points => nrel_main_idtf:
 	[геометрическая фигура, в состав которой входят все граничные точки]
 	(*
-	<-lang_ru;;
+	<- lang_ru;;
 	*);
 	[geometric figure with all boundary points]
 	(*
-	<-lang_en;;
+	<- lang_en;;
 	*);;
 
-concept_geometric_figure_with_all_boundary_points=> nrel_idtf:[Класс геометрических фигур, в состав которых входят все граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_all_boundary_points => nrel_idtf: [Класс геометрических фигур, в состав которых входят все граничные точки] (* <- lang_ru;; *);;
 
-concept_geometric_figure_with_all_boundary_points=> nrel_idtf:[Понятие геометрической фигуры, в состав которой входят все граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_all_boundary_points => nrel_idtf: [Понятие геометрической фигуры, в состав которой входят все граничные точки] (* <- lang_ru;; *);;
 
-concept_geometric_figure_with_all_boundary_points=> nrel_idtf:[Множество геометрических фигур, в состав которых входят все граничные точки](*<-lang_ru;;*);;
+concept_geometric_figure_with_all_boundary_points => nrel_idtf: [Множество геометрических фигур, в состав которых входят все граничные точки] (* <- lang_ru;; *);;
 
 concept_geometric_figure_with_all_boundary_points <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
 

@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_surface;;
+sc_node_not_relation -> concept_surface;;
 
-concept_surface=> nrel_main_idtf:
+concept_surface => nrel_main_idtf:
 	[поверхность]
 	(*
 	<- lang_ru;;
@@ -10,13 +10,13 @@ concept_surface=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_surface=> nrel_idtf:[Класс поверхностей](*<-lang_ru;;*);;
+concept_surface => nrel_idtf: [Класс поверхностей] (* <- lang_ru;; *);;
 
-concept_surface=> nrel_idtf:[Понятие поверхности](*<-lang_ru;;*);;
+concept_surface => nrel_idtf: [Понятие поверхности] (* <- lang_ru;; *);;
 
-concept_surface=> nrel_idtf:[Множество всевозможных поверхностей](*<-lang_ru;;*);;
+concept_surface => nrel_idtf: [Множество всевозможных поверхностей] (* <- lang_ru;; *);;
 
-concept_surface=> nrel_idtf:[Множество знаков всевозможных поверхностей](*<-lang_ru;;*);;
+concept_surface => nrel_idtf: [Множество знаков всевозможных поверхностей] (* <- lang_ru;; *);;
 
 concept_surface <= nrel_strict_inclusion: concept_uninterrupted_geometric_figure;;
 
@@ -24,19 +24,19 @@ concept_surface <= nrel_strict_inclusion: concept_geometric_figure_without_bound
 
 concept_surface => nrel_strict_inclusion: concept_plane;;
 
-concept_surface<= nrel_subdividing:
+concept_surface <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку расположения всех точек поверхности в одной плоскости](*<-lang_ru;;*);;
-	->concept_planar_surface;
+	=> nrel_main_idtf: [Разбиение по признаку расположения всех точек поверхности в одной плоскости] (* <- lang_ru;; *);;
+	-> concept_planar_surface;
 	concept_non_planar_surface;;
 	*);;
 
-concept_surface<= nrel_subdividing:
+concept_surface <= nrel_subdividing:
 	...
 	(*
-	=>nrel_main_idtf:[по признаку топологического строения](*<-lang_ru;;*);;
-	->concept_closed_surface;
+	=> nrel_main_idtf: [Разбиение по признаку топологического строения] (* <- lang_ru;; *);;
+	-> concept_closed_surface;
 	concept_opened_surface;
 	concept_oriented_surface;
 	concept_non_oriented_surface;;

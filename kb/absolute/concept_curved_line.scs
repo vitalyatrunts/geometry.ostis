@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_curved_line;;
+sc_node_not_relation -> concept_curved_line;;
 
-concept_curved_line=> nrel_main_idtf:
+concept_curved_line => nrel_main_idtf:
 	[кривая]
 	(*
 	<- lang_ru;;
@@ -10,13 +10,13 @@ concept_curved_line=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_curved_line=> nrel_idtf:[множество кривых линий](*<-lang_ru;;*);;
+concept_curved_line => nrel_idtf: [множество кривых линий] (* <- lang_ru;; *);;
 
-concept_curved_line=> nrel_idtf:[множество кривых](*<-lang_ru;;*);;
+concept_curved_line => nrel_idtf: [множество кривых] (* <- lang_ru;; *);;
 
-concept_curved_line=> nrel_idtf:[Множество всевозможных кривых линий](*<-lang_ru;;*);;
+concept_curved_line => nrel_idtf: [Множество всевозможных кривых линий] (* <- lang_ru;; *);;
 
-concept_curved_line=> nrel_idtf:[Множество знаков всевозможных кривых линий](*<-lang_ru;;*);;
+concept_curved_line => nrel_idtf: [Множество знаков всевозможных кривых линий] (* <- lang_ru;; *);;
 
 concept_curved_line <= nrel_strict_inclusion: concept_linear_figure;;
 
@@ -31,14 +31,14 @@ concept_curved_line => nrel_strict_inclusion: concept_circle;;
 concept_curved_line <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(кривая)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(кривая)] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[Линия называется кривой в том и только том случае, если не существует такой прямой, все точки которой совпадали бы со всеми точками кривой.]
-			(*<- lang_ru;;*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
@@ -52,7 +52,7 @@ concept_curved_line <= nrel_using_constants:
 concept_curved_line <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_explanation;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_irregular_polygon;;
+sc_node_not_relation -> concept_irregular_polygon;;
 
-concept_irregular_polygon=> nrel_main_idtf:
+concept_irregular_polygon => nrel_main_idtf:
 	[неправильный многоугольник]
 	(*
 	<- lang_ru;;
@@ -10,21 +10,21 @@ concept_irregular_polygon=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_irregular_polygon=> nrel_idtf:[Класс неправильных многоугольников](*<-lang_ru;;*);;
+concept_irregular_polygon => nrel_idtf: [Класс неправильных многоугольников] (* <- lang_ru;; *);;
 
-concept_irregular_polygon=> nrel_idtf:[Понятие неправильного многоугольника](*<-lang_ru;;*);;
+concept_irregular_polygon => nrel_idtf: [Понятие неправильного многоугольника] (* <- lang_ru;; *);;
 
-concept_irregular_polygon=> nrel_idtf:[Множество всевозможных неправильных многоугольников](*<-lang_ru;;*);;
+concept_irregular_polygon => nrel_idtf: [Множество всевозможных неправильных многоугольников] (* <- lang_ru;; *);;
 
-concept_irregular_polygon=> nrel_idtf:[Множество знаков всевозможных неправильных многоугольников](*<-lang_ru;;*);;
+concept_irregular_polygon => nrel_idtf: [Множество знаков всевозможных неправильных многоугольников] (* <- lang_ru;; *);;
 
 concept_irregular_polygon <= nrel_strict_inclusion: concept_convex_polygon;;
 
 concept_irregular_polygon <- rrel_key_sc_element: 
      	...
 	(*
-	=> nrel_main_idtf: [Опр.(неправильный многоугольник)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(неправильный многоугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

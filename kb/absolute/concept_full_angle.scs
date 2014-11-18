@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_full_angle;;
+sc_node_not_relation -> concept_full_angle;;
 
-concept_full_angle=> nrel_main_idtf:
+concept_full_angle => nrel_main_idtf:
 	[полный угол]
 	(*
 	<- lang_ru;;
@@ -10,13 +10,13 @@ concept_full_angle=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_full_angle=> nrel_idtf:[Понятие полного угла](*<-lang_ru;;*);;
+concept_full_angle => nrel_idtf: [Понятие полного угла] (* <- lang_ru;; *);;
 
-concept_full_angle=> nrel_idtf:[Класс полных углов](*<-lang_ru;;*);;
+concept_full_angle => nrel_idtf: [Класс полных углов] (* <- lang_ru;; *);;
 
-concept_full_angle=> nrel_idtf:[Множество всевозможных полных углов](*<-lang_ru;;*);;
+concept_full_angle => nrel_idtf: [Множество всевозможных полных углов] (* <- lang_ru;; *);;
 
-concept_full_angle=> nrel_idtf:[Множество знаков всевозможных полных углов](*<-lang_ru;;*);;
+concept_full_angle => nrel_idtf: [Множество знаков всевозможных полных углов] (* <- lang_ru;; *);;
 
 concept_full_angle <= nrel_strict_inclusion: concept_planar_angle;;
 
@@ -25,8 +25,8 @@ concept_full_angle <= nrel_strict_inclusion: concept_planar_angle;;
 concept_plane <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(полный угол)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(полный угол)] (* <- lang_ru;; *);;
+	<-  sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

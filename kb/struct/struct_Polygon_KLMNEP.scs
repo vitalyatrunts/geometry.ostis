@@ -10,9 +10,9 @@ struct_Polygon_K_L_M_N_E_P => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Polygon_K_L_M_N_E_P => nrel_idtf:[Многоугольник(K; L; M; N; E; P)](*<-lang_ru;;*);;
+struct_Polygon_K_L_M_N_E_P => nrel_idtf: [Многоугольник(K; L; M; N; E; P)] (* <- lang_ru;; *);;
 
-struct_Polygon_K_L_M_N_E_P => nrel_idtf:[Многоугольник, вершинами которого являются Точка K, Точка L, Точка M, Точка N, Точка E, Точка P](*<-lang_ru;;*);;
+struct_Polygon_K_L_M_N_E_P => nrel_idtf: [Многоугольник, вершинами которого являются Точка K, Точка L, Точка M, Точка N, Точка E, Точка P] (* <- lang_ru;; *);;
 
 struct_Polygon_K_L_M_N_E_P <- concept_polygon;;
 
@@ -109,7 +109,7 @@ struct_Segment_K => nrel_boundary_point: struct_Geometric_point_P;;
 struct_Polygon_K_L_M_N_E_P <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Многоугольник KLMNEP)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Многоугольник KLMNEP)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -125,7 +125,7 @@ struct_Polygon_K_L_M_N_E_P <- rrel_key_sc_element:
 struct_Polygon_K_L_M_N_E_P <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

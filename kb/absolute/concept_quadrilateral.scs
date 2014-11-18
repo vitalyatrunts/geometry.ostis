@@ -1,24 +1,24 @@
-sc_node_not_relation->concept_quadrilateral;;
+sc_node_not_relation -> concept_quadrilateral;;
 
-concept_quadrilateral=>nrel_main_idtf:
+concept_quadrilateral => nrel_main_idtf:
 	[четырехугольник]
 	(*
-	<-lang_ru;;
+	<- lang_ru;;
 	*);
 	[quadrilateral]
 	(*
-	<-lang_en;;
+	<- lang_en;;
 	*);;
 
-concept_quadrilateral=> nrel_idtf:[Класс четырехугольников](*<-lang_ru;;*);;
+concept_quadrilateral => nrel_idtf: [Класс четырехугольников] (* <- lang_ru;; *);;
 
-concept_quadrilateral=> nrel_idtf:[плоский четырехугольник](*<-lang_ru;;*);;
+concept_quadrilateral => nrel_idtf: [плоский четырехугольник] (* <- lang_ru;; *);;
 
-concept_quadrilateral=> nrel_idtf:[Понятие четырехугольника](*<-lang_ru;;*);;
+concept_quadrilateral => nrel_idtf: [Понятие четырехугольника] (* <- lang_ru;; *);;
 
-concept_quadrilateral=> nrel_idtf:[Множество всевозможных четырехугольников](*<-lang_ru;;*);;
+concept_quadrilateral => nrel_idtf: [Множество всевозможных четырехугольников] (* <- lang_ru;; *);;
 
-concept_quadrilateral=> nrel_idtf:[Множество знаков всевозможных четырехугольников](*<-lang_ru;;*);;
+concept_quadrilateral => nrel_idtf: [Множество знаков всевозможных четырехугольников] (* <- lang_ru;; *);;
 
 concept_acute_angle <=  nrel_strict_inclusion: concept_convex_polygon;;
 
@@ -55,10 +55,10 @@ concept_quadrilateral <= nrel_using_constants:
 				
 				};;
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; мера угла*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -70,10 +70,10 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; диагональ*; отрезок; середина*; сторона*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; диагональ*; отрезок; середина*; сторона*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -85,10 +85,10 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; окружность; противолежащий*; внутренний угол*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; окружность; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -100,10 +100,10 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; внутренний угол*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -115,10 +115,10 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; сторона*; диагональ*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; сторона*; диагональ*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -130,10 +130,10 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; сторона*; диагональ*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; сторона*; диагональ*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -145,10 +145,10 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; противолежащий*; сторона*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; противолежащий*; сторона*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -160,7 +160,7 @@ concept_quadrilateral<- rrel_key_sc_element:
 	*);;
 
 
-concept_quadrilateral<- rrel_key_sc_element: 
+concept_quadrilateral <- rrel_key_sc_element: 
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; выпуклый многоугольник; внутренний угол*; вершина*; диагональ*)] (* <- lang_ru;; *);;

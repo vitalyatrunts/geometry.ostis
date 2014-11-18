@@ -1,26 +1,27 @@
-sc_node_not_relation->concept_geometric_figure_without_any_boundary_point;;
+sc_node_not_relation -> concept_geometric_figure_without_any_boundary_point;;
 
 
-concept_geometric_figure_without_any_boundary_point=>nrel_main_idtf:[геометрическая фигура, не имеющая граничных точек](*<-lang_ru;;*);
-[geometric figure without any boundary point] (* <- lang_en;;*);;
-
-
-
-concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Класс геометрических фигур, не имеющих граничных точек](*<-lang_ru;;*);;
+concept_geometric_figure_without_any_boundary_point => nrel_main_idtf:
+	[геометрическая фигура, не имеющая граничных точек] (* <- lang_ru;; *);
+	[geometric figure without any boundary point] (* <- lang_en;; *);;
 
 
 
-concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Понятие геометрической фигуры, не имеющей граничных точек](*<-lang_ru;;*);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Класс геометрических фигур, не имеющих граничных точек] (* <- lang_ru;; *);;
 
 
 
-concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Множество всевозможных геометрических фигур, не имеющих граничных точек](*<-lang_ru;;*);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Понятие геометрической фигуры, не имеющей граничных точек] (* <- lang_ru;; *);;
 
 
-concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Множество знаков всевозможных геометрических фигур, не имеющих граничных точек](*<-lang_ru;;*);;
+
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Множество всевозможных геометрических фигур, не имеющих граничных точек] (* <- lang_ru;; *);;
 
 
-concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[geometrical figure without any boundary point](*<-lang_en;;*);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Множество знаков всевозможных геометрических фигур, не имеющих граничных точек] (* <- lang_ru;; *);;
+
+
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [geometrical figure without any boundary point] (* <- lang_en;; *);;
 
 
 
@@ -32,27 +33,22 @@ concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: co
 
 
 
-concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_two_tuple_of_points;;
+concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_pair_of_points;;
 
 
 
 concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_surface;;
 
-concept_geometric_figure_without_any_boundary_point <= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_geometric_figure;
-				nrel_boundary_point
-				};;
 
 concept_geometric_figure_without_any_boundary_point <- rrel_key_sc_element : 
 	...
 	(*
-	<- sc_explanation;;
+	=> nrel_main_idtf: [Опр.(геометрическая фигура, не имеющая граничных точек)] (* <- lang_ru;; *);;
+	<- sc_definition;;
 	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example:
+		-> rrel_example:
 			[Геометрическая фигура, не имеющая граничных точек - это фигура, для которой не существует ни одной граничной точки.]
 			(*
 			<- lang_ru;;
@@ -60,6 +56,12 @@ concept_geometric_figure_without_any_boundary_point <- rrel_key_sc_element :
 		*);;
 	*);;
 
+concept_geometric_figure_without_any_boundary_point <= nrel_using_constants:
+				{
+				concept_geometric_point;
+				concept_geometric_figure;
+				nrel_boundary_point
+				};;
 
 
 concept_geometric_figure_without_any_boundary_point -> rrel_example : struct_Rectilinear_three_of_points_P_Q_R;;

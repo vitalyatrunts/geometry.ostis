@@ -1,22 +1,22 @@
-sc_node_not_relation->concept_geometric_figure_of_unlimited_size;;
+sc_node_not_relation -> concept_geometric_figure_of_unlimited_size;;
 
-concept_geometric_figure_of_unlimited_size=>nrel_main_idtf:
+concept_geometric_figure_of_unlimited_size => nrel_main_idtf:
 [геометрическая фигура неограниченного размера]
 (*
-<-lang_ru;;
+<- lang_ru;;
 *);
 [geometric figure of unlimited size]
 (*
-<-lang_en;;
+<- lang_en;;
 *);;
 
-concept_geometric_figure_of_unlimited_size=> nrel_idtf:[бесконечная геометрическая фигура](*<-lang_ru;;*);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [бесконечная геометрическая фигура] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_unlimited_size=> nrel_idtf:[Понятие геометрической фигуры неограниченного размера](*<-lang_ru;;*);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [Понятие геометрической фигуры неограниченного размера] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_unlimited_size=> nrel_idtf:[Класс геометрических фигур неограниченного размера](*<-lang_ru;;*);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [Класс геометрических фигур неограниченного размера] (* <- lang_ru;; *);;
 
-concept_geometric_figure_of_unlimited_size=> nrel_idtf:[Множество геометрических фигур неограниченного размера](*<-lang_ru;;*);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [Множество геометрических фигур неограниченного размера] (* <- lang_ru;; *);;
 
 concept_geometric_figure_of_unlimited_size <= nrel_strict_inclusion: concept_geometric_figure;;
 
@@ -34,7 +34,7 @@ concept_geometric_figure_of_unlimited_size <- rrel_key_sc_element :
 	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example:
+		-> rrel_example:
 			[Понятие геометрической фигуры неограниченного размера является результатом теоретико-множественной резности множеств понятия геометрической фигуры и понятия геометрической фигуры ограниченного размера.]
 			(*
 			<- lang_ru;;

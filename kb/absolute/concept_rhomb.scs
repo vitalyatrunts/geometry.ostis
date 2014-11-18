@@ -1,14 +1,14 @@
-sc_node_not_relation->concept_rhomb;;
+sc_node_not_relation -> concept_rhomb;;
 
-concept_rhomb=>nrel_main_idtf:
-	[ромб](*<-lang_ru;;*);
-	[rhomb](*<-lang_en;;*);;
+concept_rhomb => nrel_main_idtf:
+	[ромб] (* <- lang_ru;; *);
+	[rhombus] (* <- lang_en;; *);;
 
-concept_rhomb=> nrel_idtf:[Класс ромбов](*<-lang_ru;;*);;
+concept_rhomb => nrel_idtf: [Класс ромбов] (* <- lang_ru;; *);;
 
-concept_rhomb=> nrel_idtf:[Понятие ромба](*<-lang_ru;;*);;
+concept_rhomb => nrel_idtf: [Понятие ромба] (* <- lang_ru;; *);;
 
-concept_rhomb=> nrel_idtf:[Множество ромбов](*<-lang_ru;;*);;
+concept_rhomb => nrel_idtf: [Множество ромбов] (* <- lang_ru;; *);;
 
 concept_rhomb <= nrel_strict_inclusion: concept_parallelogram;;
 
@@ -30,7 +30,7 @@ concept_rhomb <- rrel_key_sc_element:
 		*);;
 	*);; 
 
-concept_rhomb<= nrel_using_constants:
+concept_rhomb <= nrel_using_constants:
 				{
 				concept_parallelogram;
 				nrel_side;
@@ -41,7 +41,7 @@ concept_rhomb<= nrel_using_constants:
 concept_rhomb <- rrel_key_sc_element: 
      	... 
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; диагональ*; площадь*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; площадь*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -56,7 +56,7 @@ concept_rhomb <- rrel_key_sc_element:
 
      	...
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; диагональ*; прямой угол)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; прямой угол)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -71,7 +71,7 @@ concept_rhomb <- rrel_key_sc_element:
 
      	...
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -131,7 +131,7 @@ concept_rhomb <- rrel_key_sc_element:
 
      	...
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; диагональ*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; диагональ*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -146,7 +146,7 @@ concept_rhomb <- rrel_key_sc_element:
 
      	...
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; сторона*; угол; синус угла*)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; сторона*; угол; синус угла*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...

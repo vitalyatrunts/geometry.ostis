@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_square;;
+sc_node_not_relation -> concept_square;;
 
-concept_square=> nrel_main_idtf:
+concept_square => nrel_main_idtf:
 	[квадрат]
 	(*
 	<- lang_ru;;
@@ -10,11 +10,11 @@ concept_square=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_square=> nrel_idtf:[Класс квадратов](*<-lang_ru;;*);;
+concept_square => nrel_idtf: [Класс квадратов] (* <- lang_ru;; *);;
 
-concept_square=> nrel_idtf:[Правильный прямоугольник](*<-lang_ru;;*);;
+concept_square => nrel_idtf: [Правильный прямоугольник] (* <- lang_ru;; *);;
 
-concept_square=> nrel_idtf:[правильный многоугольник с четырьмя сторонами](*<-lang_ru;;*);;
+concept_square => nrel_idtf: [правильный многоугольник с четырьмя сторонами] (* <- lang_ru;; *);;
 
 concept_square <= nrel_strict_inclusion: concept_quadrilateral;;
 
@@ -26,8 +26,8 @@ concept_square <= nrel_strict_inclusion: concept_rhomb;;
 concept_square <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(квадрат)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(квадрат)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

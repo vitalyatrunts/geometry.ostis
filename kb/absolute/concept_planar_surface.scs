@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_planar_surface;;
+sc_node_not_relation -> concept_planar_surface;;
 
-concept_planar_surface=> nrel_main_idtf:
+concept_planar_surface => nrel_main_idtf:
 	[планарная поверхность]
 	(*
 	<- lang_ru;;
@@ -12,7 +12,7 @@ concept_planar_surface=> nrel_main_idtf:
 
 concept_plznzr_surface <= nrel_strict_inclusion: concept_surface;;
 	
-concept_planar_surface => nrel_idtf:[Множество планарных поверхностей](*<-lang_ru;;*);;
+concept_planar_surface => nrel_idtf: [Множество планарных поверхностей] (* <- lang_ru;; *);;
 
 concept_planar_surface <= nrel_strict_inclusion: concept_plane_figure;;
 

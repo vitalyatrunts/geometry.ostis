@@ -10,11 +10,11 @@ struct_Triangle_A_B_C => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Triangle_A_B_C => nrel_idtf:[Тр(A; B; C)](*<-lang_ru;;*);;
+struct_Triangle_A_B_C => nrel_idtf: [Тр(A; B; C)] (* <- lang_ru;; *);;
 
-struct_Triangle_A_B_C => nrel_idtf:[Треугольник(A; B; C)](*<-lang_ru;;*);;
+struct_Triangle_A_B_C => nrel_idtf: [Треугольник(A; B; C)] (* <- lang_ru;; *);;
 
-struct_Triangle_A_B_C => nrel_idtf:[Треугольник, вершинами которого являются Точка A, Точка B и Точка С](*<-lang_ru;;*);;
+struct_Triangle_A_B_C => nrel_idtf: [Треугольник, вершинами которого являются Точка A, Точка B и Точка С] (* <- lang_ru;; *);;
 
 struct_Triangle_A_B_C <- concept_isosceles_triangle;;
 
@@ -74,8 +74,8 @@ struct_Segment_A => nrel_boundary_point: struct_Geometric_point_C;;
 struct_Triangle_A_B_C <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;;
-		<=nrel_sc_text_translation:
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:
@@ -86,7 +86,7 @@ struct_Triangle_A_B_C <- rrel_key_sc_element:
 struct_Triangle_A_B_C <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Треугольник ABC)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Треугольник ABC)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

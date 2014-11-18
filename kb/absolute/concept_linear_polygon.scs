@@ -1,20 +1,20 @@
-sc_node_not_relation-> concept_linear_polygon;;
+sc_node_not_relation -> concept_linear_polygon;;
 
-concept_linear_polygon=> nrel_main_idtf:
+concept_linear_polygon => nrel_main_idtf:
 	[линейный многоугольник]
 	(* <- lang_ru;; *);
 	[linear polygon]
 	(* <- lang_en;; *);;
 
-concept_linear_polygon=> nrel_idtf:[Класс линейных многоугольников](*<-lang_ru;;*);;
+concept_linear_polygon => nrel_idtf: [Класс линейных многоугольников] (* <- lang_ru;; *);;
 
-concept_linear_polygon=> nrel_idtf:[Понятие линейного многоугольника](*<-lang_ru;;*);;
+concept_linear_polygon => nrel_idtf: [Понятие линейного многоугольника] (* <- lang_ru;; *);;
 
-concept_linear_polygon=> nrel_idtf:[Множество всевозможных линейных многоугольников](*<-lang_ru;;*);;
+concept_linear_polygon => nrel_idtf: [Множество всевозможных линейных многоугольников] (* <- lang_ru;; *);;
 
-concept_linear_polygon=> nrel_idtf:[Множество знаков всевозможных линейных многоугольников](*<-lang_ru;;*);;
+concept_linear_polygon => nrel_idtf: [Множество знаков всевозможных линейных многоугольников] (* <- lang_ru;; *);;
 
-concept_linear_polygon=> nrel_idtf:[Простая планарная замкнутая ломаная](*<-lang_ru;;*);;
+concept_linear_polygon => nrel_idtf: [Простая планарная замкнутая ломаная] (* <- lang_ru;; *);;
 
 concept_linear_polygon <= nrel_strict_inclusion: concept_simple_broken_line;;
 
@@ -27,8 +27,8 @@ concept_linear_polygon <= nrel_strict_inclusion: concept_planar_line;;
 concept_linear_polygon <- rrel_key_sc_element: 
      	...
 	(*
-	=> nrel_main_idtf: [Опр.(линейный многоугольник)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(линейный многоугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

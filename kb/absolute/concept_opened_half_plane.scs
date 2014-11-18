@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_opened_half_plane;;
+sc_node_not_relation -> concept_opened_half_plane;;
 
-concept_opened_half_plane=> nrel_main_idtf:
+concept_opened_half_plane => nrel_main_idtf:
 	[открытая полуплоскость]
 	(*
 	<- lang_ru;;
@@ -10,23 +10,23 @@ concept_opened_half_plane=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_opened_half_plane=> nrel_idtf:[Класс открытых полуплоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Класс открытых полуплоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Множество открытых полуплоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Множество открытых полуплоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Множество всевозможных открытых полуплоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Множество всевозможных открытых полуплоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Канторовское множество открытых плоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Канторовское множество открытых плоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[незамкнутая полуплоскость](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [незамкнутая полуплоскость] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Класс незамкнутых полуплоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Класс незамкнутых полуплоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Множество незамкнутых полуплоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Множество незамкнутых полуплоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Множество всевозможных незамкнутых полуплоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Множество всевозможных незамкнутых полуплоскостей] (* <- lang_ru;; *);;
 
-concept_opened_half_plane=> nrel_idtf:[Канторовское множество незамкнутых плоскостей](*<-lang_ru;;*);;
+concept_opened_half_plane => nrel_idtf: [Канторовское множество незамкнутых плоскостей] (* <- lang_ru;; *);;
 
 concept_opened_half_plane <= nrel_strict_inclusion: concept_half_plane;;
 
@@ -36,7 +36,7 @@ concept_opened_half_plane <- rrel_key_sc_element:
         ... 
 	(*
 	=> nrel_main_idtf: [Опр.(открытая полуплоскость)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
