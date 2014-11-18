@@ -1,37 +1,32 @@
-sc_node_not_relation->concept_triangle;;
+sc_node_not_relation -> concept_triangle;;
 
-concept_triangle=>nrel_main_idtf:
+concept_triangle => nrel_main_idtf:
 [треугольник]
 (*
-<-lang_ru;;
+<- lang_ru;;
 *);
 [triangle]
 (*
-<-lang_en;;
+<- lang_en;;
 *);;
 
-concept_triangle=> nrel_idtf:[Класс треугольников](*<-lang_ru;;*);;
+concept_triangle => nrel_idtf: [Класс треугольников] (* <- lang_ru;; *);;
 
-concept_triangle=> nrel_idtf:[плоский треугольник](*<-lang_ru;;*);;
+concept_triangle => nrel_idtf: [плоский треугольник] (* <- lang_ru;; *);;
 
-concept_triangle=> nrel_idtf:[Понятие треугольника](*<-lang_ru;;*);;
+concept_triangle => nrel_idtf: [Понятие треугольника] (* <- lang_ru;; *);;
 
-concept_triangle=> nrel_idtf:[Множество всевозможных треугольников](*<-lang_ru;;*);;
+concept_triangle => nrel_idtf: [Множество всевозможных треугольников] (* <- lang_ru;; *);;
 
-concept_triangle=> nrel_idtf:[Множество знаков всевозможных треугольников](*<-lang_ru;;*);;
+concept_triangle => nrel_idtf: [Множество знаков всевозможных треугольников] (* <- lang_ru;; *);;
 
-concept_triangle=> nrel_idtf:[многоугольник с тремя сторонами](*<-lang_ru;;*);;
+concept_triangle => nrel_idtf: [многоугольник с тремя сторонами] (* <- lang_ru;; *);;
 
 concept_triangle <= nrel_strict_inclusion: concept_convex_polygon;;
 
 concept_triangle => nrel_strict_inclusion: concept_isosceles_triangle;;
 
-concept_triangle <= nrel_subdividing: 
-	{ 
-	concept_equilateral_triangle;
-	concept_strictly_isosceles_triangle;
-	concept_scalene_triangle
-	};;
+concept_triangle => nrel_strict_inclusion: concept_equilateral_triangle;;
 
 concept_triangle <= nrel_subdividing: 
 	{  
@@ -40,34 +35,28 @@ concept_triangle <= nrel_subdividing:
 	concept_obtuse_triangle
 	};;
 
-
-concept_triangle <- subject_domain_of_Euclidean_geometry;;
-
-concept_triangle <= nrel_using_constants:
-				{
-				concept_linear_treangle;
-				concept_plane;
-				concept_geometric_point;
-				rrel_between
-				};;
 concept_triangle <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [О пр.(треугольник)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Треугольник - это геометрическая фигура, которая является результатом объединения
-понятия линейного треугольника и множества всех точек плоскости, которые лежат между
-двух любых точек, принадлежащих этому линейному треугольнику.]
+			[Треугольник - это могоугольник с тремя сторонами.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+concept_triangle <= nrel_using_constants:
+				{
+				concept_polygon;
+				nrel_side
+				};;	
+	
 concept_triangle <- rrel_key_sc_element: 
 	... 
 	(*

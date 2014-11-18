@@ -10,7 +10,7 @@ struct_Acute_Angle_K_L_M => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Acute_Angle_K_L_M => nrel_idtf:[Острый угол(K; L; M)](*<-lang_ru;;*);;
+struct_Acute_Angle_K_L_M => nrel_idtf: [Острый угол(K; L; M)] (* <- lang_ru;; *);;
 
 struct_Acute_Angle_K_L_M <- concept_acute_angle;;
 
@@ -35,7 +35,7 @@ struct_Acute_Angle_K_L_M => nrel_side: struct_Ray_L_M;;
 struct_Acute_Angle_K_L_M <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Острый угол KLM)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Острый угол KLM)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -51,7 +51,7 @@ struct_Acute_Angle_K_L_M <- rrel_key_sc_element:
 struct_Acute_Angle_K_L_M <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

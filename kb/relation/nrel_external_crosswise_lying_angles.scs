@@ -6,8 +6,8 @@ nrel_external_crosswise_lying_angles => nrel_main_idtf:
 	[external crosswise lying angles*]
 	(*<- lang_en;;	*);;
 
-nrel_external_cross_lying_angles => nrel_idtf:[быть внешними накрест лежащими углами*]
-	(*<-lang_ru;;*);;
+nrel_external_cross_lying_angles => nrel_idtf: [быть внешними накрест лежащими углами*]
+	(* <- lang_ru;; *);;
 
 nrel_external_cross_lying_angles <- sc_relation;;
 
@@ -15,7 +15,7 @@ nrel_external_cross_lying_angles <- binary_relation;;
 
 nrel_external_cross_lying_angles <- non_oriented_ralation;;
 
-nrel_external_cross_lying_angles => nrel_domain_of_definition: 
+nrel_external_cross_lying_angles => nrel_definitional_domain:
 	concept_planar_angle;;
 
 nrel_external_cross_lying_angles => nrel_first_domain: 
@@ -33,7 +33,7 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Внешними накрест лежащими называются углы, образованные при пересечении двух прямых секущей, лежащие по разные стороны от секущей, но не между прямыми. ]
+			[Внешними накрест лежащими называются углы, образованные при пересечении двух прямых секущей, лежащие по разные стороны от секущей, но не между прямыми.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -49,7 +49,7 @@ nrel_external_cross_lying_angles <= nrel_using_constants:
 nrel_external_cross_lying_angles <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf:[Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; мера угла*)](* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; мера угла*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -63,7 +63,7 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 
 	... 
 	(*
-	=> nrel_main_idtf:[Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)](* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

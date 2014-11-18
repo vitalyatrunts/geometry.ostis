@@ -10,11 +10,11 @@ struct_Versatile_trapezoid_Z_X_C_V => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf:[Тр-я(Z; X; C; V)](*<-lang_ru;;*);;
+struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf: [Тр-я(Z; X; C; V)] (* <- lang_ru;; *);;
 
-struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf:[Разносторонняя трапеция(Z; X; C; V)](*<-lang_ru;;*);;
+struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf: [Разносторонняя трапеция(Z; X; C; V)] (* <- lang_ru;; *);;
 
-struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf:[Разносторонняя трапеция, вершинами которой являются Точка Z, Точка X, Точка C, Точка V](*<-lang_ru;;*);;
+struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf: [Разносторонняя трапеция, вершинами которой являются Точка Z, Точка X, Точка C, Точка V] (* <- lang_ru;; *);;
 
 struct_Versatile_trapezoid_Z_X_C_V <- concept_versatile_trapezoid;;
 
@@ -81,7 +81,7 @@ struct_Versatile_trapezoid_Z_X_C_V  => nrel_internal_angle: struct_Angle_Sigma;;
 struct_Versatile_trapezoid_Z_X_C_V  <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт. утв.(Разносторонняя трапеция ZXCV)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт. утв.(Разносторонняя трапеция ZXCV)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -91,7 +91,7 @@ struct_Versatile_trapezoid_Z_X_C_V  <- rrel_key_sc_element:
 			Геометрические точки Z, X, C и V являются вершинами Трапеции ZXCV.
 			Отрезки x, v являются боковыми сторонами, а отрезки z, c являются основаниями Трапеции ZXCV.
 			Точка Z является граничной точкой отрезков z, x. Точка X является граничной точкой отрезков x, c. Точка C является граничной точкой отрезков c, v. Точка V является граничной точкой отрезков v, z.
-			Углы  alpha,  beta,  gamma,  sigma являются внутренним углами Трапеции ZXCV. ]
+			Углы  alpha,  beta,  gamma,  sigma являются внутренним углами Трапеции ZXCV.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -99,7 +99,7 @@ struct_Versatile_trapezoid_Z_X_C_V  <- rrel_key_sc_element:
 struct_Versatile_trapezoid_Z_X_C_V <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 			...
 			(*

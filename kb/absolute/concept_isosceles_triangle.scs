@@ -1,40 +1,28 @@
-sc_node_not_relation->concept_isosceles_triangle;;
+sc_node_not_relation -> concept_isosceles_triangle;;
 
-concept_isosceles_triangle=>nrel_main_idtf:
-[равнобедренный треугольник]
-(*
-<-lang_ru;;
-*);
-[isosceles triangle]
-(*
-<-lang_en;;
-*);;
+concept_isosceles_triangle => nrel_main_idtf:
+	[равнобедренный треугольник]
+	(*
+	<- lang_ru;;
+	*);
+	[isosceles triangle]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_isosceles_triangle=> nrel_idtf:[Класс равнобедренных треугольников](*<-lang_ru;;*);;
+concept_isosceles_triangle => nrel_idtf: [Класс равнобедренных треугольников] (* <- lang_ru;; *);;
 
-concept_isosceles_triangle=> nrel_idtf:[Понятие равнобедренного треугольника](*<-lang_ru;;*);;
+concept_isosceles_triangle => nrel_idtf: [Понятие равнобедренного треугольника] (* <- lang_ru;; *);;
 
-concept_isosceles_triangle=> nrel_idtf:[Множество всевозможных равнобедренных треугольников](*<-lang_ru;;*);;
+concept_isosceles_triangle => nrel_idtf: [Множество всевозможных равнобедренных треугольников] (* <- lang_ru;; *);;
 
-concept_isosceles_triangle=> nrel_idtf:[Множество знаков всевозможных равнобедренных треугольников](*<-lang_ru;;*);;
-
-concept_isosceles_triangle <= nrel_particular_subject_domain: concept_triangle;;
-
-concept_isosceles_triangle => nrel_particular_subject_domain: concept_equilateral_triangle;;
-
-concept_isosceles_triangle => nrel_particular_subject_domain: concept_strictly_isosceles_triangle;;
-
-concept_isosceles_triangle <= nrel_using_constants:
-				{
-				concept_triangle;
-				nrel_side
-				};;
+concept_isosceles_triangle => nrel_idtf: [Множество знаков всевозможных равнобедренных треугольников] (* <- lang_ru;; *);;
 
 concept_isosceles_triangle  <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -46,6 +34,12 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
 		*);;
 	*);;
 
+concept_isosceles_triangle <= nrel_using_constants:
+				{
+				concept_triangle;
+				nrel_side
+				};;	
+	
 concept_isosceles_triangle <- rrel_key_sc_element: 
         ...
 	(*
@@ -55,7 +49,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Каждый линейный и каждый плоский треугольник однозначно задается непрямолинейной тройкой точек, каждая из которых является вершиной этого треугольника. ]
+			[Каждый линейный и каждый плоский треугольник однозначно задается непрямолинейной тройкой точек, каждая из которых является вершиной этого треугольника.]
 			(* <- lang_ru;; *);
 			[Для каждой непрямолинейной тройки точек существует единственный линейный треугольник и единственный плоский треугольник, вершинами которых являются указанные три точки.]
 			(* <- lang_ru;; *);;
@@ -71,7 +65,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[В равнобедренном треугольнике углы при основании равны. ]
+			[В равнобедренном треугольнике углы при основании равны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -113,13 +107,13 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение ]
+			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/osnovanie_triangle.png"(*<-image;;*);
+		"file://images/osnovanie_triangle.png"(*<- sc_illustration;;*);
 		 [где
 c - величина основания указанного треугольника,
 a - величина боковой стороны этого треугольника,
-y - градусная мера внутреннего угла при вершине этого треугольника.](*<-lang_ru;;*);; 
+y - градусная мера внутреннего угла при вершине этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -132,13 +126,13 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение ]
+			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-			"file://images/height_triangle.png"(*<-image;;*);
+			"file://images/height_triangle.png"(*<- sc_illustration;;*);
 			 [где
 h_a -высота указанного треугольника, проведённая к боковой стороне a, h_b -высота указанного треугольника, проведённая к боковой стороне b,тношени
 a - величина боковой стороны этого треугольника,
-S - величина площади этого треугольника.](*<-lang_ru;;*);; 
+S - величина площади этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -151,15 +145,15 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение ]
+			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-			"file://images/median_triangle.png"(*<-image;;*);
+			"file://images/median_triangle.png"(*<- sc_illustration;;*);
 			 [где
 m_c - медиана указанного треугольника, проведённая из вершины к основанию с,
 h_c - высота указанного треугольника, проведённая из вершины к основанию с,
 l_c - биссектриса внутреннего угла указанного треугольника при вершине, 
 a - величина боковой стороны этого треугольника,
-с - величина основания этого треугольника.](*<-lang_ru;;*);; 
+с - величина основания этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -172,13 +166,13 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение ]
+			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-			"file://images/radius_triangle.png"(*<-image;;*);
+			"file://images/radius_triangle.png"(*<- sc_illustration;;*);
 			 [где
 r - величина радиуса вписанной окружности указанного треугольника,
 a - градусная мера угла при основании этого треугольника,
-с - величина основания этого треугольника.](*<-lang_ru;;*);; 
+с - величина основания этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -191,18 +185,16 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Для каждого равнобедренного треугольника выполняется следующее числовое соотношение ]
+			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение]
 			(* <- lang_ru;; *);
-		"file://images/radius_triangle2.png"(*<-image;;*);
+		"file://images/radius_triangle2.png"(*<- sc_illustration;;*);
 		 [где
 R - величина радиуса описанной окружности указанного треугольника,
 alpha - градусная мера угла при основании этого треугольника,
-a - величина боковой стороны этого треугольника.](*<-lang_ru;;*);; 
+a - величина боковой стороны этого треугольника.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
-
-concept_isosceles_triangle -> subject_domain_of_Euclidean_geometry;;
 
 concept_isosceles_triangle -> rrel_example : struct_Strictly_isosceles_triangle_PNK;;
 concept_isosceles_triangle -> rrel_example : struct_Equilateral_triangle_X_Y_Z;;

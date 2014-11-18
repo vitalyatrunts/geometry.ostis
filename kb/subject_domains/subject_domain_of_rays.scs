@@ -1,0 +1,14 @@
+sc_node_struct -> subject_domain_of_rays;;
+
+subject_domain_of_rays
+=> nrel_main_idtf:
+	[Предметная область лучей]
+	(* <- lang_ru;; *);
+	[Subject domain of rays]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_rays -> rrel_maximum_studied_object_class: concept_ray;;
+
+subject_domain_of_rays -> rrel_studied_object_class: concept_opened_ray;;
+
+subject_domain_of_rays -> rrel_studied_object_class: concept_closed_ray;;

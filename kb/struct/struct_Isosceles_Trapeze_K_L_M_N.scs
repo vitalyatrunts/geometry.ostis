@@ -10,11 +10,11 @@ struct_Isosceles_Trapeze_K_L_M_N => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Isosceles_trapeze_K_L_M_N => nrel_idtf:[Тр-я(K; L; M; N)](*<-lang_ru;;*);;
+struct_Isosceles_trapeze_K_L_M_N => nrel_idtf: [Тр-я(K; L; M; N)] (* <- lang_ru;; *);;
 
-struct_Isosceles_trapeze_K_L_M_N => nrel_idtf:[Равнобедренная трапеция(K; L; M; N)](*<-lang_ru;;*);;
+struct_Isosceles_trapeze_K_L_M_N => nrel_idtf: [Равнобедренная трапеция(K; L; M; N)] (* <- lang_ru;; *);;
 
-struct_Isosceles_trapeze_K_L_M_N => nrel_idtf:[Равнобедренная трапеция, вершинами которой являются Точка K, Точка L, Точка M, Точка N](*<-lang_ru;;*);;
+struct_Isosceles_trapeze_K_L_M_N => nrel_idtf: [Равнобедренная трапеция, вершинами которой являются Точка K, Точка L, Точка M, Точка N] (* <- lang_ru;; *);;
 
 struct_Isosceles_trapeze_K_L_M_N <- concept_isosceles_trapeze;;
 
@@ -69,7 +69,7 @@ nrel_congruence -> ... (* -> struct_Segment_N; struct_Segment_L;; *);;
 struct_Isosceles_trapeze_K_L_M_N <- rrel_key_sc_element: 
 	...
 		(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -81,7 +81,7 @@ struct_Isosceles_trapeze_K_L_M_N <- rrel_key_sc_element:
 struct_Isosceles_trapeze_K_L_M_N  <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf: [Факт. утв.(Равнобедренная трапеция KLMN)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт. утв.(Равнобедренная трапеция KLMN)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

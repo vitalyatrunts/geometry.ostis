@@ -1,6 +1,6 @@
 sc_node_not_relation -> struct_Rectangular_triangle_D_F_G;;
 
-struct_Rectangular_Triangle_D_F_G =>nrel_main_idtf:
+struct_Rectangular_Triangle_D_F_G => nrel_main_idtf:
 	[Прямоугольный треугольник DFG]
 	(*
 	<- lang_ru;;
@@ -10,11 +10,11 @@ struct_Rectangular_Triangle_D_F_G =>nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Rectangular_triangle_D_F_G => nrel_idtf:[Тр-к(D; F; G)](*<-lang_ru;;*);;
+struct_Rectangular_triangle_D_F_G => nrel_idtf: [Тр-к(D; F; G)] (* <- lang_ru;; *);;
 
-struct_Rectangular_triangle_D_F_G => nrel_idtf:[Прямоугольный треугольник(D; F; G)](*<-lang_ru;;*);;
+struct_Rectangular_triangle_D_F_G => nrel_idtf: [Прямоугольный треугольник(D; F; G)] (* <- lang_ru;; *);;
 
-struct_Rectangular_triangle_D_F_G => nrel_idtf:[Треугольник, вершинами которого являются Точка D, Точка F, Точка G](*<-lang_ru;;*);;
+struct_Rectangular_triangle_D_F_G => nrel_idtf: [Треугольник, вершинами которого являются Точка D, Точка F, Точка G] (* <- lang_ru;; *);;
 
 struct_Rectangular_triangle_D_F_G <- concept_rectangular_triangle;;
 
@@ -59,7 +59,7 @@ struct_Rectangular_triangle_D_F_G => nrel_leg: struct_Segment_G;;
 struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element: 
 	...
 		(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -71,7 +71,7 @@ struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element:
 struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element:	
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Прямоугольный треугольник DFG)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Прямоугольный треугольник DFG)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

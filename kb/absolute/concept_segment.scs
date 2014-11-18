@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_segment;;
+sc_node_not_relation -> concept_segment;;
 
-concept_segment=> nrel_main_idtf:
+concept_segment => nrel_main_idtf:
 	[отрезок]
 	(*
 	<- lang_ru;;
@@ -10,50 +10,46 @@ concept_segment=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_segment=> nrel_idtf:[Геометрический отрезок](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Геометрический отрезок] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Понятие отрезка](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Понятие отрезка] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Понятие геометрического отрезка](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Понятие геометрического отрезка] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Класс отрезков](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Класс отрезков] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Множество всевозможных отрезков](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Множество всевозможных отрезков] (* <- lang_ru;; *);;
 
-concept_segment=> nrel_idtf:[Множество знаков всевозможных отрезков](*<-lang_ru;;*);;
+concept_segment => nrel_idtf: [Множество знаков всевозможных отрезков] (* <- lang_ru;; *);;
 
 concept_segment <= nrel_strict_inclusion: concept_rectilinear_figure;;
-
-concept_segment <= nrel_strict_inclusion: concept_uninterrupted_geometric_figure;;
 
 concept_segment <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
 
 concept_segment <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
 
-concept_segment <= nrel_strict_inclusion: concept_planar_line;;
+concept_segment <- rrel_key_sc_element: 
+        ... 
+	(*
+	=> nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отрезком называется часть прямой, которая состоит из всех точек этой прямой, лежащей между двумя данными ее точками. ]
+			(* 
+			<- lang_ru;; 
+			*);;
+		*);;
+	*);;
 
 concept_segment <= nrel_using_constants:
 				{
 				concept_geometric_point;
 				concept_straight_line;
 				rrel_between
-				};;
-
-concept_segment <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Отрезком называется часть прямой, которая состоит из всех точек этой прямой, лежащей между двумя данными ее точками.  ]
-			(* 
-			<- lang_ru;; 
-			*);;
-		*);;
-	*);;
+				};;	
 	
 concept_segment <- rrel_key_sc_element: 
         ... 
@@ -82,6 +78,5 @@ concept_segment <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_segment <- subject_domain_of_Euclidean_geometry;;
 
 concept_segment -> rrel_example: struct_Segment_A_B;;

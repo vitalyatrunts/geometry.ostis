@@ -10,7 +10,7 @@ struct_Segment_A_B => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Segment_A_B => nrel_idtf:[Отрезок(A; B)](*<-lang_ru;;*);;
+struct_Segment_A_B => nrel_idtf: [Отрезок(A; B)] (* <- lang_ru;; *);;
 
 struct_Segment_A_B <- concept_segment;;
 
@@ -29,7 +29,7 @@ struct_Segment_A_B -> struct_Geometric_point_B;;
 struct_Segment_A_B <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Отрезок AB)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Отрезок AB)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -43,7 +43,7 @@ struct_Segment_A_B <- rrel_key_sc_element:
 struct_Segment_A_B <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

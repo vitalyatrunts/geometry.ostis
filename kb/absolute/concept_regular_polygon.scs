@@ -1,48 +1,51 @@
-sc_node_not_relation->concept_regular_polygon;;
+sc_node_not_relation -> concept_regular_polygon;;
 
-concept_regular_polygon=>nrel_main_idtf:
-[правильный многоугольник]
-(*
-<-lang_ru;;
-*);
-[regular polygon]
-(*
-<-lang_en;;
-*);;
+concept_regular_polygon => nrel_main_idtf:
+	[правильный многоугольник]
+	(* <- lang_ru;; *);
+	[regular polygon]
+	(* <- lang_en;; *);;
 
-concept_regular_polygon=> nrel_idtf:[Класс правильных многоугольников](*<-lang_ru;;*);;
+concept_regular_polygon => nrel_idtf: [Класс правильных многоугольников] (* <- lang_ru;; *);;
 
-concept_regular_polygon=> nrel_idtf:[Понятие правильного многоугольника](*<-lang_ru;;*);;
+concept_regular_polygon => nrel_idtf: [Понятие правильного многоугольника] (* <- lang_ru;; *);;
 
-concept_regular_polygon=> nrel_idtf:[Множество всевозможных правильных многоугольников](*<-lang_ru;;*);;
+concept_regular_polygon => nrel_idtf: [Множество всевозможных правильных многоугольников] (* <- lang_ru;; *);;
 
-concept_regular_polygon=> nrel_idtf:[Множество знаков всевозможных правильных многоугольников](*<-lang_ru;;*);;
+concept_regular_polygon => nrel_idtf: [Множество знаков всевозможных правильных многоугольников] (* <- lang_ru;; *);;
 
 concept_regular_polygon <= nrel_strict_inclusion: concept_convex_polygon;;
 
-concept_regular_polygon <= nrel_using_constants:
-				{
-				concept_convex_polygon;
-				concept_angle;
-				nrel_side
-				};;
+concept_regular_polygon => nrel_strict_inclusion: concept_right_pentagon;;
+
+concept_regular_polygon => nrel_strict_inclusion: concept_right_hexagon;;
+			
+concept_regular_polygon => nrel_strict_inclusion: concept_equilateral_triangle;;
+
+concept_regular_polygon => nrel_strict_inclusion: concept_square;;
 
 concept_regular_polygon <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(правильный многоугольник)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(правильный многоугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Множество является правильным многоугольником тогда и только тогда, когда оно является выпуклым многоугольником, у которого все стороны между собой равны и все углы между собой равны.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			[Геометрическая фигура является правильным многоугольником тогда и только тогда, когда она является выпуклым многоугольником, а все ее стороны и все внутренние углы между собой равны.]
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
+concept_regular_polygon <= nrel_using_constants:
+	{
+	concept_convex_polygon;
+	nrel_congruence;
+	nrel_side;
+	nrel_internal_angle
+	};;
+	
 concept_regular_polygon <- rrel_key_sc_element: 
         ...
 	(*
@@ -134,8 +137,6 @@ concept_regular_polygon <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-concept_regular_polygon <- subject_domain_of_Euclidean_geometry;;
 
 concept_regular_polygon -> rrel_example : struct_Regular_Polygon_A_B_C_D_E_F;;
 concept_regular_polygon -> rrel_example : struct_Square_A_B_C_D;;

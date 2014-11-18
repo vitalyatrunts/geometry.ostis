@@ -1,34 +1,24 @@
-sc_node_not_relation->concept_obtuse_angle;;
+sc_node_not_relation -> concept_obtuse_angle;;
 
-concept_obtuse_angle=>nrel_main_idtf:
-[тупой угол]
-(*
-<-lang_ru;;
-*);
-[obtuse angle]
-(*
-<-lang_en;;
-*);;
+concept_obtuse_angle => nrel_main_idtf:
+	[тупой угол]
+	(*
+	<- lang_ru;;
+	*);
+	[obtuse angle]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_obtuse_angle=> nrel_idtf:[Класс тупых углов](*<-lang_ru;;*);;
+concept_obtuse_angle => nrel_idtf: [Класс тупых углов] (* <- lang_ru;; *);;
 
-concept_obtuse_angle=> nrel_idtf:[Понятие тупого угла](*<-lang_ru;;*);;
+concept_obtuse_angle => nrel_idtf: [Понятие тупого угла] (* <- lang_ru;; *);;
 
-concept_obtuse_angle=> nrel_idtf:[Множество всевозможных тупых углов](*<-lang_ru;;*);;
+concept_obtuse_angle => nrel_idtf: [Множество всевозможных тупых углов] (* <- lang_ru;; *);;
 
-concept_obtuse_angle=> nrel_idtf:[Множество знаков тупых углов](*<-lang_ru;;*);;
+concept_obtuse_angle => nrel_idtf: [Множество знаков тупых углов] (* <- lang_ru;; *);;
 
 concept_obtuse_angle <= nrel_strict_inclusion: concept_planar_angle;;
-
-concept_obtuse_angle <=  nrel_strict_inclusion: concept_dihedral_angle;;
-
-concept_obtuse_angle <= nrel_using_constants:
-				{
-				concept_angle;
-				nrel_angle_measure;
-				concept_geometric_point;
-				rrel_between
-				};;
 
 concept_obtuse_angle <- rrel_key_sc_element: 
         ... 
@@ -46,6 +36,10 @@ concept_obtuse_angle <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_obtuse_angle -> subject_domain_of_Euclidean_geometry;;
+concept_obtuse_angle <= nrel_using_constants:
+				{
+				concept_angle;
+				nrel_angle_measure				
+				};;
 
 concept_obtuse_angle -> rrel_example : struct_Obtuse_angle_T_P_R;;

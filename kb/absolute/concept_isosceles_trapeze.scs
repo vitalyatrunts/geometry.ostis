@@ -1,49 +1,52 @@
-sc_node_not_relation->concept_isosceles_trapeze;;
+sc_node_not_relation -> concept_isosceles_trapeze;;
 
-concept_isosceles_trapeze=>nrel_main_idtf:
-[равнобедренная трапеция]
-(*
-<-lang_ru;;
-*);
-[isosceles trapeze]
-(*
-<-lang_en;;
-*);;
+concept_isosceles_trapeze => nrel_main_idtf:
+	[равнобедренная трапеция]
+	(*
+	<- lang_ru;;
+	*);
+	[isosceles trapeze]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_isosceles_trapeze=> nrel_idtf:[равнобокая трапеция](*<-lang_ru;;*);;
+concept_isosceles_trapeze => nrel_idtf: [равнобокая трапеция] (* <- lang_ru;; *);;
 
-concept_isosceles_trapeze=> nrel_idtf:[Класс равнобедренная трапеций](*<-lang_ru;;*);;
+concept_isosceles_trapeze => nrel_idtf: [Класс равнобедренная трапеций] (* <- lang_ru;; *);;
 
-concept_isosceles_trapeze=> nrel_idtf:[Понятие равнобедренная трапеции](*<-lang_ru;;*);;
+concept_isosceles_trapeze => nrel_idtf: [Понятие равнобедренная трапеции] (* <- lang_ru;; *);;
 
-concept_isosceles_trapeze=> nrel_idtf:[Множество всевозможных равнобедренных трапеций](*<-lang_ru;;*);;
+concept_isosceles_trapeze => nrel_idtf: [Множество всевозможных равнобедренных трапеций] (* <- lang_ru;; *);;
 
-concept_isosceles_trapeze=> nrel_idtf:[Множество знаков всевозможных равнобедренных трапеций](*<-lang_ru;;*);;
+concept_isosceles_trapeze => nrel_idtf: [Множество знаков всевозможных равнобедренных трапеций] (* <- lang_ru;; *);;
 
 concept_isosceles_trapeze <= nrel_strict_inclusion: concept_trapezoid;;
 
-concept_isosceles_trapeze <= nrel_using_constants:
-				{
-				concept_trapezoid;
-				nrel_side
-				};;
 
 concept_isosceles_trapeze <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(равнобедренная трапеция)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(равнобедренная трапеция)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Множество является равнобедренной трапецией тогда и только тогда, когда является трапецией и имеет две равные стороны.]
+			[Фигура является равнобедренной трапецией тогда и только тогда, когда является трапецией и имеет две равные стороны.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+concept_isosceles_trapeze <= nrel_using_constants:
+				{
+				concept_trapezoid;
+				nrel_side;
+				nrel_congruence
+				};;
+
+	
 concept_isosceles_trapeze <- rrel_key_sc_element: 
         ...
 	(*
@@ -67,7 +70,7 @@ concept_isosceles_trapeze <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[В равнобедренной трапеции высоты отсекают на большем основании равные отрезки. ]
+			[В равнобедренной трапеции высоты отсекают на большем основании равные отрезки.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -81,7 +84,7 @@ concept_isosceles_trapeze <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[В равнобедренной трапеции диагонали равны: d1=d2 , где d1,d2 - диагонали равнобедренной трапеции. ]
+			[В равнобедренной трапеции диагонали равны: d1=d2 , где d1,d2 - диагонали равнобедренной трапеции.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -97,9 +100,9 @@ concept_isosceles_trapeze <- rrel_key_sc_element:
 		-> rrel_example: 
 			[В равнобедренной трапеции высота, опущенная из вершины на большее основание, делит его на два отрезка, длина одного из которых равна полусумме длин оснований, длина другого - полуразности длин оснований.]
 			(* <- lang_ru;; *);
-		"file://images/otrezki_trapecii.png"(*<-image;;*);
-		"file://images/otrezki_trapecii2.png"(*<-image;;*);
-		 [где a - большее основание равнобедренной трапеции, b - меньшее основание равнобедренной трапеции e, c - отрезки на которые высота разделила большее основание. ](*<-lang_ru;;*);; 
+		"file://images/otrezki_trapecii.png"(*<- sc_illustration;;*);
+		"file://images/otrezki_trapecii2.png"(*<- sc_illustration;;*);
+		 [где a - большее основание равнобедренной трапеции, b - меньшее основание равнобедренной трапеции e, c - отрезки на которые высота разделила большее основание.] (* <- lang_ru;; *);; 
 		*);;
 	*);;
 
@@ -112,7 +115,7 @@ concept_isosceles_trapeze <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[В равнобедренной трапеции прямая, проходящая через середины оснований, перпендикулярна основаниям и является осью симметрии трапеции. ]
+			[В равнобедренной трапеции прямая, проходящая через середины оснований, перпендикулярна основаниям и является осью симметрии трапеции.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -126,7 +129,7 @@ concept_isosceles_trapeze <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Около равнобедренной трапеции можно описать окружность. Она совпадает с окружностью, описанной около любого треугольника с вершинами в вершинах трапеции. Центр этой окружности лежит на серединном перпендикуляре к основанию трапеции. ]
+			[Около равнобедренной трапеции можно описать окружность. Она совпадает с окружностью, описанной около любого треугольника с вершинами в вершинах трапеции. Центр этой окружности лежит на серединном перпендикуляре к основанию трапеции.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -154,13 +157,11 @@ concept_isosceles_trapeze <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ В равнобедренную трапецию можно вписать окружность, если боковая сторона трапеции равна её средней линии. Радиус этой окружности равен половине высоте трапеции.]
+			[В равнобедренную трапецию можно вписать окружность, если боковая сторона трапеции равна её средней линии. Радиус этой окружности равен половине высоте трапеции.]
 			(* <- lang_ru;; *);
-		"file://images/radius_v_trapecii.png"(*<-image;;*);
-		 [где r - радиус окружности, h - высота равнобедренной трапеции](*<-lang_ru;;*);; 
+		"file://images/radius_v_trapecii.png"(*<- sc_illustration;;*);
+		 [где r - радиус окружности, h - высота равнобедренной трапеции] (* <- lang_ru;; *);; 
 		*);;
 	*);;
-
-concept_isosceles_trapeze -> subject_domain_of_Euclidean_geometry;;
 
 concept_isosceles_trapeze -> rrel_example : struct_Isosceles_trapeze_K_L_M_N;;

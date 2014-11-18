@@ -10,9 +10,9 @@ struct_Opened_ray_k => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Opened_ray_k => nrel_idtf:[Полупрямая k](*<-lang_ru;;*);;
+struct_Opened_ray_k => nrel_idtf: [Полупрямая k] (* <- lang_ru;; *);;
 
-struct_Opened_ray_k => nrel_idtf:[Открытая полупрямая k](*<-lang_ru;;*);;
+struct_Opened_ray_k => nrel_idtf: [Открытая полупрямая k] (* <- lang_ru;; *);;
 
 struct_Opened_ray_k <- concept_opened_ray;;
 
@@ -27,21 +27,21 @@ struct_Opened_ray_k -|> struct_Geometric_point_A;;
 struct_Opened_ray_k <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Открытый луч k)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Открытый луч k)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[ k - открытый луч. Геометрическая точка A, которая является граничной точкой луча k, не принадлежит лучу k. ]
+			[k - открытый луч. Геометрическая точка A, которая является граничной точкой луча k, не принадлежит лучу k.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-struct_Opened_ray_k<- rrel_key_sc_element: 
+struct_Opened_ray_k <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

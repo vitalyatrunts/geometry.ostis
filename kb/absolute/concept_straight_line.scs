@@ -1,36 +1,37 @@
-sc_node_not_relation->concept_straight_line;;
+sc_node_not_relation -> concept_straight_line;;
 
-concept_straight_line=> nrel_main_idtf:
-[прямая]
-(*
-<-lang_ru;;
-*);
-[straight line]
-(*
-<-lang_en;;
-*);;
+concept_straight_line => nrel_main_idtf:
+	[прямая]
+	(*
+	<- lang_ru;;
+	*);
+	[straight line]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_straight_line=> nrel_idtf:[Класс прямых](*<-lang_ru;;*);;
+concept_straight_line => nrel_idtf: [Класс прямых] (* <- lang_ru;; *);;
 
-concept_straight_line=> nrel_idtf:[Понятие прямой](*<-lang_ru;;*);;
+concept_straight_line => nrel_idtf: [Понятие прямой] (* <- lang_ru;; *);;
 
-concept_straight_line=> nrel_idtf:[Множество всевозможных прямых](*<-lang_ru;;*);;
+concept_straight_line => nrel_idtf: [Множество всевозможных прямых] (* <- lang_ru;; *);;
 
-concept_straight_line=> nrel_idtf:[Множество знаков всевозможных прямых](*<-lang_ru;;*);;
+concept_straight_line => nrel_idtf: [Множество знаков всевозможных прямых] (* <- lang_ru;; *);;
 
-concept_straight_line=> nrel_idtf:[прямая линия](*<-lang_ru;;*);;
+concept_straight_line => nrel_idtf: [прямая линия] (* <- lang_ru;; *);;
 
-concept_straight_line=> nrel_idtf:[максимальная прямолинейная фигура](*<-lang_ru;;*);;
+concept_straight_line => nrel_idtf: [максимальная прямолинейная фигура] (* <- lang_ru;; *);;
 
-concept_straight_line <= nrel_particular_subject_domain: concept_rectilinear_figure;;
+concept_straight_line <= nrel_strict_inclusion: concept_rectilinear_figure;;
 
-concept_straight_line <= nrel_particular_subject_domain: concept_planar_line;;
+concept_straight_line <= nrel_strict_inclusion: concept_planar_line;;
 
-concept_straight_line <= nrel_particular_subject_domain: concept_geometric_figure_of_unlimited_size;;
+concept_straight_line <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
 
 concept_straight_line <- rrel_key_sc_element: 
-        [Поясн.(прямая)] 
+     ...
 	(*
+	=> nrel_main_idtf: [Поясн.(прямая)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -43,11 +44,8 @@ concept_straight_line <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line <- subject_domain_of_Euclidean_geometry;;
 
-concept_straight_line <=> nrel_analogue : concept_plane;;
-
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(прямая; пара точек)] (* <- lang_ru;; *);;
@@ -61,7 +59,7 @@ concept_straight_line<- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
@@ -75,7 +73,7 @@ concept_straight_line<- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между')] (* <- lang_ru;; *);;
@@ -89,7 +87,7 @@ concept_straight_line<- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(точка; прямая; между')] (* <- lang_ru;; *);;
@@ -103,7 +101,7 @@ concept_straight_line<- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
@@ -118,7 +116,7 @@ concept_straight_line<- rrel_key_sc_element:
 	*);;
 
 
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(прямая; плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
@@ -132,7 +130,7 @@ concept_straight_line<- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_straight_line<- rrel_key_sc_element: 
+concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
         => nrel_main_idtf: [Акс.(прямая; треугольник; плоскость; сторона*; пересекающиеся*; вершина*)] (* <- lang_ru;; *);;
@@ -146,4 +144,6 @@ concept_straight_line<- rrel_key_sc_element:
 		*);;
 	*);;
 
+concept_straight_line <=> nrel_analogue : concept_plane;;	
+	
 concept_straight_line -> rrel_example : struct_Straight_Line_A;;

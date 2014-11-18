@@ -1,6 +1,6 @@
 sc_node_not_relation -> struct_Rhomb_E_F_G_H;;
 
-struct_Rhomb_E_F_G_H=>nrel_main_idtf:
+struct_Rhomb_E_F_G_ => nrel_main_idtf:
 	[Ромб EFGH]
 	(*
 	<- lang_ru;;
@@ -10,9 +10,9 @@ struct_Rhomb_E_F_G_H=>nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Rhomb_E_F_G_H => nrel_idtf:[Ромб(E; F; G; H)](*<-lang_ru;;*);;
+struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб(E; F; G; H)] (* <- lang_ru;; *);;
 
-struct_Rhomb_E_F_G_H => nrel_idtf:[Ромб, вершинами которого являются Точка E, Точка F, Точка G и Точка H](*<-lang_ru;;*);;
+struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб, вершинами которого являются Точка E, Точка F, Точка G и Точка H] (* <- lang_ru;; *);;
 
 struct_Rhomb_E_F_G_H <- concept_rhomb;;
 
@@ -76,7 +76,7 @@ struct_Segment_H => nrel_boundary_point: struct_Geometric_point_H;;
 struct_Rhomb_E_F_G_H <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -88,7 +88,7 @@ struct_Rhomb_E_F_G_H <- rrel_key_sc_element:
 struct_Isosceles_trapeze_K_L_M_N  <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт. утв.(Ромб EFGH)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт. утв.(Ромб EFGH)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

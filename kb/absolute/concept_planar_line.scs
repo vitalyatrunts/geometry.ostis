@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_planar_line;;
+sc_node_not_relation -> concept_planar_line;;
 
-concept_planar_line=> nrel_main_idtf:
+concept_planar_line => nrel_main_idtf:
 	[планарная линия]
 	(*
 	<- lang_ru;;
@@ -28,18 +28,11 @@ concept_planar_line => nrel_strict_inclusion: nrel_strict_inclusion: concept_pol
 
 concept_planar_line => nrel_strict_inclusion: nrel_strict_inclusion: concept_linear_polygon;;
 
-concept_planar_line <= nrel_using_constants:
-				{
-				concept_line;
-				concept_geometric_point;
-				concept_plane
-				};;
-
 concept_planar_line <- rrel_key_sc_element: 
         ... 
 	(*
 	=> nrel_main_idtf: [Опр.(планарная линия)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -51,4 +44,9 @@ concept_planar_line <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_planar_line <- subject_domain_of_Euclidean_geometry;;
+concept_planar_line <= nrel_using_constants:
+				{
+				concept_line;
+				concept_geometric_point;
+				concept_plane
+				};;

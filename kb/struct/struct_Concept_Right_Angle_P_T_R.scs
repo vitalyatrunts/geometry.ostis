@@ -10,7 +10,7 @@ struct_Concept_Right_Angle_P_T_R => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Concept_right_angle_P_T_R => nrel_idtf:[Прямой угол(P; T; R)](*<-lang_ru;;*);;
+struct_Concept_right_angle_P_T_R => nrel_idtf: [Прямой угол(P; T; R)] (* <- lang_ru;; *);;
 
 struct_Concept_right_angle_P_T_R <- concept_right_angle;;
 
@@ -36,8 +36,8 @@ struct_Concept_right_angle_P_T_R  => nrel_side: struct_Ray_T_R;;
 struct_Concept_right_angle_P_T_R <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;;
-		<=nrel_sc_text_translation:
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
 		...
 		(*
 			-> rrel_example:
@@ -48,13 +48,13 @@ struct_Concept_right_angle_P_T_R <- rrel_key_sc_element:
 struct_Concept_right_angle_P_T_R  <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Прямой угол PTR)](* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Факт.утв.(Прямой угол PTR)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[ Угол PTR является прямым. P, T и R являются геометрическими точками. Геометрическая точка T является вершиной угла PTR. Лучи TP и TR являются сторонами угла PTR.]
+			[Угол PTR является прямым. P, T и R являются геометрическими точками. Геометрическая точка T является вершиной угла PTR. Лучи TP и TR являются сторонами угла PTR.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

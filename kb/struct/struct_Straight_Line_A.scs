@@ -14,7 +14,7 @@ struct_Straight_Line_A => nrel_main_idtf:
 struct_Straight_Line_A <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -26,13 +26,13 @@ struct_Straight_Line_A <- rrel_key_sc_element:
 struct_Straight_Line_A  <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Прямая a)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Прямая a)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[ a - прямая.]
+			[a - прямая.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_uninterrupted_geometric_figure;;
+sc_node_not_relation -> concept_uninterrupted_geometric_figure;;
 
-concept_uninterrupted_geometric_figure=> nrel_main_idtf:
+concept_uninterrupted_geometric_figure => nrel_main_idtf:
 	[непрерывная геометрическая фигура]
 	(*
 	<- lang_ru;;
@@ -10,51 +10,37 @@ concept_uninterrupted_geometric_figure=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_uninterrupted_geometric_figure=> nrel_idtf:[Класс непрерывных геометрических фигур](*<-lang_ru;;*);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Класс непрерывных геометрических фигур] (* <- lang_ru;; *);;
 
-concept_uninterrupted_geometric_figure=> nrel_idtf:[Понятие непрерывной геометрической фигуры](*<-lang_ru;;*);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Понятие непрерывной геометрической фигуры] (* <- lang_ru;; *);;
 
-concept_uninterrupted_geometric_figure=> nrel_idtf:[Множество непрерывных геометрических фигур](*<-lang_ru;;*);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Множество непрерывных геометрических фигур] (* <- lang_ru;; *);;
 
-concept_uninterrupted_geometric_figure=> nrel_idtf:[Множество всевозможных непрерывных геометрических фигур](*<-lang_ru;;*);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Множество всевозможных непрерывных геометрических фигур] (* <- lang_ru;; *);;
 
 concept_uninterrupted_geometric_figure <= nrel_strict_inclusion: concept_geometric_figure;;
 
 concept_uninterrupted_geometric_figure => nrel_strict_inclusion: concept_uninterrupted_geometric_figure_of_mixed_dimension;;
 
-concept_uninterrupted_geometric_figure => nrel_strict_inclusion: concept_segment;;
+concept_uninterrupted_geometric_figure => nrel_strict_inclusion: concept_line;;
 
-concept_uninterrupted_geometric_figure<= nrel_subdividing:
-	...
-	(*
-	=>nrel_main_idtf:[по признаку размерности](*<-lang_ru;;*);;
-	->concept_line;
-     concept_surface;
-	concept_geometric_body;;
-	*);;
-
-concept_uninterrupted_geometric_figure <= nrel_using_constants:
-				{
-				concept_geometric_figure
-				};;
+concept_uninterrupted_geometric_figure => nrel_strict_inclusion: concept_plane;;
 
 concept_uninterrupted_geometric_figure <- rrel_key_sc_element: 
      	...
 	(*
-	=> nrel_main_idtf: [Поясн.(непрерывная геометрическая фигура)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Поясн.(непрерывная геометрическая фигура)] (* <- lang_ru;; *);;
 	<- sc_explanation;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Непрерывная геометрическая фигура - геометрическая фигура, которая не содержит в себе точек разрыва..]
+			[Непрерывная геометрическая фигура - геометрическая фигура, которая не содержит в себе точек разрыва.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
-
-concept_uninterrupted_geometric_figure <- subject_domain_of_Euclidean_geometry;;
 
 concept_uninterrupted_geometric_figure -> rrel_example : struct_Straight_Line_A;;
 concept_uninterrupted_geometric_figure -> rrel_example : struct_Plane_P;;

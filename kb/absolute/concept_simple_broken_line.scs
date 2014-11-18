@@ -1,59 +1,58 @@
-sc_node_not_relation->concept_simple_broken_line;;
+sc_node_not_relation -> concept_simple_broken_line;;
 
-concept_simple_broken_line=>nrel_main_idtf:
-[простая ломаная]
-(*
-<-lang_ru;;
-*);
-[simple broken line]
-(*
-<-lang_en;;
-*);;
+concept_simple_broken_line => nrel_main_idtf:
+	[простая ломаная]
+	(*
+	<- lang_ru;;
+	*);
+	[simple broken line]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_simple_broken_line=> nrel_idtf:[Класс простых ломаных](*<-lang_ru;;*);;
+concept_simple_broken_line => nrel_idtf: [Класс простых ломаных] (* <- lang_ru;; *);;
 
-concept_simple_broken_line=> nrel_idtf:[Понятие простой ломаной](*<-lang_ru;;*);;
+concept_simple_broken_line => nrel_idtf: [Понятие простой ломаной] (* <- lang_ru;; *);;
 
-concept_simple_broken_line=> nrel_idtf:[Множество простых ломанных](*<-lang_ru;;*);;
+concept_simple_broken_line => nrel_idtf: [Множество простых ломанных] (* <- lang_ru;; *);;
 
-concept_simple_broken_line=> nrel_idtf:[Множество всевозможных простых ломаных](*<-lang_ru;;*);;
+concept_simple_broken_line => nrel_idtf: [Множество всевозможных простых ломаных] (* <- lang_ru;; *);;
 
 concept_simple_broken_line <= nrel_strict_inclusion: concept_polyline;;
 
 concept_simple_broken_line => nrel_strict_inclusion: concept_linear_polygon;;
 
-concept_simple_broken_line <= nrel_using_constants:
-				{
-				concept_polyline;
-				concept_segment;
-				[пересекающиеся множества*]
-				};;
-
 concept_simple_broken_line <- rrel_key_sc_element: 
-        [Опр.(простая ломаная);;] 
+     ...   
 	(*
-	<- sc_explanation;; 
+	=> nrel_main_idtf: [Опр.(простая ломаная)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Ломаная без самопересечений.]
+			[Простая ломаная - это ломаная без самопересечений.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
-
-concept_simple_broken_line <- subject_domain_of_Euclidean_geometry;;
+concept_simple_broken_line <= nrel_using_constants:
+				{
+				concept_polyline;
+				concept_segment
+				
+				};;
+				
 
 concept_simple_broken_line  <- rrel_key_sc_element: 
-...
-(*
-<-image;;
-<=nrel_sc_text_translation:
-...
+	...
 	(*
-	-> rrel_example:
-		"file://images/LomanajaKMNLST.png";;
-*);;
-*);;
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/LomanajaKMNLST.png";;
+	*);;
+	*);;

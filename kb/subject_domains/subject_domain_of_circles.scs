@@ -1,9 +1,12 @@
+sc_node_struct -> subject_domain_of_circles;;
+
 subject_domain_of_circles
 => nrel_main_idtf:
-	[Предметная область кругов]
+	[Предметная область окружностей]
 	(* <- lang_ru;; *);
 	[Subject domain of circles]
-	(* <- lang_en;; *);
-=> nrel_particular_subject_domain:
-	subject_domain_of_segments;
-	subject_domain_of_sectors;;
+	(* <- lang_en;; *);;
+	
+subject_domain_of_circles -> rrel_maximum_studied_object_class: concept_circle;;
+
+subject_domain_of_circles -> rrel_studied_object_class: concept_circle_arc;;

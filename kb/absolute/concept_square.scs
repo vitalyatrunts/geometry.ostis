@@ -1,0 +1,217 @@
+sc_node_not_relation -> concept_square;;
+
+concept_square => nrel_main_idtf:
+	[квадрат]
+	(*
+	<- lang_ru;;
+	*);
+	[square]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_square => nrel_idtf: [Класс квадратов] (* <- lang_ru;; *);;
+
+concept_square => nrel_idtf: [Правильный прямоугольник] (* <- lang_ru;; *);;
+
+concept_square => nrel_idtf: [правильный многоугольник с четырьмя сторонами] (* <- lang_ru;; *);;
+
+concept_square <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_square <= nrel_strict_inclusion: concept_rectangle;;
+
+concept_square <= nrel_strict_inclusion: concept_rhomb;;
+
+			
+concept_square <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(квадрат)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Квадрат - это ромб, все внутренние углы которого прямые.]
+			(* 
+			<- lang_ru;; 
+			*);;
+		*);;
+	*);;
+
+concept_square <= nrel_using_constants:
+				{
+				concept_rhomb;
+				concept_right_angle;
+				nrel_internal_angle
+				};;	
+	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Квадрат - правильный многоугольник с четырьмя сторонами.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; прямоугольник)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Квадрат - это прямоугольник, у которого все стороны равны.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;	
+
+
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; радиус*; вписанность*; окружность)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Радиус вписанной в квадрат окружности равен половине длины стороны квадрата.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;	
+
+
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; диагональ*; биссектриса*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Диагонали квадрата перпендикулярны и являются биссектрисами.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;	
+	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; радиус*; описанность*; окружность)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Радиус описанной около квадрата окружности равен произведению длины стороны квадрата на cos45] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;	
+	
+
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; треугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Диагонали квадрата делят его на равные треугольники.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; угол*; прямой угол)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Все углы квадрата прямые.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; площадь*; сторона* произведение*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[html] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; площадь*; диагональ* произведение*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[html] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; окружность; вписанность*; радиус*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[html] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; ось симметрии*; диагональ*; перпендикуляр*; сторона*; середина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[html] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; окружность; вписанность*; радиус*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[html] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;
+

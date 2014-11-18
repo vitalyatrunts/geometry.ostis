@@ -1,6 +1,10 @@
+sc_node_struct -> subject_domain_of_non_convex_polygons;;
+
 subject_domain_of_non_convex_polygons
 => nrel_main_idtf:
 	[Предметная область невыпуклых многоугольников]
 	(* <- lang_ru;; *);
 	[Subject domain of non convex polygons]
 	(* <- lang_en;; *);;
+	
+subject_domain_of_non_convex_polygons -> rrel_maximum_studied_object_class: concept_non_convex_polygon;;

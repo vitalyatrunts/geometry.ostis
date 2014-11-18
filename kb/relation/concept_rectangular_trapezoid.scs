@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_rectangular_trapezoid;;
+
+concept_rectangular_trapezoid => nrel_main_idtf:
+	[прямоугольная трапеция]
+	(*
+	<- lang_ru;;
+	*);
+	[rectangular trapezoid]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_rectangular_trapezoid => nrel_idtf: [Класс прямоугольных трапеций] (* <- lang_ru;; *);;
+
+concept_rectangular_trapezoid => nrel_idtf: [Понятие прямоугольная трапеции] (* <- lang_ru;; *);;
+
+concept_rectangular_trapezoid => nrel_idtf: [Множество всевозможных прямоугольных трапеций] (* <- lang_ru;; *);;
+
+concept_rectangular_trapezoid => nrel_idtf: [Множество знаков всевозможных прямоугольных трапеций] (* <- lang_ru;; *);;
+
+concept_rectangular_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
+
+concept_rectangular_trapezoid <- rrel_key_sc_element: 
+        ... 
+	(*
+	=> nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура является прямоугольной трапецией тогда и только тогда, когда является трапецией и один из углов у основания является прямым.]
+			(* 
+			<- lang_ru;; 
+			
+			*);;
+		*);;
+	*);;
+
+concept_rectangular_trapezoid <= nrel_using_constants:
+				{
+				concept_trapezoid;
+				concept_right_angle;
+				nrel_base;
+				nrel_internal_angle
+				};;
+	
+concept_trapezoid -> rrel_example : struct_Rectangular_trapeze_P_Q_R_S;;

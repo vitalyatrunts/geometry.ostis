@@ -1,3 +1,5 @@
+sc_node_struct -> subject_domain_of_quadrangles;;
+
 subject_domain_of_quadrangles
 => nrel_main_idtf:
 	[Предметная область четырехугольников]
@@ -7,3 +9,9 @@ subject_domain_of_quadrangles
 => nrel_particular_subject_domain:
 	subject_domain_of_trapezoids;
 	subject_domain_of_parallelograms;;
+	
+subject_domain_of_quadrangles -> rrel_maximum_studied_object_class: concept_quadrangle;;
+
+subject_domain_of_quadrangles -> rrel_studied_object_class: concept_trapezoid;;
+
+subject_domain_of_quadrangles -> rrel_studied_object_class: concept_parallelogram;;

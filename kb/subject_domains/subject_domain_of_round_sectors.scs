@@ -1,0 +1,10 @@
+sc_node_struct -> subject_domain_of_round_sectors;;
+
+subject_domain_of_round_sectors
+=> nrel_main_idtf:
+	[Предметная область круговых секторов]
+	(* <- lang_ru;; *);
+	[Subject domain of round sectors]
+	(* <- lang_en;; *);;
+
+subject_domain_of_round_sectors -> rrel_maximum_studied_object_class: concept_round_sector;;

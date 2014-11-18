@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_linear_angle;;
+sc_node_not_relation -> concept_linear_angle;;
 
-concept_linear_angle=> nrel_main_idtf:
+concept_linear_angle => nrel_main_idtf:
 	[линейный угол]
 	(*
 	<- lang_ru;;
@@ -10,46 +10,41 @@ concept_linear_angle=> nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-concept_linear_angle=> nrel_idtf:[Линейный угол двугранного угла](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Класс линейных углов] (* <- lang_ru;; *);;
 
-concept_linear_angle=> nrel_idtf:[Класс линейных углов](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Понятие линейного угла] (* <- lang_ru;; *);;
 
-concept_linear_angle=> nrel_idtf:[Понятие линейного угла](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Множество всевозможных линейных углов] (* <- lang_ru;; *);;
 
-concept_linear_angle=> nrel_idtf:[Множество всевозможных линейных углов](*<-lang_ru;;*);;
-
-concept_linear_angle=> nrel_idtf:[Множество знаков всевозможных линейных углов](*<-lang_ru;;*);;
+concept_linear_angle => nrel_idtf: [Множество знаков всевозможных линейных углов] (* <- lang_ru;; *);;
 
 concept_linear_angle <= nrel_strict_inclusion: concept_angle;;
 
-concept_linear_angle <= nrel_strict_inclusion: concept_planar_figure;;
-
-concept_linear_angle <= nrel_using_constants:
-				{
-                   		concept_dihedral_angle;
-                	    	nrel_face;
-               		        nrel_edge;
-               	 	    	concept_ray;
-				nrel_boundary_point;
-				nrel_perpendicularity;
-				concept_geometric_point
-				};;
+concept_linear_angle <= nrel_strict_inclusion: concept_linear_figure;;
 
 concept_linear_angle <- rrel_key_sc_element: 
      	...
 	(*
 	=> nrel_main_idtf: [Опр.(линейный угол)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Линейный угол - это угол, образованный двумя лучами, которые имеют общее начало, лежащее на ребре двугранного угла, и проведенными в обеих гранях перпендикулярно ребру.]
+			[Линейный угол - это угол, образованный двумя лучами, которые имеют общее начало, при этом точки плоскости, лежащие между этими двумя лучами, не принадлежат линейному углу.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
+
+concept_linear_angle <= nrel_using_constants:
+				{
+                concept_geometric_figure;
+				concept_ray;
+				concept_geometric_point;
+				concept_plane
+				};;	
 
 concept_linear_angle <- rrel_key_sc_element: 
         ...
@@ -64,7 +59,5 @@ concept_linear_angle <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;		
 		*);;
 	*);;
-
-concept_linear_angle <- subject_domain_of_Euclidean_geometry;;
 
 concept_linear_angle -> rrel_example : struct_Angle_L_I_N;;

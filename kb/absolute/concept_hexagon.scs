@@ -1,63 +1,54 @@
-sc_node_not_relation->concept_hexagon;;
+sc_node_not_relation -> concept_hexagon;;
 
-concept_hexagon=>nrel_main_idtf:
-[шестиугольник]
-(*
-<-lang_ru;;
-*);
-[hexagon]
-(*
-<-lang_en;;
-*);;
+concept_hexagon => nrel_main_idtf:
+	[шестиугольник]
+	(*
+	<- lang_ru;;
+	*);
+	[hexagon]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_hexagon=> nrel_idtf:[Класс шестиугольников](*<-lang_ru;;*);;
+concept_hexagon => nrel_idtf: [Класс шестиугольников] (* <- lang_ru;; *);;
 
-concept_hexagon=> nrel_idtf:[Плоский шестиугольник](*<-lang_ru;;*);;
+concept_hexagon => nrel_idtf: [Плоский шестиугольник] (* <- lang_ru;; *);;
 
-concept_hexagon=> nrel_idtf:[Понятие шестиугольника](*<-lang_ru;;*);;
+concept_hexagon => nrel_idtf: [Понятие шестиугольника] (* <- lang_ru;; *);;
 
-concept_hexagon=> nrel_idtf:[Множество всевозможных шестиугольников](*<-lang_ru;;*);;
+concept_hexagon => nrel_idtf: [Множество всевозможных шестиугольников] (* <- lang_ru;; *);;
 
-concept_hexagon=> nrel_idtf:[Множество знаков всевозможных шестиугольников](*<-lang_ru;;*);;
+concept_hexagon => nrel_idtf: [Множество знаков всевозможных шестиугольников] (* <- lang_ru;; *);;
 
-concept_hexagon=> nrel_idtf:[Многоугольник с шестью сторонами](*<-lang_ru;;*);;
+concept_hexagon => nrel_idtf: [Многоугольник с шестью сторонами] (* <- lang_ru;; *);;
 
 concept_hexagon <= nrel_strict_inclusion: concept_polygon;;
 
-concept_hexagon <= nrel_subdividing:
-	...
-	(*
-	=>nrel_main_idtf:[по признаку конгруэнтности сторон](*<-lang_ru;;*);;
+concept_hexagon => nrel_strict_inclusion: concept_right_hexagon;;
 	
-	->[правильный шестиугольник];
-	
-	[неправильный шестиугольник];;
-	*);;
-
-concept_hexagon <= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				[звено];
-				concept_angle;
-				[замкнутая ломаная]
-				};;
-
 concept_hexagon <- rrel_key_sc_element: 
         ... 
 	(*
-	=> nrel_main_idtf: [Опр.(шестиугольник)]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(шестиугольник)] (* <- lang_ru;; *);;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Шестиугольник- это геометрическая фигура, ограниченная замкнутой ломаной линией, звенья которой образуют шесть углов.]
+			[Шестиугольник- это многоугольник с шестью сторонами.]
 			(* 
 			<- lang_ru;; 
 			*);;
 		*);;
 	*);;
 
+concept_hexagon <= nrel_using_constants:
+				{
+				concept_polygon;
+				concept_segment;
+				nrel_side
+				};;	
+	
 concept_hexagon <- rrel_key_sc_element: 
         ...
 	(*
@@ -73,6 +64,5 @@ concept_hexagon <- rrel_key_sc_element:
 	*);;
 
 
-concept_hexagon -> subject_domain_of_Euclidean_geometry;;
 
 

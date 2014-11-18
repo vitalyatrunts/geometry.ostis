@@ -10,7 +10,7 @@ struct_Full_angle_P_K_P => nrel_main_idtf:
 	<- lang_en;;
 	*);;
 
-struct_Full_angle_P_K_P => nrel_idtf:[Полный угол(P; K; P)](*<-lang_ru;;*);;
+struct_Full_angle_P_K_P => nrel_idtf: [Полный угол(P; K; P)] (* <- lang_ru;; *);;
 
 struct_Full_angle_P_K_P <- concept_full_angle;;
 
@@ -31,7 +31,7 @@ struct_Full_angle_P_K_P => nrel_side: struct_Ray_K_P;;
 struct_Full_angle_P_K_P <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf:[Факт.утв.(Острый угол KLM)](*<-lang_ru;;*);;
+	=> nrel_main_idtf: [Факт.утв.(Острый угол KLM)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -47,7 +47,7 @@ struct_Full_angle_P_K_P <- rrel_key_sc_element:
 struct_Full_angle_P_K_P <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_image;; 
+		<- sc_illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*

@@ -1,6 +1,10 @@
+sc_node_struct -> subject_domain_of_straight_lines;;
+
 subject_domain_of_straight_lines
 => nrel_main_idtf:
 	[Предметная область прямых]
 	(* <- lang_ru;; *);
 	[Subject domain of straight lines]
 	(* <- lang_en;; *);;
+	
+subject_domain_of_straight_lines -> rrel_maximum_studied_object_class: concept_straight_line;;

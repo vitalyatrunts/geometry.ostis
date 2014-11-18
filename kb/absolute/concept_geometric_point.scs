@@ -1,44 +1,38 @@
-sc_node_not_relation->concept_geometric_point;;
+sc_node_not_relation -> concept_geometric_point;;
 
-concept_geometric_point=>nrel_main_idtf:
-[геометрическая точка]
-(*
-<-lang_ru;;
-*);
-[geometric point]
-(*
-<-lang_en;;
-*);;
+concept_geometric_point => nrel_main_idtf:
+	[геометрическая точка]
+	(*
+	<- lang_ru;;
+	*);
+	[geometric point]
+	(*
+	<- lang_en;;
+	*);;
 
-concept_geometric_point=> nrel_idtf:[Множество всех точек](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [Множество всех точек] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[элементарный фрагмент геометрической фигуры](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [элементарный фрагмент геометрической фигуры] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[атомарный фрагмент геометрической фигуры](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [атомарный фрагмент геометрической фигуры] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[неделимый фрагмент геометричесой фигуры](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [неделимый фрагмент геометричесой фигуры] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[элементарный фрагмент геометрического пространства](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [элементарный фрагмент геометрического пространства] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[предельно малый геометрический объект](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [предельно малый геометрический объект] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[фрагмент геометрической фигуры, не имеющий величины (длины, площади, объема)](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [фрагмент геометрической фигуры, не имеющий величины (длины, площади, объема)] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[максимальная геометрическая фигура](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [максимальная геометрическая фигура] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[Множество всевозможных геометрических точек](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [Множество всевозможных геометрических точек] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[Универсум геометрических точек](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [Универсум геометрических точек] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[одноточечная геометрическая фигура](*<-lang_ru;;*);;
+concept_geometric_point => nrel_idtf: [одноточечная геометрическая фигура] (* <- lang_ru;; *);;
 
-concept_geometric_point=> nrel_idtf:[одноэлементное множество точек](*<-lang_ru;;*);;
-
-concept_geometric_point=> nrel_idtf:[геометрическая фигура, состоящая из одной точки](*<-lang_ru;;*);;
-
-concept_geometric_point <= nrel_strict_inclusion: concept_polygon;;
-
-concept_geometric_point <- subject_domain_of_Euclidean_geometry;;
+concept_geometric_point => nrel_idtf: [одноэлементное множество точек] (* <- lang_ru;; *);;
 
 concept_geometric_point <- rrel_key_sc_element : 
 	...
@@ -48,9 +42,8 @@ concept_geometric_point <- rrel_key_sc_element :
 	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example:
-			[Геометрическая точка - это основная неделимая геометрическая фигура в пространстве, обладающая координатами,
- но не имеющая размеров, массы, направленности и каких-либо других геометрических или физических характеристик. ]
+		-> rrel_example:
+			[Геометрическая точка - это основная неделимая геометрическая фигура в пространстве, обладающая координатами, но не имеющая размеров, массы, направленности и каких-либо других геометрических или физических характеристик.]
 			(*
 			<- lang_ru;;
 			*);;
@@ -81,7 +74,7 @@ concept_geometric_point <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Какова бы ни была плоскость, существуют точки, принадлежащие этой плоскости, и точки, не принадлежащие ей.]
+			[Какова бы ни была плоскость, существуют точки, принадлежащие этой плоскости, и точки, не принадлежащие ей.]
 			(* <- lang_ru;; *);;
 		
 		*);;
