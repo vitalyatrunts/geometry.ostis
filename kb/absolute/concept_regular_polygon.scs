@@ -138,6 +138,6 @@ concept_regular_polygon <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_regular_polygon -> rrel_example : struct_Regular_Polygon_A_B_C_D_E_F;;
-concept_regular_polygon -> rrel_example : struct_Square_A_B_C_D;;
-concept_regular_polygon -> rrel_example : struct_Equilateral_triangle_X_Y_Z;;
+concept_regular_polygon -> rrel_example: struct_Regular_Polygon_A_B_C_D_E_F;;
+concept_regular_polygon -> rrel_example: struct_Square_A_B_C_D;;
+concept_regular_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

@@ -1,6 +1,6 @@
 sc_node_norole_relation -> nrel_internal_cross_lying_angles;;
 
-nrel_internal_crosswise_lying_angles => nrel_main_ru_idtf:
+nrel_internal_cross_lying_angles => nrel_main_idtf:
 	[внутренние накрест лежащие углы*]
 	(* <- lang_ru;; *);
 	[internal crosswise lying angles*]
@@ -41,11 +41,11 @@ nrel_internal_cross_lying_angles <- rrel_key_sc_element:
 nrel_internal_cross_lying_angles <= nrel_using_constants:
 	{
 	concept_angle;
-	nrel_straight_line;
+	concept_straight_line;
 	nrel_secant
 	};;
 
-nrel_internal_cross_lying_angle <- rrel_key_sc_element: 
+nrel_internal_cross_lying_angles <- rrel_key_sc_element: 
 	...
 	(*
 	<- sc_illustration;; 

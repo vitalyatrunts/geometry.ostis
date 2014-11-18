@@ -13,7 +13,7 @@ nrel_external_sided_angles -> sc_relation;;
 
 nrel_external_sided_angles -> binary_relation;;
 
-nrel_external_sided_angles -> undirected_relation;;
+nrel_external_sided_angles -> non_oriented_relation;;
 
 nrel_external_sided_angles => nrel_definitional_domain:
 	concept_planar_angle;;

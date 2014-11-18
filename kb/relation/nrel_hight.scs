@@ -1,6 +1,6 @@
 sc_node_norole_relation -> nrel_hight;;
 
-nrel_hight => nrel_main_ru_idtf:
+nrel_hight => nrel_main_idtf:
 	[высота*]
 	(* <- lang_ru;; *);
 	[height*]
@@ -50,7 +50,7 @@ nrel_hight <- rrel_key_sc_element:
 
 nrel_hight <= nrel_using_constants:
 	{
-	concept_polygom;
+	concept_polygon;
 	concept_segment;
 	nrel_perpendicular;
 	nrel_vertex;

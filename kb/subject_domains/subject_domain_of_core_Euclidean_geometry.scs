@@ -1,4 +1,3 @@
-
 sc_node_struct -> subject_domain_of_core_Euclidean_geometry;;
 
 subject_domain_of_core_Euclidean_geometry
@@ -8,14 +7,16 @@ subject_domain_of_core_Euclidean_geometry
 	[Subject domain of core Euclidean Geometry]
 	(* <- lang_en;; *);;
 
-subject_domain_of_circles -> rrel_studied_object_class: concept_geometric_figure;;
+subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: concept_geometric_figure;;
 
-subject_domain_of_circles -> rrel_studied_object_class: concept_geometric_point;;
+subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: concept_geometric_point;;
 
-subject_domain_of_circles -> rrel_studied_object_class: nrel_distance;;
+subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: nrel_distance;;
 
-subject_domain_of_circles -> rrel_studied_object_class: concept_line;;
+subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: concept_line;;
 
-subject_domain_of_circles -> rrel_studied_object_class: nrel_congruence_of_pair_of_points;;
+subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: nrel_congruence_of_pair_of_points;;
 
-subject_domain_of_circles -> rrel_studied_object_class: rrel_between;;
+subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: rrel_between;;
+
+subject_domain_of_core_Euclidean_geometry <- subject_domain;;

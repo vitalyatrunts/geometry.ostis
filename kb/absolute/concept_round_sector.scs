@@ -1,24 +1,24 @@
-sc_node_not_relation -> concept_circular_sector;;
+sc_node_not_relation -> concept_round_sector;;
 
-concept_circular_sector => nrel_main_idtf:
+concept_round_sector => nrel_main_idtf:
 	[круговой сектор]
 	(* <- lang_ru;; *);
 	[circular sector]
 	(* <- lang_en;; *);;
 
-concept_circular_sector => nrel_idtf: [Класс круговых секторов] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Класс круговых секторов] (* <- lang_ru;; *);;
 
-concept_circular_sector => nrel_idtf: [Понятие кругового сектора] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Понятие кругового сектора] (* <- lang_ru;; *);;
 
-concept_circular_sector => nrel_idtf: [Множество всевозможных круговых секторов] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Множество всевозможных круговых секторов] (* <- lang_ru;; *);;
 
-concept_circular_sector => nrel_idtf: [Множество знаков всевозможных круговых секторов] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Множество знаков всевозможных круговых секторов] (* <- lang_ru;; *);;
 
-concept_circular_sector <= nrel_strict_inclusion: concept_planar_figure;;
+concept_round_sector <= nrel_strict_inclusion: concept_planar_figure;;
 
-concept_circular_sector <= nrel_strict_inclusion: concept_flat_geometric_figure;;
+concept_round_sector <= nrel_strict_inclusion: concept_flat_geometric_figure;;
 
-concept_circular_sector <- rrel_key_sc_element: 
+concept_round_sector <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(круговой сектор)] (* <- lang_ru;; *);;
@@ -33,7 +33,7 @@ concept_circular_sector <- rrel_key_sc_element:
 	*);;
 
 
-concept_circular_sector <= nrel_using_constants:
+concept_round_sector <= nrel_using_constants:
 	{
 	concept_round;
 	concept_circle_arc;
@@ -42,7 +42,7 @@ concept_circular_sector <= nrel_using_constants:
 	nrel_nrel_central_angle
 	};;	
 	
-concept_circular_sector <- rrel_key_sc_element: 
+concept_round_sector <- rrel_key_sc_element: 
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сектор; круг; дуга; радиус*; граничная точка*; центр*)] (* <- lang_ru;; *);;
@@ -56,7 +56,7 @@ concept_circular_sector <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_circular_sector <- rrel_key_sc_element: 
+concept_round_sector <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сектор; круг; окружность; дуга; луч; планарный угол; граничная точка*; центр*; пересечение множеств*)] (* <- lang_ru;; *);;
@@ -72,7 +72,7 @@ concept_circular_sector <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_circular_sector <- rrel_key_sc_element: 
+concept_round_sector <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сектор; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;

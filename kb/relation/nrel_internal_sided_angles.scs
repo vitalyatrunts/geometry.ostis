@@ -13,7 +13,7 @@ nrel_internal_sided_angles <- sc_relation;;
 
 nrel_internal_sided_angles <- binary_relation;;
 
-nrel_internal_sided_angles <- undirected_relation;;
+nrel_internal_sided_angles <- non_oriented_relation;;
 
 nrel_internal_sided_angles => nrel_definitional_domain:
 	concept_planar_angle;;
@@ -42,11 +42,11 @@ nrel_internal_sided_angles <- rrel_key_sc_element:
 nrel_internal_sided_angles <= nrel_using_constants:
 	{
 	concept_angle;
-	nrel_straigh_line;
+	concept_straight_line;
 	nrel_secant
 	};;
 
-nrel_internal_sided_angles <= rrel_key_sc_elemen:
+nrel_internal_sided_angles <= rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
