@@ -2,13 +2,9 @@ sc_node_not_relation -> struct_Segment_A_B;;
 
 struct_Segment_A_B => nrel_main_idtf:
 	[Отрезок AB]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[Segment AB]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 struct_Segment_A_B => nrel_idtf: [Отрезок(A; B)] (* <- lang_ru;; *);;
 

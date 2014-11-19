@@ -61,7 +61,7 @@ concept_rectilinear_figure <= nrel_using_constants:
 				concept_straight_line
 				};;
 
-concept_rectilinear_figure -> rrel_example : struct_Rectilinear_three_of_points_P_Q_R;;
-concept_rectilinear_figure -> rrel_example : struct_Opened_ray_k;;
-concept_rectilinear_figure -> rrel_example : struct_Closed_ray_m;;
-concept_rectilinear_figure -> rrel_example : struct_Range_A_B;;
+concept_rectilinear_figure -> rrel_example: struct_Rectilinear_three_of_points_P_Q_R;;
+concept_rectilinear_figure -> rrel_example: struct_Opened_ray_k;;
+concept_rectilinear_figure -> rrel_example: struct_Closed_ray_m;;
+concept_rectilinear_figure -> rrel_example: struct_Range_A_B;;

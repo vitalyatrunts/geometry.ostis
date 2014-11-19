@@ -49,10 +49,10 @@ concept_geometric_figure_with_all_boundary_points <= nrel_using_constants:
 				nrel_boundary_point
 				};;
 
-concept_geometric_figure_with_all_boundary_points -> rrel_example : struct_Segment_A_B;;
+concept_geometric_figure_with_all_boundary_points -> rrel_example: struct_Segment_A_B;;
 
-concept_geometric_figure_with_all_boundary_points -> rrel_example : struct_Closed_ray_m;;
+concept_geometric_figure_with_all_boundary_points -> rrel_example: struct_Closed_ray_m;;
 
-concept_geometric_figure_with_all_boundary_points -> rrel_example : struct_Closed_half_plane_H1;;
+concept_geometric_figure_with_all_boundary_points -> rrel_example: struct_Closed_half_plane_H1;;
 
-concept_geometric_figure_with_all_boundary_points -> rrel_example : struct_Round_O_R;;
+concept_geometric_figure_with_all_boundary_points -> rrel_example: struct_Round_O_R;;

@@ -1,13 +1,27 @@
+sc_node_struct -> subject_domain_of_regular_polygons;;
+
 subject_domain_of_regular_polygons
 => nrel_main_idtf:
 	[Предметная область правильных многоугольников]
 	(* <- lang_ru;; *);
 	[Subject domain of]
 	(* <- lang_en;; *);
+	
 => nrel_particular_subject_domain:
-	{
 	subject_domain_of_regular_hexagons;
 	subject_domain_of_regular_pentagons;
 	subject_domain_of_squares;
-	subject_domain_of_equilateral_triangles
-	};;
+	subject_domain_of_equilateral_triangles;;
+	
+subject_domain_of_regular_polygons -> rrel_maximum_studied_object_class: concept_regular_polygon;;
+
+subject_domain_of_regular_polygons -> rrel_studied_object_class: concept_regular_hexagon;;
+
+subject_domain_of_regular_polygons -> rrel_studied_object_class: concept_regular_pentagon;;
+
+subject_domain_of_regular_polygons -> rrel_studied_object_class: concept_square;;
+
+subject_domain_of_regular_polygons -> rrel_studied_object_class: concept_equilateral_triangle;;
+
+subject_domain_of_regular_polygons <- subject_domain;;
+

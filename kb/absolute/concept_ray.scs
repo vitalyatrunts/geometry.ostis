@@ -91,5 +91,5 @@ concept_ray <- rrel_key_sc_element:
 	*);;
 
 concept_ray <=> nrel_analogue : concept_half_plane;;
-concept_ray -> rrel_example : struct_Opened_ray_k;;
-concept_ray -> rrel_example : struct_Closed_ray_m;;
+concept_ray -> rrel_example: struct_Opened_ray_k;;
+concept_ray -> rrel_example: struct_Closed_ray_m;;
