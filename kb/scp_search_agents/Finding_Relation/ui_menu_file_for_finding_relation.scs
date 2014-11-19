@@ -1,0 +1,50 @@
+ui_menu_file_for_finding_relation <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_finding_relation => nrel_main_idtf: 
+	[Команда поиска отношений для заданного понятия] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_relation => nrel_main_idtf: 
+	[Command of finding relation for given concept] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_relation => ui_nrel_command_template:
+	[*
+		question_finding_relation _-> ._question_finding_relation_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_finding_relation_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_relation => ui_nrel_command_lang_template: 
+	[Команда поиска отношений для заданного понятия: $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_relation => ui_nrel_command_lang_template: 
+	[Command of finding relation for given concept: $ui_arg_1] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_relation <- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:	
+		...
+		(*
+		-> rrel_example: 
+			"file://Ui_Relation.html";;
+		*);;
+	*);;
+
+ui_menu_file_for_finding_relation <- rrel_key_sc_element:
+	...
+	(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:	
+		...
+		(*
+		-> rrel_example: 
+			"file://relation.png";;
+		*);;
+	*);;
