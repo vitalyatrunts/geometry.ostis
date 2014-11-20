@@ -1,0 +1,50 @@
+ui_menu_file_for_finding_statements <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_finding_statements => nrel_main_idtf: 
+	[Команда поиска утверждений для заданного понятия] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_statements => nrel_main_idtf: 
+	[Command of finding statements for given concept] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_statements => ui_nrel_command_template:
+	[*
+		question_of_finding_statements _-> ._question_of_finding_statements_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_of_finding_statements_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_statements => ui_nrel_command_lang_template: 
+	[Команда поиска утверждений для заданного понятия: $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_statements => ui_nrel_command_lang_template: 
+	[Command of finding statements for given concept: $ui_arg_1] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_statements <- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:	
+		...
+		(*
+		-> rrel_example: 
+                           "file://Ui_Statements.html";;
+		*);;
+	*);;
+
+ui_menu_file_for_finding_statements <- rrel_key_sc_element:
+	...
+	(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:	
+		...
+		(*
+		-> rrel_example: 
+                           "file://statement.png";;
+		*);;
+	*);;
