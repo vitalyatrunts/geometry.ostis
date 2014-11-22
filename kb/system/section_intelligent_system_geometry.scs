@@ -1,0 +1,20 @@
+section_intelligent_system_geometry
+=> nrel_main_idtf:
+	[Раздел. Интеллектуальная справочная система по геометрии]
+	(* <- lang_ru;;	*);
+	[Section. Geometry intelligent system]
+	(* <- lang_en;;	*);
+<= nrel_section_decomposition:
+	{
+	section_intelligent_system_geometry_base_spec
+	(*
+	=> nrel_section_base_order:
+		section_intelligent_system_geometry_developer_guide;;
+	*);
+	section_intelligent_system_geometry_developer_guide
+	(*
+	=> nrel_section_base_order:
+		section_intelligent_system_geometry_user_guide;;
+	*);
+	section_intelligent_system_geometry_user_guide
+	};;
