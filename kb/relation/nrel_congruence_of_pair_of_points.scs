@@ -8,10 +8,8 @@ nrel_congruence_of_pair_of_points => nrel_idtf: [равенство рассто
 
 nrel_congruence_of_pair_of_points <- binary_relation; sc_relation; non_oriented_relation;;
 
-
 nrel_congruence_of_pair_of_points => nrel_definitional_domain:
 	concept_pair_of_points;;
-	
 
 nrel_congruence_of_pair_of_points => nrel_first_domain:
 	concept_pair_of_points;;
@@ -29,8 +27,6 @@ nrel_congruence_of_pair_of_points <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Конгруэнтность пары точек {t1, t2} и пары точек {t3, t4} означает то, что расстояние между точками t1 и t2 равно расстоянию между точками t3 и t4.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
