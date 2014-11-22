@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Rectangle_B_C_D_E;;
+sc_node_struct -> struct_Rectangle_B_C_D_E;;
 
 struct_Rectangle_B_C_D_E => nrel_main_idtf:
 	[Прямоугольник BCDE]
@@ -18,10 +18,10 @@ struct_Rectangle_B_C_D_E => nrel_idtf: [Прямоугольник, вершин
 
 struct_Rectangle_B_C_D_E <- concept_rectangle;;
 
-sc_node_not_relation -> struct_Geometric_point_B;;
-sc_node_not_relation -> struct_Geometric_point_C;;
-sc_node_not_relation -> struct_Geometric_point_D;;
-sc_node_not_relation -> struct_Geometric_point_E;;
+sc_node_struct -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_C;;
+sc_node_struct -> struct_Geometric_point_D;;
+sc_node_struct -> struct_Geometric_point_E;;
 
 struct_Geometric_point_B <- concept_geometric_point;;
 struct_Geometric_point_C <- concept_geometric_point;;
@@ -33,10 +33,10 @@ struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_C;;
 struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_D;;
 struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_E;;
 
-sc_node_not_relation -> struct_Segment_B;;
-sc_node_not_relation -> struct_Segment_C;;
-sc_node_not_relation -> struct_Segment_D;;
-sc_node_not_relation -> struct_Segment_E;;
+sc_node_struct -> struct_Segment_B;;
+sc_node_struct -> struct_Segment_C;;
+sc_node_struct -> struct_Segment_D;;
+sc_node_struct -> struct_Segment_E;;
 
 struct_Segment_B <- concept_segment;;
 struct_Segment_C <- concept_segment;;

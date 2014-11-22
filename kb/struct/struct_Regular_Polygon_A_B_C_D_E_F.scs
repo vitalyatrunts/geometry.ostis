@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Regular_Polyhon_A_B_C_D_E_F;;
+sc_node_struct -> struct_Regular_Polyhon_A_B_C_D_E_F;;
 
 struct_Regular_Polygon_A_B_C_D_E_F => nrel_main_idtf:
 	[Правильный многоугольник ABCDEF]
@@ -17,12 +17,12 @@ struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf: [Правильный мног�
 
 struct_Regular_Polygon_A_B_C_D_E_F <- concept_regular_polygon;;
 
-sc_node_not_relation -> struct_Geometric_point_F;;
-sc_node_not_relation -> struct_Geometric_point_A;;
-sc_node_not_relation -> struct_Geometric_point_B;;
-sc_node_not_relation -> struct_Geometric_point_C;;
-sc_node_not_relation -> struct_Geometric_point_D;;
-sc_node_not_relation -> struct_Geometric_point_E;;
+sc_node_struct -> struct_Geometric_point_F;;
+sc_node_struct -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_C;;
+sc_node_struct -> struct_Geometric_point_D;;
+sc_node_struct -> struct_Geometric_point_E;;
 
 struct_Geometric_point_F <- concept_geometric_point;;
 struct_Geometric_point_A <- concept_geometric_point;;
@@ -38,12 +38,12 @@ struct_Regular_Polygon_A_B_C_D_E_F  => nrel_vertex: struct_Geometric_point_C;;
 struct_Regular_Polygon_A_B_C_D_E_F  => nrel_vertex: struct_Geometric_point_D;;
 struct_Regular_Polygon_A_B_C_D_E_F  => nrel_vertex: struct_Geometric_point_E;;
 
-sc_node_not_relation -> struct_Segment_F;;
-sc_node_not_relation -> struct_Segment_A;;
-sc_node_not_relation -> struct_Segment_B;;
-sc_node_not_relation -> struct_Segment_C;;
-sc_node_not_relation -> struct_Segment_D;;
-sc_node_not_relation -> struct_Segment_E;;
+sc_node_struct -> struct_Segment_F;;
+sc_node_struct -> struct_Segment_A;;
+sc_node_struct -> struct_Segment_B;;
+sc_node_struct -> struct_Segment_C;;
+sc_node_struct -> struct_Segment_D;;
+sc_node_struct -> struct_Segment_E;;
 
 struct_Segment_F <- concept_segment;;
 struct_Segment_A <- concept_segment;;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Circle_O_R;;
+sc_node_struct -> struct_Circle_O_R;;
 
 struct_Circle_O_R =>  nrel_main_idtf:
 	[Окружность (O; R)]
@@ -12,13 +12,13 @@ struct_Circle_O_R =>  nrel_main_idtf:
 
 struct_Circle_O_R <- concept_circle;;
 
-sc_node_not_relation -> struct_Geometric_point_O;;
+sc_node_struct -> struct_Geometric_point_O;;
 
 struct_Geometric_point_O <- concept_geometric_point;;
 
 struct_Circle_O_R => nrel_centre: struct_Geometric_point_O;;
 
-sc_node_not_relation -> struct_Segment_R;;
+sc_node_struct -> struct_Segment_R;;
 
 struct_Segment_R <- concept_segment;;
 

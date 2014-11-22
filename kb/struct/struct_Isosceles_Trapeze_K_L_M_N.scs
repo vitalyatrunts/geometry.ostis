@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Isosceles_trapeze_K_L_M_N;;
+sc_node_struct -> struct_Isosceles_trapeze_K_L_M_N;;
 
 struct_Isosceles_trapeze_K_L_M_N => nrel_main_idtf:
 	[Равнобедренная трапеция KLMN]
@@ -18,10 +18,10 @@ struct_Isosceles_trapeze_K_L_M_N => nrel_idtf: [Равнобедренная т�
 
 struct_Isosceles_trapeze_K_L_M_N <- concept_isosceles_trapeze;;
 
-sc_node_not_relation -> struct_Geometric_point_K;;
-sc_node_not_relation -> struct_Geometric_point_L;;
-sc_node_not_relation -> struct_Geometric_point_M;;
-sc_node_not_relation -> struct_Geometric_point_N;;
+sc_node_struct -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_L;;
+sc_node_struct -> struct_Geometric_point_M;;
+sc_node_struct -> struct_Geometric_point_N;;
 
 struct_Geometric_point_K <- concept_geometric_point;;
 struct_Geometric_point_L <- concept_geometric_point;;
@@ -33,8 +33,8 @@ struct_Isosceles_trapeze_K_L_M_N  => nrel_vertex: struct_Geometric_point_L;;
 struct_Isosceles_trapeze_K_L_M_N  => nrel_vertex: struct_Geometric_point_M;;
 struct_Isosceles_trapeze_K_L_M_N  => nrel_vertex: struct_Geometric_point_N;;
 
-sc_node_not_relation -> struct_Segment_L;;
-sc_node_not_relation -> struct_Segment_N;;
+sc_node_struct -> struct_Segment_L;;
+sc_node_struct -> struct_Segment_N;;
 
 struct_Segment_L <- concept_segment;;
 struct_Segment_N <- concept_segment;;
@@ -42,8 +42,8 @@ struct_Segment_N <- concept_segment;;
 struct_Isosceles_trapeze_K_L_M_N  => nrel_lateral_side: struct_Segment_L;;
 struct_Isosceles_trapeze_K_L_M_N  => nrel_lateral_side: struct_Segment_N;;
 
-sc_node_not_relation -> struct_Segment_K;;
-sc_node_not_relation -> struct_Segment_M;;
+sc_node_struct -> struct_Segment_K;;
+sc_node_struct -> struct_Segment_M;;
 
 struct_Segment_K <- concept_segment;;
 struct_Segment_M <- concept_segment;;

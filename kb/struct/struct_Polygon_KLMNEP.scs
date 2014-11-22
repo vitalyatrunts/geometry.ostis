@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Polygon_K_L_M_N_E_P;;
+sc_node_struct -> struct_Polygon_K_L_M_N_E_P;;
 
 struct_Polygon_K_L_M_N_E_P => nrel_main_idtf:
 	[Многоугольник KLMNEP]
@@ -16,12 +16,12 @@ struct_Polygon_K_L_M_N_E_P => nrel_idtf: [Многоугольник, верши
 
 struct_Polygon_K_L_M_N_E_P <- concept_polygon;;
 
-sc_node_not_relation -> struct_Geometric_point_K;;
-sc_node_not_relation -> struct_Geometric_point_L;;
-sc_node_not_relation -> struct_Geometric_point_M;;
-sc_node_not_relation -> struct_Geometric_point_N;;
-sc_node_not_relation -> struct_Geometric_point_E;;
-sc_node_not_relation -> struct_Geometric_point_P;;
+sc_node_struct -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_L;;
+sc_node_struct -> struct_Geometric_point_M;;
+sc_node_struct -> struct_Geometric_point_N;;
+sc_node_struct -> struct_Geometric_point_E;;
+sc_node_struct -> struct_Geometric_point_P;;
 
 struct_Geometric_point_K <- concept_geometric_point;;
 struct_Geometric_point_L <- concept_geometric_point;;
@@ -37,12 +37,12 @@ struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_N;;
 struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_E;;
 struct_Polygon_K_L_M_N_E_P  => nrel_vertex: struct_Geometric_point_P;;
 
-sc_node_not_relation -> struct_Segment_K;;
-sc_node_not_relation -> struct_Segment_L;;
-sc_node_not_relation -> struct_Segment_M;;
-sc_node_not_relation -> struct_Segment_N;;
-sc_node_not_relation -> struct_Segment_E;;
-sc_node_not_relation -> struct_Segment_P;;
+sc_node_struct -> struct_Segment_K;;
+sc_node_struct -> struct_Segment_L;;
+sc_node_struct -> struct_Segment_M;;
+sc_node_struct -> struct_Segment_N;;
+sc_node_struct -> struct_Segment_E;;
+sc_node_struct -> struct_Segment_P;;
 
 struct_Segment_K <- concept_segment;;
 struct_Segment_L <- concept_segment;;
@@ -63,12 +63,12 @@ nrel_congruence -> ... (* -> struct_Segment_M; struct_Segment_P;; *);;
 //struct_Segment_M <=> nrel_congruence:  struct_Segment_P;;
 
 
-sc_node_not_relation -> struct_Angle_Alpha;;
-sc_node_not_relation -> struct_Angle_Beta;;
-sc_node_not_relation -> struct_Angle_Gamma;;
-sc_node_not_relation -> struct_Angle_Delta;;
-sc_node_not_relation -> struct_Angle_Epsilon;;
-sc_node_not_relation -> struct_Angle_Sigma;;
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Delta;;
+sc_node_struct -> struct_Angle_Epsilon;;
+sc_node_struct -> struct_Angle_Sigma;;
 
 struct_Angle_Alpha <- concept_angle;;
 struct_Angle_Beta <- concept_angle;;

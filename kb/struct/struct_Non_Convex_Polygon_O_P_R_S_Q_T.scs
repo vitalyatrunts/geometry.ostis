@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Non_convex_polygon_O_P_R_S_Q_T;;
+sc_node_struct -> struct_Non_convex_polygon_O_P_R_S_Q_T;;
 
 struct_Non_Convex_polygon_O_P_R_S_Q_T => nrel_main_idtf:
 	[Невыпуклый многоугольник OPRSQT]
@@ -16,12 +16,12 @@ struct_Non_convex_polygon_O_P_R_S_Q_T => nrel_idtf: [Невыпуклый мно
 
 struct_Non_convex_polygon_O_P_R_S_Q_T <- concept_non_convex_polygon;;
 
-sc_node_not_relation -> struct_Geometric_point_O;;
-sc_node_not_relation -> struct_Geometric_point_P;;
-sc_node_not_relation -> struct_Geometric_point_R;;
-sc_node_not_relation -> struct_Geometric_point_S;;
-sc_node_not_relation -> struct_Geometric_point_Q;;
-sc_node_not_relation -> struct_Geometric_point_T;;
+sc_node_struct -> struct_Geometric_point_O;;
+sc_node_struct -> struct_Geometric_point_P;;
+sc_node_struct -> struct_Geometric_point_R;;
+sc_node_struct -> struct_Geometric_point_S;;
+sc_node_struct -> struct_Geometric_point_Q;;
+sc_node_struct -> struct_Geometric_point_T;;
 
 struct_Geometric_point_O <- concept_geometric_point;;
 struct_Geometric_point_P <- concept_geometric_point;;
@@ -37,12 +37,12 @@ struct_Non_convex_polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_S;
 struct_Non_convex_polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_Q;;
 struct_Non_convex_polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_T;;
 
-sc_node_not_relation -> struct_Segment_O;;
-sc_node_not_relation -> struct_Segment_P;;
-sc_node_not_relation -> struct_Segment_R;;
-sc_node_not_relation -> struct_Segment_S;;
-sc_node_not_relation -> struct_Segment_Q;;
-sc_node_not_relation -> struct_Segment_T;;
+sc_node_struct -> struct_Segment_O;;
+sc_node_struct -> struct_Segment_P;;
+sc_node_struct -> struct_Segment_R;;
+sc_node_struct -> struct_Segment_S;;
+sc_node_struct -> struct_Segment_Q;;
+sc_node_struct -> struct_Segment_T;;
 
 struct_Segment_O <- concept_segment;;
 struct_Segment_P <- concept_segment;;
@@ -58,12 +58,12 @@ struct_Non_convex_polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_S;;
 struct_Non_convex_polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_Q;;
 struct_Non_convex_polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_T;;
 
-sc_node_not_relation -> struct_Angle_Alpha;;
-sc_node_not_relation -> struct_Angle_Beta;;
-sc_node_not_relation -> struct_Angle_Gamma;;
-sc_node_not_relation -> struct_Angle_Delta;;
-sc_node_not_relation -> struct_Angle_Epsilon;;
-sc_node_not_relation -> struct_Angle_Sigma;;
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Delta;;
+sc_node_struct -> struct_Angle_Epsilon;;
+sc_node_struct -> struct_Angle_Sigma;;
 
 struct_Angle_Alpha <- concept_angle;;
 struct_Angle_Beta <- concept_angle;;

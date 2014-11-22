@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Opened_ray_k;;
+sc_node_struct -> struct_Opened_ray_k;;
 
 struct_Opened_ray_k => nrel_main_idtf:
 	[Открытый луч k]
@@ -16,7 +16,7 @@ struct_Opened_ray_k => nrel_idtf: [Открытая полупрямая k] (* <
 
 struct_Opened_ray_k <- concept_opened_ray;;
 
-sc_node_not_relation -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_A;;
 
 struct_Geometric_point_A <- concept_geometric_point;;
 

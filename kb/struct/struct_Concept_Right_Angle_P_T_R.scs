@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Concept_right_angle_P_T_R;;
+sc_node_struct -> struct_Concept_right_angle_P_T_R;;
 
 struct_Concept_Right_Angle_P_T_R => nrel_main_idtf:
 	[Прямой угол PTR]
@@ -14,9 +14,9 @@ struct_Concept_right_angle_P_T_R => nrel_idtf: [Прямой угол(P; T; R)] 
 
 struct_Concept_right_angle_P_T_R <- concept_right_angle;;
 
-sc_node_not_relation -> struct_Geometric_point_P;;
-sc_node_not_relation -> struct_Geometric_point_T;;
-sc_node_not_relation -> struct_Geometric_point_R;;
+sc_node_struct -> struct_Geometric_point_P;;
+sc_node_struct -> struct_Geometric_point_T;;
+sc_node_struct -> struct_Geometric_point_R;;
 
 struct_Geometric_point_P <- concept_geometric_point;;
 struct_Geometric_point_T <- concept_geometric_point;;
@@ -24,8 +24,8 @@ struct_Geometric_point_R <- concept_geometric_point;;
 
 struct_Concept_right_angle_P_T_R  => nrel_vertex: struct_Geometric_point_T;;
 
-sc_node_not_relation -> struct_Ray_T_P;;
-sc_node_not_relation -> struct_Ray_T_R;;
+sc_node_struct -> struct_Ray_T_P;;
+sc_node_struct -> struct_Ray_T_R;;
 
 struct_Ray_T_P <- concept_ray;;
 struct_Ray_T_R <- concept_ray;;

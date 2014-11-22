@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Equilateral_triangle_X_Y_Z;;
+sc_node_struct -> struct_Equilateral_triangle_X_Y_Z;;
 
 struct_Equilateral_triangle_X_Y_Z => nrel_main_idtf:
 	[Равносторонний треугольник XYZ]
@@ -20,9 +20,9 @@ struct_Equilateral_triangle_X_Y_Z => nrel_idtf: [Треугольник, вер�
 
 struct_Equilateral_triangle_X_Y_Z <- concept_equilateral_triangle;;
 
-sc_node_not_relation -> struct_Geometric_point_X;;
-sc_node_not_relation -> struct_Geometric_point_Y;;
-sc_node_not_relation -> struct_Geometric_point_Z;;
+sc_node_struct -> struct_Geometric_point_X;;
+sc_node_struct -> struct_Geometric_point_Y;;
+sc_node_struct -> struct_Geometric_point_Z;;
 
 struct_Geometric_point_X <- concept_geometric_point;;
 struct_Geometric_point_Y <- concept_geometric_point;;
@@ -32,9 +32,9 @@ struct_Equilateral_triangle_X_Y_Z => nrel_vertex: struct_Geometric_point_X;;
 struct_Equilateral_triangle_X_Y_Z => nrel_vertex: struct_Geometric_point_Y;;
 struct_Equilateral_triangle_X_Y_Z => nrel_vertex: struct_Geometric_point_Z;;
 
-sc_node_not_relation -> struct_Segment_X;;
-sc_node_not_relation -> struct_Segment_Y;;
-sc_node_not_relation -> struct_Segment_Z;;
+sc_node_struct -> struct_Segment_X;;
+sc_node_struct -> struct_Segment_Y;;
+sc_node_struct -> struct_Segment_Z;;
 
 struct_Segment_X <- concept_segment;;
 struct_Segment_Y <- concept_segment;;
@@ -46,9 +46,9 @@ struct_Equilateral_triangle_X_Y_Z => nrel_side: struct_Segment_Z;;
 
 nrel_congruence -> ... (* -> struct_Segment_Y; struct_Segment_X; struct_Segment_Z;; *);;
 
-sc_node_not_relation -> struct_Angle_Alpha;;
-sc_node_not_relation -> struct_Angle_Beta;;
-sc_node_not_relation -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Gamma;;
 
 struct_Angle_Alpha <- concept_angle;;
 struct_Angle_Beta <- concept_angle;;
