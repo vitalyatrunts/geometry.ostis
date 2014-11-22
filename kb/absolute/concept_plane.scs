@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_plane;;
 
 concept_plane => nrel_main_idtf:
 	[плоскость]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[plane]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 
 concept_plane => nrel_idtf: [Класс плоскостей] (* <- lang_ru;; *);;

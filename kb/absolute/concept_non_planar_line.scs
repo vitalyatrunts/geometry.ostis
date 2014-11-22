@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_non_planar_line;;
 
 concept_non_planar_line => nrel_main_idtf:
 	[непланарная линия]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[non planar line]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_non_planar_line <= nrel_strict_inclusion: concept_line;;
 
@@ -21,16 +17,14 @@ concept_non_planar_line <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Линия, все точки которой не лежат в одной плоскости, называется непланарной.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			[Линия, не все точки которой лежат в одной плоскости, называется непланарной.]
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_non_planar_line <= nrel_using_constants:
-				{
-				concept_line;
-				concept_plane;
-				concept_geometric_point
-				};;
+	{
+	concept_line;
+	concept_plane;
+	concept_geometric_point
+	};;

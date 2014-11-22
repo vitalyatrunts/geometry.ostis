@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_irregular_polygon;;
 
 concept_irregular_polygon => nrel_main_idtf:
 	[неправильный многоугольник]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[irregular polygon]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_irregular_polygon => nrel_idtf: [Класс неправильных многоугольников] (* <- lang_ru;; *);;
 
@@ -30,18 +26,16 @@ concept_irregular_polygon <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Множество является неправильным многоугольником тогда и только тогда, когда оно является выпуклым многоугольником, у которого стороны не равны между собой.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_irregular_polygon <= nrel_using_constants:
-				{
-				concept_angle;
-				concept_convex_polygon;
-				nrel_side
-				};;
+	{
+	concept_angle;
+	concept_convex_polygon;
+	nrel_side
+	};;
 
 
 concept_irregular_polygon -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;

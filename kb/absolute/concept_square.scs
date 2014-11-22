@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_square;;
 
 concept_square => nrel_main_idtf:
 	[квадрат]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[square]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_square => nrel_idtf: [Класс квадратов] (* <- lang_ru;; *);;
 
@@ -33,18 +29,16 @@ concept_square <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Квадрат - это ромб, все внутренние углы которого прямые.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_square <= nrel_using_constants:
-				{
-				concept_rhomb;
-				concept_right_angle;
-				nrel_internal_angle
-				};;	
+	{
+	concept_rhomb;
+	concept_right_angle;
+	nrel_internal_angle
+	};;	
 	
 concept_square <- rrel_key_sc_element: 
         ...
@@ -171,7 +165,6 @@ concept_square <- rrel_key_sc_element:
 		-> rrel_example: 
 			[html] (* <- lang_ru;; *);;
 		*);;
-		
 	*);;
 	
 concept_square <- rrel_key_sc_element: 

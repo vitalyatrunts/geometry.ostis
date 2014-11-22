@@ -39,10 +39,10 @@ concept_closed_ray <- rrel_key_sc_element:
 	*);;
 
 concept_closed_ray <= nrel_using_constants:
-				{
-				concept_ray;
-                nrel_boundary_point
-				};;	
+	{
+	concept_ray;
+	nrel_boundary_point
+	};;	
 	
 
 concept_closed_ray <=> nrel_analogue: concept_closed_half_plane;;

@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_planar_figure;;
 
 concept_planar_figure => nrel_main_idtf:
 	[планарная геометрическая фигура]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[planar figure]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;; *);;
 
 concept_planar_figure => nrel_idtf: [фигура, лежащая в плоскости] (* <- lang_ru;; *);;
 
@@ -52,18 +48,16 @@ concept_planar_figure <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Планарная геометрическая фигура - это геометрическая фигура, все точки которой лежат в одной плоскости.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_planar_figure <= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				concept_geometric_point;
-				concept_plane
-				};;
+	{
+	concept_geometric_figure;
+	concept_geometric_point;
+	concept_plane
+	};;
 
 concept_planar_figure -> rrel_example: concept_Non_linear_three_tuple_of_points_A_B_C;;
 concept_planar_figure -> rrel_example: struct_Rectilinear_three_of_points_P_Q_R;;

@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_rectangle;;
 
 concept_rectangle => nrel_main_idtf:
 	[прямоугольник]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[rectangle]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_rectangle => nrel_idtf: [Класс прямоугольников] (* <- lang_ru;; *);;
 
@@ -32,17 +28,15 @@ concept_rectangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Прямоугольник - параллелограмм, у которого все углы прямые.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_rectangle <= nrel_using_constants:
-				{
-				concept_parallelogram;
-				concept_right_angle
-				};;	
+	{
+	concept_parallelogram;
+	concept_right_angle
+	};;	
 	
 concept_rectangle <- rrel_key_sc_element:
 	... 
@@ -131,10 +125,7 @@ concept_rectangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого прямоугольника выполняется следующее числовое соотношение
-			 S = a * b ,
-где S - площадь указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.
-]
+			[Для каждого прямоугольника выполняется следующее числовое соотношение S = a * b ,где S - площадь указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
@@ -143,26 +134,14 @@ concept_rectangle <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
-	<- sc_illustration;;
-	<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-		"file://images/rectangle_diagonal.png";;
-		*);;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Диагонали прямоугольника равны, d - диагональ указанного прямоугольника,
-a - сторона указанного прямоугольника,
-b - смежная сторона указанной стороне данного прямоугольника.
-]
+			[Диагонали прямоугольника равны и вычисляются по формуле: d^2 = a^2+b^2, где d - диагональ указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-
 
 
 concept_rectangle -> rrel_example: struct_Rectangle_B_C_D_E;;

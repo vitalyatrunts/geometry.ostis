@@ -22,9 +22,9 @@ concept_convex_polygon <= nrel_subdividing:
 	=> nrel_main_idtf: [Разбиение по признаку количества сторон] (* <- lang_ru;; *);;
 
 	-> concept_triangle;
-	  concept_quadrilateral;
-	  concept_pentagon;	
-	  concept_hexagon;;
+	   concept_quadrilateral;
+	   concept_pentagon;	
+	   concept_hexagon;;
 	*);;
 		
 concept_convex_polygon <- rrel_key_sc_element: 
@@ -41,16 +41,13 @@ concept_convex_polygon <- rrel_key_sc_element:
 		*);;
 	*);;
 
-	
 concept_convex_polygon <= nrel_using_constants:
-				{
-				concept_polygon;
-				concept_half_plane;
-				concept_straight_line;
-				nrel_side
-				};;
-				
-
+	{
+	concept_polygon;
+	concept_half_plane;
+	concept_straight_line;
+	nrel_side
+	};;
 
 concept_convex_polygon <= nrel_subdividing:
 	...

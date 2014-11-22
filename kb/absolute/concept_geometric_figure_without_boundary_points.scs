@@ -1,14 +1,10 @@
 sc_node_not_relation -> concept_geometric_figure_without_boundary_points;;
 
 concept_geometric_figure_without_boundary_points => nrel_main_idtf:
-[геометрическая фигура, в состав которой не входит ни одной граничной точки]
-(*
-<- lang_ru;;
-*);
-[geometric figure without boundary points]
-(*
-<- lang_en;;
-*);;
+	[геометрическая фигура, в состав которой не входит ни одной граничной точки]
+	(* <- lang_ru;;	*);
+	[geometric figure without boundary points]
+	(* <- lang_en;; *);;
 
 concept_geometric_figure_without_boundary_points => nrel_idtf: [Класс геометрических фигур, в состав которых не входит ни одной граничной точки] (* <- lang_ru;; *);;
 
@@ -26,7 +22,7 @@ concept_geometric_figure_without_boundary_points => nrel_strict_inclusion: conce
 
 
 
-concept_geometric_figure_without_boundary_points <- rrel_key_sc_element : 
+concept_geometric_figure_without_boundary_points <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(геометрическая фигура, в состав которой не входит ни одной граничной точки)] (* <- lang_ru;; *);;
@@ -37,17 +33,15 @@ concept_geometric_figure_without_boundary_points <- rrel_key_sc_element :
 		-> rrel_example:
 			[Геометрической фигурой, в состав которой не входит ни одной граничной точки называют геометрическую фигуру, 
 в состав которой не входит ни одной её граничной точки.]
-			(*
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;;	*);;
 		*);;
 	*);;
 
 concept_geometric_figure_without_boundary_points <= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				nrel_boundary_point
-				};;	
+	{
+	concept_geometric_figure;
+	nrel_boundary_point
+	};;	
 	
 concept_geometric_figure_without_boundary_points -> rrel_example: struct_Range_A_B;;
 

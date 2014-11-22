@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_round;;
 
 concept_round => nrel_main_idtf:
 	[круг]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[round]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_round => nrel_idtf: [Класс кругов] (* <- lang_ru;; *);;
 
@@ -36,21 +32,19 @@ concept_round <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Круг - это непрерывная геометрическая фигура, состоящая из всех точек плоскости, расстояние от которых до данной точки не больше заданного.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 
 concept_round <= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_uninterrupted_geometric_figure;
-				concept_plane;
-				nrel_distance;
-				concept_quantity
-				};;
+	{
+	concept_geometric_point;
+	concept_uninterrupted_geometric_figure;
+	concept_plane;
+	nrel_distance;
+	concept_quantity
+	};;
 					
 	
 concept_round <- rrel_key_sc_element: 
@@ -80,7 +74,4 @@ concept_round <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-
-
 

@@ -75,15 +75,8 @@ concept_polyline <- rrel_key_sc_element:
 	<= nrel_sc_text_translation: 
 		...
 			(*
-              	-> rrel_example: 
-			[Пример простой ломаной]
-			(* <- lang_ru;; *);;
 			-> rrel_example: 
-			"file://images/LomanajaKMNLST.png";;
-               -> rrel_example: 
-			[Пример сложной ломаной]
-			(* <- lang_ru;; *);;
-               -> rrel_example: 
+			"file://images/LomanajaKMNLST.png";
 			"file://images/LomanajaLMNOPR.png";;
 			*);; 
 	*);;

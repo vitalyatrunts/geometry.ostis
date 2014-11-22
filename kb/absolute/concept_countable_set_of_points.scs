@@ -13,7 +13,7 @@ concept_countable_set_of_points <= nrel_strict_inclusion: concept_geometric_figu
 concept_countable_set_of_points => nrel_strict_inclusion: concept_pair_of_points;;
 concept_countable_set_of_points => nrel_strict_inclusion: concept_three_tuple_of_points;;
 
-concept_countable_set_of_points <- rrel_key_sc_element : 
+concept_countable_set_of_points <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(счетное множество точек)] (* <- lang_ru;; *);;
@@ -27,10 +27,10 @@ concept_countable_set_of_points <- rrel_key_sc_element :
 		*);;
 	*);;
 
-concept_countable_set_of_points <= nrel_using_constants :
-					{
-					concept_geometric_point
-					};;
+concept_countable_set_of_points <= nrel_using_constants:
+	{
+	concept_geometric_point
+	};;
 	
 concept_countable_set_of_points -> rrel_example: struct_Rectilinear_three_of_points_P_Q_R;;
 

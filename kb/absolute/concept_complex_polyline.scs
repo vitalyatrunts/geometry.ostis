@@ -30,10 +30,10 @@ concept_complex_polyline <- rrel_key_sc_element:
 	*);; 
 
 concept_complex_polyline <= nrel_using_constants:
-				{
-				concept_polyline;
-				concept_segment
-				};;
+	{
+	concept_polyline;
+	concept_segment
+	};;
 				
 
 concept_complex_polyline <- rrel_key_sc_element: 

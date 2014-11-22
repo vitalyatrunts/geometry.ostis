@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_circle_arc;;
 
 concept_circle_arc => nrel_main_idtf:
 	[дуга]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[circle arc]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;; *);;
 
 concept_circle_arc => nrel_idtf: [Класс дуг] (* <- lang_ru;; *);;
 
@@ -31,9 +27,7 @@ concept_circle_arc <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Дуга окружности это любая из двух частей окружности, на которые ее делят две лежащие на ней точки.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
@@ -54,8 +48,7 @@ concept_circle_arc <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Длина дуги вычисляется по формуле 
-LaTeX: L = 2 \pi R \frac{\alpha}{360^\circ} , где L – длина дуги, LaTeX: \alpha – центральный угол в градусах,
+			[Длина дуги вычисляется по формуле L= pi*a*R/180, где L – длина дуги, a – центральный угол в градусах,
 R – радиус окружности.]
 			(* <- lang_ru;; *);;
 		*);;
@@ -71,12 +64,7 @@ concept_circle_arc <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Дуги, заключенные между параллельными хордами, равны.]
-			(* <- lang_ru;; *);;
-		-> rrel_example: 
-			[Для каждой непрямолинейной тройки точек существует единственный треугольник,
-вершинами которых являются указанные три точки.]
-			(* <- lang_ru;; *);;
-		
+			(* <- lang_ru;; *);;			
 		*);;
 	*);;
 

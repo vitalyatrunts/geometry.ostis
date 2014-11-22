@@ -1,14 +1,10 @@
 sc_node_not_relation -> concept_rectilinear_figure;;
 
 concept_rectilinear_figure => nrel_main_idtf:
-[прямолинейная фигура]
-(*
-<- lang_ru;;
-*);
-[rectilinear figure]
-(*
-<- lang_en;;
-*);;
+	[прямолинейная фигура]
+	(* <- lang_ru;; *);
+	[rectilinear figure]
+	(* <- lang_en;;	*);;
 
 concept_rectilinear_figure => nrel_idtf: [прямолинейная геометрическая фигура] (* <- lang_ru;; *);;
 
@@ -48,18 +44,16 @@ concept_rectilinear_figure <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Прямолинейна фигура - это геометрическая фигура, все точки которой лежат на одной прямой.]
-			(* 
-			<- lang_ru;;
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_rectilinear_figure <= nrel_using_constants:
-				{
-				concept_geometric_figure;
-				concept_geometric_point;
-				concept_straight_line
-				};;
+	{
+	concept_geometric_figure;
+	concept_geometric_point;
+	concept_straight_line
+	};;
 
 concept_rectilinear_figure -> rrel_example: struct_Rectilinear_three_of_points_P_Q_R;;
 concept_rectilinear_figure -> rrel_example: struct_Opened_ray_k;;

@@ -51,15 +51,15 @@ concept_angle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Понятие угла является теоретико-множественным объединением понятий линейного угла и планарного угла.]
-			(* 	<- lang_ru;; *);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_angle <= nrel_using_constants:
-		{
-		concept_planar_angle;
-		concept_linear_angle
-		};;
+	{
+	concept_planar_angle;
+	concept_linear_angle
+	};;
 	
 concept_angle <- rrel_key_sc_element: 
 	...

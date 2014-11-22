@@ -1,14 +1,10 @@
 sc_node_not_relation -> concept_triangle;;
 
 concept_triangle => nrel_main_idtf:
-[треугольник]
-(*
-<- lang_ru;;
-*);
-[triangle]
-(*
-<- lang_en;;
-*);;
+	[треугольник]
+	(* <- lang_ru;;	*);
+	[triangle]
+	(* <- lang_en;;	*);;
 
 concept_triangle => nrel_idtf: [Класс треугольников] (* <- lang_ru;; *);;
 
@@ -45,17 +41,15 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Треугольник - это могоугольник с тремя сторонами.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_triangle <= nrel_using_constants:
-				{
-				concept_polygon;
-				nrel_side
-				};;	
+	{
+	concept_polygon;
+	nrel_side
+	};;	
 	
 concept_triangle <- rrel_key_sc_element: 
 	... 
