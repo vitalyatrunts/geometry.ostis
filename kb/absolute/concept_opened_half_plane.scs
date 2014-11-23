@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_opened_half_plane;;
 
 concept_opened_half_plane => nrel_main_idtf:
 	[открытая полуплоскость]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[opened half plane]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;; *);;
 
 concept_opened_half_plane => nrel_idtf: [Класс открытых полуплоскостей] (* <- lang_ru;; *);;
 
@@ -42,18 +38,16 @@ concept_opened_half_plane <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Открытая полуплоскость - это полуплоскость, которая не включает в себя прямую, являющуюся ее границей.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_opened_half_plane <= nrel_using_constants:
-				{
-				concept_half_plane;
-				concept_straight_line;
-				nrel_bound
-				};;
+	{
+	concept_half_plane;
+	concept_straight_line;
+	nrel_bound
+	};;
 
 concept_opened_half_plane <=> nrel_analogue: concept_opened_ray;;
 

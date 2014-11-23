@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Obtuse_triangle_L_D_K;;
+sc_node_struct -> struct_Obtuse_triangle_L_D_K;;
 
 struct_Obtuse_triangle_L_D_K => nrel_main_idtf:
 	[Тупоугольный треугольник LDK]
@@ -18,9 +18,9 @@ struct_Obtuse_triangle_L_D_K => nrel_idtf: [Треугольник, вершин
 
 struct_Obtuse_triangle_L_D_K <- concept_obtuse_triangle;;
 
-sc_node_not_relation -> struct_Geometric_point_L;;
-sc_node_not_relation -> struct_Geometric_point_D;;
-sc_node_not_relation -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_L;;
+sc_node_struct -> struct_Geometric_point_D;;
+sc_node_struct -> struct_Geometric_point_K;;
 
 struct_Geometric_point_L <- concept_geometric_point;;
 struct_Geometric_point_D <- concept_geometric_point;;
@@ -30,9 +30,9 @@ struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_L;;
 struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_D;;
 struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_K;;
 
-sc_node_not_relation -> struct_Segment_L;;
-sc_node_not_relation -> struct_Segment_D;;
-sc_node_not_relation -> struct_Segment_K;;
+sc_node_struct -> struct_Segment_L;;
+sc_node_struct -> struct_Segment_D;;
+sc_node_struct -> struct_Segment_K;;
 
 struct_Segment_L <- concept_segment;;
 struct_Segment_D <- concept_segment;;
@@ -42,9 +42,9 @@ struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_L;;
 struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_D;;
 struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_K;;
 
-sc_node_not_relation -> struct_Obtuse_angle_Alpha;;
-sc_node_not_relation -> struct_Obtuse_angle_Beta;;
-sc_node_not_relation -> struct_Obtuse_angle_Gamma;;
+sc_node_struct -> struct_Obtuse_angle_Alpha;;
+sc_node_struct -> struct_Obtuse_angle_Beta;;
+sc_node_struct -> struct_Obtuse_angle_Gamma;;
 
 struct_Obtuse_angle_Alpha <- concept_obtuse_angle;;
 struct_Obtuse_angle_Beta <- concept_obtuse_angle;;

@@ -30,14 +30,12 @@ concept_discret_geometric_figure <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Дискретная геометрическая фигура - это геометрическая фигура, которая задается дискретным множеством, элементами которого есть геометрические точки.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_discret_geometric_figure <= nrel_using_constants:
-				{
-                    concept_geometric_point
-				};;	
+	{
+	concept_geometric_point
+	};;	
 	

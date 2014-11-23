@@ -25,8 +25,8 @@ concept_closed_polyline <- rrel_key_sc_element:
 	*);;
 
 concept_closed_polyline <= nrel_using_constants:
-				{
-				concept_geometric_point;
-				concept_polyline;
-				nrel_boundary_point
-				};;
+	{
+	concept_geometric_point;
+	concept_polyline;
+	nrel_boundary_point
+	};;

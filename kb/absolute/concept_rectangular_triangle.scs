@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_rectangular_triangle;;
 
 concept_rectangular_triangle => nrel_main_idtf:
 	[прямоугольный треугольник]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[rectangular triangle]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;; *);;
 
 concept_rectangular_triangle => nrel_idtf: [Класс прямоугольных треугольников] (* <- lang_ru;; *);;
 
@@ -31,18 +27,16 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Прямоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является прямым углом.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_rectangular_triangle <= nrel_using_constants:
-				{
-				concept_triangle;
-				nrel_internal_angle;
-				concept_right_angle
-				};;
+	{
+	concept_triangle;
+	nrel_internal_angle;
+	concept_right_angle
+	};;
 	
 	
 concept_rectangular_triangle <- rrel_key_sc_element: 
@@ -262,10 +256,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение (*
--> rrel_example:
-"file://images/Pifagor.png";;
-*);;, где a, b - катеты указанного прямоугольного треугольника, c – гипотенуза указанного прямоугольного треугольника.]
+			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение: a^2 + b^2 = c^2, где a, b - катеты указанного прямоугольного треугольника, c – гипотенуза указанного прямоугольного треугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
@@ -356,16 +347,9 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение где r - радиус окружности, вписанной в указанный прямоугольный треугольник, a, b - катеты указанного прямоугольного треугольника,
- c – гипотенуза указанного прямоугольного треугольника.]
+			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение: r = (a+b-c)/2, где r - радиус окружности, вписанной в указанный прямоугольный треугольник, a, b - катеты указанного прямоугольного треугольника, c – гипотенуза указанного прямоугольного треугольника.]
 			(* <- lang_ru;; *);;
 		*);
-...
-(*
--> rrel_example:
-"file://images/radius_vpis.png";;
-*);;
-	*);
 
 	...
 	(*
@@ -375,17 +359,9 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение где S - площадь указанного прямоугольного треугольника, a, b - катеты указанного прямоугольного треугольника.]
+			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение: S = (a*b)/2, где S - площадь указанного прямоугольного треугольника, a, b - катеты указанного прямоугольного треугольника.]
 			(* <- lang_ru;; *);;
-		*);
-
-...
-(*
--> rrel_example:
-"file://images/rectangular_triangle_s.png";;
-*);;
+		*);;
 	*);;
-
-
-
+*);;
 concept_rectangular_triangle -> rrel_example: struct_Rectangular_triangle_D_F_G;;

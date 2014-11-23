@@ -1,14 +1,10 @@
 sc_node_not_relation -> concept_rectangular_trapezoid;;
 
 concept_rectangular_trapezoid => nrel_main_idtf:
-[прямоугольная трапеция]
-(*
-<- lang_ru;;
-*);
-[rectangular trapezoid]
-(*
-<- lang_en;;
-*);;
+	[прямоугольная трапеция]
+	(* <- lang_ru;;	*);
+	[rectangular trapezoid]
+	(* <- lang_en;;	*);;
 
 concept_rectangular_trapezoid => nrel_idtf: [Класс прямоугольных трапеций] (* <- lang_ru;; *);;
 
@@ -30,19 +26,16 @@ concept_rectangular_trapezoid <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Множество является прямоугольной трапецией тогда и только тогда, когда является трапецией и один из углов у основания является прямым.]
-			(* 
-			<- lang_ru;; 
-			
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 	
 concept_rectangular_trapezoid <= nrel_using_constants:
-				{
-				concept_trapezoid;
-				nrel_base;
-				nrel_hight;
-				nrel_internal_angle
-				};;
+	{
+	concept_trapezoid;
+	nrel_base;
+	nrel_hight;
+	nrel_internal_angle
+	};;
 				
 concept_trapezoid -> rrel_example: struct_Rectangular_trapeze_P_Q_R_S;;

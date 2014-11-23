@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_simple_broken_line;;
 
 concept_simple_broken_line => nrel_main_idtf:
 	[простая ломаная]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[simple broken line]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_simple_broken_line => nrel_idtf: [Класс простых ломаных] (* <- lang_ru;; *);;
 
@@ -32,17 +28,14 @@ concept_simple_broken_line <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Простая ломаная - это ломаная без самопересечений.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 concept_simple_broken_line <= nrel_using_constants:
-				{
-				concept_polyline;
-				concept_segment
-				
-				};;
+	{
+	concept_polyline;
+	concept_segment
+	};;
 				
 
 concept_simple_broken_line  <- rrel_key_sc_element: 
@@ -54,5 +47,5 @@ concept_simple_broken_line  <- rrel_key_sc_element:
 		(*
 		-> rrel_example:
 			"file://images/LomanajaKMNLST.png";;
-	*);;
+		*);;
 	*);;

@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_non_rectlinear_three_tuple_of_points;;
 
 concept_non_rectilinear_thiple_of_points => nrel_main_idtf:
 	[непрямолинейная тройка точек]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[non rectilinear triple of points]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_non_rectlinear_three_tuple_of_points => nrel_idtf: [Класс непрямолинейных троек точек] (* <- lang_ru;; *);;
 
@@ -36,18 +32,16 @@ concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Непрямолинейная тройка точек - тройка точек, для которой не существует прямой, на которой лежат все три элемента заданной тройки.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_non_rectlinear_three_tuple_of_points <= nrel_using_constants:
-				{
-				concept_three_tuple_of_points;
-				concept_geometric_point;
-				concept_straight_line
-				};;
+	{
+	concept_three_tuple_of_points;
+	concept_geometric_point;
+	concept_straight_line
+	};;
 
 concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element: 
         ...

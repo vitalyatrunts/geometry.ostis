@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Rectangular_triangle_D_F_G;;
+sc_node_struct -> struct_Rectangular_triangle_D_F_G;;
 
 struct_Rectangular_triangle_D_F_G => nrel_main_idtf:
 	[Прямоугольный треугольник DFG]
@@ -18,9 +18,9 @@ struct_Rectangular_triangle_D_F_G => nrel_idtf: [Треугольник, вер�
 
 struct_Rectangular_triangle_D_F_G <- concept_rectangular_triangle;;
 
-sc_node_not_relation -> struct_Geometric_point_D;;
-sc_node_not_relation -> struct_Geometric_point_F;;
-sc_node_not_relation -> struct_Geometric_point_G;;
+sc_node_struct -> struct_Geometric_point_D;;
+sc_node_struct -> struct_Geometric_point_F;;
+sc_node_struct -> struct_Geometric_point_G;;
 
 struct_Geometric_point_D <- concept_geometric_point;;
 struct_Geometric_point_F <- concept_geometric_point;;
@@ -30,9 +30,9 @@ struct_Rectangular_triangle_D_F_G => nrel_vertex: struct_Geometric_point_D;;
 struct_Rectangular_triangle_D_F_G => nrel_vertex: struct_Geometric_point_F;;
 struct_Rectangular_triangle_D_F_G => nrel_vertex: struct_Geometric_point_G;;
 
-sc_node_not_relation -> struct_Segment_D;;
-sc_node_not_relation -> struct_Segment_F;;
-sc_node_not_relation -> struct_Segment_G;;
+sc_node_struct -> struct_Segment_D;;
+sc_node_struct -> struct_Segment_F;;
+sc_node_struct -> struct_Segment_G;;
 
  struct_Segment_D <- concept_segment;;
  struct_Segment_F <- concept_segment;;

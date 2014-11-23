@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Versatile_trapezoid_Z_X_C_V;;
+sc_node_struct -> struct_Versatile_trapezoid_Z_X_C_V;;
 
 struct_Versatile_trapezoid_Z_X_C_V => nrel_main_idtf:
 	[Разносторонняя трапеция ZXCV]
@@ -18,10 +18,10 @@ struct_Versatile_trapezoid_Z_X_C_V => nrel_idtf: [Разносторонняя �
 
 struct_Versatile_trapezoid_Z_X_C_V <- concept_versatile_trapezoid;;
 
-sc_node_not_relation -> struct_Geometric_point_Z;;
-sc_node_not_relation -> struct_Geometric_point_X;;
-sc_node_not_relation -> struct_Geometric_point_C;;
-sc_node_not_relation -> struct_Geometric_point_V;;
+sc_node_struct -> struct_Geometric_point_Z;;
+sc_node_struct -> struct_Geometric_point_X;;
+sc_node_struct -> struct_Geometric_point_C;;
+sc_node_struct -> struct_Geometric_point_V;;
 
 struct_Geometric_point_Z <- concept_geometric_point;;
 struct_Geometric_point_X <- concept_geometric_point;;
@@ -33,8 +33,8 @@ struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_X;;
 struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_C;;
 struct_Versatile_trapezoid_Z_X_C_V  => nrel_vertex: struct_Geometric_point_V;;
 
-sc_node_not_relation -> struct_Segment_X;;
-sc_node_not_relation -> struct_Segment_V;;
+sc_node_struct -> struct_Segment_X;;
+sc_node_struct -> struct_Segment_V;;
 
 struct_Segment_X <- concept_segment;;
 struct_Segment_V <- concept_segment;;
@@ -42,8 +42,8 @@ struct_Segment_V <- concept_segment;;
 struct_Versatile_trapezoid_Z_X_C_V  => nrel_lateral_side: struct_Segment_X;;
 struct_Versatile_trapezoid_Z_X_C_V  => nrel_lateral_side: struct_Segment_V;;
 
-sc_node_not_relation -> struct_Segment_Z;;
-sc_node_not_relation -> struct_Segment_C;;
+sc_node_struct -> struct_Segment_Z;;
+sc_node_struct -> struct_Segment_C;;
 
 struct_Segment_Z <- concept_segment;;
 struct_Segment_C <- concept_segment;;
@@ -63,10 +63,10 @@ struct_Segment_Z => nrel_boundary_point: struct_Geometric_point_V;;
 struct_Segment_Z => nrel_boundary_point: struct_Geometric_point_Z;;
 struct_Segment_X => nrel_boundary_point: struct_Geometric_point_Z;;
 
-sc_node_not_relation -> struct_Angle_Alpha;;
-sc_node_not_relation -> struct_Angle_Beta;;
-sc_node_not_relation -> struct_Angle_Gamma;;
-sc_node_not_relation -> struct_Angle_Sigma;;
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Sigma;;
 
 struct_Angle_Alpha <- concept_angle;;
 struct_Angle_Beta <- concept_angle;;

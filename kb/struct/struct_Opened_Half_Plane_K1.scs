@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Opened_Half_Plane_K1;;
+sc_node_struct -> struct_Opened_Half_Plane_K1;;
 
 struct_Opened_Half_Plane_K1 => nrel_main_idtf:
 	[Открытая полуплоскость K1]
@@ -13,7 +13,7 @@ struct_Opened_Half_Plane_K1 => nrel_main_idtf:
 
 struct_Opened_Half_Plane_K1 <- concept_opened_half_plane;;
 
-sc_node_not_relation -> struct_Straight_line_K;;
+sc_node_struct -> struct_Straight_line_K;;
 
 struct_Straight_line_K <- concept_straight_line;;
 

@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Rectangular_Trapeze_P_Q_R_S;;
+sc_node_struct -> struct_Rectangular_Trapeze_P_Q_R_S;;
 
 struct_Rectangular_Trapeze_P_Q_R_ => nrel_main_idtf:
 	[Прямоугольная трапеция PQRS]
@@ -18,10 +18,10 @@ struct_Rectangular_Trapeze_P_Q_R_S => nrel_idtf: [Прямоугольная т�
 
 struct_Rectangular_Trapeze_P_Q_R_S <- concept_rectangular_trapeze;;
 
-sc_node_not_relation -> struct_Geometric_point_P;;
-sc_node_not_relation -> struct_Geometric_point_Q;;
-sc_node_not_relation -> struct_Geometric_point_R;;
-sc_node_not_relation -> struct_Geometric_point_S;;
+sc_node_struct -> struct_Geometric_point_P;;
+sc_node_struct -> struct_Geometric_point_Q;;
+sc_node_struct -> struct_Geometric_point_R;;
+sc_node_struct -> struct_Geometric_point_S;;
 
 struct_Geometric_point_P <- concept_geometric_point;;
 struct_Geometric_point_Q <- concept_geometric_point;;
@@ -33,8 +33,8 @@ struct_Rectangular_Trapeze_P_Q_R_S  => nrel_vertex: struct_Geometric_point_Q;;
 struct_Rectangular_Trapeze_P_Q_R_S  => nrel_vertex: struct_Geometric_point_R;;
 struct_Rectangular_Trapeze_P_Q_R_S  => nrel_vertex: struct_Geometric_point_S;;
 
-sc_node_not_relation -> struct_Segment_Q;;
-sc_node_not_relation -> struct_Segment_S;;
+sc_node_struct -> struct_Segment_Q;;
+sc_node_struct -> struct_Segment_S;;
 
 struct_Segment_Q <- concept_segment;;
 struct_Segment_S <- concept_segment;;
@@ -42,8 +42,8 @@ struct_Segment_S <- concept_segment;;
 struct_Rectangular_Trapeze_P_Q_R_S  => nrel_lateral_side: struct_Segment_Q;;
 struct_Rectangular_Trapeze_P_Q_R_S  => nrel_lateral_side: struct_Segment_S;;
 
-sc_node_not_relation -> struct_Segment_P;;
-sc_node_not_relation -> struct_Segment_R;;
+sc_node_struct -> struct_Segment_P;;
+sc_node_struct -> struct_Segment_R;;
 
 struct_Segment_P <- concept_segment;;
 struct_Segment_R <- concept_segment;;

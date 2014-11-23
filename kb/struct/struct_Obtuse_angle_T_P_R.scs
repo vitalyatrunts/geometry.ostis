@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Obtuse_angle_T_P_R;;
+sc_node_struct -> struct_Obtuse_angle_T_P_R;;
 
 struct_Obtuse_angle_T_P_R => nrel_main_idtf:
 	[Тупой угол TPR]
@@ -14,9 +14,9 @@ struct_Obtuse_angle_T_P_R => nrel_idtf: [Тупой угол(T; P; R)] (* <- lan
 
 struct_Obtuse_angle_T_P_R <- concept_obtuse_angle;;
 
-sc_node_not_relation -> struct_Geometric_point_T;;
-sc_node_not_relation -> struct_Geometric_point_P;;
-sc_node_not_relation -> struct_Geometric_point_R;;
+sc_node_struct -> struct_Geometric_point_T;;
+sc_node_struct -> struct_Geometric_point_P;;
+sc_node_struct -> struct_Geometric_point_R;;
 
 struct_Geometric_point_T <- concept_geometric_point;;
 struct_Geometric_point_P <- concept_geometric_point;;
@@ -24,8 +24,8 @@ struct_Geometric_point_R <- concept_geometric_point;;
 
 struct_Obtuse_angle_T_P_R => nrel_vertex: struct_Geometric_point_P;;
 
-sc_node_not_relation -> struct_Ray_P_T;;
-sc_node_not_relation -> struct_Ray_P_R;;
+sc_node_struct -> struct_Ray_P_T;;
+sc_node_struct -> struct_Ray_P_R;;
 
 struct_Ray_P_T <- concept_ray;;
 struct_Ray_P_R <- concept_ray;;

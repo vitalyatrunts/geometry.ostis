@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Scalene_triangle_K_L_M;;
+sc_node_struct -> struct_Scalene_triangle_K_L_M;;
 
 struct_Scalene_triangle_K_L_ =>  nrel_main_idtf: [Разносторонний треугольник KLM] (* <- lang_ru;; *);;
 struct_Scalene_triangle_K_L_ =>  nrel_main_idtf: [Scalene triangle KLM] (* <- lang_en;; *);;
@@ -11,9 +11,9 @@ struct_Scalene_triangle_K_L_ =>  nrel_idtf: [Треугольник, верши�
 
 struct_Scalene_triangle_K_L_M <- concept_scalene_triangle;;
 
-sc_node_not_relation -> struct_Geometric_point_K;;
-sc_node_not_relation -> struct_Geometric_point_L;;
-sc_node_not_relation -> struct_Geometric_point_M;;
+sc_node_struct -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_L;;
+sc_node_struct -> struct_Geometric_point_M;;
 
 struct_Geometric_point_K <- concept_geometric_point;;
 struct_Geometric_point_L <- concept_geometric_point;;
@@ -23,9 +23,9 @@ struct_Scalene_triangle_K_L_M => nrel_vertex: struct_Geometric_point_K;;
 struct_Scalene_triangle_K_L_M => nrel_vertex: struct_Geometric_point_L;;
 struct_Scalene_triangle_K_L_M => nrel_vertex: struct_Geometric_point_M;;
 
-sc_node_not_relation -> struct_Segment_K;;
-sc_node_not_relation -> struct_Segment_L;;
-sc_node_not_relation -> struct_Segment_M;;
+sc_node_struct -> struct_Segment_K;;
+sc_node_struct -> struct_Segment_L;;
+sc_node_struct -> struct_Segment_M;;
 
  struct_Segment_K <- concept_segment;;
  struct_Segment_L <- concept_segment;;
@@ -44,9 +44,9 @@ struct_Segment_K => nrel_boundary_point: struct_Geometric_point_L;;
 struct_Segment_L => nrel_boundary_point: struct_Geometric_point_M;;
 struct_Segment_K => nrel_boundary_point: struct_Geometric_point_M;;
 
-sc_node_not_relation -> struct_Acute_angle_Alpha;;
-sc_node_not_relation -> struct_Acute_angle_Beta;;
-sc_node_not_relation -> struct_Acute_angle_Gamma;;
+sc_node_struct -> struct_Acute_angle_Alpha;;
+sc_node_struct -> struct_Acute_angle_Beta;;
+sc_node_struct -> struct_Acute_angle_Gamma;;
 
 struct_Acute_angle_Alpha <- concept_acute_angle;;
 struct_Acute_angle_Beta <- concept_acute_angle;;

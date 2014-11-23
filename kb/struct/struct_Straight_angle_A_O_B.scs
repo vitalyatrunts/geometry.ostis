@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Straight_angle_A_O_B;;
+sc_node_struct -> struct_Straight_angle_A_O_B;;
 
 struct_Straight_angle_A_O_B => nrel_main_idtf:
 	[Развернутый угол AOB]
@@ -14,9 +14,9 @@ struct_Straight_angle_A_O_B => nrel_idtf: [Развернутый угол(A; O;
 
 struct_Straight_angle_A_O_B <- concept_straight_angle;;
 
-sc_node_not_relation -> struct_Geometric_point_O;;
-sc_node_not_relation -> struct_Geometric_point_A;;
-sc_node_not_relation -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_O;;
+sc_node_struct -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_B;;
 
 struct_Geometric_point_O <- concept_geometric_point;;
 struct_Geometric_point_A <- concept_geometric_point;;
@@ -24,8 +24,8 @@ struct_Geometric_point_B <- concept_geometric_point;;
 
 struct_Straight_angle_A_O_B => nrel_vertex: struct_Geometric_point_O;;
 
-sc_node_not_relation -> struct_Ray_A_O;;
-sc_node_not_relation -> struct_Ray_O_B;;
+sc_node_struct -> struct_Ray_A_O;;
+sc_node_struct -> struct_Ray_O_B;;
 struct_Ray_A_O <- concept_ray;;
 struct_Ray_O_B <- concept_ray;;
 

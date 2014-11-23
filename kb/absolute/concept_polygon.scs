@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_polygon;;
 
 concept_polygon => nrel_main_idtf:
 	[многоугольник]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[polygon]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_polygon => nrel_idtf: [n-угольник] (* <- lang_ru;; *);;
 
@@ -46,9 +42,7 @@ concept_polygon <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Многоугольник - это геометрическая фигура, которая состоит из точек замкнутой ломаной, которая является границей, и точек плоскости таких, что любой луч, проведенный из такой точки, пересекает границу.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
@@ -156,15 +150,8 @@ concept_polygon <- rrel_key_sc_element:
 		-> rrel_example: 
 			[Площадь многоугольника, в который вписана окружность, равна половине произведения периметра многоугольника на радиус этой окружности.]
 			(* <- lang_ru;; *);;
-         -> rrel_example: 
-		"file://images/formula4.png";;
-          -> rrel_example: 
-			[Для любого многоугольника истинно это равенство, где S - площадь многоугольника; p - периметр многоугольника; r - радиус вписанной окружности.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-
+        *);;
+*);;
 
 concept_polygon -> rrel_example: struct_Polyhon_K_L_M_N_E_P;;
 concept_polygon -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;

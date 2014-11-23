@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_surface;;
 
 concept_surface => nrel_main_idtf:
 	[поверхность]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[surface]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_surface => nrel_idtf: [Класс поверхностей] (* <- lang_ru;; *);;
 
@@ -57,12 +53,9 @@ concept_surface <- rrel_key_sc_element:
 	*);;
 
 concept_half_plane <= nrel_using_constants:
-				{
-				concept_line
-				
-				};;
-				
+	{
+	concept_line
+	};;				
 
 concept_surface -> rrel_example: struct_Sphere_A_R;;
-
 concept_surface -> rrel_example: struct_Plane_P;;

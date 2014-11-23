@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_quadrilateral;;
 
 concept_quadrilateral => nrel_main_idtf:
 	[четырехугольник]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[quadrilateral]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_quadrilateral => nrel_idtf: [Класс четырехугольников] (* <- lang_ru;; *);;
 
@@ -40,20 +36,17 @@ concept_quadrilateral <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Четырехугольник - многоугольник, состоящий из четырёх вершин, никакие три из которых не лежат на одной прямой, и четырёх сторон, попарно соединяющих эти точки.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_quadrilateral <= nrel_using_constants:
-				{
-				concept_polygon;
-				nrel_side;
-				nrel_vertex;
-				concept_straight_line
-				
-				};;
+	{
+	concept_polygon;
+	nrel_side;
+	nrel_vertex;
+	concept_straight_line
+	};;
 
 concept_quadrilateral <- rrel_key_sc_element: 
 	...
@@ -175,17 +168,10 @@ concept_quadrilateral <- rrel_key_sc_element:
 	*);;
 
 
-
 concept_quadrilateral -> rrel_example: struct_Rhomb_E_F_G_H;;
-
 concept_quadrilateral -> rrel_example: struct_Rectangle_B_C_D_E;;
-
 concept_quadrilateral -> rrel_example: struct_Square_A_B_C_D;;
-
 concept_quadrilateral -> rrel_example: struct_Parallelogram_A_B_C_D;;
-
 concept_quadrilateral -> rrel_example: struct_Isosceles_trapeze_K_L_M_N;;
-
 concept_quadrilateral -> rrel_example: struct_Rectangular_Trapeze_P_Q_R_S;;
-
 concept_quadrilateral -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Segment_A_B;;
+sc_node_struct -> struct_Segment_A_B;;
 
 struct_Segment_A_B => nrel_main_idtf:
 	[Отрезок AB]
@@ -14,8 +14,8 @@ struct_Segment_A_B => nrel_idtf: [Отрезок(A; B)] (* <- lang_ru;; *);;
 
 struct_Segment_A_B <- concept_segment;;
 
-sc_node_not_relation -> struct_Geometric_point_A;;
-sc_node_not_relation -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_B;;
 
 struct_Geometric_point_A <- concept_geometric_point;;
 struct_Geometric_point_B <- concept_geometric_point;;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Acute_Angle_K_L_M;;
+sc_node_struct -> struct_Acute_Angle_K_L_M;;
 
 struct_Acute_Angle_K_L_M => nrel_main_idtf:
 	[Острый угол KLM]
@@ -14,9 +14,9 @@ struct_Acute_Angle_K_L_M => nrel_idtf: [Острый угол(K; L; M)] (* <- la
 
 struct_Acute_Angle_K_L_M <- concept_acute_angle;;
 
-sc_node_not_relation -> struct_Geometric_point_K;;
-sc_node_not_relation -> struct_Geometric_point_L;;
-sc_node_not_relation -> struct_Geometric_point_M;;
+sc_node_struct -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_L;;
+sc_node_struct -> struct_Geometric_point_M;;
 
 struct_Geometric_point_K <- concept_geometric_point;;
 struct_Geometric_point_L <- concept_geometric_point;;
@@ -24,8 +24,8 @@ struct_Geometric_point_M <- concept_geometric_point;;
 
 struct_Acute_Angle_K_L_M => nrel_vertex: struct_Geometric_point_L;;
 
-sc_node_not_relation -> struct_Ray_L_K;;
-sc_node_not_relation -> struct_Ray_L_M;;
+sc_node_struct -> struct_Ray_L_K;;
+sc_node_struct -> struct_Ray_L_M;;
 struct_Ray_L_K <- concept_ray;;
 struct_Ray_L_M <- concept_ray;;
 

@@ -2,13 +2,9 @@ sc_node_not_relation -> concept_opened_ray;;
 
 concept_opened_ray => nrel_main_idtf:
 	[открытый луч]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[opened ray]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
 
 concept_opened_ray => nrel_idtf: [Открытая полупрямая] (* <- lang_ru;; *);;
 
@@ -24,7 +20,7 @@ concept_opened_ray <= nrel_strict_inclusion: concept_ray;;
 
 concept_opened_ray <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
 
-concept_triangle <- rrel_key_sc_element: 
+concept_opened_ray <- rrel_key_sc_element: 
         ... 
 	(*
 	=> nrel_main_idtf: [Опр.(открый луч)] (* <- lang_ru;; *);;
@@ -34,17 +30,15 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Открытым лучом называют луч, который не включает свою граничную точку.]
-			(* 
-			<- lang_ru;; 
-			*);;
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 concept_opened_ray <= nrel_using_constants:
-				{
-				concept_ray;
-				nrel_boundary_point
-				};;
+	{
+	concept_ray;
+	nrel_boundary_point
+	};;
 
 concept_opened_ray <=> nrel_antipode: concept_closed_ray;;
 

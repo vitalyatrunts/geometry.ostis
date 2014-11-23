@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Irregular_polygon_K_A_B_C_D_E;;
+sc_node_struct -> struct_Irregular_polygon_K_A_B_C_D_E;;
 
 struct_Irregular_polygon_K_A_B_C_D_E => nrel_main_idtf:
 	[Неправильный многоугольник KABCDE]
@@ -16,12 +16,12 @@ struct_Irregular_polygon_K_A_B_C_D_E => nrel_idtf: [Неправильный м�
 
 struct_Irregular_polygon_K_A_B_C_D_E <- concept_irregular_polygon;;
 
-sc_node_not_relation -> struct_Geometric_point_K;;
-sc_node_not_relation -> struct_Geometric_point_A;;
-sc_node_not_relation -> struct_Geometric_point_B;;
-sc_node_not_relation -> struct_Geometric_point_C;;
-sc_node_not_relation -> struct_Geometric_point_D;;
-sc_node_not_relation -> struct_Geometric_point_E;;
+sc_node_struct -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_C;;
+sc_node_struct -> struct_Geometric_point_D;;
+sc_node_struct -> struct_Geometric_point_E;;
 
 struct_Geometric_point_K <- concept_geometric_point;;
 struct_Geometric_point_A <- concept_geometric_point;;
@@ -37,12 +37,12 @@ struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_C;;
 struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_D;;
 struct_Irregular_polygon_K_A_B_C_D_E  => nrel_vertex: struct_Geometric_point_E;;
 
-sc_node_not_relation -> struct_Segment_K;;
-sc_node_not_relation -> struct_Segment_A;;
-sc_node_not_relation -> struct_Segment_B;;
-sc_node_not_relation -> struct_Segment_C;;
-sc_node_not_relation -> struct_Segment_D;;
-sc_node_not_relation -> struct_Segment_E;;
+sc_node_struct -> struct_Segment_K;;
+sc_node_struct -> struct_Segment_A;;
+sc_node_struct -> struct_Segment_B;;
+sc_node_struct -> struct_Segment_C;;
+sc_node_struct -> struct_Segment_D;;
+sc_node_struct -> struct_Segment_E;;
 
 struct_Segment_K <- concept_segment;;
 struct_Segment_A <- concept_segment;;
@@ -58,12 +58,12 @@ struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_C;;
 struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_D;;
 struct_Irregular_polygon_K_A_B_C_D_E  => nrel_side: struct_Segment_E;;
 
-sc_node_not_relation -> struct_Angle_Alpha;;
-sc_node_not_relation -> struct_Angle_Beta;;
-sc_node_not_relation -> struct_Angle_Gamma;;
-sc_node_not_relation -> struct_Angle_Delta;;
-sc_node_not_relation -> struct_Angle_Epsilon;;
-sc_node_not_relation -> struct_Angle_Sigma;;
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Delta;;
+sc_node_struct -> struct_Angle_Epsilon;;
+sc_node_struct -> struct_Angle_Sigma;;
 
 struct_Angle_Alpha <- concept_angle;;
 struct_Angle_Beta <- concept_angle;;

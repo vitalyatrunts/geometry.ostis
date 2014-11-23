@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Acute_angled_triangle_O_S_T;;
+sc_node_struct -> struct_Acute_angled_triangle_O_S_T;;
 
 struct_Acute_angled_triangle_O_S_T => nrel_main_idtf:
 	[Остроугольный треугольник OST]
@@ -19,9 +19,9 @@ struct_Acute_angled_triangle_O_S_T => nrel_idtf: [Треугольник, вер
 struct_Acute_angled_triangle_O_S_T <- concept_acute_angled_triangle;;
 struct_Acute_angled_triangle_O_S_T <- concept_scalene_triangle;;
 
-sc_node_not_relation -> struct_Geometric_point_O;;
-sc_node_not_relation -> struct_Geometric_point_S;;
-sc_node_not_relation -> struct_Geometric_point_T;;
+sc_node_struct -> struct_Geometric_point_O;;
+sc_node_struct -> struct_Geometric_point_S;;
+sc_node_struct -> struct_Geometric_point_T;;
 
 struct_Geometric_point_O <- concept_geometric_point;;
 struct_Geometric_point_S <- concept_geometric_point;;
@@ -31,9 +31,9 @@ struct_Acute_angled_triangle_O_S_T => nrel_vertex: struct_Geometric_point_O;;
 struct_Acute_angled_triangle_O_S_T => nrel_vertex: struct_Geometric_point_S;;
 struct_Acute_angled_triangle_O_S_T => nrel_vertex: struct_Geometric_point_T;;
 
-sc_node_not_relation -> struct_Segment_O;;
-sc_node_not_relation -> struct_Segment_S;;
-sc_node_not_relation -> struct_Segment_T;;
+sc_node_struct -> struct_Segment_O;;
+sc_node_struct -> struct_Segment_S;;
+sc_node_struct -> struct_Segment_T;;
 
  struct_Segment_O <- concept_segment;;
  struct_Segment_S <- concept_segment;;
@@ -43,9 +43,9 @@ struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_O;;
 struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_S;;
 struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_T;;
 
-sc_node_not_relation -> struct_Acute_angle_Alpha;;
-sc_node_not_relation -> struct_Acute_angle_Beta;;
-sc_node_not_relation -> struct_Acute_angle_Gamma;;
+sc_node_struct -> struct_Acute_angle_Alpha;;
+sc_node_struct -> struct_Acute_angle_Beta;;
+sc_node_struct -> struct_Acute_angle_Gamma;;
 
 struct_Acute_angle_Alpha <- concept_acute_angle;;
 struct_Acute_angle_Beta <- concept_acute_angle;;

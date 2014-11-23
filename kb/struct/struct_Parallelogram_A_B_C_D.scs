@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Parallelogram_A_B_C_D;;
+sc_node_struct -> struct_Parallelogram_A_B_C_D;;
 
 struct_Parallelogram_A_B_C_D => nrel_main_idtf:
 	[Параллелограмм ABCD]
@@ -16,10 +16,10 @@ struct_Parallelogram_A_B_C_D => nrel_idtf: [Параллелограмм, вер
 
 struct_Parallelogram_A_B_C_D <- concept_parallelogram;;
 
-sc_node_not_relation -> struct_Geometric_point_A;;
-sc_node_not_relation -> struct_Geometric_point_B;;
-sc_node_not_relation -> struct_Geometric_point_C;;
-sc_node_not_relation -> struct_Geometric_point_D;;
+sc_node_struct -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_C;;
+sc_node_struct -> struct_Geometric_point_D;;
 
 struct_Geometric_point_A <- concept_geometric_point;;
 struct_Geometric_point_B <- concept_geometric_point;;
@@ -31,8 +31,8 @@ struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_B;;
 struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_C;;
 struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_D;;
 
-sc_node_not_relation -> struct_Segment_A;;
-sc_node_not_relation -> struct_Segment_C;;
+sc_node_struct -> struct_Segment_A;;
+sc_node_struct -> struct_Segment_C;;
 
 struct_Segment_A <- concept_segment;;
 struct_Segment_C <- concept_segment;;
@@ -43,8 +43,8 @@ struct_Parallelogram_A_B_C_D  => nrel_lateral_side: struct_Segment_C;;
 nrel_congruence -> ... (* -> struct_Segment_A; struct_Segment_C;; *);;
 //struct_Segment_A <=> nrel_congruence: struct_Segment_C;;
 
-sc_node_not_relation -> struct_Segment_B;;
-sc_node_not_relation -> struct_Segment_D;;
+sc_node_struct -> struct_Segment_B;;
+sc_node_struct -> struct_Segment_D;;
 
 struct_Segment_B <- concept_segment;;
 struct_Segment_D <- concept_segment;;
@@ -67,10 +67,10 @@ struct_Segment_B => nrel_boundary_point: struct_Geometric_point_C;;
 struct_Segment_C => nrel_boundary_point: struct_Geometric_point_D;;
 struct_Segment_D => nrel_boundary_point: struct_Geometric_point_D;;
 
-sc_node_not_relation -> struct_Angle_Alpha;;
-sc_node_not_relation -> struct_Angle_Beta;;
-sc_node_not_relation -> struct_Angle_Gamma;;
-sc_node_not_relation -> struct_Angle_Sigma;;
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Sigma;;
 
 struct_Angle_Alpha <- concept_angle;;
 struct_Angle_Beta <- concept_angle;;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> struct_Non_convex_angle_A_B_K;;
+sc_node_struct -> struct_Non_convex_angle_A_B_K;;
 
 struct_Non_convex_angle_A_B_K => nrel_main_idtf:
 	[Невыпуклый угол ABK]
@@ -14,9 +14,9 @@ struct_Non_convex_angle_A_B_K => nrel_idtf: [Невыпуклый угол(A; B;
 
 struct_Non_convex_angle_A_B_K <- concept_non_convex_angle;;
 
-sc_node_not_relation -> struct_Geometric_point_A;;
-sc_node_not_relation -> struct_Geometric_point_B;;
-sc_node_not_relation -> struct_Geometric_point_K;;
+sc_node_struct -> struct_Geometric_point_A;;
+sc_node_struct -> struct_Geometric_point_B;;
+sc_node_struct -> struct_Geometric_point_K;;
 
 struct_Geometric_point_A <- concept_geometric_point;;
 struct_Geometric_point_B <- concept_geometric_point;;
@@ -24,8 +24,8 @@ struct_Geometric_point_K <- concept_geometric_point;;
 
 struct_Non_convex_angle_A_B_K => nrel_vertex: struct_Geometric_point_B;;
 
-sc_node_not_relation -> struct_Ray_B_A;;
-sc_node_not_relation -> struct_Ray_B_K;;
+sc_node_struct -> struct_Ray_B_A;;
+sc_node_struct -> struct_Ray_B_K;;
 struct_Ray_B_A <- concept_ray;;
 struct_Ray_B_K <- concept_ray;;
 

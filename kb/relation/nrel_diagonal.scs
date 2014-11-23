@@ -14,7 +14,7 @@ nrel_diagonal <- binary_relation;;
 
 nrel_diagonal <- oriented_relation;;
 
-nrel_diagonal => nrel_definitional_domain : 
+nrel_diagonal => nrel_definitional_domain: 
 	...
 	(*
 	<= nrel_combination: 
@@ -60,9 +60,7 @@ nrel_diagonal <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого многоугольника выполняется следующее числовое соотношение,] (* <- lang_ru;; *);
-			"file://images/nrel_diagonal.png";
-			[где d – число диагоналей в многоугольнике, n – число вершин многоугольника.]
+			[Для каждого многоугольника выполняется следующее числовое соотношение: d = (n^2-3n)/2, где d – число диагоналей в многоугольнике, n – число вершин многоугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

@@ -6,19 +6,19 @@ nrel_cathetus => nrel_main_idtf:
 	[cathetus*]
 	(* <- lang_en;; *);;
 
-nrel_leg => nrel_idtf: [быть катетом*] (* <- lang_ru;; *);;
+nrel_cathetus => nrel_idtf: [быть катетом*] (* <- lang_ru;; *);;
 
-nrel_leg => nrel_idtf: [катет прямоугольного треугольника*] (* <- lang_ru;; *);;
+nrel_cathetus => nrel_idtf: [катет прямоугольного треугольника*] (* <- lang_ru;; *);;
 
-nrel_leg => nrel_idtf: [быть катетом прямоугольного треугольника*] (* <- lang_ru;; *);;
+nrel_cathetus => nrel_idtf: [быть катетом прямоугольного треугольника*] (* <- lang_ru;; *);;
 
 nrel_bound <- sc_relation;;
 
-nrel_leg <- binary_relation;;
+nrel_cathetus <- binary_relation;;
 
-nrel_leg <- oriented_relation;;
+nrel_cathetus <- oriented_relation;;
 
-nrel_leg => nrel_definitional_domain:
+nrel_cathetus => nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination: 
@@ -29,13 +29,13 @@ nrel_leg => nrel_definitional_domain:
 	*);;	
 	
 
-nrel_leg => nrel_first_domain: 
+nrel_cathetus => nrel_first_domain: 
 	concept_right_triangle;;
 
-nrel_leg => nrel_second_domain: 
+nrel_cathetus => nrel_second_domain: 
 	concept_segment;;
 
-nrel_leg <- rrel_key_sc_element: 
+nrel_cathetus <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(катет*)] (* <- lang_ru;; *);;
@@ -49,7 +49,7 @@ nrel_leg <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_leg <= nrel_using_constants:
+nrel_cathetus <= nrel_using_constants:
 	{
 	concept_right_triangle;
 	concept_right_angle;
@@ -58,7 +58,7 @@ nrel_leg <= nrel_using_constants:
 	nrel_adjacent
 	};;	
 	
-nrel_leg <- rrel_key_sc_element:
+nrel_cathetus <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*)] (* <- lang_ru;; *);;
@@ -67,14 +67,12 @@ nrel_leg <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого прямоугольного треугольника выполняется числовое соотношение:] (* <- lang_ru;; *);
-			"file://images/nrel_leg.png";
- 			[где a, b – величины длин катетов этого треугольника,  c – величина длины гипотенузы того же треугольника.]
+			[Для каждого прямоугольного треугольника выполняется числовое соотношение: c^2 = a^2 + b^2, где a, b – величины длин катетов этого треугольника,  c – величина длины гипотенузы того же треугольника.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-nrel_leg <- rrel_key_sc_element:
+nrel_cathetus <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(гипотенуза*; катет*)] (* <- lang_ru;; *);;
@@ -88,7 +86,7 @@ nrel_leg <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_leg <- rrel_key_sc_element:
+nrel_cathetus <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; высота*; совпадение*)] (* <- lang_ru;; *);;
@@ -102,7 +100,7 @@ nrel_leg <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_leg <- rrel_key_sc_element:
+nrel_cathetus <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; площадь*; катет*)] (* <- lang_ru;; *);;
@@ -116,7 +114,7 @@ nrel_leg <- rrel_key_sc_element:
 		*);;
 	*);;
 
-nrel_leg <- rrel_key_sc_element:
+nrel_cathetus <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; противолежащий*; гипотенуза*)] (* <- lang_ru;; *);;
@@ -125,7 +123,7 @@ nrel_leg <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Катет, лежащий против угла в , равен половине гипотенузы.]
+			[Катет, лежащий против угла 30 градусов, равен половине гипотенузы.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
