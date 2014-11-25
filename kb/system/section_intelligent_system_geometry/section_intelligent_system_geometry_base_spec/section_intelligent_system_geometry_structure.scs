@@ -1,10 +1,35 @@
 section_intelligent_system_geometry_structure
 => nrel_main_idtf:
 	[Раздел. Состав ИСС по геометрии]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;;	*);
 	[Section. Geometry system structure]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;;	*);;
+
+section_intelligent_system_geometry_structure
+= [*^"file://section_intelligent_system_geometry_structure.scsi"*];;
+
+section_intelligent_system_geometry_structure -> rrel_key_sc_element:
+	intelligent_system_geometry;;
+
+intelligent_system_geometry_kb
+=> nrel_main_idtf:
+	[База знаний интеллектуальной справочной системы по геометрии]
+	(* <- lang_ru;;	*);
+	[Geometry intelligent system knowledge base]
+	(* <- lang_en;;	*);;
+
+intelligent_system_geometry_kpm
+=> nrel_main_idtf:
+	[Машина обработки знаний интеллектуальной справочной системы по геометрии]
+	(* <- lang_ru;;	*);
+	[Geometry intelligent system knowledge processing machine]
+	(* <- lang_en;;	*);;
+
+intelligent_system_geometry_ui
+=> nrel_main_idtf:
+	[Пользовательский интерфейс интеллектуальной справочной системы по геометрии]
+	(* <- lang_ru;;	*);
+	[Geometry intelligent system user interface]
+	(* <- lang_en;;	*);;
+
+

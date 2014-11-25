@@ -1,0 +1,13 @@
+intelligent_system_geometry
+=> nrel_main_idtf:
+	[Интеллектуальная справочная система по геометрии]
+	(* <- lang_ru;;	*);
+	[Geometry intelligent system]
+	(* <- lang_en;;	*);
+
+<= nrel_basic_decomposition:
+{
+	intelligent_system_geometry_kb;
+	intelligent_system_geometry_kpm;
+	intelligent_system_geometry_ui
+};;
