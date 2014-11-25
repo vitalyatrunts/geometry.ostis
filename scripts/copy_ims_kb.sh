@@ -10,16 +10,13 @@ cd ../
 
 mkdir ims.ostis.kb_copy/documentation/
 cp ims.ostis.kb/documentation/doc_technology_ostis.scs ims.ostis.kb_copy/documentation/doc_technology_ostis.scs
-mkdir ims.ostis.kb_copy/documentation/section_unificated_models
-cp -a ims.ostis.kb/documentation/section_unificated_models ims.ostis.kb_copy/documentation/section_unificated_models
-mkdir ims.ostis.kb_copy/documentation/section_unificated_semantic_network_and_representation
-cp -a ims.ostis.kb/documentation/section_unificated_semantic_network_and_representation ims.ostis.kb_copy/documentation/section_unificated_semantic_network_and_representation
+cp -a ims.ostis.kb/documentation/section_unificated_models ims.ostis.kb_copy/documentation/
+cp -a ims.ostis.kb/documentation/section_unificated_semantic_network_and_representation ims.ostis.kb_copy/documentation/
 mkdir ims.ostis.kb_copy/documentation/section_metasystem_ostis
-mkdir ims.ostis.kb_copy/documentation/section_metasystem_ostis/section_ims_ostis_sub_systems_for_components_development/
-cp -a ims.ostis.kb/documentation/section_metasystem_ostis/section_ims_ostis_sub_systems_for_components_development/ ims.ostis.kb_copy/documentation/section_metasystem_ostis/section_ims_ostis_sub_systems_for_components_development/
-mkdir ims.ostis.kb_copy/ui
-cp -a ims.ostis.kb/ui ims.ostis.kb_copy/ui
-mkdir ims.ostis.kb_copy/to_check
-cp -a ims.ostis.kb/to_check ims.ostis.kb_copy/to_check
+cp -a ims.ostis.kb/documentation/section_metasystem_ostis/section_ims_ostis_sub_systems_for_components_development/ ims.ostis.kb_copy/documentation/section_metasystem_ostis
+cp -a ims.ostis.kb/ui ims.ostis.kb_copy
+cp -a ims.ostis.kb/to_check ims.ostis.kb_copy
+
+cp kb/menu/ui_menu_na_view_kb.scs ims.ostis.kb_copy/ui/menu/ui_menu_na_view_kb.scs
 
 cd -
