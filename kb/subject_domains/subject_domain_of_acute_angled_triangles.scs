@@ -9,4 +9,8 @@ subject_domain_of_acute_angled_triangles
 	
 subject_domain_of_acute_angled_triangles -> rrel_maximum_studied_object_class: concept_acute_angled_triangle;;
 
+subject_domain_of_acute_angled_triangles -> rrel_relation:
+	nrel_internal_angle;;
+
 subject_domain_of_acute_angled_triangles <- subject_domain;;
+

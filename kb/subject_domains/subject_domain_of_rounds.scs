@@ -16,4 +16,16 @@ subject_domain_of_rounds -> rrel_studied_object_class: concept_round_sector;;
 
 subject_domain_of_rounds -> rrel_studied_object_class: concept_round_segment;;
 
+
+subject_domain_of_rounds -> rrel_relation:
+	nrel_be_described;
+	nrel_be_inscribed;
+	nrel_center_of_round;
+	nrel_chord;
+	nrel_diameter;
+	nrel_length;
+	nrel_radius;
+	nrel_tangent;
+	nrel_secant;;
+	
 subject_domain_of_rounds <- subject_domain;;
