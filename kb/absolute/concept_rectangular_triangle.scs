@@ -21,6 +21,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Опр.(прямоугольный треугольник)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_concept_rectangular_triangle;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...

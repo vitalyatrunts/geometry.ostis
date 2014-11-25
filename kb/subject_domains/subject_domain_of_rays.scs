@@ -13,4 +13,10 @@ subject_domain_of_rays -> rrel_studied_object_class: concept_opened_ray;;
 
 subject_domain_of_rays -> rrel_studied_object_class: concept_closed_ray;;
 
+subject_domain_of_rays -> rrel_relation:
+	nrel_additional_rays;
+	nrel_boundary_point;
+	nrel_codirectional_rays;
+	nrel_opposite_directed_rays;;
+
 subject_domain_of_rays <- subject_domain;;

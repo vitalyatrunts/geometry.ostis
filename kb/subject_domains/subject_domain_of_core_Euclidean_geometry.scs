@@ -17,6 +17,9 @@ subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: concept_
 
 subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: nrel_congruence_of_pair_of_points;;
 
-subject_domain_of_core_Euclidean_geometry -> rrel_studied_object_class: rrel_between;;
-
+subject_domain_of_core_Euclidean_geometry -> rrel_relation: 
+	rrel_between;
+	nrel_distance;
+	nrel_congruence_of_pair_of_points;;
+	
 subject_domain_of_core_Euclidean_geometry <- subject_domain;;

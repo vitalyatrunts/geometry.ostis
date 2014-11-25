@@ -14,4 +14,13 @@ subject_domain_of_rhombuses -> rrel_maximum_studied_object_class: concept_rhomb;
 
 subject_domain_of_rhombuses -> rrel_studied_object_class: concept_square;;
 
+subject_domain_of_rhombuses -> rrel_relation:
+	nrel_vertex;
+	nrel_side;
+	nrel_internal_angle;
+	nrel_external_angle;
+	nrel_perimeter;
+	nrel_diagonal;
+	nrel_area;;
+
 subject_domain_of_rhombuses <- subject_domain;;

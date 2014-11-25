@@ -9,4 +9,7 @@ subect_domain_of_ranges
 	
 subect_domain_of_ranges -> rrel_maximum_studied_object_class: concept_range;;
 
+subect_domain_of_ranges -> rrel_relation:
+	nrel_boundary_point;;
+
 subect_domain_of_ranges <- subject_domain;;

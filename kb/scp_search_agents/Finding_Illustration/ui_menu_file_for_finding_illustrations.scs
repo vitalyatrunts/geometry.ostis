@@ -1,11 +1,11 @@
 ui_menu_file_for_finding_illustrations <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
 
 ui_menu_file_for_finding_illustrations => nrel_main_idtf: 
-	[Команда поиска иллюстраций для заданного понятия] 
+	[Запрос иллюстраций] 
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_illustrations => nrel_main_idtf: 
-	[Command of finding illustrations for given concept] 
+	[Request of illustrations] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_illustrations => ui_nrel_command_template:
@@ -18,11 +18,11 @@ ui_menu_file_for_finding_illustrations => ui_nrel_command_template:
 	*];;
 
 ui_menu_file_for_finding_illustrations => ui_nrel_command_lang_template: 
-	[Команда поиска иллюстраций для заданного понятия: $ui_arg_1] 
+	[Запрос иллюстраций: $ui_arg_1] 
 		(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_illustrations => ui_nrel_command_lang_template: 
-	[Command of finding illustrations for given concept: $ui_arg_1] 
+	[Request of illustrations: $ui_arg_1] 
 		(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_illustrations <- rrel_key_sc_element:
