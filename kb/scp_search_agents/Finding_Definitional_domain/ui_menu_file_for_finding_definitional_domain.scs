@@ -1,11 +1,11 @@
 ui_menu_file_for_finding_definitional_domain <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
 
 ui_menu_file_for_finding_definitional_domain => nrel_main_idtf: 
-	[Команда поиска области определения для заданного отношения] 
+	[Запрос области определения отношения] 
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_definitional_domain => nrel_main_idtf: 
-	[Command of finding definitional_domain for given relation] 
+	[Request of definitional domain for relation]
 	(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_definitional_domain => ui_nrel_command_template:
@@ -18,11 +18,11 @@ ui_menu_file_for_finding_definitional_domain => ui_nrel_command_template:
 	*];;
 
 ui_menu_file_for_finding_definitional_domain => ui_nrel_command_lang_template: 
-	[Команда поиска области определения для заданного отношения: $ui_arg_1] 
+	[Запрос области определения отношения: $ui_arg_1] 
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_definitional_domain => ui_nrel_command_lang_template: 
-	[Command of finding definitional_domain for given relation: $ui_arg_1] 
+	[Request of definitional domain for relation: $ui_arg_1] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_definitional_domain <- rrel_key_sc_element:

@@ -1,11 +1,11 @@
 ui_menu_file_for_finding_constants <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
 
 ui_menu_file_for_finding_constants => nrel_main_idtf: 
-	[Команда поиска констант, через которые определяется заданное понятие] 
+	[Запрос понятий, на основе которых определяется заданное]
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_constants => nrel_main_idtf: 
-	[Command of finding constants, which defined from given concept] 
+	[Request of concepts, on base of which given concept is defined] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_constants => ui_nrel_command_template:
@@ -18,11 +18,11 @@ ui_menu_file_for_finding_constants => ui_nrel_command_template:
 	*];;
 
 ui_menu_file_for_finding_constants => ui_nrel_command_lang_template: 
-	[Команда поиска констант, через которые определяется заданное понятие: $ui_arg_1] 
+	[Запрос понятий, на основе которых определяется заданное: $ui_arg_1] 
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_constants => ui_nrel_command_lang_template: 
-	[Command of finding constants, which defined from given concept: $ui_arg_1] 
+	[Request of concepts, on base of which given concept is defined: $ui_arg_1] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_constants <- rrel_key_sc_element:
