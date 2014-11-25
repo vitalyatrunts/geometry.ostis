@@ -16,10 +16,11 @@ concept_obtuse_triangle => nrel_idtf: [Множество знаков всев�
 
 concept_obtuse_triangle <= nrel_strict_inclusion: concept_triangle;;
 
-concept_obtuse_triangle <- rrel_key_sc_element: 
+concept_triangle <- rrel_key_sc_element: 
         ...
 	(*
 	=> nrel_main_idtf: [Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_concept_obtuse_triangle;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...

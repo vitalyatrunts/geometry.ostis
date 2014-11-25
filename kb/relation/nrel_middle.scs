@@ -38,6 +38,7 @@ nrel_middle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(середина*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_middle;;
 	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
