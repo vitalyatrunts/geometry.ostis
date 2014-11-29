@@ -1,0 +1,10 @@
+sc_node_struct -> theoretic_set_ontology_of_subj_domain_of_trapezoids;;
+
+theoretic_set_ontology_of_subj_domain_of_trapezoids
+=[*
+concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapeze;;	
+
+concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapeze;;
+*];;
