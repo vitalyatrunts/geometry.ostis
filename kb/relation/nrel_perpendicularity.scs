@@ -71,12 +71,14 @@ nrel_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; геометрическая точка; перпендикулярность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_geometric_point_straight_line_perpendicularity;;
+	-> rrel_key_sc_element: concept_straight_line;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Через каждую точку можно провести одну прямую, перпендикулярную данной.]
+			[Через каждую точку можно провести прямую, перпендикулярную данной, и только одну.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);

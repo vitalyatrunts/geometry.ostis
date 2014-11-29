@@ -60,13 +60,15 @@ concept_parallelogram <- rrel_key_sc_element:
 concept_parallelogram <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Утв.(параллелограмм; противолежащие*; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(параллелограмм; противолежащие*; сторона*; внутренний угол* конгруэнтность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_parallelogram_angle_opposite_side_congruence;;
+	-> rrel_key_sc_element: nrel_opposite; nrel_side; nrel_internal_angle; nrel_congruence;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Длины противолежащих сторон параллелограмма равны.]
+			[У параллелограмма противолежащие стороны и противолежащие углы равны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -169,4 +171,20 @@ concept_parallelogram <- rrel_key_sc_element:
 		*);;
 	*);;
 
+concept_parallelogram <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_diagonal_paralelogram;;
+	-> rrel_key_sc_element: nrel_diagonal;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали параллелограмма пересекаются и точкой пересечения делятся пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
+	
 concept_parallelogram -> rrel_example: struct_Parallelogram_A_B_C_D;;

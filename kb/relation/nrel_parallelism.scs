@@ -65,6 +65,21 @@ nrel_parallelism <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);
+	
+	...
+	(*
+    => nrel_main_idtf: [Утв.(прямая; параллельность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_transitivity_parallelism_straight_line;;
+	-> rrel_key_sc_element: concept_straight_line;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Две прямые, параллельные третьей прямой, параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
 
 	...
 	(*
@@ -139,20 +154,22 @@ nrel_parallelism <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Если плоскость перпендикулярна одной из двух параллельных прямых, то она перпендикулярна и другой.]
+			[Если плоскость перпендикулярна одной из двух параллельных прямых, то она перпендикулярна и другой.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
 
 	...
 	(*
-        => nrel_main_idtf: [Утв.(плоскость; параллельность*; пересечение множеств*; прямая)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [Утв.(плоскость; параллельность*; прямая)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_parallelism_straight_line_plane;;
+	-> rrel_key_sc_element: concept_plane; concept_straight_line;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[ Если две параллельные плоскости пересекаются третьей, то прямые, по которым пересекаются плоскости, параллельны.]
+			[Если две параллельные плоскости пересекаются третьей, то прямые, по которым пересекаются плоскости, параллельны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
@@ -165,7 +182,7 @@ nrel_parallelism <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Если две плоскости перпендикулярны одной и той же прямой, то эти плоскости параллельны.]
+			[Если две плоскости перпендикулярны одной и той же прямой, то эти плоскости параллельны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
@@ -191,7 +208,7 @@ nrel_parallelism <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Отрезки параллельных прямых, заключенных между двумя параллельными плоскостями равны. ]
+			[Отрезки параллельных прямых, заключенных между двумя параллельными плоскостями равны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);
@@ -204,9 +221,23 @@ nrel_parallelism <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[ Дуги, заключенные между параллельными хордами, равны.]
+			[Дуги, заключенные между параллельными хордами, равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(параллельность*; прямая; соответсвенные углы*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_parallelism_congruence_straight_line_corresponding_angles;;
+	-> rrel_key_sc_element: nrel_corresponding_angles; concept_straight_line;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если при пересечении двух прямых третьей соответсвенные углы равны, то эти прямые параллельны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
 

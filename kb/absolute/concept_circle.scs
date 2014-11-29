@@ -57,6 +57,23 @@ concept_circle <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; длина*; диаметр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_lenght_circle_diameter;;
+	-> rrel_key_sc_element: nrel_lenght; nrel_diameter;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+          -> rrel_example: 
+			[Отношение длины окружности к ее диаметру не зависит от окружности, т.е одно и то же для любых двух окружностей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
 
 concept_circle <- rrel_key_sc_element: 
 	...

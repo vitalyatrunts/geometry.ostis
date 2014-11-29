@@ -58,12 +58,14 @@ concept_polyline <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(ломаная; граничная точка*; отрезок; длина*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_length_polyline;;
+	-> rrel_key_sc_element: concept_segment;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Длина ломаной не меньше длины отрезка, соединяющего ее концы. .]
+			[Длина ломаной не меньше длины отрезка, соединяющего ее концы.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

@@ -8,18 +8,6 @@ nrel_center_line => nrel_main_idtf:
 
 nrel_center_line => nrel_idtf: [быть средней линией*] (* <- lang_ru;; *);;
 
-nrel_center_line => nrel_idtf: [средняя линия треугольника*] (* <- lang_ru;; *);;
-
-nrel_center_line => nrel_idtf: [быть средней линией треугольника*] (* <- lang_ru;; *);;
-
-nrel_center_line => nrel_idtf: [средняя линия четырехугольника*] (* <- lang_ru;; *);;
-
-nrel_center_line => nrel_idtf: [быть средней линией четырехугольника*] (* <- lang_ru;; *);;
-
-nrel_center_line => nrel_idtf: [средняя линия трапеции*] (* <- lang_ru;; *);;
-
-nrel_center_line => nrel_idtf: [быть средней линией трапеции*] (* <- lang_ru;; *);;
-
 nrel_center_line <- sc_relation;;
 
 nrel_center_line <- binary_relation;;
@@ -82,6 +70,8 @@ nrel_center_line <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(средняя линия*; треугольник; середна*; сторона*; параллельность*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: stat_triangle_center_line_middle_parallelism_half;;
+	-> rrel_key_sc_element: concept_triangle; nrel_middle; nrel_side; nrel_parallelism;;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
@@ -144,20 +134,7 @@ nrel_center_line <- rrel_key_sc_element:
 		*);;
 	*);
 
-     	...
-	(*
-	=> nrel_main_idtf: [Утв.(средняя линия*; трапеция; основание*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Средняя линия параллельна основаниям трапеции и равна их полусумме.]
-			(* <- lang_ru;;	*);;
-		*);;
-	*);
- 
-     	...
+       	...
 	(*
 	=> nrel_main_idtf: [Утв.(средняя линия*; трапеция; вершина*; ромб)] (* <- lang_ru;; *);;
 	<- sc_statement;;   

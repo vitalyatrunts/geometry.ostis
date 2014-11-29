@@ -78,8 +78,7 @@ concept_triangle <- rrel_key_sc_element:
 является вершиной этого треугольника.]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
-			[Для каждой непрямолинейной тройки точек существует единственный треугольник,
-вершинами которых являются указанные три точки.]
+			[Для каждой непрямолинейной тройки точек существует единственный треугольник, вершинами которых являются указанные три точки.]
 			(* <- lang_ru;; *);;
 		
 		*);;
@@ -94,12 +93,155 @@ concept_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Для каждого треугольника тройка точек, являющихся вершинами этого
-треугольника, принадлежит классу непрямолинейных фигур.]
+			[Для каждого треугольника тройка точек, являющихся вершинами этого треугольника, принадлежит классу непрямолинейных фигур.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
 	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; прилежащий*; конгруэнтность* )] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_congruence_triangle_side_adjacent_angle;;
+	-> rrel_key_sc_element: nrel_congruence; nrel_side; nrel_adjacent;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если сторона и прилежащие к ней углы одного треугольника равны соответственно стороне и прилежащим к ней углам другого треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; внутренний угол*; конгруэнтность* )] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_congruence_triangle_side_angle_between;;
+	-> rrel_key_sc_element: nrel_congruence; nrel_side; nrel_internal_angle;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две стороны и угол между ними одного треугольника равны соответственно двум сторонам и углу между ними другого треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; окружность; вписанность*; геометрическая точка)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_circle_description_centre_bisectrix_intersection;;
+	-> rrel_key_sc_element: concept_circle; nrel_be_inscribed; concept_geometric_point;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности, вписанной в треугольник, является точкой пересечения его биссектрис.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+	concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; окружность; описанность*; геометрическая точка; серединный перпендикуляр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_circle_inscribed_centre_middle_perpendicular_intersection;;
+	-> rrel_key_sc_element: concept_circle; nrel_be_inscribed; concept_geometric_point; nrel_middle_perpendicular;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности, описанной около треугольника, является точкой пересечения серединных пермпендикуляров.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_cos;;
+	-> rrel_key_sc_element: nrel_side;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Квадрат любой стороны треугольника равен сумме квадратов двух других сторон без удвоенного произведения этих сторон на косинус угла между ними.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*; )] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_internal_angle_congruence_similarity;;
+	-> rrel_key_sc_element: nrel_internal_angle; nrel_similarity;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если два угла одного треугольника равны двум углам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_side_proportionality_angle_congruence_similarity;;
+	-> rrel_key_sc_element: nrel_internal_angle; nrel_side; nrel_similarity;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две стороны одного треугольника пропорциональны двум сторонам другого треугольника и углы, образованные этими сторонами, равны, то треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_side_proportionality_simil;;
+	-> rrel_key_sc_element: nrel_side; nrel_similarity;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если стороны одного треугольника пропорциональны сторонам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_similarity_angle;;
+	-> rrel_key_sc_element: nrel_internal_angle; nrel_similarity;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если два угла одного треугольника равны двум уг­лам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
+
 concept_triangle -> rrel_example: struct_Triangle_A_B_C;;
 concept_triangle -> rrel_example: struct_Rectangular_triangle_D_F_G;;
 concept_triangle -> rrel_example: struct_Scalene_triangle_K_L_M;;
