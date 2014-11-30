@@ -42,21 +42,25 @@ concept_straight_line <- rrel_key_sc_element:
 concept_straight_line <- rrel_key_sc_element: 
 	...
         (*
-        => nrel_main_idtf: [Акс.(прямая; пара точек)] (* <- lang_ru;; *);;
-	<- sc_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Каждая прямая однозначно задается парой точек, каждая из которых принадлежит этой прямой.]
-			(* <- lang_ru;; *);;
-		*);;
+        => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
+		-> rrel_main_key_sc_element: stat_singularity_geometric_point_straight_line;;
+		-> rrel_key_sc_element: concept_geometric_point;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example: 
+				[Через любые две точки можно провести прямую и только одну.]
+				(* <- lang_ru;; *);;
+			*);;
 	*);;
 
 concept_straight_line <- rrel_key_sc_element: 
 	...
-        (*
-        => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
+    (*
+    => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_line_point;;
+	-> rrel_key_sc_element: concept_geometric_point;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -114,9 +118,11 @@ concept_straight_line <- rrel_key_sc_element:
 	...
         (*
         => nrel_main_idtf: [Акс.(прямая; плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
-	<= nrel_sc_text_translation: 
-		...
+		-> rrel_main_key_sc_element: stat_straight_line_geometric_point_parallelism;;
+		-> rrel_key_sc_element: concept_plane; concept_geometric_point;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
 		(*
 		-> rrel_example: 
 			[На плоскости через точку, не лежащую на данной прямой, можно провести одну и только одну прямую, параллельную данной прямой.]

@@ -1,0 +1,22 @@
+concept_trapezoid <- rrel_key_sc_element: 
+        ... 
+	(*
+	=> nrel_main_idtf: [Опр.(трапеция)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_concept_trapezoid;;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Трапеция - четырёхугольник, у которого только две противолежащие стороны параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <= nrel_using_constants:
+	{
+	concept_quadrilateral;
+	nrel_side;
+	nrel_parallelism
+	};;	
+

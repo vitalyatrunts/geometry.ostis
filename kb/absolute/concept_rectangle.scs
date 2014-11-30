@@ -133,16 +133,30 @@ concept_rectangle <- rrel_key_sc_element:
 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Диагонали прямоугольника равны и вычисляются по формуле: d^2 = a^2+b^2, где d - диагональ указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.]
+			[Диагонали прямоугольника вычисляются по формуле: d^2 = a^2+b^2, где d - диагональ указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_rectangle_congruence_diagonal;;
+	-> rrel_key_sc_element: nrel_diagonal; nrel_congruence;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали прямоугольника равны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
 
 concept_rectangle -> rrel_example: struct_Rectangle_B_C_D_E;;
