@@ -18,5 +18,8 @@ cp -a ims.ostis.kb/ui ims.ostis.kb_copy
 cp -a ims.ostis.kb/to_check ims.ostis.kb_copy
 
 rm ims.ostis.kb_copy/ui/menu/ui_menu_na_view_kb.scs
+rm ims.ostis.kb_copy/ui/menu/ui_menu_na_keynodes_for_beginners.scs
+rm ims.ostis.kb_copy/ui/menu/ui_main_menu.scs
+rm ims.ostis.kb_copy/ui/menu/ui_menu_na_keynodes.scs
 
 cd -
