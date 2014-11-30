@@ -17,6 +17,6 @@ cp -a ims.ostis.kb/documentation/section_metasystem_ostis/section_ims_ostis_sub_
 cp -a ims.ostis.kb/ui ims.ostis.kb_copy
 cp -a ims.ostis.kb/to_check ims.ostis.kb_copy
 
-cp kb/menu/ui_menu_na_view_kb.scs ims.ostis.kb_copy/ui/menu/ui_menu_na_view_kb.scs
+rm ims.ostis.kb_copy/ui/menu/ui_menu_na_view_kb.scs
 
 cd -
