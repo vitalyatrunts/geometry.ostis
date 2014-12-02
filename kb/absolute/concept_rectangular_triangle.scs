@@ -351,7 +351,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; окружность; радиус*; сторона*; вписанность*; гипотенуза*; катет*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_rectangular_triangle_circle_be_inscribed_radius;;
-	-> rrel_key_sc_element: concept_circle; nrel_radius; nrel_side; nrel_inscribe; nrel_cathetus; nrel_hypotenuse;;
+	-> rrel_key_sc_element: concept_circle; nrel_radius; nrel_side; nrel_be_inscribed; nrel_cathetus; nrel_hypotenuse;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -366,7 +366,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; периметр*; вписанность*; окружность)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_area_multiplication_perimeter_radius_circle_be_inscribed;;
-	-> rrel_key_sc_element: concept_circle; nrel_radius; nrel_area; nrel_inscribe;;
+	-> rrel_key_sc_element: concept_circle; nrel_radius; nrel_area; nrel_be_inscribed;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

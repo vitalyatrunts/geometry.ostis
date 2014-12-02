@@ -23,14 +23,14 @@ nrel_cathetus => nrel_definitional_domain:
 	(*
 	<= nrel_combination: 
 		{	 
-		concept_right_triangle;
+		concept_equilateral_triangle;
 		concept_segment
 		};;
 	*);;	
 	
 
 nrel_cathetus => nrel_first_domain: 
-	concept_right_triangle;;
+	concept_equilateral_triangle;;
 
 nrel_cathetus => nrel_second_domain: 
 	concept_segment;;
@@ -52,7 +52,7 @@ nrel_cathetus <- rrel_key_sc_element:
 
 nrel_cathetus <= nrel_using_constants:
 	{
-	concept_right_triangle;
+	concept_equilateral_triangle;
 	concept_right_angle;
 	concept_segment;
 	nrel_vertex;

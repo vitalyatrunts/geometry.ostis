@@ -108,8 +108,6 @@ concept_geometric_figure -> rrel_example: struct_Rectilinear_three_of_points_P_Q
 
 concept_geometric_figure -> rrel_example: struct_Straight_Line_A;;
 
-concept_geometric_figure -> rrel_example: struct_Range_A_B;;
-
 concept_geometric_figure -> rrel_example: struct_Triangle_A_B_C;;
 
 concept_geometric_figure -> rrel_example: struct_Rectangular_triangle_D_F_G;;
@@ -120,11 +118,7 @@ concept_geometric_figure -> rrel_example: struct_Obtuse_triangle_L_D_K;;
 
 concept_geometric_figure -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
 
-concept_geometric_figure -> rrel_example: struct_Strictly_isosceles_triangle_PNK;;
-
 concept_geometric_figure -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
-
-concept_geometric_figure -> rrel_example: struct_Square_A_B_C_D;;
 
 concept_geometric_figure -> rrel_example: struct_Opened_ray_k;;
 
@@ -143,8 +137,6 @@ concept_geometric_figure -> rrel_example: struct_Segment_A_B;;
 concept_geometric_figure -> rrel_example: struct_Parallelogram_A_B_C_D;;
 
 concept_geometric_figure -> rrel_example: struct_Plane_P;;
-
-concept_geometric_figure -> rrel_example: struct_Closed_half_plane_H1;;
 
 concept_geometric_figure -> rrel_example: struct_Opened_Half_Plane_K1;;
 
@@ -166,10 +158,8 @@ concept_geometric_figure -> rrel_example: struct_Zero_angle_N_K_N;;
 
 concept_geometric_figure -> rrel_example: struct_Full_angle_P_K_P;;
 
-concept_geometric_figure -> rrel_example: struct_Right_angle_P_T_R;;
+concept_geometric_figure -> rrel_example: struct_Right_Angle_P_T_R;;
 
 concept_geometric_figure -> rrel_example: struct_Obtuse_angle_T_P_R;;
 
 concept_geometric_figure -> rrel_example: struct_Rhomb_E_F_G_H;;
-
-concept_geometric_figure -> rrel_example: struct_Round_O_R;;

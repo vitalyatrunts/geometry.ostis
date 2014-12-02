@@ -53,8 +53,8 @@ struct_Segment_D => nrel_boundary_point: struct_Geometric_point_G;;
 
 struct_Rectangular_triangle_D_F_G => nrel_hypotenuse: struct_Segment_D;;
 
-struct_Rectangular_triangle_D_F_G => nrel_leg: struct_Segment_F;;
-struct_Rectangular_triangle_D_F_G => nrel_leg: struct_Segment_G;;
+struct_Rectangular_triangle_D_F_G => nrel_cathetus: struct_Segment_F;;
+struct_Rectangular_triangle_D_F_G => nrel_cathetus: struct_Segment_G;;
 
 struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element: 
 	...

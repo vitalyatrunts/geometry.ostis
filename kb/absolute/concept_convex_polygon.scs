@@ -57,7 +57,7 @@ concept_convex_polygon <= nrel_subdividing:
 	
 	->
 	  concept_regular_polygon;	
-	  irregular_polygon;;
+	  concept_irregular_polygon;;
 	*);;
 
 
@@ -168,11 +168,7 @@ concept_convex_polygon -> rrel_example: struct_Obtuse_triangle_L_D_K;;
 
 concept_convex_polygon -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
 
-concept_convex_polygon -> rrel_example: struct_Strictly_isosceles_triangle_PNK;;
-
 concept_convex_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
-
-concept_convex_polygon -> rrel_example: struct_Square_A_B_C_D;;
 
 concept_convex_polygon -> rrel_example: struct_Rhomb_E_F_G_H;;
 

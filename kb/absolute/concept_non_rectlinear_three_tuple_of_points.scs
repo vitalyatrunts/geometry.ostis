@@ -26,7 +26,7 @@ concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element:
      	... 
 	(*
 	=> nrel_main_idtf: [Опр.(непрямолинейная тройка точек)] (* <- lang_ru;; *);;
-	<- sc_difinition;; 
+	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -38,7 +38,7 @@ concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element:
 
 concept_non_rectlinear_three_tuple_of_points <= nrel_using_constants:
 	{
-	concept_three_tuple_of_points;
+	concept_triple_of_points;
 	concept_geometric_point;
 	concept_straight_line
 	};;

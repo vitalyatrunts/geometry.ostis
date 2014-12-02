@@ -42,9 +42,6 @@ concept_geometric_figure_of_unlimited_size <= nrel_using_constants:
 	concept_geometric_figure_of_limited_size
 	};;
 
-
-concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Closed_half_plane_H1;;
-
 concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Opened_Half_Plane_K1;;
 
 concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Plane_P;;

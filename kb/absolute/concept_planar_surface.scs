@@ -6,7 +6,7 @@ concept_planar_surface => nrel_main_idtf:
 	[planar surface]
 	(* <- lang_en;; *);;
 
-concept_plznzr_surface <= nrel_strict_inclusion: concept_surface;;
+concept_planar_surface <= nrel_strict_inclusion: concept_surface;;
 	
 concept_planar_surface => nrel_idtf: [Множество планарных поверхностей] (* <- lang_ru;; *);;
 

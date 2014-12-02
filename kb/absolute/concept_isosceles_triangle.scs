@@ -56,7 +56,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; биссектриса*; основание*; высота*; медиана*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_median_isosceles_triangle_bisectrix_height;;
-	-> rrel_key_sc_element: nrel_bisetrix; nrel_median; nrel_height; nrel_base;;
+	-> rrel_key_sc_element: nrel_bisectrix; nrel_median; nrel_height; nrel_base;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -152,5 +152,4 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 	*);;
 
 
-concept_isosceles_triangle -> rrel_example: struct_Strictly_isosceles_triangle_PNK;;
 concept_isosceles_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
