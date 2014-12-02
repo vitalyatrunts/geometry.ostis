@@ -18,7 +18,7 @@ concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
 
 concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapeze;;	
 
-concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapeze;;
+concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapezoid;;
 	
 concept_trapezoid <- rrel_key_sc_element: 
         ... 

@@ -10,16 +10,16 @@
         <node type="node/const/group" idtf="concept_ray" shapeColor="0" id="71541224" parent="71869024" left="0" top="0" right="76" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="780" y="435" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_congruence&#10;&#10;" shapeColor="0" id="71540072" parent="71869024" left="0" top="0" right="101" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="789" y="63" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_congruence" shapeColor="0" id="71540072" parent="71869024" left="0" top="0" right="101" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="789" y="63" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_side_of_the_angle" shapeColor="0" id="71540504" parent="71869024" left="0" top="0" right="139" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="855" y="60" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_side_of_angle" shapeColor="0" id="71540504" parent="71869024" left="0" top="0" right="139" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="855" y="60" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/group" idtf="concept_angle" shapeColor="0" id="71541080" parent="71869024" left="0" top="0" right="89" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="630" y="285" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_vertix_of_angle" shapeColor="0" id="71541512" parent="71869024" left="0" top="0" right="125" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1035" y="375" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_vertex_of_angle" shapeColor="0" id="71541512" parent="71869024" left="0" top="0" right="125" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1035" y="375" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="_d2" shapeColor="0" id="71540792" parent="71869024" left="0" top="0" right="29" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="975" y="180" haveBus="false">
@@ -34,7 +34,7 @@
         <node type="node/const/group" idtf="concept_geometric_point" shapeColor="0" id="71541800" parent="71869024" left="0" top="0" right="150" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="975" y="435" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_boundary_point&#10;" shapeColor="0" id="71540216" parent="71869024" left="0" top="0" right="127" bottom="42" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1020" y="285" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_boundary_point" shapeColor="0" id="71540216" parent="71869024" left="0" top="0" right="127" bottom="42" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1020" y="285" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="" shapeColor="0" id="71541368" parent="71869024" x="720" y="180" haveBus="false">
@@ -123,7 +123,7 @@
                 <point x="1185" y="30"/>
             </points>
         </contour>
-        <node type="node/const/relation" idtf="nrel_bisectrix_of_angle&#10;&#10;" shapeColor="0" id="71539496" parent="71868904" left="0" top="0" right="141" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="210" y="315" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_bisectrix_of_angle" shapeColor="0" id="71539496" parent="71868904" left="0" top="0" right="141" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="210" y="315" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="_d" shapeColor="0" id="6429608" parent="71868904" left="0" top="0" right="22" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="135" y="255" haveBus="false">

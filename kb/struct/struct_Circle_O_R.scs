@@ -16,7 +16,7 @@ sc_node_struct -> struct_Geometric_point_O;;
 
 struct_Geometric_point_O <- concept_geometric_point;;
 
-struct_Circle_O_R => nrel_centre: struct_Geometric_point_O;;
+struct_Circle_O_R => nrel_center: struct_Geometric_point_O;;
 
 sc_node_struct -> struct_Segment_R;;
 

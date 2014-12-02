@@ -74,8 +74,7 @@ concept_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Треугольник однозначно задается непрямолинейной тройкой точек, каждая из которых
-является вершиной этого треугольника.]
+			[Треугольник однозначно задается непрямолинейной тройкой точек, каждая из которых является вершиной этого треугольника.]
 			(* <- lang_ru;; *);;
 		-> rrel_example: 
 			[Для каждой непрямолинейной тройки точек существует единственный треугольник, вершинами которых являются указанные три точки.]
@@ -237,15 +236,62 @@ concept_triangle <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Если два угла одного треугольника равны двум уг­лам другого треугольника, то такие треугольники подобны.]
+			[Если два угла одного треугольника равны двум углам другого треугольника, то такие треугольники подобны.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;	
 
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; внешний угол*; внутренний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_angle_measure_external_angle_equality_quantities_sum_internal_angle_triangle;;
+	-> rrel_key_sc_element: nrel_internal_angle; nrel_external_angle;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Внешний угол треугольника равен сумме двух внутренних углов треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;		
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sum_angle_measure_angle_triangle;;
+	-> rrel_key_sc_element: nrel_internal_angle; nrel_angle_measure;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма внутренних углов треугольника равна 180 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_area_multiplication_height_base;;
+	-> rrel_key_sc_element: nrel_height; nrel_area; nrel_base;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь треугольника равна полупроизведению высоты на основание.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
+	
 concept_triangle -> rrel_example: struct_Triangle_A_B_C;;
 concept_triangle -> rrel_example: struct_Rectangular_triangle_D_F_G;;
 concept_triangle -> rrel_example: struct_Scalene_triangle_K_L_M;;
 concept_triangle -> rrel_example: struct_Obtuse_triangle_L_D_K;;
 concept_triangle -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
-concept_triangle -> rrel_example: struct_Strictly_isosceles_triangle_PNK;;
 concept_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

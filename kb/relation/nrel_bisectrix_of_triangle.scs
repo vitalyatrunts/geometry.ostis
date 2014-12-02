@@ -9,11 +9,11 @@ nrel_bisectrix_of_triangle => nrel_main_idtf:
 nrel_bisectrix_of_triangle => nrel_idtf: [быть биссектрисой треугольника*]
 	(* <- lang_ru;; *);;
 
-nrel_bisectrix_of_angle <- sc_relation;;
+nrel_bisectrix_of_triangle <- sc_relation;;
 
-nrel_bisectrix_of_angle <- binary_relation;;
+nrel_bisectrix_of_triangle <- binary_relation;;
 
-nrel_bisectrix_of_angle <- oriented_relation;;
+nrel_bisectrix_of_triangle <- oriented_relation;;
 
 nrel_bisectrix_of_triangle => nrel_definitional_domain:
 	... 

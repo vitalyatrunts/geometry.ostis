@@ -228,7 +228,7 @@ nrel_parallelism <- rrel_key_sc_element:
 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(параллельность*; прямая; соответсвенные углы*)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [Утв.(параллельность*; прямая; соответсвенные углы*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_parallelism_congruence_straight_line_corresponding_angles;;
 	-> rrel_key_sc_element: nrel_corresponding_angles; concept_straight_line;;
 	<- sc_statement;;
@@ -239,5 +239,19 @@ nrel_parallelism <- rrel_key_sc_element:
 			[Если при пересечении двух прямых третьей соответсвенные углы равны, то эти прямые параллельны.]
 			(* <- lang_ru;; *);;
 		*);;
+	*);
+	
+	...
+	(*
+    => nrel_main_idtf: [Утв.(параллельность*; прямая; внутренние накрест лежащие углы*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_parallelism_congruence_straight_line_internal_cross_lying_angles;;
+	-> rrel_key_sc_element: nrel_internal_cross_lying_angles; concept_straight_line;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если при пересечении двух прямых третьей внутренние накрест лежащие углы равны, то эти прямые параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
 	*);;
-

@@ -12,7 +12,7 @@ concept_triple_of_points => nrel_idtf: [тройка геометрически�
 
 concept_triple_of_points => nrel_idtf: [тройка разных геометрических точек] (* <- lang_ru;; *);;
 
-concept_thre_tuple_of_points => nrel_idtf: [Понятие тройки точек] (* <- lang_ru;; *);;
+concept_triple_of_points => nrel_idtf: [Понятие тройки точек] (* <- lang_ru;; *);;
 
 concept_triple_of_points => nrel_idtf: [Множество троек точек] (* <- lang_ru;; *);;
 
@@ -30,9 +30,9 @@ concept_triple_of_points => nrel_idtf: [геометрическая фигур�
 
 concept_triple_of_points <= nrel_strict_inclusion: concept_discret_geometric_figure;;
 
-concept_triple_of_points => nrel_strict_inclusion: concept_rectilinear_triple_of_points;;
+concept_triple_of_points => nrel_strict_inclusion: concept_rectilinear_three_of_points;;
 
-concept_triple_of_points => nrel_strict_inclusion: concept_non_rectilinear_triple_of_points;;
+concept_triple_of_points => nrel_strict_inclusion: concept_non_rectlinear_three_tuple_of_points;;
 	
 concept_triple_of_points <- rrel_key_sc_element: 
         ... 
@@ -89,6 +89,4 @@ concept_triple_of_points <- rrel_key_sc_element:
 		*);;
 	*);;
 
-
-concept_triple_of_points -> rrel_example: struct_Rectilinear_three_of_points_A_B_C;;
 concept_triple_of_points -> rrel_example: struct_Rectilinear_three_of_points_P_Q_R;;

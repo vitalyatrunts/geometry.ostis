@@ -77,9 +77,11 @@ nrel_median <- rrel_key_sc_element:
 		*);;
 	*);
      	
-     	...
+     ...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_median_intersection_point_vertex;;
+	-> rrel_key_sc_element: concept_triangle;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

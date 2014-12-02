@@ -16,9 +16,9 @@ concept_regular_polygon => nrel_idtf: [Множество знаков всев�
 
 concept_regular_polygon <= nrel_strict_inclusion: concept_convex_polygon;;
 
-concept_regular_polygon => nrel_strict_inclusion: concept_right_pentagon;;
+concept_regular_polygon => nrel_strict_inclusion: concept_regular_pentagon;;
 
-concept_regular_polygon => nrel_strict_inclusion: concept_right_hexagon;;
+concept_regular_polygon => nrel_strict_inclusion: concept_regular_hexagon;;
 			
 concept_regular_polygon => nrel_strict_inclusion: concept_equilateral_triangle;;
 
@@ -47,20 +47,7 @@ concept_regular_polygon <= nrel_using_constants:
 	};;
 	
 concept_regular_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(многоугольник; простая замкнутая ломаная)] (* <- lang_ru;; *);;
-	<- sc_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Каждый многоугольник однозначно задается простой замкнутой ломанной. Для каждой простой замкнутой ломанной существует единственный многоугольник.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
+    ...
 	(*
 	=> nrel_main_idtf: [Утв.(правильный многоугольник; конгруэнтность*; сторона*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_congruance_regular_polygon;;
@@ -118,7 +105,7 @@ concept_regular_polygon <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв.(правильный многоугольник; окружность; вписанность*; описанность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_regular_polygon_circle_inscribed_described;;
-	-> rrel_key_sc_element: nrel_inscribed; nrel_described; concept_circle;;
+	-> rrel_key_sc_element: nrel_be_inscribed; nrel_be_described; concept_circle;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -143,5 +130,4 @@ concept_regular_polygon <- rrel_key_sc_element:
 	*);;
 
 concept_regular_polygon -> rrel_example: struct_Regular_Polygon_A_B_C_D_E_F;;
-concept_regular_polygon -> rrel_example: struct_Square_A_B_C_D;;
 concept_regular_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

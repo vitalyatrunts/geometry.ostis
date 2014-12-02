@@ -20,10 +20,10 @@ concept_opened_ray <= nrel_strict_inclusion: concept_ray;;
 
 concept_opened_ray <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
 
-concept_triangle <- rrel_key_sc_element: 
+concept_opened_ray <- rrel_key_sc_element: 
         ... 
 	(*
-	=> nrel_main_idtf: [Опр.(открый луч)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(открытый луч)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_concept_opened_ray;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 

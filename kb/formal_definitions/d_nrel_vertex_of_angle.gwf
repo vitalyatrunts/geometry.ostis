@@ -10,7 +10,7 @@
         <node type="node/var/general_node" idtf="_y" shapeColor="0" id="70317224" parent="70696040" left="0" top="0" right="21" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="690" y="180" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_boundary_point&#10;&#10;" shapeColor="0" id="70316504" parent="70696040" left="0" top="0" right="127" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="825" y="360" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_boundary_point" shapeColor="0" id="70316504" parent="70696040" left="0" top="0" right="127" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="825" y="360" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="_d3" shapeColor="0" id="70316936" parent="70696040" left="0" top="0" right="29" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="990" y="180" haveBus="false">
@@ -19,7 +19,7 @@
         <node type="node/var/general_node" idtf="_d1" shapeColor="0" id="70317368" parent="70696040" left="0" top="0" right="29" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="690" y="450" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_side_of_the_angle&#10;&#10;" shapeColor="0" id="70316648" parent="70696040" left="0" top="0" right="139" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="795" y="255" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_side_of_angle" shapeColor="0" id="70316648" parent="70696040" left="0" top="0" right="139" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="795" y="255" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/group" idtf="concept_ray" shapeColor="0" id="70316792" parent="70696040" left="0" top="0" right="76" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="840" y="315" haveBus="false">
@@ -63,7 +63,7 @@
                 <point x="1080" y="165"/>
             </points>
         </contour>
-        <node type="node/const/relation" idtf="nrel_vertex_of_angle&#10;&#10;" shapeColor="0" id="30688624" parent="70695920" left="0" top="0" right="127" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="75" y="390" haveBus="false">
+        <node type="node/const/relation" idtf="nrel_vertex_of_angle" shapeColor="0" id="30688624" parent="70695920" left="0" top="0" right="127" bottom="59" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="75" y="390" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/group" idtf="concept_geometric_point" shapeColor="0" id="70316072" parent="70695920" left="0" top="0" right="150" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="150" y="240" haveBus="false">
