@@ -57,13 +57,13 @@ concept_rhomb <- rrel_key_sc_element:
 
      	...
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; диагональ*; прямой угол)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; середина*)] (* <- lang_ru;; *);;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Диагонали ромба пересекаются под прямым углом и в точке пересечения делятся пополам.]
+			[Диагонали ромба пересекаются и в точке пересечения делятся пополам.]
 			(* 
 			<- lang_ru;;
 			*);;
@@ -72,16 +72,16 @@ concept_rhomb <- rrel_key_sc_element:
 
      	...
 	(*
-	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*; прямой угол)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_rhomb_diagonal_perpendicular_bisectrix_angle;;
+	-> rrel_key_sc_element: nrel_diagonal; nrel_bisectrix; concept_right_angle;;
 	<- sc_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-			[Диагонали ромба являются биссектрисами его углов.]
-			(* 
-			<- lang_ru;;
-			*);;
+			[Диагонали ромба пересекаются под прямым углом и являются биссектрисами его углов.]
+			(* <- lang_ru;;	*);;
 		*);;
 	*);
 

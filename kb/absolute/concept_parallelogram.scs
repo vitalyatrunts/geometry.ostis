@@ -26,6 +26,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ... 
 	(*
 	=> nrel_main_idtf: [Опр.(параллелограмм)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_concept_parallelogram;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
 		...
@@ -187,4 +188,20 @@ concept_parallelogram <- rrel_key_sc_element:
 		*);;
 	*);;	
 	
+concept_parallelogram <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; четырехугольник)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_quadrilateral_parallelogram_diagonal_point_intersect_middle;;
+	-> rrel_key_sc_element: nrel_diagonal; concept_quadrilateral;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Четырехугольник является параллелограммом, если диагонали точкой пересечения делятся пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
+
 concept_parallelogram -> rrel_example: struct_Parallelogram_A_B_C_D;;

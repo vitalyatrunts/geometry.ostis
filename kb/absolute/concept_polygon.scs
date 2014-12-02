@@ -58,6 +58,20 @@ concept_polygon <= nrel_using_constants:
 concept_polygon <- rrel_key_sc_element:
 	...
 	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; простая замкнутая ломаная)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждый многоугольник однозначно задается простой замкнутой ломанной. Для каждой простой замкнутой ломанной существует единственный многоугольник.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_polygon <- rrel_key_sc_element:
+	...
+	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; вершина*; сторона*; смежность*)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 

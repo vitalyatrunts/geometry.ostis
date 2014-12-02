@@ -52,9 +52,9 @@ concept_circle <- rrel_key_sc_element:
 	<= nrel_sc_text_translation: 
 		...
 		(*
-          -> rrel_example: 
+        -> rrel_example: 
 		[Длина окружности вычисляется как произведение удвоенного радиуса на число Пи.]
-			(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);;
 		*);;
 	*);;
 	
@@ -159,5 +159,21 @@ concept_circle <- rrel_key_sc_element:
 		*);;
 	*);;
 
+	
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; касательная*; прямая; радиус*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_circle_tangent_perpendicular_radius;;
+	-> rrel_key_sc_element: nrel_radius; nrel_perpendicularity; nrel_tangent;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Касательная к окружности перпендикулярна радиусу этой окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
 
 concept_circle -> rrel_example: struct_Circle_O_R;;
