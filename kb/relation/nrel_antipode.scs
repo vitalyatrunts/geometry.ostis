@@ -1,0 +1,10 @@
+sc_node_norole_relation -> nrel_antipode;;
+
+nrel_antipode <- sc_node_norole_relation;;
+
+nrel_antipode => nrel_main_idtf:
+	[антипод*]
+	(* <- lang_ru;; *);
+	[antipode*]
+	(* <- lang_en;; *);;
+
