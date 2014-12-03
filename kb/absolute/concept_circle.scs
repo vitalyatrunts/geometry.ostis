@@ -48,6 +48,8 @@ concept_circle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(окружность; длина*; радиус*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_circle_length;;
+	-> rrel_key_sc_element: nrel_radius; nrel_lenght;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
