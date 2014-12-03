@@ -151,7 +151,9 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; острый угол)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; острый угол)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sum_acute_angle_reactangular_triangle;;
+	-> rrel_key_sc_element: concept_acute_angled_triangle;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

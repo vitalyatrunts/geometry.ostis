@@ -75,5 +75,3 @@ concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element:
 	*);;
 
 concept_non_rectlinear_three_tuple_of_points <=> nrel_antipode: concept_rectilinear_three_of_points;;
-
-concept_non_rectlinear_three_tuple_of_points -> rrel_example: struct_Non_linear_three_tuple_of_points_A_B_C;;
