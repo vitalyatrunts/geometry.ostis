@@ -101,10 +101,8 @@ concept_geometric_figure <= nrel_using_constants:
 	{
 	concept_geometric_point
 	};;
-				
-concept_geometric_figure -> rrel_example: struct_Non_linear_three_tuple_of_points_A_B_C;;
 
-concept_geometric_figure -> rrel_example: struct_Rectilinear_three_of_points_P_Q_R;;
+concept_geometric_figure -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
 
 concept_geometric_figure -> rrel_example: struct_Straight_Line_A;;
 
@@ -128,9 +126,9 @@ concept_geometric_figure -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
 
 concept_geometric_figure -> rrel_example: struct_Polygon_K_A_B_C_D_E;;
 
-concept_geometric_figure -> rrel_example: struct_Non_convex_polygon_O_P_R_S_Q_T;;
+concept_geometric_figure -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
 
-concept_geometric_figure -> rrel_example: struct_circle_O_R;;
+concept_geometric_figure -> rrel_example: struct_Circle_O_R;;
 
 concept_geometric_figure -> rrel_example: struct_Segment_A_B;;
 
@@ -154,11 +152,11 @@ concept_geometric_figure -> rrel_example: struct_Straight_angle_A_O_B;;
 
 concept_geometric_figure -> rrel_example: struct_Acute_Angle_K_L_M;;
 
-concept_geometric_figure -> rrel_example: struct_Zero_angle_N_K_N;;
+concept_geometric_figure -> rrel_example: struct_Zero_Angle_N_K_N;;
 
 concept_geometric_figure -> rrel_example: struct_Full_angle_P_K_P;;
 
-concept_geometric_figure -> rrel_example: struct_Right_Angle_P_T_R;;
+concept_geometric_figure -> rrel_example: struct_struct_Right_Angle_P_T_R_P_T_R;;
 
 concept_geometric_figure -> rrel_example: struct_Obtuse_angle_T_P_R;;
 

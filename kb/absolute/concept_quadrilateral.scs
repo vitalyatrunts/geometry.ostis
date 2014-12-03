@@ -16,15 +16,15 @@ concept_quadrilateral => nrel_idtf: [Множество всевозможных
 
 concept_quadrilateral => nrel_idtf: [Множество знаков всевозможных четырехугольников] (* <- lang_ru;; *);;
 
-concept_acute_angle <=  nrel_strict_inclusion: concept_convex_polygon;;
+concept_quadrilateral <=  nrel_strict_inclusion: concept_convex_polygon;;
 
-concept_acute_angle <=  nrel_strict_inclusion: concept_polygon;;
+concept_quadrilateral <=  nrel_strict_inclusion: concept_polygon;;
 
-concept_acute_angle =>  nrel_strict_inclusion: concept_parallelogram;;
+concept_quadrilateral =>  nrel_strict_inclusion: concept_parallelogram;;
 
-concept_acute_angle =>  nrel_strict_inclusion: concept_trapezoid;;
+concept_quadrilateral =>  nrel_strict_inclusion: concept_trapezoid;;
 
-concept_acute_angle =>  nrel_strict_inclusion: concept_square;;
+concept_quadrilateral =>  nrel_strict_inclusion: concept_square;;
 
 concept_quadrilateral <- rrel_key_sc_element: 
         ... 
@@ -52,6 +52,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_quadrilateral_sum_internal_angle;;
+	-> rrel_key_sc_element: nrel_internal_angle;;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...

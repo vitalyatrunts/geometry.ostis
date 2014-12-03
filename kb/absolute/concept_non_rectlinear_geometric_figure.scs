@@ -36,5 +36,3 @@ concept_non_rectlinear_geometric_figure <= nrel_using_constants:
 	};;
 				
 concept_non_rectlinear_geometric_figure <=> nrel_antipode: concept_rectilinear_figure;;
-
-concept_non_rectlinear_geometric_figure -> rrel_example: struct_Non_linear_three_tuple_of_points_A_B_C;;
