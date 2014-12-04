@@ -229,3 +229,19 @@ concept_square <- rrel_key_sc_element:
 		
 	*);;	
 	
+concept_square <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(квадрат; сторона*; площадь*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_area_square;;
+	-> rrel_key_sc_element: nrel_side; nrel_area;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*     
+		-> rrel_example: 
+			[Площадь квадрата вычисляется как квадрат длины его стороны.] (* <- lang_ru;; *);;
+		*);;
+		
+	*);;	
+	

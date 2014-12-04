@@ -42,3 +42,5 @@ concept_geometric_figure_with_all_boundary_points <= nrel_using_constants:
 	concept_geometric_figure;
 	nrel_boundary_point
 	};;
+
+concept_geometric_figure_with_all_boundary_points -> rrel_example: struct_Segment_A_B;;
