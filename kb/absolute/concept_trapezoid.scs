@@ -16,7 +16,7 @@ concept_trapezoid => nrel_idtf: [Множество знаков всевозм�
 
 concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
 
-concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapeze;;	
+concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapezoid;;	
 
 concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapezoid;;
 	
@@ -156,6 +156,5 @@ concept_trapezoid <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_trapezoid -> rrel_example: struct_Isosceles_trapeze_K_L_M_N;;
-concept_trapezoid -> rrel_example: struct_Rectangular_trapeze_P_Q_R_S;;
+concept_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
 concept_trapezoid -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;
