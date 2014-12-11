@@ -50,12 +50,12 @@ append_line()
 
 append_js()
 {
-    append_line $1 $2 "<script type=\"text/javascript\" charset=\"utf-8\" src=\"{{ static_url(\"$2\") }}\"></script>"
+    append_line $1 $2 "<script type=\"text/javascript\" charset=\"utf-8\" src=\"/static/$2\"></script>"
 }
 
 append_css()
 {
-    append_line $1 $2 "<link rel=\"stylesheet\" type=\"text/css\" href=\"{{ static_url(\"$2\") }}\" />"
+    append_line $1 $2 "<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/$2\" />"
 }
 
 stage "Install common libraries"
