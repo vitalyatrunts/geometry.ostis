@@ -9,21 +9,21 @@ subject_domain_of_quadrilaterals
 	
 subject_domain_of_quadrilaterals -> rrel_maximum_studied_object_class: concept_quadrilateral;;
 
-subject_domain_of_quadrilaterals -> rrel_not_maximum_object_class: concept_trapezoid;;
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_trapezoid;;
 
-subject_domain_of_quadrilaterals -> rrel_not_maximum_object_class: concept_parallelogram;;
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_parallelogram;;
 
-subject_domain_of_quadrilaterals -> rrel_not_maximum_object_class: concept_isosceles_trapezoid;;
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_isosceles_trapezoid;;
 
-subject_domain_of_quadrilaterals -> rrel_not_maximum_object_class: concept_rectangular_trapezoid;;
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_rectangular_trapezoid;;
 
-subject_domain_of_parallelograms -> rrel_not_maximum_object_class: concept_rhomb;;
+subject_domain_of_parallelograms -> rrel_not_maximum_studied_object_class: concept_rhomb;;
 
-subject_domain_of_parallelograms -> rrel_not_maximum_object_class: concept_rectangle;;
+subject_domain_of_parallelograms -> rrel_not_maximum_studied_object_class: concept_rectangle;;
 
-subject_domain_of_rectangles -> rrel_not_maximum_object_class: concept_square;;
+subject_domain_of_rectangles -> rrel_not_maximum_studied_object_class: concept_square;;
 
-subject_domain_of_quadrilaterals -> rrel_relation:
+subject_domain_of_quadrilaterals -> rrel_studied_relation:
 	nrel_area;
 	nrel_base;
 	nrel_bound;
