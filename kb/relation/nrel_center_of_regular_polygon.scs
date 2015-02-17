@@ -30,29 +30,11 @@ nrel_center_of_regular_polygon <= nrel_first_domain:
 nrel_center_of_regular_polygon <= nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_center <- rrel_key_sc_element: 
-	...
-(*
-	=> nrel_main_idtf:[Опр.(центр правильного многоугольника*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-	...
-	(*
-	-> rrel_example: 
-		[Центром правильного многоугольника называется точка, удаленная от всех его вершин и всех его сторон.]
-		(* <- lang_ru;; *);;
-	*);;
-*);; 
-
-
-nrel_center <= nrel_using_constants:
-	{
-	concept_polygon;
-	concept_geometric_point;
-	nrel_vertex;				
-	nrel_side	
+nrel_center_of_regular_polygon <= nrel_using_constants:
+	{ 
+	concept_circle; 
+	nrel_be_inscribed	
 	};;
-
 
 nrel_center_of_regular_polygon <- rrel_key_sc_element:
 	...

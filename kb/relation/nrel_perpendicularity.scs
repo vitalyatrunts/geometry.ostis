@@ -45,26 +45,14 @@ nrel_perpendicularity => nrel_second_domain:
 		};;
 	*);;
 
-nrel_perpendicularity <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(перпендикулярность*)] (* <- lang_ru;; *);; 
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Две пересекающиеся геометрические фигуры являются перпендикулярными, если любые два луча такие, что один из них принадлежит одной из исходных фигур, второй принадлежит другой фигуре и оба имеют общую граничную точку, принадлежащую пересечению исходных фигур, образуют прямой угол.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_perpendicularity <= nrel_using_constants:
 	{
-	concept_geometric_figure;
-	concept_ray;
-	concept_right_angle;
-	nrel_boundary_point
+	concept_geometric_figure; 
+	nrel_perpendicularity; 
+	concept_ray; 
+	nrel_boundary_point; 
+	nrel_intersection; 
+	concept_right_angle
 	};;
 	
 nrel_perpendicular <- rrel_key_sc_element:

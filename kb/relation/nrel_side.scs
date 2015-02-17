@@ -16,12 +16,6 @@ nrel_side <- binary_relation;;
 
 nrel_side <- oriented_relation;;
 
-nrel_side <= nrel_combination: 
-	{
-	nrel_side_of_angle;
-	nrel_side_of_polygon
-	};;
-
 nrel_side => nrel_definitional_domain: 
 	...
 	(*
@@ -46,22 +40,8 @@ nrel_side => nrel_first_domain:
 nrel_side => nrel_second_domain: 
 	concept_segment;;
 
-nrel_side <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(сторона*)] (* <- lang_ru;; *);; 
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Понятие стороны - это теоретико-множественное объединение понятий стороны угла и стороны многоугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-
 nrel_side <= nrel_using_constants:
 	{
-	nrel_side_of_angle;
+	nrel_side_of_angle; 
 	nrel_side_of_polygon
 	};;

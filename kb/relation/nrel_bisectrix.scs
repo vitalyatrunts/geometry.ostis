@@ -46,23 +46,9 @@ nrel_bisectrix <= nrel_combination:
 		nrel_bisectrix_of_triangle
 		};;
 	
-nrel_bisectrix <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(биссектриса*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Понятие биссектрисы - это объединение понятий биссектрисы угла и биссектрисы треугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_bisectrix <= nrel_using_constants:
-	{
-	nrel_bisectrix_of_angle;
+	{ 
+	nrel_bisectrix_of_angle; 
 	nrel_bisectrix_of_triangle
 	};;
 

@@ -37,19 +37,6 @@ nrel_angle_measure => nrel_first_domain:
 nrel_angle_measure => nrel_second_domain: 
 	concept_quantity;;
 
-nrel_angle_measure <- rrel_key_sc_element: 
-     	...
-	(*
-	=> nrel_main_idtf: [Поясн.(мера угла*)] (* <- lang_ru;; *);;
-	<- sc_explanation;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Мера угла - величина, полученная при измерении угла.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 nrel_angle_measure <= nrel_main_statements:
 	...
@@ -64,4 +51,9 @@ nrel_angle_measure <= nrel_main_statements:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+nrel_angle_measure <= nrel_using_constants:
+	{
+	concept_angle
+	};;
 

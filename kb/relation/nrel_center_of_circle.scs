@@ -31,25 +31,11 @@ nrel_center_of_circle => nrel_first_domain:
 nrel_center_of_circle => nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_center_of_circle <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf:[Опр.(центр окружности*)](* <- lang_ru;; *);; 
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Центр окружности - точка, от которой любые точки, принадлежащие окружности, удалены на равные расстояния.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-
 nrel_center_of_circle <= nrel_using_constants:
 	{
-	concept_circle;
-	concept_geometric_point;
-	nrel_congruence	
+	concept_geometric_point; 
+	concept_circle; 
+	nrel_distance
 	};;
 
 nrel_center_of_circle <- rrel_key_sc_element:

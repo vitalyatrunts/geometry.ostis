@@ -30,26 +30,12 @@ nrel_diagonal => nrel_first_domain:
 nrel_diagonal => nrel_second_domain: 
 	concept_segment;;
 
-nrel_diagonal <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(диагональ*)] (* <- lang_ru;; *);; 
-	-> rrel_main_key_sc_element: d_nrel_diagonal;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Диагональ - эито отношение, связывающее многоугольник и отрезок, соединяющий две вершины, которые не принадлежат одной стороне.]
-			(* <- lang_ru;;	*);;
-		*);;
-	*);;
-
 nrel_diagonal <= nrel_using_constants:
 	{
-    	concept_polygon;
-        nrel_side;
-	concept_segment
+    	concept_segment; 
+	nrel_vertex; 
+	concept_polygon; 
+	nrel_side
         };;
 	
 nrel_diagonal <- rrel_key_sc_element:

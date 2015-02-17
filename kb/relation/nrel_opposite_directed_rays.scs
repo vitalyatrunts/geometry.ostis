@@ -15,27 +15,11 @@ nrel_opposite_directed_rays => nrel_first_domain:
 nrel_opposite_directed_rays => nrel_second_domain: 
 	concept_ray;;
 
-nrel_opposite_directed_rays <- rrel_key_sc_element: 
-    ...
-	(*
-	=> nrel_main_idtf: [Опр.(противоположно направленные лучи*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_nrel_opposite_directed_rays;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Противоположно направленные лучи -это два луча , лежащие на прямой ,параллельны или совпадают. И при этом лучи не являются сонаправленными.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;	
-
 nrel_opposite_directed_rays <= nrel_using_constants:
 	{
-	concept_ray;
-	concept_straight_line;
-	nrel_definitional_domain;
-	nrel_codirectional_rays 		      
+	concept_ray; 
+	nrel_codirectional_rays; 
+	nrel_additional_rays		      
 	};;	
 
 nrel_opposite_directed_rays => rrel_key_sc_element:
