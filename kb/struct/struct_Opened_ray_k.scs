@@ -1,24 +1,6 @@
-sc_node_struct -> struct_Opened_ray_k;;
-
-struct_Opened_ray_k => nrel_main_idtf:
-	[Открытый луч k]
-	(*
-	<- lang_ru;;
-	*);
-	[Opened ray k]
-	(*
-	<- lang_en;;
-	*);;
-
 struct_Opened_ray_k => nrel_idtf: [Полупрямая k] (* <- lang_ru;; *);;
 
 struct_Opened_ray_k => nrel_idtf: [Открытая полупрямая k] (* <- lang_ru;; *);;
-
-struct_Opened_ray_k <- concept_opened_ray;;
-
-sc_node_struct -> struct_Geometric_point_A;;
-
-struct_Geometric_point_A <- concept_geometric_point;;
 
 struct_Opened_ray_k => nrel_boundary_point: struct_Geometric_point_A;;
 
@@ -27,7 +9,7 @@ struct_Opened_ray_k -|> struct_Geometric_point_A;;
 struct_Opened_ray_k <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf: [Факт.утв.(Открытый луч k)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Факт.утв. (Открытый луч k)] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -41,11 +23,11 @@ struct_Opened_ray_k <- rrel_key_sc_element:
 struct_Opened_ray_k <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;; 
-		<= nrel_sc_text_translation: 
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: 
 		...
-			(*
-				-> rrel_example: 
-						 "file://images/LuchK.png";;
-			*);; 
+		(*
+		-> rrel_example: 
+			"file://images/LuchK.png";;
+		*);; 
 	*);; 

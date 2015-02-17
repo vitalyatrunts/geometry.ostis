@@ -2,67 +2,43 @@ sc_node_struct -> struct_Acute_angled_triangle_O_S_T;;
 
 struct_Acute_angled_triangle_O_S_T => nrel_main_idtf:
 	[Остроугольный треугольник OST]
-	(*
-	<- lang_ru;;
-	*);
+	(*<- lang_ru;;*);
 	[Acute angled triangle OST]
-	(*
-	<- lang_en;;
-	*);;
+	(*<- lang_en;;*);;
 
-struct_Acute_angled_triangle_O_S_T => nrel_idtf: [Тр-к(O; S; T)] (* <- lang_ru;; *);;
+struct_Acute_angled_triangle_O_S_T => nrel_idtf: [Тр-к (O; S; T)] (* <- lang_ru;; *);;
 
 struct_Acute_angled_triangle_O_S_T => nrel_idtf: [Остроугольный треугольник(O; S; T)] (* <- lang_ru;; *);;
 
 struct_Acute_angled_triangle_O_S_T => nrel_idtf: [Треугольник, вершинами которого являются Точка O, Точка S, Точка T] (* <- lang_ru;; *);;
 
 struct_Acute_angled_triangle_O_S_T <- concept_acute_angled_triangle;;
-struct_Acute_angled_triangle_O_S_T <- concept_scalene_triangle;;
-
-sc_node_struct -> struct_Geometric_point_O;;
-sc_node_struct -> struct_Geometric_point_S;;
-sc_node_struct -> struct_Geometric_point_T;;
-
-struct_Geometric_point_O <- concept_geometric_point;;
-struct_Geometric_point_S <- concept_geometric_point;;
-struct_Geometric_point_T <- concept_geometric_point;;
 
 struct_Acute_angled_triangle_O_S_T => nrel_vertex: struct_Geometric_point_O;;
+
 struct_Acute_angled_triangle_O_S_T => nrel_vertex: struct_Geometric_point_S;;
+
 struct_Acute_angled_triangle_O_S_T => nrel_vertex: struct_Geometric_point_T;;
 
-sc_node_struct -> struct_Segment_O;;
-sc_node_struct -> struct_Segment_S;;
-sc_node_struct -> struct_Segment_T;;
+struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_S_T;;
 
- struct_Segment_O <- concept_segment;;
- struct_Segment_S <- concept_segment;;
- struct_Segment_T <- concept_segment;;
+struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_O_T;;
 
-struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_O;;
-struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_S;;
-struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_T;;
-
-sc_node_struct -> struct_Acute_angle_Alpha;;
-sc_node_struct -> struct_Acute_angle_Beta;;
-sc_node_struct -> struct_Acute_angle_Gamma;;
-
-struct_Acute_angle_Alpha <- concept_acute_angle;;
-struct_Acute_angle_Beta <- concept_acute_angle;;
-struct_Acute_angle_Gamma <- concept_acute_angle;;
+struct_Acute_angled_triangle_O_S_T => nrel_side: struct_Segment_O_S;;
 
 struct_Acute_angled_triangle_O_S_T => nrel_internal_angle: struct_Acute_angle_Alpha;;
+
 struct_Acute_angled_triangle_O_S_T => nrel_internal_angle: struct_Acute_angle_Beta;;
+
 struct_Acute_angled_triangle_O_S_T => nrel_internal_angle: struct_Acute_angle_Gamma;;
 
-struct_Segment_S => nrel_boundary_point: struct_Geometric_point_O;;
-struct_Segment_T => nrel_boundary_point: struct_Geometric_point_O;;
+struct_Segment_O_S => nrel_boundary_point: struct_Geometric_point_O;;
 
-struct_Segment_T => nrel_boundary_point: struct_Geometric_point_S;;
-struct_Segment_O => nrel_boundary_point: struct_Geometric_point_S;;
+struct_Segment_O_S => nrel_boundary_point: struct_Geometric_point_S;;
 
-struct_Segment_S => nrel_boundary_point: struct_Geometric_point_T;;
-struct_Segment_O => nrel_boundary_point: struct_Geometric_point_T;;
+struct_Segment_S_T => nrel_boundary_point: struct_Geometric_point_S;;
+
+struct_Segment_S_T => nrel_boundary_point: struct_Geometric_point_T;;
 
 struct_Acute_angled_triangle_O_S_T <- rrel_key_sc_element:
 	...
@@ -73,8 +49,7 @@ struct_Acute_angled_triangle_O_S_T <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Треугольник OST является остроугольным, разносторонним,
-			Геометрические точки O, S и T являются вершинами Треугольника OST. Отрезки o, s и t являются сторонами Треугольника OST. Углы alpha, beta, gamma являются внутренним углами Треугольника OST. Углы alpha, beta, gamma - острые углы. Точка O является граничной точкой отрезков t, s. Точка S является граничной точкой отрезков t, o.
+			[Треугольник OST является остроугольным, разносторонним. Геометрические точки O, S и T являются вершинами Треугольника OST. Отрезки o, s и t являются сторонами Треугольника OST. Углы alpha, beta, gamma являются внутренним углами Треугольника OST. Углы alpha, beta, gamma - острые углы. Точка O является граничной точкой отрезков t, s. Точка S является граничной точкой отрезков t, o.
 Точка T является граничной точкой отрезков s, o.]
 			(* <- lang_ru;; *);;
 		*);;
@@ -83,11 +58,11 @@ struct_Acute_angled_triangle_O_S_T <- rrel_key_sc_element:
 struct_Acute_angled_triangle_O_S_T <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;; 
-		<= nrel_sc_text_translation: 
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: 
 		...
-			(*
-				-> rrel_example: 
-						  "file://images/Triangle OST.png";;
-			*);; 
+		(*
+		-> rrel_example: 
+			"file://images/Triangle OST.png";;
+		*);; 
 	*);; 
