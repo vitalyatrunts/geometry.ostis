@@ -1,4 +1,4 @@
-knowledge_base_of_Euclidean_geometry <= nrel_decomposition:
+knowledge_base_of_Euclidean_geometry <= nrel_section_decomposition:
 	{
 	documentation_Euclidean_geometry;
 	documentation_Ostis_Geometry;
@@ -14,7 +14,7 @@ context_Ostis_Geometry_within_Global_knowledge_base => nrel_main_idtf: [Конт
 development_history_of_Ostis_Geometry => nrel_main_idtf:[История развития ИСС по геометрии] (*<- lang_ru;; *);;
 documentation_project_Ostis_Geometry => nrel_main_idtf: [Документация. Проект ИСС по геометрии] (* <- lang_ru;; *);;
 
-documentation_Ostis_Geometry <= nrel_decomposition:
+documentation_Ostis_Geometry <= nrel_section_decomposition:
 	{
 	rationale_for_developing_Ostis_Geometry;
 	rationale_for_choice_Ostis_Geometry;
@@ -41,7 +41,7 @@ section_subsystem_of_Ostis_Geometry_for_management_information_security => nrel_
 информационной безопасностью ИСС по геометрии ] (* <- lang_ru;; *);;
 
 rationale_for_developing_Ostis_Geometry => nrel_idtf: [Раздел. Обоснование, принципы построения и состав ИСС по геометрии] (* <- lang_ru;; *);;
-rationale_for_developing_Ostis_Geometry <= nrel_decomposition:
+rationale_for_developing_Ostis_Geometry <= nrel_section_decomposition:
 	{
 	section_type_function_and_composition_of_Ostis_Geometry;
 	section_relevance_of_Ostis_Geometry;
@@ -72,7 +72,7 @@ section_competitive_advantages_of_Ostis_Geometry => nrel_main_idtf: [Разде�
 section_novelty_of_solutions_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Новизна решений, реализуемых в ИСС по геометрии] (* <- lang_ru;; *);;
 section_project_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Проект ИСС по геометрии] (* <- lang_ru;; *);;
 
-/*section_competitive_advantages_of_Ostis_Geometry <= nrel_sc_text_translation:	
+section_competitive_advantages_of_Ostis_Geometry <= nrel_sc_text_translation:	
 	...
 	(*
 	-> "file://section_intelligent_system_geometry_advantages.pdf"
@@ -128,6 +128,4 @@ section_subsystem_of_Ostis_Geometry_for_management_design <= nrel_sc_text_transl
 	(*
 	-> "file://developer_guide.pdf"
 		(* <- lang_ru;; *);;
-	*);;*/
-
-
+	*);;
