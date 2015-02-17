@@ -5,39 +5,14 @@ subject_domain_of_Euclidean_geometry
 	[Предметная область Геометрии Евклида]
 	(* <- lang_ru;; *);
 	[Subject domain of Euclidian Geometry]
-	(* <- lang_en;; *);
+	(* <- lang_en;; *);;
 	
-=> nrel_particular_subject_domain:
-	subject_domain_of_core_Euclidean_geometry;
-	subject_domain_of_planimetry;;
-
-subject_domain_of_Euclidean_geometry => nrel_idtf: [Предметная область Евклидовой Геометрии] (* <- lang_ru;; *);;
-
-subject_domain_of_Euclidean_geometry => nrel_idtf: [Предметная область элементарной геометрии] (* <- lang_ru;; *);;
-
-subject_domain_of_Euclidean_geometry <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Поясн.(Предметная область Геометрии Евклида)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Геометрия Евклида - это теория, основанная на системе аксиом, впервые изложенной в Началах Евклида (III век до н. э.).]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 subject_domain_of_Euclidean_geometry -> rrel_maximum_studied_object_class: 
-	... 
-	(*
-	<= nrel_combination: 
-		{
-		concept_geometric_point;
-		concept_geometric_figure
-		};;
-	*);;
-	
+
+
+	concept_geometric_point;
+	concept_geometric_figure;;
+
 subject_domain_of_Euclidean_geometry <- subject_domain;;
 
