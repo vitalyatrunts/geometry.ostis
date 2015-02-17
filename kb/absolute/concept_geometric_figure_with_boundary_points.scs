@@ -35,25 +35,10 @@ concept_geometric_figure_with_boundary_points <= nrel_subdividing:
 	  concept_geometric_figure_without_boundary_points;
 	  concept_geometric_figure_with_some_boundary_points;;
 	*);;
-
-concept_geometric_figure_with_boundary_points <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(геометрическая фигура, имеющая граничные точки)] (* <- lang_ru;; *);;
-	<- sc_definition;;
-	<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-			[Геометрическая фигура, имеющая граничные точки - это фигура, которая имеет хотя бы одну граничную точку.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 	
 concept_geometric_figure_with_boundary_points <= nrel_using_constants:
 	{
-	concept_geometric_point;
-	concept_geometric_figure;
+	concept_geometric_figure; 
 	nrel_boundary_point
 	};;
 

@@ -32,27 +32,12 @@ concept_ray <= nrel_subdividing:
 	concept_opened_ray;;
 	*);;
 
-
-concept_ray <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(луч)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Лучом называют геометрическую фигуру, для которой существует три точки такие, что одна из точек не принадлежит фигуре, а вторая - принадлежит и лежит между точкой, не принадлежащей фигуре, и любой другой точкой, принадлежащей фигуре.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_ray <= nrel_using_constants:
 	{
-	rrel_between;
-	concept_geometric_figure;
-	concept_rectilinear_three_of_points;
-	concept_geometric_point
+	concept_ray; 
+	concept_straight_line; 
+	concept_geometric_point; 
+	nrel_side
 	};;	
 	
 concept_ray <- rrel_key_sc_element: 

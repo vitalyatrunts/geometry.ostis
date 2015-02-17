@@ -20,27 +20,13 @@ concept_planar_angle <= nrel_strict_inclusion: concept_flat_geometric_figure;;
 
 concept_planar_angle <= nrel_strict_inclusion: concept_angle;;
 
-
-concept_planar_angle <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(планарный угол] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Планарным углом называется геометрическая фигура неограниченного размера, образованная двумя закрытыми лучами, выходящими из одной точки, и всеми точками плоскости, заключёнными между этими лучами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_planar_angle <= nrel_using_constants:
 	{
-	concept_geometric_point;
-	concept_geometric_figure;
-	concept_plane;
-	concept_closed_ray
+	concept_geometric_figure_of_unlimited_size; 
+	concept_closed_ray; 
+	concept_geometric_figure; 
+	concept_plane; 
+	rrel_between
 	};;
 
 /*concept_planar_angle -> rrel_example: Угол ABK;;

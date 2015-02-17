@@ -16,21 +16,6 @@ concept_rhomb <= nrel_strict_inclusion: concept_parallelogram;;
 
 concept_rhomb => nrel_strict_inclusion: concept_square;;
 
-concept_rhomb <- rrel_key_sc_element: 
-     	... 
-	(*
-	=> nrel_main_idtf: [Опр.(ромб)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_rhomb;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Ромб - это параллелограмм, все стороны которого попарно конгруэнтны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-
 concept_rhomb <= nrel_using_constants:
 	{
 	concept_parallelogram;

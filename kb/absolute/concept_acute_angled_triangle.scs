@@ -14,26 +14,10 @@ concept_acute_angled_triangle => nrel_idtf: [Множество знаков в�
 
 concept_acute_angled_triangle <= nrel_strict_inclusion: concept_triangle;;
 
-
-concept_acute_angled_triangle <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(остроугольный треугольник);;] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_acute_angled_triangle;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Остроугольный треугольник – это треугольник, все внутренние углы которого являются острыми углами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_acute_angled_triangle <= nrel_using_constants:
 	{
-	concept_triangle;
-	nrel_internal_angle;
+	concept_angle; 
+	concept_triangle; 
 	concept_acute_angle
 	};;
 				

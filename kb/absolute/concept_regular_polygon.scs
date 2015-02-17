@@ -24,26 +24,12 @@ concept_regular_polygon => nrel_strict_inclusion: concept_equilateral_triangle;;
 
 concept_regular_polygon => nrel_strict_inclusion: concept_square;;
 
-concept_regular_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(правильный многоугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Геометрическая фигура является правильным многоугольником тогда и только тогда, когда она является выпуклым многоугольником, а все ее стороны и все внутренние углы между собой равны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_regular_polygon <= nrel_using_constants:
 	{
-	concept_convex_polygon;
-	nrel_congruence;
-	nrel_side;
-	nrel_internal_angle
+	concept_polygon; 
+	concept_angle; 
+	nrel_side; 
+	nrel_congruence
 	};;
 	
 concept_regular_polygon <- rrel_key_sc_element: 

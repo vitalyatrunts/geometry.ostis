@@ -31,20 +31,6 @@ concept_triangle <= nrel_subdividing:
 	concept_obtuse_triangle
 	};;
 
-concept_triangle <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Треугольник - это могоугольник с тремя сторонами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_triangle <= nrel_using_constants:
 	{
 	concept_polygon;

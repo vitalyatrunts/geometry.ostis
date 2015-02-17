@@ -37,20 +37,6 @@ concept_line <= nrel_subdividing:
 concept_line <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Поясн.(линия)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линия - траектория, описанная движущейся точкой.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-concept_line <- rrel_key_sc_element: 
-	...
-	(*
 		<- sc_explanation;; 
 		<= nrel_sc_text_translation: 
 		...
@@ -60,3 +46,8 @@ concept_line <- rrel_key_sc_element:
 			*);; 
 	*);;
 
+concept_line  <= nrel_using_constants:
+	{
+	nrel_bound; 
+	concept_geometric_figure
+	};;

@@ -15,32 +15,12 @@ concept_full_angle => nrel_idtf: [Множество всевозможных п
 concept_full_angle => nrel_idtf: [Множество знаков всевозможных полных углов] (* <- lang_ru;; *);;
 
 concept_full_angle <= nrel_strict_inclusion: concept_planar_angle;;
-
-
-
-concept_full_angle <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(полный угол)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_full_angle;;
-	<-  sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол является полным углом, когда значение его величины равно 360 угловых градусов.]
-			(* 
-			<- lang_ru;; 
-			*);;
-		*);;
-	*);;
-
 	
 concept_full_angle <= nrel_using_constants:
 	{
-	concept_angle;
-	rrel_degree;
-	nrel_angle_measure
+	concept_angle; 
+	concept_ray; 
+	nrel_generatrix
 	};;
 
 concept_full_angle -> rrel_example: struct_Full_angle_P_K_P;;

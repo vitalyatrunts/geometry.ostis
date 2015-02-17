@@ -16,25 +16,11 @@ concept_acute_angle => nrel_idtf: [Множество всевозможных �
 
 concept_acute_angle <=  nrel_strict_inclusion: concept_planar_angle;;
 
-concept_acute_angle <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(острый угол)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол является острым углом, когда он имеет величину угла, большую, чем 0 угловых градусов, и меньшую, чем 90 угловых градусов.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_acute_angle <= nrel_using_constants:
 	{
-	concept_angle;
-	nrel_angle_measure;
-	concept_geometric_point
+	concept_angle; 
+	concept_right_angle; 
+	nrel_angle_measure
 	};;
 	
 concept_acute_angle -> rrel_example: struct_Acute_Angle_K_L_M;;

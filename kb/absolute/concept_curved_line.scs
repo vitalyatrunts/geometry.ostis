@@ -28,25 +28,11 @@ concept_curved_line <= nrel_strict_inclusion: concept_geometric_figure_without_b
 
 concept_curved_line => nrel_strict_inclusion: concept_circle;;
 
-concept_curved_line <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(кривая)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линия называется кривой в том и только том случае, если не существует такой прямой, все точки которой совпадали бы со всеми точками кривой.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_curved_line <= nrel_using_constants:
 	{
-	concept_line;
-	concept_geometric_point;
-	concept_straight_line
+	concept_line; 
+	concept_straight_line; 
+	concept_geometric_point
 	};;
 	
 concept_curved_line <- rrel_key_sc_element: 

@@ -82,21 +82,6 @@ concept_geometric_figure <= nrel_subdividing:
 	  concept_geometric_body;;
 	*);;
 
-
-concept_geometric_figure <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(геометрическая фигура)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Геометрическая фигура - это непустое множество геометрических точек.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_geometric_figure <= nrel_using_constants:
 	{
 	concept_geometric_point
@@ -106,7 +91,6 @@ concept_geometric_figure -> rrel_example: struct_Rectilinear_triple_Of_Points_P_
 
 concept_geometric_figure -> rrel_example: struct_Straight_Line_A;;
 
-concept_geometric_figure -> rrel_example: struct_Triangle_A_B_C;;
 
 concept_geometric_figure -> rrel_example: struct_Rectangular_triangle_D_F_G;;
 

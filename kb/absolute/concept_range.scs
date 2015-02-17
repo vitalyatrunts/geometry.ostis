@@ -16,25 +16,9 @@ concept_range <= nrel_strict_inclusion: concept_linear_figure;;
 
 concept_range <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
 
-
-concept_range <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(интервал)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Интервал - это отрезок, которому не принадлежат его граничные точки.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-
 concept_range <= nrel_using_constants:
 	{
-	concept_segment;
+	concept_segment; 
 	nrel_boundary_point
 	};;
 

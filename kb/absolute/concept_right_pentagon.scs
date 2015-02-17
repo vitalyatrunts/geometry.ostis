@@ -22,24 +22,9 @@ concept_regular_pentagon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_regular_pentagon <= nrel_strict_inclusion: concept_pentagon;;
 
-concept_regular_pentagon <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(правильный пятиугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Правильный пятиугольник - это пятиугольник с равными сторонами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_regular_pentagon <= nrel_using_constants:
 	{
-	concept_pentagon;
-	nrel_side;
-	nrel_congruence
+	nrel_side; 
+	concept_pentagon
 	};;
 

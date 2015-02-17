@@ -21,25 +21,10 @@ concept_hexagon => nrel_idtf: [Многоугольник с шестью сто
 concept_hexagon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_hexagon => nrel_strict_inclusion: concept_regular_hexagon;;
-	
-concept_hexagon <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(шестиугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Шестиугольник- это многоугольник с шестью сторонами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 concept_hexagon <= nrel_using_constants:
 	{
-	concept_polygon;
-	concept_segment;
+	concept_polygon; 
 	nrel_side
 	};;	
 	
