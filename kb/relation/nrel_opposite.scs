@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_opposite;;
+/*sc_node_norole_relation -> nrel_opposite;;
 
 nrel_opposite => nrel_main_idtf:
 	[противолежащий*]
@@ -30,25 +30,10 @@ nrel_opposite => nrel_first_domain:
 nrel_opposite => nrel_second_domain: 
 	concept_segment;;
 
-nrel_opposite <- rrel_key_sc_element: 
-     	...
-	(*
-	=> nrel_main_idtf: [Опр.(противолежащий*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Отношение противолежащий связывает внутренний угол многоугольника и отрезок, являющийся стороной этого многоугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_opposite <= nrel_using_constants:
 	{
-	concept_polygon;
-	concept_segment;
-	nrel_side;
-	concept_planar_angle;
-	nrel_internal_angle
-	};;
+	nrel_internal_angle; 
+	concept_polygon; 
+	concept_segment; 
+	nrel_side
+	};;*/

@@ -38,23 +38,9 @@ concept_surface <= nrel_subdividing:
 	concept_non_oriented_surface;;
 	*);;
 
-concept_surface <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Поясн.(поверхность)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Поверхность - это совокупность всех последовательных положений некоторой перемещающейся в пространстве линии.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_half_plane <= nrel_using_constants:
 	{
-	concept_line
+	concept_geometric_body
 	};;				
 
 concept_surface -> rrel_example: struct_Plane_P;;

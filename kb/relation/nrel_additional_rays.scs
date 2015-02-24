@@ -25,27 +25,12 @@ nrel_additional_rays => nrel_first_domain:
 nrel_additional_rays => nrel_second_domain: 
 	concept_ray;;
 
-nrel_additional_rays <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(дополнительные лучи*)]	(* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_additional_rays;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Дополнительные лучи - это два различных луча, лежащих на одной прямой и имеющих общую граничную точку.] 
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_additional_rays <= nrel_using_constants:
 	{
     	concept_ray;
-        concept_straight_line;
-        concept_geometric_point;
-        nrel_boundary_point
+	concept_straight_line;
+	concept_geometric_point; 
+	nrel_boundary_point
 	};;
 	
 nrel_additional_rays <- rrel_key_sc_element:

@@ -10,23 +10,8 @@ concept_closed_polyline => nrel_idtf: [понятие замкнутой лом�
 
 concept_closed_polyline => nrel_strict_inclusion: concept_linear_polygon;;
 
-concept_closed_polyline <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(замкнутая ломаная)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Замкнутой ломаной называют ломаную, граничные точки которой совпадают.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_closed_polyline <= nrel_using_constants:
 	{
-	concept_geometric_point;
-	concept_polyline;
+	concept_polyline; 
 	nrel_boundary_point
 	};;

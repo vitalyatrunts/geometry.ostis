@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_isosceles_triangle;;
+/*sc_node_not_relation -> concept_isosceles_triangle;;
 
 concept_isosceles_triangle => nrel_main_idtf:
 	[равнобедренный треугольник]
@@ -14,25 +14,11 @@ concept_isosceles_triangle => nrel_idtf: [Множество всевозмож�
 
 concept_isosceles_triangle => nrel_idtf: [Множество знаков всевозможных равнобедренных треугольников] (* <- lang_ru;; *);;
 
-concept_isosceles_triangle  <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_isosceles_triangle;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Равнобедренным треугольником называют треугольник, в котором две стороны равны между собой.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_isosceles_triangle <= nrel_using_constants:
 	{
-	concept_triangle;
-	nrel_side
+	concept_triangle; 
+	nrel_side; 
+	nrel_congruence
 	};;	
 	
 concept_isosceles_triangle <- rrel_key_sc_element: 
@@ -149,7 +135,5 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 			[Для каждого равнобедренного треугольника выполняется следующее числовое соотношение: R = a/ (2 sin (alpha)), где R - величина радиуса описанной окружности указанного треугольника, alpha - градусная мера угла при основании этого треугольника, a - величина боковой стороны этого треугольника.] 
 			(* <- lang_ru;; *);; 
 		*);;
-	*);;
+	*);;*/
 
-
-concept_isosceles_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

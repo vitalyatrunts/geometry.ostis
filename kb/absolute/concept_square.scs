@@ -18,27 +18,10 @@ concept_square <= nrel_strict_inclusion: concept_rectangle;;
 
 concept_square <= nrel_strict_inclusion: concept_rhomb;;
 
-			
-concept_square <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(квадрат)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_square;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Квадрат - это ромб, все внутренние углы которого прямые.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_square <= nrel_using_constants:
 	{
-	concept_rhomb;
-	concept_right_angle;
-	nrel_internal_angle
+	nrel_side; 
+	concept_angle
 	};;	
 	
 concept_square <- rrel_key_sc_element: 

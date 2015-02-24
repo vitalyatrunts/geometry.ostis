@@ -31,24 +31,7 @@ nrel_side_of_angle => nrel_first_domain:
 nrel_side_of_angle => nrel_second_domain: 
 	concept_closed_ray;;
 
-nrel_side_of_angle <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(сторона угла*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Стороной планарного угла называют закрытый луч, исходящий из вершины и влючающийся в его границу.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-
 nrel_side_of_angle <= nrel_using_constants:
 	{
-	concept_planar_angle;
-	nrel_bound;
-	concept_closed_ray;
-	nrel_vertex_of_angle
+	concept_ray
 	};;

@@ -1,38 +1,12 @@
-sc_node_struct -> struct_Straight_angle_A_O_B;;
-
-struct_Straight_angle_A_O_B => nrel_main_idtf:
-	[Развернутый угол AOB]
-	(*
-	<- lang_ru;;
-	*);
-	[Straight angle AOB]
-	(*
-	<- lang_en;;
-	*);;
-
-struct_Straight_angle_A_O_B => nrel_idtf: [Развернутый угол(A; O; B)] (* <- lang_ru;; *);;
-
-struct_Straight_angle_A_O_B <- concept_straight_angle;;
-
-sc_node_struct -> struct_Geometric_point_O;;
-sc_node_struct -> struct_Geometric_point_A;;
-sc_node_struct -> struct_Geometric_point_B;;
-
-struct_Geometric_point_O <- concept_geometric_point;;
-struct_Geometric_point_A <- concept_geometric_point;;
-struct_Geometric_point_B <- concept_geometric_point;;
+struct_Straight_angle_A_O_B => nrel_idtf: [Развернутый угол (A; O; B)] (* <- lang_ru;; *);;
 
 struct_Straight_angle_A_O_B => nrel_vertex: struct_Geometric_point_O;;
 
-sc_node_struct -> struct_Ray_A_O;;
-sc_node_struct -> struct_Ray_O_B;;
-struct_Ray_A_O <- concept_ray;;
-struct_Ray_O_B <- concept_ray;;
+struct_Straight_angle_A_O_B => nrel_side: struct_Ray_A_O;;
 
-struct_Acute_Angle_K_L_M => nrel_side: struct_Ray_A_O;;
-struct_Acute_Angle_K_L_M => nrel_side: struct_Ray_O_B;;
+struct_Straight_angle_A_O_B => nrel_side: struct_Ray_O_B;;
 
-struct_Straight_angle_A_O_B  <- rrel_key_sc_element:
+struct_Straight_angle_A_O_B <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Факт. утв.(Развернутый угол AOB)] (* <- lang_ru;; *);;
@@ -41,8 +15,7 @@ struct_Straight_angle_A_O_B  <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Угол AOB является развернутым.
-			A, O и B являются геометрическими точками. Лучи OA и OB являются сторонами угла AOB. Геометрическая точка O является вершиной угла AOB.]
+			[Угол AOB является развернутым. A, O и B являются геометрическими точками. Лучи OA и OB являются сторонами угла AOB. Геометрическая точка O является вершиной угла AOB.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -50,11 +23,11 @@ struct_Straight_angle_A_O_B  <- rrel_key_sc_element:
 struct_Straight_angle_A_O_B <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
-		<= nrel_sc_text_translation:
-			...
-			(*
-				-> rrel_example:
-					"file://images/Straight_angle_A_O_B.png";;
-			*);;
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Straight_angle_A_O_B.png";;
+		*);;
 	*);;

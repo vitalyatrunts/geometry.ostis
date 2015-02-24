@@ -13,20 +13,6 @@ concept_countable_set_of_points <= nrel_strict_inclusion: concept_geometric_figu
 concept_countable_set_of_points => nrel_strict_inclusion: concept_pair_of_points;;
 concept_countable_set_of_points => nrel_strict_inclusion: concept_triple_of_points;;
 
-concept_countable_set_of_points <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(счетное множество точек)] (* <- lang_ru;; *);;
-		<- sc_definition;; 
-		<= nrel_sc_text_translation: 
-		...
-		(*
-			-> rrel_example: 
-				[Счетное множество точек - это счетное множество, каждый элемент которого является геометрической точкой.]
-				(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_countable_set_of_points <= nrel_using_constants:
 	{
 	concept_geometric_point

@@ -1,25 +1,22 @@
 sc_node_struct -> struct_Straight_Line_A;;
 
+struct_Straight_Line_A <- concept_straight_line;;
+
 struct_Straight_Line_A => nrel_main_idtf: 
 	[Прямая a]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[Straight Line A]
-	(*
-	<- lang_en;;
-	*);;
-
+	(* <- lang_en;; *);;
 
 struct_Straight_Line_A <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
-		<= nrel_sc_text_translation:
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
 		...
 		(*
-			-> rrel_example:
-				"file://images/Pryamayaa.png";;
+		-> rrel_example:
+			"file://images/Pryamayaa.png";;
 		*);;
 	*);;
 
@@ -36,6 +33,4 @@ struct_Straight_Line_A  <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-struct_Straight_Line_A <- concept_straight_line;;
 

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_equilateral_triangle;;
+/*sc_node_not_relation -> concept_equilateral_triangle;;
 
 concept_equilateral_triangle => nrel_main_idtf:
 	[равносторонний треугольник]
@@ -32,28 +32,10 @@ concept_equilateral_triangle => nrel_idtf: [Правильный многоуг�
 
 concept_equilateral_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
 
-concept_equilateral_triangle  <- rrel_key_sc_element: 
-	...
-        
-	(*
-	=> nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_equilateral_triangle;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Треугольник является равносторонним в том и только в том случае, если все его стороны конгруэнтны между собой]
-			(* 
-			<- lang_ru;; 
-			*);;
-		*);;
-	*);;
-
 concept_equilateral_triangle <= nrel_using_constants:
 				{
-				concept_triangle;
-				nrel_side;
+				concept_triangle; 
+				nrel_side; 
 				nrel_congruence
 				};;	
 
@@ -225,4 +207,4 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_equilateral_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
+concept_equilateral_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;*/

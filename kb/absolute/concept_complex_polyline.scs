@@ -14,25 +14,10 @@ concept_complex_polyline => nrel_idtf: [Множество всевозможн�
 
 concept_complex_polyline <= nrel_strict_inclusion: concept_polyline;;
 
-
-concept_complex_polyline <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(сложная ломаная)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сложная ломаная - это ломаная с самопересечениями.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-
 concept_complex_polyline <= nrel_using_constants:
 	{
-	concept_polyline;
-	concept_segment
+	concept_polyline; 
+	nrel_intersection
 	};;
 				
 

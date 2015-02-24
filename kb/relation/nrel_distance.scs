@@ -31,20 +31,6 @@ nrel_distance => nrel_first_domain:
 nrel_distance => nrel_second_domain: 
 	concept_quantity;;
 
-nrel_distance <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Поясн.(расстояние*)] (* <- lang_ru;; *);; 	
-	<- sc_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Расстоянием между точками A и B называют длину отрезка AB.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_distance <- rrel_key_sc_element:
 	...
 	(*
@@ -123,3 +109,10 @@ nrel_distance <- rrel_key_sc_element:
 			(* <- lang_ru;;	*);;
 		*);;
 	*);;
+
+
+nrel_distance <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_segment
+	};;

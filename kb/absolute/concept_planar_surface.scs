@@ -18,22 +18,9 @@ concept_planar_surface => nrel_strict_inclusion: concept_half_plane;;
 
 concept_planar_surface => nrel_strict_inclusion: concept_plane;;
 
-concept_surface <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(планарная поверхность)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Поверхность - это пересечение понятия планарной фигуры и понятия поверхности.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_half_plane <= nrel_using_constants:
 	{
-	concept_surface;
-	concept_planar_figure
+	nrel_intersection; 
+	concept_planar_figure; 
+	concept_plane
 	};;

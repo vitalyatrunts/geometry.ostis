@@ -33,27 +33,10 @@ nrel_inclined => nrel_first_domain:
 nrel_inclined => nrel_second_domain: 
 	concept_segment;;
 
-nrel_inclined <- rrel_key_sc_element: 
-      	...
-	(*
-	=> nrel_main_idtf: [Опр.(наклонная*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_nrel_inclined;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Наклонной к данной прямой называется отрезок, соединяющий какую-нибудь точку плоскости с точкой прямой и не являющийся перпендикуляром к этой прямой.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_inclined <= nrel_using_constants:
-	{
-	concept_geometric_point;
-	concept_plane;
-	concept_straight_line;
-	concept_segment;
+	{ 
+	concept_segment; 
+	concept_geometric_figure; concept_plane; concept_stright_line; 
 	nrel_perpendicular
 	};;
 	

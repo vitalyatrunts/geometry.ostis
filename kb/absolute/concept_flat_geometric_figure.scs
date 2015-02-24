@@ -13,25 +13,10 @@ concept_flat_geometric_figure => nrel_idtf: [Понятие плоской ге�
 concept_flat_geometric_figure <= nrel_strict_inclusion: concept_geometric_figure;;
 
 concept_flat_geometric_figure <= nrel_strict_inclusion: concept_planar_figure;;
-				
-concept_flat_geometric_figure <- rrel_key_sc_element: 
-     	... 
-	(*
-	=> nrel_main_idtf: [Опр.(плоская геометрическая фигура)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Плоская геометрическая фигура - это геометрическая фигура, образованная планарной замкнутой линией, являющейся границейэтой фигуры, и всеми точками, которые лежат внутри этой линии.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 concept_flat_geometric_figure <= nrel_using_constants:
 	{
-        concept_planar_line;
-	concept_geometric_point
+        concept_plane
 	};;	
 	
 

@@ -26,28 +26,13 @@ concept_convex_polygon <= nrel_subdividing:
 	   concept_pentagon;	
 	   concept_hexagon;;
 	*);;
-		
-concept_convex_polygon <- rrel_key_sc_element: 
-    ...
-	(*
-	=> nrel_main_idtf: [Опр.(выпуклый многоугольник)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_convex_polygon;;
-	<- sc_definition;;
-	<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-			[Выпуклый многоугольник - это многоугольник, лежащий в одной полуплоскости относительно любой прямой содержащей его сторону.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 concept_convex_polygon <= nrel_using_constants:
 	{
-	concept_polygon;
-	concept_half_plane;
-	concept_straight_line;
-	nrel_side
+	concept_polygon; 
+	concept_half_plane; 
+	concept_straight_line; 
+	nrel_adjacent_angles
 	};;
 
 concept_convex_polygon <= nrel_subdividing:
@@ -158,7 +143,7 @@ concept_convex_polygon -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;
 
 concept_convex_polygon -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
 
-concept_convex_polygon -> rrel_example: struct_Triangle_A_B_C;;
+
 
 concept_convex_polygon -> rrel_example: struct_Rectangular_triangle_D_F_G;;
 

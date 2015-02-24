@@ -2,86 +2,59 @@ sc_node_struct -> struct_Rhomb_E_F_G_H;;
 
 struct_Rhomb_E_F_G_H => nrel_main_idtf:
 	[Ромб EFGH]
-	(*
-	<- lang_ru;;
-	*);
+	(* <- lang_ru;; *);
 	[Rhomb EFGH]
-	(*
-	<- lang_en;;
-	*);;
+	(* <- lang_en;; *);;
 
-struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб(E; F; G; H)] (* <- lang_ru;; *);;
+struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб (E; F; G; H)] (* <- lang_ru;; *);;
 
 struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб, вершинами которого являются Точка E, Точка F, Точка G и Точка H] (* <- lang_ru;; *);;
 
-struct_Rhomb_E_F_G_H <- concept_rhomb;;
-
-sc_node_struct -> struct_Geometric_point_E;;
-sc_node_struct -> struct_Geometric_point_F;;
-sc_node_struct -> struct_Geometric_point_G;;
-sc_node_struct -> struct_Geometric_point_H;;
-
-struct_Geometric_point_E <- concept_geometric_point;;
-struct_Geometric_point_F <- concept_geometric_point;;
-struct_Geometric_point_G <- concept_geometric_point;;
-struct_Geometric_point_H <- concept_geometric_point;;
-
 struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_E;;
+
 struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_F;;
+
 struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_G;;
+
 struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_H;;
 
-sc_node_struct -> struct_Segment_E;;
-sc_node_struct -> struct_Segment_F;;
-sc_node_struct -> struct_Segment_G;;
-sc_node_struct -> struct_Segment_H;;
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_E_H;;
 
-struct_Segment_E <- concept_segment;;
-struct_Segment_F <- concept_segment;;
-struct_Segment_G <- concept_segment;;
-struct_Segment_H <- concept_segment;;
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_E_F;;
 
-struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_E;;
-struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_F;;
-struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_G;;
-struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_H;;
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_F_G;;
 
-sc_node_struct -> struct_Angle_Alpha;;
-sc_node_struct -> struct_Angle_Beta;;
-sc_node_struct -> struct_Angle_Gamma;;
-sc_node_struct -> struct_Angle_Sigma;;
-
-struct_Angle_Alpha <- concept_angle;;
-struct_Angle_Beta <- concept_angle;;
-struct_Angle_Gamma <- concept_angle;;
-struct_Angle_Sigma <- concept_angle;;
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_G_H;;
 
 struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Alpha;;
+
 struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Beta;;
+
 struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Gamma;;
+
 struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Sigma;;
 
-struct_Segment_E => nrel_boundary_point: struct_Geometric_point_E;;
-struct_Segment_F => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_E_H => nrel_boundary_point: struct_Geometric_point_E;;
 
-struct_Segment_F => nrel_boundary_point: struct_Geometric_point_F;;
-struct_Segment_G => nrel_boundary_point: struct_Geometric_point_F;;
+struct_Segment_E_H => nrel_boundary_point: struct_Geometric_point_H;;
 
-struct_Segment_H => nrel_boundary_point: struct_Geometric_point_G;;
-struct_Segment_G => nrel_boundary_point: struct_Geometric_point_G;;
+struct_Segment_E_F => nrel_boundary_point: struct_Geometric_point_E;;
 
-struct_Segment_E => nrel_boundary_point: struct_Geometric_point_H;;
-struct_Segment_H => nrel_boundary_point: struct_Geometric_point_H;;
+struct_Segment_E_F => nrel_boundary_point: struct_Geometric_point_F;;
+
+struct_Segment_G_H => nrel_boundary_point: struct_Geometric_point_G;;
+
+struct_Segment_G_H => nrel_boundary_point: struct_Geometric_point_H;;
 
 struct_Rhomb_E_F_G_H <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
-		<= nrel_sc_text_translation:
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
 		...
 		(*
-			-> rrel_example:
-				"file://images/Rhomb_E_F_G_H.png";;
+		-> rrel_example:
+			"file://images/Rhomb_E_F_G_H.png";;
 		*);;
 	*);;
 

@@ -15,21 +15,6 @@ concept_straight_angle => nrel_idtf: [Множество знаков всево
 concept_straight_angle <= nrel_strict_inclusion: concept_angle;;
 
 concept_straight_angle <- rrel_key_sc_element: 
-     	... 
-	(*
-	=> nrel_main_idtf: [Опр.(развернутый угол)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_straight_angle;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол называется развернутым тогда и только тогда, когда является углом и стороны которого образуют прямую.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-	
-concept_straight_angle <- rrel_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(развернутый угол; мера угла*)] (* <- lang_ru;; *);;
@@ -47,9 +32,9 @@ concept_straight_angle <- rrel_key_sc_element:
 
 concept_straight_angle <= nrel_using_constants:
 	{
-	concept_planar_angle;
-	concept_straight_line;
-	nrel_side
+	concept_angle; 
+	nrel_side; 
+	concept_ray
 	};;
 
 concept_straight_angle -> rrel_example: struct_Straight_angle_A_O_B;;

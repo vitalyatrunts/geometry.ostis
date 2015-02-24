@@ -24,21 +24,6 @@ concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_rectilinea
 
 concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_countable_set_of_points;;
 
-concept_rectilinear_three_of_points <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Опр.(прямолинейная тройка точек)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_rectilinear_three_of_points;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Множество есть прямолинейная тройка точек тогда и только тогда, когда оно является тройкой точек, для которой существует такая прямая, которой принадлежат все три точки.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_rectilinear_three_of_points <= nrel_using_constants:
 	{
 	concept_straight_line;

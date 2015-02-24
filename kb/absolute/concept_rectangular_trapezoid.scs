@@ -15,27 +15,13 @@ concept_rectangular_trapezoid => nrel_idtf: [Множество всевозмо
 concept_rectangular_trapezoid => nrel_idtf: [Множество знаков всевозможных прямоугольных трапеций] (* <- lang_ru;; *);;
 
 concept_rectangular_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
-
-concept_rectangular_trapezoid <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Множество является прямоугольной трапецией тогда и только тогда, когда является трапецией и один из углов у основания является прямым.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 	
 concept_rectangular_trapezoid <= nrel_using_constants:
 	{
-	concept_trapezoid;
-	nrel_base;
-	nrel_height;
-	nrel_internal_angle
+	concept_trapezoid; 
+	nrel_lateral_side; 
+	nrel_perpendicularity; 
+	nrel_base
 	};;
 				
 concept_trapezoid -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;

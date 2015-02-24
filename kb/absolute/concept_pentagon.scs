@@ -20,25 +20,10 @@ concept_pentagon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_pentagon => nrel_strict_inclusion: concept_regular_pentagon;;
 
-concept_pentagon <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(пятиугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Пятиугольник - это многоугольник с пятью углами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_pentagon <= nrel_using_constants:
 	{
-	concept_polygon;
-	concept_angle;
-	nrel_internal_angle				
+	concept_polygon; 
+	concept_angle	
 	};;
 				
 concept_rectangular_triangle <- rrel_key_sc_element: 

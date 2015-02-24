@@ -26,26 +26,11 @@ concept_quadrilateral =>  nrel_strict_inclusion: concept_trapezoid;;
 
 concept_quadrilateral =>  nrel_strict_inclusion: concept_square;;
 
-concept_quadrilateral <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(четырехугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Четырехугольник - многоугольник, состоящий из четырёх вершин, никакие три из которых не лежат на одной прямой, и четырёх сторон, попарно соединяющих эти точки.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_quadrilateral <= nrel_using_constants:
 	{
-	concept_polygon;
-	nrel_side;
-	nrel_vertex;
-	concept_straight_line
+	concept_polyline; 
+	concept_plane; 
+	concept_geometric_point
 	};;
 
 concept_quadrilateral <- rrel_key_sc_element: 

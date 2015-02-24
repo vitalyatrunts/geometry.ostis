@@ -46,20 +46,6 @@ nrel_length => nrel_first_domain:
 nrel_length => nrel_second_domain: 
 	concept_quantity;;
 
-nrel_length <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Поясн.(длина*)] (* <- lang_ru;; *);;
-	<- sc_explanation;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Длина - числовая характеристика протяжённости объекта.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_length <- rrel_key_sc_element:
 	...
 	(*
@@ -114,3 +100,7 @@ nrel_length <- rrel_key_sc_element:
 	*);;
 
 
+	nrel_length <= nrel_using_constants:
+	{
+	concept_number
+	};;

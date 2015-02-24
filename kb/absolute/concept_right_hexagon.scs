@@ -22,23 +22,8 @@ concept_regular_pentagon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_regular_pentagon <= nrel_strict_inclusion: concept_hexagon;;
 
-concept_regular_hexagon <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(правильный шестиугольник)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Правильный шестиугольник- это шестиугольник с равными сторонами.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_regular_hexagon <= nrel_using_constants:
 	{
-	concept_hexagon;
-	nrel_side;
-	nrel_congruence
+	nrel_side; 
+	concept_hexagon
 	};;

@@ -41,25 +41,11 @@ concept_angle <= nrel_subdividing:
 	concept_obtuse_angle;;	
 	*);;
 
-concept_angle <- rrel_key_sc_element: 
-    ...
-	(*
-	=> nrel_main_idtf: [Опр.(угол)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_angle;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Понятие угла является теоретико-множественным объединением понятий линейного угла и планарного угла.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_angle <= nrel_using_constants:
 	{
-	concept_planar_angle;
-	concept_linear_angle
+	concept_geometric_figure;
+	concept_ray; 
+	nrel_vertex
 	};;
 	
 concept_angle <- rrel_key_sc_element: 

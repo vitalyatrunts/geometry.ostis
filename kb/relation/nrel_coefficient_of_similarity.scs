@@ -28,23 +28,8 @@ nrel_coefficient_of_similarity => nrel_first_domain:
 nrel_coefficient_of_similarity => nrel_second_domain: 
 	number;;
 
-nrel_coefficient_of_similarity <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(коэффициент подобия*)] (* <- lang_ru;; *);; 
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Преобразование фигуры плоскости называется преобразованием подобия, если при этом преобразовании расстояния между точками изменяются в одно и то же число раз: если A->A' и B->B', то A'B'= kAB(k>0), причем число k - одно и то же для всех точек.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_coefficient_of_similarity <= nrel_using_constants:
 	{
-	concept_planar_figure;
-        concept_geometric_point;
-        nrel_distance
+	concept_geometric_point;
+	nrel_distance
 	};;

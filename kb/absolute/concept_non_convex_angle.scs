@@ -27,21 +27,3 @@ concept_non_convex_angle <= nrel_using_constants:
                     		concept_angle;
                     		rrel_angular_degree
 				};;
-
-concept_non_convex_angle <- rrel_key_sc_element: 
-     	...
-	(*
-	=> nrel_main_idtf: [Опр.(невыпуклый угол)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол является невыпуклым углом, когда он имеет величину угла, большую, чем 180 угловых градусов, и меньшую, чем 360 угловых градусов.]
-			(* 
-			<- lang_ru;; 
-			
-			*);;
-		*);;
-	*);;
-

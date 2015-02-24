@@ -5,19 +5,29 @@ subject_domain_of_quadrilaterals
 	[Предметная область четырехугольников]
 	(* <- lang_ru;; *);
 	[Subject domain of quadrilaterals]
-	(* <- lang_en;; *);
-=> nrel_particular_subject_domain:
-	subject_domain_of_trapezoids;
-	subject_domain_of_parallelograms;;
+	(* <- lang_en;; *);;
 	
 subject_domain_of_quadrilaterals -> rrel_maximum_studied_object_class: concept_quadrilateral;;
 
-subject_domain_of_quadrilaterals -> rrel_studied_object_class: concept_trapezoid;;
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_trapezoid;;
 
-subject_domain_of_quadrilaterals -> rrel_studied_object_class: concept_parallelogram;;
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_parallelogram;;
 
-subject_domain_of_quadrilaterals -> rrel_relation:
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_isosceles_trapezoid;;
+
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: concept_rectangular_trapezoid;;
+
+subject_domain_of_parallelograms -> rrel_not_maximum_studied_object_class: concept_rhomb;;
+
+subject_domain_of_parallelograms -> rrel_not_maximum_studied_object_class: concept_rectangle;;
+
+subject_domain_of_rectangles -> rrel_not_maximum_studied_object_class: concept_square;;
+
+subject_domain_of_quadrilaterals -> rrel_studied_relation:
 	nrel_area;
+	nrel_base;
+	nrel_bound;
+	nrel_congruence;
 	nrel_diagonal;
 	nrel_external_angle;
 	nrel_height;

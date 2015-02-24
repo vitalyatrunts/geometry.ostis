@@ -35,27 +35,11 @@ nrel_central_angle => nrel_first_domain:
 nrel_central_angle => nrel_second_domain: 
 	concept_planar_angle;;
 
-nrel_central_angle <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(центральный угол*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_nrel_central_angle;;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Планарный угол, вершиной которого является центр окружности.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_central_angle <= nrel_using_constants:
 	{
-	concept_planar_angle;
-	concept_circle;	
-	nrel_vertex;
-	nrel_center
+	concept_angle; 
+	nrel_radius; 
+	concept_circle
 	};;
 	
 nrel_central_angle <- rrel_key_sc_element: 

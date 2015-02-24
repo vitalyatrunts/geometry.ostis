@@ -16,25 +16,12 @@ concept_obtuse_angle => nrel_idtf: [Множество знаков тупых �
 
 concept_obtuse_angle <= nrel_strict_inclusion: concept_planar_angle;;
 
-concept_obtuse_angle <- rrel_key_sc_element: 
-        ... 
-	(*
-	=> nrel_main_idtf: [Опр.(тупой угол);;] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_obtuse_angle;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол является тупым углом, когда он имеет величину угла, большую, чем 90 угловых градусов, и меньшую, чем 180 угловых градусов.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_obtuse_angle <= nrel_using_constants:
 	{
-	concept_angle;
-	nrel_angle_measure				
+	concept_angle; 
+	concept_straight_angle; 
+	concept_right_angle; 
+	nrel_angle_measure			
 	};;
 
 concept_obtuse_angle -> rrel_example: struct_Obtuse_angle_T_P_R;;

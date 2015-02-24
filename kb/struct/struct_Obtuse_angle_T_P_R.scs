@@ -1,48 +1,21 @@
-sc_node_struct -> struct_Obtuse_angle_T_P_R;;
-
-struct_Obtuse_angle_T_P_R => nrel_main_idtf:
-	[Тупой угол TPR]
-	(*
-	<- lang_ru;;
-	*);
-	[Obtuse angled TPR]
-	(*
-	<- lang_en;;
-	*);;
-
-struct_Obtuse_angle_T_P_R => nrel_idtf: [Тупой угол(T; P; R)] (* <- lang_ru;; *);;
-
-struct_Obtuse_angle_T_P_R <- concept_obtuse_angle;;
-
-sc_node_struct -> struct_Geometric_point_T;;
-sc_node_struct -> struct_Geometric_point_P;;
-sc_node_struct -> struct_Geometric_point_R;;
-
-struct_Geometric_point_T <- concept_geometric_point;;
-struct_Geometric_point_P <- concept_geometric_point;;
-struct_Geometric_point_R <- concept_geometric_point;;
+struct_Obtuse_angle_T_P_R => nrel_idtf: [Тупой угол (T; P; R)] (* <- lang_ru;; *);;
 
 struct_Obtuse_angle_T_P_R => nrel_vertex: struct_Geometric_point_P;;
 
-sc_node_struct -> struct_Ray_P_T;;
-sc_node_struct -> struct_Ray_P_R;;
-
-struct_Ray_P_T <- concept_ray;;
-struct_Ray_P_R <- concept_ray;;
-
 struct_Obtuse_angle_T_P_R => nrel_side: struct_Ray_P_T;;
+
 struct_Obtuse_angle_T_P_R => nrel_side: struct_Ray_P_R;;
 
 struct_Obtuse_angle_T_P_R <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
-		<= nrel_sc_text_translation:
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
 		...
-			(*
-			-> rrel_example:
-				"file://images/angle_TPR.png";;
-			*);;
+		(*
+		-> rrel_example:
+			"file://images/angle_TPR.png";;
+		*);;
 	*);;
 
 struct_Obtuse_angle_T_P_R <- rrel_key_sc_element:
@@ -54,9 +27,7 @@ struct_Obtuse_angle_T_P_R <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Угол TPR является тупым.
-			T, P и R являются геометрическими точками. Геометрическая точка P является вершиной угла TPR.
-			Лучи PT и PR являются сторонами угла TPR.]
+			[Угол TPR является тупым. T, P и R являются геометрическими точками. Геометрическая точка P является вершиной угла TPR. Лучи PT и PR являются сторонами угла TPR.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;

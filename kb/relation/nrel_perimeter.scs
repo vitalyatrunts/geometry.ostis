@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_perimeter;;
+/*sc_node_norole_relation -> nrel_perimeter;;
 
 nrel_perimeter => nrel_main_idtf:
 	[периметр*]
@@ -34,24 +34,9 @@ nrel_perimeter => nrel_first_domain:
 nrel_perimeter => nrel_second_domain: 
 	concept_quantity;;
 
-nrel_perimeter <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(периметр*)] (* <- lang_ru;; *);; 
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Периметр - сумма длин всех сторон многоугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 nrel_perimeter <= nrel_using_constants:
 	{
-	nrel_side;
-	nrel_length;
-	concept_polygon
-	};;
+	nrel_length; 
+	nrel_side
+	};;*/
 

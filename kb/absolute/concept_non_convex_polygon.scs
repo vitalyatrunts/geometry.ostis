@@ -16,24 +16,9 @@ concept_non_convex_polygon => nrel_idtf: [Множество знаков все
 
 concept_non_convex_polygon <= nrel_strict_inclusion: concept_polygon;;
 
-concept_non_convex_polygon <- rrel_key_sc_element: 
-     	...
-	(*
-	=> nrel_main_idtf: [Опр.(невыпуклый многоугольник)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: d_concept_non_convex_polygon;;
-	<- sc_definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Невыпуклым многоугольником называется многоугольник, у которого есть хотя бы один невыпуклый угол.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_non_convex_polygon <= nrel_using_constants:
 	{
-	concept_polygon;
+	concept_polygon; 
 	concept_non_convex_angle
 	};;	
 

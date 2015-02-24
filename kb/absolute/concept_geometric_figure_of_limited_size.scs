@@ -37,27 +37,10 @@ concept_geometric_figure_of_limited_size => nrel_strict_inclusion: concept_round
 concept_geometric_figure_of_limited_size => nrel_strict_inclusion: concept_polyline;;
 
 concept_geometric_figure_of_limited_size => nrel_strict_inclusion: concept_polygon;;
-
-
-
-concept_geometric_figure_of_limited_size <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(геометрическая фигура ограниченного размера)] (* <- lang_ru;; *);;
-	<- sc_definition;;
-	<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-			[геометрическая фигура ограниченного размера - непрерывная геометрическая фигура, для которой существует шар, включающий в себя эту фигуру.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 	
 concept_geometric_figure_of_limited_size <= nrel_using_constants:
 	{
-	concept_uninterrupted_geometric_figure;
+	concept_uninterrupted_geometric_figure; 
 	concept_ball
 	};;
 
@@ -101,4 +84,4 @@ concept_geometric_figure_of_limited_size -> rrel_example: struct_Versatile_trape
 
 concept_geometric_figure_of_limited_size -> rrel_example: struct_Rhomb_E_F_G_H;;
 
-concept_geometric_figure_of_limited_size -> rrel_example: struct_Triangle_A_B_C;;
+

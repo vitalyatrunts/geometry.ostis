@@ -1,29 +1,11 @@
-sc_node_struct -> struct_Segment_A_B;;
-
-struct_Segment_A_B => nrel_main_idtf:
-	[Отрезок AB]
-	(*
-	<- lang_ru;;
-	*);
-	[Segment AB]
-	(*
-	<- lang_en;;
-	*);;
-
 struct_Segment_A_B => nrel_idtf: [Отрезок(A; B)] (* <- lang_ru;; *);;
 
-struct_Segment_A_B <- concept_segment;;
-
-sc_node_struct -> struct_Geometric_point_A;;
-sc_node_struct -> struct_Geometric_point_B;;
-
-struct_Geometric_point_A <- concept_geometric_point;;
-struct_Geometric_point_B <- concept_geometric_point;;
-
 struct_Segment_A_B => nrel_boundary_point: struct_Geometric_point_A;;
+
 struct_Segment_A_B => nrel_boundary_point: struct_Geometric_point_B;;
 
 struct_Segment_A_B -> struct_Geometric_point_A;;
+
 struct_Segment_A_B -> struct_Geometric_point_B;;
 
 struct_Segment_A_B <- rrel_key_sc_element:
@@ -43,11 +25,11 @@ struct_Segment_A_B <- rrel_key_sc_element:
 struct_Segment_A_B <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;; 
-		<= nrel_sc_text_translation: 
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: 
 		...
-			(*
-				-> rrel_example: 
-						 "file://images/OtrezokAB.png";;
-			*);; 
+		(*
+		-> rrel_example: 
+			"file://images/OtrezokAB.png";;
+		*);; 
 	*);; 

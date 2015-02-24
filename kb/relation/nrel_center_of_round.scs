@@ -34,27 +34,12 @@ nrel_center_of_round <= nrel_first_domain:
 nrel_center_of_round <= nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_center <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf:[Опр.(центр круга*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
-	<= nrel_sc_text_translation: 
-	...
-		(*
-		-> rrel_example: 
-			[Центр круга - точка лежаща¤ в плоскости круга и равноудаленна¤ от любой точки принадлежащий границе круга.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
-
-
-nrel_center <= nrel_using_constants:
+nrel_center_of_round <= nrel_using_constants:
 	{
-	concept_round;
-	nrel_distance;			
-	concept_geometric_point;
-	nrel_bound	
+	concept_geometric_point; 
+	concept_plane; 
+	nrel_bound; 
+	concept_round	
 	};;
 
 

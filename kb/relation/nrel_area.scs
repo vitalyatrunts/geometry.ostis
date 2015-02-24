@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_area;;
+/*sc_node_norole_relation -> nrel_area;;
 
 nrel_area => nrel_main_idtf:
 	[площадь*] 
@@ -39,20 +39,6 @@ nrel_area => nrel_first_domain:
 
 nrel_area => nrel_second_domain: 
 	concept_quantity;;
-
-nrel_area <- rrel_key_sc_element: 
-     	...
-	(*
-	=> nrel_main_idtf: [Поясн.(площадь*)] (* <- lang_ru;; *);;
-	<- sc_explanation;;   //если пояснение, то sc_explanation
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Площадь — это величина, характеризующая геометрическую фигуру, расположенную на некоторой поверхности.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 nrel_area <- rrel_key_sc_element:
 	...
@@ -110,5 +96,12 @@ nrel_area <- rrel_key_sc_element:
 	*);;
 
 nrel_area <=> nrel_analogue: nrel_length;;
+
+
+nrel_area <= nrel_using_constants:
+	{ 
+	concept_plane; 
+	concept_polygon
+	};;*/
 
 
