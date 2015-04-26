@@ -4,6 +4,8 @@ concept_triangle
 	(* <- lang_ru;;	*);
 	[triangle]
 	(* <- lang_en;;	*);
+	[үшбұрыш]
+	(* <- lang_kz;;	*);
 => nrel_idtf: 
 	[Класс треугольников] 
 	(* <- lang_ru;; *);
@@ -24,6 +26,8 @@ concept_acute_angled_triangle
 	(* <- lang_ru;; *);
 	[acute angled triangle]
 	(* <- lang_en;;	*);
+	[сүйір бұрышты үшбұрыш]
+	(* <- lang_kz;;	*);
 => nrel_idtf: 
 	[Класс остроугольных треугольников] 
 	(* <- lang_ru;; *);
@@ -38,6 +42,8 @@ concept_obtuse_triangle
 	(* <- lang_ru;;	*);
 	[obtuse triangle]
 	(* <- lang_en;; *);
+	[доғал бұрышты үшбұрыш]
+	(* <- lang_kz;;	*);
 => nrel_idtf: 
 	[Класс тупоугольных треугольников] 
 	(* <- lang_ru;; *);
@@ -54,6 +60,8 @@ concept_rectangular_triangle
 	(* <- lang_ru;; *);
 	[rectangular triangle]
 	(* <- lang_en;; *);
+	[тік бұрышты үшбұрыш]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[Класс прямоугольных треугольников] 
 	(* <- lang_ru;; *);
@@ -70,6 +78,8 @@ concept_isosceles_triangle
 	(* <- lang_ru;;	*);
 	[isosceles triangle]
 	(* <- lang_en;;	*);
+	[теңбүйірлі үшбұрыш]
+	(* <- lang_kz;;	*);
 => nrel_idtf: 
 	[Класс равнобедренных треугольников] 
 	(* <- lang_ru;; *);
@@ -86,6 +96,8 @@ concept_equilateral_triangle
 	(* <- lang_ru;; *);
 	[equilateral triangle]
 	(* <- lang_en;;	*);
+	[тең қабырғалы үшбұрыш]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[Правильный треугольник] 
 	(* <- lang_ru;; *);
@@ -118,6 +130,8 @@ nrel_area
 	(* <- lang_ru;; *);
 	[area*]
 	(* <- lang_en;;	*);
+	[аудан*]
+	(* <- lang_kz;; *);
 => nrel_idtf:
 	[быть площадью*]
 	(* <- lang_ru;; *);
@@ -132,6 +146,8 @@ nrel_base
 	(* <- lang_ru;; *);
 	[base*]
 	(* <- lang_en;; *);
+	[табан*]
+	(* <- lang_kz;; *);
 => nrel_idtf:
 	[быть основанием*]
 	(* <- lang_ru;; *);;
@@ -142,6 +158,8 @@ nrel_vertex
 	(* <- lang_ru;; *);
 	[vertex*]
 	(* <- lang_en;; *);
+	[сүйір ұш*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть вершиной*]
 	(* <- lang_ru;; *);
@@ -156,6 +174,8 @@ nrel_side
 	(* <- lang_ru;; *);
 	[side*]
 	(* <- lang_en;; *);
+	[қабырға*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть стороной*] 
 	(* <- lang_ru;; *);
@@ -168,6 +188,8 @@ nrel_internal_angle
 	(* <- lang_ru;; *);
 	[internal angle*]
 	(* <- lang_en;; *);
+	[ішкі бұрыш*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть внутренним углом*]
 	(* <- lang_ru;; *);;
@@ -178,6 +200,8 @@ nrel_be_inscribed
 	(* <- lang_ru;; *);
 	[be inscribed*]
 	(* <- lang_en;; *);
+	[қоршалған*]
+	(* <- lang_kz;; *);
 => nrel_idtf:
 	[быть вписанным*]
 	(* <- lang_ru;; *);
@@ -190,6 +214,8 @@ nrel_bisectrix_of_triangle
 	(* <- lang_ru;; *);
 	[bisectrix of triangle*]
 	(* <- lang_en;; *);
+	[үшбұрыш биссектрисасы*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть биссектрисой треугольника*]
 	(* <- lang_ru;; *);;
@@ -200,6 +226,8 @@ nrel_center_line
 	(* <- lang_ru;; *);
 	[center line*]
 	(* <- lang_en;; *);
+	[орта сызық*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть средней линией*] 
 	(* <- lang_ru;; *);;
@@ -210,6 +238,8 @@ nrel_center_of_regular_polygon
 	(* <- lang_ru;; *);
 	[center of regular polygon*]
 	(*<-lang_en;;*);
+	[тең қабырғалы көпбұрыштың ортасы*]
+	(* <- lang_kz;; *);
 => nrel_idtf:
 	[быть центром правильного многоугольника*]
 	(* <- lang_ru;; *);;
@@ -220,6 +250,8 @@ nrel_congruence
 	(* <- lang_ru;; *);
 	[congruence*] 
 	(* <- lang_en;; *);
+	[конгруэнттілік*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[конгруэнтность геометрических фигур*] 
 	(* <- lang_ru;; *);
@@ -238,6 +270,8 @@ nrel_height
 	(* <- lang_ru;; *);
 	[height*]
 	(* <- lang_en;; *);
+	[биіктік*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть высотой*]
 	(* <- lang_ru;; *);;
@@ -248,6 +282,8 @@ nrel_median
 	(* <- lang_ru;; *);
 	[median*]
 	(* <- lang_en;; *);
+	[медиана*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть медианой*] 
 	(* <- lang_ru;; *);
@@ -262,6 +298,8 @@ nrel_middle_perpendicular
 	(* <- lang_ru;; *);
 	[middle perpendicular*]
 	(* <- lang_en;; *);
+	[ортадағы перпендикуляр*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[медиатриса*] 
 	(* <- lang_ru;; *);;
@@ -272,6 +310,8 @@ nrel_external_angle
 	(* <- lang_ru;; *);
 	[external angle*]
 	(* <- lang_en;; *);
+	[сыртқы бұрыш*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть внешним углом многоугольника*]
 	(* <- lang_ru;; *);;
@@ -282,7 +322,10 @@ nrel_lateral_side
 	(* <- lang_ru;; *);
 	[lateral side*]
 	(* <- lang_en;; *);
-=> nrel_idtf: [быть боковой стороной*]
+	[жанындағы жақ*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть боковой стороной*]
 	(* <- lang_ru;; *);
 	[боковая сторона многоугольника*]
 	(* <- lang_ru;; *);
@@ -295,6 +338,8 @@ nrel_opposite
 	(* <- lang_ru;; *);
 	[opposite*]
 	(* <- lang_en;; *);
+	[қарсы жатқан*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть противолежащим*] 
 	(* <- lang_ru;; *);;
@@ -305,6 +350,8 @@ nrel_perimeter
 	(* <- lang_ru;; *);
 	[perimeter*]
 	(* <- lang_en;; *);
+	[периметр*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть периметром*] 
 	(* <- lang_ru;; *);
@@ -319,6 +366,8 @@ nrel_similarity
 	(* <- lang_ru;; *);
 	[similarity*]
 	(* <- lang_en;; *);
+	[ұқсас*]
+	(* <- lang_kz;; *);
 => nrel_idtf: 
 	[быть подобными фигурами*] 
 	(* <- lang_ru;; *);
