@@ -11,6 +11,8 @@ nrel_adjacent => nrel_main_idtf:
 nrel_adjacent => nrel_idtf:
 	[быть прилежащим*] 
 	(* <- lang_ru;; *);;
+nrel_adjacent=> nrel_idtf:
+	[to be adjacent*](*<-lang_en;;*);;
 
 nrel_adjacent <- sc_relation;;
 

@@ -9,12 +9,16 @@ concept_obtuse_angle => nrel_main_idtf:
 	(* <- lang_kz;;	*);;
 
 concept_obtuse_angle => nrel_idtf: [Класс тупых углов] (* <- lang_ru;; *);;
+concept_obtuse_angle=> nrel_idtf: [Category of obtuse angles] (*<-lang_ru;;*);;
 
 concept_obtuse_angle => nrel_idtf: [Понятие тупого угла] (* <- lang_ru;; *);;
+concept_obtuse_angle=> nrel_idtf: [Concept of an obtuse angle] (*<-lang_ru;;*);;
 
 concept_obtuse_angle => nrel_idtf: [Множество всевозможных тупых углов] (* <- lang_ru;; *);;
+concept_obtuse_angle=> nrel_idtf: [Set of all obtuse angles] (*<-lang_ru;;*);;
 
 concept_obtuse_angle => nrel_idtf: [Множество знаков тупых углов] (* <- lang_ru;; *);;
+concept_obtuse_angle=> nrel_idtf: [Set of signs of obtuse angles] (*<-lang_ru;;*);;
 
 concept_obtuse_angle <= nrel_strict_inclusion: concept_planar_angle;;
 

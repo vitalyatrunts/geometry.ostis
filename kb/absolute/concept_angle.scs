@@ -9,16 +9,22 @@ concept_angle => nrel_main_idtf:
 	(* <- lang_kz;; *);;
 
 concept_angle => nrel_idtf: [плоский угол] (* <- lang_ru;; *);;
+concept_angle=> nrel_idtf: [plane angle] (*<-lang_en;;*);;
 
 concept_angle => nrel_idtf: [планарный угол] (* <- lang_ru;; *);;
+concept_angle=> nrel_idtf: [planar angle] (*<-lang_en;;*);;
 
 concept_angle => nrel_idtf: [Понятие угла] (* <- lang_ru;; *);;
+concept_angle=> nrel_idtf: [Concept of angle] (*<-lang_en;;*);;
 
 concept_angle => nrel_idtf: [Класс углов] (* <- lang_ru;; *);;
+concept_angle=> nrel_idtf: [Category of angles] (*<-lang_en;;*);;
 
 concept_angle => nrel_idtf: [Множество всевозможных углов] (* <- lang_ru;; *);;
+concept_angle=> nrel_idtf: [Set of all possible angles] (*<-lang_en;;*);;
 
 concept_angle => nrel_idtf: [Множество знаков всевозможных углов] (* <- lang_ru;; *);;
+concept_angle=> nrel_idtf: [Set of signs of all kinds of angles] (*<-lang_en;;*);;
 
 concept_angle <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
 

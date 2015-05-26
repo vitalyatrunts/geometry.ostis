@@ -9,16 +9,22 @@ concept_segment => nrel_main_idtf:
 	(* <- lang_kz;;	*);;
 
 concept_segment => nrel_idtf: [Геометрический отрезок] (* <- lang_ru;; *);;
+concept_segment=> nrel_idtf: [Geometric segment] (*<-lang_en;;*);;
 
 concept_segment => nrel_idtf: [Понятие отрезка] (* <- lang_ru;; *);;
+concept_segment=> nrel_idtf: [Concept of the segment] (*<-lang_en;;*);;
 
 concept_segment => nrel_idtf: [Понятие геометрического отрезка] (* <- lang_ru;; *);;
+concept_segment=> nrel_idtf: [Concept of geometric segment] (*<-lang_en;;*);;
 
 concept_segment => nrel_idtf: [Класс отрезков] (* <- lang_ru;; *);;
+concept_segment=> nrel_idtf: [Category of segments] (*<-lang_en;;*);;
 
 concept_segment => nrel_idtf: [Множество всевозможных отрезков] (* <- lang_ru;; *);;
+concept_segment=> nrel_idtf: [Set of all segments] (*<-lang_en;;*);;
 
 concept_segment => nrel_idtf: [Множество знаков всевозможных отрезков] (* <- lang_ru;; *);;
+concept_segment=> nrel_idtf: [Set of signs of all kinds of segments] (*<-lang_en;;*);;
 
 concept_segment <= nrel_strict_inclusion: concept_rectilinear_figure;;
 

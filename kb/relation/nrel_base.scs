@@ -11,6 +11,9 @@ nrel_base => nrel_main_idtf:
 nrel_base => nrel_idtf:
 	[быть основанием*]
 	(* <- lang_ru;; *);;
+nrel_base => nrel_idtf:
+	[to be a base*]
+	(*<-lang_en;;*);;
 
 nrel_base <- sc_relation;;
 

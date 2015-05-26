@@ -9,7 +9,8 @@ nrel_opposite => nrel_main_idtf:
 	(* <- lang_kz;; *);;
 
 nrel_opposite => nrel_idtf: [быть противолежащим*] (* <- lang_ru;; *);;
-
+nrel_opposite=> nrel_idtf: [be opposite*] (*<-lang_en;;*);;
+ 
 nrel_opposite <- sc_relation;;
 
 nrel_opposite <- binary_relation;;
