@@ -1,6 +1,8 @@
 sc_node_struct -> ut7; ut8; ut9; Segment_A_B; Circle_A_B; Square_A_B_C_D;;
-ut8 => nrel_main_idtf: [Формула вычисления длины окружности] (* <- lang_ru;; *);;
-ut9 => nrel_main_idtf: [Формула вычисления площади квадрата] (* <- lang_ru;; *);;
+ut8 => nrel_main_idtf: [Формула вычисления длины окружности] (* <- lang_ru;; *);
+			[Formula of cicrle length calculating] (* <- lang_en;; *);;
+ut9 => nrel_main_idtf: [Формула вычисления площади квадрата] (* <- lang_ru;; *);
+			[Formula of square area calculating] (* <- lang_en;; *);;
 Circle_A_B => nrel_main_idtf: [Окружность (A;B)] (* <- lang_ru;; *);;
 Square_A_B_C_D => nrel_main_idtf: [Квадрат (A;B;C;D)] (* <- lang_ru;; *);;
 Segment_A_B => nrel_main_idtf: [Отрезок (A;B)] (* <- lang_ru;; *);;

@@ -2,7 +2,9 @@ ui_menu_file_for_solver_solution <- ui_user_command_class_atom; ui_user_command_
 
 ui_menu_file_for_solver_solution => nrel_main_idtf: 
 	[Команда вывода этапов решения] 
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[Command to search solution steps] 
+	(* <- lang_en;; *);;
 
 ui_menu_file_for_solver_solution => ui_nrel_command_template:
 	[*
@@ -15,5 +17,6 @@ ui_menu_file_for_solver_solution => ui_nrel_command_template:
 
 ui_menu_file_for_solver_solution => ui_nrel_command_lang_template: 
 	[Команда вывода этапов решения: $ui_arg_1] 
-	(* <- lang_ru;; *);;
-
+	(* <- lang_ru;; *);
+	[Command to search solution steps: $ui_arg_1] 
+	(* <- lang_en;; *);;
