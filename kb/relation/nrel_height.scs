@@ -4,10 +4,14 @@ nrel_height => nrel_main_idtf:
 	[высота*]
 	(* <- lang_ru;; *);
 	[height*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[биіктік*]
+	(* <- lang_kz;; *);;
 
 nrel_height => nrel_idtf: [быть высотой*]
 	(* <- lang_ru;; *);;
+nrel_height=> nrel_idtf:[to be a height*]
+	(* <-lang_en;; *);;
 
 nrel_height <- sc_relation;;
 

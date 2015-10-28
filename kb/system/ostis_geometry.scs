@@ -68,7 +68,8 @@ rationale_for_developing_Ostis_Geometry <= nrel_section_decomposition:
 	section_comparative_analysis_and_testing_of_Ostis_Geometry;
 	section_competitive_advantages_of_Ostis_Geometry;
 	section_novelty_of_solutions_of_Ostis_Geometry;
-	section_project_of_Ostis_Geometry
+	section_project_of_Ostis_Geometry;
+	section_project_of_Ostis_Geometry_dialog
 	};;
 
 section_type_function_and_composition_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Тип, назначение и состав ИСС по геометрии] (* <- lang_ru;; *);;
@@ -85,6 +86,7 @@ section_comparative_analysis_and_testing_of_Ostis_Geometry => nrel_main_idtf: [�
 section_competitive_advantages_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Конкурентные преимущества и ИСС по геометрии] (* <- lang_ru;; *);;
 section_novelty_of_solutions_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Новизна решений, реализуемых в ИСС по геометрии] (* <- lang_ru;; *);;
 section_project_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Проект ИСС по геометрии] (* <- lang_ru;; *);;
+section_project_of_Ostis_Geometry_dialog => nrel_main_idtf: [Раздел. Пример диалога пользователя с ИСС по геометрии, демонстрирующий ее возможности и достоинства] (* <- lang_ru;; *);;
 
 section_competitive_advantages_of_Ostis_Geometry <= nrel_sc_text_translation:	
 	...
@@ -141,5 +143,12 @@ section_subsystem_of_Ostis_Geometry_for_management_design <= nrel_sc_text_transl
 	...
 	(*
 	-> "file://developer_guide.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+
+section_project_of_Ostis_Geometry_dialog <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://geom_dialog.pdf"
 		(* <- lang_ru;; *);;
 	*);;

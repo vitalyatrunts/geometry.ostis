@@ -4,15 +4,21 @@ nrel_similarity => nrel_main_idtf:
 	[подобие*]
 	(* <- lang_ru;; *);
 	[similarity*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[ұқсас*]
+	(* <- lang_kz;; *);;
 
 nrel_similarity => nrel_idtf: [быть подобными фигурами*] (* <- lang_ru;; *);;
+nrel_similarity=> nrel_idtf: [be similar figures*] (*<-lang_en;;*);;
 
 nrel_similarity => nrel_idtf: [быть подобными геометрическими фигурами*] (* <- lang_ru;; *);;
+nrel_similarity=> nrel_idtf: [be similar geometric figures*] (*<-lang_en;;*);;
 
 nrel_similarity => nrel_idtf: [преобразование подобия*] (* <- lang_ru;; *);;
+nrel_similarity=> nrel_idtf: [similarity transformation*] (*<-lang_ru;;*);;
 
 nrel_similarity => nrel_idtf: [геометрическое преобразование подобия*] (* <- lang_ru;; *);;
+nrel_similarity=> nrel_idtf: [geometric similarity transformation*] (*<-lang_en;;*);;
 
 nrel_similarity <- sc_relation;;
 

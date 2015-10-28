@@ -4,31 +4,45 @@ concept_geometric_point => nrel_main_idtf:
 	[геометрическая точка]
 	(* <- lang_ru;;	*);
 	[geometric point]
-	(* <- lang_en;;	*);;
+	(* <- lang_en;;	*);
+	[геометриялық нүкте]
+	(* <- lang_kz;;	*);;
 
 concept_geometric_point => nrel_idtf: [Множество всех точек] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [Set of all points] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [элементарный фрагмент геометрической фигуры] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [elementary fragment geometric figure] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [атомарный фрагмент геометрической фигуры] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [atomic fragment of geometric figure] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [неделимый фрагмент геометричесой фигуры] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [indivisible fragment of geometric figure] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [элементарный фрагмент геометрического пространства] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [elementary fragment of geometric space] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [предельно малый геометрический объект] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [extremely small geometric object] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [фрагмент геометрической фигуры, не имеющий величины (длины, площади, объема)] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [fragment of geometric figure having no magnitude (length, area, volume)] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [максимальная геометрическая фигура] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [maximum geometric figure] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [Множество всевозможных геометрических точек] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [Set of all geometric points] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [Универсум геометрических точек] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [Universum of geometric points] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [одноточечная геометрическая фигура] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [single-point geometric figure] (*<-lang_en;;*);;
 
 concept_geometric_point => nrel_idtf: [одноэлементное множество точек] (* <- lang_ru;; *);;
+concept_geometric_point=> nrel_idtf: [singleton points] (*<-lang_en;;*);;
 
 concept_geometric_point <- rrel_key_sc_element: 
         ...

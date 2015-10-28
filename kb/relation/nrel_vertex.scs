@@ -4,16 +4,24 @@ nrel_vertex => nrel_main_idtf:
 	[вершина*]
 	(* <- lang_ru;; *);
 	[vertex*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[сүйір ұш*]
+	(* <- lang_kz;; *);;
 
 nrel_vertex => nrel_idtf: [быть вершиной*]
 	(* <- lang_ru;; *);;
+nrel_vertex=> nrel_idtf:[be vertex*]
+	(* <-lang_en;; *);;
 
 nrel_vertex => nrel_idtf: [вершина геометрической фигуры*]
 	(* <- lang_ru;; *);;
+nrel_vertex=> nrel_idtf:[the vertex of geometric figure*]
+	(* <-lang_en;; *);;
 
 nrel_vertex => nrel_idtf: [быть вершиной геометрической фигуры*]
 	(* <- lang_ru;; *);;
+nrel_vertex=> nrel_idtf:[be the vertex of geometric figure*]
+	(* <-lang_en;; *);;
 
 nrel_vertex <- sc_relation;;
 
