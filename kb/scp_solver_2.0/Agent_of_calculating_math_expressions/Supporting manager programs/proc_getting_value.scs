@@ -1,0 +1,149 @@
+scp_program -> proc_getting_value 
+	(*	
+	-> rrel_params: .proc_getting_value_params 
+		(*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _features;;
+		-> rrel_3: rrel_in: _link;;
+		*);;
+	
+	-> rrel_operators: .proc_getting_value_operator_set 
+		(*                              
+
+		-> rrel_init: .proc_getting_value_operator_check_quantity
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_quantity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_then: .proc_getting_value_operator_find_value;;
+			=> nrel_else: .proc_getting_value_operator_find_identification2;;
+			*);;
+
+		-> .proc_getting_value_operator_find_value 
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _connection;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .proc_getting_value_operator_get_feature1;;
+			=> nrel_else: .proc_getting_value_operator_message_unknown_value;;
+			*);; 
+
+		-> .proc_getting_value_operator_get_feature1 
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+			-> rrel_5: rrel_assign: rrel_scp_var: _unit_of_measure;;
+
+			=> nrel_then: .proc_getting_value_operator_add_feature;;
+			=> nrel_else: .proc_getting_value_operator_message_error;;
+			*);;
+
+		-> .proc_getting_value_operator_add_feature  
+	 		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _features;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _unit_of_measure;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_goto: .proc_getting_value_operator_find_identification1;;
+			*);;	
+           	
+		-> .proc_getting_value_operator_find_identification1
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _connection2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .proc_getting_value_operator_get_link;;
+			=> nrel_else: .proc_getting_value_operator_return;;
+			*);;
+
+		-> .proc_getting_value_operator_find_identification2
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _connection2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .proc_getting_value_operator_get_link;;
+			=> nrel_else: .proc_getting_value_operator_message_unknown_number;;
+			*);;
+
+		-> .proc_getting_value_operator_get_link 
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _connection2;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc7414;; 
+			-> rrel_3: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc54;; 
+			-> rrel_5: rrel_assign: rrel_scp_var: _decimal_number;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_then: .proc_getting_value_operator_add_feature2;;
+			=> nrel_else: .proc_getting_value_operator_message_error;;
+			*);;
+	
+ 		-> .proc_getting_value_operator_add_feature2 
+ 			(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _features;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _decimal_number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_goto: .proc_getting_value_operator_return;;
+			*);;
+
+		-> .proc_getting_value_operator_message_unknown_value 
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Unknown quantity!];;
+
+			=> nrel_goto: .proc_getting_value_operator_return;;
+			*);;
+		
+		-> .proc_getting_value_operator_message_unknown_number 
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Unknown number!];;
+
+			=> nrel_goto: .proc_getting_value_operator_return;;
+			*);;
+           
+		-> .proc_getting_value_operator_return 
+	    		(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;                                
+
+

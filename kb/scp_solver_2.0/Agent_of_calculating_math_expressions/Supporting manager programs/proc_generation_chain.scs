@@ -1,0 +1,139 @@
+scp_program -> proc_generation_chain
+	(*	
+	-> rrel_params: .proc_generation_chain_params 
+		(*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _razm;;
+		-> rrel_3: rrel_in: _link;;
+		*);;
+
+	-> rrel_operators: .proc_generation_chain_operator_set 
+		(*
+
+		-> rrel_init: .proc_generation_chain_operator_create_node_for_identification 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _node2;;
+
+			=> nrel_goto: .proc_generation_chain_operator_check_object;;
+			*);; 
+
+		-> .proc_generation_chain_operator_check_object
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_quantity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_then: .proc_generation_chain_operator_create_first_node;;
+			=> nrel_else: .proc_generation_chain_operator_gen_identification2;;
+			*);;
+
+		-> .proc_generation_chain_operator_create_first_node 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _node1;;
+
+			=> nrel_goto: .proc_generation_chain_operator_gen_value;;
+			*);;
+
+		-> .proc_generation_chain_operator_gen_value 
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_goto: .proc_generation_chain_operator_find_first_feature;;
+			*);;
+
+		-> .proc_generation_chain_operator_find_first_feature 
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _razm;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _unit_of_measure;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .proc_generation_chain_operator_create_second_node;;
+			=> nrel_else: .proc_generation_chain_operator_return;;
+			*);; 
+
+		-> .proc_generation_chain_operator_create_second_node 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _number;;
+
+			=> nrel_goto: .proc_generation_chain_operator_add_first_feature;;
+			*);;
+
+		-> .proc_generation_chain_operator_add_first_feature 
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _unit_of_measure;;
+
+			=> nrel_goto: .proc_generation_chain_operator_gen_identification1;;
+			*);; 
+
+		-> .proc_generation_chain_operator_gen_identification1 
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_goto: .proc_generation_chain_operator_add_second_feature;;
+			*);;
+
+		-> .proc_generation_chain_operator_gen_identification2 
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_goto: .proc_generation_chain_operator_add_second_feature;;
+			*);;
+
+		-> .proc_generation_chain_operator_add_second_feature 
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _connection;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_generation_chain_operator_return;;
+			*);;
+
+		-> .proc_generation_chain_operator_return 
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
+	
