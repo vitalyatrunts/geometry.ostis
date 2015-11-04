@@ -32,7 +32,7 @@ concept_linear_angle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(линейный угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

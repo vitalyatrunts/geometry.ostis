@@ -37,7 +37,7 @@ nrel_distance <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; пересекающиеся прямые*; расстояние*)] (* <- lang_ru;; *);;  
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -50,7 +50,7 @@ nrel_distance <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; скрещивающиеся*; расстояние*; общий перпендикуляр*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -63,7 +63,7 @@ nrel_distance <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(геометрическая точка; прямая; расстояние*; перпендикуляр*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -76,7 +76,7 @@ nrel_distance <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(геометрическая точка; плоскость; расстояние*; перпендикуляр*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -89,7 +89,7 @@ nrel_distance <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; параллельность*; расстояние*; общий перпендикуляр*; длина*)] (* <- lang_ru;; *);; 
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -102,7 +102,7 @@ nrel_distance <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; параллельность*; расстояние*; общий перпендикуляр*; длина*)] (* <- lang_ru;; *);; 
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

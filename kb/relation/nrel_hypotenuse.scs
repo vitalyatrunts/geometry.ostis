@@ -58,7 +58,7 @@ nrel_hypotenuse <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(гипотенуза*; катет*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -71,7 +71,7 @@ nrel_hypotenuse <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; окружность; описанность*; гипотенуза*; диаметр*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -84,7 +84,7 @@ nrel_hypotenuse <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; гипотенуза*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

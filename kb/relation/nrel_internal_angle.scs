@@ -46,7 +46,7 @@ nrel_internal_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол треугольника*; мера угла*; сумма*)] (* <- lang_ru;; *);; 
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -59,7 +59,7 @@ nrel_internal_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; внутренний угол треугольника*; конгруэнтность*)] (* <- lang_ru;; *);; 
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -72,7 +72,7 @@ nrel_internal_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол треугольника*; острый угол; тупой угол; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

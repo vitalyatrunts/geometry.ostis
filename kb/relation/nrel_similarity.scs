@@ -47,7 +47,7 @@ nrel_similarity <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; луч; отрезок; подобие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -60,7 +60,7 @@ nrel_similarity <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(луч; планарный угол; подобие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -73,7 +73,7 @@ nrel_similarity <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; сторона*; внутренний угол*; конгруэнтность*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

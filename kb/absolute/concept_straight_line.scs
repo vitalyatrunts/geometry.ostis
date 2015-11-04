@@ -32,7 +32,7 @@ concept_straight_line <- rrel_key_sc_element:
         => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
 		-> rrel_main_key_sc_element: stat_singularity_geometric_point_straight_line;;
 		-> rrel_key_sc_element: concept_geometric_point;;
-		<- sc_statement;;
+		<- sc_text_statement;;
 		<= nrel_sc_text_translation: 
 			...
 			(*
@@ -55,7 +55,7 @@ concept_straight_line <- rrel_key_sc_element:
     => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_straight_line_point;;
 	-> rrel_key_sc_element: concept_geometric_point;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -69,7 +69,7 @@ concept_straight_line <- rrel_key_sc_element:
 	...
         (*
         => nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между')] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -83,7 +83,7 @@ concept_straight_line <- rrel_key_sc_element:
 	...
         (*
         => nrel_main_idtf: [Акс.(точка; прямая; между')] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -97,7 +97,7 @@ concept_straight_line <- rrel_key_sc_element:
 	...
         (*
         => nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -114,7 +114,7 @@ concept_straight_line <- rrel_key_sc_element:
         => nrel_main_idtf: [Акс.(прямая; плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
 		-> rrel_main_key_sc_element: stat_straight_line_geometric_point_parallelism;;
 		-> rrel_key_sc_element: concept_plane; concept_geometric_point;;
-		<- sc_statement;;
+		<- sc_text_statement;;
 		<= nrel_sc_text_translation: 
 			...
 		(*
@@ -128,7 +128,7 @@ concept_straight_line <- rrel_key_sc_element:
 	...
         (*
         => nrel_main_idtf: [Акс.(прямая; треугольник; плоскость; сторона*; пересекающиеся*; вершина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

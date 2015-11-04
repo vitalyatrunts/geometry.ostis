@@ -46,7 +46,7 @@ nrel_inclined <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(длина; наклонная*; прямая; точка; перпендикуляр*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -59,7 +59,7 @@ nrel_inclined <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(наклонная*; конгруэнтность*; проекция*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -72,7 +72,7 @@ nrel_inclined <- rrel_key_sc_element:
  	...
 	(*
 	=> nrel_main_idtf:     [Утв.(наклонная*; точка; проекция*; больше*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

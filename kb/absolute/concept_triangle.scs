@@ -43,7 +43,7 @@ concept_triangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (треугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -57,7 +57,7 @@ concept_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; непрямолинейная тройка точек; вершина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -75,7 +75,7 @@ concept_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -91,7 +91,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; сторона*; прилежащий*; конгруэнтность* )] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_congruence_triangle_side_adjacent_angle;;
 	-> rrel_key_sc_element: nrel_congruence; nrel_side; nrel_adjacent;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -107,7 +107,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; сторона*; внутренний угол*; конгруэнтность* )] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_congruence_triangle_side_angle_between;;
 	-> rrel_key_sc_element: nrel_congruence; nrel_side; nrel_internal_angle;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -123,7 +123,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; окружность; вписанность*; геометрическая точка)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_circle_description_centre_bisectrix_intersection;;
 	-> rrel_key_sc_element: concept_circle; nrel_be_inscribed; concept_geometric_point;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -139,7 +139,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; окружность; описанность*; геометрическая точка; серединный перпендикуляр*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_circle_inscribed_centre_middle_perpendicular_intersection;;
 	-> rrel_key_sc_element: concept_circle; nrel_be_inscribed; concept_geometric_point; nrel_middle_perpendicular;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -155,7 +155,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; сторона*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_cos;;
 	-> rrel_key_sc_element: nrel_side;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -171,7 +171,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*; )] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_internal_angle_congruence_similarity;;
 	-> rrel_key_sc_element: nrel_internal_angle; nrel_similarity;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -187,7 +187,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_side_proportionality_angle_congruence_similarity;;
 	-> rrel_key_sc_element: nrel_internal_angle; nrel_side; nrel_similarity;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -203,7 +203,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_side_proportionality_simil;;
 	-> rrel_key_sc_element: nrel_side; nrel_similarity;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -219,7 +219,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_similarity_angle;;
 	-> rrel_key_sc_element: nrel_internal_angle; nrel_similarity;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -235,7 +235,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; внешний угол*; внутренний угол*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_angle_measure_external_angle_equality_quantities_sum_internal_angle_triangle;;
 	-> rrel_key_sc_element: nrel_internal_angle; nrel_external_angle;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -251,7 +251,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sum_angle_measure_angle_triangle;;
 	-> rrel_key_sc_element: nrel_internal_angle; nrel_angle_measure;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -267,7 +267,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_area_multiplication_height_base;;
 	-> rrel_key_sc_element: nrel_height; nrel_area; nrel_base;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

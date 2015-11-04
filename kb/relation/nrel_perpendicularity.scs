@@ -64,7 +64,7 @@ nrel_perpendicular <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(прямая; геометрическая точка; перпендикулярность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_geometric_point_straight_line_perpendicularity;;
 	-> rrel_key_sc_element: concept_straight_line;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -77,7 +77,7 @@ nrel_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; прямая; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -90,7 +90,7 @@ nrel_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; перпендикулярность*; перпендикуляр*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -103,7 +103,7 @@ nrel_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; перпендикулярность*; перпендикуляр*; линия; пересечение*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

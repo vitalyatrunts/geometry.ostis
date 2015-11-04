@@ -22,7 +22,7 @@ nrel_between <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Акс.(пара точек; между*; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -35,7 +35,7 @@ nrel_between <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -50,7 +50,7 @@ nrel_between <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Акс.(точка; прямая; между*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_three_tuple_of_points_straight_line_between;;
 	-> rrel_key_sc_element: concept_straight_line; concept_geometric_point;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

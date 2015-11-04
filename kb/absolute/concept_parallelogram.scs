@@ -36,7 +36,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; внутренний угол*; сторона*; прилежащий*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -52,7 +52,7 @@ concept_parallelogram <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(параллелограмм; противолежащие*; сторона*; внутренний угол* конгруэнтность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_parallelogram_angle_opposite_side_congruence;;
 	-> rrel_key_sc_element: nrel_opposite; nrel_side; nrel_internal_angle; nrel_congruence;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -68,7 +68,7 @@ concept_parallelogram <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(параллелограмм; внутренний угол*; противолежащий*; конгруэнтность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_parallelogram_opposite_angle_congruence;;
 	-> rrel_key_sc_element: nrel_congruence; nrel_opposite; nrel_internal_angle;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -82,7 +82,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; сторона*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -96,7 +96,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; внутренний угол*; биссектриса*; равнобедренный треугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -110,7 +110,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; противолежащие*; внутренний угол*; биссектриса*; параллельность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -124,7 +124,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; высота*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -138,7 +138,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; сторона*; вершина*; внутренний угол*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -152,7 +152,7 @@ concept_parallelogram <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; диагональ*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -168,7 +168,7 @@ concept_parallelogram <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_diagonal_paralelogram;;
 	-> rrel_key_sc_element: nrel_diagonal;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -184,7 +184,7 @@ concept_parallelogram <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; четырехугольник)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_quadrilateral_parallelogram_diagonal_point_intersect_middle;;
 	-> rrel_key_sc_element: nrel_diagonal; concept_quadrilateral;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

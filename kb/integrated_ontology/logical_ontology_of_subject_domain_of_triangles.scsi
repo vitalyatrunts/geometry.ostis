@@ -3,7 +3,7 @@ concept_triangle <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition(triangle)] (* <- lang_en;; *);;
-	<- sc_definition;; 
+	<- sc_text_definition;; 
 	-> rrel_main_key_sc_element: d_concept_triangle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -25,7 +25,7 @@ concept_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол треугольника*; острый угол; тупой угол; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	-> rrel_key_sc_element: concept_triangle; concept_acute_angle; concept_right_angle; concept_obtuse_angle;;
 	-> rrel_main_key_sc_element: stat_triangle_angle_acute_right_obtuse;;
 	<= nrel_sc_text_translation: 
@@ -43,7 +43,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв. (треугольник)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_polygon_side_triangle;;
 	-> rrel_key_sc_element: concept_polygon; nrel_side; concept_triangle;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -57,7 +57,7 @@ concept_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; непрямолинейная тройка точек; вершина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	-> rrel_main_key_sc_element: stat_triangle_non_rectlinear_three_tuple_of_points_vertex;;
 	-> rrel_key_sc_element: concept_triangle; concept_non_rectlinear_three_tuple_of_points; nrel_vertex; concept_geometric_point;;
 	<= nrel_sc_text_translation: 
@@ -77,7 +77,7 @@ concept_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	-> rrel_main_key_sc_element: stat_triangle_triple_of_points_vertex_non_rectlinear_geometric_figure;;
 	-> rrel_key_sc_element: concept_triangle; concept_triple_of_points; nrel_vertex; concept_non_rectlinear_figure;;
 	<= nrel_sc_text_translation: 
@@ -96,7 +96,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Statement(triangle; side*; adjacent*; congruence*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_angle_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; nrel_adjacent;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -122,7 +122,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Statement(triangle; side*; internal angle*; congruence*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_two_side_angle_between;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; rrel_between;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -148,7 +148,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Statement(triangle; side*; congruence*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_three_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; nrel_congruence;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -173,7 +173,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_two_side_angle;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -255,7 +255,7 @@ product of these parts by the cosine of the angle between them.]
 	=> nrel_main_idtf: [The Law of sines] (* <- lang_en;; *);;
 	=> nrel_idtf: [Утв.(треугольник; сторона*; синус*)] (* <- lang_ru;; *);;
 	=> nrel_idtf: [Statement(triangle; side*; sin*)] (* <- lang_en;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_triangle_radius_be_inscribed_lateral_side_base_internal_angle;;
 	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_radius; nrel_lateral_side; nrel_internal_angle; nrel_be_described;;
 	<= nrel_sc_text_translation: 
@@ -283,7 +283,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Statement(triangle; simularity*; internal angle*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_two_angle;;
 	-> rrel_key_sc_element: concept_triangle; nrel_angle; nrel_similarity;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -307,7 +307,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Statement(triangle; simularity*; side*; internal angle*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_angle_two_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; nrel_similarity;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -332,7 +332,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Statement(triangle; simularity*; side*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_three_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; nrel_similarity;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -355,7 +355,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sign_two_angle;;
 	-> rrel_key_sc_element: concept_triangle; nrel_angle; nrel_similarity;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -371,7 +371,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; внешний угол*; внутренний угол*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_external_sum_internal_angle;;
 	-> rrel_key_sc_element: nrel_internal_angle; concept_triangle; nrel_external_angle; nrel_adjacent_angles;;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -387,7 +387,7 @@ concept_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sum_internal_angle_triangle;;
 	-> rrel_key_sc_element: nrel_internal_angle; concept_triangle;;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -426,7 +426,7 @@ concept_acute_angled_triangle <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(остроугольный треугольник)] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition(acute triangle)] (* <- lang_en;; *);;
-	<- sc_definition;; 
+	<- sc_text_definition;; 
 	-> rrel_main_key_sc_element: d_concept_acute_angled_triangle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -450,7 +450,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(прямоугольный треугольник)] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition(right triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: concept_rectangular_triangle;;
-	<- sc_definition;; 
+	<- sc_text_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -471,7 +471,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_definitional_statement;;
+	<- sc_text_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_rectangular_triangle_side;;
 	-> rrel_key_sc_element: nrel_side; concept_triangle; concept_rectangular_triangle;;
 	<= nrel_sc_text_translation: 
@@ -487,7 +487,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; сторона*; медиана*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rectangular_triangle_median;;
 	-> rrel_key_sc_element: nrel_median; concept_triangle; nrel_side; concept_rectangular_triangle;;
 	<= nrel_sc_text_translation: 
@@ -505,7 +505,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; конгруэнтность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_two_cathetus;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_congruence;;
-	<- sc_statement_of_necessity_and_sufficiency ;;
+	<- sc_text_statement_of_necessity_and_sufficiency ;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -520,7 +520,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; катет*; острый угол; угол многоугольника*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_cathetus_acute_angle;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_congruence; concept_acute_angle;;
 	<= nrel_sc_text_translation: 
@@ -537,7 +537,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; гипотенуза*; острый угол; угол многоугольника*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_hypotenuse_acute_angle;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_congruence; concept_acute_angle;;
 	<= nrel_sc_text_translation: 
@@ -556,7 +556,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; гипотенуза*; катет*; конгруэнтность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_hypotenuse_cathetus;;
 	-> rrel_key_sc_element: nrel_hypotenuse; concept_rectangular_triangle; nrel_cathetus; nrel_congruence;;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -571,7 +571,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; острый угол; угол многоугольника*; подобность*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	-> rrel_main_key_sc_element: stat_sign_rectangular_triangle_acute_angle;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; concept_acute_angle;;
 	<= nrel_sc_text_translation: 
@@ -588,7 +588,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; катет*; пропорциональность*; подобность*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	-> rrel_main_key_sc_element: stat_sign_two_cathetus;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus;;
 	<= nrel_sc_text_translation: 
@@ -605,7 +605,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; гипотенуза*; катет*; пропорциональность*; подобность*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_necessity_and_sufficiency;;
+	<- sc_text_statement_of_necessity_and_sufficiency;;
 	-> rrel_main_key_sc_element: stat_sign_hypotenuse_cathetus;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
 	<= nrel_sc_text_translation: 
@@ -622,7 +622,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; острый угол; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	-> rrel_main_key_sc_element: stat_rectangular_triangle_angle;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; concept_angle; concept_right_angle; concept_acute_angle;;
 	<= nrel_sc_text_translation: 
@@ -720,7 +720,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*; косинус*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rectangular_triangle_hypotenuse_cathetus_sin_cos_tg_ctg;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus; concept_angle;;
 	<= nrel_sc_text_translation: 
@@ -762,7 +762,7 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*; проекция*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rectangular_triangle_hypotenuse_cathetus_geometric_mean;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
 	<= nrel_sc_text_translation: 
@@ -908,7 +908,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition(equilateral triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: d_concept_equilateral_triangle;;
-	<- sc_definition;; 
+	<- sc_text_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -977,7 +977,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; вписанность*; описанность*; окружность)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_circle_side_hight;;
 	-> rrel_key_sc_element: concept_equilateral_triangle;  nrel_radius; concept_circle; nrel_side; nrel_hight;;
 	<= nrel_sc_text_translation: 
@@ -993,7 +993,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; вписанность*; окружность; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_be_inscribed_circle_side;;
 	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_radius; concept_circle; nrel_side; nrel_be_inscribed;;
 	<= nrel_sc_text_translation: 
@@ -1009,7 +1009,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; описанность*; окружность; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_circle_be_described_side;;
 	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_side; nrel_radius; concept_circle;;
 	<= nrel_sc_text_translation: 
@@ -1025,7 +1025,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; описанность*; окружность; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_be_described_perimeter_be_inscribed_circle;;
 	-> rrel_key_sc_element: concept_equilateral_triangle; concept_circle; nrel_perimeter; nrel_side; nrel_be_described; nrel_be_inscribed; nrel_radius;;
 	<= nrel_sc_text_translation: 
@@ -1041,7 +1041,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_equilateral_triangle_height_side;;
 	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_height; nrel_side;;
 	<= nrel_sc_text_translation: 
@@ -1057,7 +1057,7 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; сторона*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_equilateral_triangle_area_height_side;;
 	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_area; nrel_side; nrel_height;;
 	<= nrel_sc_text_translation: 
@@ -1075,7 +1075,7 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition(isosceles triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: d_concept_isosceles_triangle;;
-	<- sc_definition;; 
+	<- sc_text_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1152,7 +1152,7 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; боковая сторона*; внутренний угол*; вершина*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_base_lateral_side_angle;;
 	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_lateral_side; concept_angle; nrel_adjacent;;
 	<= nrel_sc_text_translation: 
@@ -1168,7 +1168,7 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; высота*; боковая сторона*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_base_area_lateral_side;;
 	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_area; nrel_lateral_side;;
 	<= nrel_sc_text_translation: 
@@ -1184,7 +1184,7 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; медиана*; высота*; вершина*; биссектриса*; внутренний угол*; боковая сторона*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_triangle_median_height_vertex_bisectrix_base_lateral_side;;
 	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_median; nrel_bisectrix_of_angle; nrel_internal_angle; nrel_lateral_side; nrel_base; nrel_vertex;;
 	<= nrel_sc_text_translation: 
@@ -1200,7 +1200,7 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; радиус*; вписанность*; основание*; внутренний угол*; тангенс*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_triangle_radius_be_inscribes_base_internal_angle;;
 	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_radius; nrel_be_inscribed; nrel_internal_angle: nrel_base;;
 	<= nrel_sc_text_translation: 
@@ -1218,7 +1218,7 @@ concept_obtuse_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition(obtuse triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: d_concept_obtuse_triangle;;
-	<- sc_definition;; 
+	<- sc_text_definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1241,7 +1241,7 @@ nrel_area <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; площадь*; 
 	положительная величина)] (* <- lang_ru;; *);;
-	<- sc_definitional_statement;;
+	<- sc_text_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_area_geometric_figure_positive_number;;
 	-> rrel_main_key_sc_element: nrel_area; concept_geometric_figure;;
 	<= nrel_sc_text_translation: 
@@ -1273,7 +1273,7 @@ nrel_area <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; разбиение множества*; площадь*; сумма*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	-> rrel_main_key_sc_element: stat_area_geometric_figure_non_intersection_parts;;
 	-> rrel_key_sc_element: concept_geometric_figure; nrel_area; nrel_sum;;
 	<= nrel_sc_text_translation: 
@@ -1289,7 +1289,7 @@ nrel_be_inscribed <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(вписанность*; окружность)] (* <- lang_ru;; *);; 
-	<- sc_definitional_statement;;
+	<- sc_text_definitional_statement;;
 	-> rrel_key_sc_element: concept_geometric_figure; concept_circle; nrel_be_inscribed; nrel_vertex;;
 	-> rrel_main_key_sc_element: stat_geometric_figure_be_inscribed_circle_vertex;;
 	<= nrel_sc_text_translation: 
@@ -1307,7 +1307,7 @@ nrel_be_inscribed <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; окружность; вписанность*; центр*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_center_circle_around_square;;
 	-> rrel_key_sc_element: concept_rectangle; nrel_diagonal; concept_circle; nrel_center;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1321,7 +1321,7 @@ nrel_be_described <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(описанность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	-> rrel_key_sc_element: nrel_side; nrel_be_described; nrel_tangent; concept_polygon; concept_circle;;
 	-> rrel_main_key_sc_element: d_nrel_be_described;;
 	<= nrel_sc_text_translation: 
@@ -1537,7 +1537,7 @@ nrel_median <- rrel_key_sc_element:
     	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; противолежащий*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_triangle_median_opposite_side_length;;
 	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_length; nrel_side; nrel_opposite;;
 	<= nrel_sc_text_translation: 
@@ -1553,7 +1553,7 @@ nrel_median <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; длина)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
+	<- sc_text_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_triangle_median_length;;
 	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_side; nrel_length;;
 	<= nrel_sc_text_translation: 
@@ -1700,7 +1700,7 @@ nrel_bisectrix_of_angle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(биссектриса угла*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_nrel_bisectrix_of_angle;;
 	-> rrel_key_sc_element: nrel_bisectrix_of_angle; concept_ray; nrel_vertex_of_angle; concept_angle; nrel_side;;
-	<- sc_definition;;  
+	<- sc_text_definition;;  
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1716,7 +1716,7 @@ nrel_center_of_circle <- rrel_key_sc_element:
 	=> nrel_main_idtf:[Опр.(центр окружности*)](* <- lang_ru;; *);; 
 	-> rrel_main_key_sc_element: d_nrel_center_of_circle;;
 	-> rrel_key_sc_element: nrel_center_of_circle; concept_geometric_point; concept_circle; nrel_distance;;
-	<- sc_definition;;   
+	<- sc_text_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1732,7 +1732,7 @@ nrel_median <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(медиана*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_nrel_median;;
 	-> rrel_key_sc_element: nrel_median; concept_segment; nrel_vertex; concept_triangle; nrel_vertex_of_polygon; nrel_opposite; nrel_side; nrel_middle;;
-	<- sc_definition;;   
+	<- sc_text_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1748,7 +1748,7 @@ nrel_middle_perpendicular <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(серединный перпендикуляр*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_nrel_middle_perpendicular;;
 	-> rrel_key_sc_element: nrel_middle_perpendicular; concept_straight_line; nrel_intersection; nrel_middle; concept_segment; nrel_perpendicularity;;
-	<- sc_definition;;   
+	<- sc_text_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1764,7 +1764,7 @@ nrel_opposite <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(противолежащий*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_nrel_opposite;;
 	-> rrel_key_sc_element: nrel_opposite; nrel_internal_angle; concept_polygon; concept_segment; nrel_side;;
-	<- sc_definition;;   
+	<- sc_text_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1781,7 +1781,7 @@ nrel_similarity <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(подобие*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_nrel_similarity;;
 	-> rrel_key_sc_element: nrel_similarity; concept_polygon; nrel_side; concept_angle; nrel_congruence;; 
-	<- sc_definition;;   
+	<- sc_text_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

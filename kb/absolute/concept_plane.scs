@@ -25,7 +25,7 @@ concept_plane <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Акс.(плоскость; непрямолинейная тройка точек)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_plane_straight_line_geometric_point;;
 	-> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -39,7 +39,7 @@ concept_plane <- rrel_key_sc_element:
 	...  
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; прямая; пересекающиеся*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -53,7 +53,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; тройка точек)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -67,7 +67,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -81,7 +81,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -95,7 +95,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; пространство; полупространство; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -109,7 +109,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; пересекающиеся*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -123,7 +123,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; пересекающиеся*; геометрическая точка; плоскость; включение множества*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -137,7 +137,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -151,7 +151,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -167,7 +167,7 @@ concept_plane <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_straight_line_belonging_plane;;
 	-> rrel_key_sc_element: concept_geometric_point; concept_straight_line;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -183,7 +183,7 @@ concept_plane <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(плоскость; прямая; параллельность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_straight_line_plane_parallelism;;
 	-> rrel_key_sc_element: concept_straight_line; nrel_parallelism;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -197,7 +197,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; пересечение множеств*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -211,7 +211,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; плоскость; параллельность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -227,7 +227,7 @@ concept_plane <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_plane_geometric_point_parallelism;;
 	-> rrel_key_sc_element: concept_geometric_point; nrel_parallelism;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -241,7 +241,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; прямая; пересекающиеся*; параллельность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -255,7 +255,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; параллельность*; пересечение множеств*; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -269,7 +269,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; перпендикулярность*; прямая; параллельность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -283,7 +283,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; параллельность*; совпадение*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -297,7 +297,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; прямая; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -311,7 +311,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; геометрическая точка; плоскость; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -325,7 +325,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; плоскость; перпендикулярность*; параллельность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -339,7 +339,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямая; плоскость; параллельность*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -353,7 +353,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; прямая; пересекающиеся*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -367,7 +367,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; прямая; параллельность*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -381,7 +381,7 @@ concept_plane <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; прямая; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -33,7 +33,7 @@ concept_half_plane <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(плоскость; полуплоскость; прямая; граница*; отрезок; пересекающиеся*; граничная точка*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -49,7 +49,7 @@ concept_half_plane <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(прямая; плоскость; полуплоскость)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_straight_line_plane_half_plane;;
 	-> rrel_key_sc_element: concept_plane; concept_straight_line;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -29,7 +29,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; внутренний угол*; основание*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_isosceles_triangle_congruence_angle;;
 	-> rrel_key_sc_element: nrel_base; nrel_internal_angle;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -45,7 +45,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; биссектриса*; основание*; высота*; медиана*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_median_isosceles_triangle_bisectrix_height;;
 	-> rrel_key_sc_element: nrel_bisectrix; nrel_median; nrel_height; nrel_base;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -59,7 +59,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; медиана*; высота*; биссектриса*; боковая сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -73,7 +73,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; боковая сторона*; внутренний угол*; вершина*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -87,7 +87,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; высота*; боковая сторона*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -101,7 +101,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; медиана*; высота*; вершина*; биссектриса*; внутренний угол*; боковая сторона*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -115,7 +115,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; радиус*; вписанность*; основание*; внутренний угол*; тангенс*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -129,7 +129,7 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; радиус*; описанность*; боковая сторона*; основание*; внутренний угол*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

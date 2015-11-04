@@ -44,7 +44,7 @@ nrel_center_of_circle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(окружность; прямая; центр окружности*)](* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -57,7 +57,7 @@ nrel_center_of_circle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf:[Утв.(окружность; касательная*; центр окружности*; геометрическая точка; конгруэнтность*; угол)](* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

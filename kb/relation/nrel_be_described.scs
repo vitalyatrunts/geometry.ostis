@@ -63,7 +63,7 @@ nrel_be_described <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; окружность; описанность*;вершина*;сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -79,7 +79,7 @@ nrel_be_described <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; окружность; описанность*; центр*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_center_circle_around_square;;
 	-> rrel_key_sc_element: concept_rectangle; nrel_diagonal; concept_circle; nrel_center;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

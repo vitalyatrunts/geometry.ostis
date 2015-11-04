@@ -30,7 +30,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -44,7 +44,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; прямоугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -59,7 +59,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; радиус*; вписанность*; окружность)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -74,7 +74,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; диагональ*; биссектриса*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -88,7 +88,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; радиус*; описанность*; окружность)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -103,7 +103,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; треугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -116,7 +116,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; угол*; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -130,7 +130,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; площадь*; сторона* произведение*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -145,7 +145,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; площадь*; диагональ* произведение*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -159,7 +159,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; окружность; вписанность*; радиус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -173,7 +173,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; ось симметрии*; диагональ*; перпендикуляр*; сторона*; середина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -187,7 +187,7 @@ concept_square <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; окружность; вписанность*; радиус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -204,7 +204,7 @@ concept_square <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(квадрат; диагональ*; геометрическая точка)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_diagonal_square;;
 	-> rrel_key_sc_element: nrel_diagonal; concept_geometric_point;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     
@@ -220,7 +220,7 @@ concept_square <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(квадрат; сторона*; площадь*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_area_square;;
 	-> rrel_key_sc_element: nrel_side; nrel_area;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*     

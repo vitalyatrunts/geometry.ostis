@@ -30,7 +30,7 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -43,7 +43,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -56,7 +56,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -69,7 +69,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; точка; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -82,7 +82,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; сторона*; перпендикуляр*; середина*; ось симметрии*, конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -95,7 +95,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; описанность*; окружность)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -108,7 +108,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; площадь*; сторона*; произведение*; конгруэнтность*; смежность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -121,7 +121,7 @@ concept_rectangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -136,7 +136,7 @@ concept_rectangle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_rectangle_congruence_diagonal;;
 	-> rrel_key_sc_element: nrel_diagonal; nrel_congruence;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

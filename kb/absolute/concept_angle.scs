@@ -60,7 +60,7 @@ concept_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; совпадение*; сторона*; вершина*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -74,7 +74,7 @@ concept_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; мера угла*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -88,7 +88,7 @@ concept_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*; мера угла*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -104,7 +104,7 @@ concept_angle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_straight_line_parallelism_intersection_ray_side_of_the_angle_proportionality;;
 	-> rrel_key_sc_element: nrel_side; nrel_parallelism;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -120,7 +120,7 @@ concept_angle <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_straight_line_parallelism_intersection_ray_side_of_the_angle_proportionality_congruence;;
 	-> rrel_key_sc_element: nrel_side; nrel_parallelism; concept_segment; nrel_congruence;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

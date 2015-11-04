@@ -39,7 +39,7 @@ nrel_internal_sided_angles <= rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -52,7 +52,7 @@ nrel_internal_sided_angles <= rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; внутренние односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

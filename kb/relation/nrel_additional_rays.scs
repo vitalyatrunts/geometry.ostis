@@ -41,7 +41,7 @@ nrel_additional_rays <- rrel_key_sc_element:
 	=> nrel_main_idtf:
 		[Утв.(дополнительные лучи*)]
 		(* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
