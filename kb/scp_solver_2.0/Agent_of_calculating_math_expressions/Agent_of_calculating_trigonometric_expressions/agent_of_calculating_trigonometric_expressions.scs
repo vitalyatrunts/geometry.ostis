@@ -30,35 +30,133 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: question_calc;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1C1;;
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1C;;
 			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator_return;;
 			*);;
 	
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1C1
+	    	-> .agent_of_calculating_trigonometric_expressions_operator1C
 	    		(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _binary;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_common: _binary;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1C2;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1D;;
 	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator_return;;
-	        	*);; 
+	        	*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1C2
+		-> .agent_of_calculating_trigonometric_expressions_operator1D 
+                 	(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [*  _bin_arc _<- _rel;;
+								  _rel _<- trigonometric_operation;; *];;
+
+		 	-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... 
+				(* -> ... 
+					(* -> rrel_1: rrel_fixed: rrel_scp_const: _bin_arc;;
+                                           -> rrel_2: rrel_fixed: rrel_scp_var: _binary;; 
+					*);;  
+				*);;
+
+			-> rrel_4: rrel_assign: rrel_scp_var: _temp_result;;
+
+                 	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E;;
+			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator_return;;
+		 	*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator1E 
+             		(*
+		 	<- eraseEl;;
+
+		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp_result;;
+
+		 	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2A;;
+		 	*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator2A 
+             		(*
+		 	<- contAssign;;
+
+		 	-> rrel_1: rrel_assign: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Nessecary information will be here!];;
+
+		 	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2B1;;
+		 	*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator2B1
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_checking_known_arguments;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator2B_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _binary;;
+                		-> rrel_2: rrel_fixed: rrel_scp_var: _message;;  
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2B2;;
+			*);;
+
+        	-> .agent_of_calculating_trigonometric_expressions_operator2B2
+        		(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2C1;;
+		 	*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator2C1
+			(*
+			<- stringIfEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [All parameters were known!];;
+
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2D6;;
+			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2C2;;
+			*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator2C2
+			(*
+			<- stringIfEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [More than one unknown parameter! This calculation can't be solved!];;
+
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2E2;;
+			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2C3;;
+			*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator2C3
+			(*
+			<- stringIfEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Congratulations! This calculation can be solved!];;
+
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator3A;;
+			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2E2;;
+			*);;
+ 
+	    	-> .agent_of_calculating_trigonometric_expressions_operator3A
 			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1C3;;
+			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator3B;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator1C3 
+		-> .agent_of_calculating_trigonometric_expressions_operator3B 
 			(*
 		  	<- genElStr3;;
 
@@ -66,10 +164,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _binary;;
 
-		   	 => nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1C4;;
+		   	 => nrel_goto: .agent_of_calculating_trigonometric_expressions_operator3C;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1C4
+	    	-> .agent_of_calculating_trigonometric_expressions_operator3C
 	    		(*
 			<- searchElStr3;;
 
@@ -77,11 +175,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_common: _binary;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _second_vertex;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1C5;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator3D;;
 	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2E1;;
 	        	*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator1C5 
+		-> .agent_of_calculating_trigonometric_expressions_operator3D 
 			(*
 		  	<- genElStr3;;
 
@@ -89,10 +187,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _connection;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1C6;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator3E;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator1C6 
+		-> .agent_of_calculating_trigonometric_expressions_operator3E 
 			(*
 		  	<- genElStr3;;
 
@@ -100,10 +198,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _second_vertex;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1D1;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4A1;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1D1
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4A1
 	    		(*
 			<- searchSetStr3;;
 
@@ -113,11 +211,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E1;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator1D2;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator4B1;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator4A2;;
 	        	*);;
 
-	     	-> .agent_of_calculating_trigonometric_expressions_operator1E1 
+	     	-> .agent_of_calculating_trigonometric_expressions_operator4B1 
 			(*
 		  	<- genElStr3;;
 
@@ -125,10 +223,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_sin_numbers;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1F1;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4C1;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1D2
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4A2
 	    		(*
 			<- searchSetStr3;;
 
@@ -138,11 +236,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E2;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator1D3;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator4B2;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator4A3;;
 	        	*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1E2 
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4B2 
 			(*
 		  	<- genElStr3;;
 
@@ -150,20 +248,20 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_sin_quantities;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1F1;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4C1;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1F1
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4C1
 			(*
-		 	<- varAssign;;
+		 	<- contAssign;;
 
-		 	-> rrel_1: rrel_assign: rrel_scp_var: _relation;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: rrel_1;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Sin];;
 
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2A;;
+			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4D;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1D3
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4A3
 	    		(*
 			<- searchSetStr3;;
 
@@ -173,11 +271,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E3;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator1D4;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator4B3;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator4A4;;
 	        	*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1E3 
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4B3 
 			(*
 		  	<- genElStr3;;
 
@@ -185,10 +283,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_cos_numbers;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1F2;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4C2;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1D4
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4A4
 	    		(*
 			<- searchSetStr3;;
 
@@ -198,11 +296,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E4;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator1D5;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator4B4;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator4A5;;
 	        	*);; 
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1E4 
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4B4 
 			(*
 		  	<- genElStr3;;
 
@@ -210,20 +308,20 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_cos_quantities;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1F2;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4C2;;
 			*);; 
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1F2
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4C2
 			(*
-		 	<- varAssign;;
+		 	<- contAssign;;
 
-		 	-> rrel_1: rrel_assign: rrel_scp_var: _relation;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: rrel_2;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Cos];;
 
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2A;;
+			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4D;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1D5
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4A5
 	    		(*
 			<- searchSetStr3;;
 
@@ -233,11 +331,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E5;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator1D6;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator4B5;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator4A6;;
 	        	*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1E5 
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4B5 
 			(*
 		  	<- genElStr3;;
 
@@ -245,10 +343,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_tan_numbers;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1F3;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4C3;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1D6
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4A6
 	    		(*
 			<- searchSetStr3;;
 
@@ -258,11 +356,11 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator1E6;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator4B6;;
 	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator_return;;
 	        	*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1E6 
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4B6 
 			(*
 		  	<- genElStr3;;
 
@@ -270,176 +368,138 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_tan_quantities;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator1F3;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4C3;;
 			*);;
 
-	    	-> .agent_of_calculating_trigonometric_expressions_operator1F3
+	    	-> .agent_of_calculating_trigonometric_expressions_operator4C3
 			(*
-		 	<- varAssign;;
+		 	<- contAssign;;
 
-		 	-> rrel_1: rrel_assign: rrel_scp_var: _relation;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: rrel_3;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Tan];;
 
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2A;;
+			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator4D;;
 			*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator4D
+	    		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _unknown;;
+
+	        	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator5A;;
+	        	*);;
 	
-		-> .agent_of_calculating_trigonometric_expressions_operator2A 
+		-> .agent_of_calculating_trigonometric_expressions_operator5A 
 			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_calculating_trigonometric_expressions;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator2A_params 
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator5A_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
 				-> rrel_2: rrel_fixed: rrel_scp_var: _second_vertex;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _message;;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _unknown;;
 				*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
 
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2B;;
+			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator5B;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2B 
+		-> .agent_of_calculating_trigonometric_expressions_operator5B 
 			(*
 			<- waitReturn;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
 
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2C1;;
+			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator5C;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2C1
+		-> .agent_of_calculating_trigonometric_expressions_operator5C
 			(*
-		 	<- searchElStr3;;
+		 	<- stringIfEq;;
 
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _relation;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [Trigonometric calculation finished successfully!];;
 
-			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2C2;;
-			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2C3;;
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator5D1;;
+			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator6B2;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2C2
-	    		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
-
-	        	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2C5;;
-	        	*);;
-
-		-> .agent_of_calculating_trigonometric_expressions_operator2C3
-			(*
-		 	<- searchElStr3;;
-
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _relation;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
-
-			=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2C4;;
-			*);;
-
-		-> .agent_of_calculating_trigonometric_expressions_operator2C4
-	    		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
-
-	        	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2E1;;
-	        	*);;
-
-		-> .agent_of_calculating_trigonometric_expressions_operator2C5
+		-> .agent_of_calculating_trigonometric_expressions_operator5D1
 	    		(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _unknown;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _connection;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2C6;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2C7;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator5E1;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator5D2;;
 	        	*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2C6
-	    		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
-
-	        	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D1;;
-	        	*);;
-
-		-> .agent_of_calculating_trigonometric_expressions_operator2C7
+		-> .agent_of_calculating_trigonometric_expressions_operator5D2
 	    		(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _unknown;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _second_vertex;;
 
-	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2C8;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2E1;;
+	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator5F1;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator6B2;;
 	        	*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2C8
-	    		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
-
-	        	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D3;;
-	        	*);;
-
-		-> .agent_of_calculating_trigonometric_expressions_operator2D1
+		-> .agent_of_calculating_trigonometric_expressions_operator5E1
 			(*
 		  	<- call;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_finding_value;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator2D1_params 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator5E1_params 
 		  		(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
 				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
 				*);;
 		    	-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D2;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator5E2;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2D2
+		-> .agent_of_calculating_trigonometric_expressions_operator5E2
 			(*
 		  	<- waitReturn;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
 
-		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D5;;
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2D3
+		-> .agent_of_calculating_trigonometric_expressions_operator5F1
 			(*
 		  	<- call;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_finding_value;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator2D3_params 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculating_trigonometric_expressions_operator5F1_params 
 		  		(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _second_vertex;;
 				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
 				*);;
 		    	-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
 
-		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D4;;
+		    	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator5F2;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2D4
+		-> .agent_of_calculating_trigonometric_expressions_operator5F2
 			(*
 		  	<- waitReturn;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
 
-		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D5;;
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A;;
 			*);; 
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2D5
+		-> .agent_of_calculating_trigonometric_expressions_operator6A
 			(*
 		  	<- genElStr5;;
 
@@ -449,10 +509,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_step;;
 
-		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2D6;;
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6B1;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2D6 
+		-> .agent_of_calculating_trigonometric_expressions_operator6B1 
         		(*
 		  	<- genElStr3;;
 
@@ -463,16 +523,7 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator_return;;
 			*);;
 
-		-> .agent_of_calculating_trigonometric_expressions_operator2E1
-	    		(*
-			<- varErase;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _relation;;
-
-	        	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator2E2;;
-	        	*);;
-
-		-> .agent_of_calculating_trigonometric_expressions_operator2E2 
+		-> .agent_of_calculating_trigonometric_expressions_operator6B2 
         		(*
 		  	<- genElStr3;;
 

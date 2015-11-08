@@ -10,7 +10,7 @@ scp_program -> proc_getting_value
 	-> rrel_operators: .proc_getting_value_operator_set 
 		(*                              
 
-		-> rrel_init: .proc_getting_value_operator_check_quantity
+		-> rrel_init: .proc_getting_value_operator1A
 			(*
 			<- searchElStr3;;
 
@@ -18,11 +18,11 @@ scp_program -> proc_getting_value
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
-			=> nrel_then: .proc_getting_value_operator_find_value;;
-			=> nrel_else: .proc_getting_value_operator_find_identification2;;
+			=> nrel_then: .proc_getting_value_operator1B;;
+			=> nrel_else: .proc_getting_value_operator2A2;;
 			*);;
 
-		-> .proc_getting_value_operator_find_value 
+		-> .proc_getting_value_operator1B 
 			(*
 			<- searchElStr5;;
 
@@ -32,13 +32,13 @@ scp_program -> proc_getting_value
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
 
-			=> nrel_then: .proc_getting_value_operator_get_feature1;;
-			=> nrel_else: .proc_getting_value_operator_message_unknown_value;;
+			=> nrel_then: .proc_getting_value_operator1C;;
+			=> nrel_else: .proc_getting_value_operator_return;;
 			*);; 
 
-		-> .proc_getting_value_operator_get_feature1 
+		-> .proc_getting_value_operator1C 
 			(*
-			<- searchElStr5;;
+			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;; 
@@ -46,11 +46,62 @@ scp_program -> proc_getting_value
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
 			-> rrel_5: rrel_assign: rrel_scp_var: _unit_of_measure;;
 
-			=> nrel_then: .proc_getting_value_operator_add_feature;;
-			=> nrel_else: .proc_getting_value_operator_message_error;;
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _maybe_units_of_measure;;
+
+			=> nrel_then: .proc_getting_value_operator1D;;
+			=> nrel_else: .proc_getting_value_operator_return;;
 			*);;
 
-		-> .proc_getting_value_operator_add_feature  
+		-> .proc_getting_value_operator1D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _maybe_units_of_measure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _unit_of_measure;;
+
+			=> nrel_then: .proc_getting_value_operator1E;;
+			=> nrel_else: .proc_getting_value_operator1D_erase;;
+			*);;
+
+		-> .proc_getting_value_operator1D_erase 
+ 			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _maybe_units_of_measure;;
+
+			=> nrel_goto: .proc_getting_value_operator_return;;
+			*);;
+
+		-> .proc_getting_value_operator1E 
+ 			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .proc_getting_value_operator1F;;
+			*);;
+
+		-> .proc_getting_value_operator1F
+			(*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_role_relation: _unit_of_measure;;
+
+			=> nrel_then: .proc_getting_value_operator1G;;
+			=> nrel_else: .proc_getting_value_operator1D;;
+			*);;
+
+		-> .proc_getting_value_operator1G
+ 			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _maybe_units_of_measure;;
+
+			=> nrel_goto: .proc_getting_value_operator1H;;
+			*);;
+
+		-> .proc_getting_value_operator1H  
 	 		(*
 			<- genElStr5;;
 
@@ -60,10 +111,10 @@ scp_program -> proc_getting_value
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
 
-			=> nrel_goto: .proc_getting_value_operator_find_identification1;;
+			=> nrel_goto: .proc_getting_value_operator2A1;;
 			*);;	
            	
-		-> .proc_getting_value_operator_find_identification1
+		-> .proc_getting_value_operator2A1
 			(*
 			<- searchElStr5;;
 
@@ -73,25 +124,25 @@ scp_program -> proc_getting_value
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
 
-			=> nrel_then: .proc_getting_value_operator_get_link;;
+			=> nrel_then: .proc_getting_value_operator2B;;
 			=> nrel_else: .proc_getting_value_operator_return;;
 			*);;
 
-		-> .proc_getting_value_operator_find_identification2
+		-> .proc_getting_value_operator2A2
 			(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _connection2;;
-			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
-			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
 
-			=> nrel_then: .proc_getting_value_operator_get_link;;
-			=> nrel_else: .proc_getting_value_operator_message_unknown_number;;
+			=> nrel_then: .proc_getting_value_operator2B;;
+			=> nrel_else: .proc_getting_value_operator_return;;
 			*);;
 
-		-> .proc_getting_value_operator_get_link 
+		-> .proc_getting_value_operator2B 
 			(*
 			<- searchSetStr5;;
 
@@ -102,39 +153,70 @@ scp_program -> proc_getting_value
 			-> rrel_5: rrel_assign: rrel_scp_var: _decimal_number;;
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _maybe_units_of_measure2;;
 
-			=> nrel_then: .proc_getting_value_operator_add_feature2;;
+			=> nrel_then: .proc_getting_value_operator2C;;
 			=> nrel_else: .proc_getting_value_operator_message_error;;
 			*);;
+
+		-> .proc_getting_value_operator2C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _maybe_units_of_measure2;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _unit_of_measure2;;
+
+			=> nrel_then: .proc_getting_value_operator2D;;
+			=> nrel_else: .proc_getting_value_operator2C_erase;;
+			*);;
+
+		-> .proc_getting_value_operator2C_erase 
+ 			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _maybe_units_of_measure2;;
+
+			=> nrel_goto: .proc_getting_value_operator_return;;
+			*);;
+
+		-> .proc_getting_value_operator2D 
+ 			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .proc_getting_value_operator2E;;
+			*);;
+
+		-> .proc_getting_value_operator2E
+			(*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_role_relation: _unit_of_measure2;;
+
+			=> nrel_then: .proc_getting_value_operator2F;;
+			=> nrel_else: .proc_getting_value_operator2C;;
+			*);;
+
+		-> .proc_getting_value_operator2F
+ 			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _maybe_units_of_measure2;;
+
+			=> nrel_goto: .proc_getting_value_operator2G;;
+			*);;
 	
- 		-> .proc_getting_value_operator_add_feature2 
+ 		-> .proc_getting_value_operator2G 
  			(*
 			<- genElStr5;;
+
 			-> rrel_1: rrel_fixed: rrel_scp_var: _features;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _decimal_number;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _unit_of_measure2;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
-
-			=> nrel_goto: .proc_getting_value_operator_return;;
-			*);;
-
-		-> .proc_getting_value_operator_message_unknown_value 
-			(*
-			<- contAssign;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _link;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [Unknown quantity!];;
-
-			=> nrel_goto: .proc_getting_value_operator_return;;
-			*);;
-		
-		-> .proc_getting_value_operator_message_unknown_number 
-			(*
-			<- contAssign;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _link;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [Unknown number!];;
 
 			=> nrel_goto: .proc_getting_value_operator_return;;
 			*);;
