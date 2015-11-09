@@ -5,22 +5,36 @@ Math_Pattern1 = [* q_49 <= nrel_pow_quantities: ...
 			*);; 
 		*];;
 
-number -> n_z; n_2; n_7; n_49; n_1; n_05;;
-concept_quantity -> q_z; q_49; q_7; q_2;;
+number -> n_z; n_2; n_3; n_4; n_7; n_49; n_1; n_05;;
+concept_quantity -> q_z; q_80; q_7; q_2; q_168; q_50;;
 
 n_2 <= nrel_identification: ...
 	(* -> rrel_decimal: [2];; *);;
 
-q_49 <= nrel_value: ...
-	(* -> rrel_sq_sm: n_49
+n_3 <= nrel_identification: ...
+	(* -> rrel_decimal: [3];; *);;
+
+n_4 <= nrel_identification: ...
+	(* -> rrel_decimal: [4];; *);;
+
+q_50 <= nrel_value: ...
+	(* -> rrel_sm: ...
 		(* <- number;;
 		   <= nrel_identification: ...
-			(* -> rrel_decimal: [49];; *);;
+			(* -> rrel_decimal: [50];; *);;
+		*);;
+	*);;
+
+q_168 <= nrel_value: ...
+	(* -> rrel_sm: ...
+		(* <- number;;
+		   <= nrel_identification: ...
+			(* -> rrel_decimal: [168];; *);;
 		*);;
 	*);;
 
 q_7 <= nrel_value: ...
-	(* -> rrel_sm: n_7
+	(* -> rrel_sm: ...
 		(* <- number;;
 		   <= nrel_identification: ...
 			(* -> rrel_decimal: [7];; *);;
@@ -45,6 +59,12 @@ n_05 <= nrel_identification: ...
 
 Math_Pattern2 = [* n_z => nrel_sin_numbers: n_05;; *];;
 
-
+Math_Pattern3 = [* n_49 <= nrel_sum_numbers: ...
+			(*
+			-> n_z;;
+			-> n_1;;
+			-> n_7;;
+			*);; 
+		*];;
 		
 

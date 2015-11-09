@@ -448,8 +448,17 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			-> rrel_3: rrel_fixed: rrel_scp_var: _second_vertex;;
 
 	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator5F1;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator6B2;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator5D2_erase;;
 	        	*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator5D2_erase 
+			(*
+		 	<- eraseEl;;
+
+		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _unknown;;
+
+		 	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6B2;;
+		 	*);;
 
 		-> .agent_of_calculating_trigonometric_expressions_operator5E1
 			(*
@@ -472,7 +481,7 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
 
-		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A;;
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A1;;
 			*);;
 
 		-> .agent_of_calculating_trigonometric_expressions_operator5F1
@@ -496,10 +505,10 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
 
-		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A;;
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A1;;
 			*);; 
 
-		-> .agent_of_calculating_trigonometric_expressions_operator6A
+		-> .agent_of_calculating_trigonometric_expressions_operator6A1
 			(*
 		  	<- genElStr5;;
 
@@ -509,8 +518,17 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_step;;
 
-		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6B1;;
+		  	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6A2;;
 			*);;
+
+		-> .agent_of_calculating_trigonometric_expressions_operator6A2 
+			(*
+		 	<- eraseEl;;
+
+		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _unknown;;
+
+		 	=> nrel_goto: .agent_of_calculating_trigonometric_expressions_operator6B1;;
+		 	*);;
 
 		-> .agent_of_calculating_trigonometric_expressions_operator6B1 
         		(*
