@@ -41,7 +41,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_quadrilateral_sum_internal_angle;;
 	-> rrel_key_sc_element: nrel_internal_angle;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -56,7 +56,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; диагональ*; отрезок; середина*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -71,7 +71,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; окружность; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -86,7 +86,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -101,7 +101,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; сторона*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -116,7 +116,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; сторона*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -131,7 +131,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; противолежащий*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -146,7 +146,7 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; выпуклый многоугольник; внутренний угол*; вершина*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

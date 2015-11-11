@@ -31,7 +31,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; угол; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -45,7 +45,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция ; высота* ; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -59,7 +59,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -73,7 +73,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -87,7 +87,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; середина*; основание*; перпендикулярность*; ось симметрии*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -101,7 +101,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; описанность*; окружность; треугольник; вершина*; центр*; серединный перпендикуляр*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -115,7 +115,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; описанность*; окружность; основание*; диагональ*; перпендикулярность*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -129,7 +129,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; вписаность*; окружность; сторона*; средняя линия; радиус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

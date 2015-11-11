@@ -37,7 +37,7 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -51,7 +51,7 @@ nrel_external_cross_lying_angles <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

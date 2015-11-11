@@ -50,7 +50,7 @@ concept_pair_of_points <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Акс.(прямая; пара точек)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -64,7 +64,7 @@ concept_pair_of_points <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Акс.(пара точек; между'; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

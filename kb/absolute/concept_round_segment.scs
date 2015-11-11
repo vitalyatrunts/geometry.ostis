@@ -32,7 +32,7 @@ concept_round_segment <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сегмент; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -46,7 +46,7 @@ concept_round_segment <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сегмент; треугольник; сектор; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -60,7 +60,7 @@ concept_round_segment <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сегмент; основание*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -74,7 +74,7 @@ concept_round_segment <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сегмент; высота*; основание*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

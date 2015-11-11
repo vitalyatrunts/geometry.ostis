@@ -55,7 +55,7 @@ nrel_length <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(отрезок; длина*; положительная величина)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -68,7 +68,7 @@ nrel_length <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(отрезок; конгруэнтность*; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -81,7 +81,7 @@ nrel_length <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(отрезок; разбиение множества*; длина*; сумма*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -94,7 +94,7 @@ nrel_length <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(отрезок; длина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

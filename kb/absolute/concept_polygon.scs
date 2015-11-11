@@ -47,7 +47,7 @@ concept_polygon <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; простая замкнутая ломаная)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -61,7 +61,7 @@ concept_polygon <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; вершина*; сторона*; смежность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -75,7 +75,7 @@ concept_polygon <- rrel_key_sc_element:
 	...    
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; диагональ*; отрезок; смежность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -89,7 +89,7 @@ concept_polygon <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; луч; внутренний угол*; смежность*; вершина*; плоскость; пересечение*; внутренняя область*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -103,7 +103,7 @@ concept_polygon <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; окружность; вписанность*; вершина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -117,7 +117,7 @@ concept_polygon <- rrel_key_sc_element:
 	...    
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; окружность; описанность*; вершина*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -131,7 +131,7 @@ concept_polygon <- rrel_key_sc_element:
 	...    
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; коэффициент подобия*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -145,7 +145,7 @@ concept_polygon <- rrel_key_sc_element:
 	...    
 	(*
 	=> nrel_main_idtf: [Утв.(многоугольник; площадь*; окружность; вписанность*; периметр*; радиус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

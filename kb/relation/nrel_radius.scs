@@ -62,7 +62,7 @@ nrel_radius <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(радиус*; касательная*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -75,7 +75,7 @@ nrel_radius <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(радиус*; перпендикулярность*; хорда*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -88,7 +88,7 @@ nrel_radius <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(радиус*; диаметр*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

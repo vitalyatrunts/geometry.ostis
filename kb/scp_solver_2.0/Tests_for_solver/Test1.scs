@@ -58,9 +58,7 @@ nrel_result <- sc_node_norole_relation;;
 
 nrel_result => nrel_main_idtf: [результат*] (* <- lang_ru;; *);;
 
-sc_definition <- sc_node_not_relation;;
-
-sc_definition => nrel_main_idtf: [sc-определение] (* <- lang_ru;; *);;
+sc_text_definition <- sc_node_not_relation;;
 
 /* ................................................... */
 

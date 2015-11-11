@@ -34,7 +34,7 @@ nrel_codirectional_rays <- rrel_key_sc_element:
 	...
 	(*   
 	=> nrel_main_idtf: [Утв.(луч; полупрямая; прямая; параллельный перенос*; сонаправленные лучи*)] (* <- lang_ru;; *);; 
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -47,7 +47,7 @@ nrel_codirectional_rays <- rrel_key_sc_element:
      	...
 	(*   
 	=> nrel_main_idtf: [Утв.(луч; сонаправленные лучи*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

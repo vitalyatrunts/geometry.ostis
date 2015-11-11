@@ -33,7 +33,7 @@ concept_round_sector <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сектор; круг; дуга; радиус*; граничная точка*; центр*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -47,7 +47,7 @@ concept_round_sector <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сектор; круг; окружность; дуга; луч; планарный угол; граничная точка*; центр*; пересечение множеств*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -63,7 +63,7 @@ concept_round_sector <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(круговой сектор; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

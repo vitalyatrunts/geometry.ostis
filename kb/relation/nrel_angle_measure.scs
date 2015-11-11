@@ -44,7 +44,7 @@ nrel_angle_measure <= nrel_main_statements:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; конгруэнтность*; угловая мера*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

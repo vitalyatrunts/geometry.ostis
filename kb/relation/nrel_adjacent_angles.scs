@@ -39,7 +39,7 @@ nrel_adjacent_angles <= rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(смежные углы*; острый угол; тупой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -55,7 +55,7 @@ nrel_adjacent_angles <= rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(смежные углы*; мера угла*)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_sum_angle_measure_adjacent_angles;;
 	-> rrel_key_sc_element: nrel_angle_measure;;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -69,7 +69,7 @@ nrel_adjacent_angles <= rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(смежные углы*; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

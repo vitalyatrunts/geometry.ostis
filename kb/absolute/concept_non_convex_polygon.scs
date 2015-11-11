@@ -29,7 +29,7 @@ concept_non_convex_polygon <= nrel_main_statements:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(невыпуклый многоугольник; отрезок; точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

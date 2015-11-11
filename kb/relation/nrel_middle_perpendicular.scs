@@ -45,7 +45,7 @@ nrel_middle_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(серединный перпендикуляр*; прямая; геометрическая точка; граничная точка; отрезок)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -58,7 +58,7 @@ nrel_middle_perpendicular <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(серединный перпендикуляр*; пересекающиеся прямые*; сторона*; описанность*; окружность; многоугольник; геометрическая точка; центр*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -30,7 +30,7 @@ concept_rhomb <- rrel_key_sc_element:
      	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -45,7 +45,7 @@ concept_rhomb <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; середина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -62,7 +62,7 @@ concept_rhomb <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*; прямой угол)] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: stat_rhomb_diagonal_perpendicular_bisectrix_angle;;
 	-> rrel_key_sc_element: nrel_diagonal; nrel_bisectrix; concept_right_angle;;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -75,7 +75,7 @@ concept_rhomb <- rrel_key_sc_element:
      	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; ось симметрии*; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -90,7 +90,7 @@ concept_rhomb <- rrel_key_sc_element:
      	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; высота*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -105,7 +105,7 @@ concept_rhomb <- rrel_key_sc_element:
      	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; высота*, основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -120,7 +120,7 @@ concept_rhomb <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -135,7 +135,7 @@ concept_rhomb <- rrel_key_sc_element:
      	...
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; сторона*; угол; синус угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;   
+	<- sc_text_statement;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -48,7 +48,7 @@ concept_geometric_point <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -63,7 +63,7 @@ concept_geometric_point <- rrel_key_sc_element:
         ...
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

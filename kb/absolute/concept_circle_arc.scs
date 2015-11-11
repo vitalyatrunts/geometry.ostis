@@ -29,7 +29,7 @@ concept_circle_arc <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(дуга; длина*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -44,7 +44,7 @@ concept_circle_arc <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(дуга; параллельность*; хорда*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -58,7 +58,7 @@ concept_circle_arc <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв. (угол; дуга; конгруэнтность*; вписанность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_text_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
