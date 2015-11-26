@@ -19,7 +19,7 @@ stat_Pythagorean_theorem -> rrel_then: [* _tr1 _=> nrel_cathetus:: _cat1; _cat2;
 					  _con4 _-> _pow1; _pow2;;
 					  *];;
 stat_Pythagorean_theorem <- nrel_implication;;
-stat_Pythagorean_theorem <- sc_statement;;
+stat_Pythagorean_theorem <- sc_text_statement;;
 
 
 task_node -> rrel_1: Task_Pattern;;
@@ -74,7 +74,7 @@ r_part_d_concept_rectangular_triangle = [* _tr11 _=> nrel_internal_angle:: _angl
 
 d_concept_rectangular_triangle <- nrel_equivalence;;
 
-d_concept_rectangular_triangle <- sc_statement;;
+d_concept_rectangular_triangle <- sc_text_statement;;
 
 atomic_existence -> l_part_d_concept_rectangular_triangle; r_part_d_concept_rectangular_triangle;;
 
@@ -94,7 +94,7 @@ r_part_d_concept_isosceles_triangle = [* concept_triangle _-> _tr12;;
 
 d_concept_isosceles_triangle <- nrel_equivalence;;
 
-d_concept_isosceles_triangle <- sc_statement;;
+d_concept_isosceles_triangle <- sc_text_statement;;
 
 atomic_existence -> l_part_d_concept_isosceles_triangle; r_part_d_concept_isosceles_triangle;;
 

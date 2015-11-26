@@ -1,6 +1,6 @@
 stat_square_side_area <- sc_text_statement;;
 
-stat_square_side_area <- sc_statement_for_solver;;
+stat_square_side_area <- sc_text_statement_for_solver;;
 
 stat_square_side_area -> rrel_key_sc_element: concept_square; nrel_side; nrel_area;;
 

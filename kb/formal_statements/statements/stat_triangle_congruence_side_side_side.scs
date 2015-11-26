@@ -1,6 +1,6 @@
 stat_triangle_congruence_side_side_side <- sc_text_statement;;
 
-stat_triangle_congruence_side_side_side <- sc_statement_for_solver;;
+stat_triangle_congruence_side_side_side <- sc_text_statement_for_solver;;
 
 stat_triangle_congruence_side_side_side -> rrel_key_sc_element: concept_triangle; nrel_congruence; nrel_side;;
 

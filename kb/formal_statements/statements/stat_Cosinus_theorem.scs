@@ -1,6 +1,6 @@
 stat_Cosinus_theorem <- sc_text_statement;;
 
-stat_Cosinus_theorem <- sc_statement_for_solver;;
+stat_Cosinus_theorem <- sc_text_statement_for_solver;;
 
 stat_Cosinus_theorem -> rrel_key_sc_element: concept_triangle; nrel_side_of_polygon; nrel_internal_angle; nrel_cos;;
 
