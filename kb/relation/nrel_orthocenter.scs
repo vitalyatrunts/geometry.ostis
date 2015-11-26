@@ -13,11 +13,10 @@ nrel_orthocenter <= nrel_using_constants:
 		concept_height;
 		nrel_intersection
 	};;
-*);;
 
 nrel_orthocenter => nrel_definitional_domain: ...
 (*
-<= nrel_combination: ... 
+<= nrel_combination:
 	{
 		concept_triangle;	
 		concept_geometric_point
