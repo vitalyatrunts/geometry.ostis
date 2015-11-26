@@ -4,9 +4,7 @@ nrel_additional_rays => nrel_main_idtf:
 	[дополнительные лучи*] 
 	(* <- lang_ru;; *);
 	[additional rays*] 
-	(* <- lang_en;; *);
-	[қосымша сәулелер*] 
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_additional_rays => nrel_idtf:
 	[быть дополнительными лучами*] 
@@ -35,31 +33,4 @@ nrel_additional_rays <= nrel_using_constants:
 	nrel_boundary_point
 	};;
 	
-nrel_additional_rays <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf:
-		[Утв.(дополнительные лучи*)]
-		(* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Два луча называются дополнительными, если они противоположно направлены и имеют общую только граничную точку.]	
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-     
-nrel_additional_rays <- rrel_key_sc_element: 
-	...
-	(*
-		<- sc_illustration;;
-		<= nrel_sc_text_translation:
-		...
-			(*
-			-> rrel_example:
-				"file://images/additional_rays.png";;
-			*);;
-	*);;
 

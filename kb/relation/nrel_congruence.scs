@@ -1,9 +1,8 @@
-/*sc_node_norole_relation -> nrel_congruence;;
+sc_node_norole_relation -> nrel_congruence;;
 
 nrel_congruence => nrel_main_idtf:
 	[конгруэнтность*] (* <- lang_ru;; *);
-	[congruence*] (* <- lang_en;; *);
-	[конгруэнттілік*](* <- lang_kz;; *);;
+	[congruence*] (* <- lang_en;; *);;
 
 nrel_congruence => nrel_idtf: [конгруэнтность геометрических фигур*] (* <- lang_ru;; *);;
 nrel_congruence => nrel_idtf: [равенство геометрических фигур*] (* <- lang_ru;; *);;
@@ -27,6 +26,6 @@ nrel_congruence <= nrel_using_constants:
 	concept_geometric_figure;
 	concept_pair_of_points;
 	nrel_distance
-	};;*/	
+	};;	
 
 	

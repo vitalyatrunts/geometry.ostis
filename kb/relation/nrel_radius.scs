@@ -4,9 +4,7 @@ nrel_radius => nrel_main_idtf:
 	[радиус*]
 	(* <- lang_ru;; *);
 	[radius*]
-	(* <- lang_en;; *);
-	[радиус*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_radius => nrel_idtf: [быть радиусом*] (* <- lang_ru;; *);;
 
@@ -58,43 +56,4 @@ nrel_radius <= nrel_using_constants:
 	concept_circle
 	};;	
 	
-nrel_radius <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(радиус*; касательная*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Радиус, проведённый в точку касания, перпендикулярен касательной.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-	
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(радиус*; перпендикулярность*; хорда*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Радиус, перпендикулярный хорде, делит её пополам.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(радиус*; диаметр*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Радиус равен половине диаметра.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 

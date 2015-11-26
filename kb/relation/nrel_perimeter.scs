@@ -1,12 +1,10 @@
-/*sc_node_norole_relation -> nrel_perimeter;;
+sc_node_norole_relation -> nrel_perimeter;;
 
 nrel_perimeter => nrel_main_idtf:
 	[периметр*]
 	(* <- lang_ru;; *);
 	[perimeter*]
-	(* <- lang_en;; *);
-	[периметр*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_perimeter => nrel_idtf: [быть периметром*] (* <- lang_ru;; *);;
 
@@ -40,5 +38,5 @@ nrel_perimeter <= nrel_using_constants:
 	{
 	nrel_length; 
 	nrel_side
-	};;*/
+	};;
 

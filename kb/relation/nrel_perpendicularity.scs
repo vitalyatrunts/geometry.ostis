@@ -4,12 +4,9 @@ nrel_perpendicularity => nrel_main_idtf:
 	[перпендикулярность*]
 	(*<- lang_ru;;	*);
 	[perpendicularity*]
-	(* <- lang_en;; *);
-	[перпендикулярлық*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
-nrel_perpendicularity => nrel_idtf: [перпендикулярность геометрических фигур*] (* <- lang_ru;; *);
-									[perpendicularity of geometric figures*] (* <- lang_en;; *);;
+nrel_perpendicularity => nrel_idtf: [перпендикулярность геометрических фигур*] (* <- lang_ru;; *);;
 
 nrel_perpendicularity <- sc_relation;;
 
@@ -58,59 +55,6 @@ nrel_perpendicularity <= nrel_using_constants:
 	concept_right_angle
 	};;
 	
-nrel_perpendicular <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(прямая; геометрическая точка; перпендикулярность*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_geometric_point_straight_line_perpendicularity;;
-	-> rrel_key_sc_element: concept_straight_line;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Через каждую точку можно провести прямую, перпендикулярную данной, и только одну.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
 
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(плоскость; прямая; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если плоскость проходит через прямую, перпендикулярную другой плоскости, то эти плоскости перпендикулярны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; перпендикулярность*; перпендикуляр*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если из точки, принадлежащей одной из двух перпендикулярных плоскостей, провести перпендикуляр к другой плоскости, то это перпендикуляр полностью лежит в первой плоскости.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(плоскость; перпендикулярность*; перпендикуляр*; линия; пересечение*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если в одной из двух перпендикулярных плоскостей провести перпендикуляр к их линии пересечения, то этот перпендикуляр будет перпендикулярен второй плоскости.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 

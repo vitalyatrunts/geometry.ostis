@@ -1,17 +1,13 @@
-/*sc_node_norole_relation -> nrel_height;;
+sc_node_norole_relation -> nrel_height;;
 
 nrel_height => nrel_main_idtf:
 	[высота*]
 	(* <- lang_ru;; *);
 	[height*]
-	(* <- lang_en;; *);
-	[биіктік*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_height => nrel_idtf: [быть высотой*]
 	(* <- lang_ru;; *);;
-nrel_height=> nrel_idtf:[to be a height*]
-	(* <-lang_en;; *);;
 
 nrel_height <- sc_relation;;
 
@@ -44,6 +40,6 @@ nrel_height <= nrel_using_constants:
 	nrel_base; 
 	concept_straight_line; 
 	nrel_length
-	};;*/
+	};;
 
 

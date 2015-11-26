@@ -1,12 +1,10 @@
-/*sc_node_norole_relation -> nrel_bisectrix_of_triangle;;
+sc_node_norole_relation -> nrel_bisectrix_of_triangle;;
 
 nrel_bisectrix_of_triangle => nrel_main_idtf:
 	[биссектриса треугольника*]
 	(* <- lang_ru;; *);
 	[bisectrix of triangle*]
-	(* <- lang_en;; *);
-	[үшбұрыш биссектрисасы*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_bisectrix_of_triangle => nrel_idtf: [быть биссектрисой треугольника*]
 	(* <- lang_ru;; *);;
@@ -51,7 +49,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*)] (* <- lang_ru;; *);; 
-	<- sc_text_statement;;
+	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -64,7 +62,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол; площадь*; пропорциональность*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -77,7 +75,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -90,7 +88,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; прямая; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -103,7 +101,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; серединный перпендикуляр*; внутренний угол*; геометрическая точка; окружность)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -111,4 +109,4 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 			[Прямые, на которых лежат биссектрисы внутреннего и внешнего углов треугольника, выходящие из одной вершины, пересекаются с серединным к противолежащей стороне перпендикуляром в диаметрально противоположных точках описанной около треугольника окружности.]
 			(* <- lang_ru;; *);;
 		*);;
-*);;*/
+*);;
