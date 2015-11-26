@@ -2,6 +2,7 @@ section_inscribed_escribed_circumscribed_circles_of_triangles
 => nrel_main_idtf:
 	[Раздел. Вписанная и вневписанная окружности треугольника и окружность, описанная около треугольника]
 	(* <- lang_ru;; *);
+=> nrel_main_idtf:
 	[Section. Inscribed, escribed, circumscribed circles of triangles]
 	(* <- lang_en;; *);
 
@@ -12,6 +13,7 @@ section_inscribed_escribed_circumscribed_circles_of_triangles
 			"file://htmls/circle_en.html"
 			(* <- lang_en;; *);;
 		*);
+<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
@@ -28,7 +30,8 @@ section_inscribed_escribed_circumscribed_circles_of_triangles
 			-> rrel_example:
 				[This section discusses inscribed, escribed, circumscribed circles of the triangle.]
 				(* <- lang_en;; *);;
-			*);
+			*);;
+		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:[В данном разделе рассматриваются вписанные, вневписанные, описанные окружности треугольника.]

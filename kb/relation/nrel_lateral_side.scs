@@ -1,12 +1,10 @@
-/*sc_node_norole_relation -> nrel_lateral_side;;
+sc_node_norole_relation -> nrel_lateral_side;;
 
 nrel_lateral_side => nrel_main_idtf:
 	[боковая сторона*]
 	(* <- lang_ru;; *);
 	[lateral side*]
-	(* <- lang_en;; *);
-	[жанындағы жақ*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_lateral_side => nrel_idtf: [быть боковой стороной*]
 	(* <- lang_ru;; *);;
@@ -57,4 +55,4 @@ nrel_lateral_side <= nrel_using_constants:
 	nrel_side; 
 	concept_angle; 
 	nrel_base
-	};;*/
+	};;

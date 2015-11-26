@@ -1,12 +1,10 @@
-/*sc_node_norole_relation -> nrel_internal_angle;;
+sc_node_norole_relation -> nrel_internal_angle;;
 
 nrel_internal_angle => nrel_main_idtf:
 	[внутренний угол*]
 	(* <- lang_ru;; *);
 	[internal angle*]
-	(* <- lang_en;; *);
-	[ішкі бұрыш*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_internal_angle => nrel_idtf: [быть внутренним углом*]
 	(* <- lang_ru;; *);;
@@ -42,42 +40,3 @@ nrel_internal_angle <= nrel_using_constants:
 	concept_polygon
 	};;
 
-nrel_internal_angle <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол треугольника*; мера угла*; сумма*)] (* <- lang_ru;; *);; 
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма мер углов треугольника равна 180 угловых градусов.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(равносторонний треугольник; внутренний угол треугольника*; конгруэнтность*)] (* <- lang_ru;; *);; 
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[В равностороннем треугольнике все углы равны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол треугольника*; острый угол; тупой угол; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[В любом треугольнике либо все углы острые, либо два угла острые, а третий тупой или прямой.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;*/

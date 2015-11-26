@@ -2,6 +2,7 @@ section_metric_relations_in_a_triangle
 => nrel_main_idtf:
 	[Раздел. Метрические соотношения в треугольнике]
 	(* <- lang_ru;; *);
+=> nrel_main_idtf:
 	[Section. Metric relations in a triangle]
 	(* <- lang_en;; *);
 
@@ -9,9 +10,10 @@ section_metric_relations_in_a_triangle
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/metric_relations_in_triangle_ru.html"
+			"file://htmls/metric_relations_in_triangle_en.html"
 			(* <- lang_en;; *);;
 		*);
+<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
@@ -28,7 +30,8 @@ section_metric_relations_in_a_triangle
 			-> rrel_example:
 				[This section discusses metric relation between different linear elements of the triangle.]
 				(* <- lang_en;; *);;
-			*);
+			*);;
+		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:[В данном разделе рассматриваются метрические соотношения между различными линейными элементами треугольника.]

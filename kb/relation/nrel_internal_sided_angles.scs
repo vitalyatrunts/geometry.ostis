@@ -4,9 +4,7 @@ nrel_internal_sided_angles => nrel_main_idtf:
 	[внутренние односторонние углы*]
 	(* <- lang_ru;; *);
 	[internal sided angles*]
-	(* <- lang_en;; *);
-	[бір жақта жатқан ішкі бұрыштар*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_internal_sided_angles => nrel_idtf: [быть внутренними односторонними углами*]
 	(* <- lang_ru;; *);;
@@ -34,33 +32,6 @@ nrel_internal_sided_angles <= nrel_using_constants:
 	nrel_secant; 
 	rrel_between
 	};;
-
-nrel_internal_sided_angles <= rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если при пересечении двух прямых третьей прямой сумма пары односторонних углов равна 180 градусов, то соответственные углы равны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
-
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; внутренние односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если при пересечении двух прямых третьей прямой сумма пары внутренних односторонних углов равна 180 градусов, то накрест лежащие углы равны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 nrel_internal_sided_angles <- rrel_key_sc_element: 
 	...

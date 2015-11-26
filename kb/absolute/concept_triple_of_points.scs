@@ -4,9 +4,7 @@ concept_triple_of_points => nrel_main_idtf:
 	[тройка точек]
 	(* <- lang_ru;; *);
 	[triple of points]
-	(* <- lang_en;;	*);
-	[нүктелер үштігі]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;;	*);;
 
 concept_triple_of_points => nrel_idtf: [тройка разных точек] (* <- lang_ru;; *);;
 
@@ -41,34 +39,4 @@ concept_triangle <= nrel_using_constants:
 	concept_geometric_point
 	};;		
 	
-concept_triple_of_points <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между_)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если из трех точек одна лежит между двумя другими, то все три данные точки являются прямолинейными.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-	
-concept_triple_of_points <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(тройка точек; расстояние*; между_)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_triple_of_points_distance_between;;
-	-> rrel_key_sc_element: nrel_distance; rrel_between;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Каковы бы ни были три точки, расстояние между любыми двумя из этих точек не больше суммы  расстояний от них до третьей точки.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_triple_of_points -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;

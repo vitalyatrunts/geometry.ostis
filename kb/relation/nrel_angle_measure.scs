@@ -6,9 +6,7 @@ nrel_angle_measure => nrel_main_idtf:
 	[мера угла*]
 	(* <- lang_ru;; *);
 	[measure of the angle*]
-	(* <- lang_en;; *);
-	[бұрыш өлшемі*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_angle_measure => nrel_idtf: [быть мерой угла*] (* <- lang_ru;; *);;
 
@@ -38,21 +36,6 @@ nrel_angle_measure => nrel_first_domain:
 
 nrel_angle_measure => nrel_second_domain: 
 	concept_quantity;;
-
-
-nrel_angle_measure <= nrel_main_statements:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(угол; конгруэнтность*; угловая мера*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Конгруэнтные углы имеют одинаковую угловую меру.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 nrel_angle_measure <= nrel_using_constants:
 	{

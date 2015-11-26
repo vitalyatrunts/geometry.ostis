@@ -4,9 +4,7 @@ nrel_external_cross_lying_angles => nrel_main_idtf:
 	[внешние накрест лежащие углы*]
 	(* <- lang_ru;; *);
 	[external crosswise lying angles*]
-	(*<- lang_en;;	*);
-	[сыртқы қарама карсы жатқан бұрыштар*]
-	(* <- lang_kz;; *);;
+	(*<- lang_en;;	*);;
 
 nrel_external_cross_lying_angles => nrel_idtf: [быть внешними накрест лежащими углами*]
 	(* <- lang_ru;; *);;
@@ -33,32 +31,5 @@ nrel_external_cross_lying_angles <= nrel_using_constants:
 	nrel_secant
 	};;
 
-nrel_external_cross_lying_angles <- rrel_key_sc_element:
-	... 
-	(*
-	=> nrel_main_idtf: [Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если при пересечении двух прямых третьей прямой внешние накрест лежащие углы одной пары равны, 
-то внешние накрест лежащие другой пары тоже равны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);
 
-	... 
-	(*
-	=> nrel_main_idtf: [Утв.(внешние накрест лежащие углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если при пересечении двух прямых третьей прямой 
-внешние накрест лежащие углы равны, то сумма каждой пары односторонних углов равна 180 градусов.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 

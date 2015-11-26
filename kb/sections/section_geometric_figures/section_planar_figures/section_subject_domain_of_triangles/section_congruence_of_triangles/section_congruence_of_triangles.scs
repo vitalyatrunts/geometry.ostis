@@ -2,6 +2,7 @@ section_congruence_of_triangles
 => nrel_main_idtf:
 	[Раздел. Равенство треугольников]
 	(* <- lang_ru;; *);
+=> nrel_main_idtf:
 	[Section. Congruence of triangles]
 	(* <- lang_en;; *);
 
@@ -12,6 +13,7 @@ section_congruence_of_triangles
 			"file://htmls/signs_of_equality_of_triangles_en.html"
 			(* <- lang_en;; *);;
 		*);
+<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
@@ -29,7 +31,8 @@ section_congruence_of_triangles
 			-> rrel_example:
 				[This section discusses the signs of congruence for a random triangle.]
 				(* <- lang_en;; *);;
-			*);
+			*);;
+		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:[В данном разделе рассматриваются признаки равенства для произвольного треугольника.]

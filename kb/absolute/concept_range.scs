@@ -4,9 +4,7 @@ concept_range => nrel_main_idtf:
 	[интервал]
 	(* <- lang_ru;;	*);
 	[range]
-	(* <- lang_en;; *);
-	[интервал]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 concept_range => nrel_idtf: [множество интервалов] (* <- lang_ru;; *);;
 
@@ -28,7 +26,7 @@ concept_range <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(интервал; геометрическая точка; прямая; граничная точка*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -4,9 +4,7 @@ concept_rectilinear_three_of_points => nrel_main_idtf:
 	[прямолинейная тройка точек]
 	(* <- lang_ru;; *);
 	[rectilinear three of points]
-	(* <- lang_en;; *);
-	[түзу сызықты нүктелер үштігі]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;; *);;
 
 concept_rectilinear_three_of_points => nrel_idtf: [Класс прямолинейных троек точек] (* <- lang_ru;; *);;
 
@@ -31,20 +29,5 @@ concept_rectilinear_three_of_points <= nrel_using_constants:
 	concept_straight_line;
 	concept_triple_of_points
 	};;
-	
-	
-concept_rectilinear_three_of_points  <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между_)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если из трех точек одна лежит между двумя другими, то все три данные точки являются прямолинейными.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 concept_rectilinear_three_of_points -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;

@@ -4,9 +4,7 @@ nrel_central_angle => nrel_main_idtf:
 	[центральный угол*]
 	(* <- lang_ru;; *);
 	[central angle*]
-	(* <- lang_en;; *);
-	[орталық бұрыш*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_central_angle => nrel_idtf: [быть центральным углом*] (* <- lang_ru;; *);;
 
@@ -43,20 +41,7 @@ nrel_central_angle <= nrel_using_constants:
 	nrel_radius; 
 	concept_circle
 	};;
-	
-nrel_central_angle <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(дуга; окружность; центральный угол*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угловая величина дуги окружности равна величине центрального угла, который опирается на данную дугу.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
+
 
 nrel_central_angle <- rrel_key_sc_element: 
 	...

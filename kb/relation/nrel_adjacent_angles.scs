@@ -4,9 +4,7 @@ nrel_adjacent_angles => nrel_main_idtf:
 	[смежные углы*]
 	(* <- lang_ru;;	*);
 	[adjacent angles*]
-	(* <- lang_en;;	*);
-	[сыбайлас бұрыш*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;;	*);;
 
 nrel_adjacent_angles => nrel_idtf: [быть смежными углами*]
 	(* <- lang_ru;;	*);;
@@ -33,48 +31,4 @@ nrel_adjacent_angles <= nrel_using_constants:
 	nrel_vertex; 
 	concept_straight_line; 
 	nrel_side
-	};; 
-
-nrel_adjacent_angles <= rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(смежные углы*; острый угол; тупой угол)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол смежный с острым углом, - тупой, а угол, смежный с тупым, - острый]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-	
-nrel_adjacent_angles <= rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(смежные углы*; мера угла*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_sum_angle_measure_adjacent_angles;;
-	-> rrel_key_sc_element: nrel_angle_measure;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма смежных углов равна 180 градусов.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-	
-nrel_adjacent_angles <= rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(смежные углы*; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Угол смежный с прямым углом, есть прямой угол.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
+	};;

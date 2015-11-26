@@ -4,9 +4,7 @@ concept_polyline => nrel_main_idtf:
 	[ломаная]
 	(* <- lang_ru;; *);
 	[polyline]
-	(* <- lang_en;;	*);
-	[бүгілме сызық]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;;	*);;
 
 concept_polyline => nrel_idtf: [Цепь отрезков] (* <- lang_ru;; *);;
 
@@ -44,22 +42,6 @@ concept_polyline <= nrel_using_constants:
 	concept_straight_line
 	};;	
 	
-concept_polyline <- rrel_key_sc_element: 
-     	...
-	(*
-	=> nrel_main_idtf: [Утв.(ломаная; граничная точка*; отрезок; длина*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_length_polyline;;
-	-> rrel_key_sc_element: concept_segment;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Длина ломаной не меньше длины отрезка, соединяющего ее концы.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
 concept_polyline <- rrel_key_sc_element: 
 	...
 	(*

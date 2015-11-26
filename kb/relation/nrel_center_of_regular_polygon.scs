@@ -1,12 +1,10 @@
-/*sc_node_norole_relation -> nrel_center_of_regular_polygon;;
+sc_node_norole_relation -> nrel_center_of_regular_polygon;;
 
 nrel_center_of_regular_polygon => nrel_main_idtf:
 	[центр правильного многоугольника*]
 	(* <- lang_ru;; *);
 	[center of regular polygon*]
-	(*<-lang_en;;*);
-	[тең қабырғалы көпбұрыштың ортасы*]
-	(* <- lang_kz;; *);;
+	(*<-lang_en;;*);;
 
 nrel_center_of_regular_polygon => nrel_idtf:[быть центром правильного многоугольника*](* <- lang_ru;; *);;
 
@@ -38,17 +36,4 @@ nrel_center_of_regular_polygon <= nrel_using_constants:
 	nrel_be_inscribed	
 	};;
 
-nrel_center_of_regular_polygon <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(правильный многоугольник; быть вписанным*; окружность; быть описанным*; центр*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Центр правильного многоугольника совпадает с центрами вписанной и описанной окружностей.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;*/
 

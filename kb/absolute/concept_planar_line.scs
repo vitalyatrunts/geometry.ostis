@@ -4,9 +4,7 @@ concept_planar_line => nrel_main_idtf:
 	[планарная линия]
 	(* <- lang_ru;;	*);
 	[planar line]
-	(* <- lang_en;; *);
-	[планарлық сызық]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;; *);;
 
 concept_planar_line <= nrel_strict_inclusion: concept_line;;
 

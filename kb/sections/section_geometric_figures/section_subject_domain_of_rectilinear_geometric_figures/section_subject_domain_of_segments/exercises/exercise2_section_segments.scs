@@ -9,6 +9,7 @@ exercise2_section_segments
 => nrel_main_idtf:
 	[Упражнение 2. Раздел. Предметная область отрезков]
 	(* <- lang_ru;; *);
+=> nrel_main_idtf:
 	[Exercise 2. Section. Subject domain of segments]
 	(* <- lang_en;; *);
 
@@ -17,6 +18,7 @@ exercise2_section_segments
 		(* 
 		-> rrel_example: "file://htmls/exercise2_section_segments_ru.html" (* <-lang_ru;; *);;
 		*);
+<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example: "file://htmls/exercise2_section_segments_en.html" (* <-lang_en;; *);;
