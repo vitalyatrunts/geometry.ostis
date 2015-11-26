@@ -4,9 +4,7 @@ nrel_be_described => nrel_main_idtf:
 	[описанность*]
 	(* <- lang_ru;;	*);
 	[be described*]
-	(* <- lang_en;;	*);
-	[қоршаулы*] 
-	(* <- lang_kz;; *);;
+	(* <- lang_en;;	*);;
 
 nrel_be_described => nrel_idtf: [быть описанным*] (* <- lang_ru;; *);;
 
@@ -59,32 +57,3 @@ nrel_be_described <= nrel_using_constants:
 	concept_circle
 	};;
 	
-nrel_be_described <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(многоугольник; окружность; описанность*;вершина*;сторона*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-nrel_be_described <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; окружность; описанность*; центр*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_center_circle_around_square;;
-	-> rrel_key_sc_element: concept_rectangle; nrel_diagonal; concept_circle; nrel_center;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Центр окружности, описанной около прямоугольника или квадрата, лежит в точке пересечения диагоналей.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;

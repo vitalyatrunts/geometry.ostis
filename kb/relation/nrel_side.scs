@@ -1,12 +1,10 @@
-/*sc_node_norole_relation -> nrel_side;;
+sc_node_norole_relation -> nrel_side;;
 
 nrel_side => nrel_main_idtf:
 	[сторона*]
 	(* <- lang_ru;; *);
 	[side*]
-	(* <- lang_en;; *);
-	[қабырға*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_side => nrel_idtf: [быть стороной*] (* <- lang_ru;; *);;
 
@@ -46,4 +44,4 @@ nrel_side <= nrel_using_constants:
 	{
 	nrel_side_of_angle; 
 	nrel_side_of_polygon
-	};;*/
+	};;

@@ -4,9 +4,7 @@ nrel_internal_cross_lying_angles => nrel_main_idtf:
 	[внутренние накрест лежащие углы*]
 	(* <- lang_ru;; *);
 	[internal crosswise lying angles*]
-	(* <- lang_en;; *);
-	[ішкі қарама карсы жатқан бұрыштар*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_internal_cross_lying_angles => nrel_idtf: [быть внутренними накрест лежащими углами*]
 	(* <- lang_ru;; *);;
@@ -35,21 +33,6 @@ nrel_internal_cross_lying_angles <= nrel_using_constants:
 	rrel_between
 	};;
 
-nrel_internal_cross_lying_angles <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(внутренние нарекст лежащие углы*; прямая)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_straight_line_internal_cross_lying_angles;;
-	-> rrel_key_sc_element: concept_straight_line;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если две прямые пересечены третьей прямой, то внутренние накрест лежащие углы равны, а сумма внутренних односторонних углов равна 180.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;	
 	
 nrel_internal_cross_lying_angles <- rrel_key_sc_element: 
 	...

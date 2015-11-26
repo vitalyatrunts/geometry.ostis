@@ -6,15 +6,17 @@ exercise1_section_congruence_of_triangles
 => nrel_main_idtf:
 	[Упражнение 1. Раздел. Равенство треугольников]
 	(* <- lang_ru;; *);
+=> nrel_main_idtf:
 	[Exercise 1. Section. Congruence of triangles]
 	(* <- lang_en;; *);
 
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/exercise4_triangles_ru.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/exercise1_section_congruence_of_triangles_ru.html" (* <-lang_ru;; *);;
 		*);
+<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/exercise4_triangles_en.html" (* <-lang_en;; *);;
+		-> rrel_example: "file://htmls/exercise1_section_congruence_of_triangles_en.html" (* <-lang_en;; *);;
 		*);;

@@ -4,9 +4,7 @@ nrel_diagonal => nrel_main_idtf:
 	[диагональ*]
 	(* <- lang_ru;; *);
 	[diagonal*]
-	(* <- lang_en;; *);
-	[диагональ*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_diagonal => nrel_idtf: [быть диагональю*] (* <- lang_ru;; *);;
 
@@ -39,19 +37,6 @@ nrel_diagonal <= nrel_using_constants:
 	concept_polygon; 
 	nrel_side
         };;
-	
-nrel_diagonal <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(диагональ*; многоугольник; вершина*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Для каждого многоугольника выполняется следующее числовое соотношение: d = (n^2-3n)/2, где d – число диагоналей в многоугольнике, n – число вершин многоугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
+
     
 

@@ -4,9 +4,7 @@ concept_hexagon => nrel_main_idtf:
 	[шестиугольник]
 	(* <- lang_ru;;	*);
 	[hexagon]
-	(* <- lang_en;;	*);
-	[алтыбұрыш]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;;	*);;
 
 concept_hexagon => nrel_idtf: [Класс шестиугольников] (* <- lang_ru;; *);;
 
@@ -28,22 +26,7 @@ concept_hexagon <= nrel_using_constants:
 	{
 	concept_polygon; 
 	nrel_side
-	};;	
-	
-concept_hexagon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(многоугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма мер внутренних углов шестиугольника равна 720 градусов.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
+	};;
 
 
 

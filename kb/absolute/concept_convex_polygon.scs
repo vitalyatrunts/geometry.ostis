@@ -4,9 +4,7 @@ concept_convex_polygon => nrel_main_idtf:
 	[выпуклый многоугольник]
 	(* <- lang_ru;; *);
 	[convex polygon]
-	(* <- lang_en;; *);
-	[дөңесті көпбұрыш]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 concept_convex_polygon => nrel_idtf: [Класс выпуклых многоугольников] (* <- lang_ru;; *);;
 
@@ -47,97 +45,6 @@ concept_convex_polygon <= nrel_subdividing:
 	  concept_irregular_polygon;;
 	*);;
 
-
-
-concept_convex_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внешний угол*; вершина*; смежность*; внутренний угол*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Внешним углом выпуклого многоугольника при данной вершине называется угол, 
-смежный с внутренним углом данного многоугольника при этой вершине.]
-			(* <- lang_ru;; *);;
-		
-		*);;
-	*);;
-
-concept_convex_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внутренний угол*; градусная мера*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Все внутренние углы выпуклого многоугольника меньше 180°.]
-			(* <- lang_ru;; *);;
-		
-		*);;
-	*);;
-
-concept_convex_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внутренний угол*; сумма*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма внутренних углов выпуклого многоугольника равна 180°.]
-			(* <- lang_ru;; *);;
-		
-		*);;
-	*);;
-
-concept_convex_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внешний угол*; сумма*; вершина*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма внешних углов выпуклого многоугольника, взятых по одному при каждой вершине, равна 360°.]
-			(* <- lang_ru;; *);;
-		
-		*);;
-	*);;
-
-concept_convex_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; внешний угол*; диагональ*; вершина*; треугольник)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[В выпуклом многоугольнике из каждой вершины можно провести n - 3 (n - число сторон многоугольника) диагонали, 
-которые разбивают многоугольник на n - 2 треугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-concept_convex_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(выпуклый многоугольник; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[В выпуклом многоугольнике число диагоналей равно n*(n-3)/2 , где n - число сторон данного многоугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 	
 concept_convex_polygon -> rrel_example: struct_Polygon_K_A_B_C_D_E;;
 

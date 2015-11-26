@@ -2,6 +2,7 @@ section_area_of_triangle
 => nrel_main_idtf:
 	[Раздел. Площадь треугольника]
 	(* <- lang_ru;; *);
+=> nrel_main_idtf:
 	[Section. Area of triangle]
 	(* <- lang_en;; *);
 
@@ -12,6 +13,7 @@ section_area_of_triangle
 			"file://htmls/area_of_triangle_en.html"
 			(* <- lang_en;; *);;
 		*);
+<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
@@ -27,7 +29,8 @@ section_area_of_triangle
 			-> rrel_example:
 				[This section includes the basic formula of calculating the area of ​​a triangle.]
 				(* <- lang_en;; *);;
-			*);
+			*);;
+		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:[В данный раздел включены основные формулы нахождения площади треугольника.]

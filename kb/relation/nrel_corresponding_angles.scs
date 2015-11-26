@@ -4,9 +4,7 @@ nrel_corresponding_angles => nrel_main_idtf:
 	[соответственные углы*]
 	(* <- lang_ru;; *);
 	[corresponding angles*]
-	(* <- lang_en;; *);
-	[сәйкес бұрыштар*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_corresponding_angles => nrel_idtf: [быть соответственными углами*] (* <- lang_ru;; *);;
 
@@ -31,30 +29,3 @@ nrel_corresponding_angles <= nrel_using_constants:
 	nrel_secant; 
 	concept_straight_line
 	};;
-
-nrel_corresponding_angles <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если при пересечении двух прямых третьей прямой соответственные углы одной пары равны, то соответственные пары всех остальных пар тоже равны.]
-			(* <- lang_ru;;	*);;
-		*);;
-	*);
-
-     	...
-	(*
-	=> nrel_main_idtf: [Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);; 
-	<- sc_text_statement;;   
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Если при пересечении двух прямых третьей прямой соответственные углы равны, то сумма каждой пары односторонних углов равна 180 градусов.]
-			(* <- lang_ru;;	*);;
-		*);;
-	*);;

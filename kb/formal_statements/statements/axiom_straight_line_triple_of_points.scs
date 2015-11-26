@@ -1,0 +1,24 @@
+axiom_straight_line_triple_of_points <- sc_text_statement;;
+
+axiom_straight_line_triple_of_points -> rrel_key_sc_element: concept_straight_line; concept_triple_of_points;;
+
+axiom_straight_line_triple_of_points => nrel_main_idtf: [Акс.(прямая; тройка точек)] (*<- lang_ru;;*);;
+axiom_straight_line_triple_of_points => nrel_main_idtf: [Ax.(straight line; triple of points)] (*<- lang_en;;*);;
+
+axiom_straight_line_triple_of_points <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[Существует по крайней мере три точки, не лежащие на одной прямой.] 
+			(* <- lang_ru;; *);; 
+		*);;
+
+axiom_straight_line_triple_of_points <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[ There are three points at least that don't lie on a straight line.] 
+			(* <- lang_en;; *);; 
+		*);;
+
+

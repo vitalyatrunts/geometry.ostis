@@ -4,9 +4,7 @@ concept_pentagon => nrel_main_idtf:
 	[пятиугольник]
 	(* <- lang_ru;; *);
 	[pentagon]
-	(* <- lang_en;; *);
-	[бесбұрыш]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;; *);;
 
 concept_pentagon => nrel_idtf: [Класс пятиугольников] (* <- lang_ru;; *);;
 
@@ -27,18 +25,3 @@ concept_pentagon <= nrel_using_constants:
 	concept_polygon; 
 	concept_angle	
 	};;
-				
-concept_rectangular_triangle <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(пятиугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма внутренних углов выпуклого пятиугольника равна 540°.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-

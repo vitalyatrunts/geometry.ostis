@@ -4,9 +4,7 @@ nrel_vertical_angles => nrel_main_idtf:
 	[вертикальные углы*]
 	(* <- lang_ru;; *);
 	[vertical angles*]
-	(* <- lang_en;; *);
-	[вертикальдық бұрыштар*]
-	(* <- lang_kz;; *);;
+	(* <- lang_en;; *);;
 
 nrel_vertical_angles => nrel_idtf: [быть вертикальными углами*]
 	(* <- lang_ru;; *);;
@@ -33,21 +31,6 @@ nrel_vertical_angles <= nrel_using_constants:
 	nrel_opposite_directed_beams
 	};; 
 
-nrel_vertical_angles <- rrel_key_sc_element:
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(вертикальные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
-	-> rrel_main_key_sc_element: stat_congruence_vertical_angles;;
-	-> rrel_key_sc_element: nrel_congruence;;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Вертикальные углы равны.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 nrel_vertical_angles <- rrel_key_sc_element: 
 	...
