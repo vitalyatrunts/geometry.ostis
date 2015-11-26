@@ -4,9 +4,7 @@ concept_round_segment => nrel_main_idtf:
 	[круговой сегмент]
 	(* <- lang_ru;;	*);
 	[round segment]
-	(* <- lang_en;;	*);
-	[айналма сегмент]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;;	*);;
 
 concept_round_segment => nrel_idtf: [Класс круговых сегментов] (* <- lang_ru;; *);;
 
@@ -27,62 +25,5 @@ concept_round_segment <= nrel_using_constants:
 	concept_circle; 
 	nrel_chord
 	};;	
-	
-concept_round_segment <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(круговой сегмент; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[...html]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-concept_round_segment <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(круговой сегмент; треугольник; сектор; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[...html]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-
-concept_round_segment <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(круговой сегмент; основание*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[...html]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-	
-concept_round_segment <- rrel_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Утв.(круговой сегмент; высота*; основание*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[...html]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-	
 
 

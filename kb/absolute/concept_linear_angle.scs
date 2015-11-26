@@ -4,9 +4,7 @@ concept_linear_angle => nrel_main_idtf:
 	[линейный угол]
 	(* <- lang_ru;;	*);
 	[linear angle]
-	(* <- lang_en;;	*);
-	[сызықтық бұрыш]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;;	*);;
 
 concept_linear_angle => nrel_idtf: [Класс линейных углов] (* <- lang_ru;; *);;
 
@@ -26,18 +24,4 @@ concept_linear_angle <= nrel_using_constants:
 	concept_ray; 
 	concept_geometric_point; 
 	concept_plane
-	};;	
-
-concept_linear_angle <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(линейный угол)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линейный угол - это угол, образованный двумя полупрямыми, которые получаются в результате пересечения граней двугранного угла плоскостью, перпендикулярной ребру этого угла.]
-			(* <- lang_ru;; *);;		
-		*);;
-	*);;
+	};;

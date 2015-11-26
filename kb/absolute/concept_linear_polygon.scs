@@ -4,9 +4,7 @@ concept_linear_polygon => nrel_main_idtf:
 	[линейный многоугольник]
 	(* <- lang_ru;; *);
 	[linear polygon]
-	(* <- lang_en;; *);
-	[сызықтық көпбұрыш]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;; *);;
 
 concept_linear_polygon => nrel_idtf: [Класс линейных многоугольников] (* <- lang_ru;; *);;
 
@@ -32,33 +30,5 @@ concept_linear_polygon <= nrel_using_constants:
 	nrel_boundary_point; 
 	concept_geometric_point
 	};;
-
-concept_linear_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(многоугольник; внутренний угол*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Сумма внутренних углов многоугольника равна (n-2)*(180 градусов).]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
-	
-concept_linear_polygon <- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(многоугольник; линейный многоугольник; граница*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линейный многоугольник - есть граница многоугольника.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);;
 
 concept_linear_polygon -> rrel_example: struct_Polygon_K_A_B_C_D_E;;

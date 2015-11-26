@@ -4,9 +4,7 @@ concept_non_planar_line => nrel_main_idtf:
 	[непланарная линия]
 	(* <- lang_ru;;	*);
 	[non planar line]
-	(* <- lang_en;;	*);
-	[планарлық емес сызық]
-	(* <- lang_kz;;	*);;
+	(* <- lang_en;;	*);;
 
 concept_non_planar_line <= nrel_strict_inclusion: concept_line;;
 

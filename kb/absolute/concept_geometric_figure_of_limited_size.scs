@@ -8,10 +8,6 @@ concept_geometric_figure_of_limited_size => nrel_main_idtf:
 	[geometric figure of limited size]
 	(*
 	<- lang_en;;
-	*);
-	[өлшемі шектеулі геометриялық пішін]
-	(*
-	<- lang_kz;;
 	*);;
 
 concept_geometric_figure_of_limited_size => nrel_idtf: [геометрическая фигура конечных размеров] (* <- lang_ru;; *);;
@@ -48,12 +44,6 @@ concept_geometric_figure_of_limited_size <= nrel_using_constants:
 	concept_ball
 	};;
 
-concept_ball => nrel_main_idtf:
-	[шар] 
-	(* <- lang_ru;; *);
-	[ball] 
-	(* <- lang_en;; *);;
-		
 concept_geometric_figure_of_limited_size -> rrel_example: struct_Segment_A_B;;
 
 concept_geometric_figure_of_limited_size -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
