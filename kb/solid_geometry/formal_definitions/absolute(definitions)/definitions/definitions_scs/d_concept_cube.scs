@@ -1,0 +1,13 @@
+d_concept_cube <- sc_text_definition;;
+
+d_concept_cube -> rrel_key_sc_element: concept_cube;;
+d_concept_cube => nrel_main_idtf: [Опр.(куб)] (* <- lang_ru;;*);; 
+
+d_concept_cube => nrel_main_idtf: [Def.(cube)];; 
+d_concept_cube <= nrel_sc_text_translation: 
+		...
+		(*
+			<- rrel_example:
+			[Куб - это шестигранник (пырямоуольный параллелепипед), все грани которого - равные квадраты.]
+			(* <- lang_ru;; *);;
+		*);;
