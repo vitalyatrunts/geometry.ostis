@@ -1,0 +1,11 @@
+d_nrel_face_of_polyhedron <- sc_text_definition;;
+
+d_nrel_face_of_polyhedron -> rrel_key_sc_element: nrel_face_of_polyhedron;;
+
+d_nrel_face_of_polyhedron => nrel_main_idtf: [Опр.(грань*)] (*<-lang_ru;;*);;
+d_nrel_face_of_polyhedron => nrel_main_idtf: [Def.(face of polyhedron*)] (*<-lang_en;;*);;
+d_nrel_face_of_polyhedron <= nrel_sc_text_translation: ...
+		(*
+		<- rrel_example:
+		[Грань - плоская поверхность геометрического тела, составляющая угол с другой такой же поверхностью.] (*<-lang_ru;;*);;
+		*);;

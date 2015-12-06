@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_ball;;
+
+concept_ball => nrel_main_idtf: [шар] (*<-lang_ru;;*);;
+concept_ball => nrel_main_idtf: [ball] (*<-lang_en;;*);;
+
+concept_ball => nrel_idtf: [Класс шаров] (*<-lang_ru;;*);;
+
+concept_ball => nrel_idtf: [Множество всевозможных шаров] (* <- lang_ru;; *);;
+
+concept_ball => nrel_idtf: [Множество знаков всевозможных шаров] (* <- lang_ru;; *);;
+
+concept_ball <= nrel_using_constants:
+	{
+	nrel_radius;
+	concept_sphere;
+	nrel_center
+	};;
+
+concept_ball <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_ball.png";;
+		*);;
+	*);;

@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_equilateral_cylinder;;
+
+concept_equilateral_cylinder => nrel_main_idtf: [равносторонний циллиндр] (*<-lang_ru;;*);;
+concept_equilateral_cylinder => nrel_main_idtf: [equilateral cylinder] (*<-lang_en;;*);;
+
+concept_equilateral_cylinder => nrel_idtf: [Множество всевозможных равносторонних циллиндров] (* <- lang_ru;; *);;
+
+
+concept_equilateral_cylinder <= nrel_using_constants:
+	{
+	nrel_height;
+	concept_circle;
+	nrel_radius;
+	nrel_base;
+	nrel_axis;
+	nrel_center
+	};;
+
+concept_equilateral_cylinder <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_equilateral_cylinder.png";;
+		*);;
+	*);;
