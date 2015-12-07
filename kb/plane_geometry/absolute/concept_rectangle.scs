@@ -22,6 +22,18 @@ concept_rectangle <= nrel_using_constants:
 	{
 	concept_parallelogram; 
 	concept_right_angle
-	};;	
+	};;
+
+concept_rectangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_rectangle.png";;
+
+	*);;
+*);;
 	
 concept_rectangle -> rrel_example: struct_Rectangle_B_C_D_E;;

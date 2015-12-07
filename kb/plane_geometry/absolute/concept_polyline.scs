@@ -46,14 +46,13 @@ concept_polyline <- rrel_key_sc_element:
 	...
 	(*
 	<- sc_illustration;; 
-	<= nrel_sc_text_translation: 
-		...
-			(*
-			-> rrel_example: 
-			"file://images/LomanajaKMNLST.png";
-			"file://images/LomanajaLMNOPR.png";;
-			*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_polyline.png";;
+
 	*);;
+*);;
 
 
 

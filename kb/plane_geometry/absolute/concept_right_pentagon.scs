@@ -28,3 +28,14 @@ concept_regular_pentagon <= nrel_using_constants:
 	concept_pentagon
 	};;
 
+concept_right_pentagon <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_right_pentagon.png";;
+
+	*);;
+*);;

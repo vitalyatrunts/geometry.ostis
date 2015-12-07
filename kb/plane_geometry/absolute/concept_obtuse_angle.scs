@@ -24,4 +24,16 @@ concept_obtuse_angle <= nrel_using_constants:
 	nrel_angle_measure			
 	};;
 
+concept_obtuse_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_obtuse_angle.png";;
+
+	*);;
+*);;
+
 concept_obtuse_angle -> rrel_example: struct_Obtuse_angle_T_P_R;;

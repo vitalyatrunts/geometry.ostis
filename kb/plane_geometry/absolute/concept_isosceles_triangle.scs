@@ -21,3 +21,14 @@ concept_isosceles_triangle <= nrel_using_constants:
 	nrel_congruence
 	};;
 
+concept_isosceles_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_isosceles_triangle.png";;
+
+	*);;
+*);;
