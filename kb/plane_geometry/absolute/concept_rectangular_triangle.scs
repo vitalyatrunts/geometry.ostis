@@ -20,5 +20,17 @@ concept_rectangular_triangle <= nrel_using_constants:
 	nrel_internal_angle; 
 	concept_right_angle
 	};;
+
+concept_rectangular_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_rectangular_triangle.png";;
+
+	*);;
+*);;
 	
 concept_rectangular_triangle -> rrel_example: struct_Rectangular_triangle_D_F_G;;

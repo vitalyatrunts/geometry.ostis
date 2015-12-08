@@ -45,6 +45,18 @@ concept_convex_polygon <= nrel_subdividing:
 	  concept_irregular_polygon;;
 	*);;
 
+concept_convex_polygon <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_convex_polygon.png";;
+
+	*);;
+*);;
+
 	
 concept_convex_polygon -> rrel_example: struct_Polygon_K_A_B_C_D_E;;
 

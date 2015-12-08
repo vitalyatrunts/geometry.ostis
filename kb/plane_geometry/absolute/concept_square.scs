@@ -23,3 +23,15 @@ concept_square <= nrel_using_constants:
 	nrel_side; 
 	concept_angle
 	};;
+
+concept_square <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_square.png";;
+
+	*);;
+*);;

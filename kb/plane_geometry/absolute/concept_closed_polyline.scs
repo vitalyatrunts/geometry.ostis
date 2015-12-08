@@ -15,3 +15,15 @@ concept_closed_polyline <= nrel_using_constants:
 	concept_polyline; 
 	nrel_boundary_point
 	};;
+
+concept_closed_polyline <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_closed_polyline.png";;
+
+	*);;
+*);;

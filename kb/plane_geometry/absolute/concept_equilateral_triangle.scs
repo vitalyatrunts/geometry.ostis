@@ -39,4 +39,16 @@ concept_equilateral_triangle <= nrel_using_constants:
 				nrel_congruence
 				};;	
 
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_equilateral_triangle.png";;
+
+	*);;
+*);;
+
 concept_equilateral_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

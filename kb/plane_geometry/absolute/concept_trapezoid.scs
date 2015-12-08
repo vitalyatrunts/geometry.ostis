@@ -29,3 +29,15 @@ concept_trapezoid <= nrel_using_constants:
 		
 concept_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
 concept_trapezoid -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;
+
+concept_trapezoid <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_trapezoid.png";;
+
+	*);;
+*);;

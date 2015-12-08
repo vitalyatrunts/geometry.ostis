@@ -29,3 +29,15 @@ concept_acute_angle <= nrel_using_constants:
 	};;
 	
 concept_acute_angle -> rrel_example: struct_Acute_Angle_K_L_M;;
+
+concept_acute_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_acute_angle.png";;
+
+	*);;
+*);;

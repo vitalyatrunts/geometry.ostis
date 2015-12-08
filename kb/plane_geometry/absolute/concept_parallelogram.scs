@@ -30,4 +30,16 @@ concept_parallelogram <= nrel_using_constants:
 	nrel_opposite	
 	};;	
 	
+concept_parallelogram <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_parallelogram.png";;
+
+	*);;
+*);;
+
 concept_parallelogram -> rrel_example: struct_Parallelogram_A_B_C_D;;
