@@ -1,0 +1,13 @@
+d_concept_straight_parallelepiped <- sc_text_definition;;
+
+d_concept_straight_parallelepiped -> rrel_key_sc_element: concept_straight_parallelepiped ;;
+
+d_concept_straight_parallelepiped => nrel_main_idtf: [Опр.(прямой параллепипед)] (*<-lang_ru;;*);;
+d_concept_straight_parallelepiped => nrel_main_idtf: [Def.(straight parallelepiped)] (*<-lang_en;;*);;
+
+d_concept_straight_parallelepiped <= nrel_sc_text_translation: 
+		...
+		(*
+		<- rrel_example: 
+		[Прямой параллепипед - параллепипед,у которого все грани являются прямоугольниками.] (*<-lang_ru;;*);;
+		*);;

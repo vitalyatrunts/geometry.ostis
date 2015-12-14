@@ -1,0 +1,13 @@
+d_concept_regular_pyramid <- sc_text_definition;;
+
+d_concept_regular_pyramid -> rrel_key_sc_element: concept_regular_pyramid;;
+
+d_concept_regular_pyramid => nrel_main_idtf: [Опр.(правильная пирамида)] (*<-lang_ru;;*);;
+d_concept_regular_pyramid => nrel_main_idtf: [Def.(regular pyramid)] (*<-lang_en;;*);;
+
+d_concept_regular_pyramid <= nrel_sc_text_translation: 
+		...
+		(*
+		<- rrel_example: 
+		[́Правильной называется пирамида, основание которой - правильный n-угольник, а все боковые ребра равны.] (*<-lang_ru;;*);;
+		*);;
