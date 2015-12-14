@@ -1,6 +1,6 @@
 stat_cathetus_opposite_hypotenuse <- sc_text_statement;;
 
-stat_cathetus_opposite_hypotenuse <- sc_text_statement_for_solver;;
+//stat_cathetus_opposite_hypotenuse <- sc_statement_for_solver;;
 
 stat_cathetus_opposite_hypotenuse -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_internal_angle; nrel_opposite;;
 

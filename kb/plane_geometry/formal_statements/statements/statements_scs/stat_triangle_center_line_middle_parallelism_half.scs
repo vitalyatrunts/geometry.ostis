@@ -1,6 +1,6 @@
 stat_triangle_center_line_middle_parallelism_half <- sc_text_statement;;
 
-stat_triangle_center_line_middle_parallelism_half <- sc_text_statement_for_solver;;
+//stat_triangle_center_line_middle_parallelism_half <- sc_statement_for_solver;;
 
 stat_triangle_center_line_middle_parallelism_half -> rrel_key_sc_element: concept_triangle; nrel_center_line; nrel_parallelism; nrel_side;;
 

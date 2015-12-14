@@ -1,6 +1,6 @@
 stat_parallelogram_opposite_side_congruence <- sc_text_statement;;
 
-stat_parallelogram_opposite_side_congruence <- sc_text_statement_for_solver;;
+//stat_parallelogram_opposite_side_congruence <- sc_statement_for_solver;;
 
 stat_parallelogram_opposite_side_congruence -> rrel_key_sc_element: concept_parallelogram; nrel_side; nrel_congruence; nrel_opposite;;
 

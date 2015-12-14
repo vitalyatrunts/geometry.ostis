@@ -1,6 +1,6 @@
 stat_isosceles_triangle_congruence_angle <- sc_text_statement;;
 
-stat_isosceles_triangle_congruence_angle <- sc_text_statement_for_solver;;
+//stat_isosceles_triangle_congruence_angle <- sc_statement_for_solver;;
 
 stat_isosceles_triangle_congruence_angle -> rrel_key_sc_element: concept_isosceles_triangle; nrel_internal_angle; nrel_congruence;;
 

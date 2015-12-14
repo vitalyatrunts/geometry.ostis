@@ -1,6 +1,6 @@
 stat_rectangular_triangle_area <- sc_text_statement;;
 
-stat_rectangular_triangle_area <- sc_text_statement_for_solver;;
+//stat_rectangular_triangle_area <- sc_statement_for_solver;;
 
 stat_rectangular_triangle_area -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_height; nrel_area;;
 
