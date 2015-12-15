@@ -12,13 +12,11 @@ concept_cube => nrel_idtf: [Множество знаков всевозможн
 concept_cube <= nrel_using_constants:
 	{
 	concept_square;
-	nrel_edge;
+	nrel_face_of_polyhedron;
 	concept_cuboid;
 	concept_surface
 	};;
 
-concept_platonic_solid => nrel_strict_inclusion: concept_cube;; 
-	
 concept_cube <- rrel_key_sc_element: 
 	...
 	(*

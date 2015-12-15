@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_cuboid;;
+
+concept_cuboid => nrel_main_idtf: [прямоугольный параллелепипед] (*<-lang_ru;;*);;
+concept_cuboid => nrel_main_idtf: [cuboid] (*<-lang_en;;*);;
+
+concept_cuboid => nrel_idtf: [Класс прямоугольных параллелепипедов] (*<-lang_ru;;*);;
+
+concept_cuboid => nrel_idtf: [Множество всевозможных прямоугольных параллелепипедов] (* <- lang_ru;; *);;
+
+concept_cuboid <= nrel_using_constants:
+	{
+	nrel_face_of_polyhedron;
+	concept_parallelepiped;
+	concept_rectangle
+	};;
+
+concept_cuboid <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_cuboid.png";;
+		*);;
+	*);;

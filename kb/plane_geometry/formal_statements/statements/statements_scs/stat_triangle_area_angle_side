@@ -1,6 +1,6 @@
 stat_triangle_area_angle_side <- sc_text_statement;;
 
-stat_triangle_area_angle_side <- sc_statement_for_solver;;
+/*stat_triangle_area_angle_side <- sc_statement_for_solver;;*/
 
 stat_triangle_area_angle_side -> rrel_key_sc_element: concept_triangle; concept_angle; nrel_side; nrel_area;;
 

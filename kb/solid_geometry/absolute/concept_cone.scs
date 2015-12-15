@@ -12,11 +12,9 @@ concept_cone => nrel_idtf: [Класс конусов] (* <- lang_ru;; *);;
 
 concept_cone => nrel_idtf: [Множество знаков всевозможных конусов] (* <- lang_ru;; *);;
 
-concept_cone => nrel_strict_inclusion: concept_conoid;;
-
 concept_cone <= nrel_using_constants:
 	{
-	concept_body;
+	concept_geometric_body;
 	concept_round;
 	nrel_base;
 	concept_plane;

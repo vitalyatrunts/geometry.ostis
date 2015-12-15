@@ -1,6 +1,6 @@
 stat_Sinus_theorem <- sc_text_statement;;
 
-stat_Sinus_theorem <- sc_text_statement_for_solver;;
+//stat_Sinus_theorem <- sc_statement_for_solver;;
 
 stat_Sinus_theorem -> rrel_key_sc_element: concept_triangle; nrel_side; nrel_internal_angle; nrel_sin; nrel_opposite;;
 
