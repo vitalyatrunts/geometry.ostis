@@ -1,70 +1,41 @@
-Math_Pattern1 = [* q_49 <= nrel_pow_quantities: ...
-			(*
-			-> rrel_base_of_power: q_z;;
-			-> rrel_exponent_of_power: n_2;;
-			*);; 
-		*];;
+Question3 <- question;;
+Question3 -> rrel_1: Task_Pattern3;;
 
-number -> n_z; n_2; n_3; n_4; n_7; n_49; n_1; n_05;;
-concept_quantity -> q_z; q_80; q_7; q_2; q_168; q_50;;
+Task_Pattern3 = [* concept_triangle -> struct_Triangle_A5_B5_C5; struct_Triangle_A6_B6_C6;;
 
-n_2 <= nrel_identification: ...
-	(* -> rrel_decimal: [2];; *);;
+	   struct_Triangle_A5_B5_C5 => nrel_internal_angle: struct_Angle_A5; struct_Angle_B5;;
+	   concept_angle -> struct_Angle_A5; struct_Angle_B5;;
 
-n_3 <= nrel_identification: ...
-	(* -> rrel_decimal: [3];; *);;
+	   struct_Triangle_A6_B6_C6 => nrel_internal_angle: struct_Angle_A6; struct_Angle_B6;;
+	   concept_angle -> struct_Angle_A6; struct_Angle_B6;;
 
-n_4 <= nrel_identification: ...
-	(* -> rrel_decimal: [4];; *);;
+	   nrel_congruence -> ...
+		(* -> struct_Angle_A5; struct_Angle_A6;; *);; 
 
-q_50 <= nrel_value: ...
-	(* -> rrel_sm: ...
-		(* <- number;;
-		   <= nrel_identification: ...
-			(* -> rrel_decimal: [50];; *);;
+	   nrel_congruence -> ...
+		(* -> struct_Angle_B5; struct_Angle_B6;; *);; 
+	 *];;  
+
+Task_Pattern3 <- atomic_formula;;
+
+Question3 -> rrel_2: Problem_Pattern3;;
+
+Problem_Pattern3 = [* nrel_similarity _-> _tuple1;;
+			_tuple1 _-> struct_Triangle_A5_B5_C5;;
+			_tuple1 _-> struct_Triangle_A6_B6_C6;;  *];;
+
+Problem_Pattern3 <- atomic_formula;;
+
+Question3 <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Доказать, что два треугольника являются подобными, если известно, что два угла одного треугольника соотвественно равны двум углам другого треугольника?]
+			(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-q_168 <= nrel_value: ...
-	(* -> rrel_sm: ...
-		(* <- number;;
-		   <= nrel_identification: ...
-			(* -> rrel_decimal: [168];; *);;
-		*);;
-	*);;
-
-q_7 <= nrel_value: ...
-	(* -> rrel_sm: ...
-		(* <- number;;
-		   <= nrel_identification: ...
-			(* -> rrel_decimal: [7];; *);;
-		*);;
-	*);;
-
-q_2 <= nrel_value: ...
-	(* -> rrel_sm: n_2;; *);;
-
-n_49 <= nrel_identification: ...
-	(* -> rrel_decimal: [49];; *);;
-
-n_7 <= nrel_identification: ...
-	(* -> rrel_decimal: [7];; *);;
-
-n_1 <= nrel_identification: ...
-	(* -> rrel_decimal: [1];; *);;
-
-n_05 <= nrel_identification: ...
-	(* -> rrel_decimal: [0,5];; *);;
-		
-
-Math_Pattern2 = [* n_z => nrel_sin_numbers: n_05;; *];;
-
-Math_Pattern3 = [* n_49 <= nrel_sum_numbers: ...
-			(*
-			-> n_z;;
-			-> n_1;;
-			-> n_7;;
-			*);; 
-		*];;
-		
 
