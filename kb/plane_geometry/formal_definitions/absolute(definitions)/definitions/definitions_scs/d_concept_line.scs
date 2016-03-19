@@ -3,7 +3,7 @@ d_concept_line <- rrel_main_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Поясн.(линия)] (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- explanation;; 
 	-> rrel_key_sc_element: concept_line;;
 	<= nrel_sc_text_translation: 
 		...
