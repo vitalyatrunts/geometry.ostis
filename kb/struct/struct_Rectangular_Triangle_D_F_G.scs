@@ -62,7 +62,7 @@ struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Факт.утв.(Прямоугольный треугольник DFG)] (* <- lang_ru;; *);
 					   [Factual Statement(Rectangular triangle DFG)] (* <- lang_en;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
