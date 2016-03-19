@@ -1,6 +1,6 @@
-stat_rhomb_diagonal_bisectrix_of_angle <- sc_text_statement;;
+stat_rhomb_diagonal_bisectrix_of_angle <- statement;;
 
-//stat_rhomb_diagonal_bisectrix_of_angle <- sc_text_statement_for_solver;;
+//stat_rhomb_diagonal_bisectrix_of_angle <- statement_for_solver;;
 
 stat_rhomb_diagonal_bisectrix_of_angle -> rrel_key_sc_element: concept_rhomb; nrel_diagonal; nrel_bisectrix_of_angle;;
 

@@ -38,7 +38,7 @@ nrel_bisectrix_of_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; биссектриса*; точка; расстояние*, конгруэнтность*, сторона*, продолжение*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -51,7 +51,7 @@ nrel_bisectrix_of_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; биссектриса*; точка; вершина*, центр*, окружность, касаться*, сторона*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -64,7 +64,7 @@ nrel_bisectrix_of_angle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(угол; биссектриса*; ось симметрии*, продолжение*, сторона*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

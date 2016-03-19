@@ -30,10 +30,5 @@ nrel_center_of_regular_polygon <= nrel_first_domain:
 nrel_center_of_regular_polygon <= nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_center_of_regular_polygon <= nrel_using_constants:
-	{ 
-	concept_circle; 
-	nrel_be_inscribed	
-	};;
 
 

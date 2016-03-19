@@ -1,4 +1,4 @@
-stat_triangle_similarity_side_side_side <- sc_text_statement;;
+stat_triangle_similarity_side_side_side <- statement;;
 
 //stat_triangle_similarity_side_side_side <- sc_statement_for_solver;;
 stat_triangle_similarity_side_side_side -> rrel_key_sc_element: concept_triangle; nrel_similarity; nrel_side;;
