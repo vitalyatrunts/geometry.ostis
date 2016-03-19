@@ -9,7 +9,7 @@ nrel_vertex_of_angle => nrel_main_idtf:
 nrel_vertex_of_angle => nrel_idtf: [быть вершиной угла*]
 	(* <- lang_ru;; *);;
 
-nrel_vertex <- sc_relation;;
+nrel_vertex <- relation;;
 
 nrel_vertex <- binary_relation;;
 
@@ -31,8 +31,4 @@ nrel_vertex_of_angle => nrel_first_domain:
 nrel_vertex_of_angle => nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_vertex_of_angle <= nrel_using_constants:
-	{
-	concept_geometric_point; 
-	concept_ray
-	};;
+

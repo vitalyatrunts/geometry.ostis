@@ -7,13 +7,6 @@ concept_regular_prism => nrel_idtf: [Класс правильных призм]
 
 concept_regular_prism => nrel_idtf: [Множество всевозможных правильных призм] (* <- lang_ru;; *);;
 
-concept_regular_prism <= nrel_using_constants:
-	{
-	concept_right_prism;
-	nrel_base;
-	concept_regular_polygon
-	};;
-
 concept_regular_prism <- rrel_key_sc_element: 
 	...
 	(*

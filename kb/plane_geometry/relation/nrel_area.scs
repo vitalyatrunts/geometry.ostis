@@ -18,7 +18,7 @@ nrel_area => nrel_idtf:
 	[быть площадью геометрической фигуры*] 
 	(* <- lang_ru;; *);;
 
-nrel_area <- sc_relation;;
+nrel_area <- relation;;
 
 nrel_area <- binary_relation;;
 
@@ -43,11 +43,5 @@ nrel_area => nrel_second_domain:
 
 nrel_area <=> nrel_analogue: nrel_length;;
 
-
-nrel_area <= nrel_using_constants:
-	{ 
-	concept_plane; 
-	concept_polygon
-	};;
 
 

@@ -5,13 +5,6 @@ nrel_orthocenter => nrel_main_idtf: [ортоцентр*]
 nrel_orthocenter => nrel_main_idtf: [orthocenter*]
 (* <- lang_en;; *);;
 
-nrel_orthocenter <= nrel_using_constants:
-	{
-		concept_geometric_point;
-		concept_triangle;
-		concept_height;
-		nrel_intersection
-	};;
 
 nrel_orthocenter => nrel_definitional_domain: ...
 (*

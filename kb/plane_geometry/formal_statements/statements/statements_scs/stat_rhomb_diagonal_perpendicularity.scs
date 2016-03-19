@@ -1,6 +1,6 @@
-stat_rhomb_diagonal_perpendicularity <- sc_text_statement;;
+stat_rhomb_diagonal_perpendicularity <- statement;;
 
-//stat_rhomb_diagonal_perpendicularity <- sc_text_statement_for_solver;;
+//stat_rhomb_diagonal_perpendicularity <- statement_for_solver;;
 
 stat_rhomb_diagonal_perpendicularity -> rrel_key_sc_element: concept_rhomb; nrel_diagonal; nrel_perpendicularity;;
 

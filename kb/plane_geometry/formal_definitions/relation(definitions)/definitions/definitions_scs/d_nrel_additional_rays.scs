@@ -3,7 +3,16 @@ d_nrel_additional_rays <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(дополнительные лучи*)]	(* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_additional_rays;;
-	<- sc_text_definition;;   
+	<- definition;;   
+
+	<= nrel_using_constants:
+		{
+	    	concept_ray;
+		concept_straight_line;
+		concept_geometric_point; 
+		nrel_boundary_point
+		};;
+
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -12,3 +21,4 @@ d_nrel_additional_rays <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+

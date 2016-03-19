@@ -50,7 +50,7 @@ struct_Parallelogram_A_B_C_D <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Факт.утв.(Параллелограмм ABCD)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

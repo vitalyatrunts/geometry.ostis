@@ -9,14 +9,6 @@ concept_cube => nrel_idtf: [Множество всевозможных кубо
 
 concept_cube => nrel_idtf: [Множество знаков всевозможных кубов] (* <- lang_ru;; *);;
 
-concept_cube <= nrel_using_constants:
-	{
-	concept_square;
-	nrel_face_of_polyhedron;
-	concept_cuboid;
-	concept_surface
-	};;
-
 concept_cube <- rrel_key_sc_element: 
 	...
 	(*

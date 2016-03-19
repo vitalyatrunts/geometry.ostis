@@ -18,7 +18,7 @@ nrel_bound => nrel_idtf:
 	[быть границей геометрической фигуры*]
 	(* <- lang_ru;; *);;
 
-nrel_bound <- sc_relation;;
+nrel_bound <- relation;;
 
 nrel_bound <- binary_relation;;
 
@@ -39,12 +39,4 @@ nrel_bound => nrel_first_domain:
 
 nrel_bound => nrel_second_domain: 
 	concept_linear_figure;;
-
-nrel_bound <= nrel_using_constants:
-	{
-	concept_linear_figure;  
-	concept_geometric_point; 
-	concept_geometric_figure; 
-	nrel_boundary_point
-	};;
 

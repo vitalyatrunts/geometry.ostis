@@ -3,7 +3,14 @@ d_nrel_be_inscribed <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(вписанность*)] (* <- lang_ru;; *);; 
 	-> rrel_key_sc_element: nrel_be_inscribed;;
-	<- sc_definition;;   
+	<- definition;;  
+
+	<= nrel_using_constants:
+		{
+		concept_circle; 
+		concept_polygon; 
+		nrel_vertex
+		};; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

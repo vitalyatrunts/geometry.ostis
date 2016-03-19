@@ -1,9 +1,18 @@
-d_concept_trihedral_angle <- sc_text_definition;;
+d_concept_trihedral_angle <- definition;;
 
 d_concept_trihedral_angle -> rrel_key_sc_element: concept_trihedral_angle;;
 
 d_concept_trihedral_angle => nrel_main_idtf: [Опр.(трехгранный угол)] (*<-lang_ru;;*);;
 d_concept_trihedral_angle => nrel_main_idtf: [Def.(trihedral angle)] (*<-lang_en;;*);;
+
+
+d_concept_trihedral_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_ray;
+	concept_geometric_point;
+	concept_plane
+	};;
 
 d_concept_trihedral_angle <= nrel_sc_text_translation: 
 		...

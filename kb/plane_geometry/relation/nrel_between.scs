@@ -14,11 +14,6 @@ nrel_between => nrel_idtf: [быть элементом множества, на
 
 nrel_between => nrel_idtf: [Ролевое отношение, связывающее знак множества с тем его элементом, который находится между другими элементами этого множества*] (* <- lang_ru;; *);;
 
-nrel_between <- sc_relation;;
+nrel_between <- relation;;
 
-nrel_between <= nrel_using_constants:
-	{
-	concept_geometric_point; 
-	concept_rectilinear_three_of_points
-	};;
 

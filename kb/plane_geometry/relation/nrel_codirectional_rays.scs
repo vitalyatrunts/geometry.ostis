@@ -6,7 +6,7 @@ nrel_codirectional_rays => nrel_main_idtf:
 	[codirectional rays*]
 	(* <- lang_en;; *);;
 
-nrel_codirectional_rays <- sc_relation;;	
+nrel_codirectional_rays <- relation;;	
 	
 nrel_codirectional_rays <- binary_relation;;
 
@@ -23,8 +23,4 @@ nrel_codirectional_rays => nrel_first_domain:
 nrel_codirectional_rays => nrel_second_domain: 
 	concept_ray;;
 
-nrel_codirectional_rays <= nrel_using_constants:
-	{
-	concept_ray
-	};;
 

@@ -14,7 +14,7 @@ nrel_angle_measure => nrel_idtf: [градусная мера угла*] (* <- l
 
 nrel_angle_measure => nrel_idtf: [радианная мера угла*] (* <- lang_ru;; *);;
 
-nrel_angle_measure <- sc_relation;;
+nrel_angle_measure <- relation;;
 
 nrel_angle_measure <- binary_relation;;
 
@@ -37,8 +37,4 @@ nrel_angle_measure => nrel_first_domain:
 nrel_angle_measure => nrel_second_domain: 
 	concept_quantity;;
 
-nrel_angle_measure <= nrel_using_constants:
-	{
-	concept_angle
-	};;
 

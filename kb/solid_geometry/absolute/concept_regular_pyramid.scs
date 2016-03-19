@@ -7,16 +7,6 @@ concept_regular_pyramid => nrel_idtf: [Класс правильных пира�
 
 concept_regular_pyramid => nrel_idtf: [Множество всевозможных правильных пирамид] (* <- lang_ru;; *);;
 
-concept_regular_pyramid <= nrel_using_constants:
-	{
-	concept_pyramid;
-	nrel_base;
-	concept_regular_polygon;
-	nrel_face_of_polyhedron;
-	nrel_edge;
-	nrel_congruence
-	};;
-
 concept_regular_pyramid <- rrel_key_sc_element: 
 	...
 	(*

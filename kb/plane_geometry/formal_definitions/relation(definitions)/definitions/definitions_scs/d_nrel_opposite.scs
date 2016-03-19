@@ -3,7 +3,14 @@ d_nrel_opposite <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(противолежащий*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_opposite;;
-	<- sc_text_definition;;   
+	<- definition;;   
+	<= nrel_using_constants:
+		{
+		nrel_internal_angle; 
+		concept_polygon; 
+		concept_segment; 
+		nrel_side
+		};;
 	<= nrel_sc_text_translation: 
 		...
 		(*

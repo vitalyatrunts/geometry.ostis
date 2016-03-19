@@ -14,7 +14,7 @@ nrel_similarity => nrel_idtf: [преобразование подобия*] (* 
 
 nrel_similarity => nrel_idtf: [геометрическое преобразование подобия*] (* <- lang_ru;; *);;
 
-nrel_similarity <- sc_relation;;
+nrel_similarity <- relation;;
 
 nrel_similarity <- binary_relation;;
 
@@ -29,13 +29,7 @@ nrel_similarity => nrel_first_domain:
 nrel_similarity => nrel_second_domain: 
 	concept_geometric_figure;;
 
-nrel_similarity <= nrel_using_constants:
-	{
-	concept_polygon; 
-	nrel_side; 
-	concept_angle; 
-	nrel_congruence
-	};;
+
 	
 
 

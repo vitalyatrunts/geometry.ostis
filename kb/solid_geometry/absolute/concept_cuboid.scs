@@ -7,13 +7,6 @@ concept_cuboid => nrel_idtf: [Класс прямоугольных паралл
 
 concept_cuboid => nrel_idtf: [Множество всевозможных прямоугольных параллелепипедов] (* <- lang_ru;; *);;
 
-concept_cuboid <= nrel_using_constants:
-	{
-	nrel_face_of_polyhedron;
-	concept_parallelepiped;
-	concept_rectangle
-	};;
-
 concept_cuboid <- rrel_key_sc_element: 
 	...
 	(*

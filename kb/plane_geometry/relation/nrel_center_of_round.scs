@@ -10,7 +10,7 @@ nrel_center_of_round => nrel_idtf:
 	[быть центром круга*]
 	(* <- lang_ru;; *);;
 
-nrel_center_of_round <- sc_relation;;
+nrel_center_of_round <- relation;;
 
 nrel_center_of_round <- binary_relation;;
 
@@ -33,14 +33,6 @@ nrel_center_of_round <= nrel_first_domain:
 
 nrel_center_of_round <= nrel_second_domain: 
 	concept_geometric_point;;
-
-nrel_center_of_round <= nrel_using_constants:
-	{
-	concept_geometric_point; 
-	concept_plane; 
-	nrel_bound; 
-	concept_round	
-	};;
 
 
 

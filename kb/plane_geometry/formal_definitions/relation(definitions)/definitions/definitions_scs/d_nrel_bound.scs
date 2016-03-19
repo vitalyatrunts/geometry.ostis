@@ -3,7 +3,16 @@ d_nrel_bound <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(граница*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_bound;;
-	<- sc_text_definition;;
+	<- definition;;
+
+	<= nrel_using_constants:
+		{
+		concept_linear_figure;  
+		concept_geometric_point; 
+		concept_geometric_figure; 
+		nrel_boundary_point
+		};;
+
 	<= nrel_sc_text_translation: 
 		...
 		(*

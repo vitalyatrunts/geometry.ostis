@@ -5,13 +5,6 @@ concept_dodecahedron => nrel_main_idtf: [dodecahedron] (*<-lang_en;;*);;
 
 concept_dodecahedron => nrel_idtf: [Множество всевозможных додекаэдров] (* <- lang_ru;; *);;
 
-concept_dodecahedron <= nrel_using_constants:
-	{
-	nrel_face_of_polyhedron;
-	nrel_vertex;
-	concept_regular_hexagon
-	};;
-
 concept_dodecahedron <- rrel_key_sc_element: 
 	...
 	(*

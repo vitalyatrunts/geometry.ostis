@@ -3,7 +3,15 @@ d_nrel_cathetus <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(катет*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_cathetus;;
-	<- sc_text_definition;;   
+	<- definition;;  
+	<= nrel_using_constants:
+		{
+		concept_segment;  
+		nrel_side; 
+		concept_rectangular_triangle; 
+		concept_right_angle
+		};;	
+     
 	<= nrel_sc_text_translation: 
 		...
 		(*

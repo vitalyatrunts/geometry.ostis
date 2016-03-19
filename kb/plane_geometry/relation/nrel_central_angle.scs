@@ -12,7 +12,7 @@ nrel_central_angle => nrel_idtf: [центральный угол в окруж�
 
 nrel_central_angle => nrel_idtf: [быть центральным углом в окружности*] (* <- lang_ru;; *);;
 
-nrel_center_line <- sc_relation;;
+nrel_center_line <- relation;;
 
 nrel_center_line <- binary_relation;;
 
@@ -35,12 +35,6 @@ nrel_central_angle => nrel_first_domain:
 nrel_central_angle => nrel_second_domain: 
 	concept_planar_angle;;
 
-nrel_central_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	nrel_radius; 
-	concept_circle
-	};;
 
 
 nrel_central_angle <- rrel_key_sc_element: 

@@ -9,13 +9,6 @@ concept_ball => nrel_idtf: [Множество всевозможных шаро
 
 concept_ball => nrel_idtf: [Множество знаков всевозможных шаров] (* <- lang_ru;; *);;
 
-concept_ball <= nrel_using_constants:
-	{
-	nrel_radius;
-	concept_sphere;
-	nrel_center
-	};;
-
 concept_ball <- rrel_key_sc_element: 
 	...
 	(*

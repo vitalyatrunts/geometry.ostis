@@ -3,7 +3,14 @@ d_nrel_congruence <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(конгруэнтность*)] (* <- lang_ru;; *);;  
 	-> rrel_key_sc_element: nrel_congruence;;
-	<- sc_text_definition;;   
+	<- definition;;   
+	
+	<= nrel_using_constants:
+		{
+		concept_geometric_figure;
+		concept_pair_of_points;
+		nrel_distance
+		};;
 	<= nrel_sc_text_translation: 
 		...
 		(*

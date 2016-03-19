@@ -9,7 +9,7 @@ nrel_bisectrix_of_triangle => nrel_main_idtf:
 nrel_bisectrix_of_triangle => nrel_idtf: [быть биссектрисой треугольника*]
 	(* <- lang_ru;; *);;
 
-nrel_bisectrix_of_triangle <- sc_relation;;
+nrel_bisectrix_of_triangle <- relation;;
 
 nrel_bisectrix_of_triangle <- binary_relation;;
 
@@ -33,23 +33,12 @@ nrel_bisectrix_of_triangle => nrel_second_domain:
 	concept_segment;;
 
 
-nrel_bisectrix_of_triangle <= nrel_using_constants:
-	{ 
-	nrel_bisectrix; 
-	concept_segment; 
-	nrel_internal_angle; 
-	concept_triangle;  
-	nrel_vertex_of_angle; 
-	nrel_side; 
-	nrel_opposite
-	};;
-
 
 nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*)] (* <- lang_ru;; *);; 
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -62,7 +51,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол; площадь*; пропорциональность*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -75,7 +64,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -88,7 +77,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; прямая; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -101,7 +90,7 @@ nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; серединный перпендикуляр*; внутренний угол*; геометрическая точка; окружность)] (* <- lang_ru;; *);;
-	<- sc_text_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
