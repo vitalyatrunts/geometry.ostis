@@ -33,17 +33,6 @@ nrel_bisectrix_of_triangle => nrel_second_domain:
 	concept_segment;;
 
 
-nrel_bisectrix_of_triangle <= nrel_using_constants:
-	{ 
-	nrel_bisectrix; 
-	concept_segment; 
-	nrel_internal_angle; 
-	concept_triangle;  
-	nrel_vertex_of_angle; 
-	nrel_side; 
-	nrel_opposite
-	};;
-
 
 nrel_bisectrix_of_triangle <- rrel_key_sc_element:
 	...

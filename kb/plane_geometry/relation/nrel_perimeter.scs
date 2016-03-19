@@ -34,9 +34,5 @@ nrel_perimeter => nrel_first_domain:
 nrel_perimeter => nrel_second_domain: 
 	concept_quantity;;
 
-nrel_perimeter <= nrel_using_constants:
-	{
-	nrel_length; 
-	nrel_side
-	};;
+
 

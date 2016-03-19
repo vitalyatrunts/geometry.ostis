@@ -20,13 +20,6 @@ concept_geometric_body => nrel_definitional_domain: ...
 		*);;
 	*);;
 
-nrel_volume <= nrel_using_constants: 		
-	{
-	concept_quantity;
-	concept_space;
-	concept_geometric_body
-	};;
-
 nrel_volume <- antireflexive_relation; antitransitive_relation; antisimmetric_relatoin;;
 nrel_volume <- relation; binary_relation;;
 nrel_volume <- oriented_relation;;

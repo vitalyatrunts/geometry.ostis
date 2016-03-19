@@ -7,15 +7,6 @@ concept_truncated_cone => nrel_idtf: [Класс усеченных конусо
 
 concept_truncated_cone => nrel_idtf: [Множество всевозможных усеченных конусов] (* <- lang_ru;; *);;
 
-concept_truncated_cone <= nrel_using_constants:
-	{
-	concept_cone;
-	nrel_base;
-	nrel_secant;
-	concept_plane;
-	nrel_perpendicularity
-	};;
-
 concept_truncated_cone <- rrel_key_sc_element: 
 	...
 	(*

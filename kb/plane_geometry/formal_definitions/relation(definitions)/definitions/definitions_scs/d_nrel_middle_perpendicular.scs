@@ -3,7 +3,15 @@ d_nrel_middle_perpendicular <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(серединный перпендикуляр*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_middle_perpendicular;;
-	<- sc_text_definition;;   
+	<- definition;;   
+	nrel_middle_perpendicular <= nrel_using_constants:
+		{
+		concept_straight_line; 
+		nrel_intersection; 
+		nrel_middle; 
+		concept_segment; 
+		nrel_perpendicularity
+		};;
 	<= nrel_sc_text_translation: 
 		...
 		(*

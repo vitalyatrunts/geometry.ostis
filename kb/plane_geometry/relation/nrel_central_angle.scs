@@ -35,12 +35,6 @@ nrel_central_angle => nrel_first_domain:
 nrel_central_angle => nrel_second_domain: 
 	concept_planar_angle;;
 
-nrel_central_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	nrel_radius; 
-	concept_circle
-	};;
 
 
 nrel_central_angle <- rrel_key_sc_element: 

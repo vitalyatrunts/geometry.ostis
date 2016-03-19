@@ -45,15 +45,7 @@ nrel_perpendicularity => nrel_second_domain:
 		};;
 	*);;
 
-nrel_perpendicularity <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	nrel_perpendicularity; 
-	concept_ray; 
-	nrel_boundary_point; 
-	nrel_intersection; 
-	concept_right_angle
-	};;
+
 	
 
 

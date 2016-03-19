@@ -3,7 +3,15 @@ d_nrel_internal_sided_angles <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(внутренние односторонние углы*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_internal_sided_angles;;
-	<- sc_text_definition;;   
+	<- definition;;
+	<= nrel_using_constants:
+		{
+		concept_angle; 
+		nrel_intersection; 
+		concept_straight_line; 
+		nrel_secant; 
+		rrel_between
+		};;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

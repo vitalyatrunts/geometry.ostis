@@ -45,8 +45,4 @@ nrel_vertex => nrel_first_domain:
 nrel_vertex => nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_vertex <= nrel_using_constants:
-	{
-	nrel_vertex_of_angle; 
-	nrel_vertex_of_polygon	
-	};;
+

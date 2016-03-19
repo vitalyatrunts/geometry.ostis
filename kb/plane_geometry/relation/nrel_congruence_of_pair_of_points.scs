@@ -17,8 +17,3 @@ nrel_congruence_of_pair_of_points => nrel_first_domain:
 nrel_congruence_of_pair_of_points => nrel_second_domain: 
 	concept_pair_of_points;;
 
-nrel_congruence_of_pair_of_points <= nrel_using_constants:
-	{
-	concept_geometric_point; 
-	nrel_distance
-	};;

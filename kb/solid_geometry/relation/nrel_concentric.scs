@@ -4,13 +4,6 @@ nrel_concentric => nrel_main_idtf: [концентрические*] (*<-lang_ru
 nrel_concentric => nrel_main_idtf: [concentric*] (*<-lang_en;;*);;
 
 nrel_concentric => nrel_idtf: [быть концентрическими*] (*<-lang_ru;;*);;
-
-nrel_concentric <= nrel_using_constants:
-	{
-	concept_circle;
-	concept_sphere;
-	nrel_center
-	};;
 	
 nrel_concentric => nrel_first_domain: ...
 	(*

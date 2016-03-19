@@ -16,9 +16,4 @@ nrel_between => nrel_idtf: [Ролевое отношение, связываю�
 
 nrel_between <- sc_relation;;
 
-nrel_between <= nrel_using_constants:
-	{
-	concept_geometric_point; 
-	concept_rectilinear_three_of_points
-	};;
 

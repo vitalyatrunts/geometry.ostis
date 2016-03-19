@@ -3,7 +3,14 @@ d_nrel_area <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Поясн.(площадь*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_area;;
-	<- sc_explanation;;   
+	<- sc_explanation;;
+
+
+	<= nrel_using_constants:
+		{ 
+		concept_plane; 
+		concept_polygon
+		};;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -30,11 +30,4 @@ nrel_middle_perpendicular => nrel_first_domain:
 nrel_middle_perpendicular => nrel_second_domain: 
 	concept_straight_line;;
 
-nrel_middle_perpendicular <= nrel_using_constants:
-	{
-	concept_straight_line; 
-	nrel_intersection; 
-	nrel_middle; 
-	concept_segment; 
-	nrel_perpendicularity
-	};;
+

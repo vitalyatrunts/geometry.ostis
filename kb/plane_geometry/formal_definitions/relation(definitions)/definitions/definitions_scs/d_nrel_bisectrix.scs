@@ -4,7 +4,13 @@ d_nrel_bisectrix <- rrel_main_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(биссектриса*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_bisectrix;;
-	<- sc_text_definition;;   
+	<- definition;;   
+	
+	<= nrel_using_constants:
+		{ 
+		nrel_bisectrix_of_angle; 
+		nrel_bisectrix_of_triangle
+		};;
 	<= nrel_sc_text_translation: 
 		...
 		(*

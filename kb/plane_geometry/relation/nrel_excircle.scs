@@ -4,12 +4,6 @@ nrel_excircle => nrel_main_idtf: [вневписанная*] (*<-lang_ru;;*);;
 nrel_excircle => nrel_main_idtf: [excircle*] (*<-lang_en;;*);;
 nrel_excircle => nrel_idtf: [быть вневписанной*] (*<-lang_ru;;*);;
 
-nrel_excircle <= nrel_using_constants:
-	{
-	concept_circle;
-	concept_triangle;
-	nrel_side
-	};;
 
 nrel_excircle => nrel_first_domain: concept_triangle;;
 	

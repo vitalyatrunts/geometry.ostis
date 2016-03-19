@@ -9,9 +9,3 @@ concept_right_prism => nrel_idtf: [Множество всевозможных �
 
 concept_right_prism => nrel_idtf: [Множество знаков прямых призм] (* <- lang_ru;; *);;
 
-concept_right_prism <= nrel_using_constants:
-	{
-	concept_prism;
-	nrel_lateral_face_of_polyhedron;
-	concept_rectangle
-	};;

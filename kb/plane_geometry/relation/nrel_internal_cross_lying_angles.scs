@@ -24,14 +24,7 @@ nrel_internal_cross_lying_angles => nrel_first_domain:
 nrel_internal_cross_lying_angles => nrel_second_domain: 
 	concept_planar_angle;;
 
-nrel_internal_cross_lying_angles <= nrel_using_constants:
-	{ 
-	concept_angle; 
-	nrel_intersection; 
-	concept_straight_line; 
-	nrel_secant; 
-	rrel_between
-	};;
+
 
 	
 nrel_internal_cross_lying_angles <- rrel_key_sc_element: 

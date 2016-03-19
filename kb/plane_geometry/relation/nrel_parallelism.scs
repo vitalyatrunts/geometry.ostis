@@ -33,9 +33,4 @@ nrel_parallelism => nrel_first_domain:
 nrel_parallelism => nrel_second_domain: 
 	concept_straight_line;;
 
-nrel_parallelism <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	nrel_intersection; 
-	concept_plane
-	};;	
+	

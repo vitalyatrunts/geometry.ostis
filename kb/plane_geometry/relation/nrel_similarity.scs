@@ -29,13 +29,7 @@ nrel_similarity => nrel_first_domain:
 nrel_similarity => nrel_second_domain: 
 	concept_geometric_figure;;
 
-nrel_similarity <= nrel_using_constants:
-	{
-	concept_polygon; 
-	nrel_side; 
-	concept_angle; 
-	nrel_congruence
-	};;
+
 	
 
 

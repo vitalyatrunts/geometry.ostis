@@ -34,12 +34,5 @@ nrel_tangent => nrel_first_domain:
 nrel_tangent => nrel_second_domain: 
 	concept_straight_line;;
 
-    
-nrel_tangent <= nrel_using_constants:
-	{
-	concept_straight_line; 
-	concept_geometric_point; 
-	concept_circle; 
-	concept_plane		
-	};; 
+
 

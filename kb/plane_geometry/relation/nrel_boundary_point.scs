@@ -45,7 +45,3 @@ nrel_boundary_point => nrel_first_domain:
 nrel_boundary_point => nrel_second_domain: 
 	concept_geometric_point;;
 
-nrel_boundary_point <= nrel_using_constants:
-	{
-	concept_geometric_point
-	};;

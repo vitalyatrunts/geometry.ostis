@@ -5,16 +5,6 @@ concept_equilateral_cylinder => nrel_main_idtf: [equilateral cylinder] (*<-lang_
 
 concept_equilateral_cylinder => nrel_idtf: [Множество всевозможных равносторонних циллиндров] (* <- lang_ru;; *);;
 
-
-concept_equilateral_cylinder <= nrel_using_constants:
-	{
-	nrel_height;
-	concept_circle;
-	nrel_diameter;
-	nrel_base;
-	nrel_center
-	};;
-
 concept_equilateral_cylinder <- rrel_key_sc_element: 
 	...
 	(*

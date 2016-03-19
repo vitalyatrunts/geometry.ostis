@@ -4,7 +4,14 @@ d_nrel_adjacent_angles <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Опр.(смежные углы*)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: nrel_adjacent_angles;;
-	<- sc_text_definition;;   
+	<- definition;;  
+	<= nrel_using_constants:
+		{
+		concept_angle; 
+		nrel_vertex; 
+		concept_straight_line; 
+		nrel_side
+		};; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

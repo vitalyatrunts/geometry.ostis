@@ -28,8 +28,3 @@ nrel_coefficient_of_similarity => nrel_first_domain:
 nrel_coefficient_of_similarity => nrel_second_domain: 
 	number;;
 
-nrel_coefficient_of_similarity <= nrel_using_constants:
-	{
-	concept_geometric_point;
-	nrel_distance
-	};;

@@ -22,10 +22,4 @@ nrel_corresponding_angles => nrel_first_domain:
 
 nrel_corresponding_angles => nrel_second_domain: 
 	concept_planar_angle;;
-	
-nrel_corresponding_angles <= nrel_using_constants:
-	{
-	concept_angle; 
-	nrel_secant; 
-	concept_straight_line
-	};;
+
