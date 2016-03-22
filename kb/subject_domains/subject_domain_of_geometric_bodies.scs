@@ -7,7 +7,6 @@ subject_domain_of_geometric_bodies
 	[Subject domain of geometric bodies]
 	(* <- lang_en;; *);;
 	
-subject_domain_of_geometric_bodies => nrel_particular_subject_domain:
-	subject_domain_of_polyhedrons_and_their_surfaces;
-	subject_domain_of_non_planar_angles;
-	subject_domain_of_rotation_bodies_and_their_surfaces;;
+subject_domain_of_geometric_bodies => nrel_private_subject_domain: subject_domain_of_polyhedrons_and_their_surfaces;;
+subject_domain_of_geometric_bodies => nrel_private_subject_domain: subject_domain_of_non_planar_angles;;
+subject_domain_of_geometric_bodies => nrel_private_subject_domain: subject_domain_of_rotation_bodies_and_their_surfaces;;
