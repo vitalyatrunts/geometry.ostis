@@ -47,7 +47,7 @@ concept_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
 concept_triangle <- rrel_key_sc_element: 
 	...
 	(*
-	<- sc_illustration;; 
+	<- illustration;; 
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 

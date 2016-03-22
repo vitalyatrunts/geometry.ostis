@@ -6,22 +6,14 @@ subject_domain_of_inscribed_planar_figures
 	(* <- lang_ru;; *);
 	[Subject domain of inscribed planar figures]
 	(* <- lang_en;; *);;
-	
-subject_domain_of_planar_figures => nrel_particular_subject_domain:
-	subject_domain_of_rectilinear_geometric_figures;
-	subject_domain_of_planar_angles;
-	subject_domain_of_polygons;
-	subject_domain_of_inscribed_planar_figures;
-	subject_domain_of_rounds_and_circles;;
-	
+		
 subject_domain_of_inscribed_planar_figures -> rrel_maximum_studied_object_class: concept_geometric_figure;;
 
-subject_domain_of_inscribed_planar_figures -> rrel_not_maximum_studied_object_class: concept_polygon;;
+subject_domain_of_inscribed_planar_figures -> rrel_not_maximum_studied_object_class: 
+	concept_polygon; 
+	concept_angle; 
+	concept_circle;;
 
-subject_domain_of_inscribed_planar_figures -> rrel_not_maximum_studied_object_class: concept_circle;;
-
-subject_domain_of_inscribed_planar_figures -> rrel_not_maximum_studied_object_class: concept_angle;;
-
-subject_domain_of_inscribed_planar_figures -> rrel_studied_relation: nrel_be_inscribed;;
+subject_domain_of_inscribed_planar_figures -> rrel_explored_relation: nrel_be_inscribed;;
 
 subject_domain_of_inscribed_planar_figures <- subject_domain;;

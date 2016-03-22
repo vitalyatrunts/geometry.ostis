@@ -7,27 +7,21 @@ subject_domain_of_polygons
 	[Subject domain of polygons]
 	(* <- lang_en;; *);;
 	
-subject_domain_of_polygons => nrel_particular_subject_domain:
-	subject_domain_of_triangles;
-	subject_domain_of_quadrilaterals;;
+subject_domain_of_polygons => nrel_private_subject_domain: subject_domain_of_triangles;;
+subject_domain_of_polygons => nrel_private_subject_domain: subject_domain_of_quadrilaterals;;
 	
 subject_domain_of_polygons -> rrel_maximum_studied_object_class: concept_polygon;;
 
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_convex_polygon;;
+subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: 
+	concept_convex_polygon;
+	concept_regular_polygon;
+	concept_regular_hexagon;
+	concept_regular_pentagon;
+	concept_non_convex_polygon;
+	concept_pentagon;
+	concept_hexagon;;
 
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_regular_polygon;;
-
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_regular_hexagon;;
-
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_regular_pentagon;;
-
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_non_convex_polygon;;
-
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_pentagon;;
-
-subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: concept_hexagon;;
-
-subject_domain_of_polygons -> rrel_studied_relation:
+subject_domain_of_polygons -> rrel_explored_relation:
 	nrel_area;
 	nrel_bound;
 	nrel_be_inscribed;
