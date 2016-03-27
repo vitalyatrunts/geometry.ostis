@@ -12,3 +12,9 @@ d_concept_round <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_round <= nrel_using_constants:
+	{
+	concept_circle; 
+	concept_plane
+	};;

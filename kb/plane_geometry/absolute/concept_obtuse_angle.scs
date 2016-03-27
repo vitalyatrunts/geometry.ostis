@@ -16,14 +16,6 @@ concept_obtuse_angle => nrel_idtf: [Множество знаков тупых �
 
 concept_obtuse_angle <= nrel_strict_inclusion: concept_planar_angle;;
 
-concept_obtuse_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	concept_straight_angle; 
-	concept_right_angle; 
-	nrel_angle_measure			
-	};;
-
 concept_obtuse_angle <- rrel_key_sc_element: 
 	...
 	(*

@@ -16,10 +16,4 @@ concept_zero_angle => nrel_idtf: [Множество знаков всевозм
 
 concept_zero_angle <= nrel_strict_inclusion: concept_angle;;
 
-concept_zero_angle <= nrel_using_constants:
-	{
-	concept_ray;  
-	concept_angle
-	};;
-
 concept_zero_angle -> rrel_example: struct_Zero_Angle_N_K_N;;

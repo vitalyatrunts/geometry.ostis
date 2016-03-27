@@ -9,11 +9,3 @@ concept_Apollonius_circle => nrel_idtf: [множесто окружностей
 
 concept_Apollonius_circle <= nrel_strict_inclusion: concept_circle;;
 
-concept_Apollonius_circle <= nrel_using_constants:
-	{
-		concept_geometric_point;
-		concept_geometric_figure;
-		concept_plane;
-		nrel_distance;
-		nrel_equal_quantities
-	};;

@@ -20,15 +20,6 @@ concept_planar_angle <= nrel_strict_inclusion: concept_flat_geometric_figure;;
 
 concept_planar_angle <= nrel_strict_inclusion: concept_angle;;
 
-concept_planar_angle <= nrel_using_constants:
-	{
-	concept_geometric_figure_of_unlimited_size; 
-	concept_closed_ray; 
-	concept_geometric_figure; 
-	concept_plane; 
-	rrel_between
-	};;
-
 /*concept_planar_angle -> rrel_example: Угол ABK;;
 concept_planar_angle -> rrel_example: Угол AOB;;
 concept_planar_angle -> rrel_example: Угол KLM;;

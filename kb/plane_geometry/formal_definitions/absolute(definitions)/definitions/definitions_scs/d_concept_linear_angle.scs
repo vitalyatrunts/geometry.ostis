@@ -12,3 +12,11 @@ d_concept_linear_angle <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_linear_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_ray; 
+	concept_geometric_point; 
+	concept_plane
+	};;

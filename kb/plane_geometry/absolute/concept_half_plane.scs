@@ -16,18 +16,6 @@ concept_half_plane => nrel_idtf: [Множество знаков всевозм
 
 concept_half_plane <= nrel_strict_inclusion: concept_planar_surface;;
 
-concept_half_plane <= nrel_using_constants:
-	{
-	concept_geometric_point; 
-	concept_plane; 
-	concept_straight_line; 
-	concept_segment; 
-	nrel_bound; 
-	nrel_intersection; 
-	concept_pair_of_points
-	};;
-				
-
 concept_half_plane -> rrel_example: struct_Opened_Half_Plane_K1;;
 concept_half_plane <=> nrel_analogue: concept_ray;;
 

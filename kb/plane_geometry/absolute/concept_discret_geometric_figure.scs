@@ -20,9 +20,4 @@ concept_discret_geometric_figure => nrel_strict_inclusion: concept_pair_of_point
 
 concept_discret_geometric_figure => nrel_strict_inclusion: concept_triple_of_points;;
 
-concept_discret_geometric_figure <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	concept_geometric_point
-	};;	
-	
+

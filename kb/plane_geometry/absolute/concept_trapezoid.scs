@@ -19,13 +19,6 @@ concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
 concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapezoid;;	
 
 concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapezoid;;
-
-concept_trapezoid <= nrel_using_constants:
-	{
-	 nrel_side; 
-	 nrel_parallelism;  
-	 nrel_opposite
-	};;	
 		
 concept_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
 concept_trapezoid -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;

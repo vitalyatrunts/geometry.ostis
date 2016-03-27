@@ -13,11 +13,5 @@ concept_obtuse_triangle => nrel_idtf: [Понятие тупоугольного
 concept_obtuse_triangle => nrel_idtf: [Множество всевозможных тупоугольных треугольников] (* <- lang_ru;; *);;
 
 concept_obtuse_triangle => nrel_idtf: [Множество знаков всевозможных тупоугольных треугольников] (* <- lang_ru;; *);;
-
-concept_obtuse_triangle <= nrel_using_constants:
-	{
-	concept_triangle; 
-	concept_obtuse_angle
-	};;
 				
 concept_obtuse_triangle -> rrel_example: struct_Obtuse_triangle_L_D_K;;

@@ -26,13 +26,6 @@ concept_quadrilateral =>  nrel_strict_inclusion: concept_trapezoid;;
 
 concept_quadrilateral =>  nrel_strict_inclusion: concept_square;;
 
-concept_quadrilateral <= nrel_using_constants:
-	{
-	concept_polyline; 
-	concept_plane; 
-	concept_geometric_point
-	};;
-
 concept_quadrilateral -> rrel_example: struct_Rhomb_E_F_G_H;;
 concept_quadrilateral -> rrel_example: struct_Rectangle_B_C_D_E;;
 concept_quadrilateral -> rrel_example: struct_Parallelogram_A_B_C_D;;

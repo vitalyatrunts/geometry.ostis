@@ -27,14 +27,6 @@ concept_convex_polygon <= nrel_subdividing:
 	   concept_hexagon;;
 	*);;
 
-concept_convex_polygon <= nrel_using_constants:
-	{
-	concept_polygon; 
-	concept_half_plane; 
-	concept_straight_line; 
-	nrel_adjacent_angles
-	};;
-
 concept_convex_polygon <= nrel_subdividing:
 	...
 	(*

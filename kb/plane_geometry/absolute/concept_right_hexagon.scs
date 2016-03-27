@@ -21,9 +21,3 @@ concept_regular_hexagon => nrel_idtf: [Многоугольник с шесть�
 concept_regular_pentagon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_regular_pentagon <= nrel_strict_inclusion: concept_hexagon;;
-
-concept_regular_hexagon <= nrel_using_constants:
-	{
-	nrel_side; 
-	concept_hexagon
-	};;

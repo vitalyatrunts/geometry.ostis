@@ -32,13 +32,6 @@ concept_closed_half_plane <= nrel_strict_inclusion: concept_geometric_figure_wit
 
 concept_closed_half_plane <= nrel_strict_inclusion: concept_half_plane;;
 
-concept_closed_half_plane <= nrel_using_constants:
-	{
-	concept_half_plane; 
-	concept_straight_line;
-	nrel_bound
-	};;	
-	
 concept_closed_half_plane <=> nrel_analogue: concept_closed_ray;;
 
 concept_closed_half_plane <=> nrel_antipode: concept_opened_half_plane;;

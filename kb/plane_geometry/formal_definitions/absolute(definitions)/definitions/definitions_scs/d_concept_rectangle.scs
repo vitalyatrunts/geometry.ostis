@@ -1,4 +1,4 @@
-concept_rectangle <- rrel_key_sc_element:
+d_concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Опр.(прямоугольник)] (* <- lang_ru;; *);;
@@ -12,3 +12,9 @@ concept_rectangle <- rrel_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_rectangle <= nrel_using_constants:
+	{
+	concept_parallelogram; 
+	concept_right_angle
+	};;

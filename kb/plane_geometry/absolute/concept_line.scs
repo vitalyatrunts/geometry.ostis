@@ -37,7 +37,7 @@ concept_line <= nrel_subdividing:
 concept_line <- rrel_key_sc_element: 
 	...
 	(*
-		<- explanation;; 
+		<- illustration;; 
 		<= nrel_sc_text_translation: 
 		...
 			(*
@@ -45,9 +45,3 @@ concept_line <- rrel_key_sc_element:
 			"file://images/Line a.png";;
 			*);; 
 	*);;
-
-concept_line  <= nrel_using_constants:
-	{
-	nrel_bound; 
-	concept_geometric_figure
-	};;

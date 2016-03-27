@@ -12,3 +12,10 @@ d_concept_quadrilateral <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_quadrilateral <= nrel_using_constants:
+	{
+	concept_polyline; 
+	concept_plane; 
+	concept_geometric_point
+	};;

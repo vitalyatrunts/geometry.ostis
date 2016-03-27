@@ -15,13 +15,5 @@ concept_rectangular_trapezoid => nrel_idtf: [Множество всевозмо
 concept_rectangular_trapezoid => nrel_idtf: [Множество знаков всевозможных прямоугольных трапеций] (* <- lang_ru;; *);;
 
 concept_rectangular_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
-	
-concept_rectangular_trapezoid <= nrel_using_constants:
-	{
-	concept_trapezoid; 
-	nrel_lateral_side; 
-	nrel_perpendicularity; 
-	nrel_base
-	};;
 				
 concept_trapezoid -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;

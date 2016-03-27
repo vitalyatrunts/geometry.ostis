@@ -31,14 +31,6 @@ concept_ray <= nrel_subdividing:
 	-> concept_closed_ray;
 	concept_opened_ray;;
 	*);;
-
-concept_ray <= nrel_using_constants:
-	{
-	concept_ray; 
-	concept_straight_line; 
-	concept_geometric_point; 
-	nrel_side
-	};;	
 	
 
 concept_ray <=> nrel_analogue: concept_half_plane;;

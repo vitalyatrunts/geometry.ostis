@@ -14,13 +14,6 @@ concept_rectangular_triangle => nrel_idtf: [Множество всевозмо�
 
 concept_rectangular_triangle => nrel_idtf: [Множество знаков всевозможных прямоугольных треугольников] (* <- lang_ru;; *);;
 
-concept_rectangular_triangle <= nrel_using_constants:
-	{
-	concept_triangle; 
-	nrel_internal_angle; 
-	concept_right_angle
-	};;
-
 concept_rectangular_triangle <- rrel_key_sc_element: 
 	...
 	(*

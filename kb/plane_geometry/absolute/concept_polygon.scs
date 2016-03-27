@@ -31,14 +31,6 @@ concept_polygon <= nrel_subdividing:
 	-> concept_convex_polygon;
 	concept_non_convex_polygon;;
 	*);;
-concept_polygon <= nrel_using_constants:
-	{
-	concept_polygon; 
-	concept_geometric_figure; 
-	concept_polyline; 
-	nrel_intersection; 
-	concept_plane
-	};;	
 	
 concept_polygon -> rrel_example: struct_Polyhon_K_L_M_N_E_P;;
 concept_polygon -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;

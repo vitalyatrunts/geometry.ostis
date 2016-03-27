@@ -16,12 +16,6 @@ concept_right_angle => nrel_idtf: [Множество знаков прямых 
 
 concept_regular_polygon <= nrel_strict_inclusion: concept_angle;;
 
-concept_right_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	concept_straight_angle
-	};;
-
 concept_right_angle <- rrel_key_sc_element: 
 	...
 	(*

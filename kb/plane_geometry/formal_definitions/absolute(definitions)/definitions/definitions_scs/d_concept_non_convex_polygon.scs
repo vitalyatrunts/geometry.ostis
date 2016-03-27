@@ -1,4 +1,3 @@
-
 d_concept_non_convex_polygon <- rrel_main_key_sc_element: 
      	...
 	(*
@@ -13,3 +12,9 @@ d_concept_non_convex_polygon <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_non_convex_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_non_convex_angle
+	};;

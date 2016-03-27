@@ -21,9 +21,3 @@ concept_round <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_p
 concept_round <= nrel_strict_inclusion: concept_planar_figure;;
 
 concept_round <= nrel_strict_inclusion: concept_flat_geometric_figure;;
-
-concept_round <= nrel_using_constants:
-	{
-	concept_circle; 
-	concept_plane
-	};;

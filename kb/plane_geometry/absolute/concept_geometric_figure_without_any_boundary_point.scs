@@ -40,13 +40,6 @@ concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: co
 concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_surface;;
 
 
-concept_geometric_figure_without_any_boundary_point <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	nrel_boundary_point
-	};;
-
-
 concept_geometric_figure_without_any_boundary_point -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
 
 concept_geometric_figure_without_any_boundary_point -> rrel_example: struct_Plane_P;;

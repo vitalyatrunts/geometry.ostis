@@ -13,9 +13,3 @@ concept_geometric_figure_with_some_boundary_points => nrel_idtf: [Понятие
 concept_geometric_figure_with_some_boundary_points => nrel_idtf: [Множество геометрических фигур, в состав которых входят не все граничные точки] (* <- lang_ru;; *);;
 
 concept_geometric_figure_with_some_boundary_points <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
-
-concept_geometric_figure_with_some_boundary_points <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	nrel_boundary_point
-	};;

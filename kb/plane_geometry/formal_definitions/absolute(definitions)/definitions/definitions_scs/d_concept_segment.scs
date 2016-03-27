@@ -12,3 +12,10 @@ d_concept_segment <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_segment <= nrel_using_constants:
+	{
+	concept_straight_line; 
+	concept_geometric_point; 
+	rrel_between
+	};;

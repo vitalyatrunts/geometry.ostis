@@ -38,9 +38,4 @@ concept_surface <= nrel_subdividing:
 	concept_non_oriented_surface;;
 	*);;
 
-concept_half_plane <= nrel_using_constants:
-	{
-	concept_geometric_body
-	};;				
-
 concept_surface -> rrel_example: struct_Plane_P;;

@@ -1,10 +1,9 @@
-
 d_concept_full_angle <- rrel_main_key_sc_element: 
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(полный угол)] (* <- lang_ru;; *);;
 	-> rrel_key_sc_element: concept_full_angle;;
-	<-  definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -15,3 +14,10 @@ d_concept_full_angle <- rrel_main_key_sc_element:
 			*);;
 		*);;
 	*);;
+
+d_concept_full_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	concept_ray; 
+	nrel_generatrix
+	};;

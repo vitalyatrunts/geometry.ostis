@@ -18,12 +18,6 @@ concept_square <= nrel_strict_inclusion: concept_rectangle;;
 
 concept_square <= nrel_strict_inclusion: concept_rhomb;;
 
-concept_square <= nrel_using_constants:
-	{
-	nrel_side; 
-	concept_angle
-	};;
-
 concept_square <- rrel_key_sc_element: 
 	...
 	(*

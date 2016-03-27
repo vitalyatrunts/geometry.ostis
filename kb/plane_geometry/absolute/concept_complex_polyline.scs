@@ -14,13 +14,6 @@ concept_complex_polyline => nrel_idtf: [Множество всевозможн�
 
 concept_complex_polyline <= nrel_strict_inclusion: concept_polyline;;
 
-concept_complex_polyline <= nrel_using_constants:
-	{
-	concept_polyline; 
-	nrel_intersection
-	};;
-				
-
 concept_complex_polyline <- rrel_key_sc_element: 
 	...
 	(*

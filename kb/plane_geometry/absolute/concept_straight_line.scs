@@ -24,10 +24,5 @@ concept_straight_line <= nrel_strict_inclusion: concept_planar_line;;
 
 concept_straight_line <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
 
-concept_straight_line  <= nrel_using_constants:
-	{
-	concept_line
-	};;
-
 concept_straight_line <=> nrel_analogue: concept_plane;;	
 concept_straight_line -> rrel_example: struct_Straight_Line_A;;
