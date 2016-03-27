@@ -1,6 +1,6 @@
 stat_isoscales_triangle_base_lateral_side <- statement;;
 
-stat_isoscales_triangle_base_lateral_side -> rrel_key_sc_element: concept_isoscales_triangle; nrel_base; nrel_lateral_side;;
+stat_isoscales_triangle_base_lateral_side -> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_lateral_side;;
 
 stat_isoscales_triangle_base_lateral_side => nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; боковая сторона*)] (* <-lang_ru;; *);;
 stat_isoscales_triangle_base_lateral_side => nrel_main_idtf: [Stat.(isoscales triangle; base*; lateral side*)] (* <-lang_en;; *);;
