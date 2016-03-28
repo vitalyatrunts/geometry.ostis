@@ -22,11 +22,5 @@ concept_hexagon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_hexagon => nrel_strict_inclusion: concept_regular_hexagon;;
 
-concept_hexagon <= nrel_using_constants:
-	{
-	concept_polygon; 
-	nrel_side
-	};;
-
 
 

@@ -14,13 +14,6 @@ concept_straight_angle => nrel_idtf: [Множество знаков всево
 
 concept_straight_angle <= nrel_strict_inclusion: concept_angle;;
 
-concept_straight_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	nrel_side; 
-	concept_ray
-	};;
-
 concept_straight_angle -> rrel_example: struct_Straight_angle_A_O_B;;
 
 concept_straight_angle <- rrel_key_sc_element: 

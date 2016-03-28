@@ -20,13 +20,6 @@ concept_acute_angle => nrel_idtf: [Множество всевозможных �
 								  [Set of different signs of acute angles] (* <- lang_en;; *);;
 
 concept_acute_angle <=  nrel_strict_inclusion: concept_planar_angle;;
-
-concept_acute_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	concept_right_angle; 
-	nrel_angle_measure
-	};;
 	
 concept_acute_angle -> rrel_example: struct_Acute_Angle_K_L_M;;
 

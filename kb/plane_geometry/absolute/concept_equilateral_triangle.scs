@@ -32,13 +32,6 @@ concept_equilateral_triangle => nrel_idtf: [Правильный многоуг�
 
 concept_equilateral_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
 
-concept_equilateral_triangle <= nrel_using_constants:
-				{
-				concept_triangle; 
-				nrel_side; 
-				nrel_congruence
-				};;	
-
 concept_equilateral_triangle <- rrel_key_sc_element: 
 	...
 	(*

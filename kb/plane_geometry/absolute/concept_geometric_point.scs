@@ -30,7 +30,4 @@ concept_geometric_point => nrel_idtf: [одноточечная геометри
 
 concept_geometric_point => nrel_idtf: [одноэлементное множество точек] (* <- lang_ru;; *);;
 
-concept_geometric_point <= nrel_using_constants:
-{
-	concept_geometric_figure
-};;
+

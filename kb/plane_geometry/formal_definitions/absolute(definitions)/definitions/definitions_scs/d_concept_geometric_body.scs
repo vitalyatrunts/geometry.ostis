@@ -13,3 +13,10 @@ d_concept_geometric_body <- rrel_main_key_sc_element:
 		*);;
 	*);;
 
+d_concept_geometric_body <= nrel_using_constants:
+	{
+	concept_space; 
+	nrel_length; 
+	nrel_height; 
+	nrel_width
+	};;

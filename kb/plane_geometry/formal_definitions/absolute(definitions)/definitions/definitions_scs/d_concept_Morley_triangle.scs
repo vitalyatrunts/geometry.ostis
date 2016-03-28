@@ -11,3 +11,15 @@ d_concept_Morley_triangle <= nrel_sc_text_translation:
 		<- rrel_example: 
 		[Треугольник Морлея - это равносторонний треугольник, вершинами которого являются точки пересечения смежных триссектрис углов произвольного треугольника.] (*<-lang_ru;;*);;
 		*);;
+
+d_concept_Morley_triangle <= nrel_using_constants: 
+	{
+	nrel_adjacent; 
+	concept_triangle; 
+	concept_equilateral_triangle; 
+	nrel_vertex; 
+	concept_angle; 
+	nrel_trisector; 
+	nrel_intersection; 
+	concept_geometric_point
+	};;

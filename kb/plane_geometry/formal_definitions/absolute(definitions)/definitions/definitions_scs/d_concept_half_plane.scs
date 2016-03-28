@@ -1,4 +1,3 @@
-
 d_concept_half_plane <- rrel_main_key_sc_element: 
 	...
 	(*
@@ -13,3 +12,14 @@ d_concept_half_plane <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_half_plane <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_plane; 
+	concept_straight_line; 
+	concept_segment; 
+	nrel_bound; 
+	nrel_intersection; 
+	concept_pair_of_points
+	};;

@@ -24,11 +24,4 @@ concept_linear_polygon <= nrel_strict_inclusion: concept_polygon;;
 
 concept_linear_polygon <= nrel_strict_inclusion: concept_planar_line;;
 
-concept_linear_polygon <= nrel_using_constants:
-	{
-	concept_simple_broken_line; 
-	nrel_boundary_point; 
-	concept_geometric_point
-	};;
-
 concept_linear_polygon -> rrel_example: struct_Polygon_K_A_B_C_D_E;;

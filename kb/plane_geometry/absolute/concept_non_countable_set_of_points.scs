@@ -15,11 +15,6 @@ concept_non_countable_set_of_points => nrel_idtf: [Класс несчетног
 concept_non_countable_set_of_points <= nrel_strict_inclusion: concept_geometric_figure;;
 
 concept_non_countable_set_of_points <= nrel_strict_inclusion: concept_discret_geometric_figure;;
-
-concept_non_countable_set_of_points <= nrel_using_constants:
-	{
-	concept_geometric_point
-	};;
 	
 concept_non_countable_set_of_points <=> nrel_antipode: concept_countable_set_of_points;;
 

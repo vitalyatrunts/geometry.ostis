@@ -37,12 +37,6 @@ concept_geometric_figure_of_limited_size => nrel_strict_inclusion: concept_round
 concept_geometric_figure_of_limited_size => nrel_strict_inclusion: concept_polyline;;
 
 concept_geometric_figure_of_limited_size => nrel_strict_inclusion: concept_polygon;;
-	
-concept_geometric_figure_of_limited_size <= nrel_using_constants:
-	{
-	concept_uninterrupted_geometric_figure; 
-	concept_ball
-	};;
 
 concept_geometric_figure_of_limited_size -> rrel_example: struct_Segment_A_B;;
 

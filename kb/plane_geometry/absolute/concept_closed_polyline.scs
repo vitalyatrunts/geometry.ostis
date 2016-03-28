@@ -10,11 +10,6 @@ concept_closed_polyline => nrel_idtf: [понятие замкнутой лом�
 
 concept_closed_polyline => nrel_strict_inclusion: concept_linear_polygon;;
 
-concept_closed_polyline <= nrel_using_constants:
-	{
-	concept_polyline; 
-	nrel_boundary_point
-	};;
 
 concept_closed_polyline <- rrel_key_sc_element: 
 	...

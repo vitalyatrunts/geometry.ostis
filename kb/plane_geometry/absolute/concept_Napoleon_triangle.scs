@@ -5,15 +5,6 @@ concept_Napoleon_triangle => nrel_main_idtf: [Napoleon triangle] (*<-lang_en;;*)
 
 concept_Napoleon_triangle => nrel_idtf: [Множество треугольников Наполеона] (*<-lang_ru;;*);;
 
-concept_Napoleon_triangle <= nrel_using_constants:
-	{
-	nrel_side;
-	concept_triangle;
-	concept_equilateral_triangle;
-	nrel_center;
-	nrel_vertex
-	};;
-
 concept_Napoleon_triangle <- rrel_key_sc_element: 
 	...
 	(*

@@ -22,15 +22,6 @@ concept_circle <= nrel_strict_inclusion: concept_linear_figure;;
 
 concept_circle => nrel_strict_inclusion: concept_circle_arc;;
 
-concept_circle <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	concept_geometric_point; 
-	concept_plane; 
-	nrel_distance; 
-	nrel_centre
-	};;
-
 concept_circle <- rrel_key_sc_element: 
 	...
 	(*

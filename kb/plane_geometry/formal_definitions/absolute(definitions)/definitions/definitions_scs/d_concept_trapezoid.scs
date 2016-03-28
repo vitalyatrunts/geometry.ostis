@@ -12,3 +12,10 @@ d_concept_trapezoid <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_trapezoid <= nrel_using_constants:
+	{
+	 nrel_side; 
+	 nrel_parallelism;  
+	 nrel_opposite
+	};;	

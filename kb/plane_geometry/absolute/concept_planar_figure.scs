@@ -38,14 +38,6 @@ concept_planar_figure => nrel_strict_inclusion: concept_plane;;
 
 concept_planar_figure => nrel_strict_inclusion: concept_planar_line;;
 
-concept_planar_figure <= nrel_using_constants:
-	{
-	concept_planar_figure; 
-	concept_geometric_figure; 
-	concept_geometric_point; 
-	concept_plane
-	};;
-
 concept_planar_figure -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
 concept_planar_figure -> rrel_example: struct_Straight_Line_A;;
 concept_planar_figure -> rrel_example: struct_Rectangular_triangle_D_F_G;;

@@ -7,19 +7,6 @@ concept_Simson_line => nrel_idtf: [Класс прямых Симсона] (*<-l
 
 concept_line => nrel_strict_inclusion: concept_Simson_line;;
 
-concept_Simson_line <= nrel_using_constants:
-	{
-		concept_straight_line; 
-		nrel_perpendicular; 
-		concept_segment;
-		concept_geometric_point;
-		concept_circle;
-		nrel_be_inscribed;
-		concept_triangle;
-		concept_ray;
-		nrel_side
-	};;
-
 concept_Simson_line <- rrel_key_sc_element: 
 	...
 	(*

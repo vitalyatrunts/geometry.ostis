@@ -1,5 +1,5 @@
 stat_triangle_similarity_angle_angle <- statement;;
-stat_triangle_similarity_angle_angle <- sc_statement_for_solver;;
+//stat_triangle_similarity_angle_angle <- sc_statement_for_solver;;
 stat_triangle_similarity_angle_angle -> rrel_key_sc_element: concept_triangle; nrel_similarity; nrel_internal_angle;;
 
 stat_triangle_similarity_angle_angle => nrel_main_idtf: [Утв.(треугольник;подобие*;внутренний угол*)] (* <-lang_ru;; *);;

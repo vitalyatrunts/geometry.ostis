@@ -15,11 +15,3 @@ concept_geometric_body => nrel_idtf: [Множество всевозможны�
 concept_geometric_body <= nrel_strict_inclusion: concept_geometric_figure;;
 
 concept_geometric_body <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
-
-concept_geometric_body <= nrel_using_constants:
-	{
-	concept_space; 
-	nrel_length; 
-	nrel_height; 
-	nrel_width
-	};;

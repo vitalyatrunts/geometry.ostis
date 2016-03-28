@@ -12,3 +12,10 @@ d_concept_circle_arc <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_circle_arc <= nrel_using_constants:
+	{
+	concept_circle; 
+	rrel_between; 
+	concept_geometric_point
+	};;

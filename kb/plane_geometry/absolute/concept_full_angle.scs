@@ -16,13 +16,6 @@ concept_full_angle => nrel_idtf: [Множество знаков всевозм
 
 concept_full_angle <= nrel_strict_inclusion: concept_planar_angle;;
 	
-concept_full_angle <= nrel_using_constants:
-	{
-	concept_angle; 
-	concept_ray; 
-	nrel_generatrix
-	};;
-
 concept_full_angle <- rrel_key_sc_element: 
 	...
 	(*

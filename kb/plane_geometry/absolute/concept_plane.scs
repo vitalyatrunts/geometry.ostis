@@ -23,9 +23,3 @@ concept_plane -> rrel_example: struct_Plane_P;;
 concept_plane <=> nrel_analogue: concept_straight_line;;
 
 concept_plane <=> nrel_antipode: concept_non_planar_surface;;
-
-concept_convex_polygon <= nrel_using_constants:
-	{
-	concept_plane; 
-	concept_surface
-	};;

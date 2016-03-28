@@ -19,12 +19,6 @@ concept_geometric_figure_without_boundary_points => nrel_strict_inclusion: conce
 concept_geometric_figure_without_boundary_points => nrel_strict_inclusion: concept_interval;;
 
 concept_geometric_figure_without_boundary_points => nrel_strict_inclusion: concept_opened_half_plane;;
-
-concept_geometric_figure_without_boundary_points <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	nrel_boundary_point
-	};;	
 	
 concept_geometric_figure_without_boundary_points -> rrel_example: struct_Opened_ray_k;;
 

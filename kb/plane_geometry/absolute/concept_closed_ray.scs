@@ -21,14 +21,7 @@ concept_closed_ray => nrel_idtf: [Множество всевозможных з
 concept_closed_ray <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
 
 concept_closed_ray <= nrel_strict_inclusion: concept_ray;;
-
-concept_closed_ray <= nrel_using_constants:
-	{
-	concept_ray; 
-	nrel_boundary_point
-	};;	
 	
-
 concept_closed_ray <=> nrel_analogue: concept_closed_half_plane;;
 
 concept_closed_ray <=> nrel_antipode: concept_opened_ray;;

@@ -1,4 +1,3 @@
-
 d_concept_hexagon <- rrel_main_key_sc_element: 
         ... 
 	(*
@@ -14,4 +13,8 @@ d_concept_hexagon <- rrel_main_key_sc_element:
 		*);;
 	*);;
 
-
+d_concept_hexagon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	nrel_side
+	};;

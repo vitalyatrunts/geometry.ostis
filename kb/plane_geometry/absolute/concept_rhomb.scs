@@ -16,13 +16,6 @@ concept_rhomb <= nrel_strict_inclusion: concept_parallelogram;;
 
 concept_rhomb => nrel_strict_inclusion: concept_square;;
 
-concept_rhomb <= nrel_using_constants:
-	{
-	concept_parallelogram;
-	nrel_side;
-	nrel_congruence
-	};;
-
 concept_rhomb <- rrel_key_sc_element: 
 	...
 	(*

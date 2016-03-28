@@ -18,10 +18,3 @@ concept_linear_angle <= nrel_strict_inclusion: concept_angle;;
 
 concept_linear_angle <= nrel_strict_inclusion: concept_linear_figure;;
 
-concept_linear_angle <= nrel_using_constants:
-	{
-	concept_geometric_figure; 
-	concept_ray; 
-	concept_geometric_point; 
-	concept_plane
-	};;

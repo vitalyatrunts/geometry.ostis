@@ -16,3 +16,9 @@ d_concept_non_convex_angle <- rrel_main_key_sc_element:
 		*);;
 	*);;
 
+d_concept_non_convex_angle <= nrel_using_constants:
+				{
+				nrel_angle_measure;
+                    		concept_angle;
+                    		rrel_angular_degree
+				};;

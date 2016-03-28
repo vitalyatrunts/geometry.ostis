@@ -17,12 +17,3 @@ concept_round_sector => nrel_idtf: [Множество знаков всевоз
 concept_round_sector <= nrel_strict_inclusion: concept_planar_figure;;
 
 concept_round_sector <= nrel_strict_inclusion: concept_flat_geometric_figure;;
-
-concept_round_sector <= nrel_using_constants:
-	{
-	concept_round; 
-	concept_circle_arc;  
-	concept_circle; 
-	nrel_center_of_circle; 
-	nrel_radius
-	};;	

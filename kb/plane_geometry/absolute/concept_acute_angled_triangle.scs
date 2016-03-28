@@ -13,14 +13,7 @@ concept_acute_angled_triangle => nrel_idtf: [Множество всевозмо
 concept_acute_angled_triangle => nrel_idtf: [Множество знаков всевозможных остроугольных треугольников] (* <- lang_ru;; *);;
 
 concept_acute_angled_triangle <= nrel_strict_inclusion: concept_triangle;;
-
-concept_acute_angled_triangle <= nrel_using_constants:
-	{
-	concept_angle; 
-	concept_triangle; 
-	concept_acute_angle
-	};;
-				
+	
 concept_acute_angled_triangle -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
 concept_acute_angled_triangle -> rrel_example: struct_Triangle_A_B_C;;
 

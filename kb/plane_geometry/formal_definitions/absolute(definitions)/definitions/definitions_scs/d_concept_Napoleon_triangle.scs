@@ -12,3 +12,12 @@ d_concept_Napoleon_triangle <= nrel_sc_text_translation:
 		<- rrel_example: 
 		[Если на сторонах произвольного треугольника внешним образом построить равносторонние треугольники, то их центры являются вершинами равностороннего внешнего треугольника Наполеона.] (*<-lang_ru;;*);;
 		*);;
+
+d_concept_Napoleon_triangle <= nrel_using_constants:
+	{
+	nrel_side;
+	concept_triangle;
+	concept_equilateral_triangle;
+	nrel_center;
+	nrel_vertex
+	};;

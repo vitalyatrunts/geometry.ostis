@@ -16,13 +16,6 @@ concept_circle_arc => nrel_idtf: [Множество знаков всевозм
 
 concept_circle_arc <= nrel_strict_inclusion: concept_circle;;
 
-concept_circle_arc <= nrel_using_constants:
-	{
-	concept_circle; 
-	rrel_between; 
-	concept_geometric_point
-	};;
-
 concept_circle_arc <- rrel_key_sc_element: 
 	...
 	(*

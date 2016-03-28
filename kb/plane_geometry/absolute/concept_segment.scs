@@ -22,14 +22,7 @@ concept_segment <= nrel_strict_inclusion: concept_rectilinear_figure;;
 
 concept_segment <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
 
-concept_segment <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
-
-concept_segment <= nrel_using_constants:
-	{
-	concept_straight_line; 
-	concept_geometric_point; 
-	rrel_between
-	};;	
+concept_segment <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;	
 		
 concept_segment -> rrel_example: struct_Segment_A_B;;
 

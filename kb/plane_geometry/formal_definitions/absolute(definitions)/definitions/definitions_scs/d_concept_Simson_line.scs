@@ -12,3 +12,15 @@ d_concept_Simson_line <= nrel_sc_text_translation:
 	[Прямая Симсона - это прямая, на которой лежат основания перпендикуляров, опущенных из точки описанной окружности треугольника на его стороны или продолжение сторон.](* <- lang_ru;; *);;
 	*);;
 
+d_concept_Simson_line <= nrel_using_constants:
+	{
+		concept_straight_line; 
+		nrel_perpendicular; 
+		concept_segment;
+		concept_geometric_point;
+		concept_circle;
+		nrel_be_inscribed;
+		concept_triangle;
+		concept_ray;
+		nrel_side
+	};;
