@@ -5,16 +5,11 @@ concept_straight_angle => nrel_main_idtf:
 	[straight angle] (* <- lang_en;; *);;
 
 concept_straight_angle => nrel_idtf: [Понятие развернутого угла] (* <- lang_ru;; *);;
-
 concept_straight_angle => nrel_idtf: [Класс развернутых углов] (* <- lang_ru;; *);;
-
 concept_straight_angle => nrel_idtf: [Множество всевозможных развернутых углов] (* <- lang_ru;; *);;
-
 concept_straight_angle => nrel_idtf: [Множество знаков всевозможных развернутых углов] (* <- lang_ru;; *);;
 
 concept_straight_angle <= nrel_strict_inclusion: concept_angle;;
-
-concept_straight_angle -> rrel_example: struct_Straight_angle_A_O_B;;
 
 concept_straight_angle <- rrel_key_sc_element: 
 	...
@@ -24,6 +19,7 @@ concept_straight_angle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 		"file://images/concept_straight_angle.png";;
-
+		*);;
 	*);;
-*);;
+
+concept_straight_angle -> rrel_example: struct_Straight_angle_A_O_B;;

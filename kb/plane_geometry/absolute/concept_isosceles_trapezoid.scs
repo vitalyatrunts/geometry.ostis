@@ -1,19 +1,13 @@
 sc_node_not_relation -> concept_isosceles_trapezoid;;
 
 concept_isosceles_trapezoid => nrel_main_idtf:
-	[равнобедренная трапеция]
-	(* <- lang_ru;;	*);
-	[isosceles trapezoid]
-	(* <- lang_en;; *);;
+	[равнобедренная трапеция](* <- lang_ru;; *);
+	[isosceles trapezoid](* <- lang_en;; *);;
 
 concept_isosceles_trapezoid => nrel_idtf: [равнобокая трапеция] (* <- lang_ru;; *);;
-
 concept_isosceles_trapezoid => nrel_idtf: [Класс равнобедренная трапеций] (* <- lang_ru;; *);;
-
 concept_isosceles_trapezoid => nrel_idtf: [Понятие равнобедренная трапеции] (* <- lang_ru;; *);;
-
 concept_isosceles_trapezoid => nrel_idtf: [Множество всевозможных равнобедренных трапеций] (* <- lang_ru;; *);;
-
 concept_isosceles_trapezoid => nrel_idtf: [Множество знаков всевозможных равнобедренных трапеций] (* <- lang_ru;; *);;
 
 concept_isosceles_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
@@ -26,8 +20,7 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 		"file://images/concept_isosceles_trapezoid.png";;
-
+		*);;
 	*);;
-*);;
 
 concept_isosceles_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;

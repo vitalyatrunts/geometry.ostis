@@ -6,12 +6,12 @@ concept_Morley_triangle => nrel_main_idtf: [Morley triangle] (* <- lang_en;; *);
 concept_Morley_triangle => nrel_idtf: [Множество треугольников Морлея] (* <- lang_ru;; *);;
 concept_Morley_triangle => nrel_idtf: [треугольник Морли] (* <- lang_ru;; *);;
 
-concept_equilateral_triangle => nrel_strict_inclusion: concept_Morley_triangle;;
+concept_Morley_triangle <= nrel_strict_inclusion: concept_equilateral_triangle;;
 
 concept_Morley_triangle <= nrel_subdividing: ... 
 	(*
-	-> concept_first_Morley_triangle; concept_second_Morley_triangle; concept_third_Morley_triangle;;
 	=> nrel_main_idtf: [Разбиение по способу образования] (* <- lang_ru;; *);;
+	-> concept_first_Morley_triangle; concept_second_Morley_triangle; concept_third_Morley_triangle;;
 	*);;
 
 concept_first_Morley_triangle => nrel_main_idtf: [первый треугольник Морлея] (* <- lang_ru;; *);;

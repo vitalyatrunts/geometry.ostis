@@ -1,28 +1,18 @@
 sc_node_not_relation -> concept_polygon;;
 
 concept_polygon => nrel_main_idtf:
-	[многоугольник]
-	(* <- lang_ru;;	*);
-	[polygon]
-	(* <- lang_en;;	*);;
+	[многоугольник] (* <- lang_ru;; *);
+	[polygon] (* <- lang_en;; *);;
 
 concept_polygon => nrel_idtf: [n-угольник] (* <- lang_ru;; *);;
-
 concept_polygon => nrel_idtf: [плоский многоугольник] (* <- lang_ru;; *);;
-
 concept_polygon => nrel_idtf: [Класс многоугольников] (* <- lang_ru;; *);;
-
 concept_polygon => nrel_idtf: [Понятие многоугольника] (* <- lang_ru;; *);;
-
 concept_polygon => nrel_idtf: [Множество всевозможных многоугольников] (* <- lang_ru;; *);;
-
 concept_polygon => nrel_idtf: [Множество знаков всевозможных многоугольников] (* <- lang_ru;; *);;
 
-concept_polygon <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
-
-concept_polygon <= nrel_strict_inclusion: concept_planar_figure;;
-
 concept_polygon => nrel_strict_inclusion: concept_linear_polygon;;
+concept_polygon => nrel_strict_inclusion: concept_hexagon;;
 
 concept_polygon <= nrel_subdividing:
 	...
@@ -36,7 +26,6 @@ concept_polygon -> rrel_example: struct_Polyhon_K_L_M_N_E_P;;
 concept_polygon -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;
 concept_polygon -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
 concept_polygon -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
-
 concept_polygon -> rrel_example: struct_Rectangular_triangle_D_F_G;;
 concept_polygon -> rrel_example: struct_Scalene_triangle_K_L_M;;
 concept_polygon -> rrel_example: struct_Obtuse_triangle_L_D_K;;
