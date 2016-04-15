@@ -1,17 +1,12 @@
 sc_node_not_relation -> concept_isosceles_triangle;;
 
 concept_isosceles_triangle => nrel_main_idtf:
-	[равнобедренный треугольник]
-	(* <- lang_ru;;	*);
-	[isosceles triangle]
-	(* <- lang_en;;	*);;
+	[равнобедренный треугольник](* <- lang_ru;; *);
+	[isosceles triangle] (* <- lang_en;; *);;
 
 concept_isosceles_triangle => nrel_idtf: [Класс равнобедренных треугольников] (* <- lang_ru;; *);;
-
 concept_isosceles_triangle => nrel_idtf: [Понятие равнобедренного треугольника] (* <- lang_ru;; *);;
-
 concept_isosceles_triangle => nrel_idtf: [Множество всевозможных равнобедренных треугольников] (* <- lang_ru;; *);;
-
 concept_isosceles_triangle => nrel_idtf: [Множество знаков всевозможных равнобедренных треугольников] (* <- lang_ru;; *);;
 
 concept_isosceles_triangle <- rrel_key_sc_element: 
@@ -22,6 +17,5 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 		"file://images/concept_isosceles_triangle.png";;
-
+		*);;
 	*);;
-*);;

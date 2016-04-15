@@ -1,35 +1,27 @@
 sc_node_not_relation -> concept_triangle;;
 
 concept_triangle => nrel_main_idtf:
-	[треугольник]
-	(* <- lang_ru;;	*);
-	[triangle]
-	(* <- lang_en;;	*);;
+	[треугольник](* <- lang_ru;; *);
+	[triangle](* <- lang_en;; *);;
 
 concept_triangle => nrel_idtf: [Класс треугольников] (* <- lang_ru;; *);;
-
 concept_triangle => nrel_idtf: [плоский треугольник] (* <- lang_ru;; *);;
-
 concept_triangle => nrel_idtf: [Понятие треугольника] (* <- lang_ru;; *);;
-
 concept_triangle => nrel_idtf: [Множество всевозможных треугольников] (* <- lang_ru;; *);;
-
 concept_triangle => nrel_idtf: [Множество знаков всевозможных треугольников] (* <- lang_ru;; *);;
-
 concept_triangle => nrel_idtf: [многоугольник с тремя сторонами] (* <- lang_ru;; *);;
 
-concept_triangle <= nrel_strict_inclusion: concept_convex_polygon;;
-
 concept_triangle => nrel_strict_inclusion: concept_isosceles_triangle;;
-
 concept_triangle => nrel_strict_inclusion: concept_equilateral_triangle;;
 
-concept_triangle <= nrel_subdividing: 
-	{  
-	concept_acute_angled_triangle;
+concept_triangle <= nrel_subdividing:
+	... 
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку величины внутренних углов] (* <- lang_ru;; *);;
+	-> concept_acute_angled_triangle;
 	concept_rectangular_triangle;
-	concept_obtuse_triangle
-	};;
+	concept_obtuse_triangle;;
+	*);;
 	
 concept_triangle -> rrel_example: struct_Triangle_A_B_C;;
 concept_triangle -> rrel_example: struct_Rectangular_triangle_D_F_G;;
@@ -46,6 +38,5 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 		"file://images/concept_triangle.png";;
-
+		*);;
 	*);;
-*);;

@@ -1,36 +1,20 @@
 sc_node_not_relation -> concept_angle;;
 
 concept_angle => nrel_main_idtf:
-	[угол]
-	(* <- lang_ru;; *);
-	[angle]
-	(* <- lang_en;; *);;
+	[угол](* <- lang_ru;; *);
+	[angle](* <- lang_en;; *);;
 
 concept_angle => nrel_idtf: [плоский угол] (* <- lang_ru;; *);;
-
 concept_angle => nrel_idtf: [планарный угол] (* <- lang_ru;; *);;
-
 concept_angle => nrel_idtf: [Понятие угла] (* <- lang_ru;; *);;
-
 concept_angle => nrel_idtf: [Класс углов] (* <- lang_ru;; *);;
-
 concept_angle => nrel_idtf: [Множество всевозможных углов] (* <- lang_ru;; *);;
-
 concept_angle => nrel_idtf: [Множество знаков всевозможных углов] (* <- lang_ru;; *);;
 
-concept_angle <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
-
 concept_angle => nrel_strict_inclusion: concept_planar_angle;;
-
 concept_angle => nrel_strict_inclusion: concept_linear_angle;;
-
 concept_angle => nrel_strict_inclusion: concept_non_convex_angle;;
-
-concept_angle => nrel_strict_inclusion: concept_straight_angle;;
-
 concept_angle => nrel_strict_inclusion: concept_full_angle;;
-
-concept_angle => nrel_strict_inclusion: concept_zero_angle;;
 
 concept_angle <= nrel_subdividing:
 	...
@@ -45,15 +29,13 @@ concept_angle <- rrel_key_sc_element:
 	...
 	(*
 	<- illustration;; 
-	<= nrel_sc_text_translation: ...
+	<= nrel_sc_text_translation:
+		...
 		(*
 		-> rrel_example: 
 		"file://images/concept_angle.png";;
-
+		*);;
 	*);;
-*);;
-
-	
 
 concept_angle -> rrel_example: struct_Acute_Angle_K_L_M;;
 concept_angle -> rrel_example: struct_Non_convex_angle_A_B_K;;

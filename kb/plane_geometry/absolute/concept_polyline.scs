@@ -1,28 +1,15 @@
 sc_node_not_relation -> concept_polyline;;
 
 concept_polyline => nrel_main_idtf:
-	[ломаная]
-	(* <- lang_ru;; *);
-	[polyline]
-	(* <- lang_en;;	*);;
+	[ломаная](* <- lang_ru;; *);
+	[polyline](* <- lang_en;; *);;
 
 concept_polyline => nrel_idtf: [Цепь отрезков] (* <- lang_ru;; *);;
-
 concept_polyline => nrel_idtf: [Класс ломаная] (* <- lang_ru;; *);;
-
 concept_polyline => nrel_idtf: [Понятие ломаной] (* <- lang_ru;; *);;
-
 concept_polyline => nrel_idtf: [Множество ломаных] (* <- lang_ru;; *);;
-
 concept_polyline => nrel_idtf: [Множество всевозможных ломаных] (* <- lang_ru;; *);;
-
 concept_polyline => nrel_idtf: [Множество разных ломаных] (* <- lang_ru;; *);;
-
-concept_polyline <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
-
-concept_polyline <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
-
-concept_polyline <= nrel_strict_inclusion: concept_planar_line;;
 
 concept_polyline <= nrel_subdividing:
 	...
@@ -40,9 +27,8 @@ concept_polyline <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 		"file://images/concept_polyline.png";;
-
+		*);;
 	*);;
-*);;
 
 
 

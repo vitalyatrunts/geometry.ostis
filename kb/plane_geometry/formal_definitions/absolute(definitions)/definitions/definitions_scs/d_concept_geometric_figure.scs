@@ -12,3 +12,8 @@ d_concept_geometric_figure <- rrel_main_key_sc_element:
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
+
+d_concept_geometric_figure <= nrel_using_constants:
+	{
+	concept_geometric_point
+	};;

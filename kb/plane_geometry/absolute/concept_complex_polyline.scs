@@ -5,14 +5,9 @@ concept_complex_polyline => nrel_main_idtf:
 	[complex polyline] (* <- lang_en;; *);;
 
 concept_complex_polyline => nrel_idtf: [Класс сложных ломаных] (* <- lang_ru;; *);;
-
 concept_complex_polyline => nrel_idtf: [Понятие сложной ломаной] (* <- lang_ru;; *);;
-
 concept_complex_polyline => nrel_idtf: [Множество сложных ломанных] (* <- lang_ru;; *);;
-
 concept_complex_polyline => nrel_idtf: [Множество всевозможных сложных ломаных] (* <- lang_ru;; *);;
-
-concept_complex_polyline <= nrel_strict_inclusion: concept_polyline;;
 
 concept_complex_polyline <- rrel_key_sc_element: 
 	...
