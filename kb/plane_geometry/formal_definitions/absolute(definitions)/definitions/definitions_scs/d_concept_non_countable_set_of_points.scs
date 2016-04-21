@@ -1,16 +1,15 @@
-d_concept_non_countable_set_of_points <- rrel_main_key_sc_element: 
-     	... 
+d_concept_non_countable_set_of_points <- definition;;
+
+d_concept_non_countable_set_of_points => nrel_main_idtf: [Опр.(несчетное множество точек)] (* <- lang_ru;; *);;
+
+d_concept_non_countable_set_of_points -> rrel_key_sc_element: concept_non_countable_set_of_points;;
+
+d_concept_non_countable_set_of_points <= nrel_sc_text_translation: 
+	...
 	(*
-	=> nrel_main_idtf: [Опр.(несчетное множество точек)] (* <- lang_ru;; *);;
-	<- definition;; 
-	-> rrel_key_sc_element: concept_non_countable_set_of_points;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Несчетное множество точек - это несчетное множество, каждый элемент которого является геометрической точкой.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Несчетное множество точек - это несчетное множество, каждый элемент которого является геометрической точкой.]
+		(* <- lang_ru;; *);;
 	*);;
 
 d_concept_non_countable_set_of_points <= nrel_using_constants:

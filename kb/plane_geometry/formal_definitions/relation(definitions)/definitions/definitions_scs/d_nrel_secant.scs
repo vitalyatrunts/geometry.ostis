@@ -1,22 +1,20 @@
-d_nrel_secant <- rrel_main_key_sc_element: 
-	...
-	(*
-	=> nrel_main_idtf: [Опр.(секущая*)] (* <- lang_ru;; *);; 
-	-> rrel_key_sc_element: nrel_secant;;
-	<- definition;; 
-	<= nrel_using_constants:
-		{
+d_nrel_secant
+=> nrel_main_idtf: [Опр.(секущая*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(secant*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_secant;
+
+<= nrel_using_constants:
+	{
 		concept_straight_line; 
 		concept_geometric_point; 
 		concept_circle
-		};;  
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Секущая - прямая, проходящая через две произвольные точки окружности.]
-			(* <- lang_ru;; *);;
-		*);;
-	*);; 
+	};
 
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Секущая - прямая, проходящая через две произвольные точки окружности.] (* <- lang_ru;; *);;
+	*);;
 

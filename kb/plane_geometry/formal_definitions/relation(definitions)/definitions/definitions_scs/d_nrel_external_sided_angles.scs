@@ -1,21 +1,20 @@
-d_nrel_external_sided_angles <- rrel_main_key_sc_element:
+d_nrel_external_sided_angles
+=> nrel_main_idtf: [Опр.(внешние односторонние углы*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(external sided angles*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_external_sided_angles;
+
+<= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_secant; 
+	nrel_between;
+	concept_straight_line
+	};
+
+<= nrel_sc_text_translation: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(внешние односторонние углы*)] (* <- lang_ru;; *);;
-	-> rrel_key_sc_element: nrel_external_sided_angles;;
-	<- definition;;  
-	
-	<= nrel_using_constants:
-		{
-		concept_angle; 
-		nrel_secant; 
-		rrel_between
-		};;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Внешние односторонние углы - углы, образованные при пересечении двух прямых секущей, лежащие по одну сторону от секущей не между прямыми.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Внешние односторонние углы - углы, образованные при пересечении двух прямых секущей, лежащие по одну сторону от секущей, не между прямыми.] (* <- lang_ru;; *);;
 	*);;

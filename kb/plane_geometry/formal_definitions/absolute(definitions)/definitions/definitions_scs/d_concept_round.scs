@@ -1,16 +1,15 @@
-d_concept_round <- rrel_main_key_sc_element: 
+d_concept_round <- definition;;
+
+d_concept_round => nrel_main_idtf: [Опр.(круг)] (* <- lang_ru;; *);;
+
+d_concept_round -> rrel_key_sc_element: concept_round;;
+
+d_concept_round <= nrel_sc_text_translation: 
 	...
 	(*
-	=> nrel_main_idtf: [Опр.(круг)] (* <- lang_ru;; *);;
-	<- definition;; 
-	-> rrel_key_sc_element: concept_round;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Круг - часть плоскости, ограниченная окружностью.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Круг - часть плоскости, ограниченная окружностью.]
+		(* <- lang_ru;; *);;
 	*);;
 
 d_concept_round <= nrel_using_constants:

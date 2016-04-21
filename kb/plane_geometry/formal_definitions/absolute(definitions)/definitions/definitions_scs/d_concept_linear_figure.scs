@@ -1,14 +1,19 @@
-d_concept_linear_figure.scs <- rrel_main_key_sc_element: 
+d_concept_linear_figure <- definition;;
+
+d_concept_linear_figure => nrel_main_idtf: [Опр.(линейная фигура)] (* <- lang_ru;; *);;
+
+d_concept_linear_figure -> rrel_key_sc_element: concept_linear_figure;;
+
+d_concept_linear_figure <= nrel_sc_text_translation: 
 	...
 	(*
-	=> nrel_main_idtf: [Поясн.(линейная фигура)] (* <- lang_ru;; *);;
-	<- explanation;; 
-	-> rrel_key_sc_element: concept_linear_figure;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линейная фигура - класс геометрических фигур, объединяющий все геометрические фигуры, имеющих форму линии.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Линейная фигура - класс геометрических фигур, объединяющий все геометрические фигуры, имеющие форму линии.]
+		(* <- lang_ru;; *);;
 	*);;
+
+d_concept_linear_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_line
+	};;
