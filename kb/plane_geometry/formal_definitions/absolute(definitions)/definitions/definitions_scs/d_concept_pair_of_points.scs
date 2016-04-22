@@ -1,16 +1,15 @@
-d_concept_pair_of_points <- rrel_main_key_sc_element: 
-        ...
+d_concept_pair_of_points <- definition;;
+
+d_concept_pair_of_points => nrel_main_idtf: [Опр.(пара точек)] (* <- lang_ru;; *);;
+
+d_concept_pair_of_points -> rrel_key_sc_element: concept_pair_of_points;;
+
+d_concept_pair_of_points <= nrel_sc_text_translation: 
+	...
 	(*
-	=> nrel_main_idtf: [Опр.(пара точек)] (* <- lang_ru;; *);;
-	<- definition;; 
-	-> rrel_key_sc_element: concept_pair_of_points;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Пара точек - пара, каждый элемент которой является геометрической точкой.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Пара точек - пара, каждый элемент которой является геометрической точкой.]
+		(* <- lang_ru;; *);;
 	*);;
 
 d_concept_pair_of_points <= nrel_using_constants:

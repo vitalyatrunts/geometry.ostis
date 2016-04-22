@@ -1,16 +1,16 @@
-d_concept_parallelogram <- rrel_main_key_sc_element: 
-        ... 
+d_concept_parallelogram <- definition;;
+
+d_concept_parallelogram => nrel_main_idtf: [Опр.(параллелограмм)] (* <- lang_ru;; *);;
+d_concept_parallelogram => nrel_main_idtf: [Def.(parallelogram)] (* <- lang_en;; *);;
+
+d_concept_parallelogram -> rrel_key_sc_element: concept_parallelogram;;
+
+d_concept_parallelogram <= nrel_sc_text_translation: 
+	...
 	(*
-	=> nrel_main_idtf: [Опр.(параллелограмм)] (* <- lang_ru;; *);;
-	-> rrel_key_sc_element: concept_parallelogram;;
-	<- definition;; 
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Параллелограмм - это четырёхугольник, у которого противоположные стороны попарно параллельны.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Параллелограмм - это четырёхугольник, у которого противоположные стороны попарно параллельны.]
+		(* <- lang_ru;; *);;
 	*);;
 
 d_concept_parallelogram <= nrel_using_constants:

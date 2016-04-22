@@ -1,16 +1,15 @@
-d_concept_planar_angle <- rrel_main_key_sc_element: 
-        ... 
+d_concept_planar_angle <- definition;;
+
+d_concept_planar_angle => nrel_main_idtf: [Опр.(планарный угол)] (* <- lang_ru;; *);;
+
+d_concept_planar_angle -> rrel_key_sc_element: concept_planar_angle;;
+
+d_concept_planar_angle <= nrel_sc_text_translation: 
+	...
 	(*
-	=> nrel_main_idtf: [Опр.(планарный угол)] (* <- lang_ru;; *);;
-	<- definition;; 
-	-> rrel_key_sc_element: concept_planar_angle;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Планарный угол - геометрическая фигура неограниченного размера, образованная двумя закрытыми лучами, выходящими из одной точки, и всеми точками плоскости, заключёнными между этими лучами.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Планарный угол - геометрическая фигура неограниченного размера, образованная двумя закрытыми лучами, выходящими из одной точки, и всеми точками плоскости, заключёнными между этими лучами.]
+		(* <- lang_ru;; *);;
 	*);;
 
 d_concept_planar_angle <= nrel_using_constants:
@@ -19,5 +18,5 @@ d_concept_planar_angle <= nrel_using_constants:
 	concept_closed_ray; 
 	concept_geometric_figure; 
 	concept_plane; 
-	rrel_between
+	nrel_between
 	};;

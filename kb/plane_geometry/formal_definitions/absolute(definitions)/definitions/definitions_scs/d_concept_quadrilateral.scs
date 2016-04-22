@@ -1,16 +1,16 @@
-d_concept_quadrilateral <- rrel_main_key_sc_element: 
-        ... 
+d_concept_quadrilateral <- definition;;
+
+d_concept_quadrilateral => nrel_main_idtf: [Опр.(четырехугольник)] (* <- lang_ru;; *);;
+d_concept_quadrilateral => nrel_main_idtf: [Def.(quadrilateral)] (* <- lang_en;; *);;
+
+d_concept_quadrilateral -> rrel_key_sc_element: concept_quadrilateral;;
+
+d_concept_quadrilateral <= nrel_sc_text_translation: 
+	...
 	(*
-	=> nrel_main_idtf: [Опр.(четырехугольник)] (* <- lang_ru;; *);;
-	<- definition;; 
-	-> rrel_key_sc_element: concept_quadrilateral;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Четырехугольник - замкнутая ломаная линия, обазованная четырьмя различными, но лежащими в одной плоскости точками.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Четырехугольник - замкнутая ломаная линия, обазованная четырьмя различными, но лежащими в одной плоскости точками.]
+		(* <- lang_ru;; *);;
 	*);;
 
 d_concept_quadrilateral <= nrel_using_constants:

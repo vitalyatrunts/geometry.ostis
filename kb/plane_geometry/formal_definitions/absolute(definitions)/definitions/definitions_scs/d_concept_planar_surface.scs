@@ -1,19 +1,18 @@
-d_concept_surface <- rrel_main_key_sc_element: 
-        ...
+d_concept_planar_surface <- definition;; 
+
+d_concept_planar_surface => nrel_main_idtf: [Опр.(планарная поверхность)] (* <- lang_ru;; *);;
+
+d_concept_planar_surface -> rrel_key_sc_element: concept_planar_surface;;
+
+d_concept_planar_surface <= nrel_sc_text_translation: 
+	...
 	(*
-	=> nrel_main_idtf: [Опр.(планарная поверхность)] (* <- lang_ru;; *);;
-	<- definition;; 
-	-> rrel_key_sc_element: concept_surface;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Планарная поверхность - это пересечение понятия планарной фигуры и понятия поверхности.]
-			(* <- lang_ru;; *);;
-		*);;
+	-> rrel_example: 
+		[Планарная поверхность - это пересечение понятия планарной фигуры и понятия поверхности.]
+		(* <- lang_ru;; *);;
 	*);;
 
-d_concept_half_plane <= nrel_using_constants:
+d_concept_planar_surface <= nrel_using_constants:
 	{
 	nrel_intersection; 
 	concept_planar_figure; 
