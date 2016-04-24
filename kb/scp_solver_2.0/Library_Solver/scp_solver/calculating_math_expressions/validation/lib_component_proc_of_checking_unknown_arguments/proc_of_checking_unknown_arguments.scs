@@ -47,7 +47,7 @@ scp_program -> proc_of_checking_unknown_arguments
 			(*
 		 	<- printEl;;
 
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _binary_arc;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _start_node;;
 
 		 	=> nrel_goto: .proc_of_checking_unknown_arguments_operator1D;;
 		 	*);;

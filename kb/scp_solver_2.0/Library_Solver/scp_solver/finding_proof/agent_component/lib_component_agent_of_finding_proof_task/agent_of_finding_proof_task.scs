@@ -65,7 +65,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genEl;;
 
-			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator1E2;;
 			*);;
@@ -74,7 +74,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
@@ -89,7 +89,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_then: .agent_of_finding_proof_task_operator1F2;;
 			=> nrel_else: .agent_of_finding_proof_task_operator1F1_error_message;;
@@ -113,8 +113,8 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem1;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator1F3;;
 			*);;
@@ -123,7 +123,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: atomic_formula;;
 
@@ -154,7 +154,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _task_node;;
 
@@ -169,7 +169,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator2E1;;
 			*);;
@@ -253,8 +253,8 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_then: .agent_of_finding_proof_task_operator2A6;;
 			=> nrel_else: .agent_of_finding_proof_task_operator2A_error_message;;
@@ -273,7 +273,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_2;;
 
@@ -284,7 +284,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _task_node;;
 
@@ -391,7 +391,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _task_node;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator2C4;;
 			*);;
@@ -400,7 +400,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: question_finding_proof;;
 
@@ -438,7 +438,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _task_node;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator2D4;;
 			*);;
@@ -447,7 +447,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: question_finished_successfully;;
 
@@ -473,7 +473,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _task_node;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator2E3;;
 			*);;
@@ -482,7 +482,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
 
@@ -496,7 +496,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
 		 	-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: ...;;
-			-> rrel_4: rrel_assign: rrel_scp_var: _answer2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _answer_of_finding_proof_task2;;
 				
            		=> nrel_then: .agent_of_finding_proof_task_operator3A2;;
            		=> nrel_else: .agent_of_finding_proof_task_operator5A;;
@@ -506,7 +506,7 @@ scp_program -> agent_of_finding_proof_task
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _answer2;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _answer_of_finding_proof_task2;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator3A3;;
 			*);;
@@ -530,7 +530,7 @@ scp_program -> agent_of_finding_proof_task
 				(*
                                 -> rrel_1: rrel_fixed: rrel_scp_var: _task_node;;
                                 -> rrel_2: rrel_fixed: rrel_scp_var: _message;;
-                                -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;         		 
+                                -> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;         		 
                           	*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
 
@@ -543,7 +543,7 @@ scp_program -> agent_of_finding_proof_task
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
 
-			=> nrel_goto: .agent_of_finding_proof_task_gen_answer;;
+			=> nrel_goto: .agent_of_finding_proof_task_gen_answer_of_finding_proof_task;;
 			*);;
 
 		-> .agent_of_finding_proof_task_operator5A 
@@ -710,7 +710,7 @@ scp_program -> agent_of_finding_proof_task
 			*);;
 
 		-> .agent_of_finding_proof_task_operator6G2 
-			(*                                       
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
@@ -732,7 +732,7 @@ scp_program -> agent_of_finding_proof_task
 			*);;
 
 		-> .agent_of_finding_proof_task_operator6H
-			(*                                       
+			(*
 			<- eraseElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
@@ -810,7 +810,7 @@ scp_program -> agent_of_finding_proof_task
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _solution;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_decomposition_of_action;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_decomposition_of_sc_action;;
 
 			=> nrel_goto: .agent_of_finding_proof_task_operator7D;; 
 			*);;
@@ -825,13 +825,13 @@ scp_program -> agent_of_finding_proof_task
 			=> nrel_goto: .agent_of_finding_proof_task_operator2D1;; 
 			*);;
 		
-		-> .agent_of_finding_proof_task_gen_answer 
+		-> .agent_of_finding_proof_task_gen_answer_of_finding_proof_task 
 			(*
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_finding_proof_task;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
 

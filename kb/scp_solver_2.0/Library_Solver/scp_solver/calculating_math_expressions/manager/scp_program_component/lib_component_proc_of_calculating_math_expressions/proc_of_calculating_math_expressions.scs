@@ -331,12 +331,21 @@ scp_program -> proc_of_calculating_math_expressions
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_step;;
 
-		  	=> nrel_then: .proc_of_calculating_math_expressions_operator4F7;;
+		  	=> nrel_then: .proc_of_calculating_math_expressions_operator4F777;;
 		  	=> nrel_else: .proc_of_calculating_math_expressions_operator4F8;;
 			*);;
 
+		-> .proc_of_calculating_math_expressions_operator4F777
+			(*
+		 	<- printEl;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _inst;;
+
+		 	=> nrel_goto: .proc_of_calculating_math_expressions_operator4F7;;
+		 	*);;
+
 		-> .proc_of_calculating_math_expressions_operator4F7
-                 	(*                                       
+            (*
 		  	<- genElStr3;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _final;;
@@ -431,7 +440,7 @@ scp_program -> proc_of_calculating_math_expressions
 
 		 	-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_of_binaries;;
 
-		 	=> nrel_goto: .proc_of_calculating_math_expressions_operator6D;;
+		 	=> nrel_goto: .proc_of_calculating_math_expressions_operator_return;;  //6D
 		 	*);;
 
 		-> .proc_of_calculating_math_expressions_operator6D 
@@ -440,7 +449,7 @@ scp_program -> proc_of_calculating_math_expressions
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _pattern_part;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _pattern_part;;
 
 		  	=> nrel_then: .proc_of_calculating_math_expressions_operator6E;;
                   	=> nrel_else: .proc_of_calculating_math_expressions_operator6H;;
@@ -452,24 +461,27 @@ scp_program -> proc_of_calculating_math_expressions
 
 		 	-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc1;;
 
-		 	=> nrel_goto: .proc_of_calculating_math_expressions_operator6F1;;
+		 	=> nrel_goto: .proc_of_calculating_math_expressions_operator6F;;
 		 	*);;
 
-		-> .proc_of_calculating_math_expressions_operator6F1 
+		-> .proc_of_calculating_math_expressions_operator6F_print
                  	(*
-		  	<- ifType;;
+		 	<- printEl;;
 
-		  	-> rrel_1: rrel_fixed: rrel_norole_relation: rrel_scp_var: _pattern_part;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _pattern_part;;
 
-		  	=> nrel_then: .proc_of_calculating_math_expressions_operator6D;;
-                  	=> nrel_else: .proc_of_calculating_math_expressions_operator6F2;;
-			*);;
+		 	=> nrel_goto: .proc_of_calculating_math_expressions_operator6F;;
+		 	*);;
 
-		-> .proc_of_calculating_math_expressions_operator6F2 
+		-> .proc_of_calculating_math_expressions_operator6F
                  	(*
-		  	<- ifType;;
+			<- searchElStr5;;
 
-		  	-> rrel_1: rrel_fixed: rrel_not_relation: rrel_scp_var: _pattern_part;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _pattern_part;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _some_result;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_assign: rrel_scp_var:  rrel_norole_relation:_some_result;;
 
 		  	=> nrel_then: .proc_of_calculating_math_expressions_operator6D;;
                   	=> nrel_else: .proc_of_calculating_math_expressions_operator6G;;
@@ -498,7 +510,7 @@ scp_program -> proc_of_calculating_math_expressions
 		  	<- return;;
 			*);;
 		*);;
-	*);;                                
+	*);;
 		
 
 

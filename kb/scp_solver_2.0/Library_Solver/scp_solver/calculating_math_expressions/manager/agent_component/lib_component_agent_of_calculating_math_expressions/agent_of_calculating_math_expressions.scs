@@ -80,7 +80,7 @@ scp_program -> agent_of_calculating_math_expressions
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
 
 		  	=> nrel_goto: .agent_of_calculating_math_expressions_operator2C1;;
-			*);;      
+			*);;
 
 		-> .agent_of_calculating_math_expressions_operator2C1 
                  	(*
@@ -90,9 +90,18 @@ scp_program -> agent_of_calculating_math_expressions
                      	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
                      	-> rrel_3: rrel_assign: rrel_scp_var: _result;;
 
-                  	=> nrel_then: .agent_of_calculating_math_expressions_operator2D1;;
+                  	=> nrel_then: .agent_of_calculating_math_expressions_operator2D111;;
                   	=> nrel_else: .agent_of_calculating_math_expressions_operator2C2;;
                		*);;
+
+		-> .agent_of_calculating_math_expressions_operator2D111
+			(*
+		  	<- printEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+
+		  	=> nrel_goto: .agent_of_calculating_math_expressions_operator2D1;;
+			*);;   
 
 		-> .agent_of_calculating_math_expressions_operator2C2 
                  	(*
