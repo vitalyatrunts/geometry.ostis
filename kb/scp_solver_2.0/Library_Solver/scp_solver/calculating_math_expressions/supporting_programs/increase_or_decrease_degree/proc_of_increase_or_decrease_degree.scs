@@ -151,7 +151,7 @@ scp_program -> proc_of_increase_or_decrease_degree
 			-> rrel_2: rrel_fixed: rrel_scp_const: [3];;
 
 		  	=> nrel_then: .proc_of_increase_or_decrease_degree_operator2B2;;
-			=> nrel_else: .proc_of_increase_or_decrease_degree_operator2B3;;
+			=> nrel_else: .proc_of_increase_or_decrease_degree_operator2A3;;
 			*);;
 
 		-> .proc_of_increase_or_decrease_degree_operator2B2 
@@ -187,7 +187,18 @@ scp_program -> proc_of_increase_or_decrease_degree
 			-> rrel_2: rrel_fixed: rrel_scp_const: [0,5];;
 
 		  	=> nrel_then: .proc_of_increase_or_decrease_degree_operator2B3;;
-			=> nrel_else: .proc_of_increase_or_decrease_degree_operator3B2;;
+			=> nrel_else: .proc_of_increase_or_decrease_degree_operator2A4;;
+			*);;
+
+		-> .proc_of_increase_or_decrease_degree_operator2A4
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _maybe_unit_of_measure;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _arc_for_unit_of_measure;;
+
+		  	=> nrel_goto: .proc_of_increase_or_decrease_degree_operator3A1;;
 			*);;
 
 		-> .proc_of_increase_or_decrease_degree_operator2B3 

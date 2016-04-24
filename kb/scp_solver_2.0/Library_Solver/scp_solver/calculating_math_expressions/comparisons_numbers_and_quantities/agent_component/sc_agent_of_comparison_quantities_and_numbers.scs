@@ -18,7 +18,7 @@ sc_agent_of_comparison_quantities_and_numbers
 	};
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_of_сomparisons_numbers_and_quantities
+	.platform_independent_realization_of_sc_agent_of_comparison_quantities_and_numbers
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
@@ -27,8 +27,8 @@ sc_agent_of_comparison_quantities_and_numbers
 		proc_of_checking_known_arguments;
 		proc_of_checking_units_of_measure;
 		proc_getting_value
-		};
-		
+		};;
+	
 	-> sc_agent_of_comparison_quantities_and_numbers_scp (* <- active_sc_agent;; *);;
 	*);;
 

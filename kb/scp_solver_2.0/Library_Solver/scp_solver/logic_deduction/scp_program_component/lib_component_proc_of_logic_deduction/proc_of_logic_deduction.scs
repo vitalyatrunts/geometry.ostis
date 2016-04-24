@@ -4,7 +4,7 @@ scp_program -> proc_of_logic_deduction
 		(*
 		-> rrel_1: rrel_in: _statement;;
                 -> rrel_2: rrel_in: _object;;
-		-> rrel_3: rrel_in: _answer;;
+		-> rrel_3: rrel_in: _answer_logic_deduction;;
                 -> rrel_4: rrel_in: _message;;
 		*);;
 
@@ -1230,10 +1230,10 @@ scp_program -> proc_of_logic_deduction
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_erase: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _element;;
 			
-			=> nrel_goto: .proc_of_logic_deduction_operator8G;;
+			=> nrel_goto: .proc_of_logic_deduction_operator8H;;
 			*);;
 
-		-> .proc_of_logic_deduction_operator8G
+	/*	-> .proc_of_logic_deduction_operator8G
 			(*
 			<- eraseElStr3;;
 
@@ -1242,7 +1242,7 @@ scp_program -> proc_of_logic_deduction
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
 			
 			=> nrel_goto: .proc_of_logic_deduction_operator8H;;
-			*);;
+			*);;  */
 
 		-> .proc_of_logic_deduction_operator8H
 			(*
@@ -1269,7 +1269,7 @@ scp_program -> proc_of_logic_deduction
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _part2;;
 		 	-> rrel_2: rrel_assign: rrel_scp_var: _tree2;;
                  	-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_pairs;;
-                 	-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_4: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 
                  	=> nrel_goto: .proc_of_logic_deduction_operator9B;;
 		 	*);;
@@ -1282,7 +1282,7 @@ scp_program -> proc_of_logic_deduction
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_const: rrel_norole_relation: _elem2;;
 
-                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 
 		  	=> nrel_goto: .proc_of_logic_deduction_operator9C;;
 			*);; 
@@ -1295,7 +1295,7 @@ scp_program -> proc_of_logic_deduction
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_const: rrel_not_relation: _elem2;;
 
-                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 
 		  	=> nrel_goto: .proc_of_logic_deduction_operator9C_print;;
 			*);;
@@ -1304,7 +1304,7 @@ scp_program -> proc_of_logic_deduction
 			(*
 		  	<- printEl;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 
 		  	=> nrel_goto: .proc_of_logic_deduction_operator_check_math1;;
 			*);;
@@ -1313,11 +1313,11 @@ scp_program -> proc_of_logic_deduction
 			(*
 		  	<- searchSetStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
 
-                 	-> rrel_set_3: rrel_assign: rrel_scp_var: _answer2;;
+                 	-> rrel_set_3: rrel_assign: rrel_scp_var: _answer_logic_deduction2;;
 
 		  	=> nrel_goto: .proc_of_logic_deduction_operator_check_math2;;
 			*);;
@@ -1326,7 +1326,7 @@ scp_program -> proc_of_logic_deduction
 			(*
 		  	<- searchElStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer2;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_logic_deduction2;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _maybe_math;;
 
@@ -1379,7 +1379,7 @@ scp_program -> proc_of_logic_deduction
 			(*
 		  	<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 		  	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _object;;
 
@@ -1400,7 +1400,7 @@ scp_program -> proc_of_logic_deduction
                  	(*
 		  	<- genElStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_logic_deduction;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _condition_object;;
 		  
@@ -1411,7 +1411,7 @@ scp_program -> proc_of_logic_deduction
 			(*
 		  	<- eraseEl;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _answer2;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _answer_logic_deduction2;;
 
 		  	=> nrel_goto: .proc_of_logic_deduction_operator10A;;
 			*);;
