@@ -9,10 +9,11 @@ nrel_secant => nrel_main_idtf:
 nrel_secant => nrel_idtf: [быть секущей*] (* <- lang_ru;; *);;
 
 nrel_secant <- relation;;
-
 nrel_secant <- binary_relation;;
-
 nrel_secant <- oriented_relation;;
+nrel_secant <- antireflexive_relation;;
+nrel_secant <- antisymmetric_relation;;
+nrel_secant <- antitransitive_relation;;
 
 nrel_secant => nrel_definitional_domain:
 	...

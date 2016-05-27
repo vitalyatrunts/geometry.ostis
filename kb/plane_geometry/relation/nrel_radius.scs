@@ -8,12 +8,6 @@ nrel_radius => nrel_main_idtf:
 
 nrel_radius => nrel_idtf: [быть радиусом*] (* <- lang_ru;; *);;
 
-nrel_radius <- relation;;
-
-nrel_radius <- binary_relation;;
-
-nrel_radius <- oriented_relation;;
-
 nrel_radius => nrel_definitional_domain: 
 	...
 	(*
@@ -43,6 +37,13 @@ nrel_radius => nrel_first_domain:
 
 nrel_radius => nrel_second_domain: 
 	concept_segment;;
+
+nrel_radius <- relation;;
+nrel_radius <- binary_relation;;
+nrel_radius <- oriented_relation;;
+nrel_radius <- antireflexive_relation;;
+nrel_radius <- antisymmetric_relation;;
+nrel_radius <- antitransitive_relation;;
 
 
 	

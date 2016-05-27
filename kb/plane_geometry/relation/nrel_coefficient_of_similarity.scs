@@ -5,12 +5,6 @@ nrel_coefficient_of_similarity => nrel_main_idtf:
 	(* <- lang_ru;; *);
 	[coefficient of similarity*]
 	(* <- lang_en;; *);;
-
-nrel_codirectional_rays <- relation;;	
-	
-nrel_codirectional_rays <- binary_relation;;
-
-nrel_codirectional_rays <- oriented_relation;;
 	
 nrel_coefficient_of_similarity => nrel_definitional_domain: 
 	...
@@ -27,4 +21,11 @@ nrel_coefficient_of_similarity => nrel_first_domain:
 
 nrel_coefficient_of_similarity => nrel_second_domain: 
 	number;;
+
+nrel_codirectional_rays <- relation;;
+nrel_codirectional_rays <- binary_relation;;
+nrel_codirectional_rays <- oriented_relation;;
+nrel_codirectional_rays <- antireflexive_relation;;
+nrel_codirectional_rays <- antisymmetric_relation;;
+nrel_codirectional_rays <- antitransitive_relation;;
 

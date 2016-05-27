@@ -7,16 +7,8 @@ nrel_central_angle => nrel_main_idtf:
 	(* <- lang_en;; *);;
 
 nrel_central_angle => nrel_idtf: [быть центральным углом*] (* <- lang_ru;; *);;
-
 nrel_central_angle => nrel_idtf: [центральный угол в окружности*] (* <- lang_ru;; *);;
-
 nrel_central_angle => nrel_idtf: [быть центральным углом в окружности*] (* <- lang_ru;; *);;
-
-nrel_center_line <- relation;;
-
-nrel_center_line <- binary_relation;;
-
-nrel_center_line <- oriented_relation;;
 
 nrel_central_angle => nrel_definitional_domain: 
 	...
@@ -35,7 +27,12 @@ nrel_central_angle => nrel_first_domain:
 nrel_central_angle => nrel_second_domain: 
 	concept_planar_angle;;
 
-
+nrel_central_angle <- relation;;
+nrel_central_angle <- binary_relation;;
+nrel_central_angle <- oriented_relation;;
+nrel_central_angle <- antireflexive_relation;;
+nrel_central_angle <- antisymmetric_relation;;
+nrel_central_angle <- antitransitive_relation;;
 
 nrel_central_angle <- rrel_key_sc_element: 
 	...

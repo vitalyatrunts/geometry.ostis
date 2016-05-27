@@ -8,12 +8,6 @@ nrel_center_of_regular_polygon => nrel_main_idtf:
 
 nrel_center_of_regular_polygon => nrel_idtf:[быть центром правильного многоугольника*](* <- lang_ru;; *);;
 
-nrel_center_of_regular_polygon <- relation;;
-
-nrel_center_of_regular_polygon <- binary_relation;;
-
-nrel_center_of_regular_polygon <- oriented_relation;;
-
 nrel_center_of_regular_polygon <= nrel_definitional_domain: 
 	...
 	(*
@@ -30,5 +24,9 @@ nrel_center_of_regular_polygon <= nrel_first_domain:
 nrel_center_of_regular_polygon <= nrel_second_domain: 
 	concept_geometric_point;;
 
-
-
+nrel_center_of_regular_polygon <- relation;;
+nrel_center_of_regular_polygon <- binary_relation;;
+nrel_center_of_regular_polygon <- oriented_relation;;
+nrel_center_of_regular_polygon <- antireflexive_relation;;
+nrel_center_of_regular_polygon <- antisymmetric_relation;;
+nrel_center_of_regular_polygon <- antitransitive_relation;;

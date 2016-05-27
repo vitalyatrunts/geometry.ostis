@@ -6,12 +6,6 @@ nrel_equal_sized => nrel_main_idtf:
 	[isometric*]
 	(* <- lang_en;; *);;
 
-nrel_equal_sized <- relation;;
-
-nrel_equal_sized <- binary_relation;;
-
-nrel_equal_sized <- non_oriented_relation;;
-
 nrel_equal_sized => nrel_definitional_domain:
 	concept_flat_geometric_figure;;
 
@@ -20,4 +14,11 @@ nrel_equal_sized => nrel_first_domain:
 
 nrel_equal_sized => nrel_second_domain: 
 	concept_flat_geometric_figure;;
+
+nrel_equal_sized <- relation;;
+nrel_equal_sized <- binary_relation;;
+nrel_equal_sized <- non_oriented_relation;;
+nrel_equal_sized <- reflexive_relation;;
+nrel_equal_sized <- symmetric_relation;;
+nrel_equal_sized <- transitive_relation;;
 

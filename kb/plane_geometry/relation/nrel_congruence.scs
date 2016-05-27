@@ -10,8 +10,6 @@ nrel_congruence => nrel_idtf: [быть равными геометрическ�
 nrel_congruence => nrel_idtf: [эквивалентность геометрических фигур по форме и размеру*] (* <- lang_ru;; *);;
 nrel_congruence => nrel_idtf: [быть парой конгруэнтных геометрических фигур*] (* <- lang_ru;; *);;
 
-nrel_congruence <- binary_relation; relation; non_oriented_relation;;
-
 nrel_congruence => nrel_definitional_domain:
 	concept_geometric_figure;;
 	
@@ -20,6 +18,11 @@ nrel_congruence => nrel_first_domain:
 
 nrel_congruence => nrel_second_domain: 
 	concept_geometric_figure;;
+
+nrel_congruence <- binary_relation; relation; non_oriented_relation;;
+nrel_congruence <- reflexive_relation;;
+nrel_congruence <- symmetric_relation;;
+nrel_congruence <- transitive_relation;;
 	
 
 	

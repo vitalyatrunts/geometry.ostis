@@ -14,12 +14,6 @@ nrel_angle_measure => nrel_idtf: [градусная мера угла*] (* <- l
 
 nrel_angle_measure => nrel_idtf: [радианная мера угла*] (* <- lang_ru;; *);;
 
-nrel_angle_measure <- relation;;
-
-nrel_angle_measure <- binary_relation;;
-
-nrel_angle_measure <- oriented_relation;;
-
 nrel_angle_measure => nrel_definitional_domain: 
 	...
 	(*
@@ -28,13 +22,19 @@ nrel_angle_measure => nrel_definitional_domain:
 		concept_angle;
 		concept_quantity
 		};;
-	*);;	
-
+	*);;
 	
 nrel_angle_measure => nrel_first_domain: 
 	concept_angle;;
 
 nrel_angle_measure => nrel_second_domain: 
 	concept_quantity;;
+
+nrel_angle_measure <- relation;;
+nrel_angle_measure <- binary_relation;;
+nrel_angle_measure <- oriented_relation;;
+nrel_angle_measure <- antireflexive_relation;;
+nrel_angle_measure <- antisymmetric_relation;;
+nrel_angle_measure <- antitransitive_relation;;
 
 

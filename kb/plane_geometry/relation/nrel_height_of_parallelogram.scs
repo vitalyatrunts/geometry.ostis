@@ -8,12 +8,6 @@ nrel_height_of_parallelogram => nrel_main_idtf: [height of the parallelogram*]
 
 nrel_height_of_parallelogram => nrel_idtf: [быть высотой параллелограмма*] (* <- lang_ru;; *);;
 
-nrel_height_of_parallelogram <- relation;;
-nrel_height_of_parallelogram <- binary_relation;;
-nrel_height_of_parallelogram <- antireflexive_relation;;
-nrel_height_of_parallelogram <- antisymmetric_relation;;
-nrel_height_of_parallelogram <- oriented_relation;;
-
 nrel_height_of_parallelogram => nrel_definitional_domain:
 	...
 	(*
@@ -40,3 +34,10 @@ nrel_height_of_parallelogram <= nrel_using_constants:
 	concept_straight_line;
 	concept_geometric_point
 	};;
+
+nrel_height_of_parallelogram <- relation;;
+nrel_height_of_parallelogram <- binary_relation;;
+nrel_height_of_parallelogram <- antireflexive_relation;;
+nrel_height_of_parallelogram <- antisymmetric_relation;;
+nrel_height_of_parallelogram <- oriented_relation;;
+nrel_height_of_parallelogram <- antitransitive_relation;;

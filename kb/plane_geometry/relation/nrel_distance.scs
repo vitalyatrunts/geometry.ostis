@@ -8,12 +8,6 @@ nrel_distance => nrel_main_idtf:
 
 nrel_distance => nrel_idtf: [быть расстоянием*] (* <- lang_ru;; *);;
 
-nrel_distance <- relation;;
-
-nrel_distance <- binary_relation;;
-
-nrel_distance <- oriented_relation;;
-
 nrel_distance => nrel_definitional_domain: 
 	...
 	(*
@@ -30,4 +24,11 @@ nrel_distance => nrel_first_domain:
 
 nrel_distance => nrel_second_domain: 
 	concept_quantity;;
+
+nrel_distance <- relation;;
+nrel_distance <- binary_relation;;
+nrel_distance <- oriented_relation;;
+nrel_distance <- antireflexive_relation;;
+nrel_distance <- antisymmetric_relation;;
+nrel_distance <- antitransitive_relation;;
 

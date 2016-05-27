@@ -22,12 +22,6 @@ nrel_boundary_point => nrel_idtf:
 	[boundary point*]
 	(* <- lang_en;; *);;
 
-nrel_bound <- relation;;
-
-nrel_bound <- binary_relation;;
-
-nrel_bound <- oriented_relation;;
-
 nrel_boundary_point => nrel_definitional_domain: 
 	...
 	(*
@@ -38,10 +32,16 @@ nrel_boundary_point => nrel_definitional_domain:
 		};;
 	*);;	
 	
-
 nrel_boundary_point => nrel_first_domain: 
 	concept_geometric_figure_with_boundary_points;;
 
 nrel_boundary_point => nrel_second_domain: 
 	concept_geometric_point;;
+
+nrel_boundary_point <- relation;;
+nrel_boundary_point <- binary_relation;;
+nrel_boundary_point <- oriented_relation;;
+nrel_boundary_point <- antireflexive_relation;;
+nrel_boundary_point <- antisymmetric_relation;;
+nrel_boundary_point <- antitransitive_relation;;
 

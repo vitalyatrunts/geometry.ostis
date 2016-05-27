@@ -8,12 +8,6 @@ nrel_middle_perpendicular => nrel_main_idtf:
 
 nrel_middle_perpendicular => nrel_idtf: [медиатриса*] (* <- lang_ru;; *);;
 
-nrel_middle_perpendicular <- relation;;
-
-nrel_middle_perpendicular <- binary_relation;;
-
-nrel_middle_perpendicular <- oriented_relation;;
-
 nrel_middle_perpendicular => nrel_definitional_domain: 
 	...
 	(*
@@ -29,5 +23,12 @@ nrel_middle_perpendicular => nrel_first_domain:
 
 nrel_middle_perpendicular => nrel_second_domain: 
 	concept_straight_line;;
+
+nrel_middle_perpendicular <- relation;;
+nrel_middle_perpendicular <- binary_relation;;
+nrel_middle_perpendicular <- oriented_relation;;
+nrel_middle_perpendicular <- antireflexive_relation;;
+nrel_middle_perpendicular <- antisymmetric_relation;;
+nrel_middle_perpendicular <- antitransitive_relation;;
 
 

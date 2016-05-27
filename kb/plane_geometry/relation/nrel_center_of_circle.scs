@@ -6,14 +6,7 @@ nrel_center_of_circle => nrel_main_idtf:
 	[center of circle*]
 	(* <- lang_en;; *);;
 
-nrel_center_of_circle => nrel_idtf:[быть центром окружности*]
-	(* <- lang_ru;; *);;
-
-nrel_center_of_circle <- relation;;
-
-nrel_center_of_circle <- binary_relation;;
-
-nrel_center_of_circle <- oriented_relation;;
+nrel_center_of_circle => nrel_idtf:[быть центром окружности*] (* <- lang_ru;; *);;
 
 nrel_center_of_circle => nrel_definitional_domain: 
 	...
@@ -30,5 +23,12 @@ nrel_center_of_circle => nrel_first_domain:
 
 nrel_center_of_circle => nrel_second_domain: 
 	concept_geometric_point;;
+
+nrel_center_of_circle <- relation;;
+nrel_center_of_circle <- binary_relation;;
+nrel_center_of_circle <- oriented_relation;;
+nrel_center_of_circle <- antireflexive_relation;;
+nrel_center_of_circle <- antisymmetric_relation;;
+nrel_center_of_circle <- antitransitive_relation;;
 
 
