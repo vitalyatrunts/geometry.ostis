@@ -4,14 +4,16 @@ concept_regular_pyramid => nrel_main_idtf: [правильная пирамид�
 concept_regular_pyramid => nrel_main_idtf: [regular pyramid] (*<-lang_en;;*);;
 
 concept_regular_pyramid => nrel_idtf: [Класс правильных пирамид] (*<-lang_ru;;*);;
-
 concept_regular_pyramid => nrel_idtf: [Множество всевозможных правильных пирамид] (* <- lang_ru;; *);;
+
+concept_regular_pyramid <= nrel_strict_inclusion: concept_pyramid;;
 
 concept_regular_pyramid <- rrel_key_sc_element: 
 	...
 	(*
 	<- illustration;; 
-	<= nrel_sc_text_translation: ...
+	<= nrel_sc_text_translation:
+		...
 		(*
 		-> rrel_example: 
 		"file://images/concept_regular_pyramid.png";;
