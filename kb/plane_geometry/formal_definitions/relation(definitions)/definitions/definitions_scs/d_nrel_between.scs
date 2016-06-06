@@ -1,6 +1,6 @@
 d_nrel_between
-=> nrel_main_idtf: [Поясн.(между')] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Expl.(between')] (*<- lang_en;;*);
+=> nrel_main_idtf: [Поясн.(между*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Expl.(between*)] (*<- lang_en;;*);
 <- definition;
 -> rrel_key_sc_element: nrel_between;
 
