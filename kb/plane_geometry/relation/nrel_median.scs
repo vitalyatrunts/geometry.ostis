@@ -12,12 +12,6 @@ nrel_median => nrel_idtf: [медиана треугольника*] (* <- lang_
 
 nrel_median => nrel_idtf: [быть медианой треугольника*] (* <- lang_ru;; *);;
 
-nrel_median <- relation;;
-
-nrel_median <- binary_relation;;
-
-nrel_median <- oriented_relation;;
-
 nrel_median => nrel_definitional_domain:
 	...
 	(*
@@ -33,6 +27,13 @@ nrel_median => nrel_first_domain:
 
 nrel_median => nrel_second_domain: 
 	concept_segment;;
+
+nrel_median <- relation;;
+nrel_median <- binary_relation;;
+nrel_median <- oriented_relation;;
+nrel_median <- antireflexive_relation;;
+nrel_median <- antisymmetric_relation;;
+nrel_median <- antitransitive_relation;;
 
 
 

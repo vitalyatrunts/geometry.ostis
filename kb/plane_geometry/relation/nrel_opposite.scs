@@ -9,10 +9,11 @@ nrel_opposite => nrel_main_idtf:
 nrel_opposite => nrel_idtf: [быть противолежащим*] (* <- lang_ru;; *);;
 
 nrel_opposite <- relation;;
-
 nrel_opposite <- binary_relation;;
-
 nrel_opposite <- non_oriented_relation;;
+nrel_opposite <- antireflexive_relation;;
+nrel_opposite <- symmetric_relation;;
+nrel_opposite <- antitransitive_relation;;
 
 nrel_opposite => nrel_definitional_domain: 
 	...

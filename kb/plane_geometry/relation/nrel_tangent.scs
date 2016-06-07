@@ -12,12 +12,6 @@ nrel_tangent => nrel_idtf: [касательная к окружности*] (* 
 
 nrel_tangent => nrel_idtf: [быть касательной к окружности*] (* <- lang_ru;; *);;
 
-nrel_tangent <- relation;;
-
-nrel_tangent <- binary_relation;;
-
-nrel_tangent <- oriented_relation;;
-
 nrel_tangent => nrel_definitional_domain: 
 	...
 	(*
@@ -34,5 +28,11 @@ nrel_tangent => nrel_first_domain:
 nrel_tangent => nrel_second_domain: 
 	concept_straight_line;;
 
+nrel_tangent <- relation;;
+nrel_tangent <- binary_relation;;
+nrel_tangent <- oriented_relation;;
+nrel_tangent <- antireflexive_relation;;
+nrel_tangent <- antisymmetric_relation;;
+nrel_tangent <- antitransitive_relation;;
 
 

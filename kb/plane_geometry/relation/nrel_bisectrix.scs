@@ -9,12 +9,6 @@ nrel_bisectrix => nrel_main_idtf:
 nrel_bisectrix => nrel_idtf: [быть биссектрисой*]
 	(* <- lang_ru;; *);;
 
-nrel_bisectrix <- relation;;
-
-nrel_bisectrix <- binary_relation;;
-
-nrel_bisectrix <- oriented_relation;;
-
 nrel_bisectrix => nrel_definitional_domain: 
 	...
 	(*
@@ -45,6 +39,13 @@ nrel_bisectrix <= nrel_combination:
 		nrel_bisectrix_of_angle;
 		nrel_bisectrix_of_triangle
 		};;
+
+nrel_bisectrix <- relation;;
+nrel_bisectrix <- binary_relation;;
+nrel_bisectrix <- oriented_relation;;
+nrel_bisectrix <- antireflexive_relation;;
+nrel_bisectrix <- antisymmetric_relation;;
+nrel_bisectrix <- antitransitive_relation;;
 
 
 

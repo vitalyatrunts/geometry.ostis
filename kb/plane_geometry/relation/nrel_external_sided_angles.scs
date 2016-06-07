@@ -15,6 +15,12 @@ nrel_external_sided_angles -> binary_relation;;
 
 nrel_external_sided_angles -> non_oriented_relation;;
 
+nrel_external_sided_angles <- antireflexive_relation;;
+
+nrel_external_sided_angles <- symmetric_relation;;
+
+nrel_external_sided_angles <- antitransitive_relation;;
+
 nrel_external_sided_angles => nrel_definitional_domain:
 	concept_planar_angle;;
 	

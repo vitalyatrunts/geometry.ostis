@@ -15,12 +15,6 @@ nrel_hypotenuse => nrel_idtf: [гипотенуза прямоугольного
 nrel_hypotenuse => nrel_idtf: [быть гипотенузой прямоугольного треугольника*]
 	(* <- lang_ru;; *);;
 
-nrel_hypotenuse <- relation;;
-
-nrel_hypotenuse <- binary_relation;;
-
-nrel_hypotenuse <- oriented_relation;;
-
 nrel_hypotenuse => nrel_definitional_domain: 
 	...
 	(*
@@ -31,12 +25,18 @@ nrel_hypotenuse => nrel_definitional_domain:
 		};;
 	*);;
 	
-
 nrel_hypotenuse => nrel_first_domain: 
 	concept_rectangular_triangle;;
 
 nrel_hypotenuse => nrel_second_domain: 
 	concept_segment;;
+
+nrel_hypotenuse <- relation;;
+nrel_hypotenuse <- binary_relation;;
+nrel_hypotenuse <- oriented_relation;;
+nrel_hypotenuse <- antireflexive_relation;;
+nrel_hypotenuse <- antisymmetric_relation;;
+nrel_hypotenuse <- antitransitive_relation;;
 	
 
 

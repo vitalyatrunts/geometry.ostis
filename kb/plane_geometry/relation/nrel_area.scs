@@ -18,12 +18,6 @@ nrel_area => nrel_idtf:
 	[быть площадью геометрической фигуры*] 
 	(* <- lang_ru;; *);;
 
-nrel_area <- relation;;
-
-nrel_area <- binary_relation;;
-
-nrel_area <- oriented_relation;;
-
 nrel_area => nrel_definitional_domain: 
 	...
 	(*
@@ -40,6 +34,12 @@ nrel_area => nrel_first_domain:
 nrel_area => nrel_second_domain: 
 	concept_quantity;;
 
+nrel_area <- relation;;
+nrel_area <- binary_relation;;
+nrel_area <- oriented_relation;;
+nrel_area <- antireflexive_relation;;
+nrel_area <- antisymmetric_relation;;
+nrel_area <- antitransitive_relation;;
 
 nrel_area <=> nrel_analogue: nrel_length;;
 
