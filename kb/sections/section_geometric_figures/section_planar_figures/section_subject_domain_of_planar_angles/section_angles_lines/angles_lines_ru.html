@@ -1,0 +1,109 @@
+<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 30px 80px 50px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 30px 0 80px 50px; /* Отступы вокруг картинки */
+   }
+	div {
+	margin-top: 1%; /* Отступ сверху */
+   }
+	.fig {
+    text-align: center; /* Выравнивание по центру */ 
+   }
+  </style>
+	<title></title>
+</head>
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<p><h3><b>Углы при <sc_element sys_ind="nrel_intersection">пересекающихся</sc_element> 	<sc_element sys_idtf  = "concept_straight_line">прямых</sc_element></h3></b></p>
+	<p>Две 
+	<sc_element sys_idtf  = "concept_straight_line">прямые</sc_element> называются <b><sc_element sys_ind="nrel_intersection">пересекающимися</sc_element></b>, если они имеют
+	одну и только одну общую <sc_element sys_idtf  = "concept_geometric_point">точку</sc_element>.</p> 
+	<img src="content/img1.png">
+	<p><b>Секущей</b> по отношению к двум данным 
+	<sc_element sys_idtf  = "concept_straight_line">прямым</sc_element> называется 
+	<sc_element sys_idtf  = "concept_straight_line">прямая</sc_element>,
+	<sc_element sys_ind="nrel_intersection">пересекающая</sc_element>
+	данные <sc_element sys_idtf  = "concept_straight_line">прямые</sc_element>
+	(<sc_element sys_idtf  = "concept_straight_line">прямая</sc_element> с).</p>
+	<img src="content/img3.png" hspace=50>
+	<p>При <sc_element sys_ind="nrel_intersection">пересечении</sc_element> двух 
+	<sc_element sys_idtf  = "concept_straight_line">прямых</sc_element>, лежащих в одной 		<sc_element sys_idtf  = "concept_plane">плоскости</sc_element>,
+	третьей <sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>, образуется 	восемь углов:</p>
+	<img src="content/img5.png" hspace=50>
+	<ul>
+	<li>
+	<sc_element sys_idtf  = "nrel_corresponding_angles"><b>соответственные</b> углы</sc_element>,: &#8736 1 и &#8736 5,
+	&#8736 2 и &#8736 6, &#8736 3 и &#8736 7, &#8736 4 и &#8736 8;
+	</li>
+	<li>
+	<sc_element sys_idtf  = "nrel_internal_sided_angles"><b>внутренние односторонние</b></sc_element>: &#8736 2 и &#8736 5, &#8736 3 и &#8736 8;
+	</li>
+	<li>
+	<sc_element sys_idtf  = "nrel_external_sided_angles"><b>внешние односторонние</b></sc_element>: &#8736 1 и &#8736 6, &#8736 4 и &#8736 7;
+	</li>
+	<li>
+	<sc_element sys_idtf  = "nrel_internal_cross_lying_angles"><b>внутренние накрест лежащие</b></sc_element>: &#8736 2 и &#8736 8, &#8736 3 и &#8736 5;
+	</li>
+	<li>
+	<sc_element sys_idtf  = "nrel_external_cross_lying_angles"><b>внешние накрест лежащие</b></sc_element>: &#8736 1 и &#8736 7, &#8736 4 и &#8736 6;
+	</li>
+	</ul>
+	<p><h3><b>Свойства углов и <sc_element sys_ind="nrel_intersection">пересекающихся</sc_element> 
+	<sc_element sys_idtf  = "concept_straight_line">прямых</sc_element>:</p></b></h3>
+	<ul>
+	<li>
+	<sc_element sys_idtf  = "stat_intersection_straight_line_plane_corresponding_angles_congruence">
+	Если при пересечении двух прямых, лежащих в одной плоскости, третьей прямой
+	соответственные углы одной пары (например, углы 1 и 5) равны, то соответственные 
+	углы всех других пар (т.е углы 2 и 6, 4 и 8, 3 и 7) тоже равны</sc_element>.
+	</li>
+	<br></br>
+	<img src="content/img4.png">
+	<li>
+	<sc_element sys_idtf  = "stat_intersection_straight_line_plane_external_cross_lying_angles_congruence">
+	Если при пересечение двух прямых, лежащих в одной плоскости, третьей прямой внутренние 
+	(или внешние) накрест лежащие углы одной пары (например, углы 2 и 8) равны, то
+	внутренние (или внешние) накрест лежащие углы другой пары (т.е. углы 3 и 5)
+	тоже равны</sc_element>.
+	</li>
+	<img src="content/img2.png">
+	<li>
+	<sc_element sys_idtf  = "stat_intersection_straight_line_plane_corresponding_angles_sum_external_sided_angles">
+	Если при пересечении двух прямых, лежащих в одной плоскости, третьей прямой,
+	соответственные углы равны, то сумма каждой пары односторонних углов равна 180&#176</sc_element>.
+	</li>
+	<img src="content/img4.png">
+	<img src="content/img6.png">
+	<li>
+	<sc_element sys_idtf  = "stat_intersection_straight_line_plane_external_sided_angles_sum_corresponding_angles_congruence">
+	Если при пересечении двух прямых, лежащих в одной плоскости, третьей прямой,
+	сумма пары односторонних углов равна 180&#176, то соответственные углы
+	равны</sc_element>.
+	</li>
+	<img src="content/img6.png">
+	<img src="content/img4.png">
+	<li>
+	<sc_element sys_idtf  = "stat_intersection_straight_line_cross_lying_angles_congruence_internal_sided_angles">
+	Если при пересечении двух прямых, лежащих в одной плоскости, третьей прямой,
+	внутренние (или внешние) накрест лежащие углы равны, то сумма каждой пары
+	односторонних углов равна 180&#176</sc_element>.
+	</li>
+	<img src="content/img7.png">
+	<img src="content/img6.png">
+	<li>
+	<sc_element sys_idtf  = "stat_intersection_straight_line_plane_internal_sided_angles_sum_cross_lying_angles">
+	Если при пересечении двух прямых, лежащих в одной плоскости,
+	третьей прямой, сумма пары внутренних односторонних углов
+	равна 180&#176, то накрест лежащие углы равны</sc_element>.
+	<img src="content/img8.png">
+	<img src="content/img7.png">
+	</li>
+	</ul>
+</body>
+</html>		
