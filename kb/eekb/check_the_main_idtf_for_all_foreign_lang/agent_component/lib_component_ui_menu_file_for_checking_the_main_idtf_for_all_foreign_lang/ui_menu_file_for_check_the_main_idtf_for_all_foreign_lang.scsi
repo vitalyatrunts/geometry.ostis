@@ -11,6 +11,7 @@ ui_menu_file_for_check_the_main_idtf_for_all_foreign_lang => ui_nrel_command_tem
 		._action_check_the_main_idtf_for_all_foreign_lang_instance _<- question;;
 	*];;
 
-ui_menu_file_for_check_the_main_idtf_for_all_foreign_lang => ui_nrel_command_lang_template: [Проверить наличие основных идентификаторов: $ui_arg_1] (* <- lang_ru;; *);;
-ui_menu_file_for_check_the_main_idtf_for_all_foreign_lang => ui_nrel_command_lang_template: [Сheck the main identifier: $ui_arg_1] (* <- lang_en;; *);;
+ui_menu_file_for_check_the_main_idtf_for_all_foreign_lang => ui_nrel_command_lang_template: [Проверить наличие основных идентификаторов на всех внешних языках системы у: $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_check_the_main_idtf_for_all_foreign_lang => ui_nrel_command_lang_template: [
+Check the main identifiers on any external system languages in: $ui_arg_1] (* <- lang_en;; *);;
 
