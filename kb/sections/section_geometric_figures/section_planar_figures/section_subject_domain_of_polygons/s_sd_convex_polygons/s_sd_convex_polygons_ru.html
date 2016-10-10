@@ -1,0 +1,206 @@
+﻿<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 30px 80px 50px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 30px 0 80px 50px; /* Отступы вокруг картинки */
+   }
+  </style>
+	<title></title>
+</head>
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<ul><p><h3><sc_element sys_idtf  = "concept_convex_polygon">Выпуклые многоугольники</sc_element></h3></p></ul>
+	<p><b><sc_element sys_idtf  = "concept_polygon">Многоугольником</sc_element></b> 
+	называется 
+	<sc_element sys_idtf  = "concept_simple_broken_line">простая</sc_element> 
+	<sc_element sys_idtf  = "concept_closed_polyline">замкнутая ломаная</sc_element> (красткая формулировка).</p>
+	<img src=content/1.png hspace=30>
+	<p><b><sc_element sys_idtf  = "concept_polygon">Многоугольником</sc_element></b> (или 
+	<b>простым <sc_element sys_idtf  = "concept_polygon">n-угольником</sc_element></b>, n &#8805 3, n&#8712N)
+	называется 
+	<sc_element sys_idtf  = "concept_closed_polyline">замкнутая ломаная</sc_element> 
+	<sc_element sys_idtf  = "concept_line">линия</sc_element>, представляющая собой совокупность n
+	<sc_element sys_idtf  = "concept_segment">отрезков</sc_element> 
+	(<b><sc_element sys_idtf  = "nrel_side">сторон</sc_element></b>) A<sub>1</sub>A<sub>2</sub>, A<sub>2</sub>A<sub>3</sub>,...,A<sub>n</sub>A<sub>1</sub>,
+	не имеющих общих 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>, кроме 
+	<sc_element sys_idtf  = "nrel_boundary_point">концевых</sc_element>, и n различных 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element> 
+	(<b><sc_element sys_idtf  = "nrel_vertex">вершин</sc_element></b>) A<sub>1</sub>, A<sub>2</sub>,
+	...,A<sub>n</sub>, ни одна из которых не является 
+	<sc_element sys_idtf  = "nrel_boundary_point">концом</sc_element> трех или более 
+	<sc_element sys_idtf  = "concept_segment">отрезков</sc_element> и среди которых никакие
+	три последовательные 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> не лежат на одной 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> (развернутая формулировка).</p>
+	<img src=content/2.png hspace=30>
+	<p><b>Плоской многоугольной областью</b> называется конечная часть 
+	<sc_element sys_idtf  = "concept_plane">плоскости</sc_element>, ограниченная 
+	<sc_element sys_idtf  = "concept_polygon">многоугольником</sc_element>.</p>
+	<img src=content/3.png hspace=30>
+	<p><b><sc_element sys_idtf  = "concept_convex_polygon">Выпуклым</sc_element></b> 
+	называется <sc_element sys_idtf  = "concept_polygon">n-угольник</sc_element>, если он лежит в одной 
+	<sc_element sys_idtf  = "concept_half_plane">полуплоскости</sc_element> относительно каждой 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>,
+	проходящей через две смежные 
+	<sc_element sys_idtf  = "nrel_vertex">вершины</sc_element> (т.е. каждой 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>, содержащей 
+	<sc_element sys_idtf  = "nrel_side">сторону</sc_element> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element>); в противном случае 
+	<sc_element sys_idtf  = "concept_polygon">n-угольник</sc_element> называется <b>
+	<sc_element sys_idtf  = "concept_non_convex_polygon">невыпуклым</sc_element></b>.</p>
+	<img src=content/16.png hspace=30>
+	<p><b>Смежными 
+	<sc_element sys_idtf  = "nrel_vertex">вершинами</sc_element></b> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element> называются две его 
+	<sc_element sys_idtf  = "nrel_vertex">вершины</sc_element>, являющиеся 
+	<sc_element sys_idtf  = "nrel_boundary_point">концами</sc_element> одной его 
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element>.</p>
+	<img src=content/5.png hspace=30>
+	<p><b>Смежными <sc_element sys_idtf  = "nrel_side">сторонами</sc_element></b> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element> называются две его 
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element>, имеющие общую 
+	<sc_element sys_idtf  = "nrel_vertex">вершину</sc_element>.</p>
+	<img src=content/4.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_diagonal">Диагональю</sc_element> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element</b> 
+	называется <sc_element sys_idtf  = "concept_segment">отрезок</sc_element с концами в несмежных 
+	<sc_element sys_idtf  = "nrel_vertex">вершинах</sc_element>.</p>
+	<img src=content/6.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_internal_angle">Внутренним углом</sc_element>
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element></b>при данной его 
+	<sc_element sys_idtf  = "nrel_vertex">вершине</sc_element> называется 
+	угол, образованный <sc_element sys_idtf  = "concept_ray">лучами</sc_element>, 
+	имеющими <sc_element sys_idtf  = "begin">начало<sc_element sys_idtf  = "concept_ray"> в этой 
+	<sc_element sys_idtf  = "nrel_vertex">вершине</sc_element> и содержащими обе смежные 
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element> этой 
+	<sc_element sys_idtf  = "nrel_vertex">вершины</sc_element>. При этом часть 
+	<sc_element sys_idtf  = "concept_plane">плоскости</sc_element>,
+	заключенная <sc_element sys_idtf  = "nrel_between">между</sc_element> 
+	<sc_element sys_idtf  = "concept_ray">лучами</sc_element>, должна иметь непустое 
+	<sc_element sys_idtf  = "nrel_intersection">пересечение</sc_element> с внутренней областью 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element>.</p>
+	<img src=content/7.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_external_angle">Внешним углом</sc_element> 
+	<sc_element sys_idtf  = "concept_convex_polygon">выпуклого n-угольника</sc_element></b> 
+	при данной <sc_element sys_idtf  = "nrel_vertex">вершине</sc_element> называется угол, смежный с 
+	<sc_element sys_idtf  = "nrel_internal_angle">внутренним углом</sc_element>
+	данного <sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element> при этой 
+	<sc_element sys_idtf  = "nrel_vertex">вершине</sc_element>.</p>
+	<img src=content/8.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_be_inscribed">Вписанным</sc_element> в 
+	<sc_element sys_idtf  = "concept_circle">окружность</sc_element></b> называется такой 
+	<sc_element sys_idtf  = "concept_polygon">n-угольник</sc_element>, все 
+	<sc_element sys_idtf  = "nrel_vertex">вершины</sc_element> которого лежат на данной 
+	<sc_element sys_idtf  = "concept_circle">окружности</sc_element>.</p>
+	<img src=content/9.png hspace=30>
+	<p><b>Описанным около 
+	<sc_element sys_idtf  = "concept_circle">окружности</sc_element></b> называется такой 
+	<sc_element sys_idtf  = "concept_polygon">n-угольник</sc_element>, все 
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element> которого 
+	<sc_element sys_idtf  = "nrel_tangent">касаются</sc_element> данной
+	<sc_element sys_idtf  = "concept_circle">окружности</sc_element>.</p>
+	<img src=content/10.png hspace=100>
+	<p><b><sc_element sys_idtf  = "concept_regular_polygon">Правильным многоугольником</sc_element></b> 
+	называется такой 
+	<sc_element sys_idtf  = "concept_convex_polygon">выпуклый n-угольник</sc_element>, у которого все
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element> 
+	<sc_element sys_idtf  = "nrel_congruence">равны</sc_element> и все углы 
+	<sc_element sys_idtf  = "nrel_congruence">равны</sc_element>.</p>
+	<img src=content/11.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_center">Центром</sc_element>
+	<sc_element sys_idtf  = "concept_regular_polygon">правильного n-угольника</sc_element></b> называется 
+	<sc_element sys_idtf  = "nrel_center">центр</sc_element> 
+	<sc_element sys_idtf  = "nrel_be_inscribed">вписанной</sc_element>  в него или описанной около него
+	<sc_element sys_idtf  = "concept_circle">окружности</sc_element>.</p>
+	<img src=content/12.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_central_angle">Центральным углом</sc_element></b> 
+	<sc_element sys_idtf  = "concept_regular_polygon">правильного многоугольника</sc_element> называется угол, 
+	под которым видна <sc_element sys_idtf  = "nrel_side">сторона</sc_element> этого
+	<sc_element sys_idtf  = "concept_polygon">многоугольника</sc_element> из его 
+	<sc_element sys_idtf  = "nrel_center">центра</sc_element>.</p>
+	<img src=content/17.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_apothem">Апофемой</sc_element> 
+	<sc_element sys_idtf  = "concept_regular_polygon">правильного n-угольника</sc_element></b> называется 
+	<sc_element sys_idtf  = "concept_segment">отрезок</sc_element> 
+	<sc_element sys_idtf  = "nrel_perpendicular">перпендикуляра</sc_element>,
+	опущенного из 
+	<sc_element sys_idtf  = "nrel_center">центра</sc_element> этого 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element> на любую из его 
+	<sc_element sys_idtf  = "nrel_side">сторон</sc_element>.</p>
+	<img src=content/13.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_congruence">Равными</sc_element></b> называются 
+	<sc_element sys_idtf  = "concept_polygon">многоугольники</sc_element>, которые можно перевести друг в друга 
+	преобразованием,
+	называемым движением. При наложении друг на друга <sc_element sys_idtf  = "nrel_congruence">равные</sc_element>
+	<sc_element sys_idtf  = "concept_polygon">многоугольники</sc_element> можно совместить так,
+	что <sc_element sys_idtf  = "nrel_vertex">вершины</sc_element> и 
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element> одного 
+	<sc_element sys_idtf  = "concept_polygon">многоугольника</sc_element> будут совпадать с 
+	<sc_element sys_idtf  = "nrel_vertex">вершинами</sc_element> и 
+	<sc_element sys_idtf  = "nrel_side">сторонами</sc_element> другого
+	<sc_element sys_idtf  = "concept_polygon">многоульника</sc_element>.</p>
+	<img src=content/2.png hspace=30><img src=content/2.png>
+	<p><b><sc_element sys_idtf  = "nrel_similarity">Подобными</sc_element></b> называются 
+	<sc_element sys_idtf  = "concept_polygon">многоугольники<sc_element sys_idtf  = "concept_polygon">, 
+	у которых <sc_element sys_idtf  = "nrel_mapping">соответствующие</sc_element> 
+	<sc_element sys_idtf  = "nrel_side">стороны</sc_element> пропорциональны,
+	а <sc_element sys_idtf  = "nrel_mapping">соответствующие</sc_element> углы 
+	<sc_element sys_idtf  = "nrel_congruence">равны</sc_element>.</p>
+	<img src=content/14.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_perimeter">Периметром</sc_element> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element></b> называется 
+	<sc_element sys_idtf  = "nrel_sum">сумма</sc_element> 
+	<sc_element sys_idtf  = "nrel_length">длин</sc_element> всех его 
+	<sc_element sys_idtf  = "nrel_side">сторон</sc_element> (обычно обозначается P<sub>n</sub>).</p>
+	<p><b><sc_element sys_idtf  = "nrel_area">Площадью</sc_element> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element></b> называется 
+	<sc_element sys_idtf  = "number">числовая характеристика</sc_element>, 
+	приписываемая конечной части 
+	<sc_element sys_idtf  = "concept_plane">плоскости</sc_element>,
+	ограниченной данным 
+	<sc_element sys_idtf  = "concept_polygon">n-угольником</sc_element>, со следующими четырьмя свойствами:
+	<ul>
+	<li>
+	<sc_element sys_idtf  = "nrel_area">площадь</sc_element> положительна;
+	</li>
+	<li>
+	если <sc_element sys_idtf  = "concept_polygon">n-угольник</sc_element> составлен из нескольких других 
+	<sc_element sys_idtf  = "concept_polygon">n-угольников</sc_element>, не имеющих общих
+	внутренних <sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>, 
+	то его <sc_element sys_idtf  = "nrel_area">площадь</sc_element> равна 
+	<sc_element sys_idtf  = "nrel_sum">сумме</sc_element> 
+	<sc_element sys_idtf  = "nrel_area">площадей</sc_element> этих 
+	<sc_element sys_idtf  = "concept_polygon">n-угольников</sc_element>;
+	</li>
+	<li>
+	<sc_element sys_idtf  = "nrel_congruence">равные</sc_element>
+	<sc_element sys_idtf  = "concept_polygon">n-угольники</sc_element> имеют 
+	равные 
+	<sc_element sys_idtf  = "nrel_area">площади</sc_element>;
+	</li>
+	<li>
+	<sc_element sys_idtf  = "nrel_area">площадь</sc_element> 
+	<sc_element sys_idtf  = "concept_square">квадрата</sc_element> 
+	со <sc_element sys_idtf  = "nrel_side">стороной</sc_element>, равной 
+	<sc_element sys_idtf  = "unit_of_measure">единице измерения</sc_element>
+	<sc_element sys_idtf  = "concept_segment">отрезков</sc_element>, равна единице.
+	</li>
+	</ul>
+	<p><b><sc_element sys_idtf  = "nrel_area">Площадь</sc_element> 
+	<sc_element sys_idtf  = "concept_square">квадрата</sc_element></b> со 
+	<sc_element sys_idtf  = "nrel_side">стороной</sc_element>, равной &#945, равна &#945<sup>2</sup>.</p>
+	<img src=content/15.png hspace=30>
+	<p>Вычисление <sc_element sys_idtf  = "nrel_area">площади</sc_element> произвольного 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element> сводится к вычислению 
+	<sc_element sys_idtf  = "nrel_area">площади</sc_element>
+	<sc_element sys_idtf  = "nrel_equal_sized">равновеликого</sc_element> ему 
+	<sc_element sys_idtf  = "concept_square">квадрата</sc_element>, который всегда может быть 
+	построен тем или иным способом.</p>
+</body>
+</html>		

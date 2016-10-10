@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 30px 80px 50px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 30px 0 80px 50px; /* Отступы вокруг картинки */
+   }
+  </style>
+	<title></title>
+</head>
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<p><b>Свойства <sc_element sys_idtf  = "concept_convex_polygon">выпуклых n-угольников</sc_element>:</b></p>
+	<ul>
+	<li>
+	Все <sc_element sys_idtf  = "nrel_internal_angle">внутренние углы</sc_element>
+	<sc_element sys_idtf  = "concept_convex_polygon">выпуклого n-угольника</sc_element> меньше 180 &#176.
+	</li>
+	<br></br>
+	<img src=content/1.png>
+	<br></br>
+	<li>
+	<sc_element sys_idtf  = "nrel_sum">Сумма</sc_element> 
+	<sc_element sys_idtf  = "nrel_internal_angle">внутренних углов</sc_element> 
+	<sc_element sys_idtf  = "concept_convex_polygon">выпуклого n-угольника</sc_element> равна 180 &#176 &#8226 (n-2).
+	</li>
+	<br></br>
+	<li>
+	<sc_element sys_idtf  = "nrel_sum">Сумма</sc_element>  
+	<sc_element sys_idtf  = "nrel_external_angle">внешних углов</sc_element> 
+	<sc_element sys_idtf  = "concept_convex_polygon">выпуклого n-угольника</sc_element>, 
+	взятых по одному при каждой 
+	<sc_element sys_idtf  = "nrel_vertex">вершине</sc_element>,
+	равна 360 &#8226.
+	</li>
+	<br></br>
+	<li>
+	В <sc_element sys_idtf  = "concept_convex_polygon">выпуклом n-угольнике</sc_element> из каждой 
+	<sc_element sys_idtf  = "nrel_vertex">вершины</sc_element> можно провести (n-3) 
+	<sc_element sys_idtf  = "nrel_diagonal">диагонали</sc_element>, которые разбивают
+	<sc_element sys_idtf  = "concept_polygon">n-угольник на (n-2) 
+	<sc_element sys_idtf  = "concept_triangle">треугольника</sc_element>.
+	</li>
+	<br></br>
+	<img src=content/2.png>
+	<br></br>
+	<li>
+	В <sc_element sys_idtf  = "concept_convex_polygon">выпуклом n-угольнике</sc_element> 
+	<sc_element sys_idtf  = "number">число</sc_element> <sc_element sys_idtf  = "nrel_diagonal">
+	диагоналей</sc_element> равно n(n-3)/2.
+	</li>
+	<br></br>
+	<img src=content/3.png>
+	<br></br>
+	<li>
+	<sc_element sys_idtf  = "nrel_area">Площади</sc_element>
+	<sc_element sys_idtf  = "nrel_similarity">подобных</sc_element> 
+	<sc_element sys_idtf  = "concept_polygon">многоугольников</sc_element> 
+	относятся как квадраты их соответствующих линейных элементов.
+	</li>
+	<br></br>
+	<li>
+	<sc_element sys_idtf  = "nrel_area">Площадь</sc_element> 
+	<sc_element sys_idtf  = "concept_polygon">n-угольника</sc_element> с 
+	<sc_element sys_idtf  = "nrel_perimeter">периметром 2p</sc_element>, в который 
+	<sc_element sys_idtf  = "nrel_be_inscribed">вписана</sc_element>
+	<sc_element sys_idtf  = "concept_circle">окружность</sc_element> 
+	<sc_element sys_idtf  = "nrel_radius">радиуса</sc_element> 
+	r, равна S=p &#8226 r.
+	</li>
+	<br></br>
+	<img src=content/4.png>
+	</ul>
+</body>
+</html>		

@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 30px 80px 50px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 30px 0 80px 50px; /* Отступы вокруг картинки */
+   }
+  </style>
+	<title></title>
+</head>
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<ul><p><h3><sc_element sys_idtf  = "concept_polygon">Многоугольники</sc_element>. Общие понятия</h3></p></ul>
+	<p><b><sc_element sys_idtf  = "concept_polyline">Ломаной</sc_element></b> A<sub>1</sub>A<sub>2</sub>A<sub>3</sub>...A<sub>n</sub>
+	называется 
+	<sc_element sys_idtf  = "concept_geometric_figure">фигура</sc_element>, состоящая из 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element> A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>,
+	...A<sub>n</sub> (при условии, что никакие три соседние 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> не лежат на
+	одной 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>) и 
+	<sc_element sys_idtf  = "concept_segment">отрезков</sc_element> 
+	A<sub>1</sub>A<sub>2</sub>, A<sub>2</sub>A<sub>3</sub>,
+	..., A<sub>n-1</sub>, A<sub>n</sub> с концами в этих 
+	<sc_element sys_idtf  = "concept_geometric_point">точках</sc_element>. 
+	<sc_element sys_idtf  = "concept_geometric_point">Точки</sc_element> A<sub>1</sub>,A<sub>2</sub>,
+	A<sub>3</sub>,...,A<sub>n</sub> называются <b>
+	<sc_element sys_idtf  = "nrel_vertex">вершинами</sc_element></b> 
+	<sc_element sys_idtf  = "concept_polyline">ломаной</sc_element>, а 
+	<sc_element sys_idtf  = "concept_segment">отрезки</sc_element>
+	A<sub>1</sub>A<sub>2</sub>, A<sub>2</sub>A<sub>3</sub>,...,A<sub>n-1</sub>A<sub>n</sub> -
+	<b>звеньями <sc_element sys_idtf  = "concept_polyline">ломаной</sc_element>.</b></p>
+	<img src=content/1.png hspace=30>
+	<p><b>Смежными звеньями</b> называются звенья, имеющие один общий конец.</p>
+	<p><sc_element sys_idtf  = "concept_polyline">Ломаная</sc_element> называется
+	<sc_element sys_idtf  = "concept_simple_broken_line"><b>простой</b></sc_element>, 
+	если она не имеет <sc_element sys_idtf  = "nrel_intersection">самопересечений</sc_element>, т.е.
+	каждое звено имеет только одну общую 
+	<sc_element sys_idtf  = "concept_geometric_point">точку</sc_element> с другим зыеном, и эта 
+	<sc_element sys_idtf  = "concept_geometric_point">точка</sc_element> является
+	концом звена.</p>
+	<img src=content/2.png hspace=30>
+	<p><b><sc_element sys_idtf  = "nrel_length">Длиной</sc_element> 
+	<sc_element sys_idtf  = "concept_polyline">ломаной</sc_element></b> называется 
+	<sc_element sys_idtf  = "nrel_sum">сумма</sc_element> 
+	<sc_element sys_idtf  = "nrel_length">длин</sc_element> ее звеньев.</p>
+	<p><b>Основное свойство <sc_element sys_idtf  = "concept_polyline">ломаной</sc_element>: 
+	<sc_element sys_idtf  = "nrel_length">длина</sc_element></b> 
+	<sc_element sys_idtf  = "concept_polyline">ломаной</sc_element> не меньше 
+	<sc_element sys_idtf  = "nrel_length">длины</sc_element> 
+	<sc_element sys_idtf  = "concept_segment">отрезка</sc_element>,
+	соединяющего ее концы.</p>
+	<p><sc_element sys_idtf  = "concept_polyline">Ломаная</sc_element> называется 
+	<sc_element sys_idtf  = "concept_closed_polyline"><b>замкнутой</b></sc_element>, если у нее совпадают концы.</p>
+	<img src=content/3.png hspace=30>
+	<p><sc_element sys_idtf  = "concept_simple_broken_line">Простая</sc_element> 
+	<sc_element sys_idtf  = "concept_closed_polyline">замкнутая ломаная</sc_element> разбивает 
+	<sc_element sys_idtf  = "concept_plane">плоскость</sc_element> на две области - внутреннюю и внешнюю
+	относительно данной <sc_element sys_idtf  = "concept_polyline">ломаной</sc_element>. 
+	Во внешней области, и только в ней, можно провести 
+	<sc_element sys_idtf  = "concept_straight_line">прямую</sc_element>,
+	целиком принадлежащую данной области.</p>
+</body>
+</html>		

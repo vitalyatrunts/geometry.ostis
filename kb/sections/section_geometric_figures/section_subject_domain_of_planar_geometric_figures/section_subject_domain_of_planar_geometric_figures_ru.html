@@ -1,0 +1,231 @@
+<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 30px 80px 50px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 30px 0 80px 50px; /* Отступы вокруг картинки */
+   }
+	div {
+	margin-top: 1%; /* Отступ сверху */
+   }
+	.fig {
+    text-align: center; /* Выравнивание по центру */ 
+   }
+  </style>
+	<title></title>
+</head>
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<p><h3>Аксиоматика планиметрии</h3></p>
+	<p><b><sc_element sys_idtf  = "concept_geometric_figure">Геометрическая фигура</sc_element></b> - любое 
+	<sc_element sys_idtf  = "uncountable_set">множество</sc_element> 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>.</p>
+	<img src="content/1.png" hspace=60>
+	<br></br>
+	<p><b>Планиметрия</b> - геометрия <sc_element sys_idtf  = "concept_plane">плоскости</sc_element>.</p>
+	<p>Всякое аксиоматичексое постороение геометрии включает в себя:
+	<ul>
+	<li>
+	список основных, неопределяемых понятий(объектов, отношений и т.д.)
+	</li>
+	<li>
+	список утверждений, не подлежащих доказательству (<b>аксиом</b>)
+	</li>
+	<li>
+	определения других, более сложных понятий
+	</li>
+	<li>
+	формулировки и доказательства других утверждений (теорем, лемм, следствий и т.д.)
+	</li>
+	</ul>
+	<p><b>Теорема</b> - утверждение, имеющее большое теоретическое значение.</p>
+	<p><b>Лемма</b> - утверждение, имеющее вспомогательное значение 
+	(например, необходимое для доказательства лишь какой-нибудь теоремы).</p>
+	<p><b>Следствие</b> - утверждение, сравнительно просто выводимое из другого утверждения.</p>
+	<p>Примечание. Аксиомы иногда называют <b>постулатами</b>.	
+	<p><h3><sc_element sys_idtf  = "rrel_axiom">Аксиомы</sc_element> планиметрии</h3></p>
+	<p>Основные, неопределяемые понятия:
+	<b><sc_element sys_idtf  = "concept_geometric_point">точка</sc_element></b>, 
+	<b><sc_element sys_idtf  = "concept_straight_line">прямая</sc_element></b>, 
+	<b><sc_element sys_idtf  = "nrel_length">длина</sc_element> 
+	<sc_element sys_idtf  = "concept_segment">отрезка</sc_element></b>. Внегеометрические понятия:
+	<b>множество</b>, 
+	<b><sc_element sys_idtf  = "number">число</sc_element></b>, 
+	<sc_element sys_idtf  = "nrel_belonging">принадлежность</sc_element></b> (элемента множеству), <b>отображение</b>. 
+	<sc_element sys_idtf  = "concept_straight_line">Прямая</sc_element> рассматривается как множество
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>. Неопределяемое отношение: 
+	<b><sc_element sys_idtf  = "nrel_between">лежать между</sc_element></b> (для трех различных 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element> одной 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>).
+	<b><sc_element sys_idtf  = "concept_plane">Плоскость</sc_element></b> - множество всех 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>. </p>
+	<p><b><sc_element sys_idtf  = "rrel_axiom">Аксиомы</sc_element>:</b></p>
+	<ul>
+	<li> 
+	Каждой <sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> 
+	<sc_element sys_idtf  = "nrel_belonging">принадлежит</sc_element>, по крайне мере, две 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element>.
+	</li>
+	<img src="content/2.png" hspace=60/>
+	<br></br>
+	<li>
+	Имеются, по крайней мере, три <sc_element sys_idtf  = "concept_geometric_point">точки</sc_element>, 
+	не <sc_element sys_idtf  = "nrel_belonging">лежащие</sc_element> на одной 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>.
+	</li>
+	<br></br>
+	<img src="content/3.png" hspace=60>
+	<br></br>	
+	<li>
+	Через любые две различные <sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> проходит 
+	<sc_element sys_idtf  = "concept_straight_line">прямая</sc_element>, и притом только одна.
+	Т.е. так быть не может:
+	</li>
+	<br></br>
+	<img src="content/4.png" hspace=60>
+	<br></br>
+	<br></br>	
+	<li>
+	Из трех различных <sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> одна и только одна 
+	<sc_element sys_idtf  = "nrel_between">лежит 
+	между</sc_element> двумя другим, причем если А <sc_element sys_idtf  = "nrel_between">лежит 
+	между</sc_element>
+	В и С, то А <sc_element sys_idtf  = "nrel_between">лежит 
+	между</sc_element> С и В.
+	<br></br>
+	<br></br>
+	<img src="content/5.png" hspace=60>
+	<br></br>
+	<p><sc_element sys_idtf  = "concept_straight_line">Прямую</sc_element>, проходящую через 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> А и B, обозначают (АВ) или просто АВ. Пусть А, В - различные 		<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element>. 
+	<b><sc_element sys_idtf  = "concept_segment">Отрезком</sc_element></b>
+	[AB] называется множество, состоящее из 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element> А,В и всех 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> АВ, 
+	<sc_element sys_idtf  = "nrel_between">лежащих между</sc_element> А и В. (Иногда отдельную 
+	<sc_element sys_idtf  = "concept_geometric_point">точку</sc_element> А
+	удобно считать <sc_element sys_idtf  = "concept_segment">отрезком</sc_element> [АА]).Из аксиомы 4 следует, что [АВ] и [ВА] - один и тот 	же <sc_element sys_idtf  = "concept_segment">отрезок</sc_element>. 
+	<sc_element sys_idtf  = "concept_geometric_point">Точки</sc_element> А и B называются
+	<b><sc_element sys_idtf  = "nrel_boundary_point">концами</sc_element> 
+	<sc_element sys_idtf  = "concept_segment">отрезка</sc_element></b>. Часто 
+	<sc_element sys_idtf  = "concept_segment">отрезок</sc_element> [АВ] обозначается просто АВ.</p>
+	</li>
+	<li>
+	Каждому 
+	<sc_element sys_idtf  = "concept_segment">отрезку</sc_element> [AB] поставлено в соответствие положительное 
+	<sc_element sys_idtf  = "number">число</sc_element> АВ, называемое 
+	<b><sc_element sys_idtf  = "nrel_length">длиной</sc_element>
+	<sc_element sys_idtf  = "concept_segment">отрезка</sc_element></b> [AB]
+	и удовлетворяющее условию: если C <sc_element sys_idtf  = "nrel_between">лежит 
+	между</sc_element> A и B, то АС+СВ=АВ.
+	<p>Пусть А, B, С - различные 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element>
+	одной 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>. Будем говорить, что А и B <b>лежат по разные стороны от 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element></b> С,
+	если С <sc_element sys_idtf  = "nrel_between">лежит 
+	между</sc_element> A и B. <sc_element sys_idtf  = "concept_ray">Луч</sc_element> [AB) - множество, состоящее из 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> А и всех 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element> 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> АВ, лежащих по ту сторону
+	от А, где лежит B.
+	<br></br>
+	<img src="content/7.png" hspace=60>
+	<br></br>
+	<sc_element sys_idtf  = "concept_geometric_point">Точка</sc_element> А - 
+	<sc_element sys_idtf  = "nrel_vertex">вершина</sc_element> <sc_element sys_idtf  = "concept_ray">луча</sc_element> AB. 
+	Иногда <sc_element sys_idtf  = "concept_ray">луч</sc_element> [AB) обозначают просто AB.</p>
+	<p>Пусть &#945 - 
+	<sc_element sys_idtf  = "concept_straight_line">прямая</sc_element>. Будем говорить, что 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> А и В <b>лежат по разные стороны от 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element></b> &#945,
+	если <sc_element sys_idtf  = "concept_segment">отрезок</sc_element> [AB] 
+	<sc_element sys_idtf  = "nrel_intersection">пересекается</sc_element> с &#945 во 
+	<b>внутренней</b> <sc_element sys_idtf  = "concept_geometric_point">точке</sc_element> 
+	(т.е <sc_element sys_idtf  = "concept_geometric_point">точке</sc_element>, отличной от А и В). Можно доказать, что
+	каждая <sc_element sys_idtf  = "concept_straight_line">прямая</sc_element> &#945 разбивает всю 
+	<sc_element sys_idtf  = "concept_plane">плоскость</sc_element>, за исключением 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element> 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> &#945, на две части 
+	(<b><sc_element sys_idtf  = "concept_half_plane">полуплоскости</sc_element></b>) так,
+	что любые две 
+	<sc_element sys_idtf  = "concept_geometric_point">точки</sc_element> одной 
+	<sc_element sys_idtf  = "concept_half_plane">полуплоскости</sc_element> лежат по одну сторону от 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element> &#945, а разных 
+	<sc_element sys_idtf  = "concept_half_plane">полуплоскостей</sc_element>  - по разные 
+	стороны от &#945.</p>
+	<img src="content/6.png" hspace=60>
+	<br></br>
+	<p><b><sc_element sys_idtf  = "concept_angle">Угол</sc_element> &#8736(a,b)</b> - пара 
+	<sc_element sys_idtf  = "concept_ray">лучей</sc_element> а, b с общей 
+	<sc_element sys_idtf  = "nrel_vertex">вершиной</sc_element>.</p>
+	<img src="content/8.png" hspace=60>
+	<br></br>
+	<p><b><sc_element sys_idtf  = "nrel_distance">Расстояние</sc_element>
+	<sc_element sys_idtf  = "nrel_between">между</sc_element> 
+	<sc_element sys_idtf  = "concept_geometric_point">точками</sc_element></b> А и B - это 
+	<sc_element sys_idtf  = "nrel_length">длина</sc_element>
+	<sc_element sys_idtf  = "concept_segment">отрезка</sc_element> [AB] 
+	(<sc_element sys_idtf  = "nrel_distance">расстояние</sc_element> 
+	<sc_element sys_idtf  = "nrel_between">между</sc_element>  A и A равно 0). <b>Движение</b> 
+	<sc_element sys_idtf  = "concept_plane">плоскости</sc_element> - 
+	взаимно однозначное отображение <sc_element sys_idtf  = "concept_plane">плоскости</sc_element> на себя, сохраняющее 
+	<sc_element sys_idtf  = "nrel_distance">расстояние</sc_element> 
+	<sc_element sys_idtf  = "nrel_between">между</sc_element> любыми двумя 
+	<sc_element sys_idtf  = "concept_geometric_point">точками</sc_element>. Две 
+	<sc_element sys_idtf  = "concept_geometric_figure">фигуры</sc_element> Ф и Ф' называются
+	<b><sc_element sys_idtf  = "nrel_congruence">равными</sc_element></b> 
+	(или <b><sc_element sys_idtf  = "nrel_congruence">конгруэнтными</sc_element></b>), если существует движение 
+	<sc_element sys_idtf  = "concept_plane">плоскости</sc_element>, переводящее одну из них в другую. Из определения
+	следует:
+	<ul>
+	<li>
+	любая <sc_element sys_idtf  = "concept_geometric_figure">фигура</sc_element> 
+	<sc_element sys_idtf  = "nrel_congruence">равна</sc_element> самой себе: Ф=Ф;
+	</li>
+	<li>
+	если Ф=Ф', то Ф'=Ф;
+	</li>
+	<li>
+	если Ф=Ф' и Ф'=Ф'', то Ф=Ф'';
+ 	</li>
+	</ul>
+	</li>
+	<br></br>
+	<li>
+	На любом <sc_element sys_idtf  = "concept_ray">луче</sc_element>  от его 
+	<sc_element sys_idtf  = "nrel_boundary_point">начала</sc_element> можно отложить 
+	<sc_element sys_idtf  = "concept_segment">отрезок</sc_element> заданной 
+	<sc_element sys_idtf  = "nrel_length">длины</sc_element>, и протом только один.
+	</li>
+	<li>
+	От любого <sc_element sys_idtf  = "concept_ray">луча</sc_element> в данную 
+	<sc_element sys_idtf  = "concept_half_plane">полуплоскость</sc_element> можно отложить 
+	<sc_element sys_idtf  = "concept_angle">угол</sc_element>, 
+	<sc_element sys_idtf  = "nrel_congruence">равный</sc_element> данному, и притом только один.
+	<p> Две 
+	<sc_element sys_idtf  = "concept_straight_line">прямые</sc_element> называются 
+	<b><sc_element sys_idtf  = "nrel_parallelism">параллельными</sc_element></b>, если они не имеют общих 
+	<sc_element sys_idtf  = "concept_geometric_point">точек</sc_element>.</p>
+	</li>
+	<img src="content/10.png" hspace=60>
+	<br></br>
+	<li>
+	Через 
+	<sc_element sys_idtf  = "concept_geometric_point">точку</sc_element>, не лежащую на данной 
+	<sc_element sys_idtf  = "concept_straight_line">прямой</sc_element>, проходит одна и только одна 
+	<sc_element sys_idtf  = "concept_straight_line">прямая</sc_element>, 
+	<sc_element sys_idtf  = "nrel_parallelism">параллельная</sc_element> данной.
+	</li>
+	<br></br>
+	<img src="content/11.png" hspace=60>
+	<p>Примечание. Эта <sc_element sys_idtf  = "rrel_axiom">аксиома</sc_element> называется <b>аксиомой параллельности</b> Евклида или <b>пятым постулатом</b> Евклида.</p>
+	</ul>
+</body>
+</html>		
