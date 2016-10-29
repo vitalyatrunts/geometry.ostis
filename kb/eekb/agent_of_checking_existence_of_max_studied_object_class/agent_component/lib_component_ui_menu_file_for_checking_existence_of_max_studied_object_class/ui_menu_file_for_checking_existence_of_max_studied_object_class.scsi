@@ -4,11 +4,11 @@ ui_menu_file_for_checking_existence_of_max_studied_object_class <- ui_user_comma
 => nrel_main_idtf: [Check existence of maximum studied object class of subject domain] (* <- lang_en;;*);;
 ui_menu_file_for_checking_existence_of_max_studied_object_class => ui_nrel_command_template:
 	[*
-		action_of_checking_existence_of_max_studied_class _-> ._action_of_checking_existence_of_max_studied_class_instance
+		action_of_checking_existence_of_max_studied_class_of_subject_domain _-> ._action_of_checking_existence_of_max_studied_class_of_subject_domain_instance
 			(*
 			_-> ui_arg_1;;
 			*);;
-		._action_of_checking_existence_of_max_studied_class_instance _<- question;;
+		._action_of_checking_existence_of_max_studied_class_of_subject_domain_instance _<- question;;
 	*];;
 
 ui_menu_file_for_checking_existence_of_max_studied_object_class => ui_nrel_command_lang_template: [Проверить наличиe максимального класса объектов исследования у предметных областей: $ui_arg_1] (* <- lang_ru;;*);;

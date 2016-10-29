@@ -15,7 +15,7 @@ sc_agent_of_checking_existence_of_max_studied_object_class_of_subject_domain
 	{
 	question_initiated;
 	question;
-	action_of_checking_existence_of_max_studied_class
+	action_of_checking_existence_of_max_studied_class_of_subject_domain
 	};
 	
 => nrel_inclusion: 
@@ -33,7 +33,7 @@ sc_agent_of_checking_existence_of_max_studied_object_class_of_subject_domain
 
 ..sc_agent_of_checking_existence_of_max_studied_object_class_of_subject_domain_condition
 = [*
-	action_of_checking_existence_of_max_studied_class _-> .._question;;
+	action_of_checking_existence_of_max_studied_class_of_subject_domain _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
 	.._question _-> .._parameter1;;
@@ -41,7 +41,7 @@ sc_agent_of_checking_existence_of_max_studied_object_class_of_subject_domain
 
 ..agent_of_checking_existence_of_max_studied_object_class_of_subject_domain_result
 = [*
-	action_of_checking_existence_of_max_studied_class _-> .._question;;
+	action_of_checking_existence_of_max_studied_class_of_subject_domain _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer_for_checking_existense_of_max_studied_class;;
