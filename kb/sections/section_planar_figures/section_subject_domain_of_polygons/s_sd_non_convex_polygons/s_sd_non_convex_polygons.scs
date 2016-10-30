@@ -1,6 +1,6 @@
 s_sd_non_convex_polygons
 => nrel_main_idtf:
-	[Раздел. Невыпуклые многоугольники и]
+	[Раздел. Невыпуклые многоугольники]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
 	[Section. Non convex polygon]
@@ -10,7 +10,7 @@ s_sd_non_convex_polygons
 		...
 		(*
 		-> rrel_example:
-			"file://s_sd_non_convex_polygons_ru.html"
+			"file://html/s_sd_non_convex_polygons_ru.html"
 			(* <- lang_ru;; *);;
 		*);
 <= nrel_sc_text_translation:
@@ -20,7 +20,8 @@ s_sd_non_convex_polygons
 			"file://content/pic1.png"
 			(* <- lang_ru;; *);;
 		*);
-<-atomic_section;
+<- atomic_section;
+
 => nrel_summary:
 	...
 	(*
