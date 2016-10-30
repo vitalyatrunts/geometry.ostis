@@ -1,18 +1,19 @@
-section_subject_domain_of_planar_geometric_figures
+s_sd_planar_geometric_figures
 => nrel_main_idtf:
 	[Раздел. Предметная область планарных геометрических фигур]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Section. Domain of planar geometric figures]
+	[Section. Subject domain of planar geometric figures]
 	(* <- lang_en;; *);
 
 -> rrel_key_sc_element: subject_domain_of_planar_geometric_figures;
-<- non_atomic_section;
+
+<- atomic_section;
 
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://section_subject_domain_of_planar_geometric_figures_ru.html"
+			"file://html/s_sd_planar_geometric_figures_ru.html"
 			(* <- lang_ru;; *);;
 		*);;
