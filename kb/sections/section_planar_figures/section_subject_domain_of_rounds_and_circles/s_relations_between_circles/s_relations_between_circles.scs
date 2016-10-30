@@ -1,16 +1,16 @@
-s_sd_circle_angle
+s_relations_between_circles
 => nrel_main_idtf:
-	[Раздел. Углы, связанные с окружностью]
+	[Раздел. Отношения между двумя окружностями]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Section. Angles, connected with circle]
+	[Section. Relations between the two circles]
 	(* <- lang_en;; *);
 
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://s_sd_circle_angle_ru.html"
+			"file://html/s_relations_between_circles_ru.html"
 			(* <- lang_ru;; *);;
 		*);
 
@@ -22,15 +22,12 @@ s_sd_circle_angle
 			(* <- lang_ru;; *);;
 		*);
 
-
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
 			"file://content/pic2.png"
 			(* <- lang_ru;; *);;
-
-
 		*);
 <= nrel_sc_text_translation:
 		...
@@ -40,7 +37,6 @@ s_sd_circle_angle
 			(* <- lang_ru;; *);;
 
 		*);
-
 <= nrel_sc_text_translation:
 		...
 		(*
@@ -48,7 +44,6 @@ s_sd_circle_angle
 			"file://content/pic4.png"
 			(* <- lang_ru;; *);;
 		*);
-
 <= nrel_sc_text_translation:
 		...
 		(*
@@ -57,15 +52,16 @@ s_sd_circle_angle
 			(* <- lang_ru;; *);;
 		*);
 
+<- atomic_section;
 
-<-atomic_section;
 => nrel_summary:
 	...
 	(*
 		<= nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example:[В данном разделе рассматриваются свойства углов, связанных с окружностью.]
+			-> rrel_example:
+				[В данном разделе рассматриваются отношения между двумя окружностями.]
 				(* <- lang_ru;; *);;
 			*);;
 	*);;

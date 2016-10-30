@@ -1,18 +1,19 @@
-s_sd_tangent_and_secant_properties
+s_round_sector_segment_area
 => nrel_main_idtf:
-	[Раздел. Касательные и секущие]
+	[Раздел. Площади круга, сектора и сегмента]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Section. Tangent and secant]
+	[Section. Round's, sector's, segment's area]
 	(* <- lang_en;; *);
 
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://s_sd_tangent_and_secant_properties_ru.html"
+			"file://html/s_round_sector_segment_area_ru.html"
 			(* <- lang_ru;; *);;
 		*);
+
 <= nrel_sc_text_translation:
 		...
 		(*
@@ -20,8 +21,6 @@ s_sd_tangent_and_secant_properties
 			"file://content/pic1.png"
 			(* <- lang_ru;; *);;
 		*);
-
-
 <= nrel_sc_text_translation:
 		...
 		(*
@@ -32,15 +31,16 @@ s_sd_tangent_and_secant_properties
 
 		*);
 
+<- atomic_section;
 
-<-atomic_section;
 => nrel_summary:
 	...
 	(*
 		<= nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example:[В данном разделе рассматриваются касательые и секущие.]
+			-> rrel_example:
+				[В данном разделе рассматривается нахождение площади круга, сектора, сегмента.]
 				(* <- lang_ru;; *);;
 			*);;
 	*);;

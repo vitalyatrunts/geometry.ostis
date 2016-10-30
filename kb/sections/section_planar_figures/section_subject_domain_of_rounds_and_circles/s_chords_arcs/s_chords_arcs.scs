@@ -1,16 +1,16 @@
-s_sd_relations_between_circles
+s_chords_arcs
 => nrel_main_idtf:
-	[Раздел. Отношения между двумя окружностями]
+	[Раздел. Хорды и дуги]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Section. Relations between the two circles]
+	[Section. Сhords and arcs]
 	(* <- lang_en;; *);
 
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://s_sd_relations_between_circles_ru.html"
+			"file://html/s_chords_arcs_ru.html"
 			(* <- lang_ru;; *);;
 		*);
 
@@ -22,23 +22,20 @@ s_sd_relations_between_circles
 			(* <- lang_ru;; *);;
 		*);
 
-
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
 			"file://content/pic2.png"
 			(* <- lang_ru;; *);;
-
-
 		*);
+
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
 			"file://content/pic3.png"
 			(* <- lang_ru;; *);;
-
 		*);
 
 <= nrel_sc_text_translation:
@@ -57,15 +54,16 @@ s_sd_relations_between_circles
 			(* <- lang_ru;; *);;
 		*);
 
+<- atomic_section;
 
-<-atomic_section;
 => nrel_summary:
 	...
 	(*
 		<= nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example:[В данном разделе рассматриваются отношения между двумя окружностями.]
+			-> rrel_example:
+				[В данном разделе рассматриваются свойства хорд и дуг.]
 				(* <- lang_ru;; *);;
 			*);;
 	*);;
