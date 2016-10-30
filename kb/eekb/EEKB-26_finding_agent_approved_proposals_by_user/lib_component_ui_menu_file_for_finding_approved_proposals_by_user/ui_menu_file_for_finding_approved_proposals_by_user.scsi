@@ -1,11 +1,11 @@
 ui_menu_file_for_finding_approved_proposals_by_user <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
 
 ui_menu_file_for_finding_approved_proposals_by_user => nrel_main_idtf: 
-	[Запрос на поиск всех утвержденных предложений конкретным пользователем] 
+	[Найти все утвержденные предложения конкретного пользователя] 
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_approved_proposals_by_user => nrel_main_idtf: 
-	[Request of search approved proposals by user] 
+	[Finding approved proposals by user] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_for_finding_approved_proposals_by_user => ui_nrel_command_template:
@@ -18,10 +18,10 @@ ui_menu_file_for_finding_approved_proposals_by_user => ui_nrel_command_template:
 	*];;
 
 ui_menu_file_for_finding_approved_proposals_by_user => ui_nrel_command_lang_template: 
-	[Запрос на поиск всех утвержденных предложений конкретным пользователем: $ui_arg_1] 
+	[Найти все утвержденные предложения конкретного пользователя: $ui_arg_1] 
 	(* <- lang_ru;; *);;
 ui_menu_file_for_finding_approved_proposals_by_user => ui_nrel_command_lang_template: 
-	[Request of search approved proposals by user: $ui_arg_1] 
+	[Finding approved proposals by user: $ui_arg_1] 
 	(* <- lang_eng;; *);;
 
 
