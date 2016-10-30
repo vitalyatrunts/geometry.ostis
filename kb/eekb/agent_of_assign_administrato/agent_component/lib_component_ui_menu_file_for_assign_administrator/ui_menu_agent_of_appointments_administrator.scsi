@@ -8,11 +8,11 @@ ui_menu_agent_of_appointments_administrator => nrel_main_idtf:
 
 ui_menu_agent_of_appointments_administrator => ui_nrel_command_template:
 	[*
-		action_appointments_administrator _-> ._action_appointments_administrator_instance
+		action_assign_administrator _-> ._action_assign_administrator_instance
 			(*
 			_-> ui_arg_1;;				
 			*);;
-		._action_appointments_administrator_instance _<- question;;
+		._action_assign_administrator_instance _<- question;;
 	*];;
 
 ui_menu_agent_of_appointments_administrator => ui_nrel_command_lang_template: 

@@ -1,6 +1,6 @@
 agent_of_assign_administrator
 -> nrel_main_idtf:
-	[агентная scp-программа назначения администратора] (* <- lang_ru;; *);
+	[агентная scp-программа назначения администратором] (* <- lang_ru;; *);
 	[agent scp-program of assign administrator] (* <- lang_en;; *);
 	<- agent_scp_program;;
 
@@ -27,7 +27,7 @@ scp_program -> agent_of_assign_administrator
 			*);;
 
 		-> .agent_of_assign_administrator_operator1A
-        	(*
+        		(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: action_assign_administrator;;
@@ -44,19 +44,19 @@ scp_program -> agent_of_assign_administrator
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _user_futyre_administrator;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
 
 			=> nrel_then: .agent_of_assign_administrator_operator1A2;;
 			=> nrel_else: .agent_of_assign_administrator_return;;
 			*);;
 
 		-> .agent_of_assign_administrator_operator1A2
-        	(*
+        		(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: ui_user;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _user_futyre_administrator;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
 
 			=> nrel_then: .agent_of_assign_administrator_operator1B;;
 			=> nrel_else: .agent_of_assign_administrator_call_proc_of_adding_validating_message;;
@@ -64,16 +64,7 @@ scp_program -> agent_of_assign_administrator
 
 
 		-> .agent_of_assign_administrator_operator1B
-        	(*
-		 	<- genEl;;
-
-		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_assign_administrator;;
-
-		 	=> nrel_goto: .agent_of_assign_administrator_operator1C;;
-		 	*);;
-
-		-> .agent_of_assign_administrator_operator1C
-        	(*
+        		(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
@@ -82,12 +73,12 @@ scp_program -> agent_of_assign_administrator
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_authors;;
 
-			=> nrel_then: .agent_of_assign_administrator_operator1D;;
+			=> nrel_then: .agent_of_assign_administrator_operator1C;;
 			=> nrel_else: .agent_of_assign_administrator_return;;
 			*);;
 
-		-> .agent_of_assign_administrator_operator1D
-        	(*
+		-> .agent_of_assign_administrator_operator1C
+        		(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _system;;
@@ -96,25 +87,34 @@ scp_program -> agent_of_assign_administrator
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_administrator;;
 
-			=> nrel_then: .agent_of_assign_administrator_operator1E;;
+			=> nrel_then: .agent_of_assign_administrator_operator1D;;
 			=> nrel_else: .agent_of_assign_administrator_call_proc_of_adding_validating_message_have_not_administration_rights;;
 			*);;
 
+		-> .agent_of_assign_administrator_operator1D
+        		(*
+		 	<- genEl;;
+
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_assign_administrator;;
+
+		 	=> nrel_goto: .agent_of_assign_administrator_operator1C;;
+		 	*);;
+
 		-> .agent_of_assign_administrator_operator1E
-        	(*
+        		(*
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _system;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc_answer1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _user_futyre_administrator;;
-			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc_answer2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_administrator;;
 
 			=> nrel_goto: .agent_of_assign_administrator_operator2A;;
 			*);;
 
 		-> .agent_of_assign_administrator_operator2A
-        	(*
+        		(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
@@ -125,40 +125,34 @@ scp_program -> agent_of_assign_administrator
 			*);;
 
 		-> .agent_of_assign_administrator_operator2B
-        	(*
+        		(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _user_futyre_administrator;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
 	
 			=> nrel_goto: .agent_of_assign_administrator_operator2C;;
 			*);;
 
 		-> .agent_of_assign_administrator_operator2C
-        	(*
-			<- genElStr3;;
+        		(*
+			<- searchSetStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_const: _arc_answer1;;
-	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _system;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_administrator;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
+
 			=> nrel_goto: .agent_of_assign_administrator_operator2D;;
 			*);;
 
 		-> .agent_of_assign_administrator_operator2D
-        	(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_const: _arc_answer2;;
-	
-			=> nrel_goto: .agent_of_assign_administrator_operator2E;;
-			*);;
-
-		-> .agent_of_assign_administrator_operator2E
-        	(*
+        		(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
@@ -168,19 +162,20 @@ scp_program -> agent_of_assign_administrator
 			=> nrel_goto: .agent_of_assign_administrator_operator2E1;;
 			*);;
 
+
 		-> .agent_of_assign_administrator_operator2E1
-        	(*
+        		(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_user;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _user_futyre_administrator;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
 
 			=> nrel_goto: .agent_of_assign_administrator_operator2E2;;
 			*);;
 
 		-> .agent_of_assign_administrator_operator2E2
-        	(*
+        		(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
@@ -191,13 +186,15 @@ scp_program -> agent_of_assign_administrator
 			*);;
 
 		-> .agent_of_assign_administrator_operator2E3
-        	(*
-			<- genElStr3;;
+        		(*
+			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _arc_user;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user_future_administrator;;
 	
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_assign_administrator;;
+
 			=> nrel_goto: .agent_of_assign_administrator_operator2F;;
 			*);;
 
@@ -247,21 +244,21 @@ scp_program -> agent_of_assign_administrator
 		  	<- call;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_assign_administrator_call_proc_of_adding_validating_message_params 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_assign_administrator_call_proc_of_adding_validating_message_have_not_administration_rights_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 				-> rrel_2: rrel_fixed: rrel_scp_const: [You have not administrator rights];;
 				*);;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
 
-		  	=> nrel_goto: .agent_of_assign_administrator_call_proc_of_adding_validating_message_waitreturn_proc_of_adding_validating_message;;
+		  	=> nrel_goto: .agent_of_assign_administrator_call_proc_of_adding_validating_message_waitreturn_have_not_administration_rights;;
 			*);;
 
-		-> .agent_of_assign_administrator_call_proc_of_adding_validating_message_waitreturn_proc_of_adding_validating_message
+		-> .agent_of_assign_administrator_call_proc_of_adding_validating_message_waitreturn_have_not_administration_rights
 			(*
 		  	<- waitReturn;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
 
 		  	=> nrel_goto: .agent_of_assign_administrator_return;;
 			*);;
