@@ -33,38 +33,54 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements1C;;
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements1C1;;
 			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		->.agent_of_check_for_crossing_from_one_subdividing_elements1C1
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: rrel_struct: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements1C;;
 			*);;
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements1C
 			(*
-		  	<- searchElStr3;;
+		  	<- searchSetStr3;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_struct: rrel_scp_var: _param;;
+
+		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
 
 		  	=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2A;;
 		  	=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_call_proc_of_adding_validating_message;;
-			*);;
-		
-		-> .agent_of_check_for_crossing_from_one_subdividing_elements2A
-			(*
-			<- genEl;;
-
-			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-
-			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2B;;
 			*);;	
+
+		->.agent_of_check_for_crossing_from_one_subdividing_elements2A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements2B
 			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2C;;
 			*);;
@@ -75,7 +91,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2D;;
 			*);;
@@ -86,29 +102,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
-
-			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2E;;
-			*);;
-
-		-> .agent_of_check_for_crossing_from_one_subdividing_elements2E
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: action_of_check_for_crossing_from_one_subdividing_elements;;
-
-			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2F;;
-			*);;
-
-		-> .agent_of_check_for_crossing_from_one_subdividing_elements2F
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements3A;;
 			*);;
@@ -135,7 +129,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			(*
 			<- genEl;;
 
-			-> rrel_1: rrel_node: rrel_assign: rrel_scp_var: _answer_struct;;
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: rrel_struct: _answer_struct;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements3D;;
 			*);;
@@ -144,7 +138,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _param;;
+			-> rrel_1: rrel_fixed: rrel_scp_var:  _param;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _some_element;;
 
@@ -199,9 +193,18 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
 
-			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements5D;;
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements5D1;;
 			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements11A;;
 			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements5D1
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_element;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements5D;;
+			*);;
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements5D
 			(*
@@ -307,7 +310,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_subdividing_elements;;
 
 			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements8A;;
-			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements6A;;
 			*);;	
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements8A
@@ -465,7 +468,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_struct;;
 
 			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements10B;;
-			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements5C;;
 			*);;
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements10B
@@ -499,8 +502,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_struct;;
 
-			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements10B;;
-			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements10B;;
 			*);;	
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements10E
@@ -566,11 +568,13 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements11E
 			(*
-			<- genElStr3;;
+			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: structure_containing_elements_one_subdividing_non_empty_crossing;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_struct;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements11F;;
 			*);;
@@ -581,7 +585,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_const: structure_containing_elements_one_subdividing_non_empty_crossing;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: structure_containing_elements_one_subdividing_non_empty_crossing;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements12A;;
 			*);;
@@ -591,7 +595,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_struct;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;	
@@ -601,27 +605,21 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements12B
 			(*
-			<- genElStr3;;
+			<- searchSetStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_common: _arc1;;	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_struct;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;	
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements12C;;
 			*);;
 
 		-> .agent_of_check_for_crossing_from_one_subdividing_elements12C
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc2;;	
-
-			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements12D;;
-			*);;
-
-		-> .agent_of_check_for_crossing_from_one_subdividing_elements12D
 			(*
 			<- genElStr3;;
 
@@ -666,7 +664,7 @@ scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var:  _answer_of_check_for_crossing_from_one_subdividing_elements;;
-			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
 
 			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
