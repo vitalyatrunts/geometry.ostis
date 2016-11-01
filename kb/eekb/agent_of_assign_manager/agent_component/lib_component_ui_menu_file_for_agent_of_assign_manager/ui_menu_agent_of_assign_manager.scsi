@@ -1,9 +1,9 @@
 ui_menu_agent_of_assign_manager <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
 
 ui_menu_agent_of_assign_manager => nrel_main_idtf: 
-	[назначение менеджером]
+	[Назначить менеджером]
 	(* <- lang_ru;; *);
-	[to assign manager] 
+	[Assign manager] 
 	(* <- lang_en;; *);;
 
 ui_menu_agent_of_assign_manager => ui_nrel_command_template:
@@ -16,7 +16,7 @@ ui_menu_agent_of_assign_manager => ui_nrel_command_template:
 	*];;
 
 ui_menu_agent_of_assign_manager => ui_nrel_command_lang_template: 
-	[Команда назначить менеджером: $ui_arg_1] 
+	[назначить менеджером: $ui_arg_1] 
 	(* <- lang_ru;; *);
-	[Command to assign manager: $ui_arg_1] 
+	[Assign manager: $ui_arg_1] 
 	(* <- lang_en;; *);;
