@@ -66,7 +66,7 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			(*
 			<- genEl;;
 		  	
-			-> rrel_1: rrel_assign: rrel_const: rrel_scp_var: rrel_node: _set_of_designed_approved;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_scp_var: rrel_node: _set_of_object_approved;;
 			
 			=> nrel_goto: .agent_of_finding_approved_proposals_of_author1D;;
 			*);;
@@ -81,7 +81,7 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_authors;;
 
-			-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_designed_approved;;
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_object_approved;;
 
 			=> nrel_then: .agent_of_finding_approved_proposals_of_author1E;;
 			=> nrel_else: ..agent_of_finding_approved_proposals_of_author_erase_set_2;;
@@ -109,7 +109,7 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_designed_approved;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_object_approved;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_remove;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _structure;;
 
@@ -176,11 +176,11 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _action_node;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _some_sign_class;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _some_sign_class;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action_node;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_some_sign_class;;
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_some_sign_class;;
 
 			=> nrel_goto: .agent_of_finding_approved_proposals_of_author_find_set_some_sign_class_2;;
 			*);;
@@ -235,11 +235,13 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 
 		-> .agent_of_finding_approved_proposals_of_author_find_set_some_sign_class_6
 			(*	
-			<- genElStr3;;
+			<- searchSetStr3;;
 
 	    		-> rrel_1: rrel_fixed: rrel_scp_var: _some_sign_class;;
    	    		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _action_node;;
+
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 
 			=>nrel_goto: .agent_of_finding_approved_proposals_of_author6G;;
 			*);;
@@ -409,7 +411,16 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_designed_approved;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_object_approved;;
+			
+			=> nrel_goto: .agent_of_finding_approved_proposals_of_author_erase_set_3;;
+			*);;
+
+		-> .agent_of_finding_approved_proposals_of_author_erase_set_3
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_some_sign_class;;
 			
 			=> nrel_goto: .agent_of_finding_approved_proposals_of_author_return;;
 			*);;	
