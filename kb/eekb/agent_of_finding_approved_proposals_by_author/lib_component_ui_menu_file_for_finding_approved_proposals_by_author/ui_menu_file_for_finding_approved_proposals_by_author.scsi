@@ -10,11 +10,11 @@ ui_menu_file_for_finding_approved_proposals_by_author => nrel_main_idtf:
 
 ui_menu_file_for_finding_approved_proposals_by_author => ui_nrel_command_template:
 	[*
-		action_of_finding_all_approved_proposals_by_author _-> ._action_of_finding_all_approved_proposals_by_author_instance
+		action_of_finding_all_approved_proposals_of_author _-> ._action_of_finding_all_approved_proposals_of_author_instance
 			(*
 			_-> ui_arg_1;;				
 			*);;
-		._action_of_finding_all_approved_proposals_by_author_instance _<- question;;
+		._action_of_finding_all_approved_proposals_of_author_instance _<- question;;
 	*];;
 
 ui_menu_file_for_finding_approved_proposals_by_author => ui_nrel_command_lang_template: 
