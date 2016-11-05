@@ -1,4 +1,4 @@
-lib_ui_menu_file_for_finding_approved_proposals_by_author
+lib_ui_menu_file_for_finding_approved_proposals_of_author
 => nrel_main_idtf:
 	[Компонент библиотеки. Команда пользовательского интерфейса для поиска всех утвержденных предложений разработчика]
 	(* <- lang_ru;; *);
@@ -17,9 +17,9 @@ lib_ui_menu_file_for_finding_approved_proposals_by_author
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Ui_Of_finding_approved_proposals_by_author.html"
+			"file://htmls/Ui_Of_finding_approved_proposals_of_author.html"
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-lib_ui_menu_file_for_finding_approved_proposals_by_author = [*^"file://ui_menu_file_for_finding_approved_proposals_by_author.scsi"*];; 
+lib_ui_menu_file_for_finding_approved_proposals_of_author = [*^"file://ui_menu_file_for_finding_approved_proposals_of_author.scsi"*];; 
