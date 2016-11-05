@@ -15,7 +15,7 @@ sc_agent_of_finding_rejected_proposals_by_author
 	{
 	question_initiated;
 	question;
-	action_of_finding_rejected_proposals_by_author
+	action_of_finding_all_rejected_proposals_by_author
 	};
 
 => nrel_inclusion: 
@@ -32,7 +32,7 @@ sc_agent_of_finding_rejected_proposals_by_author
 
 ..sc_agent_of_finding_rejected_proposals_by_author_condition
 = [*
-	action_of_finding_rejected_proposals_by_author _-> .._question;;
+	action_of_finding_all_rejected_proposals_by_author _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
 	.._question _-> .._param;;
@@ -40,7 +40,7 @@ sc_agent_of_finding_rejected_proposals_by_author
 
 ..sc_agent_of_finding_rejected_proposals_by_author_result
 = [*
-	action_of_finding_rejected_proposals_by_author _-> .._question;;
+	action_of_finding_all_rejected_proposals_by_author _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer_for_finding_rejected_proposals_by_author;;
