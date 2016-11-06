@@ -84,7 +84,7 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_designed_structures;;
 
 			=> nrel_then: .agent_of_finding_approved_proposals_of_author1E;;
-			=> nrel_else: ..agent_of_finding_approved_proposals_of_author_erase_set_2;;
+			=> nrel_else: .agent_of_finding_approved_proposals_of_author_erase_set_3;;
 			*);;
 
 		-> .agent_of_finding_approved_proposals_of_author1E
@@ -409,7 +409,7 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_designed_structures;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_some_sign_class;;
 			
 			=> nrel_goto: .agent_of_finding_approved_proposals_of_author_erase_set_3;;
 			*);;
@@ -418,7 +418,7 @@ scp_program -> agent_of_finding_approved_proposals_of_author
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_some_sign_class;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_designed_structures;;
 			
 			=> nrel_goto: .agent_of_finding_approved_proposals_of_author_return;;
 			*);;	
