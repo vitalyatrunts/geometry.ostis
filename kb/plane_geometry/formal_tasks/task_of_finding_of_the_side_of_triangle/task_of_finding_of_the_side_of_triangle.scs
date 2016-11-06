@@ -1,6 +1,6 @@
-question_of_finding_of_the_side_of_triangle => nrel_main_idtf: [Задача 2] (* <-lang_ru;; *);;
+task_of_finding_of_the_side_of_triangle => nrel_main_idtf: [Задача 2] (* <-lang_ru;; *);;
 
-question_of_finding_of_the_side_of_triangle <= nrel_sc_text_translation: 
+task_of_finding_of_the_side_of_triangle <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
@@ -8,13 +8,13 @@ question_of_finding_of_the_side_of_triangle <= nrel_sc_text_translation:
 		(* <- lang_ru;; *);;
 	*);;
 
-question_of_finding_of_the_side_of_triangle <- rrel_key_sc_element: 
+task_of_finding_of_the_side_of_triangle <- rrel_key_sc_element: 
 	...
 	(*
 	<- illustration;; 
 	<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://question_of_finding_of_the_side_of_triangle.png";;
+		-> rrel_example: "file://task_of_finding_of_the_side_of_triangle.png";;
 		*);;
 	*);;

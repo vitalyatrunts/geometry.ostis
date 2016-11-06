@@ -1,6 +1,6 @@
-question_on_the_proof_of_being_rectangle => nrel_main_idtf: [Задача 4] (* <-lang_ru;; *);;
+task_on_the_proof_of_being_rectangle => nrel_main_idtf: [Задача 4] (* <-lang_ru;; *);;
 
-question_on_the_proof_of_being_rectangle <= nrel_sc_text_translation: 
+task_on_the_proof_of_being_rectangle <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
@@ -8,13 +8,13 @@ question_on_the_proof_of_being_rectangle <= nrel_sc_text_translation:
 		(* <- lang_ru;; *);;
 	*);;
 
-question_on_the_proof_of_being_rectangle <- rrel_key_sc_element: 
+task_on_the_proof_of_being_rectangle <- rrel_key_sc_element: 
 	...
 	(*
 	<- illustration;; 
 	<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://question_on_the_proof_of_being_rectangle.png";;
+		-> rrel_example: "file://task_on_the_proof_of_being_rectangle.png";;
 		*);;
 	*);;
