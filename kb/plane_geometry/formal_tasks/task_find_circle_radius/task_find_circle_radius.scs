@@ -1,6 +1,6 @@
-task_of_finding_of_circle_radius => nrel_main_idtf: [Задача 1] (* <-lang_ru;; *);;
+task_find_circle_radius => nrel_main_idtf: [Задача 1] (* <-lang_ru;; *);;
 
-task_of_finding_of_circle_radius <= nrel_sc_text_translation: 
+task_find_circle_radius <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
@@ -8,13 +8,13 @@ task_of_finding_of_circle_radius <= nrel_sc_text_translation:
 		(* <- lang_ru;; *);;
 	*);;
 
-task_of_finding_of_circle_radius <- rrel_key_sc_element: 
+task_find_circle_radius <- rrel_key_sc_element: 
 	...
 	(*
 	<- illustration;; 
 	<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://task_of_finding_of_circle_radius.png";;
+		-> rrel_example: "file://task_find_circle_radius.png";;
 		*);;
 	*);;
