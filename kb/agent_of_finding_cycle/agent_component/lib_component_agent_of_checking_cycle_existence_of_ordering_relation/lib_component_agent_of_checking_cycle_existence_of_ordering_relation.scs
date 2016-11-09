@@ -1,8 +1,8 @@
-lib_component_agent_of_finding_cycle
+lib_component_agent_of_checking_cycle_existence_of_ordering_relation
 => nrel_main_idtf:
-	[Компонент библиотеки. sc-агент поиска цикла в заданной предметной области]
+	[Компонент библиотеки. sc-агент проверки наличия цикла в заданном отношении порядка]
 	(* <- lang_ru;; *);
-	[Library component. sc-agent of  finding cycle in given domain]
+	[Library component. sc-agent of checking of cycle for a given order relation]
 	(* <- lang_en;; *);
 
 <- platform_independent_reusable_component_OSTIS; 
@@ -10,7 +10,7 @@ lib_component_agent_of_finding_cycle
 <- reusable_scp_agent;
 
 -> rrel_key_sc_element: 
-	.platform_independent_realization_of_sc_agent_of_finding_cycle;
+	.platform_independent_realization_of_sc_agent_of_checking_cycle_existence_of_ordering_relation;
 
 <- rrel_key_sc_element: 
 	...
