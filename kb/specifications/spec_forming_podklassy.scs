@@ -1,7 +1,0 @@
-set <- rrel_main_key_sc_element: spec_formula_podklassy;;
-
-spec_formula_podklassy -> rrel_key_sc_element: nrel_inclusion;;
-
-main_specification -> spec_formula_podklassy;;
-
-spec_formula_podklassy => nrel_main_idtf: [ОС (множество, подмножество*)] (* <- lang_ru;; *);;
