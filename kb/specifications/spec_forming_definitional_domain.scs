@@ -1,0 +1,7 @@
+relation <- rrel_main_key_sc_element: spec_forming_definitional_domain;;
+
+spec_forming_definitional_domain -> rrel_key_sc_element: nrel_definitional_domain;;
+
+main_specification -> spec_forming_definitional_domain;;
+
+spec_forming_main_idtf => nrel_main_idtf: [НОС (отношение, область определения*)] (* <- lang_ru;; *);;
