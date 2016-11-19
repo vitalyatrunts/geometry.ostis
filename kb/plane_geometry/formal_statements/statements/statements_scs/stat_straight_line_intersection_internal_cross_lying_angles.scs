@@ -18,7 +18,7 @@ stat_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_tran
 stat_converse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example: ...
-		[Если две прямые пересечены третьей и внутренние накрест лежащие углы равны, то эти прямые параллельны.] (* <- lang_ru;; *);;
+		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы равны, то эти прямые параллельны.] (* <- lang_ru;; *);;
 	*);;
 
 stat_reverse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
@@ -30,7 +30,7 @@ stat_reverse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_t
 stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example: ...
-		[Если две прямые пересечены третьей и внутренние накрест лежащие углы не равны, то эти прямые не параллельны.] (* <- lang_ru;; *);;
+		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы не равны, то эти прямые не параллельны.] (* <- lang_ru;; *);;
 	*);;
 
 stat_straight_line_intersection_internal_cross_lying_angles  <=> nrel_converse_theorem: stat_converse_straight_line_intersection_internal_cross_lying_angles;;

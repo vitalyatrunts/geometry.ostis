@@ -4,7 +4,7 @@ statement -> stat_reverse_triangle_angle_side_opposite;;
 statement -> stat_reverse_converse_triangle_angle_side_opposite;;
 
 stat_triangle_angle_side_opposite => nrel_main_idtf: [Утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_triangle_angle_side_opposite => nrel_main_idtf: [Обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
+stat_converse_triangle_angle_side_opposite => nrel_main_idtf: [Обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
 stat_reverse_triangle_angle_side_opposite => nrel_main_idtf: [Прот.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
 stat_reverse_converse_triangle_angle_side_opposite => nrel_main_idtf: [Прот.обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
 
