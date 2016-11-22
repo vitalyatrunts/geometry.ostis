@@ -67,35 +67,30 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 
 			-> rrel_1: rrel_assign: rrel_const: rrel_scp_var: rrel_node: _answer_for_forming_logical_ontology;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2A;;
-			*);;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain1G;;
+			*);; 
 		
+		-> .agent_of_forming_logical_ontology_for_the_given_domain1G
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _set_for_constants;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain1H;;
+			*);; 
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain1H
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _set_for_answer;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2A;;
+			*);; 
+
 		-> .agent_of_forming_logical_ontology_for_the_given_domain2A
 			(*
-			<- searchElStr3;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _object;;
-
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain2B;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain2C;;
-			*);;   
-		
-		-> .agent_of_forming_logical_ontology_for_the_given_domain2C
-			(*
-			<- genElStr3;;
-				
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
-
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain_return;;
-			*);;
-		
-		-> .agent_of_forming_logical_ontology_for_the_given_domain2B
-			(*
-			<- searchElStr5;;
+			<- searchSetStr5;;
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
@@ -103,11 +98,34 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain2C;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain2D;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_ontology;;
+
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain2B;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain2G;;
 			*);;
 
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2B
+			(*
+			<- searchElStr3;;
+				
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_ontology;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _ontology;;
+
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain2C;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain2G;;
+			*);;	
+
 		-> .agent_of_forming_logical_ontology_for_the_given_domain2C
+			(*
+			<- eraseEl;;
+				
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2D;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2D
 			(*
 			<- searchElStr3;;
 
@@ -115,20 +133,38 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain3A;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain6D;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain2E;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain2B;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain2D
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2E
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2F;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2F
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_ontology;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2G;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2G
 			(*
 			<- genEl;;
 			
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_struct: rrel_node: _ontology;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2E;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2H;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain2E
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2H
 			(*
 			<- genElStr5;;
 
@@ -138,10 +174,10 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2F;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain2I;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain2F
+		-> .agent_of_forming_logical_ontology_for_the_given_domain2I
 			(*
 			<- genElStr3;;
 
@@ -255,12 +291,12 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _object;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _object;;
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_object;;
 
 			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain5A;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain_return;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain_gen_answer;;
 			*);;	
 
 		-> .agent_of_forming_logical_ontology_for_the_given_domain5A
@@ -272,7 +308,7 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_3: rrel_assign: rrel_scp_var: _object;;
 
 			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain5B;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8A;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain9A;;
 			*);;	
 
 		-> .agent_of_forming_logical_ontology_for_the_given_domain5B
@@ -357,7 +393,7 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_forming_logical_ontology_for_the_given_domain6C_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _ontology;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _set_for_answer;;
 				*);;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
 
@@ -381,7 +417,7 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_forming_logical_ontology_for_the_given_domain6E_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _ontology;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _set_for_answer;;
 				*);;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
 
@@ -408,7 +444,7 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
 
 			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7B;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain7D;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8A;;
 			*);;
 
 		-> .agent_of_forming_logical_ontology_for_the_given_domain7B
@@ -417,7 +453,7 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _for_definition;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7D;;
 			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain7C;;
 			*);;	
 
@@ -427,10 +463,98 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _for_definition;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7D;;
 			*);;	
 
 		-> .agent_of_forming_logical_ontology_for_the_given_domain7D
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _ligament_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
+
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7E;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain7E
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ligament_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _using_constant;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_for_constants;;
+			
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7F;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain7F
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ligament_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _using_constant;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
+			
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7G;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain7G
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_constants;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _using_constant;;
+			
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7H;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain7H
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7I;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain7I
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _using_constant;;
+			
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7G;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain7J
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _using_constant;;
+			
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7G;;
+			*);;	
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8A
 			(*
 			<- searchSetStr3;;
 
@@ -440,30 +564,30 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7E;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain7G;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8B;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8D;;
 			*);;		
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain7E
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8B
 			(*
 			<- ifVarAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _for_statement;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain7F;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8C;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain7F
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8C
 			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _for_statement;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
 			*);;	
 	
-		-> .agent_of_forming_logical_ontology_for_the_given_domain7G
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8D
 			(*
 			<- searchSetStr3;;
 
@@ -473,51 +597,51 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7H;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8E;;
 			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain6A;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain7H
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8E
 			(*
 			<- ifVarAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _for_explanation;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain7I;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8F;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain7I
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8F
 			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _for_explanation;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain7J;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain7J
+		-> .agent_of_forming_logical_ontology_for_the_given_domain8G
 			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc7;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc8;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
 
 			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain6A;;		
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8A
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9A
 			(*
 			<- ifVarAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _for_definition;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8B;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8D;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain9B;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain9E;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8B
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9B
 			(*
 			<- genElStr3;;
 			
@@ -525,29 +649,40 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: definition;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8C;;	
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9C;;	
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8C
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9C
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9D;;	
+			*);;	
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9D
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _for_definition;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8D;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9E;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8D
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9E
 			(*
 			<- ifVarAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _for_statement;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8E;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain9F;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain9H;;
 			*);;	
 	
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8E
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9F
 			(*
 			<- genElStr3;;
 			
@@ -555,29 +690,29 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: statement;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8F;;	
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9G;;	
 			*);;	
-
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8F
+	
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9G
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _for_statement;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8G;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9H;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8G
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9H
 			(*
 			<- ifVarAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _for_explanation;;
 
-			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain8H;;
-			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain8J;;
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain9I;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain9K;;
 			*);;	
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8H
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9I
 			(*
 			<- genElStr3;;
 			
@@ -585,19 +720,19 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: explanation;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8I;;	
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9J;;	
 			*);;		
 			
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8I
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9J
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _for_explanation;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8J;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9K;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8J
+		-> .agent_of_forming_logical_ontology_for_the_given_domain9K
 			(*
 			<- genElStr3;;
 			
@@ -605,42 +740,104 @@ scp_program -> agent_of_forming_logical_ontology_for_the_given_domain
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain8K;;	
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain10A;;	
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain8K
+		-> .agent_of_forming_logical_ontology_for_the_given_domain10A
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
+
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain10B;;	
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain10E;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain10B
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain10C;;	
+			*);;	
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain10C
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _something;;
+
+			=> nrel_then: .agent_of_forming_logical_ontology_for_the_given_domain10A;;
+			=> nrel_else: .agent_of_forming_logical_ontology_for_the_given_domain10D;;	
+			*);;	
+	
+		-> .agent_of_forming_logical_ontology_for_the_given_domain10D
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _something;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain10A;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain10E
 			(*
 			<- searchSetStr3;;
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
-			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
-			
+
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_forming_logical_ontology;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9A;;	
-			*);;
-	
-		-> .agent_of_forming_logical_ontology_for_the_given_domain9A
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain11A;;	
+			*);;	
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain11A
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_object;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain9B;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain11B;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain9B
+		-> .agent_of_forming_logical_ontology_for_the_given_domain11B
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_sc_element;;
 
-			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain10A;;
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain11C;;
 			*);;
 
-		-> .agent_of_forming_logical_ontology_for_the_given_domain10A
+		-> .agent_of_forming_logical_ontology_for_the_given_domain11C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_constants;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain11D;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain11D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_answer;;
+
+			=> nrel_goto: .agent_of_forming_logical_ontology_for_the_given_domain_gen_answer;;
+			*);;
+
+		-> .agent_of_forming_logical_ontology_for_the_given_domain_gen_answer
 			(*
 			<- genElStr5;;
 			
