@@ -35,37 +35,35 @@ scp_program-> proc_of_output_associated_statements
 
 		-> .proc_of_output_associated_statements1C
 			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
-
-			=> nrel_goto: .proc_of_output_associated_statements1D;;
-			*);;
-
-		-> .proc_of_output_associated_statements1D
-			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_sc_element;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _some_node;;
 
-			=> nrel_then: .proc_of_output_associated_statements1E;;
-			=> nrel_else: .proc_of_output_associated_statements4A;;
+			=> nrel_then: .proc_of_output_associated_statements1D;;
+			=> nrel_else: .proc_of_output_associated_statements3B;;
 			*);;	
 
-		-> .proc_of_output_associated_statements1E
+		-> .proc_of_output_associated_statements1D
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 
-			=> nrel_goto: .proc_of_output_associated_statements1F;;
+			=> nrel_goto: .proc_of_output_associated_statements1E1;;
 			*);;
 
-		-> .proc_of_output_associated_statements1F
+		-> .proc_of_output_associated_statements1E1
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_node;;
+
+			=> nrel_goto: .proc_of_output_associated_statements1E;;
+			*);;	
+
+		-> .proc_of_output_associated_statements1E
 			(*
 			<- searchSetStr3;;
 
@@ -75,11 +73,11 @@ scp_program-> proc_of_output_associated_statements
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
 
-			=> nrel_then: .proc_of_output_associated_statements1G;;
+			=> nrel_then: .proc_of_output_associated_statements1F;;
 			=> nrel_else: .proc_of_output_associated_statements2A;;
 			*);;
 
-		-> .proc_of_output_associated_statements1G
+		-> .proc_of_output_associated_statements1F
 			(*
 			<- searchSetStr5;;
 
@@ -92,11 +90,11 @@ scp_program-> proc_of_output_associated_statements
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
 
-			=> nrel_then: .proc_of_output_associated_statements1H;;
+			=> nrel_then: .proc_of_output_associated_statements1G;;
 			=> nrel_else: .proc_of_output_associated_statements2A;;
 			*);;		
 
-		-> .proc_of_output_associated_statements1H
+		-> .proc_of_output_associated_statements1G
 			(*
 			<- searchElStr3;;
 
@@ -105,10 +103,10 @@ scp_program-> proc_of_output_associated_statements
 			-> rrel_3: rrel_fixed: rrel_scp_const: statement;;
 
 			=> nrel_then: .proc_of_output_associated_statements3A;;
-			=> nrel_else: .proc_of_output_associated_statements1I;;
+			=> nrel_else: .proc_of_output_associated_statements1H;;
 			*);;
 
-		-> .proc_of_output_associated_statements1I
+		-> .proc_of_output_associated_statements1H
 			(*
 			<- genElStr3;;
 
@@ -123,14 +121,14 @@ scp_program-> proc_of_output_associated_statements
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: definiton;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: definition;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_node;;
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
 
 			=> nrel_then: .proc_of_output_associated_statements2B;;
-			=> nrel_else: .proc_of_output_associated_statements1D;;
+			=> nrel_else: .proc_of_output_associated_statements1C;;
 			*);;	
 
 		-> .proc_of_output_associated_statements2B
@@ -156,7 +154,7 @@ scp_program-> proc_of_output_associated_statements
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: definiton;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: definition;;
 
 			=> nrel_then: .proc_of_output_associated_statements3A;;
 			=> nrel_else: .proc_of_output_associated_statements2D;;
@@ -168,7 +166,7 @@ scp_program-> proc_of_output_associated_statements
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: definiton;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: definition;;
 
 			=> nrel_goto: .proc_of_output_associated_statements3A;;
 			*);;
@@ -181,7 +179,30 @@ scp_program-> proc_of_output_associated_statements
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_node;;
 
-			=> nrel_goto: .proc_of_output_associated_statements1D;;
+			=> nrel_goto: .proc_of_output_associated_statements1C;;
+			*);;
+
+		-> .proc_of_output_associated_statements3B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_statement;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			=> nrel_then: .proc_of_output_associated_statements3C;;
+			=> nrel_else: .proc_of_output_associated_statements5A;;
+			*);;
+
+		-> .proc_of_output_associated_statements3C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_output_of_all_statements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_goto: .proc_of_output_associated_statements4A;;
 			*);;
 
 		-> .proc_of_output_associated_statements4A
@@ -349,7 +370,7 @@ scp_program-> proc_of_output_associated_statements
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _set_for_next_sc_element;;
 
-			=> nrel_then: .proc_of_output_associated_statements5F;;
+			=> nrel_then: .proc_of_output_associated_statements5I;;
 			=> nrel_else: .proc_of_output_associated_statements5H;;
 			*);;
 
@@ -365,11 +386,11 @@ scp_program-> proc_of_output_associated_statements
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_next_sc_element;;
 
-			=> nrel_then: .proc_of_output_associated_statements6B;;
-			=> nrel_else: .proc_of_output_associated_statements5D;;
+			=> nrel_then: .proc_of_output_associated_statements6A;;
+			=> nrel_else: .proc_of_output_associated_statements5E;;
 			*);;	
 
-		-> .proc_of_output_associated_statements5F
+		-> .proc_of_output_associated_statements5I
 			(*
 			<- searchSetStr5;;
 
@@ -381,8 +402,8 @@ scp_program-> proc_of_output_associated_statements
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_for_next_sc_element;;
 
-			=> nrel_then: .proc_of_output_associated_statements6B;;
-			=> nrel_else: .proc_of_output_associated_statements5D;;
+			=> nrel_then: .proc_of_output_associated_statements6A;;
+			=> nrel_else: .proc_of_output_associated_statements5E;;
 			*);;	
 
 		-> .proc_of_output_associated_statements6A
