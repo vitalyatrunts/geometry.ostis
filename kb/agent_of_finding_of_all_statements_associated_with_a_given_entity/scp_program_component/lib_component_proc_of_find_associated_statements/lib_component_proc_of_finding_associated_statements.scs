@@ -1,4 +1,4 @@
-lib_component_proc_of_output_associated_statements
+lib_component_proc_of_finding_associated_statements
 => nrel_main_idtf:
 	[Компонент библиотеки. Scp-программа вывода всех ассоциированных с данной сущностью утверждений]
 	(* <- lang_ru;; *);
@@ -8,7 +8,7 @@ lib_component_proc_of_output_associated_statements
 <- library_of_platform_independent_reusable_components;
 
 -> rrel_key_sc_element: 
-	proc_of_output_associated_statements;
+	proc_of_finding_associated_statements;
 
 <- rrel_key_sc_element: 
 	...
@@ -18,10 +18,10 @@ lib_component_proc_of_output_associated_statements
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Proc_Of_Output_Assoc_Statement.html" 
+			"file://htmls/Proc_Of_Find_Assoc_Statement.html" 
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-lib_component_proc_of_output_associated_statements = [*^"file://proc_of_output_associated_statements.scsi"*];;
+lib_component_proc_of_finding_associated_statements = [*^"file://proc_of_finding_associated_statements.scsi"*];;
 

@@ -1,4 +1,4 @@
-lib_ui_menu_file_for_output_of_all_statements_associated_with_a_given_entity
+lib_ui_menu_file_for_finding_of_all_statements_associated_with_a_given_entity
 => nrel_main_idtf:
 	[Компонент библиотеки. Команда пользовательского интерфейса для формализации заданной структуры в естественно-языковую форму]
 	(* <- lang_ru;; *);
@@ -18,11 +18,11 @@ lib_ui_menu_file_for_output_of_all_statements_associated_with_a_given_entity
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Ui_Output_Statements_Associated_With_Entity.html"
+			"file://htmls/Ui_Find_Statements_Associated_With_Entity.html"
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
 
 
 
-lib_ui_menu_file_for_output_of_all_statements_associated_with_a_given_entity = [*^"file://ui_menu_file_for_output_of_all_statements_associated_with_a_given_entity.scsi"*];; 
+lib_ui_menu_file_for_finding_of_all_statements_associated_with_a_given_entity = [*^"file://ui_menu_file_for_finding_of_all_statements_associated_with_a_given_entity.scsi"*];; 
