@@ -16,7 +16,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_relation;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form1B;;
 			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
@@ -26,7 +26,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_relation;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
 
@@ -47,7 +47,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_similarity;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2A;;
@@ -58,7 +58,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_congruence;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2A;;
@@ -69,7 +69,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_equal_sized;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2A;;
@@ -80,11 +80,11 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_ligament;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2B;;
 			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
@@ -94,7 +94,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_ligament;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
 
@@ -119,17 +119,8 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _something;;
 
-			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2E1;;
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2E;;
 			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form2B;;
-			*);;
-
-		-> .proc_of_formalization_geometric_relations_in_natural_language_form2E1
-			(*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _something;;
-
-			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form2E;;
 			*);;
 
 		-> .proc_of_formalization_geometric_relations_in_natural_language_form2E
@@ -168,7 +159,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_node;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2H;;
 			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form3A;;
@@ -178,7 +169,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_node;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _some_node;;
 
@@ -199,7 +190,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_node;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _node2;;
 
@@ -260,7 +251,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_similarity;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6B;;
@@ -271,7 +262,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_congruence;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6B;;
@@ -282,7 +273,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_equal_sized;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6B;;
@@ -476,7 +467,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_similarity;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form10A;;
@@ -487,7 +478,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_congruence;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form10B;;
@@ -498,7 +489,7 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_equal_sized;;
 
 			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form10C;;
@@ -535,8 +526,35 @@ scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
 			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: [ являются равновеликими.];;
 
-			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer;;
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form11A;;
 			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form11A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_node;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form11B;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form11B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_ligament;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form11C;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form11C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_relation;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer;;
+			*);;
 
 		-> .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer
 			(*

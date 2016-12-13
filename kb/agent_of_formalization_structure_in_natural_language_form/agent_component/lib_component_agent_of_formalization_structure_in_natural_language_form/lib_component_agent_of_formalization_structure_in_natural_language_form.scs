@@ -25,4 +25,14 @@ lib_component_agent_of_check_for_crossing_from_one_subdividing_elements
 		*);;
 	*);;
 
+	sc_node_not_relation -> action_of_formalization_structure_in_natural_language_form;;
+
+action_of_formalization_structure_in_natural_language_form => nrel_main_idtf:
+	[действие. формализовать заданную структуру в естественно-языковой форме]
+		(*<- lang_ru;;*);;
+action_of_formalization_structure_in_natural_language_form => nrel_main_idtf:
+	[action. formalize a given structure in natural language form]
+		(* <- lang_en;; *);;
+
+
 

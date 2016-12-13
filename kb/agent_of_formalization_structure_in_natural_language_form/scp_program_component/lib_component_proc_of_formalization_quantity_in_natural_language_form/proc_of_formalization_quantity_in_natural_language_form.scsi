@@ -16,7 +16,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_relation;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -26,7 +26,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_relation;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
 
@@ -48,7 +48,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_relation;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form1E;;
@@ -59,7 +59,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_value;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_relation;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form2A;;
@@ -69,13 +69,13 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchSetStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set5;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_main_idtf;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form2B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -85,7 +85,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_main_idtf;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
 
@@ -119,7 +119,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_angle_measure;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_relation;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form3A;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form3D;;
@@ -180,17 +180,8 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
 			-> rrel_4: rrel_fixed: rrel_scp_const: [0];;
 
-			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3G1;;
-			*);;	
-
-		-> .proc_of_formalization_quantity_in_natural_language_form3G1
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
-
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3G;;
-			*);;
+			*);;	
 
 		-> .proc_of_formalization_quantity_in_natural_language_form3G
 			(*
@@ -245,7 +236,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_concept;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -255,7 +246,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_concept;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_concept;;
 
@@ -277,7 +268,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form4E;;
@@ -288,7 +279,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form4F;;
@@ -299,7 +290,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form5A;;
@@ -309,11 +300,11 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_concept;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_example;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form5B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -323,7 +314,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_example;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
 
@@ -396,7 +387,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: concept_segment;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form7A;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form6E;;
@@ -407,7 +398,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: concept_prism;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form8A;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form6F;;
@@ -418,7 +409,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			<- ifCoin;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: concept_pair_of_points;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_concept;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form9A;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form6G;;
@@ -471,15 +462,6 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			*);;
 
 		-> .proc_of_formalization_quantity_in_natural_language_form7B
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
-
-			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form7C;;
-			*);;
-
-		-> .proc_of_formalization_quantity_in_natural_language_form7C
 			(*
 			<- contStringConcat;;
 
@@ -564,7 +546,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_length;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12A;;
@@ -575,7 +557,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_area;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12A;;
@@ -586,7 +568,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_angle_measure;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12A;;
@@ -597,7 +579,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_perimeter;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12B;;
@@ -608,7 +590,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_volume;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12B;;
@@ -619,7 +601,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- ifCoin;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_relation;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_distance;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12C;;
@@ -667,9 +649,9 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _some_relation;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set6;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_node;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -679,7 +661,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set6;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_node;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
 
@@ -770,7 +752,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set3;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_number_idtf;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form14B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -780,7 +762,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_number_idtf;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
 
@@ -835,13 +817,13 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchSetStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_role_relation: _atribyt;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _atribyt;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _set4;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_atribut_idtf;;
 
 			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form15B;;
 			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
@@ -851,7 +833,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set4;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_atribut_idtf;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
 
@@ -1078,7 +1060,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_relation;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17B;;
 			*);;
@@ -1087,7 +1069,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set1;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_concept;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17C;;
 			*);;
@@ -1096,7 +1078,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_example;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17D;;
 			*);;
@@ -1105,7 +1087,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set3;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_number_idtf;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17E;;
 			*);;
@@ -1114,7 +1096,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set4;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_atribut_idtf;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17F;;
 			*);;	
@@ -1123,7 +1105,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set5;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_main_idtf;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17G;;
 			*);;	
@@ -1132,7 +1114,7 @@ scp_program-> proc_of_formalization_quantity_in_natural_language_form
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set6;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_node;;
 
 			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form18A;;
 			*);;	
