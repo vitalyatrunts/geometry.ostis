@@ -5,9 +5,8 @@ lib_component_agent_of_finding_all_statements_associated_with_given_entity
 	[Library component. sc-agent of finding of all statements, associated with a given entity]
 	(* <- lang_en;; *);
 
-<- platform_independent_reusable_component_OSTIS; 
-<- atomic_reusable_component_OSTIS; 
-<- reusable_scp_agent;
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
 
 -> rrel_key_sc_element: 
 	.platform_independent_realization_of_sc_agent_of_finding_all_statements_associated_with_given_entity;
