@@ -1,0 +1,26 @@
+lib_component_agent_of_generation_for_a_given_sample_structure
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент генерации структуры по заданному образцу]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of generation for a given sample structure]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_generation_for_a_given_sample_structure;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_Generation_Sample_Structure.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;

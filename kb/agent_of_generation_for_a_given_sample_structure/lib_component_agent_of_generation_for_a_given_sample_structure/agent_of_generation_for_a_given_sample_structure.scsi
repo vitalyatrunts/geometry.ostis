@@ -1,0 +1,597 @@
+agent_of_generation_for_a_given_sample_structure
+=> nrel_main_idtf:
+	[агентная scp-программа генерации структуры по заданному образцу] (* <- lang_ru;; *);
+	[agent scp-program of generation for a given sample structure] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_generation_for_a_given_sample_structure
+	(*
+	-> rrel_params: .agent_of_generation_for_a_given_sample_structure_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_generation_for_a_given_sample_structure_set
+		(*
+		-> rrel_init: .agent_of_generation_for_a_given_sample_structure1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure1B;;
+			*);;
+                 
+		-> .agent_of_generation_for_a_given_sample_structure1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_generation_for_a_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure2A;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure2A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure2B;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message1;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure2B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _specification;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure2C;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message2;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure2C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: necessary_general_specification;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _specification;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure3A;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure2D;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure2D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: general_specification;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _specification;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure3A;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message2;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure3A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_of_pair;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure3A1;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure3A1
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: _answer_for_generation_given_sample_structure;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure3B;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure3B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _specification;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _logical_formula;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_main_key_sc_element;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure3C;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure3C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_implication;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _logical_formula;;
+			
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure3D;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure3D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _logical_formula;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _parcel;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_if;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure4A;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure4A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_role_relation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entity;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_for_class;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure4B;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure4B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_class;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _class;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure4C;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure4C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure4D;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure4D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _parcel;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _class;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure5A;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure4B;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure5A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _class;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_var: _example;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _parcel;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure5B;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure4B;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure5B
+			(*
+		  	<- call;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_generation_pair;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: 
+			.agent_of_generation_for_a_given_sample_structure5B_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _example;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _entity;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_pair;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_generation_for_a_given_sample_structure5C;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure5C
+			(*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure6A;;
+			*);;	
+
+		-> .agent_of_generation_for_a_given_sample_structure6A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _logical_formula;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _result;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_then;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure7B;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure7B
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_pair;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _result_of_search;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure7C;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure8A;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure7C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: logical_formula_and_uniqueness;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _result;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure7E;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure7D;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure7D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: atomic_logical_formula;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _result;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure7F;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure7E
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _result_of_search;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure7F
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _result_of_search;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure8A;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure8A
+			(*
+			<- sys_gen;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _qwerty;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_pair;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _result_of_gen;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure8B;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure8B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _constant;;
+			
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _result_of_gen;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure8C;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure8C
+			(*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result_of_gen;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_erase: rrel_assign: rrel_scp_var: rrel_var: _variable;;
+			
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure8D;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure8D
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result_of_gen;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entity;;
+			
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _result_of_gen;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9A;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _specification;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure9B;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9B
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure9C;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9C
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_generation_for_a_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9D;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9D
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: action_of_generation_for_a_given_sample_structure;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9E;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9F;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9F
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _result_of_gen;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9G;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9G
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _result_of_gen;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+
+			=> nrel_then: .agent_of_generation_for_a_given_sample_structure9H;;
+			=> nrel_else: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9H
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9I;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9J;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9J
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _result_of_gen;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9K;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9K
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result_of_gen;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure9L;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure9L
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_generation_given_sample_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_result;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure10A;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure10A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_of_pair;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure10B;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure10B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_class;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_gen_answer;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure_gen_answer
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var:  _answer_for_generation_given_sample_structure;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message1
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message1_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It parameter should be entity];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_waitreturn_proc_of_adding_validating_message1;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure_waitreturn_proc_of_adding_validating_message1
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message2
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_generation_for_a_given_sample_structure_call_proc_of_adding_validating_message2_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It parameter should be specification];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_waitreturn_proc_of_adding_validating_message2;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure_waitreturn_proc_of_adding_validating_message2
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_generation_for_a_given_sample_structure_return;;
+			*);;
+
+		-> .agent_of_generation_for_a_given_sample_structure_return
+			(*
+			<- return;;
+			*);;
+		*);; 
+	*);;
